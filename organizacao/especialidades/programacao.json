@@ -1,6 +1,6 @@
 {
   "especialidade": "programacao",
-  "atualizado_em": "2026-10-27",
+  "atualizado_em": "2026-10-28",
   "titulo": "Programação do Jogo",
   "thread_id": "01a17d41-089a-75c2-897e-6338b8ad3e44",
   "escopo": [
@@ -24,9 +24,11 @@
     {
       "data": "2026-10-28",
       "origem": "Pedido do usuario neste chat: subir todo o Sistema de RPG; repositorio informado pelo usuario e publicacao publica de todo o conteudo confirmada.",
-      "estado": "aprovado",
+      "estado": "implementado",
       "decisao": "Publicar o acervo completo em BlazeMath/Sistema-RPG, incluindo artes, documentos, versoes anteriores e videogame v0.23. Usar Git LFS para binarios e manter o ZIP original junto da copia extraida em videogame/.",
-      "impacto": "Publicacao do acervo de todas as areas; nao altera regras ou aprova propostas presentes nos documentos. Caches, dependencias reinstalaveis e credenciais ficam fora do Git."
+      "impacto": "Publicacao do acervo de todas as areas; nao altera regras ou aprova propostas presentes nos documentos. Caches, dependencias reinstalaveis e credenciais ficam fora do Git.",
+      "commit_inicial": "f16e821ae88effc18a958e8751de2909a7340155",
+      "verificacao": "3.115 arquivos publicados na main; 814 objetos Git LFS enviados; git lfs fsck OK; SHA local e remoto conferidos; README e project.godot lidos pelo conector GitHub."
     }
   ],
   "repositorio": {

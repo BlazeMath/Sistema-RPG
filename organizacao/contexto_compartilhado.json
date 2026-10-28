@@ -1,6 +1,6 @@
 {
   "projeto": "Sistema 21 / Coleção Masmorras (MMR)",
-  "atualizado_em": "2026-10-27",
+  "atualizado_em": "2026-10-28",
   "idioma": "pt-BR",
   "pedido_de_organizacao": "O usuário pediu este chat dedicado a classes, o chat original dedicado a itens, um novo chat de programação e outros chats úteis ao projeto. Esta organização distribui áreas; não aprova regras novas nem solicita implementação de novas funcionalidades.",
   "fontes_e_precedencia": [
@@ -63,7 +63,7 @@
     "equipamentos": "170 itens ilustrados na v06; 14 poções acrescentadas, 21 poções ao todo. Catálogo e PDFs já produzidos.",
     "economia": "Estudo v01 com preços de 170 itens. 1 ouro = 100 pratas = 1000 cobres e diária de 2 pratas são propostas de estudo, não aprovação registrada.",
     "inventario": "Pedido mais recente no chat de itens: limitar carga por volume e slots por categoria, sem contabilidade de peso. Está em elaboração no chat original; consultar a versão mais recente.",
-    "videogame": "Protótipo Godot 4.4 / GDScript no ZIP v0.23, com core, ui, tests, data/cartas e assets. O ZIP não foi extraído nem o jogo modificado nesta organização.",
+    "videogame": "Protótipo Godot 4.4 / GDScript v0.23 extraído em videogame/ para publicação, com o ZIP original preservado. Acervo completo publicado em https://github.com/BlazeMath/Sistema-RPG (público, autorizado pelo usuário em 28/10/2026). Nenhuma funcionalidade ou regra do jogo foi alterada nesta publicação. Consultar organizacao/especialidades/programacao.json.",
     "habilidades": "PDF de habilidades atualizado em 27/10/2026: 20 páginas, 150 faces, 17 faces corrigidas; preserva demais textos e apresentação. Heróis seguem em PDF separado."
   },
   "preferencias_registradas": [
