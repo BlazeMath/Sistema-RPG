@@ -1,0 +1,365 @@
+{
+  "data_consulta": "2026-10-27",
+  "fontes": [
+    {
+      "id": "F01",
+      "titulo": "The Last Wish — trecho autorizado, Gollancz",
+      "universo": "The Witcher — literatura",
+      "tipo": "Primária; trecho do romance",
+      "url": "https://www.lovereading.co.uk/extract/2438/The-Last-Wish-by-Andrzej-Sapkowski.html",
+      "localizador": "The Witcher, p. impressa 6; PDF p. 7",
+      "nota": "Proclamação de Foltest: 3.000 orens pela estrige. Contrato régio excepcional; não é salário usual."
+    },
+    {
+      "id": "F02",
+      "titulo": "GameBanshee — Twisted Firestarter",
+      "universo": "The Witcher 3 — videogame",
+      "tipo": "Secundária; guia de missão",
+      "url": "https://www.gamebanshee.com/thewitcher3/walkthrough/twistedfirestarter.php",
+      "localizador": "Walkthrough, recompensa final",
+      "nota": "Pagamento de 20 coroas. Valor de uma missão específica."
+    },
+    {
+      "id": "F03",
+      "titulo": "GameBanshee — High Stakes",
+      "universo": "The Witcher 3 — videogame",
+      "tipo": "Secundária; guia de missão",
+      "url": "https://www.gamebanshee.com/thewitcher3/walkthrough/highstakes.php",
+      "localizador": "Walkthrough, inscrição",
+      "nota": "Entrada do torneio de Gwent: 1.000 coroas. Despesa de elite."
+    },
+    {
+      "id": "F04",
+      "titulo": "GameBanshee — Pomp and Strange Circumstance",
+      "universo": "The Witcher 3 — Blood and Wine",
+      "tipo": "Secundária; guia de missão",
+      "url": "https://www.gamebanshee.com/thewitcher3/walkthrough/pompandstrangecircumstance.php",
+      "localizador": "Ceremony",
+      "nota": "Recompensa ducal de 5.000 coroas nessa conclusão. Não representa contrato de aldeia."
+    },
+    {
+      "id": "F05",
+      "titulo": "A Wiki of Ice and Fire — Currency",
+      "universo": "As Crônicas de Gelo e Fogo",
+      "tipo": "Secundária; remete aos romances e ao RPG",
+      "url": "https://awoiaf.westeros.org/index.php/Currency",
+      "localizador": "Denominations; Examples of currency values; notas de capítulos",
+      "nota": "Conversão do RPG; preços literários dependem do contexto."
+    },
+    {
+      "id": "F06",
+      "titulo": "Dragon Age RPG Quickstart Guide — Green Ronin, 2011",
+      "universo": "Dragon Age — RPG de mesa",
+      "tipo": "Primária; PDF gratuito da editora",
+      "url": "https://freeronin.com/dragon_age_rpg/DragonAgeRPGQuickstartGuide.pdf",
+      "localizador": "p. 6 / PDF 8; p. 13 / PDF 15; p. 15 / PDF 17; p. 19 / PDF 21",
+      "nota": "Moeda e preços do quickstart de 2011; sem diária civil."
+    },
+    {
+      "id": "F07",
+      "titulo": "D&D Free Rules 2024 — Equipment",
+      "universo": "Dungeons & Dragons — RPG de mesa",
+      "tipo": "Primária; regras oficiais",
+      "url": "https://www.dndbeyond.com/sources/dnd/br-2024/equipment",
+      "localizador": "Coins; Weapons; Armor; Adventuring Gear; Hirelings",
+      "nota": "Preços de serviço e equipamento; não renda familiar."
+    },
+    {
+      "id": "F08",
+      "titulo": "Kenneth Hodges — Medieval Prices, espelho acadêmico Goucher",
+      "universo": "Inglaterra histórica",
+      "tipo": "Compilação histórica secundária, referências bibliográficas indicadas",
+      "url": "https://faculty.goucher.edu/eng240/medieval_prices.html",
+      "localizador": "Weapons; Armor; Wages",
+      "nota": "Comparação aproximada com remuneração da mesma década."
+    },
+    {
+      "id": "P01",
+      "titulo": "Sistema 21 — catálogo de equipamentos v06",
+      "universo": "Projeto do autor",
+      "tipo": "Fonte primária do projeto",
+      "arquivo": "producao_cartas/dados/catalogo_cartas.json",
+      "localizador": "EQ-001 a EQ-170",
+      "nota": "Regras e raridades preservadas. Avaliação econômica acrescentada em arquivos separados."
+    },
+    {
+      "id": "P02",
+      "titulo": "Sistema 21 — protótipo 0.23",
+      "universo": "Projeto do autor",
+      "tipo": "Fonte primária; valores declarados provisórios",
+      "arquivo": "Sistema21_projeto_v0.23.zip",
+      "localizador": "core/campanha.gd, linhas 1–44; DECISOES_0.18.md, seção Para revisar",
+      "nota": "Moedas iniciais 60, poções 12, pousada 5, contratos 80/120/150. Não adotar como definição final de ouro."
+    }
+  ],
+  "medidas": [
+    {
+      "codigo": "B01",
+      "fonte": "F01",
+      "recorte": "Literatura",
+      "medida": "Contrato régio da estrige",
+      "valor": 3000,
+      "unidade": "oren",
+      "contexto": "Excepcional; não salário civil"
+    },
+    {
+      "codigo": "B02",
+      "fonte": "F02",
+      "recorte": "Videogame",
+      "medida": "Twisted Firestarter",
+      "valor": 20,
+      "unidade": "coroa",
+      "contexto": "Missão inicial específica"
+    },
+    {
+      "codigo": "B03",
+      "fonte": "F03",
+      "recorte": "Videogame",
+      "medida": "Inscrição em High Stakes",
+      "valor": 1000,
+      "unidade": "coroa",
+      "contexto": "Despesa de elite"
+    },
+    {
+      "codigo": "B04",
+      "fonte": "F04",
+      "recorte": "Videogame",
+      "medida": "Conclusão ducal de Blood and Wine",
+      "valor": 5000,
+      "unidade": "coroa",
+      "contexto": "Condição de conclusão indicada na fonte"
+    },
+    {
+      "codigo": "B05",
+      "fonte": "F05",
+      "recorte": "RPG licenciado",
+      "medida": "Veados por dragão",
+      "valor": 210,
+      "unidade": "veado / dragão",
+      "contexto": "Convenção do RPG, não câmbio canônico completo"
+    },
+    {
+      "codigo": "B06",
+      "fonte": "F05",
+      "recorte": "RPG licenciado",
+      "medida": "Cobre miúdo por veado",
+      "valor": 56,
+      "unidade": "penny / veado",
+      "contexto": "Convenção do RPG"
+    },
+    {
+      "codigo": "B07",
+      "fonte": "F05",
+      "recorte": "Romances",
+      "medida": "Torta de fruta em Porto Real",
+      "valor": 3,
+      "unidade": "penny / torta",
+      "contexto": "Antes da fome de guerra"
+    },
+    {
+      "codigo": "B08",
+      "fonte": "F05",
+      "recorte": "Romances",
+      "medida": "Prêmio da justa da Mão",
+      "valor": 40000,
+      "unidade": "dragão",
+      "contexto": "Excepcional, extravagância régia"
+    },
+    {
+      "codigo": "B09",
+      "fonte": "F06",
+      "recorte": "RPG de mesa",
+      "medida": "Pratas por ouro",
+      "valor": 100,
+      "unidade": "prata / ouro",
+      "contexto": "Conversão do quickstart"
+    },
+    {
+      "codigo": "B10",
+      "fonte": "F06",
+      "recorte": "RPG de mesa",
+      "medida": "Cobres por prata",
+      "valor": 100,
+      "unidade": "cobre / prata",
+      "contexto": "Diferente da simplificação proposta ao Sistema 21"
+    },
+    {
+      "codigo": "B11",
+      "fonte": "F06",
+      "recorte": "RPG de mesa",
+      "medida": "Espada longa",
+      "valor": 18,
+      "unidade": "prata / arma",
+      "contexto": "Tabela de armas, p. 6"
+    },
+    {
+      "codigo": "B12",
+      "fonte": "F06",
+      "recorte": "RPG de mesa",
+      "medida": "Lanterna",
+      "valor": 5,
+      "unidade": "prata / peça",
+      "contexto": "Equipamento, p. 13"
+    },
+    {
+      "codigo": "B13",
+      "fonte": "F06",
+      "recorte": "RPG de mesa",
+      "medida": "Corda de 20 jardas",
+      "valor": 2,
+      "unidade": "prata / 20 jardas",
+      "contexto": "20 jardas = 18,288 m; unidade preservada"
+    },
+    {
+      "codigo": "B14",
+      "fonte": "F06",
+      "recorte": "RPG de mesa",
+      "medida": "Contrato de até dois dias",
+      "valor": 50,
+      "unidade": "prata / personagem",
+      "contexto": "Aventura; não diária camponesa"
+    },
+    {
+      "codigo": "B15",
+      "fonte": "F06",
+      "recorte": "RPG de mesa",
+      "medida": "Casa em Denerim",
+      "valor": 50,
+      "unidade": "ouro / imóvel",
+      "contexto": "Comparação narrativa, p. 19"
+    },
+    {
+      "codigo": "B16",
+      "fonte": "F07",
+      "recorte": "RPG de mesa",
+      "medida": "Pratas por ouro",
+      "valor": 10,
+      "unidade": "SP / GP",
+      "contexto": "Moeda oficial"
+    },
+    {
+      "codigo": "B17",
+      "fonte": "F07",
+      "recorte": "RPG de mesa",
+      "medida": "Contratado sem treino",
+      "valor": 0.2,
+      "unidade": "GP / dia",
+      "contexto": "Preço do serviço"
+    },
+    {
+      "codigo": "B18",
+      "fonte": "F07",
+      "recorte": "RPG de mesa",
+      "medida": "Contratado especializado",
+      "valor": 2,
+      "unidade": "GP / dia",
+      "contexto": "Mínimo citado"
+    },
+    {
+      "codigo": "B19",
+      "fonte": "F07",
+      "recorte": "RPG de mesa",
+      "medida": "Espada longa",
+      "valor": 15,
+      "unidade": "GP / arma",
+      "contexto": "Tabela de armas"
+    },
+    {
+      "codigo": "B20",
+      "fonte": "F07",
+      "recorte": "RPG de mesa",
+      "medida": "Armadura de placas",
+      "valor": 1500,
+      "unidade": "GP / armadura",
+      "contexto": "Tabela de armaduras"
+    },
+    {
+      "codigo": "B21",
+      "fonte": "F07",
+      "recorte": "RPG de mesa",
+      "medida": "Poção de cura",
+      "valor": 50,
+      "unidade": "GP / dose",
+      "contexto": "Equipamento"
+    },
+    {
+      "codigo": "B22",
+      "fonte": "F08",
+      "recorte": "História, anos 1340",
+      "medida": "Espada barata de camponês",
+      "valor": 6,
+      "unidade": "pence / espada",
+      "contexto": "Qualidade inferior; não espada profissional"
+    },
+    {
+      "codigo": "B23",
+      "fonte": "F08",
+      "recorte": "História, 1341–1350",
+      "medida": "Ajudante de telhador",
+      "valor": 1.25,
+      "unidade": "pence / dia",
+      "contexto": "Mesma década da espada"
+    },
+    {
+      "codigo": "B24",
+      "fonte": "F08",
+      "recorte": "História, 1441",
+      "medida": "Armadura milanesa pronta",
+      "valor": 2000,
+      "unidade": "pence / conjunto",
+      "contexto": "£8 6s 8d, convertido para pence"
+    },
+    {
+      "codigo": "B25",
+      "fonte": "F08",
+      "recorte": "História, 1441–1450",
+      "medida": "Ajudante de telhador",
+      "valor": 4,
+      "unidade": "pence / dia",
+      "contexto": "Salário contemporâneo aproximado à armadura"
+    }
+  ],
+  "normalizacoes": [
+    {
+      "descricao": "D&D: espada em diárias brutas sem treino",
+      "calculo": "15 / 0.2",
+      "valor": 75,
+      "unidade": "dias",
+      "fontes": [
+        "B19",
+        "B17"
+      ]
+    },
+    {
+      "descricao": "D&D: placas em diárias brutas sem treino",
+      "calculo": "1500 / 0.2",
+      "valor": 7500,
+      "unidade": "dias",
+      "fontes": [
+        "B20",
+        "B17"
+      ]
+    },
+    {
+      "descricao": "Inglaterra: espada barata / ajudante contemporâneo",
+      "calculo": "6 / 1.25",
+      "valor": 4.8,
+      "unidade": "dias",
+      "fontes": [
+        "B22",
+        "B23"
+      ]
+    },
+    {
+      "descricao": "Inglaterra: placas / ajudante contemporâneo",
+      "calculo": "2000 / 4",
+      "valor": 500,
+      "unidade": "dias",
+      "fontes": [
+        "B24",
+        "B25"
+      ]
+    }
+  ],
+  "limites": "Não há câmbio real entre universos nem dados suficientes para estimar estoque monetário total. Comparações em diárias usam remuneração bruta e recortes explicitados; não medem poupança."
+}

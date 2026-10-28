@@ -1,0 +1,19 @@
+{
+  "id": "EQ-013",
+  "nome": "Francisca",
+  "arquivo": "artes/revisadas/EQ-013_v02.png",
+  "origem": "C:/Users/Gamer/.codex/generated_images/01a1784a-39da-75d3-87c4-56dc835caa37/exec-2952c244-c4ff-4fce-b590-8a30e31284ab.png",
+  "substitui": "artes/lote/EQ-013_v01.png",
+  "dimensoes": [
+    1083,
+    1452
+  ],
+  "modo": "RGBA",
+  "alpha": [
+    0,
+    255
+  ],
+  "sha256": "1140dd1eacda89a97c2fa9c87300690c5072d27e66c2dd3f738a4fa2003baf90",
+  "status": "conferida_visual",
+  "rotacao_diagramacao_graus": 0
+}

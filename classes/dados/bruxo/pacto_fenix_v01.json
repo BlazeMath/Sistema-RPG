@@ -1,0 +1,92 @@
+{
+  "data": "2026-10-27",
+  "estado": "texto_de_trabalho_com_nucleo_confirmado",
+  "classe": "Bruxo",
+  "pacto": "Fênix",
+  "fonte": "classes/dados/bruxo/conceito_v03.json",
+  "atributo_conjuracao": "Espírito",
+  "tags_heroi": [
+    "Pacto"
+  ],
+  "tags_pacto": [
+    "Fogo",
+    "Fênix"
+  ],
+  "tres_cartas": {
+    "heroi": {
+      "passiva": "Carta do Pacto da Fênix.",
+      "ativada": {
+        "texto": "Gaste X fichas de Pacto: cure 3X de um alvo em alcance curto.",
+        "cura": "Segue a regra normal de cura e exílio.",
+        "custo_acao": "Não explicitado separadamente; a resposta do autor preservou as regras normais, sem indicar ação adicional para esta ativada."
+      },
+      "desencadeada": {
+        "texto": "Cada ficha de Fogo causa 2 de dano em vez de 1, independentemente de quem a colocou.",
+        "inclui_outras_fontes": true,
+        "observacao": "O autor não restringiu o benefício ao Fogo do Bruxo. Isso também abrange Fogo hostil; o raio/escopo espacial não foi delimitado."
+      },
+      "critico": "Ganhe fichas de Pacto iguais ao nível do pacto."
+    },
+    "pacto": {
+      "nivel_minimo": 1,
+      "nivel_maximo": 5,
+      "ganho_inicio_cena": "2 vezes o nível do pacto.",
+      "ganho_por_morte": {
+        "quantidade": 1,
+        "gatilho": "Presenciar a morte de um monstro pela qual o Bruxo tenha sido responsável.",
+        "exige_golpe_final": false,
+        "observacao": "Contribuição e responsabilidade podem ser reconhecidas pelo mestre; não foi criado um alcance numérico para presenciar."
+      },
+      "fim_cena": "Descarte todas as fichas de Pacto.",
+      "cobranca": {
+        "objetivo_confirmado": "Matar monstros; a obrigação precisa ter importância real para o Bruxo.",
+        "prazo": null,
+        "quota": null,
+        "consequencia_aprovada": null,
+        "possibilidades_mencionadas_pelo_autor": [
+          "Perder acesso à habilidade.",
+          "Sofrer dano."
+        ],
+        "proposta_do_assistente": {
+          "estado": "proposta_nao_aprovada",
+          "consequencia": "Suspender o uso das fichas de Pacto ao descumprir, preservando o uso básico das magias para que o Bruxo possa reparar o compromisso.",
+          "prazo_e_reparacao": "Definir a obrigação e seu prazo com o mestre. Não impor obrigação por toda cena, inclusive cenas sociais, sem decisão do autor."
+        }
+      }
+    },
+    "habilidade_inicial": {
+      "lado_a": {
+        "nome": "Ave Fênix",
+        "tipo": "Magia; ataque mágico normal com foco.",
+        "alcance": "Curto",
+        "limite_fadiga": 2,
+        "custo_fadiga": 1,
+        "custo_acao": "Ação Padrão pela regra normal de conjurar magia.",
+        "dano_primario": "Dano normal de ataque mágico com foco, somando Espírito no dano, sem somá-lo ao teste de ataque.",
+        "fogo": "Ao acertar o alvo principal, coloque 1 ficha de Fogo nele e em cada inimigo adjacente a ele. Os adjacentes são afetados automaticamente, sem defesa individual.",
+        "dano_adjacentes_basico": 0,
+        "modo_potencializado_intencao_autor": "O modo com gasto de Pacto causa 1 de dano-base nos adjacentes, aumentado em 2 para cada ficha gasta.",
+        "gatilhos_de_acerto_e_defesa": "O alvo principal faz a defesa normal contra o ataque mágico. Acertar esse alvo resolve os efeitos da magia nos inimigos adjacentes automaticamente; não há defesas individuais adicionais, conforme a alternativa apresentada na pergunta anterior.",
+        "modos_confirmados": {
+          "estado": "aprovado_pelo_autor",
+          "basico": "Ataque mágico normal no alvo e aplicação de Fogo. Os adjacentes recebem somente Fogo.",
+          "com_pacto": "Gaste X fichas de Pacto, com X >= 1. O dano direto no alvo principal recebe +2X; os inimigos adjacentes sofrem 1 + 2X de dano direto. A aplicação de Fogo permanece.",
+          "distincao": "O bônus é dano direto da magia, separado do dano periódico das fichas de Fogo.",
+          "observacao": "O autor escolheu manter dano direto nos adjacentes apenas quando gastar fichas de Pacto, com resolução automática nos adjacentes."
+        },
+        "texto_revisado": "1 de Fadiga, Ação Padrão: faça um ataque mágico com seu foco contra um alvo em alcance curto, somando Espírito ao dano. Se acertar, coloque 1 ficha de Fogo no alvo e em cada inimigo adjacente a ele. Os adjacentes recebem as fichas automaticamente, sem defesa adicional.\nAo usar esta magia, você pode gastar X fichas de Pacto, com X igual ou maior que 1. Se acertar, aumente o dano no alvo principal em 2X e cause 1 + 2X de dano direto em cada inimigo adjacente a ele, sem defesa adicional. Esse bônus não aumenta o dano periódico das fichas de Fogo."
+      },
+      "lado_b": {
+        "nome": "Absorver as Chamas",
+        "alcance": "Curto",
+        "limite_fadiga": 4,
+        "custo_fadiga": 2,
+        "custo_acao": "Ação Padrão pela regra normal de conjurar magia.",
+        "formula_confirmada": "F + 2X, sendo F o total de fichas de Fogo removidas e X o número de fichas de Pacto gastas.",
+        "texto_revisado": "2 de Fadiga, Ação Padrão: remova todas as fichas de Fogo em alcance curto. Você cura 1 para cada ficha removida. Você pode gastar X fichas de Pacto para aumentar essa cura em 2 para cada ficha de Pacto gasta.",
+        "cura": "Aplica a regra normal de cura e exílio; nenhuma exceção foi criada.",
+        "exemplo": "Remover 3 fichas de Fogo e gastar 2 de Pacto cura 7."
+      }
+    }
+  }
+}

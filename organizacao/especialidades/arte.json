@@ -1,0 +1,26 @@
+{
+  "especialidade": "arte",
+  "atualizado_em": "2026-10-27",
+  "titulo": "Arte, Cartas e Diagramação",
+  "thread_id": "01a17d41-1105-7e00-bd5f-c5a850ca0633",
+  "escopo": [
+    "Direção visual, ilustrações e consistência das cartas",
+    "Símbolos, tipografia, frente e verso, PDF e impressão",
+    "Pipeline de produção visual e revisão de legibilidade"
+  ],
+  "fontes": [
+    "producao_cartas/dados/estado_producao.json",
+    "producao_cartas/dados/decisoes_fechadas.json",
+    "producao_cartas/dados/classificacao_layout.json",
+    "producao_cartas/scripts",
+    "producao_cartas/pdf/Sistema21_Equipamentos_170_A4_v06.pdf",
+    "producao_cartas/pdf/Sistema21_Equipamentos_170_Cartas_v06.pdf"
+  ],
+  "pontos_de_atencao": [
+    "Não reescrever mecânicas para caber no layout. Encaminhar a divergência e propor ajuste editorial.",
+    "Modelo corrente aprovado: 63 x 88 mm, corpo mínimo 8 pt, símbolos de Fadiga e Conjuração.",
+    "Dano, alcance e tags também no verso; dados de requisito, categoria e limite para consulta.",
+    "A inicialização não solicita imagens novas nem reedição de PDFs existentes."
+  ],
+  "decisoes_novas": []
+}

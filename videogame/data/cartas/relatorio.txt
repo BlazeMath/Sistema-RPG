@@ -1,0 +1,9 @@
+Planilha: 49ace898-SISTEMA_21_Cartas_Oficial_0.6.xlsx
+Cartas de habilidade: 122
+Metades de herói: 30
+
+Avisos (2):
+  - Classes/CLÉRIGO/Saltério de Cura lado A: sem descrição
+  - Classes/CLÉRIGO/Grimório da Chama Sagrada lado A: sem descrição
+
+Mudanças desde a última exportação (0):

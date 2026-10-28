@@ -1,0 +1,17 @@
+{
+  "paginas_cartas": 2,
+  "frentes": 9,
+  "versos": 9,
+  "custos_fadiga": [
+    2,
+    2,
+    3,
+    5,
+    2
+  ],
+  "marcadores_limite": 6,
+  "conjuracao": 2,
+  "textos_e_valores_preservados": true,
+  "imposicao_duplex_validada": true,
+  "revisao_visual": "Quatro páginas renderizadas e verificadas; sem sobreposição ou corte de texto."
+}

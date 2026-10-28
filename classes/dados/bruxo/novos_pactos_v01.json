@@ -1,0 +1,290 @@
+{
+  "titulo": "Cinco novos pactos do Bruxo",
+  "versao": 1,
+  "data": "2026-10-27",
+  "estado": "propostas_para_discussao_e_playtest",
+  "referencia_regras": "classes/dados/bruxo/regras_propostas_lote_v01.json",
+  "patronos": [
+    {
+      "id": "BR-P01",
+      "nome": "Pacto do Abismo",
+      "patrono": "Malgor, o Credor do Último Fôlego",
+      "tags": [
+        "Infernal",
+        "Abismo"
+      ],
+      "papel": "Dano concentrado e risco",
+      "identidade": "Pagar com a própria reserva vital para comprar potência; ao estourar, negociar o resultado e aceitar a conta.",
+      "ciclo": "Exilar voluntariamente → ganhar Pacto e potência → arriscar o 21 → pagar a cobrança do estouro.",
+      "pacto": {
+        "beneficio": "Uma vez no seu turno, depois de resolver uma habilidade em cujo custo você exilou voluntariamente uma ou mais cartas comuns, ganhe 1 Pacto. Exílio obrigatório por cura, transbordo de Fadiga, cobrança ou reparação não conta.",
+        "cobranca": "Depois de um estouro, a carta final que determinou seu resultado vai para o exílio ao terminar o teste, em vez do descarte.",
+        "quebra": "Recusar essa cobrança suspende o pacto. O resultado do teste já resolvido permanece.",
+        "reparacao": "Exile 2 cartas do topo do seu baralho. Esse pagamento não gera Pacto.",
+        "habilidade_inicial": "Sangrar o Véu / Última Oferta"
+      },
+      "heroi": {
+        "limite_fadiga": 4,
+        "passiva": "Carta do Pacto do Abismo.",
+        "ativada": "2 Pactos: após estourar e antes de comprar a carta final, olhe as 3 cartas do topo do seu baralho. Escolha uma como carta final e exile as demais. A carta escolhida também fica sujeita à cobrança depois do teste. Apenas uma intervenção deste pacto na carta final por teste.",
+        "desencadeada": "Uma vez no seu turno, depois de resolver uma magia concedida por este pacto em cujo custo você exilou cartas do baralho, retire 1 de Fadiga daquela magia. Pague a Fadiga normalmente antes de conjurar.",
+        "critico": "Ganhe fichas de Pacto iguais ao nível deste pacto."
+      },
+      "habilidade": {
+        "tipo": "Magia Arcana",
+        "requer": [
+          "Pacto",
+          "Infernal",
+          "Abismo"
+        ],
+        "lados": [
+          {
+            "lado": "A",
+            "nome": "Sangrar o Véu",
+            "custo_fadiga": 1,
+            "limite_fadiga": 2,
+            "acao": "Padrão",
+            "texto": "1 de Fadiga, Ação Padrão: faça um ataque mágico com foco em alcance curto, causando dano Necrótico. Como custo adicional, antes de comprar as cartas do ataque, você pode exilar até Espírito cartas do topo do seu baralho. Se acertar, cause +2 de dano por carta assim exilada."
+          },
+          {
+            "lado": "B",
+            "nome": "Última Oferta",
+            "custo_fadiga": 2,
+            "limite_fadiga": 3,
+            "acao": "Reação",
+            "texto": "2 de Fadiga, Reação: depois de estourar uma defesa e comprar sua carta final, exile essa carta e compre uma substituta. Use o novo valor. Apenas uma intervenção deste pacto na carta final por teste; a substituta também fica sujeita à cobrança depois do teste."
+          }
+        ]
+      },
+      "menor": "Uma vez por cena, 1 Pacto: depois de estourar e comprar a carta final, exile-a e compre outra para determinar o resultado. Apenas uma substituição por teste. A cobrança do patrono continua valendo.",
+      "teste": "O exílio é o preço real da eficiência. A recuperação posterior de Fadiga não reduz o custo de conjuração a zero. A carta final não pode ser trocada repetidamente pelas duas intervenções.",
+      "cobranca_menor": "Depois de estourar, a carta final do teste vai ao exílio ao terminar o teste. Recusar suspende esta reserva menor; repare exilando 2 cartas do topo do baralho, sem gerar Pacto."
+    },
+    {
+      "id": "BR-P02",
+      "nome": "Pacto da Última Porta",
+      "patrono": "A Sentinela que Nunca Recuou",
+      "tags": [
+        "Luz",
+        "Juramento"
+      ],
+      "papel": "Proteção e retaliação",
+      "identidade": "Escolher uma pessoa e fazer da sobrevivência dela a condição do próprio poder.",
+      "ciclo": "Jurar proteção → assumir dano real → ganhar Pacto → escolher entre nova proteção e retaliação.",
+      "pacto": {
+        "escolha": "No começo da cena, escolha um aliado como protegido e anote o nome na carta. Trocar de protegido exige uma ação Padrão e descarta a reserva atual deste pacto.",
+        "beneficio": "Uma vez por rodada, quando um ataque inimigo destinado ao protegido causar dano a você por ter assumido o ataque, ganhe 1 Pacto. Dano efetivamente recebido por seu baralho, armadura ou escudo conta; dano totalmente prevenido não conta.",
+        "cobranca": "Não termine voluntariamente seu turno com o protegido fora de alcance curto. Deslocamento imposto pelo inimigo e impossibilidade real de aproximar-se não são quebra voluntária.",
+        "quebra": "Abandonar voluntariamente essa posição suspende o pacto.",
+        "reparacao": "Fique adjacente ao protegido e gaste uma ação Padrão renovando o juramento.",
+        "habilidade_inicial": "Vigília da Porta / Punho da Sentinela"
+      },
+      "heroi": {
+        "limite_fadiga": 4,
+        "passiva": "Carta do Pacto da Última Porta.",
+        "ativada": "X Pactos, Reação: quando um ataque inimigo causar dano ao protegido em alcance curto, reduza esse dano em 3X antes de distribuí-lo entre armadura, escudo e baralho.",
+        "desencadeada": "Uma vez por rodada, depois de receber dano de um ataque no lugar do protegido, se estiver adjacente a ele, vocês podem mover-se 1 quadrado cada, ignorando impedimento e sem provocar ataques de oportunidade, terminando adjacentes. Outros impedimentos físicos continuam valendo.",
+        "critico": "Ganhe fichas de Pacto iguais ao nível deste pacto."
+      },
+      "habilidade": {
+        "tipo": "Magia Arcana",
+        "requer": [
+          "Pacto",
+          "Luz",
+          "Juramento"
+        ],
+        "lados": [
+          {
+            "lado": "A",
+            "nome": "Vigília da Porta",
+            "custo_fadiga": 1,
+            "limite_fadiga": 2,
+            "acao": "Padrão",
+            "texto": "1 de Fadiga, Ação Padrão: se você ainda não tiver Guarda, coloque 1 ficha de Guarda em sua carta de herói. Se o protegido estiver em alcance curto e ainda não tiver Bloqueio, coloque 1 ficha de Bloqueio em uma carta dele. Esta magia não acumula essas fichas em quem já as possui."
+          },
+          {
+            "lado": "B",
+            "nome": "Punho da Sentinela",
+            "custo_fadiga": 2,
+            "limite_fadiga": 3,
+            "acao": "Padrão",
+            "texto": "2 de Fadiga, Ação Padrão: faça um ataque mágico com foco, causando dano Radiante, contra um inimigo em alcance curto que tenha atacado o protegido desde o fim de seu último turno. Se acertar, some novamente seu Espírito ao dano."
+          }
+        ]
+      },
+      "menor": "1 Pacto, Reação: reduza em 2 o dano de um ataque contra um aliado adjacente a você, antes da distribuição do dano. Uma ativação por ataque.",
+      "teste": "Bloquear totalmente não deve conceder Pacto por assumir dano. Verificar a sobrevivência da armadura e o custo de manter o protegido próximo.",
+      "cobranca_menor": "Depois de usar o benefício menor, até o fim de seu próximo turno você não pode terminar voluntariamente fora de alcance curto do aliado que protegeu. Se quebrar, suspenda esta reserva; repare ficando adjacente a esse aliado e gastando uma ação Padrão."
+    },
+    {
+      "id": "BR-P03",
+      "nome": "Pacto do Olho Descoberto",
+      "patrono": "A Testemunha Sem Rosto",
+      "tags": [
+        "Luz",
+        "Revelação"
+      ],
+      "papel": "Informação e disputa do 21",
+      "identidade": "O patrono empresta o olhar que revela o adversário e exige que o Bruxo pague com a própria honestidade.",
+      "ciclo": "Marcar → enxergar a aposta inimiga → inverter a ordem de decisão → colher o erro do adversário.",
+      "pacto": {
+        "beneficio": "Uma vez por rodada, quando um inimigo Marcado estourar um ataque ou defesa contra você, ganhe 1 Pacto.",
+        "cobranca": "Não minta deliberadamente enquanto este for seu pacto pleno. Omissão usada conscientemente para afirmar uma falsidade também viola a cobrança; esconder cartas normalmente no teste não é uma mentira narrativa.",
+        "quebra": "Mentir deliberadamente suspende o pacto.",
+        "reparacao": "Entregue a um adversário uma informação verdadeira que lhe conceda vantagem real na situação, reconhecida pelo mestre.",
+        "habilidade_inicial": "Olhar que Despe / Veredito Antecipado"
+      },
+      "heroi": {
+        "limite_fadiga": 4,
+        "passiva": "Carta do Pacto do Olho Descoberto.",
+        "ativada": "1 Pacto, Reação: quando um inimigo em alcance curto colocar a carta Fechada num teste de que você participa, revele-a. Ela permanece revelada até a resolução desse teste.",
+        "desencadeada": "Uma vez por rodada, depois de vencer um ataque ou defesa contra um inimigo cuja carta Fechada esteja revelada, ganhe 1 ficha de Foco.",
+        "critico": "Ganhe fichas de Pacto iguais ao nível deste pacto."
+      },
+      "habilidade": {
+        "tipo": "Magia Arcana",
+        "requer": [
+          "Pacto",
+          "Luz",
+          "Revelação"
+        ],
+        "lados": [
+          {
+            "lado": "A",
+            "nome": "Olhar que Despe",
+            "custo_fadiga": 1,
+            "limite_fadiga": 2,
+            "acao": "Movimento",
+            "texto": "1 de Fadiga, Ação de Movimento: escolha uma criatura em alcance curto. Faça um teste contestado de Espírito contra Mentira do alvo. Se vencer, coloque 1 ficha de Marcação nele."
+          },
+          {
+            "lado": "B",
+            "nome": "Veredito Antecipado",
+            "custo_fadiga": 1,
+            "limite_fadiga": 3,
+            "acao": "Padrão",
+            "texto": "1 de Fadiga, Ação Padrão: faça um ataque mágico com foco, causando dano Radiante, contra um inimigo Marcado em alcance curto. Depois de ambos comprarem as duas cartas iniciais, o defensor conclui o teste antes de você decidir se puxa mais cartas. Você ainda pode estourar normalmente."
+          }
+        ]
+      },
+      "menor": "1 Pacto, Reação: durante um ataque que você esteja fazendo contra um inimigo em alcance curto, olhe a carta Fechada dele. Você não a revela aos demais participantes. Uma ativação por teste.",
+      "teste": "A marca já revela a carta escondida; a vantagem própria de Veredito é decidir as compras depois do defensor. Não converter informação em sucesso garantido.",
+      "cobranca_menor": "Não minta deliberadamente enquanto este vínculo estiver associado à carta de Pacto Menor, em qualquer lado. Se quebrar, suspenda esta reserva; repare entregando a um adversário uma informação verdadeira que lhe dê vantagem real, reconhecida pelo mestre."
+    },
+    {
+      "id": "BR-P04",
+      "nome": "Pacto dos Caminhos Roubados",
+      "patrono": "A Serpente Entre as Portas",
+      "tags": [
+        "Ar",
+        "Limiar"
+      ],
+      "papel": "Posição e abertura de caminhos",
+      "identidade": "Empurrar o conflito para onde o grupo deseja, pagando o favor com a recusa de permanecer no mesmo lugar.",
+      "ciclo": "Deslocar um inimigo para o alcance de um aliado → ganhar Pacto → trocar posições e abrir rotas.",
+      "pacto": {
+        "beneficio": "Uma vez no seu turno, depois de deslocar um inimigo para um quadrado adjacente a um aliado que antes não estava adjacente a ele, ganhe 1 Pacto. Deslocar aliados voluntariamente não gera esse ganho.",
+        "cobranca": "Depois de usar uma magia deste pacto, termine o turno em um quadrado diferente daquele em que o começou, se houver deslocamento legal disponível.",
+        "quebra": "Optar por permanecer suspende o pacto. Estar efetivamente impossibilitado de mover não constitui escolha de descumprir.",
+        "reparacao": "Termine um turno em um quadrado diferente do inicial após usar deslocamento normal, em vez de teleporte deste pacto.",
+        "habilidade_inicial": "Mão Além do Limiar / Passagem Indevida"
+      },
+      "heroi": {
+        "limite_fadiga": 4,
+        "passiva": "Carta do Pacto dos Caminhos Roubados.",
+        "ativada": "1 Pacto, Reação: quando um aliado em alcance curto for escolhido como alvo de um ataque, ele pode mover-se 1 quadrado, ignorando impedimento e sem provocar ataques de oportunidade. Respeite obstáculos e estados que impeçam o movimento. O ataque continua se ele ainda for um alvo válido; caso contrário, aplique a regra normal de perda de alvo. Uma ativação por ataque.",
+        "desencadeada": "Uma vez por turno, depois que você deslocar um inimigo, você pode mover-se 1 quadrado, ignorando impedimento e sem provocar ataques de oportunidade. Não atravessa obstáculos nem permite mover se outro estado o proibir.",
+        "critico": "Ganhe fichas de Pacto iguais ao nível deste pacto."
+      },
+      "habilidade": {
+        "tipo": "Magia Arcana",
+        "requer": [
+          "Pacto",
+          "Ar",
+          "Limiar"
+        ],
+        "lados": [
+          {
+            "lado": "A",
+            "nome": "Mão Além do Limiar",
+            "custo_fadiga": 1,
+            "limite_fadiga": 2,
+            "acao": "Padrão",
+            "texto": "1 de Fadiga, Ação Padrão: faça um ataque mágico com foco em alcance curto, causando dano de Concussão. Se acertar, desloque o alvo 2 quadrados em linha reta em sua direção ou para longe de você. Pode gastar X Pactos para aumentar esse deslocamento em X quadrados. Respeite o espaço disponível, sem atravessar obstáculos. Este deslocamento não provoca ataques de oportunidade."
+          },
+          {
+            "lado": "B",
+            "nome": "Passagem Indevida",
+            "custo_fadiga": 1,
+            "limite_fadiga": 3,
+            "acao": "Movimento",
+            "texto": "1 de Fadiga e 1 Pacto, Ação de Movimento: troque de lugar com um aliado que você possa ver em alcance curto. Em vez de aliado, pode escolher um inimigo e pagar 2 Pactos: faça um teste contestado de Espírito contra Espírito dele; se vencer, troquem de lugar. Ambos precisam caber nos destinos. A troca ignora impedimento e não provoca ataques de oportunidade; não atravessa paredes que bloqueiem a linha de visão."
+          }
+        ]
+      },
+      "menor": "1 Pacto, Ação de Movimento: mova-se 1 quadrado ignorando impedimento e sem provocar ataques de oportunidade. Respeite obstáculos e outros estados que impeçam seu movimento.",
+      "teste": "A movimentação de um alvo não anula automaticamente o ataque: isso depende de continuar ou não válido. Colisão, altura, espaço de destino e perda de visão devem ser resolvidos claramente.",
+      "cobranca_menor": "Depois de usar o benefício menor, não retorne voluntariamente ao quadrado em que começou o turno antes do fim dele. Quebrar suspende esta reserva; repare terminando um turno em outro quadrado depois de usar deslocamento normal."
+    },
+    {
+      "id": "BR-P05",
+      "nome": "Pacto dos Grilhões Vivos",
+      "patrono": "O Carcereiro Sem Chave",
+      "tags": [
+        "Trevas",
+        "Prisão"
+      ],
+      "papel": "Restrição e captura",
+      "identidade": "Obrigar o adversário a escolher entre suportar a prisão ou gastar suas ações para libertar-se.",
+      "ciclo": "Prender → converter a prisão em pressão → ganhar Pacto quando o inimigo paga para escapar → punir a libertação.",
+      "pacto": {
+        "beneficio": "Uma vez por rodada, quando um inimigo gastar uma ação para remover Imobilizar ou Atordoamento colocado por você, ganhe 1 Pacto. Remoção gratuita, automática ou de fim de cena não conta.",
+        "cobranca": "Aceite rendições oferecidas de boa-fé e não execute nem autorize a execução de quem esteja sob sua guarda.",
+        "quebra": "Violar essa obrigação suspende o pacto.",
+        "reparacao": "Liberte ou proteja um prisioneiro cuja sobrevivência imponha um custo real a você, reconhecido pelo mestre. O mestre define antes da escolha se a oferta de rendição é de boa-fé.",
+        "habilidade_inicial": "Grilhão de Sombra / Peso da Sentença"
+      },
+      "heroi": {
+        "limite_fadiga": 4,
+        "passiva": "Carta do Pacto dos Grilhões Vivos.",
+        "ativada": "1 Pacto, Reação: depois que um inimigo em alcance curto virar uma carta para remover Imobilizar ou Atordoamento colocado por você, coloque 1 ficha de Penalidade nessa mesma carta. Uma ativação por virada.",
+        "desencadeada": "Uma vez por rodada, quando um inimigo gastar uma ação para remover Imobilizar ou Atordoamento colocado por você, ganhe 1 ficha de Foco.",
+        "critico": "Ganhe fichas de Pacto iguais ao nível deste pacto."
+      },
+      "habilidade": {
+        "tipo": "Magia Arcana",
+        "requer": [
+          "Pacto",
+          "Trevas",
+          "Prisão"
+        ],
+        "lados": [
+          {
+            "lado": "A",
+            "nome": "Grilhão de Sombra",
+            "custo_fadiga": 1,
+            "limite_fadiga": 2,
+            "acao": "Padrão",
+            "texto": "1 de Fadiga, Ação Padrão: faça um ataque mágico com foco em alcance curto, causando dano Necrótico. Se causar dano, o defensor recebe 1 ficha de Imobilizar. Você pode gastar 1 Pacto para colocar também 1 ficha de Atormentado na mesma carta que recebeu Imobilizar."
+          },
+          {
+            "lado": "B",
+            "nome": "Peso da Sentença",
+            "custo_fadiga": 2,
+            "limite_fadiga": 3,
+            "acao": "Padrão",
+            "texto": "2 de Fadiga e 1 Pacto, Ação Padrão: escolha um inimigo em alcance curto que tenha Imobilizar colocado por você. Faça um teste contestado de Espírito contra Espírito dele. Se vencer, remova 1 dessas fichas de Imobilizar e coloque 1 ficha de Atordoamento na mesma carta. Esse Atordoamento é descartado no fim do próximo turno do alvo, se não tiver sido removido antes."
+          }
+        ]
+      },
+      "menor": "1 Pacto, Reação: depois que um aliado acertar um ataque contra um inimigo adjacente a você, coloque 1 ficha de Penalidade no defensor. Uma ativação por ataque.",
+      "teste": "A duração própria do Atordoamento evita uma prisão permanente só por impedir todas as ações. Testar especialmente contra chefes e criaturas com uma única carta.",
+      "cobranca_menor": "Aceite rendições de boa-fé e não execute nem autorize executar quem esteja sob sua guarda. Quebrar suspende esta reserva; repare protegendo ou libertando um prisioneiro com custo real para você, reconhecido pelo mestre."
+    }
+  ],
+  "fenix_menor": {
+    "estado": "proposta_apenas_para_pacto_menor_sem_alterar_o_pleno",
+    "beneficio": "Uma vez no seu turno, 1 Pacto da reserva menor da Fênix: depois de acertar uma magia concedida pelo pacto pleno, cause +1 de dano de Fogo em um único alvo atingido. Não coloca ficha de Fogo nem afeta outros alvos.",
+    "cobranca": "A cobrança menor da Fênix também depende de definição futura; sua obrigação plena continua em aberto."
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "ferramenta": "image_gen nativa",
+  "artes": [
+    {
+      "id": "EQ-001",
+      "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Create ONE complete mundane medieval utility knife, short matte steel single-edged blade, slight curved point, worn dark brown wooden handle with practical leather wrapping, simple functional design, discreet signs of use, no magical ornament. Full knife diagonally arranged and entirely visible, centered with generous clear margins. Art direction for Sistema 21: dark medieval fantasy, hand-painted digital illustration, semi-realistic believable materials, restrained brush texture, selective crisp details legible when printed small. Warm soft key light and subtle cool rim to separate edges. Muted natural colors. Genuine transparent background, isolated equipment only; no scenery, no human, no hand, no sheath, no extra objects, no lettering, no numbers, no label, no border, no card frame, no watermark. Square composition.",
+      "transparent_background": true,
+      "arquivo": "artes/piloto/EQ-001_v01.png"
+    },
+    {
+      "id": "EQ-010",
+      "prompt": "Standalone equipment illustration for a small tabletop RPG card, dark medieval fantasy painted digital semi-realism, believable worn materials and selective crisp details legible at small print size. Warm soft key light, subtle cool rim, restrained natural colors, complete object centered with generous margin. True transparent background. No text, letters, numbers, labels, card border, watermarks, people, hands, mannequins or scenery. Match the restrained grounded craftsmanship of a medieval equipment collection; NOT a glossy 3D game render.\nSubject: ONE stiletto: long very thin straight pointed rigid triangular-section steel dagger for piercing, small plain steel crossguard, well-finished dark grip. Full dagger diagonally arranged, entire blade and pommel visible. Subtle craftsmanship distinguishes it from a common utility knife. No magic effects.",
+      "transparent_background": true,
+      "arquivo": "artes/piloto/EQ-010_v01.png"
+    },
+    {
+      "id": "EQ-156",
+      "prompt": "Standalone equipment illustration for a small tabletop RPG card, dark medieval fantasy painted digital semi-realism, believable worn materials and selective crisp details legible at small print size. Warm soft key light, subtle cool rim, restrained natural colors, complete object centered with generous margin. True transparent background. No text, letters, numbers, labels, card border, watermarks, people, hands, mannequins or scenery. Match the restrained grounded craftsmanship of a medieval equipment collection; NOT a glossy 3D game render.\nSubject: ONE medieval hunting combat chain, made of thick truly interlocked oval dark iron links, with a reinforced loop/grip at one end and a small blunt steel weight at the other. Arrange the continuous chain in a loose open coil so its connected construction and flexible length are clearly visible. Rugged practical equipment, no blade, no spikes, no fire, no extra weapons.",
+      "transparent_background": true,
+      "arquivo": "artes/piloto/EQ-156_v01.png"
+    },
+    {
+      "id": "EQ-046",
+      "prompt": "Standalone equipment illustration for a small tabletop RPG card, dark medieval fantasy painted digital semi-realism, believable worn materials and selective crisp details legible at small print size. Warm soft key light, subtle cool rim, restrained natural colors, complete object centered with generous margin. True transparent background. No text, letters, numbers, labels, card border, watermarks, people, hands, mannequins or scenery. Match the restrained grounded craftsmanship of a medieval equipment collection; NOT a glossy 3D game render.\nSubject: ONE empty light leather scout's armor jerkin, dark brown tanned worn leather, flexible panels with practical folds and reinforced seams, discrete concealed-pocket seam in the lining. Three-quarter view showing the whole torso armor, no body or visible mannequin, no heavy plate, no helmet, no weapons. Functional common equipment.",
+      "transparent_background": true,
+      "arquivo": "artes/piloto/EQ-046_v01.png"
+    },
+    {
+      "id": "EQ-060",
+      "prompt": "Use case: stylized-concept. Standalone equipment illustration for a small tabletop RPG card. Dark medieval fantasy digital painting with subtle brush texture, believable worn materials and strong silhouette, selective crisp detail legible in print. Warm soft key light, faint cool edge light, restrained natural colors. One entire object fully visible, centered with a generous clear margin. REAL transparent background, no backdrop or haze. No people, hands, mannequins, scenery, writing, letters, numbers, logos, label, card border or watermark.\nSubject: A rare large rectangular curved legion shield, made of strong wooden core under worn dark red leather with dark steel edging, aged bronze central boss and restrained gold geometric accents. Solid tall broad scutum, medieval fantasy craftsmanship; entire shield in three-quarter view, no extra objects. No readable symbols or letters.",
+      "transparent_background": true,
+      "arquivo": "artes/piloto/EQ-060_v01.png"
+    },
+    {
+      "id": "EQ-061",
+      "prompt": "Use case: stylized-concept. Standalone equipment illustration for a small tabletop RPG card. Dark medieval fantasy digital painting with subtle brush texture, believable worn materials and strong silhouette, selective crisp detail legible in print. Warm soft key light, faint cool edge light, restrained natural colors. One entire object fully visible, centered with a generous clear margin. REAL transparent background, no backdrop or haze. No people, hands, mannequins, scenery, writing, letters, numbers, logos, label, card border or watermark.\nSubject: A small common medieval healing potion: compact hand-blown thick clear glass flask containing translucent ruby-red liquid, a simple cork stopper and plain leather cord around its neck. Practical everyday adventuring item, believable glass and subtle highlights, not a glowing sci-fi vial. No label, no tray, no props; entire bottle visible.",
+      "transparent_background": true,
+      "arquivo": "artes/piloto/EQ-061_v01.png"
+    },
+    {
+      "id": "EQ-116",
+      "prompt": "Use case: stylized-concept. Standalone equipment illustration for a small tabletop RPG card. Dark medieval fantasy digital painting with subtle brush texture, believable worn materials and strong silhouette, selective crisp detail legible in print. Warm soft key light, faint cool edge light, restrained natural colors. One entire object fully visible, centered with a generous clear margin. REAL transparent background, no backdrop or haze. No people, hands, mannequins, scenery, writing, letters, numbers, logos, label, card border or watermark.\nSubject: A single medieval arcane wand made of dark carved wood with ONE clear faceted quartz crystal mounted at its tip in aged silver binding. Subtle pale neutral magic only in the crystal, no fire or elemental effect. Full slender wand diagonally arranged, whole tip and handle visible with margin. No floating crystals, no hands.",
+      "transparent_background": true,
+      "arquivo": "artes/piloto/EQ-116_v01.png"
+    },
+    {
+      "id": "EQ-127",
+      "prompt": "Use case: stylized-concept. Standalone equipment illustration for a small tabletop RPG card. Dark medieval fantasy digital painting with subtle brush texture, believable worn materials and strong silhouette, selective crisp detail legible in print. Warm soft key light, faint cool edge light, restrained natural colors. One entire object fully visible, centered with a generous clear margin. REAL transparent background, no backdrop or haze. No people, hands, scenery, writing, letters, numbers, logos, label, card border or watermark.\nSubject: ONE small fire rune stone, dark basalt with worn edges and tactile stone grain, engraved with a simple ABSTRACT flame-shaped symbol, not an alphabet and not readable writing. Gentle amber-orange light from the carved grooves only. No floating rocks, no large flames, no additional objects. Entire rune stone visible.",
+      "transparent_background": true,
+      "arquivo": "artes/piloto/EQ-127_v01.png"
+    },
+    {
+      "id": "EQ-139",
+      "prompt": "Use case: stylized-concept. Standalone equipment illustration for a small tabletop RPG card. Dark medieval fantasy digital painting with subtle brush texture, believable worn materials and strong silhouette, selective crisp detail legible in print. Warm soft key light, faint cool edge light, restrained natural colors. One entire object fully visible, centered with a generous clear margin. REAL transparent background, no backdrop or haze. No people, hands, scenery, writing, letters, numbers, logos, label, card border or watermark.\nSubject: ONE closed medieval grimoire of fire, thick dark brown leather book with aged copper corner protectors, metal clasp, layered yellowed page edges and a subtle embossed abstract flame emblem on its cover. Very restrained ember glow in the emblem, minor old heat marks on leather. Entire closed book in three-quarter view, no title, no letters, no flames outside the book, no extra objects.",
+      "transparent_background": true,
+      "arquivo": "artes/piloto/EQ-139_v01.png"
+    }
+  ]
+}

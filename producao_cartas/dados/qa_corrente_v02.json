@@ -1,0 +1,22 @@
+{
+  "id": "EQ-156",
+  "versao": "02",
+  "dados_repetidos_no_verso": [
+    "categoria",
+    "dano",
+    "alcance",
+    "requisito",
+    "tags",
+    "limite de Fadiga"
+  ],
+  "habilidade_integral": true,
+  "corpo_verso_pt": 9,
+  "medidas_mm": [
+    63,
+    88
+  ],
+  "duplex_validado": true,
+  "custo_fadiga": 2,
+  "limite_fadiga": 2,
+  "revisao_visual": "As quatro páginas finais foram renderizadas e inspecionadas; dados repetidos, habilidade completa, fonte 9 pt e sem sobreposição."
+}

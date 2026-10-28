@@ -1,0 +1,1326 @@
+[
+  {
+    "id": "EQ-002",
+    "nome": "Florete",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: florete de aço fino, lâmina longa e estreita, guarda pequena e cabo de couro marrom. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-002_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-003",
+    "nome": "Bastão",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: bastão longo de madeira escura, pontas reforçadas discretamente com ferro. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-003_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-004",
+    "nome": "Espada Curta",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: espada curta medieval de aço fosco, guarda reta simples, cabo de couro. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-004_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-005",
+    "nome": "Espada Longa",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: espada longa medieval de dois gumes, guarda reta e cabo sóbrio de couro. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-005_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-006",
+    "nome": "Lança",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: lança longa de haste de madeira e ponta de aço em forma de folha. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-006_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-007",
+    "nome": "Maça",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: maça medieval curta de aço, cabeça compacta com aletas sem espinhos, cabo de couro. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-007_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-008",
+    "nome": "Machado de Guerra",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: machado de guerra medieval de uma lâmina larga, cabo reto robusto. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-008_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-009",
+    "nome": "Montante",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: montante medieval de duas mãos, lâmina longa de dois gumes, guarda larga. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-009_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-011",
+    "nome": "Florete de Duelista",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: florete de duelista elegante, lâmina fina e guarda protetora de aço com curvas discretas. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-011_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-012",
+    "nome": "Chicote",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: chicote de couro trançado escuro, longo, parcialmente enrolado, sem lâmina nem peso. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-012_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-013",
+    "nome": "Francisca",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: francisca medieval, machado de arremesso com cabeça curva de aço e cabo curto de madeira. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-013_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-014",
+    "nome": "Espada do Mestre-Ferreiro",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: espada de mestre ferreiro, aço bem forjado com padrão sutil, guarda refinada e funcional. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-014_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-015",
+    "nome": "Alabarda",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: alabarda medieval de haste longa, cabeça de aço com machado lateral, ponta e gancho. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-015_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-016",
+    "nome": "Maça-Estrela",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: maça-estrela medieval, cabeça esférica de aço com espinhos curtos, cabo de couro. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-016_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-017",
+    "nome": "Machado Barbado",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: machado barbado medieval, lâmina longa para baixo junto ao cabo, aço usado e madeira escura. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-017_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-018",
+    "nome": "Montante de Batalha",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: montante de batalha de duas mãos, lâmina larga longa com sinais de uso, guarda reforçada. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-018_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-019",
+    "nome": "Adaga da Mão Vazia",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: adaga rara pequena de aço escurecido, guarda mínima, pomo em forma abstrata de palma vazia. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-019_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-020",
+    "nome": "Florete do Contragolpe",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: florete raro de contragolpe, lâmina fina, guarda de aço trabalhada e equilibrada. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-020_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-021",
+    "nome": "Cajado do Condutor",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: cajado de combate longo de madeira escura, faixas finas de cobre envelhecido, acabamento arcano discreto. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-021_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-022",
+    "nome": "Lâmina do Vento",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: espada curta rara leve, lâmina delgada de aço e guarda com curvas discretas evocando vento. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-022_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-023",
+    "nome": "Gládio Inquietante",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: gládio raro de lâmina curta larga, aço escuro e guarda sóbria de bronze, aspecto inquietante. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-023_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-024",
+    "nome": "Lança da Muralha",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: lança rara de haste robusta, ponta larga e guarda transversal curta evocando defesa de muralha. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-024_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-025",
+    "nome": "Quebra-Elmos",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: maça rara pesada quebra-elmos, cabeça compacta com aletas grossas de ferro e cabo reforçado. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-025_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-026",
+    "nome": "Machado da Sepultura",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: machado raro de guerra de aço enegrecido, lâmina larga marcada por uso, detalhes funerários abstratos. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-026_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-027",
+    "nome": "Montante do Frenesi",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: montante raro do frenesi, lâmina grande pesada de aço, guarda áspera e cabo de couro vermelho escuro. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-027_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-028",
+    "nome": "Shuriken",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: uma única estrela de arremesso shuriken de aço, quatro pontas e furo central. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-028_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-029",
+    "nome": "Machado de Arremesso",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: machado de arremesso simples, cabeça pequena de aço e cabo curto de madeira. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-029_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-030",
+    "nome": "Javelin",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: javelin, lança leve de arremesso de haste fina e ponta pequena de aço. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-030_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-031",
+    "nome": "Arco Curto",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: arco curto medieval simples de madeira curva e corda tensionada, sem flecha. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-031_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-032",
+    "nome": "Arco Longo",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: arco longo medieval de madeira de uma peça, corda tensionada, sem flecha. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-032_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-033",
+    "nome": "Besta Pesada",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: besta pesada medieval, coronha robusta de madeira, arco de aço e mecanismo de disparo. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-033_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-034",
+    "nome": "Adaga Balanceada",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: adaga de arremesso balanceada, toda de aço fosco, empunhadura simples e lâmina simétrica. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-034_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-035",
+    "nome": "Machete Farpado",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: machete de arremesso com pequenas farpas junto ao dorso, aço gasto e empunhadura curta. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-035_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-036",
+    "nome": "Lança Espiral",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: lança de arremesso com sulco espiral discreto na ponta de aço e haste bem balanceada. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-036_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-037",
+    "nome": "Arco Recurvo",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: arco recurvo medieval de madeira e chifre, pontas recurvadas, corda tensionada, sem flechas. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-037_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-038",
+    "nome": "Arco de Teixo",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: arco de teixo artesanal refinado, madeira avermelhada e corda bem tensionada. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-038_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-039",
+    "nome": "Besta da Seta Dupla",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: besta medieval de disparo duplo, dois canais paralelos para virotes, coronha de madeira e arco de aço. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-039_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-040",
+    "nome": "Leque de Lâminas",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: leque raro de lâminas de arremesso, um único leque aberto de varetas de aço afiadas. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-040_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-041",
+    "nome": "Machado Sedento",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: machado raro de arremesso, aço escuro com veios rubros muito sutis e cabo curto. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-041_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-042",
+    "nome": "Lança Trovejante",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: lança rara de arremesso, ponta de aço com motivo abstrato de raio gravado e cobre envelhecido. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-042_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-043",
+    "nome": "Arco das Sombras",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: arco raro de madeira negra e corda fina, detalhes de penumbra no material, sem fumaça nem flecha. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-043_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-044",
+    "nome": "Arco da Maré",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: arco raro de madeira azulada gasta e pequenos detalhes de bronze que evocam ondas. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-044_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-045",
+    "nome": "Balestra de Cerco",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: balestra rara pesada de cerco portátil, mecanismo de aço reforçado e coronha espessa. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-045_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-047",
+    "nome": "Cota de Malha",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: cota de malha medieval vazia, anéis de aço entrelaçados, peça inteira sem corpo nem manequim. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-047_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-048",
+    "nome": "Arnês de Placas",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: arnês completo de placas de aço medieval vazio, peitoral e proteções articuladas, sem pessoa. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-048_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-049",
+    "nome": "Couro Élfico",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: armadura leve de couro élfico vazio, couro verde escuro com costuras elegantes em folhas abstratas. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-049_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-050",
+    "nome": "Brunea de Escamas",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: brunea de pequenas escamas metálicas sobre couro, armadura vazia de corpo inteiro visível. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-050_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-051",
+    "nome": "Armadura Samurai Temperada",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: armadura samurai temperada vazia, placas lamelares de ferro escuro e cordões discretos, sem corpo. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-051_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-052",
+    "nome": "Manto do Vento",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: manto raro de tecido leve verde acinzentado, aberto com dobras que evocam asas para planar, vazio. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-052_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-053",
+    "nome": "Couraça do Contra-Ataque",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: couraça rara de aço articulado, acabamento robusto com relevo geométrico de defesa, vazia. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-053_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-054",
+    "nome": "Peitoral de Dalpnor",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: peitoral raro de placas de aço pesado, acabamento escuro com bronze envelhecido, sólido e antigo. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-054_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-055",
+    "nome": "Escudo Leve",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: escudo leve redondo de madeira com aro e umbo simples de ferro. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-055_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-056",
+    "nome": "Escudo Pesado",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: escudo pesado grande de madeira reforçada por aço, forma alongada protetora. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-056_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-057",
+    "nome": "Broquel Ágil",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: broquel ágil pequeno redondo, todo de aço, umbo central saliente e riscos de combate. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-057_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-058",
+    "nome": "Escudo de Investida",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: escudo pesado de investida, grande, face de aço reforçada e ressalto central robusto. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-058_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-059",
+    "nome": "Placa de Luz",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: escudo raro leve de metal claro, relevo abstrato de luz e brilho dourado muito discreto. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-059_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-062",
+    "nome": "Tocha",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: tocha medieval de haste de madeira e tecido enrolado na ponta, chama pequena controlada. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-062_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-063",
+    "nome": "Antídoto",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: pequeno frasco medieval de antídoto, vidro artesanal verde com líquido claro e tampa de cortiça. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-063_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-064",
+    "nome": "Ração de Viagem",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: pacote de ração de viagem medieval, pão seco, carne seca e frutas secas em um embrulho compacto de pano. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-064_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-065",
+    "nome": "Bomba de Fumaça",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: bomba de fumaça medieval, pequeno recipiente de cerâmica escura com pavio curto, sem explosão. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-065_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-066",
+    "nome": "Pedra de Amolar",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: uma pedra de amolar retangular cinza, superfície gasta e bordas arredondadas, sem outras ferramentas. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-066_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-067",
+    "nome": "Veneno Ácido",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: pequeno frasco de veneno ácido, vidro espesso e líquido verde amarelado, tampa selada, sem rótulo. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-067_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-068",
+    "nome": "Poção de Mana Pequena",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: pequeno frasco de poção de mana azul translúcida, vidro artesanal e tampa de cortiça. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-068_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-069",
+    "nome": "Óleo Antiespectral",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: frasco de óleo antiespectral, líquido prateado pálido, vidro pequeno e fecho de metal envelhecido. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-069_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-070",
+    "nome": "Gazua",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: uma gazua medieval fina de aço, ponta recurvada para abrir fechaduras e cabo simples. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-070_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-071",
+    "nome": "Poção de Pele de Pedra",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: frasco de poção de pele de pedra, líquido cinza mineral espesso com reflexos prateados. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-071_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-072",
+    "nome": "Poção Carmim",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: frasco de poção carmim, líquido vermelho escuro translúcido e tampa simples de cortiça. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-072_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-073",
+    "nome": "Incenso de Jasmim",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: incenso de jasmim medieval, pequeno feixe de varetas secas unido por barbante, flores de jasmim discretas. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-073_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-074",
+    "nome": "Frasco de Piche",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: frasco de piche, recipiente cerâmico de boca larga selado com pano, piche preto espesso visível. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-074_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-075",
+    "nome": "Poção Turquesa",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: frasco de poção turquesa, líquido turquesa translúcido, vidro espesso e tampa de cortiça. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-075_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-076",
+    "nome": "Sangue de Batalha",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: pequeno frasco raro de sangue de batalha, líquido rubro intenso, montagem de ferro envelhecido. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-076_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-077",
+    "nome": "Flocos de Sombras",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: pequeno recipiente aberto com flocos negros de sombra de aparência cristalina, um único conjunto compacto. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-077_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-078",
+    "nome": "Água Abençoada",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: frasco raro de água abençoada, água clara com luz dourada sutil, prata envelhecida e símbolo abstrato. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-078_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-079",
+    "nome": "Flecha Explosiva",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: uma flecha explosiva medieval, haste inteira, penas e ponta com pequeno invólucro de carga, sem explosão. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-079_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-080",
+    "nome": "Pergaminho do Desencantamento",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: pergaminho de desencantamento parcialmente enrolado, selo abstrato de cera, sem escrita legível. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-080_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-081",
+    "nome": "Corda (15 m)",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: corda de cânhamo grossa de quinze metros, enrolada em um feixe compacto com as pontas visíveis. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-081_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-082",
+    "nome": "Pé de Cabra",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: pé de cabra de ferro escuro, uma ponta curva bifurcada e a outra achatada. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-082_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-083",
+    "nome": "Pederneira",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: pederneira e pequeno aço de acender fogo como um único conjunto compacto, sem chama. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-083_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-084",
+    "nome": "Kit de Reparos",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: kit de reparos medieval em bolsa aberta de couro, agulha, linha e pequenas ferramentas funcionais. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-084_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-085",
+    "nome": "Kit de Acampamento",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: kit compacto de acampamento medieval, manta enrolada com pequena panela e saco de utensílios amarrados. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-085_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-086",
+    "nome": "Lanterna",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: lanterna medieval de ferro e vidro com vela acesa no interior, objeto inteiro isolado. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-086_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-087",
+    "nome": "Vara de 3 Metros",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: vara reta longa de madeira de três metros, inteira em diagonal, extremidades visíveis. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-087_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-088",
+    "nome": "Espelho de Bolso",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: pequeno espelho medieval de bolso com moldura simples de bronze e superfície polida. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-088_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-089",
+    "nome": "Bandoleira de Armas",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: bandoleira medieval de couro com presilhas e bainhas vazias para armas, sem arma nem pessoa. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-089_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-090",
+    "nome": "Ferramentas de Ladrão",
+    "prompt": "Use case: stylized-concept. Asset type: fictional medieval fantasy RPG equipment card illustration. Subject: ONE compact CLOSED oblong dark brown leather tool wallet, neatly rolled, with a narrow strap and aged brass buckle. It is a portable adventurer's tool case, no tools visible. Fine worn leather grain, sober practical medieval construction. Semirealistic digital painting with the same dark fantasy equipment collection aesthetic, soft warm highlights and restrained cool rim. Show the whole closed case centered with clear margin, genuinely transparent background. No people, hands, action, locks, diagrams, writing, lettering, numbers, labels, frame, scenery, smoke or watermark.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-090_v01.png",
+    "status": "gerada",
+    "ajuste_visual": "Estojo de ferramentas fechado; nenhuma técnica ou uso é mostrado.",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-091",
+    "nome": "Símbolo Sagrado",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: símbolo sagrado de divindade fictícia, medalhão de bronze com emblema geométrico original e cordão. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-091_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-092",
+    "nome": "Corda de Arco da Penumbra",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: uma corda de arco da penumbra, fio escuro resistente enrolado, laçadas nas duas pontas, sem arco. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-092_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-093",
+    "nome": "Varinha Eletrizante",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: varinha eletrizante de madeira escura com pequeno detalhe de cobre e brilho elétrico sutil na ponta. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-093_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-094",
+    "nome": "Paraquedas Élfico",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: paraquedas élfico dobrado em conjunto compacto, seda verde clara e cordas delicadas de aparência medieval. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-094_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-095",
+    "nome": "Bússola do Rumo",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: bússola medieval de bronze envelhecido, tampa aberta e agulha apontando rumo, sem letras nem números. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-095_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-096",
+    "nome": "Equipamento de Pesca",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: equipamento de pesca medieval compacto, linha enrolada, anzol e boia de madeira em pequena bolsa. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-096_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-097",
+    "nome": "Gancho de Escalada",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: gancho de escalada de ferro com três garras e pequeno trecho de corda, objeto inteiro. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-097_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-098",
+    "nome": "Grilhão de Ferro",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: um grilhão de ferro medieval, duas algemas robustas ligadas por uma curta corrente. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-098_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-099",
+    "nome": "Manopla de Bronze",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: uma manopla de bronze articulada vazia, proteção de mão medieval sem mão humana. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-099_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-100",
+    "nome": "Botas de Lince",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: um par de botas de couro macio de lince, leves, sola flexível, acabamento furtivo. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-100_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-101",
+    "nome": "Pergaminho Ancestral",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: pergaminho ancestral de papel envelhecido parcialmente enrolado com lacre antigo, sem escrita legível. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-101_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-102",
+    "nome": "Manto Camuflado",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: manto camuflado vazio, tecido verde e marrom de floresta, capuz e dobras naturais. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-102_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-103",
+    "nome": "Anel do Iniciado",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: anel do iniciado, um único anel simples de prata envelhecida com pequena pedra arcana. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-103_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-104",
+    "nome": "Elmo de Touro",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: elmo medieval de touro, aço escuro com dois chifres curtos robustos e proteção facial. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-104_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-105",
+    "nome": "Bainha Impetuosa",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: bainha de espada de couro avermelhado com ferragens de bronze, vazia e sem espada. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-105_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-106",
+    "nome": "Cachecol da Parceria",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: cachecol longo da parceria, tecido quente em duas cores discretas entrelaçadas, dobrado sem corpo. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-106_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-107",
+    "nome": "Cinto Estelar",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: cinto estelar de couro azul escuro, fivela metálica com motivo abstrato de estrela. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-107_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-108",
+    "nome": "Botas Seccundas",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: um par de botas seccundas, couro escuro reforçado e pequenos detalhes de bronze envelhecido. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-108_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-109",
+    "nome": "Carta da Sorte",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: uma única carta da sorte antiga, marfim e ouro gasto, emblema abstrato de fortuna, sem texto nem números. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-109_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-110",
+    "nome": "Ampulheta Trincada",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: ampulheta trincada rara, vidro com pequena fissura visível, areia pálida e armação de bronze antigo. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-110_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-111",
+    "nome": "Máscara do Impostor",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: máscara do impostor, máscara facial inteira de material pálido e feições neutras, sem rosto humano. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-111_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-112",
+    "nome": "Selo de Sangue",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: selo de sangue raro, pequeno medalhão com núcleo de pedra rubra e armação de ferro, sem escrita. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-112_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-113",
+    "nome": "Colar Vinculador",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: colar vinculador raro, corrente fina com pingente de dois aros entrelaçados em prata antiga. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-113_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-114",
+    "nome": "Grevas do Vazio",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: um par de grevas do vazio, aço negro e brilho violeta discreto nas juntas, sem pernas. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-114_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-115",
+    "nome": "Espelho Arcano",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: espelho arcano de mão, moldura de prata antiga e vidro com reflexo azul profundo abstrato. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-115_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-117",
+    "nome": "Cajado do Aprendiz",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: cajado do aprendiz arcano, haste de madeira e pequeno cristal simples preso na ponta. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-117_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-118",
+    "nome": "Cajado de Batalha",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: cajado de batalha arcano, haste robusta com reforços de aço e cristal discreto na ponta. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-118_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-119",
+    "nome": "Orbe de Concentração",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: orbe de concentração, esfera de cristal límpido em pequena armação de bronze envelhecido. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-119_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-120",
+    "nome": "Orbe de Proteção",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: orbe de proteção, esfera de cristal azulado em armação de prata com motivos geométricos de defesa. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-120_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-121",
+    "nome": "Cálice da Vida",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: cálice da vida sagrado, taça de bronze dourado envelhecido com pequeno brilho quente interior, sem religião real. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-121_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-122",
+    "nome": "Relicário do Guardião",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: relicário do guardião sagrado, pequena caixa de prata antiga com emblema fictício de escudo. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-122_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-123",
+    "nome": "Marca da Punição",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: marca da punição sagrada, talismã de metal escuro com emblema abstrato de julgamento e cordão. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-123_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-124",
+    "nome": "Turíbulo das Bênçãos",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: turíbulo das bênçãos, incensário medieval de bronze suspenso por pequenas correntes, objeto inteiro. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-124_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-125",
+    "nome": "Escrituras de Maftoné",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: escrituras de Maftoné, livro sagrado fictício de couro envelhecido com emblema abstrato, sem escrita. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-125_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-126",
+    "nome": "Rosário da Devoção",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: rosário da devoção, contas de madeira e pedra em cordão fechado, medalhão geométrico fictício, sem cruz. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-126_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-128",
+    "nome": "Runa de Água",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: uma pedra de runa de água, seixo azul cinza gravado com símbolo abstrato de onda e brilho azul sutil. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-128_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-129",
+    "nome": "Runa de Terra",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: uma pedra de runa de terra, pedra marrom gravada com símbolo abstrato de montanha e brilho âmbar sutil. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-129_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-130",
+    "nome": "Runa de Ar",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: uma pedra de runa de ar, pedra clara gravada com símbolo abstrato de espiral e brilho pálido sutil. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-130_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-131",
+    "nome": "Runa de Luz",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: uma pedra de runa de luz, pedra marfim gravada com símbolo abstrato radiante e brilho dourado sutil. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-131_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-132",
+    "nome": "Runa de Sombra",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: uma pedra de runa de sombra, basalto negro gravado com símbolo abstrato de eclipse e brilho violeta sutil. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-132_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-133",
+    "nome": "Amuleto de Pacenas",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: amuleto de Pacenas, divindade fictícia de neblina, pingente de prata opaca com padrões de névoa abstratos. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-133_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-134",
+    "nome": "Amuleto de Grevha",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: amuleto de Grevha, divindade fictícia da vanguarda, pingente robusto de bronze com emblema abstrato marcial. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-134_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-135",
+    "nome": "Amuleto de Nebtor",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: amuleto de Nebtor, divindade fictícia da escrita, pingente de bronze em forma abstrata de pena, sem letras. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-135_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-136",
+    "nome": "Amuleto de Vael",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: amuleto de Vael, divindade fictícia da chama purificadora, pingente de ouro velho com chama abstrata. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-136_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-137",
+    "nome": "Amuleto de Kanil",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: amuleto de Kanil, divindade fictícia do milho, pingente de bronze com espiga estilizada, sem símbolo religioso real. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-137_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-138",
+    "nome": "Amuleto de Kagen",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: amuleto de Kagen, divindade fictícia do umbral, pingente escuro de duas formas entrelaçadas evocando passagem. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-138_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-140",
+    "nome": "Grimório da Água",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: grimório fechado de água, couro azul marinho, cantos de prata envelhecida e símbolo abstrato de onda. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-140_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-141",
+    "nome": "Grimório da Terra",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: grimório fechado de terra, couro castanho espesso, cantos de bronze e símbolo abstrato de montanha. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-141_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-142",
+    "nome": "Grimório do Ar",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: grimório fechado de ar, couro cinza claro, cantos de prata e símbolo abstrato de espiral. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-142_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-143",
+    "nome": "Grimório da Luz",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: grimório fechado de luz, couro marfim envelhecido, cantos de ouro antigo e símbolo abstrato radiante. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-143_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-144",
+    "nome": "Grimório da Sombra",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: grimório fechado de sombra, couro negro violeta, cantos de prata escura e símbolo abstrato de eclipse. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-144_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-145",
+    "nome": "Códice das Cinzas",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: códice das cinzas raro fechado, couro cinza queimado, bronze antigo e emblema abstrato de brasa. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-145_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-146",
+    "nome": "Sussurros do Breu",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: grimório raro sussurros do breu fechado, couro negro, prata envelhecida e emblema abstrato de penumbra. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-146_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-147",
+    "nome": "Códice da Chama Negra",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: códice da chama negra raro fechado, couro negro com relevo de chama violeta escura e cantos de ferro. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-147_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-148",
+    "nome": "Grimório do Lodo",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: grimório do lodo raro fechado, couro verde oliva e marrom, bronze oxidado e emblema abstrato de lama. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-148_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-149",
+    "nome": "Estudo de Geofótons",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: livro raro estudo de geofótons fechado, couro marrom e marfim, relevo abstrato de cristal e raios de luz. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-149_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-150",
+    "nome": "Portfólio do Luar Marinho",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: portfólio do luar marinho raro fechado, couro azul profundo, prata antiga e emblema abstrato de lua sobre ondas. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-150_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-151",
+    "nome": "A Batalha dos Anjos",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: livro sagrado fictício A Batalha dos Anjos fechado, couro bordô, ouro envelhecido e relevo de asas abstratas. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-151_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-152",
+    "nome": "A Criação da Luz",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: livro sagrado fictício A Criação da Luz fechado, couro marfim, bronze dourado e relevo abstrato radiante. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-152_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-153",
+    "nome": "Os Ensinamentos Divinos",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: livro sagrado fictício Os Ensinamentos Divinos fechado, couro castanho e ouro antigo, emblema geométrico. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-153_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-154",
+    "nome": "As Leis Fundamentais",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: livro sagrado fictício As Leis Fundamentais fechado, couro azul escuro, prata antiga e relevo abstrato de equilíbrio. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-154_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  },
+  {
+    "id": "EQ-155",
+    "nome": "O Fogo Purificador",
+    "prompt": "Use case: stylized-concept. Asset type: standalone equipment illustration for a 63 x 88 mm tabletop RPG card. Dark medieval fantasy, semirealistic digital painting, credible weathered materials, selective detail and a strong readable silhouette. Soft warm key light from the left and a restrained cool rim. Natural muted colors, no strong glow. One equipment item or its explicitly described compact kit, fully visible and centered with 8 percent clear margin. A genuinely transparent background, including all holes and empty spaces. No backdrop, floor, smoke, people, hands, mannequin, labels, letters, numbers, frame, interface or watermark. Subject: livro sagrado fictício O Fogo Purificador fechado, couro vermelho escuro, ouro antigo e relevo abstrato de chama. Render only the equipment, no literal title or written text. Preserve a functional medieval design.",
+    "transparent_background": true,
+    "arquivo": "artes/lote/EQ-155_v01.png",
+    "status": "gerada",
+    "ferramenta": "image_gen.imagegen (integrada)"
+  }
+]

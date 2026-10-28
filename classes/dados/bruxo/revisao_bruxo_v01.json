@@ -1,0 +1,387 @@
+{
+  "titulo": "Revisão dos dez pactos e habilidades gerais do Bruxo",
+  "data": "2026-10-27",
+  "estado": "parecer_sem_alteracao_das_cartas",
+  "metodo": "Leitura de 10 pactos, 20 faces iniciais, 18 entradas gerais e 30 faces gerais; confrontação com as definições do autor e o resumo de regras. Sem partidas ou simulação de equilíbrio.",
+  "conclusao": "A arquitetura segue a filosofia e os dez patronos têm identidades distinguíveis. Os ajustes mais urgentes estão na consequência de quebrar o pacto, coerência entre preparação e pagamento, janelas de resolução e algumas generalizações que neutralizam fraquezas.",
+  "regras_gerais": [
+    [
+      "1",
+      "Decidir",
+      "A suspensão ainda preserva poder demais",
+      "A convenção suspende apenas ganhos e gastos de Pacto. Vigília da Porta ainda dá Guarda e Bloqueio; a desencadeada do Trovão ainda pode dar Reação; outras desencadeadas também não gastam fichas. Portanto, quebrar o compromisso pode conservar boa parte do pacote. Recomendo suspender também os benefícios do herói e os aprimoramentos do vínculo, preservando as versões básicas das magias necessárias para reparar. É uma proposta; a consequência da Fênix continua em aberto."
+    ],
+    [
+      "2",
+      "Esclarecer",
+      "Momento de pagar recursos",
+      "Estender o Sinal, O Patrono Lembra, Intercessão e várias ativadas cobram depois de um resultado. A regra geral exige pagar antes do teste, salvo exceção escrita. Indicar nessas cartas que o pagamento ocorre no gatilho posterior e só interfere no efeito adicional; não reabre custos, acerto ou defesas já resolvidos."
+    ],
+    [
+      "3",
+      "Esclarecer",
+      "Reação, turno e rodada",
+      "Uma vez por turno pode permitir ativações em turnos diferentes da mesma rodada. Isso não é um erro por si só. Especificar quais gatilhos devem ser uma vez no seu turno e impedir repetição da mesma resposta ao mesmo ataque quando essa repetição não for pretendida. Magias de Reação precisam de indicação de velocidade e conservam seu gatilho mesmo se outra habilidade dispensar a ação."
+    ],
+    [
+      "4",
+      "Decidir",
+      "Conjuração e tags",
+      "Somente Fagulha Cativa declara expressamente Conjuração. Não presumir que toda magia espalha Fadiga. Marcar quais faces têm esse símbolo e fazer recuperações identificarem a carta onde a Fadiga foi efetivamente paga. Também explicitar se a classificação Magia Arcana concede tag ao Bruxo ou apenas descreve a habilidade."
+    ],
+    [
+      "5",
+      "Testar",
+      "Pouca versatilidade deve sobreviver às habilidades gerais",
+      "O repertório inicial é estreito e combina com a proposta. As cartas gerais acrescentam muita seleção de cartas, troca de resultados, recuperação e resistência à anulação. Isso pode fazer todos os Bruxos jogarem pelo mesmo conjunto de correções. Testar construções de níveis equivalentes com escolhas reais de XP, preservando os defeitos dos patronos; não proibir sinergias com itens ou backgrounds."
+    ]
+  ],
+  "patronos": [
+    [
+      "BR-P00",
+      "Identidade forte; manter os modos aprovados",
+      "Fogo em área, mortes e recuperação formam um ciclo próprio. O ponto pendente é o contrato, não a identidade.",
+      [
+        [
+          "1",
+          "Decidir",
+          "Cobrança, ação e escopo",
+          "Fechar prazo, condição de cumprimento, consequência e reparação. Escrever a ação da cura do herói e o escopo espacial do Fogo dobrado. Preservar a inclusão de outras fontes, já aprovada."
+        ],
+        [
+          "2",
+          "Testar",
+          "Potência total da área",
+          "Com X=2 e quatro inimigos adjacentes, há +4 no alvo principal e 20 de dano direto nos adjacentes: 24 adicionais ao ataque básico, antes de resistências. Cinco fichas de Fogo ainda podem causar 10 no próximo disparo, se permanecerem e todos os alvos chegarem a sofrê-lo. É prioridade de teste; não recomendo desfazer automaticamente a escolha aprovada."
+        ],
+        [
+          "3",
+          "Esclarecer",
+          "Absorver sem Fogo",
+          "A fórmula F+2X permite cura com F=0. Nesse caso, custa uma ação, 2 Fadigas e X Pactos para curar 2X, enquanto a ativada cura 3X com os mesmos Pactos. Definir a ação da ativada antes de comparar ou alterar esse verso. Se o objetivo for exigir chamas, isso precisa ser escrito; hoje não está exigido."
+        ]
+      ]
+    ],
+    [
+      "BR-P01",
+      "Uma das identidades mais completas",
+      "Exílio compra dano, eficiência e uma segunda chance no estouro. A reserva vital continua pagando a conta.",
+      [
+        [
+          "1",
+          "Esclarecer",
+          "Sangrar o Véu e recuperação",
+          "Manter o custo de exílio e o bônus +2 por carta. Na desencadeada, recuperar da carta que recebeu a Fadiga da magia; se não houver Conjuração, a redação atual basta. Pagar 1 e recuperar depois não viola o mínimo de 1."
+        ],
+        [
+          "2",
+          "Testar",
+          "Pacto menor do Abismo",
+          "A cobrança menor exila a carta final de todo estouro enquanto o benefício só pode ser usado uma vez por cena. O preço é muito mais frequente que o favor e ainda prejudica o Bruxo quando está no verso Procuração. Recomendo vincular essa cobrança menor aos testes em que seu favor foi usado, mantendo a cobrança plena ampla."
+        ]
+      ]
+    ],
+    [
+      "BR-P02",
+      "Proteção pessoal, distinta do Inverno",
+      "A Sentinela assume riscos pelo protegido; o Inverno sustenta o próprio espaço. Não precisam ser fundidos.",
+      [
+        [
+          "1",
+          "Manter",
+          "Vigília e Punho",
+          "Guarda/Bloqueio sem acumulação e retaliação contra quem atacou o protegido formam preparação e consequência. Não há evidência suficiente para reduzir os números nesta leitura."
+        ],
+        [
+          "2",
+          "Esclarecer",
+          "Ativada e compromisso",
+          "Escrever que os 3X são reduzidos depois das resistências e antes da distribuição. Definir o que acontece se o protegido sai da cena, cai ou morre: a obrigação e a troca de protegido não podem ficar sem referência."
+        ],
+        [
+          "3",
+          "Testar",
+          "Imunidade por definição de impossibilidade",
+          "A exceção para não poder aproximar-se é necessária para deslocamento imposto; não deve cobrir uma impossibilidade que o próprio Bruxo escolheu criar para abandonar o protegido."
+        ]
+      ]
+    ],
+    [
+      "BR-P03",
+      "Identidade forte, com redundância possível",
+      "A vantagem própria é decidir compras depois do defensor; isso mantém o risco de estouro e usa a informação como poder.",
+      [
+        [
+          "1",
+          "Esclarecer",
+          "Marcação, olhar e revelar",
+          "Definir se Marcação apenas permite ao Bruxo olhar a Fechada ou se já a torna revelada para todos e para a desencadeada. Conforme essa definição, a ativada pode ser útil, redundante ou conceder apenas informação pública. Não mudar Veredito Antecipado para acerto garantido."
+        ],
+        [
+          "2",
+          "Testar",
+          "Ganho de Pacto",
+          "Depende de um adversário Marcado estourar contra você. Comparar frequência real com os ganhos controláveis de Abismo e Inverno; a reserva inicial evita ficar sem jogo, mas a reposição pode ser rara."
+        ]
+      ]
+    ],
+    [
+      "BR-P04",
+      "Identidade clara e muito tática",
+      "Abrir caminhos e colocar inimigos onde aliados precisam deles é diferente de prender ou proteger.",
+      [
+        [
+          "1",
+          "Esclarecer",
+          "Passagem Indevida",
+          "A opção inimiga deve dizer explicitamente 1 Fadiga e 2 Pactos no total, substituindo o custo de 1 Pacto da troca com aliado. Teste contestado e destinos válidos devem permanecer."
+        ],
+        [
+          "2",
+          "Testar",
+          "Mão Além do Limiar",
+          "Manter inicialmente o deslocamento no acerto. Testar pontes, precipícios e inimigos grandes. As regras gerais precisam esclarecer colisão e queda; não é necessário impor agora uma limitação de tamanho inexistente na magia."
+        ],
+        [
+          "3",
+          "Esclarecer",
+          "Movimento após ser alvo",
+          "A ativada precisa de uma resolução definida para perda de alvo: cancela, permite nova escolha ou mantém o ataque? A carta remete a uma regra geral cuja redação precisa estar disponível. Não tratar qualquer passo como anulação automática."
+        ]
+      ]
+    ],
+    [
+      "BR-P05",
+      "Boa identidade; o verso precisa de revisão",
+      "A ameaça de prisão força o adversário a escolher entre suportar o estado e gastar ações para livrar-se.",
+      [
+        [
+          "1",
+          "Ajustar",
+          "Peso da Sentença pode aliviar a prisão",
+          "O verso paga 2 Fadigas, 1 Pacto e uma Padrão, exige preparação, virada e vitória em outro teste, mas troca Imobilizar por Atordoamento temporário. Ao remover Imobilizar, pode liberar o deslocamento que impedia a fuga. A regra de Atordoamento ainda precisa esclarecer qual ação se perde. Sugiro manter Imobilizar e acrescentar no máximo 1 Atordoamento deste efeito, com a duração curta atual; testar chefes antes de aprovar. Alternativamente, manter a conversão e barateá-la, se a intenção for oferecer uma modalidade diferente."
+        ],
+        [
+          "2",
+          "Manter",
+          "Grilhão e punição da fuga",
+          "O acerto com dano como requisito e a Penalidade após a virada sustentam o motor. Não precisa de mais um tipo de ficha."
+        ]
+      ]
+    ],
+    [
+      "BR-P06",
+      "Distinta dos Sonhos, mas com peças desalinhadas",
+      "A Mesa devora esforço e libera capacidade inimiga em troca de dano. Sonhos retira pesadelos para selecionar a própria mão.",
+      [
+        [
+          "1",
+          "Ajustar",
+          "Ativada não melhora Devorar o Esforço",
+          "A ativada pede um ataque mágico, mas Devorar é um teste contestado de Espírito. Logo, o principal golpe do motor não recebe seu aprimoramento nem a cura; eles só se ligam ao ataque da outra face. Recomendo permitir explicitamente aprimorar o dano de Devorar, pagando antes do teste, sem acrescentar dano de foco nem Espírito novamente por acidente."
+        ],
+        [
+          "2",
+          "Ajustar",
+          "Cobrança pode não custar nada",
+          "Recusar remoção de Fadiga de outro personagem não cria escolha se o grupo não possui esse recurso. Recomendo uma restrição relevante também no próprio Bruxo: por exemplo, durante o prazo, só a recuperação normal e a desencadeada deste patrono removem sua Fadiga. Isso preserva a ideia de sustentar-se pelo banquete, mas é uma mudança proposta, não aplicada."
+        ],
+        [
+          "3",
+          "Testar",
+          "Inimigos sem Fadiga",
+          "O motor perde a alimentação contra criaturas sem capacidade de Fadiga. Essa fraqueza pode ser intencional e não exige converter transbordo em alimento. Testar essas cenas antes de decidir se é restritiva demais."
+        ]
+      ]
+    ],
+    [
+      "BR-P07",
+      "Boa identidade de resposta explosiva",
+      "Carrega no próprio turno, responde ao ataque inimigo e compete pelo uso das Reações. O Inverno concentra e conserva, enquanto o Trovão consome.",
+      [
+        [
+          "1",
+          "Ajustar",
+          "Repetição de Descarregar a Tormenta",
+          "O gatilho não limita uma descarga por ataque inimigo. Com Reação normal e ficha extra, pode-se ler que ambas respondem ao mesmo ataque. Recomendo escrever uma utilização desta magia por ataque inimigo; ataques inimigos diferentes ainda podem permitir respostas se houver recursos."
+        ],
+        [
+          "2",
+          "Esclarecer",
+          "Momento da Reação extra",
+          "A desencadeada concede a ficha depois da resolução da magia; a ativada pede gasto no acerto. Não assumir que a ficha ainda não recebida paga a descarga secundária dessa mesma conjuração. Padronizar a janela pretendida."
+        ],
+        [
+          "3",
+          "Testar",
+          "Dano e recuperação simultâneos",
+          "Descarregar pode consumir 3 Fadigas antigas com Espírito 3 para ganhar +6 de dano, pagando 1 nova Fadiga: o total armazenado cai em 2. É eficiência forte e finita, não um ciclo infinito demonstrado. Testar também com Fadiga recebida por Retirar o Nome. Na cobrança menor, esclarecer a renúncia à recuperação da última ficha, assim como já foi feito no pleno."
+        ]
+      ]
+    ],
+    [
+      "BR-P08",
+      "Boa identidade de pressão e mão",
+      "Suportar Atormentado alimenta Pacto; virar dá Foco; colher abandona a pressão para melhorar a mão. O alvo participa da escolha.",
+      [
+        [
+          "1",
+          "Manter",
+          "Semeadura e Colher",
+          "A exigência de dano, um pesadelo próprio por defensor e a remoção efetiva antes da compra mantêm o ciclo. Comprar 2 cartas não é cura nem retorno de descarte. Manter os números até testar."
+        ],
+        [
+          "2",
+          "Testar",
+          "Confusão",
+          "Manter o teste contestado da ativada. Testar a duração da ficha e os alvos válidos de Confusão. O menor exige apenas Atormentado de qualquer fonte, enquanto o pleno exige o próprio; isso é mais amplo numa condição, mas o menor só reage quando o alvo é você, o que pode justificar a diferença."
+        ],
+        [
+          "3",
+          "Esclarecer",
+          "Entrega inicial",
+          "Escrever uma entrega por cena na cobrança menor e na plena. A frase antes de usar benefícios não deve permitir cobrança nova a cada uso, nem ser apagada pela virada de Pacto Menor."
+        ]
+      ]
+    ],
+    [
+      "BR-P09",
+      "Identidade própria, potência a conferir",
+      "Conserva Fadiga e posição para sustentar o frio. Transferir esforço sem apagá-lo diferencia o pacto da descarga do Trovão.",
+      [
+        [
+          "1",
+          "Esclarecer",
+          "Carga nova e capacidade livre",
+          "Na desencadeada, exigir passagem de abaixo do limite para o limite durante a magia, contando as transferências previstas. Em Coração, a transferência máxima é o menor entre 2, a Fadiga disponível na fonte e o espaço livre após o pagamento, não necessariamente sempre 2."
+        ],
+        [
+          "2",
+          "Testar",
+          "Preço da imobilidade",
+          "Sopro restringe só a próxima ação de Movimento, com outras opções preservadas; Coração oferece até +4 por 2 Fadigas e concentração de carga. Comparar essa potência com o compromisso de não mover nos turnos de gasto, sem eliminar agora a restrição que dá identidade ao pacto."
+        ],
+        [
+          "3",
+          "Esclarecer",
+          "Gasto em turno alheio",
+          "Dizer se a cobrança considera qualquer turno ou apenas o próprio. Gastar por Reação fora do turno não deve receber uma interpretação improvisada que apague o compromisso ou proíba movimentos por um prazo maior do que o escrito."
+        ]
+      ]
+    ]
+  ],
+  "habilidades_gerais": [
+    [
+      "BR-G01",
+      "Esclarecer",
+      "Manter a proposta de pactos menores e a liberdade de possuir vários. Explicitar nível/progressão próprios, tags e benefícios ativos nos dois lados, e como adquirir vínculos adicionais dentro das regras de aquisição. Procuração custa 2 Pactos: no patamar 1, a reserva inicial menor de 1 não a paga sem outra fonte. Isso pode ser progressão intencional; não exige reduzir o custo."
+    ],
+    [
+      "BR-G02",
+      "Testar",
+      "Oferenda está limitada por cena e custa exílio real. Resgatar devolve uma carta comum do exílio, não cura imediatamente, mas permite recuperar cartas pagas por curas e pelo Abismo. Testar o consumo líquido de cartas antes de acrescentar limite. Não foi demonstrado um ciclo infinito. Explicitar se exílio voluntário de Oferenda também ativa o benefício do Abismo: o ganho extra não ser cumprimento não elimina o custo de exílio como gatilho independente."
+    ],
+    [
+      "BR-G03",
+      "Ajustar",
+      "Concentrar precisa esclarecer que o escolhido já receberia dano direto e que mantém o alvo principal, abrindo mão dos secundários; o texto atual permite escolher um adjacente e deixa sem referência o ataque original. Pode continuar funcionando ao renunciar a fichas de Fogo nos secundários: não é necessário exigir dano direto em todos eles. É uma especialização legítima mesmo sem servir a todos os pactos. Estender precisa conservar também limites de quantidade da magia original, como o máximo de pesadelos próprios de Semeadura, e declarar o pagamento depois do acerto. Comparar seu custo 2 Fadigas + 1 Pacto com simplesmente conjurar novamente: ele economiza uma ação, mas copia só uma ficha."
+    ],
+    [
+      "BR-G04",
+      "Esclarecer",
+      "Presságio mantém um preço de ação por scry 3. Ler o Destino deve ocorrer após comprar as duas iniciais e antes de resolver um eventual estouro, se a intenção for evitá-lo; se vier depois, é preciso dizer como substituição e estouro interagem. Definir essa janela antes do teste."
+    ],
+    [
+      "BR-G05",
+      "Manter",
+      "Há escolha entre conservar a face aceitando Atormentado e pagar recursos para virar e reposicionar. A virada incluída não cobra outra Padrão. Testar com Inverno, cuja cobrança de posição continua valendo; isso é uma sinergia com conflito real, não uma falha automática."
+    ],
+    [
+      "BR-G06",
+      "Esclarecer",
+      "Testemunho é um reforço de cumprimento com descarte real e trava de repetição. O Patrono Lembra deve dizer após resolver o teste e enviar as cartas ao descarte, identificando as cartas usadas. Recuperar uma carta não desfaz a falha nem o exílio do Abismo."
+    ],
+    [
+      "BR-G07",
+      "Testar",
+      "A janela inicial de Executar está de acordo com a ordem do sistema: ambos compram duas cartas e depois o atacante decide compras adicionais. Manter o pagamento antecipado e a defesa normal. Nominar aproxima todos os patronos da preparação do Olho; testar se esse pacote se torna escolha obrigatória antes de reduzir números."
+    ],
+    [
+      "BR-G08",
+      "Manter",
+      "Patrono Presente tem teste contestado, custo de Reação e apenas uma resistência por conjuração. Canal sem Ruído retira uma ficha específica sem dar quitação ao pacto. São recursos pagos para manter o canal, não anulação automática das fraquezas."
+    ],
+    [
+      "BR-G09",
+      "Manter",
+      "As duas faces apoiam perícias relacionadas a uma cobrança real, têm limite por cena e não substituem ataque/defesa. Não é preciso exigir usar a primeira face para habilitar a segunda: são alternativas. O mestre confirma a tarefa antes do teste."
+    ],
+    [
+      "BR-M01",
+      "Manter",
+      "Scry 1 com 1 Fadiga ajuda a preparar o risco. A compatibilidade com Presságio não é, por si só, defeito: ambos custam recursos e uma meia carta pode complementar uma inteira."
+    ],
+    [
+      "BR-M02",
+      "Esclarecer",
+      "Definir a ordem entre Selo e recuperação normal, especialmente em Inverno e Trovão. Abrir mão da recuperação normal para ganhar Pacto e pagar uma recuperação adicional mantém custo de oportunidade; não declarar isso exploração infinita sem contar o gasto."
+    ],
+    [
+      "BR-M03",
+      "Manter",
+      "Escolher a Aberta antes da revelação cria jogo de informação sem alterar o valor total ou impedir estouro. Preservar a janela e a limitação por teste."
+    ],
+    [
+      "BR-M04",
+      "Esclarecer",
+      "O custo é exílio voluntário: com Abismo, o favor pode conceder 1 Pacto próprio e mais 1 do gatilho do patrono, uma vez no seu turno. Declarar se essa sinergia é desejada. A frase não é novo cumprimento bloqueia Testemunho recursivo, mas não descreve sozinha todos os gatilhos de exílio."
+    ],
+    [
+      "BR-M05",
+      "Manter",
+      "Movimento pago e condicionado à magia. Não ignora Imobilizar nem obstáculos. A cobrança do Inverno ainda se aplica, enquanto Caminhos aproveita o movimento: diferenças de valor por patrono são aceitáveis."
+    ],
+    [
+      "BR-M06",
+      "Esclarecer",
+      "Fixar o gatilho depois de resolver a falha e descartar as cartas do teste. Pode combinar com O Patrono Lembra usando cartas diferentes ainda disponíveis; não recuperar a mesma carta duas vezes."
+    ],
+    [
+      "BR-X01",
+      "Testar",
+      "Manifestação Dupla paga 2 Fadigas e 3 Pactos além de todos os recursos das duas magias, mas pode economizar a segunda ação, a virada e uma Reação conforme as faces. Com Fênix, o total básico é 5 Fadigas + 3 Pactos por ataque e absorção, antes de aprimoramentos. Não tratar 2 XP como carta que precisa do mesmo preço de 1 XP. Descanso da Voz dispara em qualquer virada para B, inclusive manual: escrever se isso é pretendido; se for exclusivo do ciclo Manifestação, limitar a esse gatilho."
+    ],
+    [
+      "BR-X02",
+      "Testar",
+      "Assinatura Vital só beneficia custos de 2 ou mais Pactos e não modifica ativações do herói, porque o texto é restrito a magias. Hoje isso favorece especialmente os modos X da Fênix e de Sonhos e a troca inimiga de Caminhos; é uma especialização válida, mas não uma capstone igualmente útil para todo patrono. Não ampliar a qualquer magia sem preservar o requisito do vínculo. Quitar mantém a cobrança devida."
+    ],
+    [
+      "BR-X03",
+      "Esclarecer",
+      "Intercessão precisa dizer se autoriza repetir uma magia de Reação na mesma janela original. Se essa for a intenção, escrever a autorização expressa e sua relação com um eventual limite de uma descarga por ataque inimigo. Se exigir um novo gatilho, a face precisa continuar revelada até ele; não impor essa restrição como se já estivesse aprovada. Retirar o Nome usa só capacidade livre e é pago com uma carta exilada, mas pode abastecer a descarga do Trovão. Testar conversão de um golpe forte e o dano subsequente; não foi demonstrado que a combinação se repita indefinidamente."
+    ]
+  ],
+  "fontes": [
+    {
+      "arquivo": "classes/dados/bruxo/novos_pactos_v02.json",
+      "sha256": "35e841af90a53080ce3b47f86aac17025fb1875a1e34f7cf8969f8ca0c46f0b8"
+    },
+    {
+      "arquivo": "classes/dados/bruxo/habilidades_gerais_v02.json",
+      "sha256": "957ff6c88f166bb28b1be7ac9e3b2108442718c1f72d7d90e33dbf08f2cd4bb4"
+    },
+    {
+      "arquivo": "classes/dados/bruxo/regras_propostas_lote_v02.json",
+      "sha256": "0b8c5604f903d3644b1092a1f588c4431342c773987c28e53f50d61711fca8e7"
+    },
+    {
+      "arquivo": "classes/dados/bruxo/conceito_v03.json",
+      "sha256": "a78601d75295acff10c8c9da19c810c30127de59cf88a9c536f823b2e0bb4756"
+    },
+    {
+      "arquivo": "SISTEMA_21_Estado_do_Projeto.md",
+      "sha256": "04e4088f43983f78ddf3993c8fbc9295ed0fa72d03a36b06d76ee5ebe5625d17"
+    }
+  ]
+}

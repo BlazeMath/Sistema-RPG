@@ -1,0 +1,363 @@
+{
+  "versao": 1,
+  "data": "2026-10-27",
+  "origem": "Decisões explícitas do autor neste chat após a revisão v01.",
+  "fonte_base": "classes/fontes/Habilidades_Cartas_original_2026-10-27.pdf",
+  "politica": "PDF principal atualizado com 17 faces corrigidas. Fonte anterior preservada em classes/fontes. Requisitos, tags, símbolos e demais faces mantidos; corpo mínimo de 8,7 pt nos textos revisados.",
+  "cartas": [
+    {
+      "nome": "Ombro de Ferro",
+      "classe": "Guerreiro",
+      "id": "GRMMR02",
+      "lado": "A",
+      "pagina": 1,
+      "xp": 1,
+      "limite_fadiga": 2,
+      "custo_fadiga": 1,
+      "acao": "Padrão",
+      "texto": "1 de Fadiga, Ação Padrão: mova-se 1 quadrado e faça um ataque corpo a corpo. Se causar dano, o alvo recebe 1 ficha de Imobilizar.",
+      "alteracao": "Substitui o estado solto pela ficha de Imobilizar, mantendo o gatilho de causar dano.",
+      "estado": "incorporado_no_pdf"
+    },
+    {
+      "nome": "Avalanche",
+      "classe": "Guerreiro",
+      "id": "GRMMR02",
+      "lado": "B",
+      "pagina": 1,
+      "xp": 1,
+      "limite_fadiga": 2,
+      "custo_fadiga": 2,
+      "acao": "Padrão",
+      "texto": "2 de Fadiga, Ação Padrão: faça um ataque corpo a corpo. Some o dobro da resistência da sua armadura ao dano. Você recebe 1 ficha de Imobilizar.",
+      "alteracao": "Formaliza o preço de imobilização como uma ficha.",
+      "estado": "incorporado_no_pdf"
+    },
+    {
+      "nome": "Ombro de Aço",
+      "classe": "Guerreiro",
+      "id": "GRMMR05",
+      "lado": "B",
+      "pagina": 2,
+      "xp": 1,
+      "limite_fadiga": 0,
+      "custo_fadiga": 0,
+      "acao": null,
+      "texto": "O limite dos testes de defesa dos seus aliados adjacentes têm +1.",
+      "alteracao": "Restringe o bônus aos aliados adjacentes, com a redação solicitada pelo autor.",
+      "estado": "incorporado_no_pdf"
+    },
+    {
+      "nome": "Bote Fatal",
+      "classe": "Ladino",
+      "id": "LDMMR-X1",
+      "lado": "B",
+      "pagina": 20,
+      "xp": 2,
+      "limite_fadiga": 0,
+      "custo_fadiga": 0,
+      "acao": null,
+      "texto": "Sempre que você acertar um ataque corpo a corpo, o defensor recebe 1 ficha de Ferimento para cada ficha de Sombra que você tem.",
+      "alteracao": "Só aplica Ferimento em ataques que acertam; conserva a escala por Sombra.",
+      "estado": "incorporado_no_pdf"
+    },
+    {
+      "nome": "Adaga Fantasma",
+      "classe": "Ladino",
+      "id": "LDMMR-09",
+      "lado": "B",
+      "pagina": 19,
+      "xp": 1,
+      "limite_fadiga": 2,
+      "custo_fadiga": 0,
+      "acao": "Como parte do ataque",
+      "texto": "Como parte de seu ataque, você pode colocar 1 ficha de Atormentado nesta carta. Se fizer isso, ao acertar esse ataque, o defensor recebe 1 ficha de Ferimento.",
+      "alteracao": "Condiciona o Ferimento ao acerto; mantém Atormentado como custo pago ao usar.",
+      "estado": "incorporado_no_pdf"
+    },
+    {
+      "nome": "Torcer a Lâmina",
+      "classe": "Ladino",
+      "id": "LDMMR-M5",
+      "lado": "único",
+      "pagina": 19,
+      "xp": 0.5,
+      "limite_fadiga": 1,
+      "custo_fadiga": 1,
+      "acao": null,
+      "texto": "1 de Fadiga: seu próximo ataque corpo a corpo neste turno aplica 1 ficha de Sangramento no defensor se acertar.",
+      "alteracao": "Sangramento só no acerto do próximo ataque.",
+      "estado": "incorporado_no_pdf"
+    },
+    {
+      "nome": "Roubo Arcano",
+      "classe": "Ladino",
+      "id": "LDMMR-X3",
+      "lado": "B",
+      "pagina": 20,
+      "xp": 2,
+      "limite_fadiga": 0,
+      "custo_fadiga": 0,
+      "acao": "Custo de 1 ficha de Reação",
+      "texto": "Descarte 1 ficha de Reação: quando um inimigo conjurar uma magia, faça um teste do seu Raciocínio contra a Sabedoria do conjurador. Em caso de sucesso, escolha novos alvos válidos para a magia, respeitando sua quantidade de alvos, seu alcance e suas restrições; resolva a magia contra esses alvos e, depois, coloque 1 ficha de Atordoamento nesta carta.",
+      "alteracao": "Redireciona a magia em vez de anulá-la. O custo de ficha de Reação e o Atordoamento no sucesso são mantidos.",
+      "estado": "incorporado_no_pdf"
+    },
+    {
+      "nome": "Preparar o Tiro",
+      "classe": "Caçador",
+      "id": "CDMMR-01",
+      "lado": "A",
+      "pagina": 9,
+      "xp": 1,
+      "limite_fadiga": 2,
+      "custo_fadiga": 0,
+      "acao": "Padrão",
+      "texto": "Ação Padrão: ganhe 2 fichas de Mira. Se você não se moveu neste turno, ganhe 3 em vez de 2. Depois de usar esta habilidade, você não pode se mover até o fim do turno.",
+      "alteracao": "Impede movimento posterior ao uso durante o turno.",
+      "estado": "incorporado_no_pdf"
+    },
+    {
+      "nome": "Flecha Pesada",
+      "classe": "Caçador",
+      "id": "CDMMR-09",
+      "lado": "A",
+      "pagina": 11,
+      "xp": 1,
+      "limite_fadiga": 3,
+      "custo_fadiga": 2,
+      "acao": "Durante o ataque",
+      "texto": "2 de Fadiga: durante seu ataque, se o defensor tiver ao menos 1 ficha de Ferimento ou de Imobilizar, o dano da sua arma é triplicado e ignora resistência.",
+      "alteracao": "A condição exige as fichas específicas, não dano já sofrido ou um estado genérico.",
+      "estado": "incorporado_no_pdf"
+    },
+    {
+      "nome": "Flecha de Rede",
+      "classe": "Caçador",
+      "id": "CDMMR-06",
+      "lado": "B",
+      "pagina": 10,
+      "xp": 1,
+      "limite_fadiga": 2,
+      "custo_fadiga": 2,
+      "acao": "Padrão",
+      "texto": "2 de Fadiga, Ação Padrão: faça um ataque à distância causando metade do dano. Se acertar, o alvo recebe 2 fichas de Imobilizar e não pode usar reações até o próximo turno dele.",
+      "alteracao": "Corrige o limite de Fadiga de 1 para 2 e explicita as duas fichas de Imobilizar.",
+      "estado": "incorporado_no_pdf"
+    },
+    {
+      "nome": "Teologia",
+      "classe": "Clérigo",
+      "id": "CLMMR-M1",
+      "lado": "único",
+      "pagina": 7,
+      "xp": 0.5,
+      "limite_fadiga": 1,
+      "custo_fadiga": 1,
+      "acao": "Conforme a opção",
+      "texto": "1 de Fadiga: aumente seu limite em +1 para testes de Religião.\n1 de Fadiga, Ação Padrão: desenhe o símbolo de sua divindade em uma arma ou armadura. Até o próximo amanhecer, ela não pode ser amaldiçoada nem ser quebrada diretamente por efeitos de inimigos. Se a vida do item chegar a 0, ele quebra normalmente. Limitado a um item por vez.",
+      "alteracao": "Preserva a proteção contra efeitos que quebram o item; não impede a quebra por esgotamento da vida.",
+      "estado": "incorporado_no_pdf"
+    },
+    {
+      "nome": "Hino de Coragem",
+      "classe": "Clérigo",
+      "id": "CLMMR-O1",
+      "lado": "B",
+      "pagina": 6,
+      "xp": 1,
+      "limite_fadiga": 2,
+      "custo_fadiga": 1,
+      "acao": "Padrão",
+      "texto": "1 de Fadiga, Ação Padrão: até o início do seu próximo turno, aliados ao alcance 2 não podem ter fichas de Medo e Confusão colocadas por efeitos de inimigos.",
+      "alteracao": "Reduz o custo de 2 para 1 de Fadiga e limita a prevenção a Medo e Confusão. Mantém o limite da face em 2.",
+      "estado": "incorporado_no_pdf"
+    },
+    {
+      "nome": "Ressurgir",
+      "classe": "Clérigo",
+      "id": "CLMMR-X1",
+      "lado": "A",
+      "pagina": 8,
+      "xp": 2,
+      "limite_fadiga": 2,
+      "custo_fadiga": 2,
+      "acao": "Padrão",
+      "texto": "2 de Fadiga, Ação Padrão: exile metade das cartas do descarte do aliado alvo, arredondando para cima. Se o alvo estiver sem cartas no baralho, ele cura um valor igual à sua Sabedoria e recobra a consciência no local onde seu corpo está.",
+      "alteracao": "Explicita a ação, o arredondamento do exílio e o local do retorno. Não acrescenta alcance não decidido pelo autor.",
+      "estado": "incorporado_no_pdf"
+    },
+    {
+      "nome": "Conjuração Perfeita",
+      "classe": "Mago",
+      "id": "MGMMR-X1",
+      "lado": "A",
+      "pagina": 14,
+      "xp": 2,
+      "limite_fadiga": 0,
+      "custo_fadiga": 0,
+      "acao": null,
+      "texto": "Uma vez por turno, você pode conjurar uma magia pagando apenas 1 de Fadiga. Os outros custos da magia continuam valendo.",
+      "alteracao": "Adequação necessária à regra confirmada de custo mínimo 1: substitui a dispensa total de Fadiga.",
+      "origem_especifica": "Consequência de consistência da regra de custo mínimo aprovada pelo autor.",
+      "estado": "incorporado_no_pdf"
+    },
+    {
+      "nome": "Mana Densa",
+      "classe": "Mago",
+      "id": "MGMMR-X2",
+      "lado": "B",
+      "pagina": 15,
+      "xp": 2,
+      "limite_fadiga": 0,
+      "custo_fadiga": 0,
+      "acao": null,
+      "texto": "Descarte 1 carta: quando uma magia tiver você como um dos alvos, faça um teste contestado do seu Raciocínio contra a Sabedoria do conjurador. Se vencer, anule a magia.",
+      "alteracao": "Acrescenta teste contestado e mantém o descarte de uma carta. A anulação continua abrangendo a magia.",
+      "criterio_editorial": "O autor determinou o teste contestado. Raciocínio contra Sabedoria do conjurador foi adotado por analogia com Contramagia; não é uma escolha de atributos explicitada pelo autor.",
+      "estado": "incorporado_no_pdf"
+    },
+    {
+      "nome": "Servo Sombrio",
+      "classe": "Mago",
+      "id": "MGMMR-S",
+      "lado": "B",
+      "pagina": 16,
+      "xp": 1,
+      "limite_fadiga": 3,
+      "custo_fadiga": 3,
+      "acao": "Padrão",
+      "texto": "3 de Fadiga, Ação Padrão: escolha um alvo que tenha uma ficha de Medo. Faça um teste contestado do seu Raciocínio contra o Espírito do alvo. Se vencer, o alvo move-se 2 quadrados e ataca um segundo alvo, ao seu comando.",
+      "alteracao": "Condiciona o movimento e o ataque comandados à vitória em um teste contestado. Mantém custo, limite e requisito de Medo.",
+      "criterio_editorial": "O autor determinou o teste contestado. Raciocínio contra Espírito foi adotado para oposição ao controle mental; não é uma escolha de atributos explicitada pelo autor.",
+      "estado": "incorporado_no_pdf"
+    },
+    {
+      "nome": "Predador Absoluto",
+      "classe": "Caçador",
+      "id": "CDMMR-X2",
+      "lado": "A",
+      "pagina": 12,
+      "xp": 2,
+      "limite_fadiga": 0,
+      "estado": "incorporado_no_pdf",
+      "texto": "No início da cena com este lado revelado, ou ao revelá-lo pela primeira vez na cena, escolha um inimigo visível como alvo da caça.\nAté o fim da cena, coloque o dobro das fichas que seus efeitos colocariam no alvo. Nos efeitos sobre ele calculados pela quantidade de fichas gastas, calcule como se gastasse o dobro, pagando o custo normal. Duplique cada efeito apenas uma vez por esta habilidade.\nNo fim do seu turno, se causou dano ao alvo neste turno, ganhe 1 ficha de Preparo.\nQuando ele morrer, escolha outro inimigo visível.",
+      "exemplos": [
+        "Um efeito que colocaria 1 ficha de Ferimento no alvo coloca 2.",
+        "Ao gastar 1 Mira em Tiro Certeiro contra o alvo, a penalidade no limite da defesa é −2 e o bônus de dano no acerto é +4. Você gasta apenas 1 Mira.",
+        "Os 3 pontos de dano de uma arma não viram 6 apenas por atacar o alvo; somente a parcela calculada pelas fichas gastas é afetada.",
+        "Gastar 3 Miras em Tiro Perfeito continua produzindo resultado 21, não 42: esse resultado é fixo, e não é calculado pela quantidade de Miras gastas.",
+        "Em um efeito com vários alvos, só a aplicação no alvo da caça é dobrada.",
+        "Se fichas gastas determinarem a quantidade de fichas colocadas, aplica-se uma única duplicação; não há multiplicação por quatro."
+      ],
+      "origem_publicacao": "Pedido explícito do autor para atualizar o PDF com todas as correções."
+    }
+  ],
+  "propostas": [],
+  "decisoes": [
+    {
+      "tema": "Virar cartas",
+      "estado": "aprovado",
+      "texto": "Normalmente virar uma carta custa uma ação. Quando a habilidade manda virar, a virada faz parte de sua resolução e não custa uma ação adicional. Limite de Fadiga zero não impede a virada."
+    },
+    {
+      "tema": "Magia versus habilidade",
+      "estado": "aprovado",
+      "texto": "Cajado do Condutor reduz somente custos de magias. Água Benta é uma habilidade, não uma magia; não recebe essa redução. O cenário de repetição ilimitada da revisão v01 não se aplica a essa combinação."
+    },
+    {
+      "tema": "Sinergias específicas",
+      "estado": "manter_conforme_autor",
+      "texto": "Habilidades podem ter relação específica com backgrounds, itens e outras partes do jogo. Manter os requisitos de Soldado."
+    },
+    {
+      "tema": "Sombra e Ataque Furtivo",
+      "estado": "manter_conforme_autor",
+      "texto": "Sombra simula furtividade e pode ser trocada por dano; manter Ataque Furtivo sem adicionar outra exigência de vantagem ou estado Oculto."
+    },
+    {
+      "tema": "Lâmina na Manga / Nunca Visto / Bote Fatal",
+      "estado": "manter_conforme_autor",
+      "texto": "Manter o crescimento por Sombra e a geração de Nunca Visto. Bote Fatal recebe apenas a correção de aplicação no acerto. Observação documental: Lâmina na Manga está marcada como 1 XP no PDF, e Nunca Visto/Bote Fatal como 2 XP; nenhum custo de XP foi alterado."
+    },
+    {
+      "tema": "Assalto do Gatuno",
+      "estado": "manter_conforme_autor",
+      "texto": "Resolver a habilidade em sequência: conceder Foco quando sua condição for satisfeita, depois realizar o teste de Ladinagem contra Percepção. Roubo/desarme exige o sucesso desse teste. Não acrescentar um requisito de Oculto/Caído ao teste."
+    },
+    {
+      "tema": "Ficha de Reação",
+      "estado": "aprovado",
+      "texto": "Roubo Arcano requer deliberadamente uma ficha de Reação fornecida por outra classe ou carta de herói. Não substituir pelo uso da reação normal."
+    },
+    {
+      "tema": "Remover uma ficha",
+      "estado": "aprovado",
+      "texto": "Quando um efeito permite remover uma ficha sem especificar tipo, ele abrange qualquer tipo, inclusive Fadiga e persistentes. Manter as condições de alvo e quantidade da própria habilidade."
+    },
+    {
+      "tema": "Zona da Penitência / Terra do Louvor",
+      "estado": "manter_conforme_autor",
+      "texto": "O dano da divindade será especificado na carta da divindade. Manter os dois lados como estão; não reformular Terra do Louvor por ser bônus genérico."
+    },
+    {
+      "tema": "Benção dos Salmos",
+      "estado": "manter_conforme_autor",
+      "texto": "Manter números e custo de XP. A carta é menos focada que Toque Restaurador e justifica a escolha pela versatilidade das três modalidades."
+    },
+    {
+      "tema": "Foco Mortal / Folha de Carvalho",
+      "estado": "esclarecimento_de_fonte",
+      "texto": "São metades de herói, não faces do arquivo de habilidades. Foco Mortal está na página 1 e Folha de Carvalho na página 2 de Herois_Cartas.pdf. Sem alterações solicitadas nesses heróis."
+    },
+    {
+      "tema": "Mago e demais sugestões",
+      "estado": "substituido_parcialmente_pela_rodada_mago",
+      "texto": "As decisões posteriores sobre o Mago estão registradas nesta atualização. Outras sugestões não abordadas continuam como propostas, sem implementação."
+    },
+    {
+      "tema": "Custo mínimo das magias",
+      "estado": "aprovado",
+      "texto": "O custo de Fadiga de uma magia não pode ser reduzido a menos de 1, mesmo por reduções combinadas. Não aplicar essa regra como custo automático de habilidades que não são magias. Conjuração Perfeita foi adequada a esse mínimo, mantendo os demais custos da magia."
+    },
+    {
+      "tema": "Mana Densa",
+      "estado": "aprovado",
+      "texto": "A anulação depende de vencer um teste contestado. Manter o descarte de uma carta."
+    },
+    {
+      "tema": "Mente Afiada / De Volta ao Básico",
+      "estado": "manter_e_observar_em_playtest",
+      "texto": "Manter as duas habilidades como estão. Observar seu desempenho nos testes de jogo; isso não constitui pedido de automação ou monitoramento recorrente."
+    },
+    {
+      "tema": "Elementos do Mago",
+      "estado": "manter_conforme_autor",
+      "texto": "Manter Água, Terra, Sombra e os demais elementos com seus efeitos atuais. Não implementar a reformulação de identidade sugerida na revisão v01."
+    },
+    {
+      "tema": "Servo Sombrio",
+      "estado": "aprovado",
+      "texto": "O controle depende de vencer um teste contestado. Preservar os demais custos e o requisito de uma ficha de Medo."
+    },
+    {
+      "tema": "Controlador do Arcano / Devorador de Grimórios",
+      "estado": "esclarecimento_de_fonte",
+      "texto": "São metades de herói do Mago, ambas na página 2 de Herois_Cartas.pdf: MGMMR-H1 e MGMMR-H2. Não ficam em Habilidades_Cartas.pdf. Não foram modificadas nesta rodada."
+    },
+    {
+      "tema": "Atributos dos testes contestados",
+      "estado": "criterio_editorial_explicito",
+      "texto": "O autor pediu testes contestados sem indicar os atributos. Na redação, Mana Densa usa Raciocínio contra Sabedoria do conjurador, por analogia com Contramagia; Servo Sombrio usa Raciocínio contra Espírito do alvo. Esses pares são escolhas editoriais para completar a regra, sujeitos a revisão pelo autor."
+    }
+  ],
+  "sha256_fonte_pdf": "c1246a5ebab756d1f01dba4f4054a58723e1bd85ff32b93427757c5e87be96cf",
+  "atualizacao_mago": "2026-10-27",
+  "pdf_atualizado": {
+    "principal": "Habilidades_Cartas.pdf",
+    "versao": "output/pdf/Habilidades_Cartas_Atualizadas_v01.pdf",
+    "sha256": "828802069bb45066e045b8f0803aa54395d16d6e05749c83bfcb35a42ded6fcf",
+    "data": "2026-10-27",
+    "verificacao": "classes/dados/verificacao_pdf_habilidades_v01.json"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "data": "2026-10-27",
+  "estado": "proposta_sem_playtest",
+  "patronos": 5,
+  "cartas_gerais": 15,
+  "paineis": 20,
+  "abrir_e_recolher": true,
+  "desktop": {
+    "width": 1440,
+    "document": 1440,
+    "overflow": 0
+  },
+  "mobile": {
+    "width": 480,
+    "document": 480,
+    "overflow": 0
+  },
+  "erros_javascript": [],
+  "partidas_ou_simulacoes_de_equilibrio": false,
+  "integridade_dados": true,
+  "pdf_habilidades_existente_preservado": true,
+  "revisao_mecanica": "Revisão do agente principal e dois revisores; sem partidas ou simulações.",
+  "ajustes_apos_revisao": [
+    "Exílio de Sangrar o Véu é custo adicional explícito.",
+    "Manifestação Dupla preserva condições e gatilhos da segunda magia e pode aguardá-los até o próximo turno.",
+    "Estender o Sinal conserva duração e remoção da ficha copiada.",
+    "Cobranças menores adaptadas por patrono e vigentes nos dois lados.",
+    "Segredo Entre as Cartas escolhe a carta aberta antes da revelação inicial.",
+    "Intercessão produz nova conjuração com custos e defesa novos.",
+    "Retirar o Nome define conversão após resistências e antes da distribuição."
+  ],
+  "arquivos": [
+    {
+      "caminho": "classes/dados/bruxo/novos_pactos_v01.json",
+      "sha256": "8aa773fbb88a9e617b509af387187f16a93c1c444fbbf1b56eb5e4fcca99d7ae"
+    },
+    {
+      "caminho": "classes/dados/bruxo/habilidades_gerais_v01.json",
+      "sha256": "28942ef04aa76e2ca91f0bd71447315e94d2b0dbe8f24e874c060f9ef9a4f77b"
+    },
+    {
+      "caminho": "classes/dados/bruxo/regras_propostas_lote_v01.json",
+      "sha256": "7c53dff9d45df311bdb04cb3ae4e6eaf37e3f6eca2662e1226f6f9f3a2c305ae"
+    },
+    {
+      "caminho": "outputs/01a17d39-9806-7153-9510-d82d1e7aaeea/classes/Bruxo_Pactos_e_Habilidades_Proposta_v01.html",
+      "sha256": "bc6fdb0bcbd94eee423019c432b016ad8821a23756417c44fac09d36ae9f2ba9"
+    }
+  ]
+}

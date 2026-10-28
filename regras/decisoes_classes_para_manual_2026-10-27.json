@@ -1,0 +1,29 @@
+{
+  "data": "2026-10-27",
+  "origem": "Decisões do autor no chat Classes, Heróis e Origens.",
+  "estado": "aprovado_no_resumo_e_pendente_de_diagramacao_do_manual",
+  "fonte_atualizada": "SISTEMA_21_Estado_do_Projeto.md",
+  "regras": [
+    {
+      "tema": "Virar cartas",
+      "estado": "aprovado",
+      "texto": "Normalmente virar uma carta custa uma ação. Quando a habilidade manda virar, a virada faz parte de sua resolução e não custa uma ação adicional. Limite de Fadiga zero não impede a virada."
+    },
+    {
+      "tema": "Magia versus habilidade",
+      "estado": "aprovado",
+      "texto": "Cajado do Condutor reduz somente custos de magias. Água Benta é uma habilidade, não uma magia; não recebe essa redução. O cenário de repetição ilimitada da revisão v01 não se aplica a essa combinação."
+    },
+    {
+      "tema": "Remover uma ficha",
+      "estado": "aprovado",
+      "texto": "Quando um efeito permite remover uma ficha sem especificar tipo, ele abrange qualquer tipo, inclusive Fadiga e persistentes. Manter as condições de alvo e quantidade da própria habilidade."
+    },
+    {
+      "tema": "Custo mínimo das magias",
+      "estado": "aprovado",
+      "texto": "O custo de Fadiga de uma magia não pode ser reduzido a menos de 1, mesmo por reduções combinadas. Não aplicar essa regra como custo automático de habilidades que não são magias. Conjuração Perfeita foi adequada a esse mínimo, mantendo os demais custos da magia."
+    }
+  ],
+  "observacao": "Não confundir o registro de texto para o livro com uma reedição de Manual_de_Mesa.pdf."
+}

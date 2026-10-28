@@ -1,0 +1,19 @@
+{
+  "id": "EQ-118",
+  "nome": "Cajado de Batalha",
+  "arquivo": "artes/revisadas/EQ-118_v02.png",
+  "origem": "C:/Users/Gamer/.codex/generated_images/01a1784a-39da-75d3-87c4-56dc835caa37/exec-d13afbec-339d-492e-b02a-be209b8706c8.png",
+  "substitui": "artes/lote/EQ-118_v01.png",
+  "dimensoes": [
+    1024,
+    1536
+  ],
+  "modo": "RGBA",
+  "alpha": [
+    0,
+    254
+  ],
+  "sha256": "14d8d62287811850594a3d499ef5830b1199fa45d660438e851d60f0e5fdba1e",
+  "status": "conferida_visual",
+  "rotacao_diagramacao_graus": 30
+}

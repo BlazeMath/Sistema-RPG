@@ -1,0 +1,57 @@
+{
+  "projeto": "SISTEMA DE RPG",
+  "project_id": "1c07d347-1775-418f-9867-a1b2c95b29c8",
+  "atualizado_em": "2026-10-27",
+  "contexto": "organizacao/contexto_compartilhado.json",
+  "aviso": "Os chats compartilham arquivos, mas seus históricos não são sincronizados automaticamente. Esta divisão organiza responsabilidades, sem mudar regras do jogo.",
+  "chats": [
+    {
+      "especialidade": "classes",
+      "titulo": "Classes, Heróis e Origens",
+      "thread_id": "01a17d39-9806-7153-9510-d82d1e7aaeea",
+      "host_id": "local",
+      "contexto": "organizacao/especialidades/classes.json",
+      "estado": "existente"
+    },
+    {
+      "especialidade": "itens",
+      "titulo": "Itens, Inventário e Economia",
+      "thread_id": "01a1784a-39da-75d3-87c4-56dc835caa37",
+      "host_id": "local",
+      "contexto": "organizacao/especialidades/itens.json",
+      "estado": "existente"
+    },
+    {
+      "especialidade": "programacao",
+      "titulo": "Programação do Jogo",
+      "thread_id": "01a17d41-089a-75c2-897e-6338b8ad3e44",
+      "host_id": "local",
+      "contexto": "organizacao/especialidades/programacao.json",
+      "estado": "criado"
+    },
+    {
+      "especialidade": "regras",
+      "titulo": "Regras e Balanceamento",
+      "thread_id": "01a17d41-0b47-7b62-ba57-9de8efff671d",
+      "host_id": "local",
+      "contexto": "organizacao/especialidades/regras.json",
+      "estado": "criado"
+    },
+    {
+      "especialidade": "bestiario",
+      "titulo": "Bestiário, Mundo e Aventuras",
+      "thread_id": "01a17d41-0dd9-7ef3-885c-4f897fe15329",
+      "host_id": "local",
+      "contexto": "organizacao/especialidades/bestiario.json",
+      "estado": "criado"
+    },
+    {
+      "especialidade": "arte",
+      "titulo": "Arte, Cartas e Diagramação",
+      "thread_id": "01a17d41-1105-7e00-bd5f-c5a850ca0633",
+      "host_id": "local",
+      "contexto": "organizacao/especialidades/arte.json",
+      "estado": "criado"
+    }
+  ]
+}

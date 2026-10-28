@@ -1,0 +1,125 @@
+{
+  "versao": "v04",
+  "ferramenta": "image_gen.imagegen integrado",
+  "motivo": "Revisão integral de alinhamento das 46 armas, com correção de 8 armas e do Cajado de Batalha.",
+  "artes": [
+    {
+      "n": "007",
+      "tipo": "maça",
+      "detail": "A cabeça, o encaixe, o cabo e o pomo precisam compartilhar um único eixo longitudinal reto, sem curva na empunhadura. Preserve a cabeça de aço com aletas e ponta arredondada.",
+      "id": "EQ-007",
+      "prompt": "Edite esta ilustração de uma maça para uma carta de jogo de fantasia. Corrija apenas o desenho: alinhe a cabeça, o cabo e o pomo em uma linha reta contínua. O cabo deve ficar reto, sem a curva que aparece na referência. Preserve as cores e o acabamento pintado. Mostre o objeto inteiro com folga nas bordas. Fundo transparente. Sem pessoas, ação ou texto.",
+      "referencia": "artes/lote/EQ-007_v01.png",
+      "arquivo": "artes/revisadas/EQ-007_v02.png",
+      "origem": "C:/Users/Gamer/.codex/generated_images/01a1784a-39da-75d3-87c4-56dc835caa37/exec-8b42977f-fd69-4741-9afa-d030d30a9ea4.png",
+      "status": "conferida_visual",
+      "rotacao_diagramacao_graus": 30
+    },
+    {
+      "n": "008",
+      "tipo": "machado",
+      "detail": "Deixe o cabo de madeira e couro perfeitamente reto, com o encaixe da cabeça e o pomo no mesmo eixo longitudinal. Preserve a lâmina larga lateral e as ferragens; a cabeça do machado continua assimétrica e lateral ao cabo.",
+      "id": "EQ-008",
+      "prompt": "Edite esta ilustração de machado para uma carta de jogo de fantasia. Corrija somente o alinhamento do desenho. Deixe o cabo de madeira e couro perfeitamente reto, com o encaixe da cabeça e o pomo no mesmo eixo longitudinal. Preserve a lâmina larga lateral e as ferragens; a cabeça do machado continua assimétrica e lateral ao cabo. Vista lateral clara, com pouca perspectiva. Preserve as cores e o acabamento pintado. Mostre o objeto inteiro com folga nas bordas. Fundo transparente. Sem pessoas, ação ou texto.",
+      "referencia": "artes/lote/EQ-008_v01.png",
+      "arquivo": "artes/revisadas/EQ-008_v02.png",
+      "origem": "C:/Users/Gamer/.codex/generated_images/01a1784a-39da-75d3-87c4-56dc835caa37/exec-cd7b6b9b-5716-4ede-ace6-964d784e6435.png",
+      "status": "conferida_visual",
+      "rotacao_diagramacao_graus": 0
+    },
+    {
+      "n": "013",
+      "tipo": "machado francisca",
+      "detail": "Deixe o cabo rígido perfeitamente reto, do encaixe da cabeça até a extremidade inferior, sem a curva lateral da referência. Preserve a lâmina lateral, o desenho simples, a madeira e as tiras de couro.",
+      "id": "EQ-013",
+      "prompt": "Edite esta ilustração de machado francisca para uma carta de jogo de fantasia. Corrija somente o alinhamento do desenho. Deixe o cabo rígido perfeitamente reto, do encaixe da cabeça até a extremidade inferior, sem a curva lateral da referência. Preserve a lâmina lateral, o desenho simples, a madeira e as tiras de couro. Vista lateral clara, com pouca perspectiva. Preserve as cores e o acabamento pintado. Mostre o objeto inteiro com folga nas bordas. Fundo transparente. Sem pessoas, ação ou texto.",
+      "referencia": "artes/lote/EQ-013_v01.png",
+      "arquivo": "artes/revisadas/EQ-013_v02.png",
+      "origem": "C:/Users/Gamer/.codex/generated_images/01a1784a-39da-75d3-87c4-56dc835caa37/exec-2952c244-c4ff-4fce-b590-8a30e31284ab.png",
+      "status": "conferida_visual",
+      "rotacao_diagramacao_graus": 0
+    },
+    {
+      "n": "016",
+      "tipo": "maça-estrela",
+      "detail": "Remova a curva no pescoço metálico entre o cabo e a cabeça. O cabo, o pescoço, o centro da cabeça esférica e o pomo devem compartilhar um único eixo perfeitamente reto. Preserve a esfera de aço com espinhos e o couro marrom.",
+      "id": "EQ-016",
+      "prompt": "Edite esta ilustração de maça-estrela para uma carta de jogo de fantasia. Corrija somente o alinhamento do desenho. Remova a curva no pescoço metálico entre o cabo e a cabeça. O cabo, o pescoço, o centro da cabeça esférica e o pomo devem compartilhar um único eixo perfeitamente reto. Preserve a esfera de aço com espinhos e o couro marrom. Vista lateral clara, com pouca perspectiva. Preserve as cores e o acabamento pintado. Mostre o objeto inteiro com folga nas bordas. Fundo transparente. Sem pessoas, ação ou texto.",
+      "referencia": "artes/lote/EQ-016_v01.png",
+      "arquivo": "artes/revisadas/EQ-016_v02.png",
+      "origem": "C:/Users/Gamer/.codex/generated_images/01a1784a-39da-75d3-87c4-56dc835caa37/exec-503a8225-4c79-48ac-9b47-edbbe7f7cf8e.png",
+      "status": "conferida_visual",
+      "rotacao_diagramacao_graus": 30
+    },
+    {
+      "n": "017",
+      "tipo": "machado barbado",
+      "detail": "Deixe o cabo rígido perfeitamente reto, sem a curva em S. O olho de encaixe da cabeça, o cabo e o pomo devem compartilhar o mesmo eixo longitudinal. Preserve a lâmina lateral barbada, os rebites e o couro.",
+      "id": "EQ-017",
+      "prompt": "Edite esta ilustração de machado barbado para uma carta de jogo de fantasia. Corrija somente o alinhamento do desenho. Deixe o cabo rígido perfeitamente reto, sem a curva em S. O olho de encaixe da cabeça, o cabo e o pomo devem compartilhar o mesmo eixo longitudinal. Preserve a lâmina lateral barbada, os rebites e o couro. Vista lateral clara, com pouca perspectiva. Preserve as cores e o acabamento pintado. Mostre o objeto inteiro com folga nas bordas. Fundo transparente. Sem pessoas, ação ou texto.",
+      "referencia": "artes/lote/EQ-017_v01.png",
+      "arquivo": "artes/revisadas/EQ-017_v02.png",
+      "origem": "C:/Users/Gamer/.codex/generated_images/01a1784a-39da-75d3-87c4-56dc835caa37/exec-f5f1ddad-a62e-49e0-924e-497e67651f7e.png",
+      "status": "conferida_visual",
+      "rotacao_diagramacao_graus": 0
+    },
+    {
+      "n": "026",
+      "tipo": "machado de fantasia",
+      "detail": "Deixe o cabo rígido e o encaixe da cabeça perfeitamente retos e alinhados, sem a curva lateral nem a quebra de eixo no pescoço. Preserve a grande lâmina lateral escura, o contrapeso menor, a ornamentação e as tiras de couro.",
+      "id": "EQ-026",
+      "prompt": "Edite esta ilustração de machado de fantasia para uma carta de jogo de fantasia. Corrija somente o alinhamento do desenho. Deixe o cabo rígido e o encaixe da cabeça perfeitamente retos e alinhados, sem a curva lateral nem a quebra de eixo no pescoço. Preserve a grande lâmina lateral escura, o contrapeso menor, a ornamentação e as tiras de couro. Vista lateral clara, com pouca perspectiva. Preserve as cores e o acabamento pintado. Mostre o objeto inteiro com folga nas bordas. Fundo transparente. Sem pessoas, ação ou texto.",
+      "referencia": "artes/lote/EQ-026_v01.png",
+      "arquivo": "artes/revisadas/EQ-026_v02.png",
+      "origem": "C:/Users/Gamer/.codex/generated_images/01a1784a-39da-75d3-87c4-56dc835caa37/exec-7d621127-dce1-4196-a1be-2021192d50df.png",
+      "status": "conferida_visual",
+      "rotacao_diagramacao_graus": 0
+    },
+    {
+      "n": "029",
+      "tipo": "machado de arremesso",
+      "detail": "Deixe o cabo rígido perfeitamente reto do encaixe da cabeça até a extremidade inferior. Preserve a cabeça lateral compacta de aço, a madeira e a faixa de couro marrom.",
+      "id": "EQ-029",
+      "prompt": "Edite esta ilustração de machado de arremesso para uma carta de jogo de fantasia. Corrija somente o alinhamento do desenho. Deixe o cabo rígido perfeitamente reto do encaixe da cabeça até a extremidade inferior. Preserve a cabeça lateral compacta de aço, a madeira e a faixa de couro marrom. Vista lateral clara, com pouca perspectiva. Preserve as cores e o acabamento pintado. Mostre o objeto inteiro com folga nas bordas. Fundo transparente. Sem pessoas, ação ou texto.",
+      "referencia": "artes/lote/EQ-029_v01.png",
+      "arquivo": "artes/revisadas/EQ-029_v02.png",
+      "origem": "C:/Users/Gamer/.codex/generated_images/01a1784a-39da-75d3-87c4-56dc835caa37/exec-0ee15154-e74d-4cc1-866d-4d43aea2d70f.png",
+      "status": "conferida_visual",
+      "rotacao_diagramacao_graus": 0
+    },
+    {
+      "n": "041",
+      "tipo": "machado de fantasia",
+      "detail": "Alinhe o encaixe da cabeça, o pescoço metálico, o cabo e o pomo em uma linha longitudinal perfeitamente reta, removendo a quebra de direção perto da cabeça. Preserve a lâmina lateral curva, o contrapeso em ponta, os detalhes vermelhos e o couro escuro.",
+      "id": "EQ-041",
+      "prompt": "Edite esta ilustração de machado de fantasia para uma carta de jogo de fantasia. Corrija somente o alinhamento do desenho. Alinhe o encaixe da cabeça, o pescoço metálico, o cabo e o pomo em uma linha longitudinal perfeitamente reta, removendo a quebra de direção perto da cabeça. Preserve a lâmina lateral curva, o contrapeso em ponta, os detalhes vermelhos e o couro escuro. Vista lateral clara, com pouca perspectiva. Preserve as cores e o acabamento pintado. Mostre o objeto inteiro com folga nas bordas. Fundo transparente. Sem pessoas, ação ou texto.",
+      "referencia": "artes/lote/EQ-041_v01.png",
+      "arquivo": "artes/revisadas/EQ-041_v02.png",
+      "origem": "C:/Users/Gamer/.codex/generated_images/01a1784a-39da-75d3-87c4-56dc835caa37/exec-74c3148f-e039-4821-b1f2-e21f5f11ae7a.png",
+      "status": "conferida_visual",
+      "rotacao_diagramacao_graus": 0
+    },
+    {
+      "n": "118",
+      "tipo": "cajado de fantasia",
+      "detail": "Deixe a haste longa rígida perfeitamente reta do pomo até o centro do cristal superior, sem curvas ou quebra de direção no encaixe. Preserve o cristal azul, sua moldura metálica, o couro marrom e a fita vermelha.",
+      "id": "EQ-118",
+      "prompt": "Edite esta ilustração de cajado de fantasia para uma carta de jogo de fantasia. Corrija somente o alinhamento do desenho. Deixe a haste longa rígida perfeitamente reta do pomo até o centro do cristal superior, sem curvas ou quebra de direção no encaixe. Preserve o cristal azul, sua moldura metálica, o couro marrom e a fita vermelha. Vista lateral clara, com pouca perspectiva. Preserve as cores e o acabamento pintado. Mostre o objeto inteiro com folga nas bordas. Fundo transparente. Sem pessoas, ação ou texto.",
+      "referencia": "artes/lote/EQ-118_v01.png",
+      "arquivo": "artes/revisadas/EQ-118_v02.png",
+      "origem": "C:/Users/Gamer/.codex/generated_images/01a1784a-39da-75d3-87c4-56dc835caa37/exec-d13afbec-339d-492e-b02a-be209b8706c8.png",
+      "status": "conferida_visual",
+      "rotacao_diagramacao_graus": 30
+    }
+  ],
+  "preservadas": [
+    "EQ-023",
+    "EQ-156"
+  ],
+  "criterios": [
+    "Continuidade do eixo em partes rígidas",
+    "Cabeça ou lâmina bem encaixada no cabo",
+    "Ausência de curvatura ou quebra de direção acidental",
+    "Preservar curvas próprias de arcos, corrente, chicote e lâminas curvas"
+  ]
+}

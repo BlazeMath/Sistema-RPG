@@ -1,0 +1,5 @@
+# Arquivos gerados pelo Godot (não vão para o GitHub)
+.godot/
+*.import
+export/
+__pycache__/

@@ -1,0 +1,5176 @@
+[
+ {
+  "id": "classe.guerreiro.peso-da-muralha",
+  "fonte": "classe",
+  "entidade": "Guerreiro",
+  "grupo": "ESTRATÉGIA 1 · TANQUE DE GUERRA   (tank / aggro / control)",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Peso da Muralha",
+    "tags": [
+     "Postura",
+     "Armadura"
+    ],
+    "texto": "2 de fadiga, Ação: Até o início do seu próximo turno, dobre a resistência da sua armadura. Você não pode ser movido por efeitos inimigos.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 2,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Até o início do seu próximo turno, dobre a resistência da sua armadura. Você não pode ser movido por efeitos inimigos."
+    }
+   },
+   {
+    "nome": "Contragolpe de Aço",
+    "tags": [
+     "Postura",
+     "Contra-ataque"
+    ],
+    "texto": "1 de fadiga, Ação: Ataque um inimigo adjacente. Some a resistência da sua armadura ao dano.",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 1,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Ataque um inimigo adjacente. Some a resistência da sua armadura ao dano."
+    }
+   }
+  ],
+  "impressao": "5e9af5befba1"
+ },
+ {
+  "id": "classe.guerreiro.ombro-de-ferro",
+  "fonte": "classe",
+  "entidade": "Guerreiro",
+  "grupo": "ESTRATÉGIA 1 · TANQUE DE GUERRA   (tank / aggro / control)",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Ombro de Ferro",
+    "tags": [
+     "Investida"
+    ],
+    "texto": "1 de fadiga, Ação: Mova-se 1 quadrado e faça um ataque corpo a corpo. Se causar dano, o alvo fica imobilizado.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 1,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Mova-se 1 quadrado e faça um ataque corpo a corpo. Se causar dano, o alvo fica imobilizado."
+    }
+   },
+   {
+    "nome": "Avalanche",
+    "tags": [
+     "Investida",
+     "Peso"
+    ],
+    "texto": "2 de fadiga, Ação: Faça um ataque corpo a corpo. Some o dobro da resistência da sua armadura ao dano. Você fica imobilizado.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 2,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Faça um ataque corpo a corpo. Some o dobro da resistência da sua armadura ao dano. Você fica imobilizado."
+    }
+   }
+  ],
+  "impressao": "821bb1bdd3c2"
+ },
+ {
+  "id": "classe.guerreiro.provocar",
+  "fonte": "classe",
+  "entidade": "Guerreiro",
+  "grupo": "ESTRATÉGIA 1 · TANQUE DE GUERRA   (tank / aggro / control)",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Provocar",
+    "tags": [
+     "Ameaça"
+    ],
+    "texto": "1 de fadiga, Ação de Movimento: Faça um teste de Espírito ou Irritar contra Sabedoria de um inimigo adjacente. Em caso de sucesso, você se torna o alvo dos ataques do inimigo até o início do seu próximo turno.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 1,
+     "acao": "movimento",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Faça um teste de Espírito ou Irritar contra Sabedoria de um inimigo adjacente. Em caso de sucesso, você se torna o alvo dos ataques do inimigo até o início do seu próximo turno."
+    }
+   },
+   {
+    "nome": "Castigo",
+    "tags": [
+     "Ameaça",
+     "Punição"
+    ],
+    "texto": "1 de fadiga, Reação: Quando um inimigo adjacente a você atacar um aliado seu, faça um ataque corpo a corpo contra ele.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 1,
+     "acao": "reacao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Quando um inimigo adjacente a você atacar um aliado seu, faça um ataque corpo a corpo contra ele."
+    }
+   }
+  ],
+  "impressao": "1e940710390d"
+ },
+ {
+  "id": "classe.guerreiro.postura-do-leao",
+  "fonte": "classe",
+  "entidade": "Guerreiro",
+  "grupo": "ESTRATÉGIA 2 · MESTRE DAS POSTURAS   (aggro / tank / interactor)",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Postura do Leão",
+    "tags": [
+     "Postura"
+    ],
+    "texto": "Seus ataques causam +2 de dano.\nVocê defende com as cartas reveladas.",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Seus ataques causam +2 de dano.\nVocê defende com as cartas reveladas."
+    }
+   },
+   {
+    "nome": "Postura da Cascavel",
+    "tags": [
+     "Postura",
+     "Contra-ataque"
+    ],
+    "texto": "1 de fadiga, Reação: Ao se defender com sucesso, cause o dano da sua arma ao atacante.",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 1,
+     "acao": "reacao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Ao se defender com sucesso, cause o dano da sua arma ao atacante."
+    }
+   }
+  ],
+  "impressao": "b3a012a2f8a3"
+ },
+ {
+  "id": "classe.guerreiro.postura-da-tartaruga",
+  "fonte": "classe",
+  "entidade": "Guerreiro",
+  "grupo": "ESTRATÉGIA 2 · MESTRE DAS POSTURAS   (aggro / tank / interactor)",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Postura da Tartaruga",
+    "tags": [
+     "Postura"
+    ],
+    "texto": "Seu limite para testes de defesa tem +2.\nSeu limite para testes de ataque tem −2.",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Seu limite para testes de defesa tem +2.\nSeu limite para testes de ataque tem −2."
+    }
+   },
+   {
+    "nome": "Ombro de Aço",
+    "tags": [
+     "Postura",
+     "Formação"
+    ],
+    "texto": "O limite dos testes de defesa dos seus aliados têm +1.",
+    "limite_fadiga": 0,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "O limite dos testes de defesa dos seus aliados têm +1."
+    }
+   }
+  ],
+  "impressao": "2743ca1ccb7f"
+ },
+ {
+  "id": "classe.guerreiro.marcha-militar",
+  "fonte": "classe",
+  "entidade": "Guerreiro",
+  "grupo": "ESTRATÉGIA 2 · MESTRE DAS POSTURAS   (aggro / tank / interactor)",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Marcha Militar",
+    "tags": [
+     "Movimento"
+    ],
+    "texto": "1 de fadiga, Ação: Mova-se 2 quadrados ignorando terreno difícil. Depois, interaja.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 1,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Mova-se 2 quadrados ignorando terreno difícil. Depois, interaja."
+    }
+   },
+   {
+    "nome": "Romper a Linha",
+    "tags": [
+     "Movimento",
+     "Postura"
+    ],
+    "texto": "1 de fadiga, Ação: Mova-se a sua velocidade. Você ignora impedimento e não provoca reações nos inimigos durante esta movimentação.",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 1,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Mova-se a sua velocidade. Você ignora impedimento e não provoca reações nos inimigos durante esta movimentação."
+    }
+   }
+  ],
+  "impressao": "f4267fb10e4a"
+ },
+ {
+  "id": "classe.guerreiro.lanca-em-riste",
+  "fonte": "classe",
+  "entidade": "Guerreiro",
+  "grupo": "ESTRATÉGIA 3 · HOPLITA   (aggro / tank / support · escudo + lança · sinergia Soldado)",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Lança em Riste",
+    "tags": [
+     "Alcance",
+     "Formação"
+    ],
+    "texto": "1 de fadiga, Ação: Ataque. Cause +1 de dano para cada aliado adjacente a você ou ao defensor.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 1,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Ataque. Cause +1 de dano para cada aliado adjacente a você ou ao defensor."
+    }
+   },
+   {
+    "nome": "Perfurar e Recuar",
+    "tags": [
+     "Alcance"
+    ],
+    "texto": "1 de fadiga, Ação: Ataque. Depois, mova-se 1 quadrado sem provocar reações.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 1,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Ataque. Depois, mova-se 1 quadrado sem provocar reações."
+    }
+   }
+  ],
+  "impressao": "76fa9de816f4"
+ },
+ {
+  "id": "classe.guerreiro.parede-de-escudos",
+  "fonte": "classe",
+  "entidade": "Guerreiro",
+  "grupo": "ESTRATÉGIA 3 · HOPLITA   (aggro / tank / support · escudo + lança · sinergia Soldado)",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Parede de Escudos",
+    "tags": [
+     "Formação",
+     "Escudo"
+    ],
+    "texto": "Se você e um aliado adjacente possuem escudos, ambos têm +2 de resistência.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Se você e um aliado adjacente possuem escudos, ambos têm +2 de resistência."
+    }
+   },
+   {
+    "nome": "Escudo Ágil",
+    "tags": [
+     "Formação",
+     "Escudo"
+    ],
+    "texto": "2 de fadiga, Ação: Até o início do seu próximo turno, aliados adjacentes têm cobertura parcial.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 2,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Até o início do seu próximo turno, aliados adjacentes têm cobertura parcial."
+    }
+   }
+  ],
+  "impressao": "84c4a2f952cf"
+ },
+ {
+  "id": "classe.guerreiro.avanco-combinado",
+  "fonte": "classe",
+  "entidade": "Guerreiro",
+  "grupo": "ESTRATÉGIA 3 · HOPLITA   (aggro / tank / support · escudo + lança · sinergia Soldado)",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Avanço Combinado",
+    "tags": [
+     "Líder",
+     "Formação"
+    ],
+    "texto": "1 de fadiga, Ação: Você e um aliado movem-se igual a sua velocidade na mesma direção.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 1,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Você e um aliado movem-se igual a sua velocidade na mesma direção."
+    }
+   },
+   {
+    "nome": "Aguentem, Recrutas!",
+    "tags": [
+     "Líder"
+    ],
+    "texto": "1 de fadiga, Ação: Aliados adjacentes recuperam 1 de fadiga e ganham +1 de resistência até o início do seu próximo turno.",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 1,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Aliados adjacentes recuperam 1 de fadiga e ganham +1 de resistência até o início do seu próximo turno."
+    }
+   }
+  ],
+  "impressao": "355fd8d3000b"
+ },
+ {
+  "id": "classe.guerreiro.respirar-fundo",
+  "fonte": "classe",
+  "entidade": "Guerreiro",
+  "grupo": "MEIA CARTAS   (6 · lado A = efeito fraco genérico · lado B = completar com outra meia carta)",
+  "xp": 1,
+  "meia_carta": true,
+  "lados": [
+   {
+    "nome": "Respirar Fundo",
+    "tags": [
+     "Fôlego"
+    ],
+    "texto": "1 de fadiga: No fim do seu turno, recupere 1 de fadiga de outra carta.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 1,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "No fim do seu turno, recupere 1 de fadiga de outra carta."
+    }
+   },
+   {
+    "nome": "(meia carta)",
+    "tags": [
+     "Meia Carta"
+    ],
+    "texto": "Escolha outra meia carta para completar esta. Cada lado A das duas passa a ser uma face desta carta; alterne entre elas virando (gasta 1 ação).",
+    "limite_fadiga": 0,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Escolha outra meia carta para completar esta. Cada lado A das duas passa a ser uma face desta carta; alterne entre elas virando (gasta 1 ação)."
+    }
+   }
+  ],
+  "impressao": "95a1ebcf9e48"
+ },
+ {
+  "id": "classe.guerreiro.firmar-os-pes",
+  "fonte": "classe",
+  "entidade": "Guerreiro",
+  "grupo": "MEIA CARTAS   (6 · lado A = efeito fraco genérico · lado B = completar com outra meia carta)",
+  "xp": 1,
+  "meia_carta": true,
+  "lados": [
+   {
+    "nome": "Firmar os Pés",
+    "tags": [
+     "Defesa"
+    ],
+    "texto": "1 de fadiga, Ação de Movimento: Você pode somar um bônus de +2 nos testes de defesa até o seu próximo turno (conta para o limite do teste).",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 1,
+     "acao": "movimento",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Você pode somar um bônus de +2 nos testes de defesa até o seu próximo turno (conta para o limite do teste)."
+    }
+   },
+   {
+    "nome": "(meia carta)",
+    "tags": [
+     "Meia Carta"
+    ],
+    "texto": "Escolha outra meia carta para completar esta. Cada lado A das duas passa a ser uma face desta carta; alterne entre elas virando (gasta 1 ação).",
+    "limite_fadiga": 0,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Escolha outra meia carta para completar esta. Cada lado A das duas passa a ser uma face desta carta; alterne entre elas virando (gasta 1 ação)."
+    }
+   }
+  ],
+  "impressao": "f7653d18e07b"
+ },
+ {
+  "id": "classe.guerreiro.golpe-de-oportunidade",
+  "fonte": "classe",
+  "entidade": "Guerreiro",
+  "grupo": "MEIA CARTAS   (6 · lado A = efeito fraco genérico · lado B = completar com outra meia carta)",
+  "xp": 1,
+  "meia_carta": true,
+  "lados": [
+   {
+    "nome": "Golpe de Oportunidade",
+    "tags": [
+     "Ataque"
+    ],
+    "texto": "Reação: Faça um ataque contra um inimigo se movendo para fora de um quadrado adjacente a você.",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 0,
+     "acao": "reacao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Faça um ataque contra um inimigo se movendo para fora de um quadrado adjacente a você."
+    }
+   },
+   {
+    "nome": "(meia carta)",
+    "tags": [
+     "Meia Carta"
+    ],
+    "texto": "Escolha outra meia carta para completar esta. Cada lado A das duas passa a ser uma face desta carta; alterne entre elas virando (gasta 1 ação).",
+    "limite_fadiga": 0,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Escolha outra meia carta para completar esta. Cada lado A das duas passa a ser uma face desta carta; alterne entre elas virando (gasta 1 ação)."
+    }
+   }
+  ],
+  "impressao": "04956c07f8e5"
+ },
+ {
+  "id": "classe.guerreiro.reposicionar",
+  "fonte": "classe",
+  "entidade": "Guerreiro",
+  "grupo": "MEIA CARTAS   (6 · lado A = efeito fraco genérico · lado B = completar com outra meia carta)",
+  "xp": 1,
+  "meia_carta": true,
+  "lados": [
+   {
+    "nome": "Reposicionar",
+    "tags": [
+     "Movimento"
+    ],
+    "texto": "1 de fadiga: Mova-se 1 quadrado.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 1,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Mova-se 1 quadrado."
+    }
+   },
+   {
+    "nome": "(meia carta)",
+    "tags": [
+     "Meia Carta"
+    ],
+    "texto": "Escolha outra meia carta para completar esta. Cada lado A das duas passa a ser uma face desta carta; alterne entre elas virando (gasta 1 ação).",
+    "limite_fadiga": 0,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Escolha outra meia carta para completar esta. Cada lado A das duas passa a ser uma face desta carta; alterne entre elas virando (gasta 1 ação)."
+    }
+   }
+  ],
+  "impressao": "f32c8d40f9ad"
+ },
+ {
+  "id": "classe.guerreiro.foco-marcial",
+  "fonte": "classe",
+  "entidade": "Guerreiro",
+  "grupo": "MEIA CARTAS   (6 · lado A = efeito fraco genérico · lado B = completar com outra meia carta)",
+  "xp": 1,
+  "meia_carta": true,
+  "lados": [
+   {
+    "nome": "Foco Marcial",
+    "tags": [
+     "Foco"
+    ],
+    "texto": "1 de fadiga: Olhe a carta do topo do seu baralho. Se você estiver fazendo um ataque ou defesa, você pode colocar a carta do topo do seu baralho no fundo dele.",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 1,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Olhe a carta do topo do seu baralho. Se você estiver fazendo um ataque ou defesa, você pode colocar a carta do topo do seu baralho no fundo dele."
+    }
+   },
+   {
+    "nome": "(meia carta)",
+    "tags": [
+     "Meia Carta"
+    ],
+    "texto": "Escolha outra meia carta para completar esta. Cada lado A das duas passa a ser uma face desta carta; alterne entre elas virando (gasta 1 ação).",
+    "limite_fadiga": 0,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Escolha outra meia carta para completar esta. Cada lado A das duas passa a ser uma face desta carta; alterne entre elas virando (gasta 1 ação)."
+    }
+   }
+  ],
+  "impressao": "61a402fc5387"
+ },
+ {
+  "id": "classe.guerreiro.segundo-folego",
+  "fonte": "classe",
+  "entidade": "Guerreiro",
+  "grupo": "MEIA CARTAS   (6 · lado A = efeito fraco genérico · lado B = completar com outra meia carta)",
+  "xp": 1,
+  "meia_carta": true,
+  "lados": [
+   {
+    "nome": "Segundo Fôlego",
+    "tags": [
+     "Fôlego"
+    ],
+    "texto": "1 de fadiga: Devolva a carta do topo do seu descarte para o fundo do seu baralho.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 1,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Devolva a carta do topo do seu descarte para o fundo do seu baralho."
+    }
+   },
+   {
+    "nome": "(meia carta)",
+    "tags": [
+     "Meia Carta"
+    ],
+    "texto": "Escolha outra meia carta para completar esta. Cada lado A das duas passa a ser uma face desta carta; alterne entre elas virando (gasta 1 ação).",
+    "limite_fadiga": 0,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Escolha outra meia carta para completar esta. Cada lado A das duas passa a ser uma face desta carta; alterne entre elas virando (gasta 1 ação)."
+    }
+   }
+  ],
+  "impressao": "403fdd17d30c"
+ },
+ {
+  "id": "classe.guerreiro.sangue-fervente",
+  "fonte": "classe",
+  "entidade": "Guerreiro",
+  "grupo": "CARTAS DE 2 XP   (custam 2 de XP · fortes, premiam eficiência sobre variedade)",
+  "xp": 2,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Sangue Fervente",
+    "tags": [
+     "Fúria"
+    ],
+    "texto": "2 de fadiga, Ação de Movimento: Ganhe uma ação padrão adicional. Coloque uma carta do topo do seu baralho no exílio.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 2,
+     "acao": "movimento",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Ganhe uma ação padrão adicional. Coloque uma carta do topo do seu baralho no exílio."
+    }
+   },
+   {
+    "nome": "Segundo Vento",
+    "tags": [
+     "Fúria",
+     "Fôlego"
+    ],
+    "texto": "Ao virar para este lado, cure igual a sua Constituição ou retire fadiga de uma outra carta igual ao seu Espírito.",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Ao virar para este lado, cure igual a sua Constituição ou retire fadiga de uma outra carta igual ao seu Espírito."
+    }
+   }
+  ],
+  "impressao": "d8f1b13814ed"
+ },
+ {
+  "id": "classe.guerreiro.ancora",
+  "fonte": "classe",
+  "entidade": "Guerreiro",
+  "grupo": "CARTAS DE 2 XP   (custam 2 de XP · fortes, premiam eficiência sobre variedade)",
+  "xp": 2,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Âncora",
+    "tags": [
+     "Guarda"
+    ],
+    "texto": "2 de fadiga, Ação: Até o início do seu próximo turno, você ganha +3 de resistência e você se torna o alvo dos ataques corpo a corpo realizados contra aliados adjacentes, mesmo que não pudesse ser o alvo.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 2,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Até o início do seu próximo turno, você ganha +3 de resistência e você se torna o alvo dos ataques corpo a corpo realizados contra aliados adjacentes, mesmo que não pudesse ser o alvo."
+    }
+   },
+   {
+    "nome": "Instinto Defensivo",
+    "tags": [
+     "Guarda"
+    ],
+    "texto": "Ao virar para este lado, ganhe uma ficha de bloqueio.",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Ao virar para este lado, ganhe uma ficha de bloqueio."
+    }
+   }
+  ],
+  "impressao": "a99bd09948bd"
+ },
+ {
+  "id": "classe.guerreiro.instruir-armamento",
+  "fonte": "classe",
+  "entidade": "Guerreiro",
+  "grupo": "CARTAS DE 2 XP   (custam 2 de XP · fortes, premiam eficiência sobre variedade)",
+  "xp": 2,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Instruir Armamento",
+    "tags": [
+     "Líder"
+    ],
+    "texto": "2 de fadiga: Os aliados adjacentes podem virar a carta de arma.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 2,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Os aliados adjacentes podem virar a carta de arma."
+    }
+   },
+   {
+    "nome": "Movimento Guiado",
+    "tags": [
+     "Líder"
+    ],
+    "texto": "Ao virar para este lado, aliados ao alcance 3 podem se mover 1 sem provocar reação.",
+    "limite_fadiga": 0,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Ao virar para este lado, aliados ao alcance 3 podem se mover 1 sem provocar reação."
+    }
+   }
+  ],
+  "impressao": "66c276aeffd1"
+ },
+ {
+  "id": "classe.ladino.dedos-de-seda",
+  "fonte": "classe",
+  "entidade": "Ladino",
+  "grupo": "ESTRATÉGIA 1 · LADRÃO   (furtividade, ladinagem, roubo)",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Dedos de Seda",
+    "tags": [
+     "Perícia",
+     "Ladinagem"
+    ],
+    "texto": "Ao realizar um teste de Ladinagem com sucesso, ganhe 1 ficha de Foco ou Preparo. Depois, você pode virar essa carta.",
+    "limite_fadiga": 0,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Ao realizar um teste de Ladinagem com sucesso, ganhe 1 ficha de Foco ou Preparo. Depois, você pode virar essa carta."
+    }
+   },
+   {
+    "nome": "Por um Triz",
+    "tags": [
+     "Acrobacia",
+     "Escape"
+    ],
+    "texto": "2 de fadiga: Coloque 1 ficha de Confusão nesta carta e na sua carta de herói. Ganhe 1 ficha de Bloqueio.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 2,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Coloque 1 ficha de Confusão nesta carta e na sua carta de herói. Ganhe 1 ficha de Bloqueio."
+    }
+   }
+  ],
+  "impressao": "aa2805aaad35"
+ },
+ {
+  "id": "classe.ladino.ataque-furtivo",
+  "fonte": "classe",
+  "entidade": "Ladino",
+  "grupo": "ESTRATÉGIA 1 · LADRÃO   (furtividade, ladinagem, roubo)",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Ataque Furtivo",
+    "tags": [
+     "Ataque",
+     "Furtividade"
+    ],
+    "texto": "Como parte de um ataque: descarte qualquer quantidade de fichas de Sombra; para cada ficha descartada, some novamente o dano da sua arma.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Como parte de um ataque: descarte qualquer quantidade de fichas de Sombra; para cada ficha descartada, some novamente o dano da sua arma."
+    }
+   },
+   {
+    "nome": "Bomba de Fumaça",
+    "tags": [
+     "Furtividade"
+    ],
+    "texto": "Ação: ganhe 1 ficha de Sombra caso você não tenha atacado neste turno. Vire esta carta.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 0,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "ganhe 1 ficha de Sombra caso você não tenha atacado neste turno. Vire esta carta."
+    }
+   }
+  ],
+  "impressao": "e7c4669d1bfa"
+ },
+ {
+  "id": "classe.ladino.passo-de-sombra",
+  "fonte": "classe",
+  "entidade": "Ladino",
+  "grupo": "ESTRATÉGIA 1 · LADRÃO   (furtividade, ladinagem, roubo)",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Passo de Sombra",
+    "tags": [
+     "Furtividade",
+     "Movimento"
+    ],
+    "texto": "Descarte 2 fichas de Sombra: Fique oculto e mova-se 4 sem ser percebido.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [
+      "Descarte 2 fichas de Sombra"
+     ],
+     "permanente": "",
+     "efeito": "Fique oculto e mova-se 4 sem ser percebido."
+    }
+   },
+   {
+    "nome": "Assalto do Gatuno",
+    "tags": [
+     "Ladinagem",
+     "Furtividade"
+    ],
+    "texto": "1 de fadiga, Ação: Se você estiver oculto ou se o alvo estiver caído, ganhe 2 fichas de Foco. Depois, faça um teste de Ladinagem contra Percepção do alvo. Em caso de sucesso, roube um item (a critério do mestre) ou o alvo ganha uma ficha de Desarmado.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 1,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Se você estiver oculto ou se o alvo estiver caído, ganhe 2 fichas de Foco. Depois, faça um teste de Ladinagem contra Percepção do alvo. Em caso de sucesso, roube um item (a critério do mestre) ou o alvo ganha uma ficha de Desarmado."
+    }
+   }
+  ],
+  "impressao": "6cf99b3240ff"
+ },
+ {
+  "id": "classe.ladino.mas-veja-bem",
+  "fonte": "classe",
+  "entidade": "Ladino",
+  "grupo": "ESTRATÉGIA 2 · MALANDRO   (contatos, lábia, trapaça)",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Mas Veja Bem",
+    "tags": [
+     "Social"
+    ],
+    "texto": "Refaça um teste de Diplomacia ou Mentira que você falhou. Vire esta carta.",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Refaça um teste de Diplomacia ou Mentira que você falhou. Vire esta carta."
+    }
+   },
+   {
+    "nome": "Olha Lá!",
+    "tags": [
+     "Trapaça",
+     "Defesa"
+    ],
+    "texto": "1 de fadiga: retire 1 ficha de Marcação e/ou 1 ficha de Penalidade sua. O inimigo alvo não pode ter vantagens em testes contra você neste turno.",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 1,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "retire 1 ficha de Marcação e/ou 1 ficha de Penalidade sua. O inimigo alvo não pode ter vantagens em testes contra você neste turno."
+    }
+   }
+  ],
+  "impressao": "47fa2ef002b0"
+ },
+ {
+  "id": "classe.ladino.finta",
+  "fonte": "classe",
+  "entidade": "Ladino",
+  "grupo": "ESTRATÉGIA 2 · MALANDRO   (contatos, lábia, trapaça)",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Finta",
+    "tags": [
+     "Ataque",
+     "Trapaça"
+    ],
+    "texto": "Descarte 1 ficha de Sombra: Você ganha vantagem em um teste de ataque. Se falhar no teste, ganhe 1 ficha de Sombra e 1 ficha de Penalidade.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [
+      "Descarte 1 ficha de Sombra"
+     ],
+     "permanente": "",
+     "efeito": "Você ganha vantagem em um teste de ataque. Se falhar no teste, ganhe 1 ficha de Sombra e 1 ficha de Penalidade."
+    }
+   },
+   {
+    "nome": "Lâmina na Manga",
+    "tags": [
+     "Ataque"
+    ],
+    "texto": "Passiva: você causa +1 de dano para cada ficha de Sombra que possui.",
+    "limite_fadiga": 0,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Passiva: você causa +1 de dano para cada ficha de Sombra que possui."
+    }
+   }
+  ],
+  "impressao": "417f881c6e40"
+ },
+ {
+  "id": "classe.ladino.rede-de-contatos",
+  "fonte": "classe",
+  "entidade": "Ladino",
+  "grupo": "ESTRATÉGIA 2 · MALANDRO   (contatos, lábia, trapaça)",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Rede de Contatos",
+    "tags": [
+     "Social"
+    ],
+    "texto": "1 de fadiga: Ao realizar um teste para conseguir contatos, você conhece alguém que lhe dá um dos seguintes efeitos, a sua escolha e a critério do mestre:\n• Uma informação;\n• Um esconderijo por 1 dia;\n• Um item comum.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 1,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Ao realizar um teste para conseguir contatos, você conhece alguém que lhe dá um dos seguintes efeitos, a sua escolha e a critério do mestre:\n• Uma informação;\n• Um esconderijo por 1 dia;\n• Um item comum."
+    }
+   },
+   {
+    "nome": "Escapulir",
+    "tags": [
+     "Trapaça",
+     "Furtividade"
+    ],
+    "texto": "2 de fadiga, Reação: Ao ser percebido enquanto oculto, mova-se 3 sem provocar reações e ganhe 1 ficha de Sombra.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 2,
+     "acao": "reacao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Ao ser percebido enquanto oculto, mova-se 3 sem provocar reações e ganhe 1 ficha de Sombra."
+    }
+   }
+  ],
+  "impressao": "13dae24100c9"
+ },
+ {
+  "id": "classe.ladino.truques-de-salao",
+  "fonte": "classe",
+  "entidade": "Ladino",
+  "grupo": "ESTRATÉGIA 3 · MÁGICO   (prestidigitação, ilusionismo, magia conveniente)",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Truques de Salão",
+    "tags": [
+     "Conjuração",
+     "Magia",
+     "Truque",
+     "Repertório"
+    ],
+    "texto": "2 de fadiga, Ação: Mova um objeto pequeno ao alcance 3.\n2 de fadiga, Ação: Crie um ruído ou brilho ao alcance curto.\n2 de fadiga, Ação: Um objeto pequeno em sua mão fica invisível enquanto você segurar.",
+    "limite_fadiga": 3,
+    "custo": {
+     "fadiga": 2,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Mova um objeto pequeno ao alcance 3.\n2 de fadiga, Ação: Crie um ruído ou brilho ao alcance curto.\n2 de fadiga, Ação: Um objeto pequeno em sua mão fica invisível enquanto você segurar."
+    }
+   },
+   {
+    "nome": "Fechadura Fantasma",
+    "tags": [
+     "Conjuração",
+     "Magia",
+     "Ladinagem"
+    ],
+    "texto": "1 de fadiga, Ação: Faça um teste de Ladinagem contra uma fechadura ou cadeado ao alcance 3, com dificuldade definida pelo mestre. Em caso de sucesso, destranque o alvo.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 1,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Faça um teste de Ladinagem contra uma fechadura ou cadeado ao alcance 3, com dificuldade definida pelo mestre. Em caso de sucesso, destranque o alvo."
+    }
+   }
+  ],
+  "impressao": "f8afe234c676"
+ },
+ {
+  "id": "classe.ladino.mancha-sombria",
+  "fonte": "classe",
+  "entidade": "Ladino",
+  "grupo": "ESTRATÉGIA 3 · MÁGICO   (prestidigitação, ilusionismo, magia conveniente)",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Mancha Sombria",
+    "tags": [
+     "Conjuração",
+     "Magia",
+     "Controle"
+    ],
+    "texto": "2 de fadiga, 1 Ficha de Sombra: Um inimigo ao alcance 3 ganha 1 ficha de Cegueira.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 2,
+     "acao": null,
+     "outros": [
+      "1 Ficha de Sombra"
+     ],
+     "permanente": "",
+     "efeito": "Um inimigo ao alcance 3 ganha 1 ficha de Cegueira."
+    }
+   },
+   {
+    "nome": "Névoa Ilusória",
+    "tags": [
+     "Conjuração",
+     "Magia",
+     "Zona"
+    ],
+    "texto": "2 de fadiga: Crie uma zona 3x3x3 de névoa até o fim da cena. A névoa conta como cobertura parcial e personagens sem ficha de Sombra que terminarem o turno dentro dela ganham 1 ficha de Sombra.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 2,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Crie uma zona 3x3x3 de névoa até o fim da cena. A névoa conta como cobertura parcial e personagens sem ficha de Sombra que terminarem o turno dentro dela ganham 1 ficha de Sombra."
+    }
+   }
+  ],
+  "impressao": "67f6d07960ea"
+ },
+ {
+  "id": "classe.ladino.gancho-fantasma",
+  "fonte": "classe",
+  "entidade": "Ladino",
+  "grupo": "ESTRATÉGIA 3 · MÁGICO   (prestidigitação, ilusionismo, magia conveniente)",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Gancho Fantasma",
+    "tags": [
+     "Conjuração",
+     "Magia",
+     "Movimento"
+    ],
+    "texto": "2 de fadiga, Ação de Movimento: O alvo de tamanho médio ou menor a distância curta faz um teste de Força (dif. 18). Se falhar, o alvo é puxado 3 quadrados. Objetos pequenos e aliados falham automaticamente no teste.\n1 de fadiga: Você é puxado 3 quadrados em direção a um objeto grande ou maior, ou a um objeto fixado de maneira a ficar imóvel.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 2,
+     "acao": "movimento",
+     "outros": [],
+     "permanente": "",
+     "efeito": "O alvo de tamanho médio ou menor a distância curta faz um teste de Força (dif. 18). Se falhar, o alvo é puxado 3 quadrados. Objetos pequenos e aliados falham automaticamente no teste.\n1 de fadiga: Você é puxado 3 quadrados em direção a um objeto grande ou maior, ou a um objeto fixado de maneira a ficar imóvel."
+    }
+   },
+   {
+    "nome": "Adaga Fantasma",
+    "tags": [
+     "Magia",
+     "Ataque"
+    ],
+    "texto": "Como parte de seu ataque, você pode colocar 1 ficha de Atormentado nesta carta. Se o fizer, o alvo do seu ataque recebe 1 ficha de Ferimento.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Como parte de seu ataque, você pode colocar 1 ficha de Atormentado nesta carta. Se o fizer, o alvo do seu ataque recebe 1 ficha de Ferimento."
+    }
+   }
+  ],
+  "impressao": "725eec4a39f8"
+ },
+ {
+  "id": "classe.ladino.olho-de-ladrao",
+  "fonte": "classe",
+  "entidade": "Ladino",
+  "grupo": "MEIA CARTAS   (6 · lado A fraco, lado B completa com outra meia carta)",
+  "xp": 1,
+  "meia_carta": true,
+  "lados": [
+   {
+    "nome": "Olho de Ladrão",
+    "tags": [
+     "Ladinagem"
+    ],
+    "texto": "1 de fadiga: Faça um teste de Percepção com vantagem para encontrar saídas, esconderijos ou objetos de valor.",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 1,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Faça um teste de Percepção com vantagem para encontrar saídas, esconderijos ou objetos de valor."
+    }
+   },
+   {
+    "nome": "(meia carta)",
+    "tags": [
+     "Meia Carta"
+    ],
+    "texto": "Escolha outra meia carta para completar esta. Cada lado A das duas vira uma face; alterne virando (gasta 1 ação).",
+    "limite_fadiga": 0,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Escolha outra meia carta para completar esta. Cada lado A das duas vira uma face; alterne virando (gasta 1 ação)."
+    }
+   }
+  ],
+  "impressao": "b2e603654131"
+ },
+ {
+  "id": "classe.ladino.pe-ligeiro",
+  "fonte": "classe",
+  "entidade": "Ladino",
+  "grupo": "MEIA CARTAS   (6 · lado A fraco, lado B completa com outra meia carta)",
+  "xp": 1,
+  "meia_carta": true,
+  "lados": [
+   {
+    "nome": "Pé Ligeiro",
+    "tags": [
+     "Movimento"
+    ],
+    "texto": "1 de fadiga: Mova-se 1 para longe de um inimigo adjacente sem provocar reações.",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 1,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Mova-se 1 para longe de um inimigo adjacente sem provocar reações."
+    }
+   },
+   {
+    "nome": "(meia carta)",
+    "tags": [
+     "Meia Carta"
+    ],
+    "texto": "Escolha outra meia carta para completar esta. Cada lado A das duas vira uma face; alterne virando (gasta 1 ação).",
+    "limite_fadiga": 0,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Escolha outra meia carta para completar esta. Cada lado A das duas vira uma face; alterne virando (gasta 1 ação)."
+    }
+   }
+  ],
+  "impressao": "78768ed1cdb0"
+ },
+ {
+  "id": "classe.ladino.lamina-rapida",
+  "fonte": "classe",
+  "entidade": "Ladino",
+  "grupo": "MEIA CARTAS   (6 · lado A fraco, lado B completa com outra meia carta)",
+  "xp": 1,
+  "meia_carta": true,
+  "lados": [
+   {
+    "nome": "Lâmina Rápida",
+    "tags": [
+     "Ataque"
+    ],
+    "texto": "1 de fadiga: Seu próximo ataque neste turno não gera reações dos inimigos.",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 1,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Seu próximo ataque neste turno não gera reações dos inimigos."
+    }
+   },
+   {
+    "nome": "(meia carta)",
+    "tags": [
+     "Meia Carta"
+    ],
+    "texto": "Escolha outra meia carta para completar esta. Cada lado A das duas vira uma face; alterne virando (gasta 1 ação).",
+    "limite_fadiga": 0,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Escolha outra meia carta para completar esta. Cada lado A das duas vira uma face; alterne virando (gasta 1 ação)."
+    }
+   }
+  ],
+  "impressao": "bd89ae428d58"
+ },
+ {
+  "id": "classe.ladino.empurrao-mistico",
+  "fonte": "classe",
+  "entidade": "Ladino",
+  "grupo": "MEIA CARTAS   (6 · lado A fraco, lado B completa com outra meia carta)",
+  "xp": 1,
+  "meia_carta": true,
+  "lados": [
+   {
+    "nome": "Empurrão Místico",
+    "tags": [
+     "Magia"
+    ],
+    "texto": "1 de fadiga, Ação: O objeto pequeno alvo ao alcance curto move-se 1 quadrado.\n1 de fadiga, Ação: O alvo com ficha de Confusão ao alcance curto fica caído.",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 1,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "O objeto pequeno alvo ao alcance curto move-se 1 quadrado.\n1 de fadiga, Ação: O alvo com ficha de Confusão ao alcance curto fica caído."
+    }
+   },
+   {
+    "nome": "(meia carta)",
+    "tags": [
+     "Meia Carta"
+    ],
+    "texto": "Escolha outra meia carta para completar esta. Cada lado A das duas vira uma face; alterne virando (gasta 1 ação).",
+    "limite_fadiga": 0,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Escolha outra meia carta para completar esta. Cada lado A das duas vira uma face; alterne virando (gasta 1 ação)."
+    }
+   }
+  ],
+  "impressao": "8e5d89f30d8f"
+ },
+ {
+  "id": "classe.ladino.torcer-a-lamina",
+  "fonte": "classe",
+  "entidade": "Ladino",
+  "grupo": "MEIA CARTAS   (6 · lado A fraco, lado B completa com outra meia carta)",
+  "xp": 1,
+  "meia_carta": true,
+  "lados": [
+   {
+    "nome": "Torcer a Lâmina",
+    "tags": [
+     "Ataque"
+    ],
+    "texto": "1 de fadiga: Seu próximo ataque corpo-a-corpo neste turno aplica 1 ficha de Sangramento.",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 1,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Seu próximo ataque corpo-a-corpo neste turno aplica 1 ficha de Sangramento."
+    }
+   },
+   {
+    "nome": "(meia carta)",
+    "tags": [
+     "Meia Carta"
+    ],
+    "texto": "Escolha outra meia carta para completar esta. Cada lado A das duas vira uma face; alterne virando (gasta 1 ação).",
+    "limite_fadiga": 0,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Escolha outra meia carta para completar esta. Cada lado A das duas vira uma face; alterne virando (gasta 1 ação)."
+    }
+   }
+  ],
+  "impressao": "3beb9b7a3243"
+ },
+ {
+  "id": "classe.ladino.sumico",
+  "fonte": "classe",
+  "entidade": "Ladino",
+  "grupo": "MEIA CARTAS   (6 · lado A fraco, lado B completa com outra meia carta)",
+  "xp": 1,
+  "meia_carta": true,
+  "lados": [
+   {
+    "nome": "Sumiço",
+    "tags": [
+     "Furtividade"
+    ],
+    "texto": "Ação, 1 de fadiga: ganhe 1 ficha de Sombra.",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 1,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "ganhe 1 ficha de Sombra."
+    }
+   },
+   {
+    "nome": "(meia carta)",
+    "tags": [
+     "Meia Carta"
+    ],
+    "texto": "Escolha outra meia carta para completar esta. Cada lado A das duas vira uma face; alterne virando (gasta 1 ação).",
+    "limite_fadiga": 0,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Escolha outra meia carta para completar esta. Cada lado A das duas vira uma face; alterne virando (gasta 1 ação)."
+    }
+   }
+  ],
+  "impressao": "b0ac27e85201"
+ },
+ {
+  "id": "classe.ladino.nunca-visto",
+  "fonte": "classe",
+  "entidade": "Ladino",
+  "grupo": "CARTAS DE 2 XP",
+  "xp": 2,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Nunca Visto",
+    "tags": [
+     "Furtividade"
+    ],
+    "texto": "Passiva: no início do seu turno, ganhe 1 ficha de Sombra.",
+    "limite_fadiga": 0,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Passiva: no início do seu turno, ganhe 1 ficha de Sombra."
+    }
+   },
+   {
+    "nome": "Bote Fatal",
+    "tags": [
+     "Ataque",
+     "Furtividade"
+    ],
+    "texto": "Os alvos de seus ataques corpo-a-corpo recebem 1 ficha de Ferimento para cada ficha de Sombra que você tem.",
+    "limite_fadiga": 0,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Os alvos de seus ataques corpo-a-corpo recebem 1 ficha de Ferimento para cada ficha de Sombra que você tem."
+    }
+   }
+  ],
+  "impressao": "544eb819ee3c"
+ },
+ {
+  "id": "classe.ladino.sempre-um-plano",
+  "fonte": "classe",
+  "entidade": "Ladino",
+  "grupo": "CARTAS DE 2 XP",
+  "xp": 2,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Sempre um Plano",
+    "tags": [
+     "Social",
+     "Utilidade"
+    ],
+    "texto": "Ação: Recupere um item consumível gasto. Limitado a uma vez por cena.\n2 de fadiga: Compre uma carta.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 0,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Recupere um item consumível gasto. Limitado a uma vez por cena.\n2 de fadiga: Compre uma carta."
+    }
+   },
+   {
+    "nome": "Adaptável",
+    "tags": [
+     "Utilidade"
+    ],
+    "texto": "Descarte uma carta: vire a sua carta de arma ou de herói.",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [
+      "Descarte uma carta"
+     ],
+     "permanente": "",
+     "efeito": "vire a sua carta de arma ou de herói."
+    }
+   }
+  ],
+  "impressao": "afff65097f6a"
+ },
+ {
+  "id": "classe.ladino.passo-espectral",
+  "fonte": "classe",
+  "entidade": "Ladino",
+  "grupo": "CARTAS DE 2 XP",
+  "xp": 2,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Passo Espectral",
+    "tags": [
+     "Magia",
+     "Movimento"
+    ],
+    "texto": "Ação de Movimento: Teleporte para um quadrado no seu campo de visão até 2 quadrados de distância.\n1 de fadiga, Reação: Ao falhar em uma defesa de um ataque à distância, sofra metade do dano.",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 0,
+     "acao": "movimento",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Teleporte para um quadrado no seu campo de visão até 2 quadrados de distância.\n1 de fadiga, Reação: Ao falhar em uma defesa de um ataque à distância, sofra metade do dano."
+    }
+   },
+   {
+    "nome": "Roubo Arcano",
+    "tags": [
+     "Magia",
+     "Reação"
+    ],
+    "texto": "Ficha de Reação: Quando um inimigo conjura uma magia, faça um teste do seu Raciocínio contra Sabedoria do conjurador. Em caso de sucesso, anule a magia conjurada e coloque uma ficha de Atordoamento nesta carta.",
+    "limite_fadiga": 0,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [
+      "Ficha de Reação"
+     ],
+     "permanente": "",
+     "efeito": "Quando um inimigo conjura uma magia, faça um teste do seu Raciocínio contra Sabedoria do conjurador. Em caso de sucesso, anule a magia conjurada e coloque uma ficha de Atordoamento nesta carta."
+    }
+   }
+  ],
+  "impressao": "6cf953e156e7"
+ },
+ {
+  "id": "classe.clerigo.toque-restaurador",
+  "fonte": "classe",
+  "entidade": "Clérigo",
+  "grupo": "ESTRATÉGIA 1 · CURANDEIRO DA IGREJA   (support · support / aggro / tank)",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Toque Restaurador",
+    "tags": [
+     "Conjuração",
+     "Magia Divina",
+     "Cura"
+    ],
+    "texto": "1 de fadiga, Ação: Escolha você ou um aliado adjacente como alvo. O alvo exila uma carta do descarte. Depois, o alvo cura 3 + sua Sabedoria.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 1,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Escolha você ou um aliado adjacente como alvo. O alvo exila uma carta do descarte. Depois, o alvo cura 3 + sua Sabedoria."
+    }
+   },
+   {
+    "nome": "Benção Persistente",
+    "tags": [
+     "Magia Divina",
+     "Cura",
+     "Aura"
+    ],
+    "texto": "No final do seu turno, você pode colocar 1 de fadiga nesta carta. Se você o fizer, você e cada aliado ao alcance curto exila uma carta do descarte e depois cura 1.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "No final do seu turno, você pode colocar 1 de fadiga nesta carta. Se você o fizer, você e cada aliado ao alcance curto exila uma carta do descarte e depois cura 1."
+    }
+   }
+  ],
+  "impressao": "28335d82e3a1"
+ },
+ {
+  "id": "classe.clerigo.feixe-de-luz",
+  "fonte": "classe",
+  "entidade": "Clérigo",
+  "grupo": "ESTRATÉGIA 1 · CURANDEIRO DA IGREJA   (support · support / aggro / tank)",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Feixe de Luz",
+    "tags": [
+     "Conjuração",
+     "Magia Divina",
+     "Ataque",
+     "Radiante"
+    ],
+    "texto": "1 de fadiga, Ação: Faça um ataque mágico ao alcance 2. O tipo do dano é Radiante e causa +2 de dano contra mortos-vivos.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 1,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Faça um ataque mágico ao alcance 2. O tipo do dano é Radiante e causa +2 de dano contra mortos-vivos."
+    }
+   },
+   {
+    "nome": "Golpe da Punição",
+    "tags": [
+     "Conjuração",
+     "Magia Divina",
+     "Ataque",
+     "Radiante"
+    ],
+    "texto": "2 de fadiga, Ação: Faça um ataque corpo-a-corpo. O dano do ataque é Radiante além de seus outros tipos. O alvo do ataque não pode se curar até o início do seu próximo turno.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 2,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Faça um ataque corpo-a-corpo. O dano do ataque é Radiante além de seus outros tipos. O alvo do ataque não pode se curar até o início do seu próximo turno."
+    }
+   }
+  ],
+  "impressao": "b2706f6b9e3f"
+ },
+ {
+  "id": "classe.clerigo.lanterna-da-fe",
+  "fonte": "classe",
+  "entidade": "Clérigo",
+  "grupo": "ESTRATÉGIA 1 · CURANDEIRO DA IGREJA   (support · support / aggro / tank)",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Lanterna da Fé",
+    "tags": [
+     "Conjuração",
+     "Magia Divina",
+     "Luz"
+    ],
+    "texto": "1 de fadiga: Até o fim da cena, sua mão livre projeta um cone de luz, iluminando ao alcance curto.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 1,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Até o fim da cena, sua mão livre projeta um cone de luz, iluminando ao alcance curto."
+    }
+   },
+   {
+    "nome": "Clarão Divino",
+    "tags": [
+     "Conjuração",
+     "Magia Divina",
+     "Luz",
+     "Cegueira"
+    ],
+    "texto": "2 de fadiga: Inimigos adjacentes ganham uma ficha de cegueira.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 2,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Inimigos adjacentes ganham uma ficha de cegueira."
+    }
+   }
+  ],
+  "impressao": "04842890247d"
+ },
+ {
+  "id": "classe.clerigo.agua-benta",
+  "fonte": "classe",
+  "entidade": "Clérigo",
+  "grupo": "ESTRATÉGIA 2 · EXORCISTA   (aggro · support / aggro / interactor)",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Água Benta",
+    "tags": [
+     "Conjuração",
+     "Magia Divina",
+     "Radiante"
+    ],
+    "texto": "1 de fadiga: Remova uma ficha de um aliado adjacente.\n1 de fadiga: Cause 2 de dano Radiante a um morto-vivo ou demônio adjacente. Este dano não pode ser prevenido.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 1,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Remova uma ficha de um aliado adjacente.\n1 de fadiga: Cause 2 de dano Radiante a um morto-vivo ou demônio adjacente. Este dano não pode ser prevenido."
+    }
+   },
+   {
+    "nome": "Círculo de Proteção",
+    "tags": [
+     "Conjuração",
+     "Magia Divina",
+     "Defesa",
+     "Aura"
+    ],
+    "texto": "2 de fadiga: Você irradia uma aura divina. Até o início do seu próximo turno, você e aliados têm resistência 2 contra mortos-vivos e demônios.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 2,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Você irradia uma aura divina. Até o início do seu próximo turno, você e aliados têm resistência 2 contra mortos-vivos e demônios."
+    }
+   }
+  ],
+  "impressao": "265a8425e2f8"
+ },
+ {
+  "id": "classe.clerigo.palavra-de-banimento",
+  "fonte": "classe",
+  "entidade": "Clérigo",
+  "grupo": "ESTRATÉGIA 2 · EXORCISTA   (aggro · support / aggro / interactor)",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Palavra de Banimento",
+    "tags": [
+     "Conjuração",
+     "Magia Divina",
+     "Ataque",
+     "Radiante"
+    ],
+    "texto": "2 de fadiga, Ação: Faça um ataque mágico contra um inimigo ao alcance curto. O ataque tem dano Radiante e ignora resistência se o inimigo for um morto-vivo ou demônio.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 2,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Faça um ataque mágico contra um inimigo ao alcance curto. O ataque tem dano Radiante e ignora resistência se o inimigo for um morto-vivo ou demônio."
+    }
+   },
+   {
+    "nome": "Expulsar",
+    "tags": [
+     "Conjuração",
+     "Magia Divina",
+     "Empurrão"
+    ],
+    "texto": "1 de fadiga, Ação: Faça um teste de Espírito contra Espírito em um inimigo adjacente. Em caso de sucesso, o alvo é empurrado 2 quadrados e não pode se aproximar de você no próximo turno.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 1,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Faça um teste de Espírito contra Espírito em um inimigo adjacente. Em caso de sucesso, o alvo é empurrado 2 quadrados e não pode se aproximar de você no próximo turno."
+    }
+   }
+  ],
+  "impressao": "d3dfe70407af"
+ },
+ {
+  "id": "classe.clerigo.voz-do-exorcista",
+  "fonte": "classe",
+  "entidade": "Clérigo",
+  "grupo": "ESTRATÉGIA 2 · EXORCISTA   (aggro · support / aggro / interactor)",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Voz do Exorcista",
+    "tags": [
+     "Conjuração",
+     "Magia Divina",
+     "Anulação"
+    ],
+    "texto": "1 de fadiga, Reação: Quando uma habilidade de morto-vivo ou demônio for ativada ou desencadeada, faça um teste de Espírito contra Espírito do dono da habilidade. Em caso de sucesso, anule a habilidade.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 1,
+     "acao": "reacao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Quando uma habilidade de morto-vivo ou demônio for ativada ou desencadeada, faça um teste de Espírito contra Espírito do dono da habilidade. Em caso de sucesso, anule a habilidade."
+    }
+   },
+   {
+    "nome": "Rito de Purificação",
+    "tags": [
+     "Conjuração",
+     "Magia Divina",
+     "Zona",
+     "Radiante"
+    ],
+    "texto": "2 de fadiga, Ação: Crie uma zona de alcance curto centralizada em você. Mortos-vivos e demônios que começarem ou terminarem seus turnos dentro da área recebem uma ficha de penalidade e sofrem 1 de dano que não pode ser reduzido. A área se move junto com você.\n1 de fadiga: Sustentar o efeito.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 2,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Crie uma zona de alcance curto centralizada em você. Mortos-vivos e demônios que começarem ou terminarem seus turnos dentro da área recebem uma ficha de penalidade e sofrem 1 de dano que não pode ser reduzido. A área se move junto com você.\n1 de fadiga: Sustentar o efeito."
+    }
+   }
+  ],
+  "impressao": "c1c8ddfed450"
+ },
+ {
+  "id": "classe.clerigo.palavra-de-animo",
+  "fonte": "classe",
+  "entidade": "Clérigo",
+  "grupo": "ESTRATÉGIA 3 · ORADOR DIVINO   (control/zonas e marcações · support / aggro / control)",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Palavra de Ânimo",
+    "tags": [
+     "Magia Divina",
+     "Apoio"
+    ],
+    "texto": "1 de fadiga: Um aliado ao alcance 3 ganha +1 de bônus em um teste que esteja realizando (este valor conta para o limite de 21).",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 1,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Um aliado ao alcance 3 ganha +1 de bônus em um teste que esteja realizando (este valor conta para o limite de 21)."
+    }
+   },
+   {
+    "nome": "Hino de Coragem",
+    "tags": [
+     "Magia Divina",
+     "Defesa",
+     "Aura"
+    ],
+    "texto": "2 de fadiga, Ação: Até o início do seu próximo turno, aliados ao alcance 2 não podem ter fichas colocadas por efeitos de inimigos.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 2,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Até o início do seu próximo turno, aliados ao alcance 2 não podem ter fichas colocadas por efeitos de inimigos."
+    }
+   }
+  ],
+  "impressao": "ac177d86fc7d"
+ },
+ {
+  "id": "classe.clerigo.condenar",
+  "fonte": "classe",
+  "entidade": "Clérigo",
+  "grupo": "ESTRATÉGIA 3 · ORADOR DIVINO   (control/zonas e marcações · support / aggro / control)",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Condenar",
+    "tags": [
+     "Conjuração",
+     "Magia Divina",
+     "Ataque",
+     "Radiante",
+     "Marcação"
+    ],
+    "texto": "1 de fadiga, Ação: Faça um ataque mágico a um inimigo ao alcance 3. O dano é do tipo Radiante. Se o inimigo já estiver marcado, cause mais sua Sabedoria de dano. Caso contrário, marque-o.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 1,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Faça um ataque mágico a um inimigo ao alcance 3. O dano é do tipo Radiante. Se o inimigo já estiver marcado, cause mais sua Sabedoria de dano. Caso contrário, marque-o."
+    }
+   },
+   {
+    "nome": "Juízo",
+    "tags": [
+     "Conjuração",
+     "Magia Divina",
+     "Radiante",
+     "Marcação"
+    ],
+    "texto": "2 de fadiga, Ação: Um inimigo marcado ao alcance 3 sofre sua Sabedoria + 2 de dano Radiante. Ele sofre mais 1 de dano para cada aliado seu adjacente a ele. Este dano não pode ser prevenido ou reduzido.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 2,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Um inimigo marcado ao alcance 3 sofre sua Sabedoria + 2 de dano Radiante. Ele sofre mais 1 de dano para cada aliado seu adjacente a ele. Este dano não pode ser prevenido ou reduzido."
+    }
+   }
+  ],
+  "impressao": "db0fd0eddb61"
+ },
+ {
+  "id": "classe.clerigo.zona-da-penitencia",
+  "fonte": "classe",
+  "entidade": "Clérigo",
+  "grupo": "ESTRATÉGIA 3 · ORADOR DIVINO   (control/zonas e marcações · support / aggro / control)",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Zona da Penitência",
+    "tags": [
+     "Conjuração",
+     "Magia Divina",
+     "Zona"
+    ],
+    "texto": "1 de fadiga, Ação: Crie uma zona 3x3 ao alcance curto. O dano da sua divindade é dobrado dentro desta área.\n1 de fadiga: Sustentar o efeito.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 1,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Crie uma zona 3x3 ao alcance curto. O dano da sua divindade é dobrado dentro desta área.\n1 de fadiga: Sustentar o efeito."
+    }
+   },
+   {
+    "nome": "Terra do Louvor",
+    "tags": [
+     "Conjuração",
+     "Magia Divina",
+     "Zona",
+     "Apoio"
+    ],
+    "texto": "1 de fadiga, Ação: Crie uma zona 3x3 ao alcance curto. Seus aliados têm +1 no limite para testes não de combate enquanto estiverem dentro da área.\n1 de fadiga: Sustentar o efeito.",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 1,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Crie uma zona 3x3 ao alcance curto. Seus aliados têm +1 no limite para testes não de combate enquanto estiverem dentro da área.\n1 de fadiga: Sustentar o efeito."
+    }
+   }
+  ],
+  "impressao": "09dea38000d4"
+ },
+ {
+  "id": "classe.clerigo.teologia",
+  "fonte": "classe",
+  "entidade": "Clérigo",
+  "grupo": "MEIA CARTAS   (6 · conhecimento/comportamento — especialidades fora de combate)",
+  "xp": 1,
+  "meia_carta": true,
+  "lados": [
+   {
+    "nome": "Teologia",
+    "tags": [
+     "Conhecimento",
+     "Religião"
+    ],
+    "texto": "1 de fadiga: Aumente seu limite em +1 para testes de Religião.\n1 de fadiga, Ação: Desenhe o símbolo de sua divindade em uma arma ou armadura. Ela não pode ser amaldiçoada ou quebrada por inimigos até o próximo amanhecer. Limitado a um item por vez.",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 1,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Aumente seu limite em +1 para testes de Religião.\n1 de fadiga, Ação: Desenhe o símbolo de sua divindade em uma arma ou armadura. Ela não pode ser amaldiçoada ou quebrada por inimigos até o próximo amanhecer. Limitado a um item por vez."
+    }
+   },
+   {
+    "nome": "(meia carta)",
+    "tags": [
+     "Meia Carta"
+    ],
+    "texto": "Escolha outra meia carta para completar esta. Cada lado A das duas vira uma face; alterne virando (gasta 1 ação).",
+    "limite_fadiga": 0,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Escolha outra meia carta para completar esta. Cada lado A das duas vira uma face; alterne virando (gasta 1 ação)."
+    }
+   }
+  ],
+  "impressao": "919dc46dfa5b"
+ },
+ {
+  "id": "classe.clerigo.primeiros-socorros",
+  "fonte": "classe",
+  "entidade": "Clérigo",
+  "grupo": "MEIA CARTAS   (6 · conhecimento/comportamento — especialidades fora de combate)",
+  "xp": 1,
+  "meia_carta": true,
+  "lados": [
+   {
+    "nome": "Primeiros Socorros",
+    "tags": [
+     "Cura",
+     "Conhecimento"
+    ],
+    "texto": "1 de fadiga, Ação: Fora do combate, tire uma ficha de você ou do aliado alvo adjacente.\n1 de fadiga, Ação: O aliado alvo adjacente exila uma carta do próprio descarte. Depois, ele devolve uma carta do descarte para o baralho.\n1 de fadiga, 2 Ações: Estabilize o aliado alvo (fica com 0 de vida, mas não precisa mais fazer testes de resistência contra a morte).",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 1,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Fora do combate, tire uma ficha de você ou do aliado alvo adjacente.\n1 de fadiga, Ação: O aliado alvo adjacente exila uma carta do próprio descarte. Depois, ele devolve uma carta do descarte para o baralho.\n1 de fadiga, 2 Ações: Estabilize o aliado alvo (fica com 0 de vida, mas não precisa mais fazer testes de resistência contra a morte)."
+    }
+   },
+   {
+    "nome": "(meia carta)",
+    "tags": [
+     "Meia Carta"
+    ],
+    "texto": "Escolha outra meia carta para completar esta. Cada lado A das duas vira uma face; alterne virando (gasta 1 ação).",
+    "limite_fadiga": 0,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Escolha outra meia carta para completar esta. Cada lado A das duas vira uma face; alterne virando (gasta 1 ação)."
+    }
+   }
+  ],
+  "impressao": "972ceb8fefeb"
+ },
+ {
+  "id": "classe.clerigo.prece-rapida",
+  "fonte": "classe",
+  "entidade": "Clérigo",
+  "grupo": "MEIA CARTAS   (6 · conhecimento/comportamento — especialidades fora de combate)",
+  "xp": 1,
+  "meia_carta": true,
+  "lados": [
+   {
+    "nome": "Prece Rápida",
+    "tags": [
+     "Apoio",
+     "Foco"
+    ],
+    "texto": "1 de fadiga: Você ou um aliado que você esteja ajudando a realizar um teste não de combate podem olhar a carta do topo do baralho e podem colocá-la no fundo do baralho.",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 1,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Você ou um aliado que você esteja ajudando a realizar um teste não de combate podem olhar a carta do topo do baralho e podem colocá-la no fundo do baralho."
+    }
+   },
+   {
+    "nome": "(meia carta)",
+    "tags": [
+     "Meia Carta"
+    ],
+    "texto": "Escolha outra meia carta para completar esta. Cada lado A das duas vira uma face; alterne virando (gasta 1 ação).",
+    "limite_fadiga": 0,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Escolha outra meia carta para completar esta. Cada lado A das duas vira uma face; alterne virando (gasta 1 ação)."
+    }
+   }
+  ],
+  "impressao": "f9f9bba3dd70"
+ },
+ {
+  "id": "classe.clerigo.fe-inabalavel",
+  "fonte": "classe",
+  "entidade": "Clérigo",
+  "grupo": "MEIA CARTAS   (6 · conhecimento/comportamento — especialidades fora de combate)",
+  "xp": 1,
+  "meia_carta": true,
+  "lados": [
+   {
+    "nome": "Fé Inabalável",
+    "tags": [
+     "Foco"
+    ],
+    "texto": "1 de fadiga: Você faz testes de Espírito e Sabedoria com vantagem.",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 1,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Você faz testes de Espírito e Sabedoria com vantagem."
+    }
+   },
+   {
+    "nome": "(meia carta)",
+    "tags": [
+     "Meia Carta"
+    ],
+    "texto": "Escolha outra meia carta para completar esta. Cada lado A das duas vira uma face; alterne virando (gasta 1 ação).",
+    "limite_fadiga": 0,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Escolha outra meia carta para completar esta. Cada lado A das duas vira uma face; alterne virando (gasta 1 ação)."
+    }
+   }
+  ],
+  "impressao": "e982ba8d424a"
+ },
+ {
+  "id": "classe.clerigo.mao-angelical",
+  "fonte": "classe",
+  "entidade": "Clérigo",
+  "grupo": "MEIA CARTAS   (6 · conhecimento/comportamento — especialidades fora de combate)",
+  "xp": 1,
+  "meia_carta": true,
+  "lados": [
+   {
+    "nome": "Mão Angelical",
+    "tags": [
+     "Fôlego",
+     "Apoio"
+    ],
+    "texto": "1 de fadiga: O aliado alvo adjacente recupera 1 de fadiga.",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 1,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "O aliado alvo adjacente recupera 1 de fadiga."
+    }
+   },
+   {
+    "nome": "(meia carta)",
+    "tags": [
+     "Meia Carta"
+    ],
+    "texto": "Escolha outra meia carta para completar esta. Cada lado A das duas vira uma face; alterne virando (gasta 1 ação).",
+    "limite_fadiga": 0,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Escolha outra meia carta para completar esta. Cada lado A das duas vira uma face; alterne virando (gasta 1 ação)."
+    }
+   }
+  ],
+  "impressao": "ea81a9c2c7ca"
+ },
+ {
+  "id": "classe.clerigo.luz-da-verdade",
+  "fonte": "classe",
+  "entidade": "Clérigo",
+  "grupo": "MEIA CARTAS   (6 · conhecimento/comportamento — especialidades fora de combate)",
+  "xp": 1,
+  "meia_carta": true,
+  "lados": [
+   {
+    "nome": "Luz da Verdade",
+    "tags": [
+     "Conjuração",
+     "Magia Divina",
+     "Luz"
+    ],
+    "texto": "1 de fadiga, Ação: Até o início do seu próximo turno, você ilumina ao redor de si com alcance igual ao seu Espírito.\n1 de fadiga, Ação: Tire a ficha de Sombra do alvo ao alcance médio.",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 1,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Até o início do seu próximo turno, você ilumina ao redor de si com alcance igual ao seu Espírito.\n1 de fadiga, Ação: Tire a ficha de Sombra do alvo ao alcance médio."
+    }
+   },
+   {
+    "nome": "(meia carta)",
+    "tags": [
+     "Meia Carta"
+    ],
+    "texto": "Escolha outra meia carta para completar esta. Cada lado A das duas vira uma face; alterne virando (gasta 1 ação).",
+    "limite_fadiga": 0,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Escolha outra meia carta para completar esta. Cada lado A das duas vira uma face; alterne virando (gasta 1 ação)."
+    }
+   }
+  ],
+  "impressao": "0226d4a89445"
+ },
+ {
+  "id": "classe.clerigo.ressurgir",
+  "fonte": "classe",
+  "entidade": "Clérigo",
+  "grupo": "CARTAS DE 2 XP   (capstones · a X2 é um repertório em forma de carta)",
+  "xp": 2,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Ressurgir",
+    "tags": [
+     "Conjuração",
+     "Magia Divina",
+     "Cura",
+     "Milagre"
+    ],
+    "texto": "2 de fadiga: Exile metade do descarte do aliado alvo. Se ele não havia mais cartas no baralho, cure-o igual à sua Sabedoria e ele recobra consciência.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 2,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Exile metade do descarte do aliado alvo. Se ele não havia mais cartas no baralho, cure-o igual à sua Sabedoria e ele recobra consciência."
+    }
+   },
+   {
+    "nome": "Intervenção Divina",
+    "tags": [
+     "Magia Divina",
+     "Milagre"
+    ],
+    "texto": "Ao virar para este lado, cada aliado adjacente pode virar uma carta.",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Ao virar para este lado, cada aliado adjacente pode virar uma carta."
+    }
+   }
+  ],
+  "impressao": "b3cd40a6d893"
+ },
+ {
+  "id": "classe.clerigo.bencao-dos-salmos",
+  "fonte": "classe",
+  "entidade": "Clérigo",
+  "grupo": "CARTAS DE 2 XP   (capstones · a X2 é um repertório em forma de carta)",
+  "xp": 2,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Benção dos Salmos",
+    "tags": [
+     "Conjuração",
+     "Magia Divina",
+     "Repertório",
+     "Cura",
+     "Defesa"
+    ],
+    "texto": "1 de fadiga, Ação: O aliado alvo ao alcance 3 ganha resistência 1 até o início do seu próximo turno.\n2 de fadiga, Ação: Você ou o aliado alvo curam 3.\n1 de fadiga, Ação: Remova uma ficha de você ou do aliado alvo adjacente.",
+    "limite_fadiga": 3,
+    "custo": {
+     "fadiga": 1,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "O aliado alvo ao alcance 3 ganha resistência 1 até o início do seu próximo turno.\n2 de fadiga, Ação: Você ou o aliado alvo curam 3.\n1 de fadiga, Ação: Remova uma ficha de você ou do aliado alvo adjacente."
+    }
+   },
+   {
+    "nome": "Salmos da Ira",
+    "tags": [
+     "Conjuração",
+     "Magia Divina",
+     "Repertório",
+     "Radiante"
+    ],
+    "texto": "1 de fadiga: Cause 2 de dano Radiante a um alvo ao alcance 3. O dano não pode ser prevenido ou reduzido.\n2 de fadiga, Ação: O inimigo ao alcance curto ganha uma ficha de cegueira.\n3 de fadiga, Ação: Faça um ataque mágico em um cone de tamanho 3. O dano é Radiante e dobrado em mortos-vivos e demônios.",
+    "limite_fadiga": 3,
+    "custo": {
+     "fadiga": 1,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Cause 2 de dano Radiante a um alvo ao alcance 3. O dano não pode ser prevenido ou reduzido.\n2 de fadiga, Ação: O inimigo ao alcance curto ganha uma ficha de cegueira.\n3 de fadiga, Ação: Faça um ataque mágico em um cone de tamanho 3. O dano é Radiante e dobrado em mortos-vivos e demônios."
+    }
+   }
+  ],
+  "impressao": "e1b5a90ba7d3"
+ },
+ {
+  "id": "classe.clerigo.halo-do-conduite",
+  "fonte": "classe",
+  "entidade": "Clérigo",
+  "grupo": "CARTAS DE 2 XP   (capstones · a X2 é um repertório em forma de carta)",
+  "xp": 2,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Halo do Conduíte",
+    "tags": [
+     "Conjuração",
+     "Magia Divina",
+     "Zona",
+     "Fôlego"
+    ],
+    "texto": "2 de fadiga, Ação: Crie uma zona 3x3 ao alcance curto. Aliados que terminem o turno dentro da zona recuperam 1 de fadiga adicional.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 2,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Crie uma zona 3x3 ao alcance curto. Aliados que terminem o turno dentro da zona recuperam 1 de fadiga adicional."
+    }
+   },
+   {
+    "nome": "Halo da Justiça",
+    "tags": [
+     "Conjuração",
+     "Magia Divina",
+     "Zona",
+     "Foco"
+    ],
+    "texto": "2 de fadiga, Ação: Crie uma zona 3x3 ao alcance curto. Aliados dentro da zona ganham uma ficha de foco ao atacarem inimigos também dentro da zona.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 2,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Crie uma zona 3x3 ao alcance curto. Aliados dentro da zona ganham uma ficha de foco ao atacarem inimigos também dentro da zona."
+    }
+   }
+  ],
+  "impressao": "6fd372c12f59"
+ },
+ {
+  "id": "classe.clerigo.salterio-de-cura",
+  "fonte": "classe",
+  "entidade": "Clérigo",
+  "grupo": "CARTAS DE 2 XP   (capstones · a X2 é um repertório em forma de carta)",
+  "xp": 2,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Saltério de Cura",
+    "tags": [],
+    "texto": null,
+    "limite_fadiga": 4,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": ""
+    }
+   },
+   null
+  ],
+  "impressao": "d21c37a8b533"
+ },
+ {
+  "id": "classe.clerigo.grimorio-da-chama-sagrada",
+  "fonte": "classe",
+  "entidade": "Clérigo",
+  "grupo": "CARTAS DE 2 XP   (capstones · a X2 é um repertório em forma de carta)",
+  "xp": 2,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Grimório da Chama Sagrada",
+    "tags": [],
+    "texto": null,
+    "limite_fadiga": 4,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": ""
+    }
+   },
+   null
+  ],
+  "impressao": "1911e573fc14"
+ },
+ {
+  "id": "classe.cacador.preparar-o-tiro",
+  "fonte": "classe",
+  "entidade": "Caçador",
+  "grupo": "ESTRATÉGIA 1 · MESTRE ARQUEIRO   (arco, Mira, marcação · aggro / interactor / control)",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Preparar o Tiro",
+    "tags": [
+     "Mira",
+     "Tiro"
+    ],
+    "texto": "Ação: ganhe 2 fichas de Mira. Se você não se moveu neste turno, ganhe 3.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 0,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "ganhe 2 fichas de Mira. Se você não se moveu neste turno, ganhe 3."
+    }
+   },
+   {
+    "nome": "Tiro Certeiro",
+    "tags": [
+     "Mira",
+     "Tiro",
+     "Ataque"
+    ],
+    "texto": "Como parte de um ataque à distância: descarte quantas fichas de Mira quiser. Para cada uma, o defensor tem −1 no limite do 21; se você acertar, +2 de dano por ficha descartada.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Como parte de um ataque à distância: descarte quantas fichas de Mira quiser. Para cada uma, o defensor tem −1 no limite do 21; se você acertar, +2 de dano por ficha descartada."
+    }
+   }
+  ],
+  "impressao": "f3f8f37c5172"
+ },
+ {
+  "id": "classe.cacador.marca-do-cacador",
+  "fonte": "classe",
+  "entidade": "Caçador",
+  "grupo": "ESTRATÉGIA 1 · MESTRE ARQUEIRO   (arco, Mira, marcação · aggro / interactor / control)",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Marca do Caçador",
+    "tags": [
+     "Marcação",
+     "Tiro"
+    ],
+    "texto": "1 de fadiga: Marque o inimigo no seu campo de visão.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 1,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Marque o inimigo no seu campo de visão."
+    }
+   },
+   {
+    "nome": "Presa Ferida",
+    "tags": [
+     "Tiro"
+    ],
+    "texto": "Seus ataques à distância causam +1 de dano para cada ficha diferente no defensor.",
+    "limite_fadiga": 0,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Seus ataques à distância causam +1 de dano para cada ficha diferente no defensor."
+    }
+   }
+  ],
+  "impressao": "f7d978565a6d"
+ },
+ {
+  "id": "classe.cacador.flecha-aleijadora",
+  "fonte": "classe",
+  "entidade": "Caçador",
+  "grupo": "ESTRATÉGIA 1 · MESTRE ARQUEIRO   (arco, Mira, marcação · aggro / interactor / control)",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Flecha Aleijadora",
+    "tags": [
+     "Tiro",
+     "Controle"
+    ],
+    "texto": "1 de fadiga (ação): ataque à distância; se acertar, coloque 1 Imobilizar e 1 Ferimento.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 1,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "ataque à distância; se acertar, coloque 1 Imobilizar e 1 Ferimento."
+    }
+   },
+   {
+    "nome": "Chuva de Flechas",
+    "tags": [
+     "Tiro",
+     "Área"
+    ],
+    "texto": "2 de fadiga, Ação: Faça um único ataque contra até 3 inimigos ao alcance curto. Os inimigos precisam estar adjacentes entre si.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 2,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Faça um único ataque contra até 3 inimigos ao alcance curto. Os inimigos precisam estar adjacentes entre si."
+    }
+   }
+  ],
+  "impressao": "e23642c2711b"
+ },
+ {
+  "id": "classe.cacador.rastrear",
+  "fonte": "classe",
+  "entidade": "Caçador",
+  "grupo": "ESTRATÉGIA 2 · RASTREADOR DA FLORESTA   (perícias, armadilhas, óleos, iscas · aggro / interactor / control)",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Rastrear",
+    "tags": [
+     "Sobrevivência",
+     "Natureza"
+    ],
+    "texto": "Ao passar num teste para encontrar rastros de um monstro ou identificá-lo (se estiver escondido), ganhe 1 ficha de Foco.\nInimigos ocultos podem ser alvos de seus ataques à distância.",
+    "limite_fadiga": 0,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Ao passar num teste para encontrar rastros de um monstro ou identificá-lo (se estiver escondido), ganhe 1 ficha de Foco.\nInimigos ocultos podem ser alvos de seus ataques à distância."
+    }
+   },
+   {
+    "nome": "Estudar a Presa",
+    "tags": [
+     "Natureza",
+     "Caça"
+    ],
+    "texto": "1 de fadiga, Ação: Revele os tipos de dano de resistência e fraqueza de uma criatura. Faça um teste de Sabedoria (dif. 20); se passar, escolha remover uma resistência dela ou adicionar-lhe uma fraqueza, até o fim da cena.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 1,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Revele os tipos de dano de resistência e fraqueza de uma criatura. Faça um teste de Sabedoria (dif. 20); se passar, escolha remover uma resistência dela ou adicionar-lhe uma fraqueza, até o fim da cena."
+    }
+   }
+  ],
+  "impressao": "3f12370c60b7"
+ },
+ {
+  "id": "classe.cacador.armadilha-de-caca",
+  "fonte": "classe",
+  "entidade": "Caçador",
+  "grupo": "ESTRATÉGIA 2 · RASTREADOR DA FLORESTA   (perícias, armadilhas, óleos, iscas · aggro / interactor / control)",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Armadilha de Caça",
+    "tags": [
+     "Armadilha",
+     "Zona"
+    ],
+    "texto": "2 de fadiga, Ação: Prepare uma armadilha em uma casa; o próximo inimigo que entrar sofre 6 de dano e ganha 1 Imobilizar.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 2,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Prepare uma armadilha em uma casa; o próximo inimigo que entrar sofre 6 de dano e ganha 1 Imobilizar."
+    }
+   },
+   {
+    "nome": "Óleos e Iscas",
+    "tags": [
+     "Ferramenta",
+     "Repertório"
+    ],
+    "texto": "REPERTÓRIO — a bolsa do caçador (escolha ao usar): (X fadiga) Óleo Inflamável: crie um obstáculo de fogo em área 2x2 ou ateie fogo em uma criatura, colocando X fichas de Fogo. (1) Isca: uma fera ao alcance médio faz um teste para resistir; se falhar, gasta sua movimentação indo até a isca. (1) Antídoto: remova todas as fichas de Veneno de um alvo. (1) Emplastro: remova 1 Sangramento e 1 Ferimento de um alvo.",
+    "limite_fadiga": 3,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "REPERTÓRIO — a bolsa do caçador (escolha ao usar): (X fadiga) Óleo Inflamável: crie um obstáculo de fogo em área 2x2 ou ateie fogo em uma criatura, colocando X fichas de Fogo. (1) Isca: uma fera ao alcance médio faz um teste para resistir; se falhar, gasta sua movimentação indo até a isca. (1) Antídoto: remova todas as fichas de Veneno de um alvo. (1) Emplastro: remova 1 Sangramento e 1 Ferimento de um alvo."
+    }
+   }
+  ],
+  "impressao": "566c346f3c42"
+ },
+ {
+  "id": "classe.cacador.flecha-envenenada",
+  "fonte": "classe",
+  "entidade": "Caçador",
+  "grupo": "ESTRATÉGIA 2 · RASTREADOR DA FLORESTA   (perícias, armadilhas, óleos, iscas · aggro / interactor / control)",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Flecha Envenenada",
+    "tags": [
+     "Tiro",
+     "Veneno"
+    ],
+    "texto": "1 de fadiga (ação): ataque à distância; se acertar, coloque 1 Veneno.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 1,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "ataque à distância; se acertar, coloque 1 Veneno."
+    }
+   },
+   {
+    "nome": "Flecha de Rede",
+    "tags": [
+     "Tiro",
+     "Controle"
+    ],
+    "texto": "2 de fadiga (ação): ataque à distância causando METADE do dano; se acertar, o alvo ganha 2 Imobilizar e não pode usar reações até o próximo turno dele.",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 2,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "ataque à distância causando METADE do dano; se acertar, o alvo ganha 2 Imobilizar e não pode usar reações até o próximo turno dele."
+    }
+   }
+  ],
+  "impressao": "b0c497f0ef88"
+ },
+ {
+  "id": "classe.cacador.funda-certeira",
+  "fonte": "classe",
+  "entidade": "Caçador",
+  "grupo": "ESTRATÉGIA 3 · CAÇADOR DAS MONTANHAS   (funda, escalada, anti-fera · aggro / interactor / control)",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Funda Certeira",
+    "tags": [
+     "Funda",
+     "Tiro",
+     "Controle"
+    ],
+    "texto": "1 de fadiga, Ação: Faça um ataque à distância com sua arma. Se acertar, o alvo ganha uma ficha de Confusão.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 1,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Faça um ataque à distância com sua arma. Se acertar, o alvo ganha uma ficha de Confusão."
+    }
+   },
+   {
+    "nome": "Pedra Atordoante",
+    "tags": [
+     "Funda",
+     "Controle"
+    ],
+    "texto": "2 de fadiga, Ação: Faça um ataque à distância. Se for Crítico ou o alvo já estiver Marcado ou Confuso, coloque uma ficha de Atordoamento no defensor.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 2,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Faça um ataque à distância. Se for Crítico ou o alvo já estiver Marcado ou Confuso, coloque uma ficha de Atordoamento no defensor."
+    }
+   }
+  ],
+  "impressao": "daaef222466c"
+ },
+ {
+  "id": "classe.cacador.cabra-da-montanha",
+  "fonte": "classe",
+  "entidade": "Caçador",
+  "grupo": "ESTRATÉGIA 3 · CAÇADOR DAS MONTANHAS   (funda, escalada, anti-fera · aggro / interactor / control)",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Cabra da Montanha",
+    "tags": [
+     "Escalada",
+     "Posição"
+    ],
+    "texto": "1 de fadiga, Ação de Movimento: Mova-se escalando ou saltando igual a sua velocidade, sem precisar realizar testes e ignorando terreno difícil. Se ao final do movimento você estiver mais alto do que no início, ganhe uma ficha de Mira.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 1,
+     "acao": "movimento",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Mova-se escalando ou saltando igual a sua velocidade, sem precisar realizar testes e ignorando terreno difícil. Se ao final do movimento você estiver mais alto do que no início, ganhe uma ficha de Mira."
+    }
+   },
+   {
+    "nome": "Ponto de Vantagem",
+    "tags": [
+     "Posição",
+     "Tiro"
+    ],
+    "texto": "1 de fadiga: Até o final do turno, defensores que estejam abaixo de você têm desvantagem na defesa contra seus ataques à distância.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 1,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Até o final do turno, defensores que estejam abaixo de você têm desvantagem na defesa contra seus ataques à distância."
+    }
+   }
+  ],
+  "impressao": "90d64cd20b35"
+ },
+ {
+  "id": "classe.cacador.flecha-pesada",
+  "fonte": "classe",
+  "entidade": "Caçador",
+  "grupo": "ESTRATÉGIA 3 · CAÇADOR DAS MONTANHAS   (funda, escalada, anti-fera · aggro / interactor / control)",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Flecha Pesada",
+    "tags": [
+     "Tiro"
+    ],
+    "texto": "2 de fadiga: Durante seu ataque, se o defensor está imobilizado ou ferido, o dano da sua arma é triplicado e ignora resistência.",
+    "limite_fadiga": 3,
+    "custo": {
+     "fadiga": 2,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Durante seu ataque, se o defensor está imobilizado ou ferido, o dano da sua arma é triplicado e ignora resistência."
+    }
+   },
+   {
+    "nome": "Quebrar a Fenda",
+    "tags": [
+     "Ataque",
+     "Controle"
+    ],
+    "texto": "1 de fadiga: durante seu ataque, cause 1 Imobilizar OU 1 Ferimento.",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 1,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "durante seu ataque, cause 1 Imobilizar OU 1 Ferimento."
+    }
+   }
+  ],
+  "impressao": "165834e1237e"
+ },
+ {
+  "id": "classe.cacador.camuflagem",
+  "fonte": "classe",
+  "entidade": "Caçador",
+  "grupo": "MEIA CARTAS   (6 · ofício do caçador)",
+  "xp": 1,
+  "meia_carta": true,
+  "lados": [
+   {
+    "nome": "Camuflagem",
+    "tags": [
+     "Furtividade"
+    ],
+    "texto": "1 de fadiga: Ganhe uma ficha de Sombra se você não tiver atacado neste turno, não tiver nenhuma ficha de Sombra e estiver em ambiente natural (florestas, cavernas, desertos, etc).",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 1,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Ganhe uma ficha de Sombra se você não tiver atacado neste turno, não tiver nenhuma ficha de Sombra e estiver em ambiente natural (florestas, cavernas, desertos, etc)."
+    }
+   },
+   {
+    "nome": "(meia carta)",
+    "tags": [
+     "Meia Carta"
+    ],
+    "texto": "Escolha outra meia carta para completar esta. Cada lado A das duas vira uma face; alterne virando (gasta 1 ação).",
+    "limite_fadiga": 0,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Escolha outra meia carta para completar esta. Cada lado A das duas vira uma face; alterne virando (gasta 1 ação)."
+    }
+   }
+  ],
+  "impressao": "dd31bd0e5acb"
+ },
+ {
+  "id": "classe.cacador.tiro-rapido",
+  "fonte": "classe",
+  "entidade": "Caçador",
+  "grupo": "MEIA CARTAS   (6 · ofício do caçador)",
+  "xp": 1,
+  "meia_carta": true,
+  "lados": [
+   {
+    "nome": "Tiro Rápido",
+    "tags": [
+     "Tiro"
+    ],
+    "texto": "1 de fadiga: Seu próximo ataque à distância neste turno não gera reação dos inimigos.",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 1,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Seu próximo ataque à distância neste turno não gera reação dos inimigos."
+    }
+   },
+   {
+    "nome": "(meia carta)",
+    "tags": [
+     "Meia Carta"
+    ],
+    "texto": "Escolha outra meia carta para completar esta. Cada lado A das duas vira uma face; alterne virando (gasta 1 ação).",
+    "limite_fadiga": 0,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Escolha outra meia carta para completar esta. Cada lado A das duas vira uma face; alterne virando (gasta 1 ação)."
+    }
+   }
+  ],
+  "impressao": "1aab6ca00588"
+ },
+ {
+  "id": "classe.cacador.faro-agucado",
+  "fonte": "classe",
+  "entidade": "Caçador",
+  "grupo": "MEIA CARTAS   (6 · ofício do caçador)",
+  "xp": 1,
+  "meia_carta": true,
+  "lados": [
+   {
+    "nome": "Faro Aguçado",
+    "tags": [
+     "Sobrevivência"
+    ],
+    "texto": "1 de fadiga: Seus ataques ignoram efeito de Ocultação. Perceba criaturas escondidas ao alcance curto.",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 1,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Seus ataques ignoram efeito de Ocultação. Perceba criaturas escondidas ao alcance curto."
+    }
+   },
+   {
+    "nome": "(meia carta)",
+    "tags": [
+     "Meia Carta"
+    ],
+    "texto": "Escolha outra meia carta para completar esta. Cada lado A das duas vira uma face; alterne virando (gasta 1 ação).",
+    "limite_fadiga": 0,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Escolha outra meia carta para completar esta. Cada lado A das duas vira uma face; alterne virando (gasta 1 ação)."
+    }
+   }
+  ],
+  "impressao": "2b0476b8f92c"
+ },
+ {
+  "id": "classe.cacador.salto-de-recuo",
+  "fonte": "classe",
+  "entidade": "Caçador",
+  "grupo": "MEIA CARTAS   (6 · ofício do caçador)",
+  "xp": 1,
+  "meia_carta": true,
+  "lados": [
+   {
+    "nome": "Salto de Recuo",
+    "tags": [
+     "Movimento"
+    ],
+    "texto": "1 de fadiga: Afaste-se 2 de um inimigo adjacente sem provocar reação.",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 1,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Afaste-se 2 de um inimigo adjacente sem provocar reação."
+    }
+   },
+   {
+    "nome": "(meia carta)",
+    "tags": [
+     "Meia Carta"
+    ],
+    "texto": "Escolha outra meia carta para completar esta. Cada lado A das duas vira uma face; alterne virando (gasta 1 ação).",
+    "limite_fadiga": 0,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Escolha outra meia carta para completar esta. Cada lado A das duas vira uma face; alterne virando (gasta 1 ação)."
+    }
+   }
+  ],
+  "impressao": "9867e7b59943"
+ },
+ {
+  "id": "classe.cacador.olho-de-aguia",
+  "fonte": "classe",
+  "entidade": "Caçador",
+  "grupo": "MEIA CARTAS   (6 · ofício do caçador)",
+  "xp": 1,
+  "meia_carta": true,
+  "lados": [
+   {
+    "nome": "Olho de Águia",
+    "tags": [
+     "Foco"
+    ],
+    "texto": "1 de fadiga: Ao realizar um teste de ataque à distância, Natureza, Sobrevivência ou Pontaria, você pode dar Scry 1.",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 1,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Ao realizar um teste de ataque à distância, Natureza, Sobrevivência ou Pontaria, você pode dar Scry 1."
+    }
+   },
+   {
+    "nome": "(meia carta)",
+    "tags": [
+     "Meia Carta"
+    ],
+    "texto": "Escolha outra meia carta para completar esta. Cada lado A das duas vira uma face; alterne virando (gasta 1 ação).",
+    "limite_fadiga": 0,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Escolha outra meia carta para completar esta. Cada lado A das duas vira uma face; alterne virando (gasta 1 ação)."
+    }
+   }
+  ],
+  "impressao": "832d63897797"
+ },
+ {
+  "id": "classe.cacador.preparar-emboscada",
+  "fonte": "classe",
+  "entidade": "Caçador",
+  "grupo": "MEIA CARTAS   (6 · ofício do caçador)",
+  "xp": 1,
+  "meia_carta": true,
+  "lados": [
+   {
+    "nome": "Preparar Emboscada",
+    "tags": [
+     "Mira"
+    ],
+    "texto": "1 de fadiga: ganhe 1 ficha de Mira.",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 1,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "ganhe 1 ficha de Mira."
+    }
+   },
+   {
+    "nome": "(meia carta)",
+    "tags": [
+     "Meia Carta"
+    ],
+    "texto": "Escolha outra meia carta para completar esta. Cada lado A das duas vira uma face; alterne virando (gasta 1 ação).",
+    "limite_fadiga": 0,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Escolha outra meia carta para completar esta. Cada lado A das duas vira uma face; alterne virando (gasta 1 ação)."
+    }
+   }
+  ],
+  "impressao": "7aeff9cb7084"
+ },
+ {
+  "id": "classe.cacador.tiro-perfeito",
+  "fonte": "classe",
+  "entidade": "Caçador",
+  "grupo": "CARTAS DE 2 XP   (build-around · uma por estratégia)",
+  "xp": 2,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Tiro Perfeito",
+    "tags": [
+     "Mira",
+     "Tiro"
+    ],
+    "texto": "3 Miras, Ação: Faça um ataque à distância, mas ao invés de revelar cartas, considere seu resultado igual a 21 (não crítico). Após o ataque, vire esta carta.",
+    "limite_fadiga": 0,
+    "custo": {
+     "fadiga": 0,
+     "acao": "padrao",
+     "outros": [
+      "3 Miras"
+     ],
+     "permanente": "",
+     "efeito": "Faça um ataque à distância, mas ao invés de revelar cartas, considere seu resultado igual a 21 (não crítico). Após o ataque, vire esta carta."
+    }
+   },
+   {
+    "nome": "Olho que Tudo Vê",
+    "tags": [
+     "Mira"
+    ],
+    "texto": "Passiva: no início do seu turno, ganhe 1 ficha de Mira. Você pode acumular Mira sem limite.",
+    "limite_fadiga": 0,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Passiva: no início do seu turno, ganhe 1 ficha de Mira. Você pode acumular Mira sem limite."
+    }
+   }
+  ],
+  "impressao": "f59fc4140aa0"
+ },
+ {
+  "id": "classe.cacador.predador-absoluto",
+  "fonte": "classe",
+  "entidade": "Caçador",
+  "grupo": "CARTAS DE 2 XP   (build-around · uma por estratégia)",
+  "xp": 2,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Predador Absoluto",
+    "tags": [
+     "Caça",
+     "Marcação"
+    ],
+    "texto": "Caso este lado esteja revelado no início de uma cena ou após a primeira vez que ele for revelado durante uma cena, escolha um inimigo no seu campo de visão. Até o final da cena ou até o inimigo morrer, os efeitos que você aplica no alvo desta carta são dobrados.\nNo final do seu turno, ganhe uma ficha de Preparo se você causou dano no alvo durante seu turno.\nQuando o alvo morrer, escolha um novo alvo no seu campo de visão.",
+    "limite_fadiga": 0,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Caso este lado esteja revelado no início de uma cena ou após a primeira vez que ele for revelado durante uma cena, escolha um inimigo no seu campo de visão. Até o final da cena ou até o inimigo morrer, os efeitos que você aplica no alvo desta carta são dobrados.\nNo final do seu turno, ganhe uma ficha de Preparo se você causou dano no alvo durante seu turno.\nQuando o alvo morrer, escolha um novo alvo no seu campo de visão."
+    }
+   },
+   {
+    "nome": "Covil do Arqueiro",
+    "tags": [
+     "Posição",
+     "Zona"
+    ],
+    "texto": "2 de fadiga, Ação de Movimento: Crie uma área 3x3 ao redor de você. Enquanto somente você estiver na área, você não sofre penalidade por atirar a distâncias médias e longas. A área se desfaz ao você se mover.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 2,
+     "acao": "movimento",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Crie uma área 3x3 ao redor de você. Enquanto somente você estiver na área, você não sofre penalidade por atirar a distâncias médias e longas. A área se desfaz ao você se mover."
+    }
+   }
+  ],
+  "impressao": "633718e54d19"
+ },
+ {
+  "id": "classe.cacador.tiro-mortal",
+  "fonte": "classe",
+  "entidade": "Caçador",
+  "grupo": "CARTAS DE 2 XP   (build-around · uma por estratégia)",
+  "xp": 2,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Tiro Mortal",
+    "tags": [
+     "Tiro",
+     "Execução"
+    ],
+    "texto": "2 de fadiga, Ação: Faça um ataque à distância a um inimigo Marcado ou com menos da metade da vida. Ignore a resistência dele. Se o defensor morrer com este ataque, ganhe uma ação padrão e uma ficha de Mira.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 2,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Faça um ataque à distância a um inimigo Marcado ou com menos da metade da vida. Ignore a resistência dele. Se o defensor morrer com este ataque, ganhe uma ação padrão e uma ficha de Mira."
+    }
+   },
+   {
+    "nome": "Nada Escapa",
+    "tags": [
+     "Marcação",
+     "Caça"
+    ],
+    "texto": "Fichas de Marcação de inimigos não são retiradas ao terem suas cartas viradas.\nReação: Quando um inimigo Marcado sai da sua linha de visão ou ganhar cobertura, faça um ataque à distância como se ele ainda estivesse na sua linha de visão ou fora de cobertura.",
+    "limite_fadiga": 0,
+    "custo": {
+     "fadiga": 0,
+     "acao": "reacao",
+     "outros": [],
+     "permanente": "Fichas de Marcação de inimigos não são retiradas ao terem suas cartas viradas.",
+     "efeito": "Quando um inimigo Marcado sai da sua linha de visão ou ganhar cobertura, faça um ataque à distância como se ele ainda estivesse na sua linha de visão ou fora de cobertura."
+    }
+   }
+  ],
+  "impressao": "ace5e0054768"
+ },
+ {
+  "id": "classe.mago.conjuracao-economica",
+  "fonte": "classe",
+  "entidade": "Mago",
+  "grupo": "ESTRATÉGIAS (1 por arquétipo · agnósticas de elemento)",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Conjuração Econômica",
+    "tags": [
+     "Eficiência"
+    ],
+    "texto": "Passiva: a primeira magia que você conjura a cada turno custa 1 de fadiga a menos.",
+    "limite_fadiga": 0,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Passiva: a primeira magia que você conjura a cada turno custa 1 de fadiga a menos."
+    }
+   },
+   {
+    "nome": "Tecer com Maestria",
+    "tags": [
+     "Eficiência"
+    ],
+    "texto": "1 de fadiga: o alcance da sua próxima magia é aumentado em 1 grau (de curto para médio, ou de médio para longo).",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 1,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "o alcance da sua próxima magia é aumentado em 1 grau (de curto para médio, ou de médio para longo)."
+    }
+   }
+  ],
+  "impressao": "22eb214c4c2a"
+ },
+ {
+  "id": "classe.mago.poder-de-combate",
+  "fonte": "classe",
+  "entidade": "Mago",
+  "grupo": "ESTRATÉGIAS (1 por arquétipo · agnósticas de elemento)",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Poder de Combate",
+    "tags": [
+     "Aggro"
+    ],
+    "texto": "O dano causado por suas magias é aumentado em +2.",
+    "limite_fadiga": 0,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "O dano causado por suas magias é aumentado em +2."
+    }
+   },
+   {
+    "nome": "Sobrecarga Arcana",
+    "tags": [
+     "Aggro"
+    ],
+    "texto": "2 de fadiga: o dano da sua próxima magia neste turno com apenas um alvo é dobrado.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 2,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "o dano da sua próxima magia neste turno com apenas um alvo é dobrado."
+    }
+   }
+  ],
+  "impressao": "2f81ae709bfb"
+ },
+ {
+  "id": "classe.mago.improviso-do-erudito",
+  "fonte": "classe",
+  "entidade": "Mago",
+  "grupo": "ESTRATÉGIAS (1 por arquétipo · agnósticas de elemento)",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Improviso do Erudito",
+    "tags": [
+     "Conhecimento"
+    ],
+    "texto": "Ação: Escolha uma magia de um Repertório de Aprendiz que você não possui. Faça um teste de Raciocínio + Arcanismo (dif. 22). Em caso de sucesso, conjure aquela magia pagando seus custos. Em caso de falha, ganhe 2 de fadiga e depois sofra dano igual ao total de fadiga em todas as suas cartas.",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 0,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Escolha uma magia de um Repertório de Aprendiz que você não possui. Faça um teste de Raciocínio + Arcanismo (dif. 22). Em caso de sucesso, conjure aquela magia pagando seus custos. Em caso de falha, ganhe 2 de fadiga e depois sofra dano igual ao total de fadiga em todas as suas cartas."
+    }
+   },
+   {
+    "nome": "De Volta ao Básico",
+    "tags": [
+     "Conhecimento"
+    ],
+    "texto": "Passiva: você faz testes mentais (Raciocínio, Percepção, Sabedoria) com vantagem.",
+    "limite_fadiga": 0,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Passiva: você faz testes mentais (Raciocínio, Percepção, Sabedoria) com vantagem."
+    }
+   }
+  ],
+  "impressao": "43dcc2c6d61e"
+ },
+ {
+  "id": "classe.mago.mao-magica",
+  "fonte": "classe",
+  "entidade": "Mago",
+  "grupo": "MEIA CARTAS · REPERTÓRIO ARCANO BÁSICO (6 · não-elementais)",
+  "xp": 1,
+  "meia_carta": true,
+  "lados": [
+   {
+    "nome": "Mão Mágica",
+    "tags": [
+     "Conjuração",
+     "Truque",
+     "Arcano"
+    ],
+    "texto": "1 de fadiga, Ação de Movimento: Você cria uma mão de energia arcana que é capaz de mover objetos pequenos e leves ao seu alcance curto por até 3 quadrados por turno.\n1 de fadiga: Sustentar o efeito.",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 1,
+     "acao": "movimento",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Você cria uma mão de energia arcana que é capaz de mover objetos pequenos e leves ao seu alcance curto por até 3 quadrados por turno.\n1 de fadiga: Sustentar o efeito."
+    }
+   },
+   {
+    "nome": "(meia carta)",
+    "tags": [
+     "Meia Carta"
+    ],
+    "texto": "Escolha outra meia carta para completar esta. Cada lado A das duas vira uma face; alterne virando (gasta 1 ação).",
+    "limite_fadiga": 0,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Escolha outra meia carta para completar esta. Cada lado A das duas vira uma face; alterne virando (gasta 1 ação)."
+    }
+   }
+  ],
+  "impressao": "61d7063c3611"
+ },
+ {
+  "id": "classe.mago.misseis-magicos",
+  "fonte": "classe",
+  "entidade": "Mago",
+  "grupo": "MEIA CARTAS · REPERTÓRIO ARCANO BÁSICO (6 · não-elementais)",
+  "xp": 1,
+  "meia_carta": true,
+  "lados": [
+   {
+    "nome": "Mísseis Mágicos",
+    "tags": [
+     "Conjuração",
+     "Arcano",
+     "Aggro"
+    ],
+    "texto": "1 de fadiga, Ação: Cause 3 de dano dividido em até 3 alvos ao alcance médio. O dano desta magia não pode ser prevenido nem reduzido de nenhuma forma.",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 1,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Cause 3 de dano dividido em até 3 alvos ao alcance médio. O dano desta magia não pode ser prevenido nem reduzido de nenhuma forma."
+    }
+   },
+   {
+    "nome": "(meia carta)",
+    "tags": [
+     "Meia Carta"
+    ],
+    "texto": "Escolha outra meia carta para completar esta. Cada lado A das duas vira uma face; alterne virando (gasta 1 ação).",
+    "limite_fadiga": 0,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Escolha outra meia carta para completar esta. Cada lado A das duas vira uma face; alterne virando (gasta 1 ação)."
+    }
+   }
+  ],
+  "impressao": "6ece59031146"
+ },
+ {
+  "id": "classe.mago.contramagia",
+  "fonte": "classe",
+  "entidade": "Mago",
+  "grupo": "MEIA CARTAS · REPERTÓRIO ARCANO BÁSICO (6 · não-elementais)",
+  "xp": 1,
+  "meia_carta": true,
+  "lados": [
+   {
+    "nome": "Contramagia",
+    "tags": [
+     "Conjuração",
+     "Arcano",
+     "Controle"
+    ],
+    "texto": "1 de fadiga, Reação: Conjure em resposta à conjuração de uma magia de outro personagem. Faça um teste de Raciocínio contra Sabedoria do conjurador. Em caso de sucesso, você anula a magia sendo conjurada.",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 1,
+     "acao": "reacao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Conjure em resposta à conjuração de uma magia de outro personagem. Faça um teste de Raciocínio contra Sabedoria do conjurador. Em caso de sucesso, você anula a magia sendo conjurada."
+    }
+   },
+   {
+    "nome": "(meia carta)",
+    "tags": [
+     "Meia Carta"
+    ],
+    "texto": "Escolha outra meia carta para completar esta. Cada lado A das duas vira uma face; alterne virando (gasta 1 ação).",
+    "limite_fadiga": 0,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Escolha outra meia carta para completar esta. Cada lado A das duas vira uma face; alterne virando (gasta 1 ação)."
+    }
+   }
+  ],
+  "impressao": "4d8147355dca"
+ },
+ {
+  "id": "classe.mago.armadura-arcana",
+  "fonte": "classe",
+  "entidade": "Mago",
+  "grupo": "MEIA CARTAS · REPERTÓRIO ARCANO BÁSICO (6 · não-elementais)",
+  "xp": 1,
+  "meia_carta": true,
+  "lados": [
+   {
+    "nome": "Armadura Arcana",
+    "tags": [
+     "Conjuração",
+     "Arcano",
+     "Defesa"
+    ],
+    "texto": "2 de fadiga, Ação: Você ou um aliado adjacente ganha uma ficha de Bloqueio.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 2,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Você ou um aliado adjacente ganha uma ficha de Bloqueio."
+    }
+   },
+   {
+    "nome": "(meia carta)",
+    "tags": [
+     "Meia Carta"
+    ],
+    "texto": "Escolha outra meia carta para completar esta. Cada lado A das duas vira uma face; alterne virando (gasta 1 ação).",
+    "limite_fadiga": 0,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Escolha outra meia carta para completar esta. Cada lado A das duas vira uma face; alterne virando (gasta 1 ação)."
+    }
+   }
+  ],
+  "impressao": "7a3299999846"
+ },
+ {
+  "id": "classe.mago.telepatia",
+  "fonte": "classe",
+  "entidade": "Mago",
+  "grupo": "MEIA CARTAS · REPERTÓRIO ARCANO BÁSICO (6 · não-elementais)",
+  "xp": 1,
+  "meia_carta": true,
+  "lados": [
+   {
+    "nome": "Telepatia",
+    "tags": [
+     "Conjuração",
+     "Arcano",
+     "Utilidade"
+    ],
+    "texto": "1 de fadiga: Envie uma mensagem telepaticamente para um alvo consciente e racional e que aceite a mensagem. O alvo deve estar até 100 metros de distância e a mensagem pode ter até 10 palavras.",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 1,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Envie uma mensagem telepaticamente para um alvo consciente e racional e que aceite a mensagem. O alvo deve estar até 100 metros de distância e a mensagem pode ter até 10 palavras."
+    }
+   },
+   {
+    "nome": "(meia carta)",
+    "tags": [
+     "Meia Carta"
+    ],
+    "texto": "Escolha outra meia carta para completar esta. Cada lado A das duas vira uma face; alterne virando (gasta 1 ação).",
+    "limite_fadiga": 0,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Escolha outra meia carta para completar esta. Cada lado A das duas vira uma face; alterne virando (gasta 1 ação)."
+    }
+   }
+  ],
+  "impressao": "b81856c82510"
+ },
+ {
+  "id": "classe.mago.detectar-magia",
+  "fonte": "classe",
+  "entidade": "Mago",
+  "grupo": "MEIA CARTAS · REPERTÓRIO ARCANO BÁSICO (6 · não-elementais)",
+  "xp": 1,
+  "meia_carta": true,
+  "lados": [
+   {
+    "nome": "Detectar Magia",
+    "tags": [
+     "Conjuração",
+     "Truque",
+     "Arcano"
+    ],
+    "texto": "1 de fadiga: Até o fim do turno, você é capaz de ver a aura mágica de feitiços, encantamentos, itens, criaturas e qualquer origem de energia arcana.",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 1,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Até o fim do turno, você é capaz de ver a aura mágica de feitiços, encantamentos, itens, criaturas e qualquer origem de energia arcana."
+    }
+   },
+   {
+    "nome": "(meia carta)",
+    "tags": [
+     "Meia Carta"
+    ],
+    "texto": "Escolha outra meia carta para completar esta. Cada lado A das duas vira uma face; alterne virando (gasta 1 ação).",
+    "limite_fadiga": 0,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Escolha outra meia carta para completar esta. Cada lado A das duas vira uma face; alterne virando (gasta 1 ação)."
+    }
+   }
+  ],
+  "impressao": "bdf99ce62421"
+ },
+ {
+  "id": "classe.mago.conjuracao-perfeita",
+  "fonte": "classe",
+  "entidade": "Mago",
+  "grupo": "CARTAS DE 2 XP · uma por arquétipo, levando cada estratégia ao extremo",
+  "xp": 2,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Conjuração Perfeita",
+    "tags": [
+     "Custo 2 XP; Eficiência"
+    ],
+    "texto": "Passiva: uma vez por turno, você pode conjurar uma magia sem pagar nenhum custo de fadiga.",
+    "limite_fadiga": 0,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Passiva: uma vez por turno, você pode conjurar uma magia sem pagar nenhum custo de fadiga."
+    }
+   },
+   {
+    "nome": "Reflexo Arcano",
+    "tags": [
+     "Custo 2 XP; Eficiência"
+    ],
+    "texto": "2 de fadiga, Ficha de Reação: Conjure uma magia Rápida que você conhece em resposta a uma conjuração de outro personagem e sem precisar pagar a ação necessária.\n1 de fadiga: Ganhe uma ficha de Reação.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 2,
+     "acao": null,
+     "outros": [
+      "Ficha de Reação"
+     ],
+     "permanente": "",
+     "efeito": "Conjure uma magia Rápida que você conhece em resposta a uma conjuração de outro personagem e sem precisar pagar a ação necessária.\n1 de fadiga: Ganhe uma ficha de Reação."
+    }
+   }
+  ],
+  "impressao": "08f7d2d53caa"
+ },
+ {
+  "id": "classe.mago.mente-belica",
+  "fonte": "classe",
+  "entidade": "Mago",
+  "grupo": "CARTAS DE 2 XP · uma por arquétipo, levando cada estratégia ao extremo",
+  "xp": 2,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Mente Bélica",
+    "tags": [
+     "Custo 2 XP; Aggro"
+    ],
+    "texto": "Descarte uma carta: O dano da próxima magia que você conjurar é aumentado em 3.",
+    "limite_fadiga": 3,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [
+      "Descarte uma carta"
+     ],
+     "permanente": "",
+     "efeito": "O dano da próxima magia que você conjurar é aumentado em 3."
+    }
+   },
+   {
+    "nome": "Mana Densa",
+    "tags": [
+     "Custo 2 XP; Controle"
+    ],
+    "texto": "Descarte uma carta: anule a magia alvo que tenha você como um dos alvos.",
+    "limite_fadiga": 0,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [
+      "Descarte uma carta"
+     ],
+     "permanente": "",
+     "efeito": "anule a magia alvo que tenha você como um dos alvos."
+    }
+   }
+  ],
+  "impressao": "e60330d96d53"
+ },
+ {
+  "id": "classe.mago.mente-afiada",
+  "fonte": "classe",
+  "entidade": "Mago",
+  "grupo": "CARTAS DE 2 XP · uma por arquétipo, levando cada estratégia ao extremo",
+  "xp": 2,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Mente Afiada",
+    "tags": [
+     "Custo 2 XP; Support"
+    ],
+    "texto": "No início do seu turno, você e seus aliados ganham 1 ficha de Foco.",
+    "limite_fadiga": 0,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "No início do seu turno, você e seus aliados ganham 1 ficha de Foco."
+    }
+   },
+   {
+    "nome": "Estratégia Arcana",
+    "tags": [
+     "Custo 2 XP; Conhecimento"
+    ],
+    "texto": "Passiva: no início do seu turno, compre uma carta.",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Passiva: no início do seu turno, compre uma carta."
+    }
+   }
+  ],
+  "impressao": "da74fda9ba42"
+ },
+ {
+  "id": "classe.mago.aprendiz-de-fogo",
+  "fonte": "classe",
+  "entidade": "Mago",
+  "grupo": "APRENDIZ DE FOGO",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Aprendiz de Fogo",
+    "tags": [
+     "Conjuração",
+     "Aprendiz",
+     "Fogo",
+     "Repertório"
+    ],
+    "texto": "Concede Fogo. REPERTÓRIO:  • 1 de fadiga, Ação: Chama Neném - Faça um ataque mágico contra um alvo ao alcance curto. Em caso de sucesso, o alvo também recebe 1 ficha de Fogo.  • 1 de fadiga, Ação: Manipular Chama - Crie ou apague uma chama com tamanho máximo de uma fogueira pequena (1x1). Você pode tirar ou colocar fichas de Fogo de alvos adjacentes usando esta habilidade.  • 2 de fadiga, Ação: Nuvem de Brasas - Os alvos de uma área 2x2 ao alcance curto fazem um teste de Destreza (dif. 16). Em caso de falha, recebem uma ficha de Fogo.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Concede Fogo. REPERTÓRIO:  • 1 de fadiga, Ação: Chama Neném - Faça um ataque mágico contra um alvo ao alcance curto. Em caso de sucesso, o alvo também recebe 1 ficha de Fogo.  • 1 de fadiga, Ação: Manipular Chama - Crie ou apague uma chama com tamanho máximo de uma fogueira pequena (1x1). Você pode tirar ou colocar fichas de Fogo de alvos adjacentes usando esta habilidade.  • 2 de fadiga, Ação: Nuvem de Brasas - Os alvos de uma área 2x2 ao alcance curto fazem um teste de Destreza (dif. 16). Em caso de falha, recebem uma ficha de Fogo."
+    }
+   },
+   {
+    "nome": "Labareda Voraz",
+    "tags": [
+     "Conjuração",
+     "Aprendiz",
+     "Fogo",
+     "Aggro"
+    ],
+    "texto": "Concede Fogo.\n2 de fadiga, Ação: Faça um ataque mágico em linha reta de 4 quadrados. Os alvos atingidos com sucesso sofrem + 2 + Sabedoria de dano. Depois, você pode descartar uma carta. Se o fizer, os alvos que sofreram dano recebem 3 fichas de Fogo.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 2,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "Concede Fogo.",
+     "efeito": "Faça um ataque mágico em linha reta de 4 quadrados. Os alvos atingidos com sucesso sofrem + 2 + Sabedoria de dano. Depois, você pode descartar uma carta. Se o fizer, os alvos que sofreram dano recebem 3 fichas de Fogo."
+    }
+   }
+  ],
+  "impressao": "c8edf216108d",
+  "elemento": "Fogo"
+ },
+ {
+  "id": "classe.mago.aprendiz-de-agua",
+  "fonte": "classe",
+  "entidade": "Mago",
+  "grupo": "APRENDIZ DE ÁGUA",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Aprendiz de Água",
+    "tags": [
+     "Conjuração",
+     "Aprendiz",
+     "Água",
+     "Repertório"
+    ],
+    "texto": "Concede Água. REPERTÓRIO:  • 1 de fadiga, Ação de Movimento: Nado Avançado - Até o fim da cena, você pode se mover na água sem sofrer penalidade.  • 1 de fadiga, Ação: Lava Jato - Faça um ataque mágico contra um alvo ao alcance curto. Em caso de sucesso, o alvo é empurrado 3 quadrados.  • 2 de fadiga, Ação: Chicote de Água - Faça um ataque mágico contra um alvo ao alcance curto. Em caso de sucesso, o alvo fica desarmado.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Concede Água. REPERTÓRIO:  • 1 de fadiga, Ação de Movimento: Nado Avançado - Até o fim da cena, você pode se mover na água sem sofrer penalidade.  • 1 de fadiga, Ação: Lava Jato - Faça um ataque mágico contra um alvo ao alcance curto. Em caso de sucesso, o alvo é empurrado 3 quadrados.  • 2 de fadiga, Ação: Chicote de Água - Faça um ataque mágico contra um alvo ao alcance curto. Em caso de sucesso, o alvo fica desarmado."
+    }
+   },
+   {
+    "nome": "Onda",
+    "tags": [
+     "Conjuração",
+     "Aprendiz",
+     "Água",
+     "Controle",
+     "Zona"
+    ],
+    "texto": "Concede Água.\n3 de fadiga, Ação: Faça um ataque mágico em uma área 3x3x3 adjacente a você. Os inimigos que sofrerem dano do ataque sofrem um dano adicional igual à sua Sabedoria e são empurrados 3 quadrados.",
+    "limite_fadiga": 3,
+    "custo": {
+     "fadiga": 3,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "Concede Água.",
+     "efeito": "Faça um ataque mágico em uma área 3x3x3 adjacente a você. Os inimigos que sofrerem dano do ataque sofrem um dano adicional igual à sua Sabedoria e são empurrados 3 quadrados."
+    }
+   }
+  ],
+  "impressao": "bcc64b1f49cc",
+  "elemento": "Água"
+ },
+ {
+  "id": "classe.mago.aprendiz-de-terra",
+  "fonte": "classe",
+  "entidade": "Mago",
+  "grupo": "APRENDIZ DE TERRA",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Aprendiz de Terra",
+    "tags": [
+     "Conjuração",
+     "Aprendiz",
+     "Terra",
+     "Repertório"
+    ],
+    "texto": "Concede Terra. REPERTÓRIO:  • 1 de fadiga, Ação: Arma Pétrea - Crie qualquer arma corpo a corpo comum. Ela será feita de pedra e dura até o fim da cena. Os tipos de dano da arma são Concussão ou Perfurante, a sua escolha durante a criação.  • 2 de fadiga, Ação: Muro - Crie uma parede de rocha 2x2x2 adjacente a você. A parede tem 12 pontos de vida.  • 1 de fadiga, Ação: Enterrar na Fissura - Faça um ataque mágico ao alcance curto. Em caso de sucesso, o alvo fica com metade do corpo enterrado e Imobilizado. O alvo pode gastar uma ação padrão para sair de dentro da fissura.",
+    "limite_fadiga": 3,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Concede Terra. REPERTÓRIO:  • 1 de fadiga, Ação: Arma Pétrea - Crie qualquer arma corpo a corpo comum. Ela será feita de pedra e dura até o fim da cena. Os tipos de dano da arma são Concussão ou Perfurante, a sua escolha durante a criação.  • 2 de fadiga, Ação: Muro - Crie uma parede de rocha 2x2x2 adjacente a você. A parede tem 12 pontos de vida.  • 1 de fadiga, Ação: Enterrar na Fissura - Faça um ataque mágico ao alcance curto. Em caso de sucesso, o alvo fica com metade do corpo enterrado e Imobilizado. O alvo pode gastar uma ação padrão para sair de dentro da fissura."
+    }
+   },
+   {
+    "nome": "Míssil de Rocha",
+    "tags": [
+     "Conjuração",
+     "Aprendiz",
+     "Terra",
+     "Aggro"
+    ],
+    "texto": "Concede Terra.\n2 de fadiga, Ação: Faça um ataque mágico ao alcance curto. Em caso de sucesso, o alvo sofre um dano adicional de +5 (Concussão), é empurrado 2 quadrados e fica caído.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 2,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "Concede Terra.",
+     "efeito": "Faça um ataque mágico ao alcance curto. Em caso de sucesso, o alvo sofre um dano adicional de +5 (Concussão), é empurrado 2 quadrados e fica caído."
+    }
+   }
+  ],
+  "impressao": "ad0b705f3b6e",
+  "elemento": "Terra"
+ },
+ {
+  "id": "classe.mago.aprendiz-de-ar",
+  "fonte": "classe",
+  "entidade": "Mago",
+  "grupo": "APRENDIZ DE AR",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Aprendiz de Ar",
+    "tags": [
+     "Conjuração",
+     "Aprendiz",
+     "Ar",
+     "Repertório"
+    ],
+    "texto": "Concede Ar. REPERTÓRIO:  • 1 de fadiga, Ação de Movimento: Passo Leve - Até o fim da cena, você ignora terreno difícil e não sofre dano de queda.  • 1 de fadiga, Ação: Rajada - Faça um ataque mágico ao alcance curto. Em caso de sucesso, o alvo é empurrado 2 quadrados.  • 3 de fadiga, Ação: Ventos Cortantes - Faça um ataque mágico ao alcance curto. Em caso de sucesso, o alvo sofre um dano adicional de +2 (Corte) e ganha uma ficha de Sangramento.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Concede Ar. REPERTÓRIO:  • 1 de fadiga, Ação de Movimento: Passo Leve - Até o fim da cena, você ignora terreno difícil e não sofre dano de queda.  • 1 de fadiga, Ação: Rajada - Faça um ataque mágico ao alcance curto. Em caso de sucesso, o alvo é empurrado 2 quadrados.  • 3 de fadiga, Ação: Ventos Cortantes - Faça um ataque mágico ao alcance curto. Em caso de sucesso, o alvo sofre um dano adicional de +2 (Corte) e ganha uma ficha de Sangramento."
+    }
+   },
+   {
+    "nome": "Ciclone",
+    "tags": [
+     "Conjuração",
+     "Aprendiz",
+     "Ar",
+     "Controle",
+     "Zona"
+    ],
+    "texto": "Concede Ar.\n3 de fadiga, Ação: Os alvos dentro de uma área 2x2x5 ao alcance curto fazem um teste de Escalada (dif. 18). Se falharem, sofrem 3 x Sabedoria de dano e são empurrados 2 quadrados para fora da área. Alvos empurrados que colidirem com algo sofrem dano adicional de +5.",
+    "limite_fadiga": 3,
+    "custo": {
+     "fadiga": 3,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "Concede Ar.",
+     "efeito": "Os alvos dentro de uma área 2x2x5 ao alcance curto fazem um teste de Escalada (dif. 18). Se falharem, sofrem 3 x Sabedoria de dano e são empurrados 2 quadrados para fora da área. Alvos empurrados que colidirem com algo sofrem dano adicional de +5."
+    }
+   }
+  ],
+  "impressao": "29e5dfdb13b6",
+  "elemento": "Ar"
+ },
+ {
+  "id": "classe.mago.aprendiz-de-luz",
+  "fonte": "classe",
+  "entidade": "Mago",
+  "grupo": "APRENDIZ DE LUZ",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Aprendiz de Luz",
+    "tags": [
+     "Conjuração",
+     "Aprendiz",
+     "Luz",
+     "Repertório"
+    ],
+    "texto": "Concede Luz. REPERTÓRIO:  • 1 de fadiga, Ação: Lanterna Pálida - Selecione um objeto ou ponto ao alcance curto. Até o fim da cena, o objeto ou ponto escolhido ilumina ao alcance curto. Você pode apagar o foco de luz como ação livre.  • 1 de fadiga, Ação: Clarão Revelador - Criaturas ocultas ou invisíveis ao alcance curto são reveladas, tornam-se visíveis e não podem utilizar fichas de Sombra até o início do seu próximo turno.  • 1 de fadiga, Ação: Flecha de Luz - Faça um ataque mágico ao alcance curto. Em caso de sucesso, o alvo ganha uma ficha de Cegueira.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Concede Luz. REPERTÓRIO:  • 1 de fadiga, Ação: Lanterna Pálida - Selecione um objeto ou ponto ao alcance curto. Até o fim da cena, o objeto ou ponto escolhido ilumina ao alcance curto. Você pode apagar o foco de luz como ação livre.  • 1 de fadiga, Ação: Clarão Revelador - Criaturas ocultas ou invisíveis ao alcance curto são reveladas, tornam-se visíveis e não podem utilizar fichas de Sombra até o início do seu próximo turno.  • 1 de fadiga, Ação: Flecha de Luz - Faça um ataque mágico ao alcance curto. Em caso de sucesso, o alvo ganha uma ficha de Cegueira."
+    }
+   },
+   {
+    "nome": "Raio Radiante",
+    "tags": [
+     "Conjuração",
+     "Aprendiz",
+     "Luz",
+     "Aggro"
+    ],
+    "texto": "Concede Luz.\n2 de fadiga, Ação: Faça um ataque mágico ao alcance médio. Em caso de sucesso, o alvo sofre dano adicional igual à sua Sabedoria (Radiante) se o alvo for morto-vivo ou demônio. Depois, você pode descartar uma carta. Se o fizer, use scry 3.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 2,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "Concede Luz.",
+     "efeito": "Faça um ataque mágico ao alcance médio. Em caso de sucesso, o alvo sofre dano adicional igual à sua Sabedoria (Radiante) se o alvo for morto-vivo ou demônio. Depois, você pode descartar uma carta. Se o fizer, use scry 3."
+    }
+   }
+  ],
+  "impressao": "205635160078",
+  "elemento": "Luz"
+ },
+ {
+  "id": "classe.mago.aprendiz-de-sombra",
+  "fonte": "classe",
+  "entidade": "Mago",
+  "grupo": "APRENDIZ DE SOMBRA",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Aprendiz de Sombra",
+    "tags": [
+     "Conjuração",
+     "Aprendiz",
+     "Sombra",
+     "Repertório"
+    ],
+    "texto": "Concede Sombra. REPERTÓRIO:  • 1 de fadiga, Ação de Movimento: Véu - Até o fim da cena ou até atacar, você é considerado oculto.  • 1 de fadiga, Ação: Lâmina das Sombras - Faça um ataque mágico contra um alvo adjacente. Em caso de sucesso, o alvo recebe 1 ficha de Medo. Descarte uma carta para afetar 2 alvos adjacentes.  • 2 de fadiga, Ação: Terror Abismal - Todos que possam te ver fazem um teste de Espírito (dif. 18). Em caso de falha, recebem 1 ficha de Medo.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Concede Sombra. REPERTÓRIO:  • 1 de fadiga, Ação de Movimento: Véu - Até o fim da cena ou até atacar, você é considerado oculto.  • 1 de fadiga, Ação: Lâmina das Sombras - Faça um ataque mágico contra um alvo adjacente. Em caso de sucesso, o alvo recebe 1 ficha de Medo. Descarte uma carta para afetar 2 alvos adjacentes.  • 2 de fadiga, Ação: Terror Abismal - Todos que possam te ver fazem um teste de Espírito (dif. 18). Em caso de falha, recebem 1 ficha de Medo."
+    }
+   },
+   {
+    "nome": "Servo Sombrio",
+    "tags": [
+     "Conjuração",
+     "Aprendiz",
+     "Sombra",
+     "Controle"
+    ],
+    "texto": "Concede Sombra.\n3 de fadiga, Ação: Um alvo que tenha uma ficha de Medo move-se 2 e ataca um segundo alvo, ao seu comando.",
+    "limite_fadiga": 3,
+    "custo": {
+     "fadiga": 3,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "Concede Sombra.",
+     "efeito": "Um alvo que tenha uma ficha de Medo move-se 2 e ataca um segundo alvo, ao seu comando."
+    }
+   }
+  ],
+  "impressao": "7853c3ee1857",
+  "elemento": "Sombra"
+ },
+ {
+  "id": "raca.humano.resistencia-do-corredor",
+  "fonte": "raca",
+  "entidade": "Humano",
+  "grupo": "CARTA 1 · CORPO — resistência e pontaria",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Resistência do Corredor",
+    "tags": [
+     "Físico",
+     "Corrida"
+    ],
+    "texto": "Ao correr, recupere 1 de fadiga.",
+    "limite_fadiga": 3,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Ao correr, recupere 1 de fadiga."
+    }
+   },
+   {
+    "nome": "Parábola Intuitiva",
+    "tags": [
+     "Pontaria"
+    ],
+    "texto": "Você tem +1 de limite nos seus ataques à distância.",
+    "limite_fadiga": 3,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Você tem +1 de limite nos seus ataques à distância."
+    }
+   }
+  ],
+  "impressao": "90f2f02933ad"
+ },
+ {
+  "id": "raca.humano.mente-maleavel",
+  "fonte": "raca",
+  "entidade": "Humano",
+  "grupo": "CARTA 2 · MENTE — versatilidade e persistência",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Mente Maleável",
+    "tags": [
+     "Versatilidade"
+    ],
+    "texto": "Ao escolher esta carta para seu personagem pela primeira vez, selecione duas perícias diferentes que você tenha valor menor que 3.\nVocê tem +2 nas duas perícias escolhidas.",
+    "limite_fadiga": 3,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Ao escolher esta carta para seu personagem pela primeira vez, selecione duas perícias diferentes que você tenha valor menor que 3.\nVocê tem +2 nas duas perícias escolhidas."
+    }
+   },
+   {
+    "nome": "Persistência Humana",
+    "tags": [
+     "Versatilidade"
+    ],
+    "texto": "3 de fadiga: tente novamente um teste de perícia que você falhou.",
+    "limite_fadiga": 3,
+    "custo": {
+     "fadiga": 3,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "tente novamente um teste de perícia que você falhou."
+    }
+   }
+  ],
+  "impressao": "df4e9edb7919"
+ },
+ {
+  "id": "raca.humano.resposta-criativa",
+  "fonte": "raca",
+  "entidade": "Humano",
+  "grupo": "CARTA 3 · ENGENHO — criatividade e equipe",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Resposta Criativa",
+    "tags": [
+     "Criatividade"
+    ],
+    "texto": "Toda vez que você for bem sucedido em um teste onde o atributo e a perícia não são do mesmo tipo (físico, mental e social), compre uma carta.",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Toda vez que você for bem sucedido em um teste onde o atributo e a perícia não são do mesmo tipo (físico, mental e social), compre uma carta."
+    }
+   },
+   {
+    "nome": "Trabalho em Equipe",
+    "tags": [
+     "Social"
+    ],
+    "texto": "Você concede +2 nos testes dos aliados que você ajudar.",
+    "limite_fadiga": 0,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Você concede +2 nos testes dos aliados que você ajudar."
+    }
+   }
+  ],
+  "impressao": "c8cefe7063e3"
+ },
+ {
+  "id": "raca.elfo.visao-elfica",
+  "fonte": "raca",
+  "entidade": "Elfo",
+  "grupo": "CARTA 1 · SENTIDOS E ARCO — visão aguçada e talento natural",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Visão Élfica",
+    "tags": [
+     "Sentidos"
+    ],
+    "texto": "Você enxerga no escuro como penumbra.\nVocê enxerga ao alcance longo como médio.\nVocê tem vantagem nos testes de Percepção.",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Você enxerga no escuro como penumbra.\nVocê enxerga ao alcance longo como médio.\nVocê tem vantagem nos testes de Percepção."
+    }
+   },
+   {
+    "nome": "Talento com o Arco",
+    "tags": [
+     "Pontaria"
+    ],
+    "texto": "Você faz ataques à distância com arcos sem sofrer penalidade por exceder a escala do ataque à distância.\nVocê ignora cobertura parcial ao realizar ataques à distância.",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Você faz ataques à distância com arcos sem sofrer penalidade por exceder a escala do ataque à distância.\nVocê ignora cobertura parcial ao realizar ataques à distância."
+    }
+   }
+  ],
+  "impressao": "99ed8e297bf9"
+ },
+ {
+  "id": "raca.elfo.saber-natural",
+  "fonte": "raca",
+  "entidade": "Elfo",
+  "grupo": "CARTA 2 · SABER — natureza e arcano",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Saber Natural",
+    "tags": [
+     "Conhecimento"
+    ],
+    "texto": "Você tem vantagem em testes de Natureza e Sobrevivência.\n1 de fadiga, Ação: Emplastro - Remova 1 Sangramento e 1 Ferimento de um alvo.",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 1,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "Você tem vantagem em testes de Natureza e Sobrevivência.",
+     "efeito": "Emplastro - Remova 1 Sangramento e 1 Ferimento de um alvo."
+    }
+   },
+   {
+    "nome": "Herança Feérica",
+    "tags": [
+     "Conhecimento"
+    ],
+    "texto": "Você faz testes de Arcanismo e Intuição com vantagem.",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Você faz testes de Arcanismo e Intuição com vantagem."
+    }
+   }
+  ],
+  "impressao": "6dcff33682fc"
+ },
+ {
+  "id": "raca.elfo.vigilia-elfica",
+  "fonte": "raca",
+  "entidade": "Elfo",
+  "grupo": "CARTA 3 · LONGEVIDADE — vigília e maestria",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Vigília Élfica",
+    "tags": [
+     "Descanso"
+    ],
+    "texto": "Você não precisa dormir durante descansos longos para receber os bônus. Durante um descanso longo, você medita por 4 horas, mantendo-se alerta. Você não pode realizar outras atividades durante estas 4 horas.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Você não precisa dormir durante descansos longos para receber os bônus. Durante um descanso longo, você medita por 4 horas, mantendo-se alerta. Você não pode realizar outras atividades durante estas 4 horas."
+    }
+   },
+   {
+    "nome": "Maestria de uma Vida",
+    "tags": [
+     "Versatilidade"
+    ],
+    "texto": "Ao receber esta habilidade pela primeira vez, escolha uma perícia.\nO limite nos testes da perícia escolhida é aumentado em +2.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Ao receber esta habilidade pela primeira vez, escolha uma perícia.\nO limite nos testes da perícia escolhida é aumentado em +2."
+    }
+   }
+  ],
+  "impressao": "5e472cd7f4c4"
+ },
+ {
+  "id": "raca.anao.olho-para-o-minerio",
+  "fonte": "raca",
+  "entidade": "Anão",
+  "grupo": "CARTA 1 · OFÍCIO — minério e metalurgia",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Olho para o Minério",
+    "tags": [
+     "Conhecimento"
+    ],
+    "texto": "Você faz testes de Percepção e Sabedoria com Vantagem para temas voltados a cavernas, minérios e artefatos.",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Você faz testes de Percepção e Sabedoria com Vantagem para temas voltados a cavernas, minérios e artefatos."
+    }
+   },
+   {
+    "nome": "Mãos de Forja",
+    "tags": [
+     "Ofício"
+    ],
+    "texto": "Em cada descanso curto, você pode recuperar a vida de uma armadura ou escudo (sua ou de um aliado) em um valor igual à sua Sabedoria. Em um descanso longo, você pode realizar este efeito até seis vezes.",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Em cada descanso curto, você pode recuperar a vida de uma armadura ou escudo (sua ou de um aliado) em um valor igual à sua Sabedoria. Em um descanso longo, você pode realizar este efeito até seis vezes."
+    }
+   }
+  ],
+  "impressao": "f53a5cc0032c"
+ },
+ {
+  "id": "raca.anao.forca-das-montanhas",
+  "fonte": "raca",
+  "entidade": "Anão",
+  "grupo": "CARTA 2 · CORPO — força e resistência",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Força das Montanhas",
+    "tags": [
+     "Físico"
+    ],
+    "texto": "Você tem +1 de Força para realizar ações como carregar, quebrar, empurrar e escalar.\nVocê não pode ser empurrado ou derrubado por criaturas médias ou menores.",
+    "limite_fadiga": 3,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Você tem +1 de Força para realizar ações como carregar, quebrar, empurrar e escalar.\nVocê não pode ser empurrado ou derrubado por criaturas médias ou menores."
+    }
+   },
+   {
+    "nome": "Constituição de Pedra",
+    "tags": [
+     "Resistência"
+    ],
+    "texto": "Você não pode receber fichas de Veneno.\nVocê tem resistência +2 contra danos de Fogo, Gelo e Raio.",
+    "limite_fadiga": 3,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Você não pode receber fichas de Veneno.\nVocê tem resistência +2 contra danos de Fogo, Gelo e Raio."
+    }
+   }
+  ],
+  "impressao": "22179e1f36f0"
+ },
+ {
+  "id": "raca.anao.filho-da-pedra",
+  "fonte": "raca",
+  "entidade": "Anão",
+  "grupo": "CARTA 3 · RAÍZES — pedra e história",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Filho da Pedra",
+    "tags": [
+     "Sentidos",
+     "Terreno"
+    ],
+    "texto": "Você enxerga no escuro como penumbra.\nVocê sempre tem sucesso em testes para se localizar em montanhas e cavernas.\nVocê ignora terreno difícil gerado pela terra.",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Você enxerga no escuro como penumbra.\nVocê sempre tem sucesso em testes para se localizar em montanhas e cavernas.\nVocê ignora terreno difícil gerado pela terra."
+    }
+   },
+   {
+    "nome": "Memória Ancestral",
+    "tags": [
+     "Conhecimento"
+    ],
+    "texto": "Você tem vantagem em testes de História, Política e Religião.\nVocê tem vantagem em testes de Sabedoria relacionados a construções e artefatos.",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Você tem vantagem em testes de História, Política e Religião.\nVocê tem vantagem em testes de Sabedoria relacionados a construções e artefatos."
+    }
+   }
+  ],
+  "impressao": "9b5bcc2f03e5"
+ },
+ {
+  "id": "raca.halfling.sorte-dos-pequenos",
+  "fonte": "raca",
+  "entidade": "Halfling",
+  "grupo": "CARTA 1 · SORTE — a bênção proverbial dos pequenos",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Sorte dos Pequenos",
+    "tags": [
+     "Sorte"
+    ],
+    "texto": "Uma vez por cena, ao estourar um teste, considere que seu resultado foi 21 (não crítico).",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Uma vez por cena, ao estourar um teste, considere que seu resultado foi 21 (não crítico)."
+    }
+   },
+   {
+    "nome": "Azar Alheio",
+    "tags": [
+     "Sorte"
+    ],
+    "texto": "Uma vez por cena, quando um inimigo tem sucesso em um teste de ataque contra você ou em um teste para resistir a um efeito que você esteja aplicando contra ele, você pode obrigá-lo a refazer o teste. Ele fica com o resultado do segundo teste.",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Uma vez por cena, quando um inimigo tem sucesso em um teste de ataque contra você ou em um teste para resistir a um efeito que você esteja aplicando contra ele, você pode obrigá-lo a refazer o teste. Ele fica com o resultado do segundo teste."
+    }
+   }
+  ],
+  "impressao": "06690f8cb789"
+ },
+ {
+  "id": "raca.halfling.passos-leves",
+  "fonte": "raca",
+  "entidade": "Halfling",
+  "grupo": "CARTA 2 · PEQUENEZ — pequeno, ágil e escorregadio",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Passos Leves",
+    "tags": [
+     "Furtividade"
+    ],
+    "texto": "Você tem vantagem em testes de Furtividade.",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Você tem vantagem em testes de Furtividade."
+    }
+   },
+   {
+    "nome": "Alvo Difícil",
+    "tags": [
+     "Evasão"
+    ],
+    "texto": "Inimigos com tamanho maior que o seu têm o limite reduzido em -1 ao realizar ataques corpo-a-corpo contra você.",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Inimigos com tamanho maior que o seu têm o limite reduzido em -1 ao realizar ataques corpo-a-corpo contra você."
+    }
+   }
+  ],
+  "impressao": "936b6cf64d58"
+ },
+ {
+  "id": "raca.halfling.coragem-miuda",
+  "fonte": "raca",
+  "entidade": "Halfling",
+  "grupo": "CARTA 3 · CORAÇÃO — o espírito maior do que o corpo",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Coragem Miúda",
+    "tags": [
+     "Vontade"
+    ],
+    "texto": "Você é imune a Medo e faz testes de Espírito com vantagem.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Você é imune a Medo e faz testes de Espírito com vantagem."
+    }
+   },
+   {
+    "nome": "Aconchego",
+    "tags": [
+     "Social"
+    ],
+    "texto": "Um aliado que terminar seu turno adjacente a você escolhe uma das seguintes opções que ele não tenha escolhido nesta cena:\n• Retirar uma ficha de Medo\n• Retirar uma ficha de Atormentado\n• Retirar uma ficha de Fadiga",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Um aliado que terminar seu turno adjacente a você escolhe uma das seguintes opções que ele não tenha escolhido nesta cena:\n• Retirar uma ficha de Medo\n• Retirar uma ficha de Atormentado\n• Retirar uma ficha de Fadiga"
+    }
+   }
+  ],
+  "impressao": "1de66af67ffc"
+ },
+ {
+  "id": "raca.orc.golpe-selvagem",
+  "fonte": "raca",
+  "entidade": "Orc",
+  "grupo": "CARTA 1 · FÚRIA — a ferocidade que dilacera",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Golpe Selvagem",
+    "tags": [
+     "Aggro"
+    ],
+    "texto": "2 de fadiga, Ação: Faça um ataque corpo-a-corpo. Em caso de sucesso, o defensor recebe uma ficha de Ferimento e é empurrado 1 quadrado.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 2,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Faça um ataque corpo-a-corpo. Em caso de sucesso, o defensor recebe uma ficha de Ferimento e é empurrado 1 quadrado."
+    }
+   },
+   {
+    "nome": "Sede de Sangue",
+    "tags": [
+     "Aggro"
+    ],
+    "texto": "Toda vez que um inimigo chega a 0 pontos de vida ao alcance curto, até o fim do seu próximo turno você causa +2 de dano em ataques corpo-a-corpo.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Toda vez que um inimigo chega a 0 pontos de vida ao alcance curto, até o fim do seu próximo turno você causa +2 de dano em ataques corpo-a-corpo."
+    }
+   }
+  ],
+  "impressao": "8a0cd92bbee5"
+ },
+ {
+  "id": "raca.orc.folego-feroz",
+  "fonte": "raca",
+  "entidade": "Orc",
+  "grupo": "CARTA 2 · TENACIDADE — recusa-se a cair",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Fôlego Feroz",
+    "tags": [
+     "Resiliência"
+    ],
+    "texto": "3 de fadiga (ação): recupere o fôlego, recupere o fôlego, recupere o fôlego. Depois, descarte uma carta.",
+    "limite_fadiga": 3,
+    "custo": {
+     "fadiga": 3,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "recupere o fôlego, recupere o fôlego, recupere o fôlego. Depois, descarte uma carta."
+    }
+   },
+   {
+    "nome": "Ignorar a Dor",
+    "tags": [
+     "Resiliência"
+    ],
+    "texto": "No início do seu turno, você pode escolher ignorar o efeito de fichas de Ferimento, Atordoamento, Imobilizar e Confusão em você, até o início do seu próximo turno.",
+    "limite_fadiga": 3,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "No início do seu turno, você pode escolher ignorar o efeito de fichas de Ferimento, Atordoamento, Imobilizar e Confusão em você, até o início do seu próximo turno."
+    }
+   }
+  ],
+  "impressao": "faa68a258924"
+ },
+ {
+  "id": "raca.orc.presenca-aterradora",
+  "fonte": "raca",
+  "entidade": "Orc",
+  "grupo": "CARTA 3 · A FERA — a presença que aterroriza e o couro que aguenta",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Presença Aterradora",
+    "tags": [
+     "Controle",
+     "Social"
+    ],
+    "texto": "Passiva: seus testes de Intimidação têm Vantagem.\n1 de fadiga: faça um teste de Intimidação vs Espírito contra um inimigo a alcance curto. Se ele falhar, coloque uma ficha de Medo nele.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 1,
+     "acao": null,
+     "outros": [],
+     "permanente": "Passiva: seus testes de Intimidação têm Vantagem.",
+     "efeito": "faça um teste de Intimidação vs Espírito contra um inimigo a alcance curto. Se ele falhar, coloque uma ficha de Medo nele."
+    }
+   },
+   {
+    "nome": "Couro Grosso",
+    "tags": [
+     "Resiliência"
+    ],
+    "texto": "2 de fadiga: até o início do seu próximo turno, você ganha resistência 1.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 2,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "até o início do seu próximo turno, você ganha resistência 1."
+    }
+   }
+  ],
+  "impressao": "1c559ec22ee0"
+ },
+ {
+  "id": "background.soldado.vigor-de-marcha",
+  "fonte": "background",
+  "entidade": "Soldado",
+  "grupo": "Carta 1 · FÍSICA — \"Corpo de Soldado\" · limite de fadiga 5",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Vigor de Marcha",
+    "tags": [
+     "Físico"
+    ],
+    "texto": "Você tem +3 de bônus em testes de Constituição para resistir a esforços prolongados e climáticos.",
+    "limite_fadiga": 5,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Você tem +3 de bônus em testes de Constituição para resistir a esforços prolongados e climáticos."
+    }
+   },
+   {
+    "nome": "Manutenção do Equipamento",
+    "tags": [
+     "Físico"
+    ],
+    "texto": "Suas armaduras e escudos começam as cenas com +2 de vida.",
+    "limite_fadiga": 5,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Suas armaduras e escudos começam as cenas com +2 de vida."
+    }
+   }
+  ],
+  "impressao": "e9091ba0e3aa"
+ },
+ {
+  "id": "background.soldado.olho-de-veterano",
+  "fonte": "background",
+  "entidade": "Soldado",
+  "grupo": "Carta 2 · MENTAL — \"Disciplina\" · limite de fadiga 2",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Olho de Veterano",
+    "tags": [
+     "Conhecimento"
+    ],
+    "texto": "Ao atacar um inimigo que tenha resistência ao seu tipo de dano, você descobre um tipo de dano ao qual ele tem fraqueza.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Ao atacar um inimigo que tenha resistência ao seu tipo de dano, você descobre um tipo de dano ao qual ele tem fraqueza."
+    }
+   },
+   {
+    "nome": "Nervos de Aço",
+    "tags": [
+     "Vontade"
+    ],
+    "texto": "Ao ter sucesso em um teste de Espírito, você recupera 1 de fadiga.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Ao ter sucesso em um teste de Espírito, você recupera 1 de fadiga."
+    }
+   }
+  ],
+  "impressao": "b704902f05ad"
+ },
+ {
+  "id": "background.soldado.irmaos-de-farda",
+  "fonte": "background",
+  "entidade": "Soldado",
+  "grupo": "Carta 3 · SOCIAL — \"Fraternidade da Farda\" · limite de fadiga 2",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Irmãos de Farda",
+    "tags": [
+     "Social · Contatos"
+    ],
+    "texto": "2 de fadiga (ação): gaste meia hora conversando com guardas, soldados ou mercenários. Você cria uma amizade com um contato entre eles, disposto a ajudar ou a facilitar a aquisição de recursos.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 2,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "gaste meia hora conversando com guardas, soldados ou mercenários. Você cria uma amizade com um contato entre eles, disposto a ajudar ou a facilitar a aquisição de recursos."
+    }
+   },
+   {
+    "nome": "Postura Firme",
+    "tags": [
+     "Social"
+    ],
+    "texto": "Você tem Vantagem em testes de Diplomacia e Intimidação para criar ordem ou dar comandos.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Você tem Vantagem em testes de Diplomacia e Intimidação para criar ordem ou dar comandos."
+    }
+   }
+  ],
+  "impressao": "cda0188bb1cf"
+ },
+ {
+  "id": "background.bandido.maos-leves",
+  "fonte": "background",
+  "entidade": "Bandido",
+  "grupo": "Carta 1 · FÍSICA — \"Vida de Fuga\" · limite de fadiga 2",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Mãos Leves",
+    "tags": [
+     "Físico"
+    ],
+    "texto": "Você tem vantagem em testes de Furtividade e Ladinagem.\n1 de fadiga: Desarme um alvo que você está agarrando.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 1,
+     "acao": null,
+     "outros": [],
+     "permanente": "Você tem vantagem em testes de Furtividade e Ladinagem.",
+     "efeito": "Desarme um alvo que você está agarrando."
+    }
+   },
+   {
+    "nome": "Pés no Telhado",
+    "tags": [
+     "Físico"
+    ],
+    "texto": "Você tem vantagem em testes de Atletismo e Acrobacia.\n2 de fadiga: Você tem +1 de velocidade até o final do turno.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 2,
+     "acao": null,
+     "outros": [],
+     "permanente": "Você tem vantagem em testes de Atletismo e Acrobacia.",
+     "efeito": "Você tem +1 de velocidade até o final do turno."
+    }
+   }
+  ],
+  "impressao": "0c39d66dba8e"
+ },
+ {
+  "id": "background.bandido.olhar-esperto",
+  "fonte": "background",
+  "entidade": "Bandido",
+  "grupo": "Carta 2 · MENTAL — \"Faro de Ladrão\" · limite de fadiga 3",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Olhar Esperto",
+    "tags": [
+     "Conhecimento"
+    ],
+    "texto": "Você tem +1 em Percepção.\n1 de fadiga: Você pode refazer um teste para encontrar um item escondido, uma passagem secreta ou uma oportunidade para invadir um local.",
+    "limite_fadiga": 3,
+    "custo": {
+     "fadiga": 1,
+     "acao": null,
+     "outros": [],
+     "permanente": "Você tem +1 em Percepção.",
+     "efeito": "Você pode refazer um teste para encontrar um item escondido, uma passagem secreta ou uma oportunidade para invadir um local."
+    }
+   },
+   {
+    "nome": "Astúcia de Rua",
+    "tags": [
+     "Vontade"
+    ],
+    "texto": "Você tem vantagem em testes de Intuição para descobrir mentiras.\n1 de fadiga: Até o fim do turno, você tem +1 em testes para identificar e desarmar armadilhas.",
+    "limite_fadiga": 3,
+    "custo": {
+     "fadiga": 1,
+     "acao": null,
+     "outros": [],
+     "permanente": "Você tem vantagem em testes de Intuição para descobrir mentiras.",
+     "efeito": "Até o fim do turno, você tem +1 em testes para identificar e desarmar armadilhas."
+    }
+   }
+  ],
+  "impressao": "f9f9592ef37a"
+ },
+ {
+  "id": "background.bandido.contatos-do-submundo",
+  "fonte": "background",
+  "entidade": "Bandido",
+  "grupo": "Carta 3 · SOCIAL — \"Gente do Submundo\" · limite de fadiga 2",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Contatos do Submundo",
+    "tags": [
+     "Social · Contatos"
+    ],
+    "texto": "2 de fadiga, Ação: Gaste meia hora conversando com contrabandistas e criminosos locais. Você ganha um contato disposto a vender e comprar bens ilegais, esconder você, vender informações e facilitar favores ilícitos.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 2,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Gaste meia hora conversando com contrabandistas e criminosos locais. Você ganha um contato disposto a vender e comprar bens ilegais, esconder você, vender informações e facilitar favores ilícitos."
+    }
+   },
+   {
+    "nome": "Gíria dos Ladrões",
+    "tags": [
+     "Social"
+    ],
+    "texto": "Você conhece a língua do submundo do crime. Você tem vantagem em testes sociais com criminosos.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Você conhece a língua do submundo do crime. Você tem vantagem em testes sociais com criminosos."
+    }
+   }
+  ],
+  "impressao": "c199877006f6"
+ },
+ {
+  "id": "background.escravo.couro-duro",
+  "fonte": "background",
+  "entidade": "Escravo",
+  "grupo": "Carta 1 · FÍSICA — \"Calejado\" · limite de fadiga 6",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Couro Duro",
+    "tags": [
+     "Físico"
+    ],
+    "texto": "No início do seu turno, se você tiver dez ou mais cartas no seu descarte, exile uma carta do descarte aleatoriamente e depois embaralhe até dez cartas do seu descarte no baralho. Esta habilidade desencadeia apenas uma vez a cada descanso longo.",
+    "limite_fadiga": 6,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "No início do seu turno, se você tiver dez ou mais cartas no seu descarte, exile uma carta do descarte aleatoriamente e depois embaralhe até dez cartas do seu descarte no baralho. Esta habilidade desencadeia apenas uma vez a cada descanso longo."
+    }
+   },
+   {
+    "nome": "Braço de Labuta",
+    "tags": [
+     "Físico"
+    ],
+    "texto": "Você tem +1 em Força.",
+    "limite_fadiga": 6,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Você tem +1 em Força."
+    }
+   }
+  ],
+  "impressao": "66a0a8b6c2ea"
+ },
+ {
+  "id": "background.escravo.atento-aos-desejos",
+  "fonte": "background",
+  "entidade": "Escravo",
+  "grupo": "Carta 2 · MENTAL — \"Sobreviver\" · limite de fadiga 2",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Atento aos Desejos",
+    "tags": [
+     "Conhecimento"
+    ],
+    "texto": "Você tem vantagem em testes de Intuição para identificar as intenções e emoções.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Você tem vantagem em testes de Intuição para identificar as intenções e emoções."
+    }
+   },
+   {
+    "nome": "Aprendiz Silencioso",
+    "tags": [
+     "Conhecimento"
+    ],
+    "texto": "Ao escolher esta carta para seu personagem pela primeira vez, selecione três perícias diferentes.\nVocê tem +1 nas perícias escolhidas.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Ao escolher esta carta para seu personagem pela primeira vez, selecione três perícias diferentes.\nVocê tem +1 nas perícias escolhidas."
+    }
+   }
+  ],
+  "impressao": "53b4f9971dfd"
+ },
+ {
+  "id": "background.escravo.espirito-inquebravel",
+  "fonte": "background",
+  "entidade": "Escravo",
+  "grupo": "Carta 3 · SOCIAL — \"Inquebrável\" · limite de fadiga 3",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Espírito Inquebrável",
+    "tags": [
+     "Vontade"
+    ],
+    "texto": "Você tem vantagem em testes de Espírito.\n3 de fadiga: Remova todas as fichas de Ferimento e Medo das suas cartas.",
+    "limite_fadiga": 3,
+    "custo": {
+     "fadiga": 3,
+     "acao": null,
+     "outros": [],
+     "permanente": "Você tem vantagem em testes de Espírito.",
+     "efeito": "Remova todas as fichas de Ferimento e Medo das suas cartas."
+    }
+   },
+   {
+    "nome": "Passar Despercebido",
+    "tags": [
+     "Social"
+    ],
+    "texto": "Você tem vantagem em testes de Atuação para fingir ser trabalhador, servo ou escravo.",
+    "limite_fadiga": 3,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Você tem vantagem em testes de Atuação para fingir ser trabalhador, servo ou escravo."
+    }
+   }
+  ],
+  "impressao": "996d82fa8418"
+ },
+ {
+  "id": "background.explorador.folego-de-viajante",
+  "fonte": "background",
+  "entidade": "Explorador",
+  "grupo": "Carta 1 · FÍSICA — \"Corpo de Estrada\" · limite de fadiga 4",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Fôlego de Viajante",
+    "tags": [
+     "Físico"
+    ],
+    "texto": "No final do seu turno, se você tiver apenas se movido neste turno, recupere 2 de fadiga ao invés de 1.",
+    "limite_fadiga": 4,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "No final do seu turno, se você tiver apenas se movido neste turno, recupere 2 de fadiga ao invés de 1."
+    }
+   },
+   {
+    "nome": "Passo Firme",
+    "tags": [
+     "Físico"
+    ],
+    "texto": "Se estourar um teste de Atletismo, puxe duas cartas ao invés de uma.",
+    "limite_fadiga": 4,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Se estourar um teste de Atletismo, puxe duas cartas ao invés de uma."
+    }
+   }
+  ],
+  "impressao": "70c41bb4cc3a"
+ },
+ {
+  "id": "background.explorador.senso-de-direcao",
+  "fonte": "background",
+  "entidade": "Explorador",
+  "grupo": "Carta 2 · MENTAL — \"Saber de Mundo\" · limite de fadiga 2",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Senso de Direção",
+    "tags": [
+     "Conhecimento"
+    ],
+    "texto": "Você sempre tem sucesso em testes para se localizar.\nVocê tem vantagem em testes de Sobrevivência.\n2 de fadiga: Ganhe uma ficha de Foco.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 2,
+     "acao": null,
+     "outros": [],
+     "permanente": "Você sempre tem sucesso em testes para se localizar.\nVocê tem vantagem em testes de Sobrevivência.",
+     "efeito": "Ganhe uma ficha de Foco."
+    }
+   },
+   {
+    "nome": "Erudito das Estradas",
+    "tags": [
+     "Conhecimento"
+    ],
+    "texto": "Você tem +1 em História, Natureza e Investigação.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Você tem +1 em História, Natureza e Investigação."
+    }
+   }
+  ],
+  "impressao": "761fdc477baa"
+ },
+ {
+  "id": "background.explorador.forasteiro-bem-vindo",
+  "fonte": "background",
+  "entidade": "Explorador",
+  "grupo": "Carta 3 · SOCIAL — \"Entre Estranhos\" · limite de fadiga 3",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Forasteiro Bem-Vindo",
+    "tags": [
+     "Social"
+    ],
+    "texto": "O limite dos seus testes de Diplomacia para interagir com pessoas de um novo local ou povo é aumentado em 2.",
+    "limite_fadiga": 3,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "O limite dos seus testes de Diplomacia para interagir com pessoas de um novo local ou povo é aumentado em 2."
+    }
+   },
+   {
+    "nome": "Línguas de Estrada",
+    "tags": [
+     "Social"
+    ],
+    "texto": "Ao escolher esta carta para seu personagem pela primeira vez, selecione uma língua.\nVocê sabe falar, ler e escrever na língua escolhida.\nVocê tem vantagem em testes sociais com alvos que não falem nenhuma língua em comum com a sua.",
+    "limite_fadiga": 3,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Ao escolher esta carta para seu personagem pela primeira vez, selecione uma língua.\nVocê sabe falar, ler e escrever na língua escolhida.\nVocê tem vantagem em testes sociais com alvos que não falem nenhuma língua em comum com a sua."
+    }
+   }
+  ],
+  "impressao": "da8db2954d0b"
+ },
+ {
+  "id": "background.fervoroso.resistencia-da-fe",
+  "fonte": "background",
+  "entidade": "Fervoroso",
+  "grupo": "Carta 1 · FÍSICA — \"Carne Domada\" · limite de fadiga 3",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Resistência da Fé",
+    "tags": [
+     "Físico"
+    ],
+    "texto": "Você tem +1 de resistência.",
+    "limite_fadiga": 3,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Você tem +1 de resistência."
+    }
+   },
+   {
+    "nome": "Crença da Provação",
+    "tags": [
+     "Físico"
+    ],
+    "texto": "Se você falhar em um teste de Força, recupere 1 de fadiga.",
+    "limite_fadiga": 3,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "Se você falhar em um teste de Força, recupere 1 de fadiga."
+    }
+   }
+  ],
+  "impressao": "70f7c157e003"
+ },
+ {
+  "id": "background.fervoroso.fe-lapidada",
+  "fonte": "background",
+  "entidade": "Fervoroso",
+  "grupo": "Carta 2 · MENTAL — \"Convicção\" · limite de fadiga 2",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Fé Lapidada",
+    "tags": [
+     "Vontade"
+    ],
+    "texto": "Você tem vantagem em testes de Espírito.\n2 de fadiga: Um aliado realizando um teste de Espírito soma o seu Espírito no teste dele.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 2,
+     "acao": null,
+     "outros": [],
+     "permanente": "Você tem vantagem em testes de Espírito.",
+     "efeito": "Um aliado realizando um teste de Espírito soma o seu Espírito no teste dele."
+    }
+   },
+   {
+    "nome": "Saber Sagrado",
+    "tags": [
+     "Conhecimento"
+    ],
+    "texto": "O limite dos seus testes de Religião e História é aumentado em +2.",
+    "limite_fadiga": 2,
+    "custo": {
+     "fadiga": 0,
+     "acao": null,
+     "outros": [],
+     "permanente": "",
+     "efeito": "O limite dos seus testes de Religião e História é aumentado em +2."
+    }
+   }
+  ],
+  "impressao": "6668d4dc0875"
+ },
+ {
+  "id": "background.fervoroso.comunidade-da-fe",
+  "fonte": "background",
+  "entidade": "Fervoroso",
+  "grupo": "Carta 3 · SOCIAL — \"Rebanho e Púlpito\" · limite de fadiga 1",
+  "xp": 1,
+  "meia_carta": false,
+  "lados": [
+   {
+    "nome": "Comunidade da Fé",
+    "tags": [
+     "Social · Contatos"
+    ],
+    "texto": "Ação: Gaste meia hora conversando com a comunidade local. Se eles compartilharem de sua fé, você consegue alimentação, abrigo, esconderijo e tratamento médico em um templo, santuário ou residência de fiéis a sua religião.",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 0,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "",
+     "efeito": "Gaste meia hora conversando com a comunidade local. Se eles compartilharem de sua fé, você consegue alimentação, abrigo, esconderijo e tratamento médico em um templo, santuário ou residência de fiéis a sua religião."
+    }
+   },
+   {
+    "nome": "Palavra que Conforta",
+    "tags": [
+     "Social"
+    ],
+    "texto": "Você tem vantagem em testes de Acalmar.\n1 de fadiga, Ação: O aliado adjacente retira uma ficha de Medo ou Atormentado.",
+    "limite_fadiga": 1,
+    "custo": {
+     "fadiga": 1,
+     "acao": "padrao",
+     "outros": [],
+     "permanente": "Você tem vantagem em testes de Acalmar.",
+     "efeito": "O aliado adjacente retira uma ficha de Medo ou Atormentado."
+    }
+   }
+  ],
+  "impressao": "9817deeb18c4"
+ }
+]

@@ -1,0 +1,24 @@
+{
+  "especialidade": "regras",
+  "atualizado_em": "2026-10-27",
+  "titulo": "Regras e Balanceamento",
+  "thread_id": "01a17d41-0b47-7b62-ba57-9de8efff671d",
+  "escopo": [
+    "Motor do 21, combate, ações, estados, fichas e glossário",
+    "Atributos, perícias, descansos, progressão transversal e matemática",
+    "Consistência do manual e planejamento de playtests"
+  ],
+  "fontes": [
+    "SISTEMA_21_Estado_do_Projeto.md",
+    "Manual_de_Mesa.pdf",
+    "organizacao/contexto_compartilhado.json",
+    "producao_cartas/dados/regras_pocoes_para_manual.json"
+  ],
+  "pontos_de_atencao": [
+    "Corrigir inconsistências só quando houver solicitação; preparar diagnóstico não é aprovar regra.",
+    "Questões conhecidas: queda, afogamento, Danos Graves, doenças, planar, Cegueira, Tamanhos, flanqueamento e descansos. Confirmar se fontes recentes já fecharam algo.",
+    "Limiares de Mentira 3/5 ainda dependem de cartas com efeito removidas.",
+    "Não aplicar decisões digitais à mesa automaticamente."
+  ],
+  "decisoes_novas": []
+}

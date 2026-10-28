@@ -1,0 +1,39 @@
+{
+  "versao": "v05",
+  "base": "v04",
+  "itens_alterados": [
+    "EQ-042",
+    "EQ-043",
+    "EQ-044"
+  ],
+  "artes_preservadas": 156,
+  "total_paginas_renderizadas": 348,
+  "alteracoes_textuais": {
+    "Cartas": [
+      83,
+      84,
+      86,
+      88
+    ],
+    "A4": [
+      9,
+      10
+    ]
+  },
+  "alteracoes_visuais": {
+    "individuais": [
+      83,
+      84,
+      86,
+      88
+    ],
+    "colecao": [
+      9,
+      10
+    ]
+  },
+  "demais_paginas_identicas": true,
+  "regras_aprovadas_conferidas": true,
+  "inspecao_visual_final": "Frente e verso da Lanca Trovejante, versos dos dois arcos e folha A4 10 conferidos: sem corte ou sobreposicao; simbolos de Fadiga preservados.",
+  "paginas_renderizadas": 348
+}

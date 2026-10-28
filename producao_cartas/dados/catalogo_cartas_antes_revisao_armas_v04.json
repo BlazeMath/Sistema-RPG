@@ -1,0 +1,2774 @@
+{
+  "projeto": "Sistema 21 — Masmorras",
+  "fonte": "C:\\Users\\Gamer\\Documents\\ChatGPT\\SISTEMA DE RPG\\outputs\\revisao_itens_2026-10-26\\Sistema21_Revisao_dos_155_Itens.xlsx",
+  "base_mecanica": "C:\\Users\\Gamer\\Downloads\\Equipamentos_Cartas_incompleto.pdf",
+  "cartas": [
+    {
+      "id": "EQ-001",
+      "nome": "Faca",
+      "categoria": "ARMA CORPO A CORPO · COMUM",
+      "campos": {
+        "Dano": "2 + Destreza",
+        "Alcance": "Corpo a corpo (1)"
+      },
+      "tags": [
+        "Perfuração",
+        "Peso Leve",
+        "Tamanho Pequeno"
+      ],
+      "habilidade": "",
+      "revisao": "Sem habilidade exclusiva. Nome, dados numéricos, requisitos e tags bastam; o espaço de descrição fica disponível para a ilustração na etapa futura. Regras das propriedades ficam no livro.",
+      "fonte": "PDF: EQ-001, p. 1 | Apoio: Armas!A18:D23",
+      "piloto": true,
+      "imagem": "artes/piloto/EQ-001_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-002",
+      "nome": "Florete",
+      "categoria": "ARMA CORPO A CORPO · COMUM",
+      "campos": {
+        "Dano": "2 + Destreza",
+        "Alcance": "Corpo a corpo (1)"
+      },
+      "tags": [
+        "Perfuração",
+        "Peso Leve",
+        "Tamanho Médio"
+      ],
+      "habilidade": "",
+      "revisao": "Sem habilidade exclusiva. Nome, dados numéricos, requisitos e tags bastam; o espaço de descrição fica disponível para a ilustração na etapa futura. Regras das propriedades ficam no livro.",
+      "fonte": "PDF: EQ-002, p. 1 | Apoio: Armas!A25:D30",
+      "piloto": false,
+      "imagem": "artes/revisadas/EQ-002_v02.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-003",
+      "nome": "Bastão",
+      "categoria": "ARMA CORPO A CORPO · COMUM",
+      "campos": {
+        "Dano": "2 + Destreza",
+        "Alcance": "Corpo a corpo (2)"
+      },
+      "tags": [
+        "Concussão",
+        "Peso Leve",
+        "Tamanho Grande"
+      ],
+      "habilidade": "",
+      "revisao": "Sem habilidade exclusiva. Nome, dados numéricos, requisitos e tags bastam; o espaço de descrição fica disponível para a ilustração na etapa futura. Regras das propriedades ficam no livro.",
+      "fonte": "PDF: EQ-003, p. 1 | Apoio: Armas!A32:D37",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-003_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-004",
+      "nome": "Espada Curta",
+      "categoria": "ARMA CORPO A CORPO · COMUM",
+      "campos": {
+        "Dano": "4 + Força",
+        "Alcance": "Corpo a corpo (1)",
+        "Requisito": "Força ≥ 1"
+      },
+      "tags": [
+        "Corte",
+        "Peso Médio",
+        "Tamanho Pequeno"
+      ],
+      "habilidade": "",
+      "revisao": "Sem habilidade exclusiva. Nome, dados numéricos, requisitos e tags bastam; o espaço de descrição fica disponível para a ilustração na etapa futura. Regras das propriedades ficam no livro.",
+      "fonte": "PDF: EQ-004, p. 1 | Apoio: Armas!A39:D44",
+      "piloto": false,
+      "imagem": "artes/revisadas/EQ-004_v02.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-005",
+      "nome": "Espada Longa",
+      "categoria": "ARMA CORPO A CORPO · COMUM",
+      "campos": {
+        "Dano": "4 + Força",
+        "Alcance": "Corpo a corpo (1)",
+        "Requisito": "Força ≥ 1"
+      },
+      "tags": [
+        "Corte",
+        "Peso Médio",
+        "Tamanho Médio"
+      ],
+      "habilidade": "",
+      "revisao": "Sem habilidade exclusiva. Nome, dados numéricos, requisitos e tags bastam; o espaço de descrição fica disponível para a ilustração na etapa futura. Regras das propriedades ficam no livro.",
+      "fonte": "PDF: EQ-005, p. 1 | Apoio: Armas!A46:D51",
+      "piloto": false,
+      "imagem": "artes/revisadas/EQ-005_v02.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-006",
+      "nome": "Lança",
+      "categoria": "ARMA CORPO A CORPO · COMUM",
+      "campos": {
+        "Dano": "4 + Força",
+        "Alcance": "Corpo a corpo (2)",
+        "Requisito": "Força ≥ 1"
+      },
+      "tags": [
+        "Perfuração",
+        "Peso Médio",
+        "Tamanho Grande"
+      ],
+      "habilidade": "",
+      "revisao": "Sem habilidade exclusiva. Nome, dados numéricos, requisitos e tags bastam; o espaço de descrição fica disponível para a ilustração na etapa futura. Regras das propriedades ficam no livro.",
+      "fonte": "PDF: EQ-006, p. 1 | Apoio: Armas!A53:D58",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-006_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-007",
+      "nome": "Maça",
+      "categoria": "ARMA CORPO A CORPO · COMUM",
+      "campos": {
+        "Dano": "6 + Força",
+        "Alcance": "Corpo a corpo (1)",
+        "Requisito": "Força ≥ 2"
+      },
+      "tags": [
+        "Concussão",
+        "Peso Pesado",
+        "Tamanho Pequeno"
+      ],
+      "habilidade": "",
+      "revisao": "Sem habilidade exclusiva. Nome, dados numéricos, requisitos e tags bastam; o espaço de descrição fica disponível para a ilustração na etapa futura. Regras das propriedades ficam no livro.",
+      "fonte": "PDF: EQ-007, p. 1 | Apoio: Armas!A60:D65",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-007_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-008",
+      "nome": "Machado de Guerra",
+      "categoria": "ARMA CORPO A CORPO · COMUM",
+      "campos": {
+        "Dano": "6 + Força",
+        "Alcance": "Corpo a corpo (1)",
+        "Requisito": "Força ≥ 2"
+      },
+      "tags": [
+        "Corte",
+        "Peso Pesado",
+        "Tamanho Médio"
+      ],
+      "habilidade": "",
+      "revisao": "Sem habilidade exclusiva. Nome, dados numéricos, requisitos e tags bastam; o espaço de descrição fica disponível para a ilustração na etapa futura. Regras das propriedades ficam no livro.",
+      "fonte": "PDF: EQ-008, p. 1 | Apoio: Armas!A67:D72",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-008_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-009",
+      "nome": "Montante",
+      "categoria": "ARMA CORPO A CORPO · COMUM",
+      "campos": {
+        "Dano": "6 + Força",
+        "Alcance": "Corpo a corpo (2)",
+        "Requisito": "Força ≥ 2"
+      },
+      "tags": [
+        "Corte",
+        "Peso Pesado",
+        "Tamanho Grande"
+      ],
+      "habilidade": "",
+      "revisao": "Sem habilidade exclusiva. Nome, dados numéricos, requisitos e tags bastam; o espaço de descrição fica disponível para a ilustração na etapa futura. Regras das propriedades ficam no livro.",
+      "fonte": "PDF: EQ-009, p. 1 | Apoio: Armas!A74:D79",
+      "piloto": false,
+      "imagem": "artes/revisadas/EQ-009_v02.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-010",
+      "nome": "Estilete",
+      "categoria": "ARMA CORPO A CORPO · INCOMUM",
+      "campos": {
+        "Dano": "2 + Destreza",
+        "Alcance": "Corpo a corpo (1)",
+        "Requisito": "Destreza ≥ 1",
+        "Limite de Fadiga": "1"
+      },
+      "tags": [
+        "Perfuração",
+        "Peso Leve",
+        "Tamanho Pequeno"
+      ],
+      "habilidade": "Ao obter um crítico natural em um ataque corpo a corpo com esta arma, ignore a resistência do defensor.",
+      "revisao": "Preservado o efeito do PDF. O ajuste de tamanho não cria um crítico natural; essa explicação pertence ao livro.",
+      "fonte": "PDF: EQ-010, p. 2 | Apoio: Armas!A107:D115",
+      "piloto": true,
+      "imagem": "artes/piloto/EQ-010_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-011",
+      "nome": "Florete de Duelista",
+      "categoria": "ARMA CORPO A CORPO · INCOMUM",
+      "campos": {
+        "Dano": "2 + Destreza",
+        "Alcance": "Corpo a corpo (1)",
+        "Requisito": "Destreza ≥ 2",
+        "Limite de Fadiga": "1"
+      },
+      "tags": [
+        "Perfuração",
+        "Peso Leve",
+        "Tamanho Médio"
+      ],
+      "habilidade": "1 de Fadiga, Reação: depois de se defender com sucesso, faça um ataque corpo a corpo com esta arma contra o agressor, se ele estiver ao alcance.",
+      "revisao": "Custo de 1 confirmado pelo ícone do PDF. Contra-atacar não elimina a exigência de alcance. Peso Leve ficou apenas nas tags.",
+      "fonte": "PDF: EQ-011, p. 2 | Apoio: Armas!A117:D125",
+      "piloto": false,
+      "imagem": "artes/revisadas/EQ-011_v02.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-012",
+      "nome": "Chicote",
+      "categoria": "ARMA CORPO A CORPO · INCOMUM",
+      "campos": {
+        "Dano": "2 + Destreza",
+        "Alcance": "Corpo a corpo (2)",
+        "Requisito": "Destreza ≥ 1",
+        "Limite de Fadiga": "1"
+      },
+      "tags": [
+        "Concussão",
+        "Peso Leve",
+        "Tamanho Grande"
+      ],
+      "habilidade": "Ao acertar um ataque corpo a corpo com esta arma, escolha um efeito: puxe o alvo 1 quadrado em sua direção; ou ele não pode se afastar de você até o início do seu próximo turno.",
+      "revisao": "Definir se a proibição inclui movimento forçado e teleporte, e como funciona contra alvos maiores. Não foi escolhida uma interpretação nova silenciosamente.",
+      "fonte": "PDF: EQ-012, p. 2 | Apoio: Armas!A127:D135",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-012_v01.png",
+      "diagramacao": "frente_verso"
+    },
+    {
+      "id": "EQ-013",
+      "nome": "Francisca",
+      "categoria": "ARMA CORPO A CORPO · INCOMUM",
+      "campos": {
+        "Dano": "4 + Força",
+        "Alcance": "Corpo a corpo (1)",
+        "Limite de Fadiga": "1"
+      },
+      "tags": [
+        "Corte",
+        "Peso Médio",
+        "Tamanho Pequeno"
+      ],
+      "habilidade": "Ação Padrão: faça um ataque à distância com esta arma contra um alvo a até 3 quadrados. Depois do arremesso, você fica Desarmado. No início do seu próximo turno, a arma retorna à sua mão.",
+      "revisao": "Requisito de Força não está impresso no PDF; não adicionado pela herança da planilha. Definir retorno com mão ocupada e significado de Desarmado quando há outra arma.",
+      "fonte": "PDF: EQ-013, p. 2 | Apoio: Armas!A137:D145",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-013_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-014",
+      "nome": "Espada do Mestre-Ferreiro",
+      "categoria": "ARMA CORPO A CORPO · INCOMUM",
+      "campos": {
+        "Dano": "4 + Força",
+        "Alcance": "Corpo a corpo (1)",
+        "Requisito": "Força ≥ 1",
+        "Limite de Fadiga": "3"
+      },
+      "tags": [
+        "Corte",
+        "Peso Médio",
+        "Tamanho Médio"
+      ],
+      "habilidade": "Seus testes de ataque com esta arma recebem +1. Uma vez por ataque, antes de o defensor escolher as cartas, você pode devolver ao baralho uma carta usada no seu teste com valor 3 ou menos e comprar outra no lugar.",
+      "revisao": "PDF fixa o momento antes da escolha das cartas do defensor, mas em combate ambos já compraram as duas iniciais. Definir momento exato, destino da carta, se +1 é soma ou limite e se pode desfazer estouro.",
+      "fonte": "PDF: EQ-014, p. 2 | Apoio: Armas!A147:D155",
+      "piloto": false,
+      "imagem": "artes/revisadas/EQ-014_v02.png",
+      "diagramacao": "frente_verso"
+    },
+    {
+      "id": "EQ-015",
+      "nome": "Alabarda",
+      "categoria": "ARMA CORPO A CORPO · INCOMUM",
+      "campos": {
+        "Dano": "4 + Força",
+        "Alcance": "Corpo a corpo (2)",
+        "Requisito": "Força ≥ 1",
+        "Limite de Fadiga": "1"
+      },
+      "tags": [
+        "Perfuração",
+        "Peso Médio",
+        "Tamanho Grande"
+      ],
+      "habilidade": "Ao acertar um ataque corpo a corpo com esta arma, empurre ou puxe o defensor 1 quadrado.",
+      "revisao": "Efeito do PDF preservado. Regras de movimento forçado e oportunidade ficam no livro.",
+      "fonte": "PDF: EQ-015, p. 2 | Apoio: Armas!A157:D165",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-015_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-016",
+      "nome": "Maça-Estrela",
+      "categoria": "ARMA CORPO A CORPO · INCOMUM",
+      "campos": {
+        "Dano": "6 + Força",
+        "Alcance": "Corpo a corpo (1)",
+        "Requisito": "Força ≥ 2",
+        "Limite de Fadiga": "2"
+      },
+      "tags": [
+        "Concussão",
+        "Peso Pesado",
+        "Tamanho Pequeno"
+      ],
+      "habilidade": "Ao acertar um ataque corpo a corpo com esta arma, coloque 1 ficha de Ferimento no defensor.",
+      "revisao": "PDF é a base: aplica Ferimento; não tritura uma carta como na planilha 0.6. Retirada da revisão a antiga pendência de converter trituração contra monstros para este item.",
+      "fonte": "PDF: EQ-016, p. 2 | Apoio: Armas!A167:D175",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-016_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-017",
+      "nome": "Machado Barbado",
+      "categoria": "ARMA CORPO A CORPO · INCOMUM",
+      "campos": {
+        "Dano": "6 + Força",
+        "Alcance": "Corpo a corpo (1)",
+        "Requisito": "Força ≥ 2",
+        "Limite de Fadiga": "2"
+      },
+      "tags": [
+        "Corte",
+        "Peso Pesado",
+        "Tamanho Médio"
+      ],
+      "habilidade": "Ao acertar um ataque corpo a corpo com esta arma, escolha um inimigo adjacente a você. Ele sofre 2 de dano, que ignora resistência.",
+      "revisao": "PDF usa adjacência ao portador e ignora resistência. A planilha usa adjacência ao alvo e não explicita essa exceção. Definir se pode escolher o próprio defensor ou se deve ser outro inimigo; falta tipo desse dano adicional.",
+      "fonte": "PDF: EQ-017, p. 2 | Apoio: Armas!A177:D185",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-017_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-018",
+      "nome": "Montante de Batalha",
+      "categoria": "ARMA CORPO A CORPO · INCOMUM",
+      "campos": {
+        "Dano": "6 + Força",
+        "Alcance": "Corpo a corpo (2)",
+        "Requisito": "Força ≥ 3",
+        "Limite de Fadiga": "2"
+      },
+      "tags": [
+        "Corte",
+        "Peso Pesado",
+        "Tamanho Grande"
+      ],
+      "habilidade": "2 de Fadiga, Ação Padrão: faça um ataque corpo a corpo em área com esta arma contra todos os inimigos adjacentes a você. Até o início do seu próximo turno, revele todas as cartas dos seus testes de defesa.",
+      "revisao": "Custo de 2 confirmado visualmente no PDF. Faltam convenção de teste único/defesas independentes e aplicação do dano normal da arma. A revelação adicional é específica da habilidade e foi mantida.",
+      "fonte": "PDF: EQ-018, p. 2 | Apoio: Armas!A187:D195",
+      "piloto": false,
+      "imagem": "artes/revisadas/EQ-018_v02.png",
+      "diagramacao": "frente_verso"
+    },
+    {
+      "id": "EQ-019",
+      "nome": "Adaga da Mão Vazia",
+      "categoria": "ARMA CORPO A CORPO · RARA",
+      "campos": {
+        "Dano": "2 + Destreza",
+        "Alcance": "Corpo a corpo (1)",
+        "Limite de Fadiga": "2"
+      },
+      "tags": [
+        "Peso Leve",
+        "Tamanho Pequeno"
+      ],
+      "habilidade": "Ao acertar um ataque com esta arma, cause dano adicional igual a 5 menos o número de cartas na sua mão, com mínimo de 0. No início do seu turno, descarte 1 carta da mão, se tiver alguma.",
+      "revisao": "Mínimo de 0 e descarte apenas se houver carta são esclarecimentos propostos para mãos maiores que 5 ou vazias; não alteram a estrutura de tags.",
+      "fonte": "PDF: EQ-019, p. 3 | Apoio: Armas!A202:D206",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-019_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-020",
+      "nome": "Florete do Contragolpe",
+      "categoria": "ARMA CORPO A CORPO · RARA",
+      "campos": {
+        "Dano": "2 + Destreza",
+        "Alcance": "Corpo a corpo (1)",
+        "Limite de Fadiga": "1"
+      },
+      "tags": [
+        "Peso Leve",
+        "Tamanho Médio"
+      ],
+      "habilidade": "Quando sua defesa superar o ataque por 5 ou mais, cause ao atacante dano igual ao dano desta arma, ignorando resistência. Você não pode direcionar dano recebido para a vida da sua armadura ou do seu escudo.",
+      "revisao": "PDF explicita ignorar resistência; a revisão anterior não tinha essa fonte. Definir se dano da arma inclui Destreza e o alcance do revide. O limiar é da defesa sobre o ataque, não valor absoluto da diferença.",
+      "fonte": "PDF: EQ-020, p. 3 | Apoio: Armas!A208:D212",
+      "piloto": false,
+      "imagem": "artes/revisadas/EQ-020_v02.png",
+      "diagramacao": "frente_verso"
+    },
+    {
+      "id": "EQ-021",
+      "nome": "Cajado do Condutor",
+      "categoria": "ARMA CORPO A CORPO · RARA",
+      "campos": {
+        "Dano": "0",
+        "Alcance": "Corpo a corpo (2)",
+        "Limite de Fadiga": "6"
+      },
+      "tags": [
+        "Peso Leve",
+        "Tamanho Grande"
+      ],
+      "habilidade": "Enquanto esta arma tiver pelo menos 3 fichas de Fadiga, suas magias custam 1 de Fadiga a menos.",
+      "revisao": "Dano 0 e limite 6 são campos do PDF. Não foi imposto bloqueio de ataques corpo a corpo só porque a planilha descrevia essa intenção. Definir se é Foco, como recebe Fadiga, custo mínimo e ocupação de mãos.",
+      "fonte": "PDF: EQ-021, p. 3 | Apoio: Armas!A214:D218",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-021_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-022",
+      "nome": "Lâmina do Vento",
+      "categoria": "ARMA CORPO A CORPO · RARA",
+      "campos": {
+        "Dano": "4 + Força",
+        "Alcance": "Corpo a corpo (1)",
+        "Limite de Fadiga": "2"
+      },
+      "tags": [
+        "Peso Médio",
+        "Tamanho Pequeno"
+      ],
+      "habilidade": "Sua Velocidade aumenta em 1. Ao causar dano com esta arma, você pode converter uma Ação Padrão sua em uma ação de Movimento. Se fizer isso, acrescente sua Velocidade ao dano causado.",
+      "revisao": "PDF substitui a versão da planilha baseada em quadrados percorridos. Definir se precisa de Padrão ainda disponível, quando ocorre a conversão e se pode ativar mais de uma vez no turno. Não reduz automaticamente o turno a uma Padrão.",
+      "fonte": "PDF: EQ-022, p. 3 | Apoio: Armas!A221:D225",
+      "piloto": false,
+      "imagem": "artes/revisadas/EQ-022_v02.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-023",
+      "nome": "Gládio Inquietante",
+      "categoria": "ARMA CORPO A CORPO · RARA",
+      "campos": {
+        "Dano": "4 + Força",
+        "Alcance": "Corpo a corpo (1)",
+        "Limite de Fadiga": "1"
+      },
+      "tags": [
+        "Peso Médio",
+        "Tamanho Médio"
+      ],
+      "habilidade": "No início do seu turno, vire todas as suas cartas de habilidade que possam ser viradas.",
+      "revisao": "Ressalva proposta para não tentar virar passivas de limite 0. A regra de remover fichas voláteis pertence ao livro; o efeito não é aleatório e pode eliminar Fadiga em massa.",
+      "fonte": "PDF: EQ-023, p. 3 | Apoio: Armas!A227:D231",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-023_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-024",
+      "nome": "Lança da Muralha",
+      "categoria": "ARMA CORPO A CORPO · RARA",
+      "campos": {
+        "Dano": "4 + Força",
+        "Alcance": "Corpo a corpo (2)",
+        "Limite de Fadiga": "2"
+      },
+      "tags": [
+        "Peso Médio",
+        "Tamanho Grande"
+      ],
+      "habilidade": "Reação: quando um inimigo a até 2 quadrados de você se mover em direção a um aliado seu, faça um ataque de oportunidade com esta arma contra ele. Sempre que atacar com esta arma, receba 1 ficha de Imobilizar.",
+      "revisao": "PDF cobra Reação e não concede reações ilimitadas. Definir gatilho objetivo, se inclui entrar no alcance e qual carta recebe Imobilizar. A habilidade pode remeter à ação de oportunidade do livro sem repetir sua definição.",
+      "fonte": "PDF: EQ-024, p. 3 | Apoio: Armas!A233:D237",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-024_v01.png",
+      "diagramacao": "frente_verso"
+    },
+    {
+      "id": "EQ-025",
+      "nome": "Quebra-Elmos",
+      "categoria": "ARMA CORPO A CORPO · RARA",
+      "campos": {
+        "Dano": "6 + Força",
+        "Alcance": "Corpo a corpo (1)",
+        "Limite de Fadiga": "2"
+      },
+      "tags": [
+        "Peso Pesado",
+        "Tamanho Pequeno"
+      ],
+      "habilidade": "Ao causar dano com esta arma, ignore resistência e cause +3 de dano contra armaduras e escudos. Você não tem Reação.",
+      "revisao": "PDF não tem o bônus contra alvos sem armadura da planilha nem cobra uma Reação por ataque. Definir dano extra à vida do equipamento, se ficha de Reação supera a restrição e uso de escudo, não proibido no PDF.",
+      "fonte": "PDF: EQ-025, p. 3 | Apoio: Armas!A240:D244",
+      "piloto": false,
+      "imagem": "artes/revisadas/EQ-025_v02.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-026",
+      "nome": "Machado da Sepultura",
+      "categoria": "ARMA CORPO A CORPO · RARA",
+      "campos": {
+        "Dano": "6 + Força",
+        "Alcance": "Corpo a corpo (1)",
+        "Limite de Fadiga": "2"
+      },
+      "tags": [
+        "Peso Pesado",
+        "Tamanho Médio"
+      ],
+      "habilidade": "Ao atacar com esta arma, você pode exilar qualquer quantidade de figuras — Valete, Dama ou Rei — do seu descarte. Esta arma causa dano adicional igual ao número de cartas exiladas por esse efeito neste turno. Toda cura que você receber é reduzida à metade.",
+      "revisao": "PDF usa +1 por carta acumulada no turno; não +2 por ataque e não contém a fome de trituração da planilha. O bônus chega a +12 com baralho fixo. Definir arredondamento da cura e se pode exilar zero.",
+      "fonte": "PDF: EQ-026, p. 3 | Apoio: Armas!A246:D250",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-026_v01.png",
+      "diagramacao": "frente_verso"
+    },
+    {
+      "id": "EQ-027",
+      "nome": "Montante do Frenesi",
+      "categoria": "ARMA CORPO A CORPO · RARA",
+      "campos": {
+        "Dano": "6 + Força",
+        "Alcance": "Corpo a corpo (2)",
+        "Limite de Fadiga": "2"
+      },
+      "tags": [
+        "Peso Pesado",
+        "Tamanho Grande"
+      ],
+      "habilidade": "Ao atacar com esta arma, compre cartas até somar 21 ou mais e então pare. Ultrapassar 21 não causa estouro neste teste. Depois do ataque, receba um número de fichas de Fadiga igual ao resultado do ataque menos 21. Você não pode jogar cartas da mão neste teste. Seus Ases sempre valem 11.",
+      "revisao": "PDF manda parar em 21 ou mais, e fixa Ás em 11; a revisão baseada na planilha mandava ultrapassar 21. Definir distribuição/excesso da Fadiga, baralho esgotado e interação com limites modificados.",
+      "fonte": "PDF: EQ-027, p. 3 | Apoio: Armas!A252:D256",
+      "piloto": false,
+      "imagem": "artes/revisadas/EQ-027_v02.png",
+      "diagramacao": "frente_verso"
+    },
+    {
+      "id": "EQ-028",
+      "nome": "Shuriken",
+      "categoria": "ARMA À DISTÂNCIA · COMUM",
+      "campos": {
+        "Dano": "2 + Des",
+        "Alcance": "Curto (3)",
+        "Limite de Fadiga": "0"
+      },
+      "tags": [
+        "Arremessável"
+      ],
+      "habilidade": "",
+      "revisao": "Arremessável, alcance Curto (3), limite 0. Sem habilidade exclusiva; regra da tag fica no livro.",
+      "fonte": "PDF: EQ-028, p. 4 | Apoio: Armas!A87:D87",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-028_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-029",
+      "nome": "Machado de Arremesso",
+      "categoria": "ARMA À DISTÂNCIA · COMUM",
+      "campos": {
+        "Dano": "4 + For",
+        "Alcance": "Médio (5)",
+        "Limite de Fadiga": "0"
+      },
+      "tags": [
+        "Arremessável",
+        "Recuperável"
+      ],
+      "habilidade": "",
+      "revisao": "Recuperação preservada conforme o consolidado. A separação em tag foi proposta para retirar uma definição comum do corpo da carta, sem alterar sua regra.",
+      "fonte": "PDF: EQ-029, p. 4 | Apoio: Armas!A88:D88",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-029_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-030",
+      "nome": "Javelin",
+      "categoria": "ARMA À DISTÂNCIA · COMUM",
+      "campos": {
+        "Dano": "6 + For",
+        "Alcance": "Longo (7)",
+        "Limite de Fadiga": "0"
+      },
+      "tags": [
+        "Arremessável",
+        "Recuperável"
+      ],
+      "habilidade": "",
+      "revisao": "Nome canônico do consolidado; a planilha usa Lança/Tridente. O custo extra de arremesso ainda precisa ser formalizado. A separação em tag foi proposta para retirar uma definição comum do corpo da carta, sem alterar sua regra.",
+      "fonte": "PDF: EQ-030, p. 4 | Apoio: Armas!A89:D89",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-030_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-031",
+      "nome": "Arco Curto",
+      "categoria": "ARMA À DISTÂNCIA · COMUM",
+      "campos": {
+        "Dano": "3 + Des",
+        "Alcance": "Curto e Médio",
+        "Limite de Fadiga": "1"
+      },
+      "tags": [
+        "Arma de Tiro"
+      ],
+      "habilidade": "",
+      "revisao": "Faixas de alcance e limite de Fadiga seguem os campos do PDF. Não foi inventada uma habilidade própria; esclarecer alcance ideal/máximo no livro.",
+      "fonte": "PDF: EQ-031, p. 4 | Apoio: Armas!A93:D93",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-031_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-032",
+      "nome": "Arco Longo",
+      "categoria": "ARMA À DISTÂNCIA · COMUM",
+      "campos": {
+        "Dano": "4 + Des",
+        "Alcance": "Médio e Longo",
+        "Limite de Fadiga": "1"
+      },
+      "tags": [
+        "Arma de Tiro"
+      ],
+      "habilidade": "",
+      "revisao": "Faixas de alcance e limite de Fadiga seguem os campos do PDF. Não foi inventada uma habilidade própria; esclarecer alcance ideal/máximo no livro.",
+      "fonte": "PDF: EQ-032, p. 4 | Apoio: Armas!A94:D94",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-032_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-033",
+      "nome": "Besta Pesada",
+      "categoria": "ARMA À DISTÂNCIA · COMUM",
+      "campos": {
+        "Dano": "6",
+        "Alcance": "Médio e Longo",
+        "Limite de Fadiga": "2"
+      },
+      "tags": [
+        "Arma de Tiro",
+        "Ignora Resistência",
+        "Recarga"
+      ],
+      "habilidade": "",
+      "revisao": "As propriedades comuns foram convertidas em tags: Ignora Resistência e Recarga. Não há habilidade exclusiva. A tag Recarga é proposta editorial para o texto Ação: Recarregar, sem mudar o custo de uma Padrão. A separação em tag foi proposta para retirar uma definição comum do corpo da carta, sem alterar sua regra.",
+      "fonte": "PDF: EQ-033, p. 4 | Apoio: Armas!A95:D95",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-033_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-034",
+      "nome": "Adaga Balanceada",
+      "categoria": "ARMA À DISTÂNCIA · INCOMUM",
+      "campos": {
+        "Dano": "2 + Des",
+        "Alcance": "Curta",
+        "Limite de Fadiga": "0"
+      },
+      "tags": [
+        "Arremessável"
+      ],
+      "habilidade": "Se gastar pelo menos 1 ficha de Foco durante um ataque com esta arma, receba 1 ficha de Foco depois de resolver esse ataque.",
+      "revisao": "O momento depois da resolução é proposta para impedir recuperar e gastar repetidamente o mesmo Foco dentro do teste. O PDF limita implicitamente a um Foco por ataque.",
+      "fonte": "PDF: EQ-034, p. 4 | Apoio: Armas!A262:D262",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-034_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-035",
+      "nome": "Machete Farpado",
+      "categoria": "ARMA À DISTÂNCIA · INCOMUM",
+      "campos": {
+        "Dano": "4 + For",
+        "Alcance": "Curta",
+        "Limite de Fadiga": "0"
+      },
+      "tags": [
+        "Arremessável",
+        "Recuperável"
+      ],
+      "habilidade": "Ao causar dano com esta arma, coloque 1 ficha de Sangramento no defensor.",
+      "revisao": "PDF diz Machete Farpado e exige causar dano, não apenas acertar. A regra de recuperar a arma foi movida para a tag Recuperável, proposta editorial baseada na cláusula impressa. A separação em tag foi proposta para retirar uma definição comum do corpo da carta, sem alterar sua regra.",
+      "fonte": "PDF: EQ-035, p. 4 | Apoio: Armas!A263:D263",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-035_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-036",
+      "nome": "Lança Espiral",
+      "categoria": "ARMA À DISTÂNCIA · INCOMUM",
+      "campos": {
+        "Dano": "6 + For",
+        "Alcance": "Curta-Média",
+        "Limite de Fadiga": "3"
+      },
+      "tags": [
+        "Arremessável",
+        "Recuperável"
+      ],
+      "habilidade": "Ao atacar com esta arma, você pode remover qualquer quantidade de fichas de Fadiga dela. Para cada ficha removida assim, o ataque causa +1 de dano.",
+      "revisao": "PDF permite escolher quanto remover; não exige retirar toda a Fadiga. A recuperação física virou a tag Recuperável. Definir como recebe Fadiga, já que esta habilidade só a remove. A separação em tag foi proposta para retirar uma definição comum do corpo da carta, sem alterar sua regra.",
+      "fonte": "PDF: EQ-036, p. 4 | Apoio: Armas!A264:D264",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-036_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-037",
+      "nome": "Arco Recurvo",
+      "categoria": "ARMA À DISTÂNCIA · INCOMUM",
+      "campos": {
+        "Dano": "3 + Des",
+        "Alcance": "Curta-Média",
+        "Limite de Fadiga": "1"
+      },
+      "tags": [
+        "Arma de Tiro"
+      ],
+      "habilidade": "1 ficha de Reação: quando um inimigo se afastar de você, faça um ataque à distância com esta arma contra ele, se ele estiver ao alcance.",
+      "revisao": "Preservado custo de ficha, e não automaticamente a Reação gratuita. Definir momento do disparo e se movimento forçado dispara. Alcance e linha de visão continuam regras gerais.",
+      "fonte": "PDF: EQ-037, p. 5 | Apoio: Armas!A268:D268",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-037_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-038",
+      "nome": "Arco de Teixo",
+      "categoria": "ARMA À DISTÂNCIA · INCOMUM",
+      "campos": {
+        "Dano": "4 + Des",
+        "Alcance": "Média-Longa",
+        "Limite de Fadiga": "1"
+      },
+      "tags": [
+        "Arma de Tiro"
+      ],
+      "habilidade": "Contra um inimigo com ficha de Marcação, esta arma causa o dobro do dano da arma.",
+      "revisao": "PDF não concede +2 após cura, presente na planilha: esse bônus foi removido da proposta atual. Definir se dobra só o valor fixo 4 ou também Destreza; não decidir isso por gramática.",
+      "fonte": "PDF: EQ-038, p. 5 | Apoio: Armas!A269:D269",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-038_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-039",
+      "nome": "Besta da Seta Dupla",
+      "categoria": "ARMA À DISTÂNCIA · INCOMUM",
+      "campos": {
+        "Dano": "6",
+        "Alcance": "Média-Longa",
+        "Limite de Fadiga": "2"
+      },
+      "tags": [
+        "Arma de Tiro",
+        "Ignora Resistência",
+        "Recarga"
+      ],
+      "habilidade": "Ao causar dano a um inimigo com esta arma, cause dano igual ao dano da arma a um inimigo adjacente ao primeiro.",
+      "revisao": "PDF aplica dano secundário, não um segundo teste completo como sugerido na revisão da planilha. Definir se deve ser outro inimigo e se o dano inclui Destreza (base da besta não soma), resistência do segundo e alcance. Ignora Resistência e Recarga viraram tags propostas. A separação em tag foi proposta para retirar uma definição comum do corpo da carta, sem alterar sua regra.",
+      "fonte": "PDF: EQ-039, p. 5 | Apoio: Armas!A270:D270",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-039_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-040",
+      "nome": "Leque de Lâminas",
+      "categoria": "ARMA À DISTÂNCIA · RARA",
+      "campos": {
+        "Dano": "2 + Destreza",
+        "Alcance": "Curta"
+      },
+      "tags": [
+        "Arremessável"
+      ],
+      "habilidade": "Ao arremessar, atinja quantos alvos quiser dentro do alcance. Para cada alvo além do primeiro, exile 1 carta da sua mão. Enquanto a empunha, sua mão não pode ter mais de 5 cartas. O excedente é descartado.",
+      "revisao": "Proposta define um teste com defesas independentes e o momento do limite de mão. No máximo 6 alvos com mão de 5, antes de outros efeitos. Confirmar se o custo é pago antes do teste e se os alvos devem ser inimigos.",
+      "fonte": "PDF: EQ-040, p. 5 | Apoio: Armas!A273:D277",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-040_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-041",
+      "nome": "Machado Sedento",
+      "categoria": "ARMA À DISTÂNCIA · RARA",
+      "campos": {
+        "Dano": "4 + Força",
+        "Alcance": "Curta"
+      },
+      "tags": [
+        "Arremessável"
+      ],
+      "habilidade": "Causa +1 de dano para cada Rei, Dama ou Valete (K/Q/J) no SEU descarte - no máximo +12. Ao acertar, tritura 1 carta sua.",
+      "revisao": "Preservados alcance Curta e teto +12 da fonte. O teto corresponde às 12 figuras; cura pode diminuir o bônus, mas não é literalmente dano ou veneno.",
+      "fonte": "PDF: EQ-041, p. 5 | Apoio: Armas!A279:D283",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-041_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-042",
+      "nome": "Lança Trovejante",
+      "categoria": "ARMA À DISTÂNCIA · RARA",
+      "campos": {
+        "Dano": "6 + Força",
+        "Limite de Fadiga": "2"
+      },
+      "tags": [
+        "Arremessável",
+        "Arremesso Grande",
+        "Raio"
+      ],
+      "habilidade": "2 de Fadiga: cause dano igual ao dano da arma a cada inimigo na área do alvo.",
+      "revisao": "Faltam alcance, área, teste/defesa e distribuição dos tipos de dano. Choque foi normalizado como Raio na tag, sem acrescentar valor de dano. A definição de Arremesso Grande saiu da descrição e virou tag proposta; seu custo e Desarmado precisam de regra clara no livro. A separação em tag foi proposta para retirar uma definição comum do corpo da carta, sem alterar sua regra.",
+      "fonte": "PDF: EQ-042, p. 5 | Apoio: Armas!A285:D289",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-042_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-043",
+      "nome": "Arco das Sombras",
+      "categoria": "ARMA À DISTÂNCIA · RARA",
+      "campos": {
+        "Dano": "3 + Destreza",
+        "Alcance": "Curta-Média"
+      },
+      "tags": [
+        "Arma de Tiro"
+      ],
+      "habilidade": "Ao fazer um ataque à distância com esta arma, receba 1 ficha de Sombra. Você pode gastar 1 ficha de Sombra ao atirar: o ataque não pode ser respondido por reações e suas duas cartas iniciais ficam ocultas para o defensor. Esta arma não causa dano a inimigos adjacentes a você.",
+      "revisao": "PDF diz duas cartas ocultas, não todas as compras. Definir se a Sombra gerada pode pagar o próprio tiro e como reações a ataques funcionam. A defesa normal não é uma reação.",
+      "fonte": "PDF: EQ-043, p. 5 | Apoio: Armas!A293:D297",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-043_v01.png",
+      "diagramacao": "frente_verso"
+    },
+    {
+      "id": "EQ-044",
+      "nome": "Arco da Maré",
+      "categoria": "ARMA À DISTÂNCIA · RARA",
+      "campos": {
+        "Dano": "4 + Destreza"
+      },
+      "tags": [
+        "Arma de Tiro"
+      ],
+      "habilidade": "Ataque em área: atinge os inimigos na área. Se a área for terra/solo, ela vira TERRENO DIFÍCIL; se houver fichas de Fogo ou objetos em chamas na área, apague todos. No fim do seu turno, você NÃO retira 1 de Fadiga (a maré não recua). Seu ritmo de Fadiga fica permanentemente mais apertado.",
+      "revisao": "Faltam dimensão, alcance ideal, tipo de dano e duração do terreno. A recuperação negada é a normal de 1 por turno; decidir se efeitos adicionais continuam. Área afeta inimigos no dano, mas o apagamento afeta todos: proposta explicita a assimetria.",
+      "fonte": "PDF: EQ-044, p. 5 | Apoio: Armas!A299:D303",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-044_v01.png",
+      "diagramacao": "frente_verso"
+    },
+    {
+      "id": "EQ-045",
+      "nome": "Balestra de Cerco",
+      "categoria": "ARMA À DISTÂNCIA · RARA",
+      "campos": {
+        "Dano": "6",
+        "Alcance": "Média-Longa"
+      },
+      "tags": [
+        "Arma de Tiro",
+        "Ignora Resistência"
+      ],
+      "habilidade": "Carregar: gaste ações de recarga acumulando cargas (máx. 3). Ao disparar, o virote atravessa todos os inimigos em uma linha até distância longa, causando 4 de dano por carga. Enquanto tiver ao menos 1 carga, sua Velocidade é 0 - fincado, mirando. Se sofrer dano, perde 1 carga.",
+      "revisao": "Dano-base 6 e resistência ignorada estão em campo/tag; o efeito próprio é acumular cargas. Definir se 4 por carga substitui ou soma ao 6, teste dos alvos da linha e se Velocidade 0 impede qualquer deslocamento. A Recarga padrão não foi aplicada porque este item tem ciclo próprio.",
+      "fonte": "PDF: EQ-045, p. 5 | Apoio: Armas!A305:D309",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-045_v01.png",
+      "diagramacao": "frente_verso"
+    },
+    {
+      "id": "EQ-046",
+      "nome": "Couro do Batedor",
+      "categoria": "ARMADURA · COMUM",
+      "campos": {
+        "Vida": "4",
+        "Resistência": "2"
+      },
+      "tags": [
+        "Armadura",
+        "Leve"
+      ],
+      "habilidade": "Você pode esconder itens pequenos no bolso secreto desta armadura. Eles não são identificados em testes de Percepção.",
+      "revisao": "PDF impede identificação em testes de Percepção, mais amplo que revista casual da planilha. Mantido o efeito do PDF; regra de Armadura Leve retirada da descrição.",
+      "fonte": "PDF: EQ-046, p. 6 | Apoio: Itens!A3:C6",
+      "piloto": true,
+      "imagem": "artes/piloto/EQ-046_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-047",
+      "nome": "Cota de Malha",
+      "categoria": "ARMADURA · COMUM",
+      "campos": {
+        "Vida": "9",
+        "Resistência": "3"
+      },
+      "tags": [
+        "Armadura",
+        "Média"
+      ],
+      "habilidade": "Uma vez por cena, quando a vida desta armadura chegar a 0, ela recupera 1 de vida. Você tem desvantagem em testes de Furtividade.",
+      "revisao": "PDF protege a armadura, não o personagem. Definir momento de quebra e o destino do dano excedente. A desvantagem é própria da Cota; penalidade de movimento/Furtividade da categoria foi movida ao livro.",
+      "fonte": "PDF: EQ-047, p. 6 | Apoio: Itens!A7:C10",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-047_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-048",
+      "nome": "Arnês de Placas",
+      "categoria": "ARMADURA · COMUM",
+      "campos": {
+        "Vida": "16",
+        "Resistência": "3"
+      },
+      "tags": [
+        "Armadura",
+        "Pesada"
+      ],
+      "habilidade": "Imponente: enquanto vestir esta armadura, você tem vantagem em testes de Intimidação.",
+      "revisao": "Apenas o efeito próprio permanece na carta. Resistência, vida e regras de Armadura Pesada não entram na descrição.",
+      "fonte": "PDF: EQ-048, p. 6 | Apoio: Itens!A11:C14",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-048_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-049",
+      "nome": "Couro Élfico",
+      "categoria": "ARMADURA · INCOMUM",
+      "campos": {
+        "Vida": "5",
+        "Resistência": "2"
+      },
+      "tags": [
+        "Armadura",
+        "Leve"
+      ],
+      "habilidade": "Uma vez por turno, depois de sofrer dano de um ataque, você pode se mover 1 quadrado.",
+      "revisao": "PDF permite mover após dano, uma vez por turno; planilha tinha antes da resolução, uma vez por cena. Definir oportunidade e impedimento desse deslocamento. Não é uma esquiva que evita o ataque já sofrido.",
+      "fonte": "PDF: EQ-049, p. 6 | Apoio: Itens!A18:C20",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-049_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-050",
+      "nome": "Brunea de Escamas",
+      "categoria": "ARMADURA · INCOMUM",
+      "campos": {
+        "Vida": "10",
+        "Resistência": "3"
+      },
+      "tags": [
+        "Armadura",
+        "Média"
+      ],
+      "habilidade": "Quando um inimigo adjacente causar dano à vida desta armadura, coloque 1 ficha de Ferimento nele.",
+      "revisao": "PDF aplica Ferimento, não 1 de dano de retorno. As regras de Armadura Média foram movidas para o livro.",
+      "fonte": "PDF: EQ-050, p. 6 | Apoio: Itens!A21:C23",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-050_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-051",
+      "nome": "Armadura Samurai Temperada",
+      "categoria": "ARMADURA · INCOMUM",
+      "campos": {
+        "Vida": "18",
+        "Resistência": "3"
+      },
+      "tags": [
+        "Armadura",
+        "Pesada"
+      ],
+      "habilidade": "No fim do seu turno, se você não se moveu durante ele, receba 1 ficha de Guarda.",
+      "revisao": "Regras herdadas de Armadura Pesada ficam no livro. Definir se movimento forçado conta para a condição; não inventada uma exceção.",
+      "fonte": "PDF: EQ-051, p. 6 | Apoio: Itens!A24:C26",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-051_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-052",
+      "nome": "Manto do Vento",
+      "categoria": "ARMADURA · RARA",
+      "campos": {
+        "Vida": "3",
+        "Resistência": "1"
+      },
+      "tags": [
+        "Armadura",
+        "Leve",
+        "Planar"
+      ],
+      "habilidade": "Se, no seu turno, você se moveu e não realizou nenhum ataque, o limite do 21 na sua defesa aumenta em 2 até o seu próximo turno. Se você realizou qualquer ataque no seu turno, o limite do 21 na sua defesa diminui em 2 até o seu próximo turno.",
+      "revisao": "A capacidade de planar foi movida para a tag Planar; sua regra geral ainda está em aberto. Bônus e penalidade de defesa continuam habilidades próprias. Confirmar o momento em que passam a valer.",
+      "fonte": "PDF: EQ-052, p. 6 | Apoio: Itens!A30:C33",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-052_v01.png",
+      "diagramacao": "frente_verso"
+    },
+    {
+      "id": "EQ-053",
+      "nome": "Couraça do Contra-Ataque",
+      "categoria": "ARMADURA · RARA",
+      "campos": {
+        "Vida": "9",
+        "Resistência": "3"
+      },
+      "tags": [
+        "Armadura",
+        "Média"
+      ],
+      "habilidade": "Toda vez que você sofre dano de um ataque, receba uma ficha de Ferimento. Seus ataques causam +2 de dano para cada ficha de Ferimento que você tiver.",
+      "revisao": "Definir se dano absorvido pela armadura/escudo conta como sofrer dano e em qual carta entra Ferimento. Em mesa não há o limite digital de uma ficha por tipo/carta. Risco de crescer sem limite, mas o custo também cresce: exige playtest.",
+      "fonte": "PDF: EQ-053, p. 6 | Apoio: Itens!A34:C36",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-053_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-054",
+      "nome": "Peitoral de Dalpnor",
+      "categoria": "ARMADURA · RARA",
+      "campos": {
+        "Vida": "18",
+        "Resistência": "3"
+      },
+      "tags": [
+        "Armadura",
+        "Pesada"
+      ],
+      "habilidade": "Sacrifício: uma vez por rodada, gaste sua reação para receber no seu lugar um ataque feito contra um aliado a alcance curto; ao fazê-lo, cure 2. Luz contra o Mal: inimigos profanos ou mortos-vivos a alcance curto têm -1 de resistência. Fardo da Luz: no início de cada um dos seus turnos, você tritura 1 carta do seu baralho.",
+      "revisao": "Corrigido “receber no seu lugar” para “no lugar dele”. Falta definir se pode interceptar à distância sem se deslocar, quando cura e como aplica a resistência reduzida a zero. A cura mantém seu custo normal de exílio.",
+      "fonte": "PDF: EQ-054, p. 6 | Apoio: Itens!A37:C42",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-054_v01.png",
+      "diagramacao": "frente_verso"
+    },
+    {
+      "id": "EQ-055",
+      "nome": "Escudo Leve",
+      "categoria": "ESCUDO · COMUM",
+      "campos": {
+        "Vida": "5",
+        "Resistência": "1"
+      },
+      "tags": [
+        "Escudo",
+        "Leve"
+      ],
+      "habilidade": "",
+      "revisao": "Sem habilidade exclusiva. Nome, dados numéricos, requisitos e tags bastam; o espaço de descrição fica disponível para a ilustração na etapa futura. Regras das propriedades ficam no livro.",
+      "fonte": "PDF: EQ-055, p. 7 | Apoio: Itens!A45:C45",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-055_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-056",
+      "nome": "Escudo Pesado",
+      "categoria": "ESCUDO · COMUM",
+      "campos": {
+        "Vida": "10",
+        "Resistência": "2"
+      },
+      "tags": [
+        "Escudo",
+        "Pesado"
+      ],
+      "habilidade": "",
+      "revisao": "Sem habilidade exclusiva. Nome, dados numéricos, requisitos e tags bastam; o espaço de descrição fica disponível para a ilustração na etapa futura. Regras das propriedades ficam no livro.",
+      "fonte": "PDF: EQ-056, p. 7 | Apoio: Itens!A45:C45",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-056_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-057",
+      "nome": "Broquel Ágil",
+      "categoria": "ESCUDO · INCOMUM",
+      "campos": {
+        "Vida": "6",
+        "Resistência": "1"
+      },
+      "tags": [
+        "Escudo",
+        "Leve"
+      ],
+      "habilidade": "Anteparo: gaste uma ficha de reação para direcionar ao seu escudo o dano de um ataque sofrido por um aliado adjacente (a vida do escudo absorve no lugar dele).",
+      "revisao": "Proposta preserva o excesso de dano no aliado. Definir se a reação gratuita substitui a ficha, qual resistência se aplica e o destino do excesso; não pressupor que escudo com 1 de vida anule um ataque inteiro.",
+      "fonte": "PDF: EQ-057, p. 7 | Apoio: Itens!A46:C48",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-057_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-058",
+      "nome": "Escudo de Investida",
+      "categoria": "ESCUDO · INCOMUM",
+      "campos": {
+        "Vida": "12",
+        "Resistência": "2"
+      },
+      "tags": [
+        "Escudo",
+        "Pesado"
+      ],
+      "habilidade": "Se você se moveu pelo menos 2 quadrados em linha reta antes de realizar um ataque corpo a corpo, o defensor é empurrado 1 quadrado após o dano.",
+      "revisao": "Proposta exige ataque em seguida ao avanço. A fonte não define se os dois quadrados devem ocorrer imediatamente antes do ataque ou apenas no mesmo turno.",
+      "fonte": "PDF: EQ-058, p. 7 | Apoio: Itens!A49:C51",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-058_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-059",
+      "nome": "Placa de Luz",
+      "categoria": "ESCUDO · RARA",
+      "campos": {
+        "Vida": "8",
+        "Resistência": "3"
+      },
+      "tags": [
+        "Escudo",
+        "Leve"
+      ],
+      "habilidade": "Base: contra ataques à distância e magias, tem 8 de vida e resistência 3; contra ataques corpo a corpo, não oferece vida nem resistência. Fulgor: ataques à distância contra você têm o limite do 21 reduzido em 2; e inimigos furtivos ou ocultos a alcance curto são revelados e não podem gastar fichas de Sombra. A placa é luz, não aço - ela não protege de forma alguma contra ataques corpo a corpo.",
+      "revisao": "Mantida uma única reserva de vida, sem regenerá-la ao mudar o tipo do ataque. Definir se ataques mágicos corpo a corpo são protegidos; a proposta prioriza a exclusão de corpo a corpo. “Furtivo” não tem estado formal.",
+      "fonte": "PDF: EQ-059, p. 7 | Apoio: Itens!A55:C59",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-059_v01.png",
+      "diagramacao": "frente_verso"
+    },
+    {
+      "id": "EQ-060",
+      "nome": "Scutum da Legião",
+      "categoria": "ESCUDO · RARA",
+      "campos": {
+        "Vida": "14",
+        "Resistência": "2"
+      },
+      "tags": [
+        "Escudo",
+        "Pesado"
+      ],
+      "habilidade": "Muralha da Legião: enquanto você está adjacente a pelo menos um aliado, você e cada aliado adjacente a você ganham +2 de resistência e não podem ser empurrados, derrubados nem flanqueados; e inimigos não podem passar entre você e um aliado adjacente. Sozinho na Formação: enquanto você não está adjacente a nenhum aliado, este escudo não oferece vida nem resistência, e seu deslocamento é 1.",
+      "revisao": "Mantida a proteção contra flanqueamento, cuja regra estará no manual. Definições comuns continuam fora da carta.",
+      "fonte": "PDF: EQ-060, p. 7 | Apoio: Itens!A60:C64",
+      "piloto": true,
+      "imagem": "artes/piloto/EQ-060_v01.png",
+      "diagramacao": "frente_verso"
+    },
+    {
+      "id": "EQ-061",
+      "nome": "Poção de Cura Pequena",
+      "categoria": "CONSUMÍVEL · COMUM",
+      "campos": {},
+      "tags": [
+        "Consumível"
+      ],
+      "habilidade": "Ação Padrão: você ou um aliado adjacente cura 5.",
+      "revisao": "PDF permite administrar a um aliado adjacente; a revisão anterior baseada na planilha limitava ao próprio usuário. O custo geral de exílio da cura não precisa ser reimpresso na carta.",
+      "fonte": "PDF: EQ-061, p. 7 | Apoio: Itens!A68:C69",
+      "piloto": true,
+      "imagem": "artes/piloto/EQ-061_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-062",
+      "nome": "Tocha",
+      "categoria": "CONSUMÍVEL · COMUM",
+      "campos": {},
+      "tags": [
+        "Consumível"
+      ],
+      "habilidade": "Ação Padrão: Acender. Enquanto está acesa, Tocha ilumina ao alcance curto e torna o alcance médio penumbra caso fosse escuro. O efeito dura 1 hora. Se Tocha for usada como arma improvisada, ela causa +1 de dano e coloca uma ficha de Fogo no defensor caso cause dano. Pode ser utilizada para ataques corpo a corpo ou à distância curta arremessando. Enquanto segurar Tocha acesa, você joga a defesa com as cartas reveladas.",
+      "revisao": "Definir dano-base da arma improvisada, se +1 é bônus ou valor-base, atributo, mãos, custo de atacar e se a ficha depende de acerto. Proposta explicita o acerto; não cria dano-base.",
+      "fonte": "PDF: EQ-062, p. 7 | Apoio: Itens!A70:C71",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-062_v01.png",
+      "diagramacao": "frente_verso"
+    },
+    {
+      "id": "EQ-063",
+      "nome": "Antídoto",
+      "categoria": "CONSUMÍVEL · COMUM",
+      "campos": {},
+      "tags": [
+        "Consumível"
+      ],
+      "habilidade": "Ação Padrão: você ou um aliado adjacente remove todas as suas fichas de Veneno e remove 1 ficha de Fadiga de uma de suas cartas.",
+      "revisao": "Alvo é o mesmo para retirar Veneno e Fadiga. O PDF admite aliado adjacente. Texto do consumível gasto fica na tag Consumível.",
+      "fonte": "PDF: EQ-063, p. 7 | Apoio: Itens!A72:C73",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-063_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-064",
+      "nome": "Ração de Viagem",
+      "categoria": "CONSUMÍVEL · COMUM",
+      "campos": {},
+      "tags": [
+        "Consumível"
+      ],
+      "habilidade": "Durante um descanso curto, você pode consumir esta ração para remover até 3 fichas de Fadiga das suas cartas.",
+      "revisao": "PDF não repete que a ração é necessária no descanso longo, como fazia a planilha. Essa exigência depende da regra de descanso no livro. Proposta remove marcador Ação deslocado para antes de um uso durante descanso.",
+      "fonte": "PDF: EQ-064, p. 8 | Apoio: Itens!A74:C75",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-064_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-065",
+      "nome": "Bomba de Fumaça",
+      "categoria": "CONSUMÍVEL · COMUM",
+      "campos": {},
+      "tags": [
+        "Consumível"
+      ],
+      "habilidade": "Ação Padrão: crie uma área de fumaça de 3 × 3 × 3 quadrados a alcance Curto. Ela oferece cobertura contra ataques à distância.",
+      "revisao": "PDF diz cobertura, e não bloquear linha de visão. Falta grau da cobertura e duração. Não usar automaticamente 10 rodadas do videogame nem bloqueio total da planilha.",
+      "fonte": "PDF: EQ-065, p. 8 | Apoio: Itens!A76:C77",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-065_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-066",
+      "nome": "Pedra de Amolar",
+      "categoria": "CONSUMÍVEL · COMUM",
+      "campos": {},
+      "tags": [
+        "Consumível"
+      ],
+      "habilidade": "Durante um descanso longo, aplique em uma arma que cause Corte ou Perfuração. Até o próximo descanso longo, essa arma causa +1 de dano.",
+      "revisao": "O PDF já define a duração: a pendência antiga foi resolvida. Falta regra geral de acúmulo de usos. Ação Padrão durante descanso foi simplificada como proposta editorial.",
+      "fonte": "PDF: EQ-066, p. 8 | Apoio: Itens!A78:C79",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-066_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-067",
+      "nome": "Veneno Ácido",
+      "categoria": "CONSUMÍVEL · COMUM",
+      "campos": {},
+      "tags": [
+        "Consumível"
+      ],
+      "habilidade": "Ação Padrão: aplique em uma arma. Seu próximo ataque com ela causa +1 de dano e ignora resistência.",
+      "revisao": "PDF usa +1 e faz o ataque ignorar resistência; não +2 apenas no dano adicional. Definir consumo no erro e tipo do dano extra. Não reduzir a exceção impressa por conta da planilha.",
+      "fonte": "PDF: EQ-067, p. 8 | Apoio: Itens!A80:C81",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-067_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-068",
+      "nome": "Poção de Mana Pequena",
+      "categoria": "CONSUMÍVEL · COMUM",
+      "campos": {},
+      "tags": [
+        "Consumível"
+      ],
+      "habilidade": "Ação Padrão: remova até 3 fichas de Fadiga.",
+      "revisao": "A redação passa a remover Fadiga. Definir no livro se os três pontos podem ser distribuídos entre cartas. Não confundir recuperação com receber fichas.",
+      "fonte": "PDF: EQ-068, p. 8 | Apoio: Itens!A82:C83",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-068_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-069",
+      "nome": "Óleo Antiespectral",
+      "categoria": "CONSUMÍVEL · COMUM",
+      "campos": {},
+      "tags": [
+        "Consumível"
+      ],
+      "habilidade": "Ação Padrão: aplique em uma arma. Até o fim da cena, ataques com ela atingem inimigos Intangíveis e causam +2 de dano contra eles.",
+      "revisao": "Mantida a exceção ao traço Intangível expressa no PDF. Não reimprimir a definição de Intangível na carta; deve estar no livro e ser consistente com monstros.",
+      "fonte": "PDF: EQ-069, p. 8 | Apoio: Itens!A84:C85",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-069_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-070",
+      "nome": "Gazua",
+      "categoria": "CONSUMÍVEL · COMUM",
+      "campos": {},
+      "tags": [
+        "Consumível"
+      ],
+      "habilidade": "Ação Padrão: abra uma fechadura comum sem teste ou faça, com vantagem, um teste para abrir uma fechadura difícil.",
+      "revisao": "PDF não afirma que a gazua quebra; a tag Consumível já informa que o item é gasto. Não acrescentado mecanismo separado de quebra.",
+      "fonte": "PDF: EQ-070, p. 8 | Apoio: Itens!A86:C87",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-070_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-071",
+      "nome": "Poção de Pele de Pedra",
+      "categoria": "CONSUMÍVEL · INCOMUM",
+      "campos": {},
+      "tags": [
+        "Consumível"
+      ],
+      "habilidade": "Ação Padrão: Ganhe 3 fichas de Guarda.",
+      "revisao": "Guarda redireciona ataques de aliados; não reduz dano nem aumenta armadura. Confirmar se essa é a intenção ou se o item deveria conceder Bloqueio/resistência. Não substituído silenciosamente.",
+      "fonte": "PDF: EQ-071, p. 8 | Apoio: Itens!A91:C92",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-071_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-072",
+      "nome": "Poção Carmim",
+      "categoria": "CONSUMÍVEL · INCOMUM",
+      "campos": {},
+      "tags": [
+        "Consumível"
+      ],
+      "habilidade": "Ação Padrão: Ganhe duas ações; use-as apenas para atacar. Perca 5 de vida.",
+      "revisao": "Proposta fixa a duração no turno atual. “Perca 5 de vida” pode ser custo direto sem armadura/resistência; proposta usa dano, mas a diferença exige decisão. Definir se pode consumir várias no mesmo turno.",
+      "fonte": "PDF: EQ-072, p. 8 | Apoio: Itens!A93:C94",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-072_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-073",
+      "nome": "Incenso de Jasmim",
+      "categoria": "CONSUMÍVEL · INCOMUM",
+      "campos": {},
+      "tags": [
+        "Consumível"
+      ],
+      "habilidade": "Ação Padrão: Acender. Até o início do seu próximo turno, magias conjuradas a alcance curto do incenso custam 1 de Fadiga a menos.",
+      "revisao": "Alcance é medido a partir do incenso, e o efeito também beneficia inimigos. Definir o custo mínimo e acúmulo de vários incensos/reduções.",
+      "fonte": "PDF: EQ-073, p. 9 | Apoio: Itens!A95:C96",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-073_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-074",
+      "nome": "Frasco de Piche",
+      "categoria": "CONSUMÍVEL · INCOMUM",
+      "campos": {},
+      "tags": [
+        "Consumível"
+      ],
+      "habilidade": "Ação Padrão: crie uma área de piche de 3 × 3 quadrados a alcance Curto. Ela é terreno difícil. Personagens que entrarem em um quadrado dela recebem 1 ficha de Imobilizar. A área é inflamável.",
+      "revisao": "PDF inclui todos os personagens e inflamabilidade; não só inimigos. Não contém duração de 3 rodadas. Definir duração, fogo, reentrada e efeito da revisão de Imobilizar.",
+      "fonte": "PDF: EQ-074, p. 9 | Apoio: Itens!A97:C98",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-074_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-075",
+      "nome": "Poção Turquesa",
+      "categoria": "CONSUMÍVEL · INCOMUM",
+      "campos": {},
+      "tags": [
+        "Consumível"
+      ],
+      "habilidade": "Ação Padrão: Ganhe duas ações; use-as apenas para se movimentar. Ganhe 5 de Fadiga.",
+      "revisao": "Proposta fixa a duração. Falta definir em quais cartas colocar as cinco fichas e se excesso usa a regra geral. Consome uma Padrão para obter duas de Movimento: benefício líquido é uma ação de Movimento.",
+      "fonte": "PDF: EQ-075, p. 9 | Apoio: Itens!A99:C100",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-075_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-076",
+      "nome": "Sangue de Batalha",
+      "categoria": "CONSUMÍVEL · RARA",
+      "campos": {},
+      "tags": [
+        "Consumível"
+      ],
+      "habilidade": "Ação Padrão: Por 3 rodadas, seus ataques corpo a corpo causam +3 de dano e você é imune a fichas de Ferimento, Atordoamento e Medo. quando o efeito termina, exile 8 cartas do seu baralho.",
+      "revisao": "Imunidade a receber não remove fichas já presentes. Definir marco exato das 3 rodadas, consequência de baralho com menos de 8 cartas e encerramento antecipado da cena.",
+      "fonte": "PDF: EQ-076, p. 9 | Apoio: Itens!A104:C105",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-076_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-077",
+      "nome": "Flocos de Sombras",
+      "categoria": "CONSUMÍVEL · RARA",
+      "campos": {},
+      "tags": [
+        "Consumível"
+      ],
+      "habilidade": "Reação (pode ser usada antes de ser atacado): teleporte para um ponto de penumbra a alcance médio. Ganhe 1 ficha de Sombra e 2 fichas de Medo.",
+      "revisao": "Proposta faz a Reação responder à escolha como alvo, sem custo adicional de Padrão. Definir se o ataque perde o alvo, se o destino exige visão e se só pode ser usado nesse gatilho.",
+      "fonte": "PDF: EQ-077, p. 9 | Apoio: Itens!A106:C107",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-077_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-078",
+      "nome": "Água Abençoada",
+      "categoria": "CONSUMÍVEL · RARA",
+      "campos": {},
+      "tags": [
+        "Consumível"
+      ],
+      "habilidade": "Ação Padrão: Até o fim do seu próximo turno, toda vez que você conjura uma magia divina, você e os aliados a alcance curto curam 3. Enquanto durar, suas magias custam 1 de Fadiga a mais.",
+      "revisao": "Cada personagem curado paga o exílio da cura. Definir se truques, reações, sustentações e repertórios disparam o efeito; limitar ciclos se houver magia gratuita. “Suas magias” no custo abrange também arcanas, como na fonte.",
+      "fonte": "PDF: EQ-078, p. 9 | Apoio: Itens!A108:C109",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-078_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-079",
+      "nome": "Flecha Explosiva",
+      "categoria": "CONSUMÍVEL · RARA",
+      "campos": {},
+      "tags": [
+        "Consumível"
+      ],
+      "habilidade": "Ação Padrão: Seu próximo ataque acerta uma área 2 × 2 × 2. Se você sofrer dano de Fogo, esta flecha acende e explode no fim do seu próximo turno.",
+      "revisao": "A fonte dizia apenas “próximo ataque”, permitindo até ataque de espada. Proposta restringe a arco. Faltam centro da explosão, dano, testes dos alvos, alcance e consumo ao errar; não inventados.",
+      "fonte": "PDF: EQ-079, p. 9 | Apoio: Itens!A110:C111",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-079_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-080",
+      "nome": "Pergaminho do Desencantamento",
+      "categoria": "CONSUMÍVEL · RARA",
+      "campos": {},
+      "tags": [
+        "Consumível"
+      ],
+      "habilidade": "4 de Fadiga, Ação Padrão: Desfaça uma magia contínua.",
+      "revisao": "Faltam alcance, alvo, oposição e definição de magia contínua. Como qualquer classe pode usar, definir onde paga Fadiga e se precisa perceber/conhecer a magia.",
+      "fonte": "PDF: EQ-080, p. 9 | Apoio: Itens!A112:C113",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-080_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-081",
+      "nome": "Corda (15 m)",
+      "categoria": "PERMANENTE · COMUM",
+      "campos": {},
+      "tags": [
+        "Permanente"
+      ],
+      "habilidade": "Você tem vantagem em testes de Escalada feitos com o auxílio desta corda.",
+      "revisao": "PDF traz vantagem em Escalada; a condição de uso efetivo é proposta de clareza. Os 15 m pertencem ao nome/campo do item.",
+      "fonte": "PDF: EQ-081, p. 9 | Apoio: Itens!A118:C118",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-081_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-082",
+      "nome": "Pé de Cabra",
+      "categoria": "PERMANENTE · COMUM",
+      "campos": {},
+      "tags": [
+        "Permanente"
+      ],
+      "habilidade": "Você tem vantagem em testes de Força para forçar a abertura de passagens e quebrar mecanismos usando esta ferramenta.",
+      "revisao": "PDF não descreve uso como arma improvisada: essa mecânica da planilha não foi trazida para a carta atual.",
+      "fonte": "PDF: EQ-082, p. 10 | Apoio: Itens!A119:C119",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-082_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-083",
+      "nome": "Pederneira",
+      "categoria": "PERMANENTE · COMUM",
+      "campos": {},
+      "tags": [
+        "Permanente"
+      ],
+      "habilidade": "Ação Padrão: acenda uma tocha, uma fogueira ou um material inflamável.",
+      "revisao": "PDF explicita uma ação. Não repetir a regra geral de ausência de teste se o uso é automático pela própria habilidade.",
+      "fonte": "PDF: EQ-083, p. 10 | Apoio: Itens!A120:C120",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-083_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-084",
+      "nome": "Kit de Reparos",
+      "categoria": "PERMANENTE · COMUM",
+      "campos": {},
+      "tags": [
+        "Permanente"
+      ],
+      "habilidade": "Durante um descanso, restaure até 3 de vida de uma armadura ou escudo.",
+      "revisao": "Definir uma utilização por descanso, reparo de equipamento quebrado e necessidade de materiais. Sem isso, usos repetidos no mesmo descanso curam tudo.",
+      "fonte": "PDF: EQ-084, p. 10 | Apoio: Itens!A121:C121",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-084_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-085",
+      "nome": "Kit de Acampamento",
+      "categoria": "PERMANENTE · COMUM",
+      "campos": {},
+      "tags": [
+        "Permanente"
+      ],
+      "habilidade": "Permite realizar um descanso longo ao relento sem penalidade.",
+      "revisao": "Descanso longo e sua penalidade ao relento ainda não estão formalizados na mesa. Não importada a regra digital.",
+      "fonte": "PDF: EQ-085, p. 10 | Apoio: Itens!A122:C122",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-085_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-086",
+      "nome": "Lanterna",
+      "categoria": "PERMANENTE · COMUM",
+      "campos": {},
+      "tags": [
+        "Permanente"
+      ],
+      "habilidade": "Ilumina até o alcance Curto.",
+      "revisao": "PDF usa alcance Curto. Mãos livres, alcance Médio e combustível não foram importados da planilha; definir duração/acionamento no livro ou no item conforme desejado.",
+      "fonte": "PDF: EQ-086, p. 10 | Apoio: Itens!A123:C123",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-086_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-087",
+      "nome": "Vara de 3 Metros",
+      "categoria": "PERMANENTE · COMUM",
+      "campos": {},
+      "tags": [
+        "Permanente"
+      ],
+      "habilidade": "Sonde o caminho à frente; testes para detectar armadilhas ou pisos falsos à sua frente têm Vantagem.",
+      "revisao": "A proposta condiciona o bônus ao uso efetivo da ferramenta, evitando vantagem contra armadilhas sem contato físico possível.",
+      "fonte": "PDF: EQ-087, p. 10 | Apoio: Itens!A124:C124",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-087_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-088",
+      "nome": "Espelho de Bolso",
+      "categoria": "PERMANENTE · COMUM",
+      "campos": {},
+      "tags": [
+        "Permanente"
+      ],
+      "habilidade": "Olhe por esquinas e cantos sem se expor, e sinalize à distância.",
+      "revisao": "Utilidade ficcional preservada; não acrescentada vantagem automática.",
+      "fonte": "PDF: EQ-088, p. 10 | Apoio: Itens!A125:C125",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-088_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-089",
+      "nome": "Bandoleira de Armas",
+      "categoria": "PERMANENTE · COMUM",
+      "campos": {},
+      "tags": [
+        "Permanente"
+      ],
+      "habilidade": "Até duas vezes por cena, você pode virar sua carta de arma.",
+      "revisao": "PDF concede virada da carta de arma, não troca de arma. Definir ação/velocidade desse uso; não aplicar a gratuidade de troca da versão da planilha.",
+      "fonte": "PDF: EQ-089, p. 10 | Apoio: Itens!A127:C127",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-089_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-090",
+      "nome": "Ferramentas de Ladrão",
+      "categoria": "PERMANENTE · COMUM",
+      "campos": {},
+      "tags": [
+        "Permanente"
+      ],
+      "habilidade": "Você tem vantagem em testes de Ladinagem feitos com estas ferramentas.",
+      "revisao": "PDF concede vantagem em Ladinagem. Não afirma que evita gasto de gazuas. A condição de usar a ferramenta é proposta de clareza.",
+      "fonte": "PDF: EQ-090, p. 10 | Apoio: Itens!A128:C128",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-090_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-091",
+      "nome": "Símbolo Sagrado",
+      "categoria": "PERMANENTE · COMUM",
+      "campos": {
+        "Dano": "1",
+        "Alcance": "—",
+        "Limite de Fadiga": "4"
+      },
+      "tags": [
+        "Arma",
+        "Foco"
+      ],
+      "habilidade": "No início do seu turno, remova 1 ficha de Fadiga deste item.",
+      "revisao": "Dano-base 1, limite 4 e tags Arma/Foco são do PDF. A restrição a ataques mágicos foi centralizada na tag Foco; essa mudança é editorial, não concede ataques corpo a corpo.",
+      "fonte": "PDF: EQ-091, p. 11 | Apoio: Itens!A129:C129",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-091_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-092",
+      "nome": "Corda de Arco da Penumbra",
+      "categoria": "PERMANENTE · COMUM",
+      "campos": {},
+      "tags": [
+        "Permanente"
+      ],
+      "habilidade": "Se você usou uma ficha de Sombra no último turno ou está na penumbra, use scry 1 após atacar.",
+      "revisao": "Definir se só funciona com o arco equipado com a corda e se “último turno” é o anterior ou o atual. Proposta preserva a condição escrita, sem estendê-la a todos os ataques.",
+      "fonte": "PDF: EQ-092, p. 11 | Apoio: Itens!A130:C130",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-092_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-093",
+      "nome": "Varinha Eletrizante",
+      "categoria": "PERMANENTE · COMUM",
+      "campos": {
+        "Limite de Fadiga": "3"
+      },
+      "tags": [
+        "Arma",
+        "Foco"
+      ],
+      "habilidade": "3 de Fadiga, Ação Padrão: cause 3 de dano a um inimigo a alcance Médio, ignorando resistência.",
+      "revisao": "Custo de 3 confirmado pelos ícones do PDF; ignorar resistência é explícito no PDF. O tipo Raio sugerido antes não foi acrescentado ao texto-base por suposição. Falta tipo do dano e requisito de uso.",
+      "fonte": "PDF: EQ-093, p. 11 | Apoio: Itens!A131:C131",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-093_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-094",
+      "nome": "Paraquedas Élfico",
+      "categoria": "PERMANENTE · INCOMUM",
+      "campos": {},
+      "tags": [
+        "Permanente"
+      ],
+      "habilidade": "Quando você cair, o paraquedas se abre automaticamente e impede o dano da queda. Depois de usá-lo, só pode ser usado novamente após um descanso curto.",
+      "revisao": "Definir altura/espaço necessários e regra geral de queda no livro.",
+      "fonte": "PDF: EQ-094, p. 11 | Apoio: Itens!A136:C136",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-094_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-095",
+      "nome": "Bússola do Rumo",
+      "categoria": "PERMANENTE · INCOMUM",
+      "campos": {},
+      "tags": [
+        "Permanente"
+      ],
+      "habilidade": "Marque uma posição; a bússola sempre aponta para o local marcado.",
+      "revisao": "Permitir uma única marca e substituição são propostas de clareza; definir se exige estar no local e se atravessa planos mágicos.",
+      "fonte": "PDF: EQ-095, p. 11 | Apoio: Itens!A137:C137",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-095_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-096",
+      "nome": "Equipamento de Pesca",
+      "categoria": "PERMANENTE · INCOMUM",
+      "campos": {},
+      "tags": [
+        "Permanente"
+      ],
+      "habilidade": "Gaste 30 minutos em um rio, lago ou mar: você consegue alimento para até 5 pessoas para um descanso longo.",
+      "revisao": "Definir se o local precisa conter peixes e condições de pesca. A garantia literal de alimento até num rio estéril pode ser intencional ou um problema de regra.",
+      "fonte": "PDF: EQ-096, p. 11 | Apoio: Itens!A138:C138",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-096_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-097",
+      "nome": "Gancho de Escalada",
+      "categoria": "PERMANENTE · INCOMUM",
+      "campos": {},
+      "tags": [
+        "Permanente"
+      ],
+      "habilidade": "Ação Padrão: Lance o gancho a alcance médio em uma estrutura ou objeto. Você pode puxar o objeto ou se puxar em direção a ele (a critério do Mestre).",
+      "revisao": "Faltam comprimento de corda, custo e velocidade para puxar, teste e peso permitido. Não substitui teleporte nem concede deslocamento ilimitado.",
+      "fonte": "PDF: EQ-097, p. 11 | Apoio: Itens!A139:C139",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-097_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-098",
+      "nome": "Grilhão de Ferro",
+      "categoria": "PERMANENTE · INCOMUM",
+      "campos": {},
+      "tags": [
+        "Permanente"
+      ],
+      "habilidade": "Prenda um alvo a um objeto adjacente a ele, limitando-o a se mover apenas adjacente ao objeto. Em combate, faça um teste de Destreza contra Destreza para prendê-lo.",
+      "revisao": "Faltam ação, alcance para aplicar, oposição de alvo consciente, tamanho compatível, chave e formas de escapar. Não criado um impedimento impossível de remover.",
+      "fonte": "PDF: EQ-098, p. 11 | Apoio: Itens!A140:C140",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-098_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-099",
+      "nome": "Manopla de Bronze",
+      "categoria": "PERMANENTE · INCOMUM",
+      "campos": {},
+      "tags": [
+        "Permanente"
+      ],
+      "habilidade": "Você não pode ser desarmado.",
+      "revisao": "Preservado o benefício. Definir se protege apenas a mão com a manopla, as duas armas, escudo e efeitos mágicos de desarme.",
+      "fonte": "PDF: EQ-099, p. 11 | Apoio: Itens!A142:C142",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-099_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-100",
+      "nome": "Botas de Lince",
+      "categoria": "PERMANENTE · INCOMUM",
+      "campos": {},
+      "tags": [
+        "Permanente"
+      ],
+      "habilidade": "Você sofre metade do dano de queda.",
+      "revisao": "Definir arredondamento na regra geral de frações; queda de mesa ainda está em aberto.",
+      "fonte": "PDF: EQ-100, p. 12 | Apoio: Itens!A143:C143",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-100_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-101",
+      "nome": "Pergaminho Ancestral",
+      "categoria": "PERMANENTE · INCOMUM",
+      "campos": {},
+      "tags": [
+        "Permanente"
+      ],
+      "habilidade": "Ao ser atingido por um ataque à distância, o atacante recebe 1 ficha de Penalidade.",
+      "revisao": "Definir se exige perda de cartas do baralho ou apenas um acerto, inclusive absorvido pela armadura; a proposta usa acerto.",
+      "fonte": "PDF: EQ-101, p. 12 | Apoio: Itens!A144:C144",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-101_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-102",
+      "nome": "Manto Camuflado",
+      "categoria": "PERMANENTE · INCOMUM",
+      "campos": {},
+      "tags": [
+        "Permanente"
+      ],
+      "habilidade": "Você tem Vantagem em testes de Furtividade.",
+      "revisao": "Efeito preservado. Confirmar se o bônus exige cobertura/camuflagem adequada apenas se essa limitação for desejada; ela não existe na fonte.",
+      "fonte": "PDF: EQ-102, p. 12 | Apoio: Itens!A145:C145",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-102_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-103",
+      "nome": "Anel do Iniciado",
+      "categoria": "PERMANENTE · INCOMUM",
+      "campos": {},
+      "tags": [
+        "Permanente"
+      ],
+      "habilidade": "Exile uma carta do seu descarte para retirar 1 de Fadiga. Apenas uma vez por turno e apenas no seu turno.",
+      "revisao": "Texto preserva o custo e o limite de uma vez por turno. Explicitado o destino da remoção sem criar uma Ação Padrão inexistente na fonte.",
+      "fonte": "PDF: EQ-103, p. 12 | Apoio: Itens!A146:C146",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-103_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-104",
+      "nome": "Elmo de Touro",
+      "categoria": "PERMANENTE · INCOMUM",
+      "campos": {},
+      "tags": [
+        "Permanente"
+      ],
+      "habilidade": "Você não pode ficar Confuso nem Cego.",
+      "revisao": "“Não pode ficar Confuso nem Cego” foi interpretado como impedir essas fichas. Definir se remove fichas anteriores e se também protege contra escuridão natural, ilusões ou perda física dos olhos.",
+      "fonte": "PDF: EQ-104, p. 12 | Apoio: Itens!A148:C148",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-104_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-105",
+      "nome": "Bainha Impetuosa",
+      "categoria": "PERMANENTE · INCOMUM",
+      "campos": {},
+      "tags": [
+        "Permanente"
+      ],
+      "habilidade": "Após virar a sua carta de arma, seu próximo ataque causa +3 de dano.",
+      "revisao": "Falta duração e regra de acúmulo. Recomenda-se um bônus não cumulativo até o fim do turno, mas isso é uma escolha de design. Também falta definir o verso das armas comuns.",
+      "fonte": "PDF: EQ-105, p. 12 | Apoio: Itens!A149:C149",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-105_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-106",
+      "nome": "Cachecol da Parceria",
+      "categoria": "PERMANENTE · INCOMUM",
+      "campos": {},
+      "tags": [
+        "Permanente"
+      ],
+      "habilidade": "Quando receber uma ficha, você pode pagar 1 de Fadiga para colocar uma ficha do mesmo tipo em um aliado a alcance Curto.",
+      "revisao": "Base preservada do PDF. Proposta anterior para aprovação: excluir Fadiga e fichas copiadas pelo Cachecol do gatilho, impedindo ciclos entre dois itens. Falta onde paga Fadiga; não foi dado custo/limite novo silenciosamente.",
+      "fonte": "PDF: EQ-106, p. 12 | Apoio: Itens!A150:C150",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-106_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-107",
+      "nome": "Cinto Estelar",
+      "categoria": "PERMANENTE · INCOMUM",
+      "campos": {},
+      "tags": [
+        "Permanente"
+      ],
+      "habilidade": "Você causa impedimento a até 2 quadrados de distância.",
+      "revisao": "Definir se amplia também alcance de ataque ou apenas impedimento (recomenda-se apenas impedimento), como sair da área e interação com aliados e linha de visão.",
+      "fonte": "PDF: EQ-107, p. 12 | Apoio: Itens!A151:C151",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-107_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-108",
+      "nome": "Botas Seccundas",
+      "categoria": "PERMANENTE · INCOMUM",
+      "campos": {},
+      "tags": [
+        "Permanente"
+      ],
+      "habilidade": "Gaste uma ficha de reação: você pode realizar a ação de Salto enquanto está no ar.",
+      "revisao": "Padronizado para Saltar (horizontal), mas “Salto” pode incluir Pular (vertical). Falta dizer se paga as duas ações de Movimento de Saltar ou se a ficha substitui esse custo, e quando pode usar no turno alheio. Confirmar a grafia do nome próprio Seccundas.",
+      "fonte": "PDF: EQ-108, p. 12 | Apoio: Itens!A152:C152",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-108_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-109",
+      "nome": "Carta da Sorte",
+      "categoria": "PERMANENTE · RARA",
+      "campos": {},
+      "tags": [
+        "Permanente"
+      ],
+      "habilidade": "Uma vez por descanso longo, uma carta de um teste que você fez se torna qualquer valor entre Ás e 10 (à sua escolha).",
+      "revisao": "Definir momento da alteração, possibilidade de evitar um estouro já resolvido e se mudar um valor gera crítico natural. Recomenda-se não gerar crítico natural. A carta física não deve mudar de identidade permanentemente.",
+      "fonte": "PDF: EQ-109, p. 13 | Apoio: Itens!A156:C157",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-109_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-110",
+      "nome": "Ampulheta Trincada",
+      "categoria": "PERMANENTE · RARA",
+      "campos": {},
+      "tags": [
+        "Permanente"
+      ],
+      "habilidade": "Uma vez por cena, jogue um turno extra. Depois de jogar o turno extra, pule o seu próximo turno.",
+      "revisao": "Falta gatilho: livremente a qualquer momento permitiria interromper ações. Definir se início/fim do turno extra disparam dano persistente, retirada de Fadiga e duração dos efeitos, e como o turno pulado conta.",
+      "fonte": "PDF: EQ-110, p. 13 | Apoio: Itens!A158:C159",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-110_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-111",
+      "nome": "Máscara do Impostor",
+      "categoria": "PERMANENTE · RARA",
+      "campos": {},
+      "tags": [
+        "Permanente"
+      ],
+      "habilidade": "Uma vez por descanso longo, sua voz e aparência se tornam iguais às de alguém que você conhece. Você tem Vantagem em testes para se passar por essa pessoa. O efeito acaba ao sofrer dano ou ao retirar a máscara.",
+      "revisao": "Mantida duração condicionada sem limite temporal inventado. Definir tamanho/corpo/equipamentos e o conhecimento exigido da pessoa.",
+      "fonte": "PDF: EQ-111, p. 13 | Apoio: Itens!A160:C161",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-111_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-112",
+      "nome": "Selo de Sangue",
+      "categoria": "PERMANENTE · RARA",
+      "campos": {},
+      "tags": [
+        "Permanente"
+      ],
+      "habilidade": "Você pode exilar cartas do topo do baralho para pagar custos de Fadiga: cada carta exilada vale por 1 de Fadiga.",
+      "revisao": "É substituição, não gerar/remover Fadiga: definir se pode dividir o custo e se exige cartas válidas para receber o custo original. Evita pôr Fadiga em carta cheia sem pagar exílio adicional; confirmar se isso é pretendido.",
+      "fonte": "PDF: EQ-112, p. 13 | Apoio: Itens!A162:C163",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-112_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-113",
+      "nome": "Colar Vinculador",
+      "categoria": "PERMANENTE · RARA",
+      "campos": {},
+      "tags": [
+        "Permanente"
+      ],
+      "habilidade": "No início de cada cena, vincule-se a um aliado à vista. Enquanto durar o vínculo, vocês podem distribuir entre si, na proporção que escolherem, o dano e a cura que seriam aplicados a um de vocês.",
+      "revisao": "Colas Vinculador foi tratado como possível erro de digitação: nome proposto Colar Vinculador. Definir consentimento, alcance do vínculo, ordem de resistência e custo de cura de cada alvo.",
+      "fonte": "PDF: EQ-113, p. 13 | Apoio: Itens!A164:C165",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-113_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-114",
+      "nome": "Grevas do Vazio",
+      "categoria": "PERMANENTE · RARA",
+      "campos": {
+        "Limite de Fadiga": "2"
+      },
+      "tags": [
+        "Permanente"
+      ],
+      "habilidade": "2 de Fadiga: Teletransporte-se para um ponto visível a alcance curto. Se você surgir adjacente a um inimigo, você tem Vantagem no seu próximo ataque contra ele neste turno. Ative apenas uma vez por turno.",
+      "revisao": "Sem ação no custo, a fonte não cobra Padrão. Definir velocidade de ativação, se pode usar no turno de outro personagem e se o destino precisa ser livre. Não cobrar ação silenciosamente.",
+      "fonte": "PDF: EQ-114, p. 13 | Apoio: Itens!A166:C168",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-114_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-115",
+      "nome": "Espelho Arcano",
+      "categoria": "PERMANENTE · RARA",
+      "campos": {},
+      "tags": [
+        "Permanente"
+      ],
+      "habilidade": "1 ficha de Reação: quando se tornar alvo de uma magia arcana, você pode refleti-la de volta ao conjurador.",
+      "revisao": "Base do PDF preservada. Proposta anterior, ainda pendente: uma magia refletida não pode ser refletida novamente. Faltam alvos válidos, áreas e resolução do novo ataque.",
+      "fonte": "PDF: EQ-115, p. 13 | Apoio: Itens!A169:C170",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-115_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-116",
+      "nome": "Varinha de Cristal",
+      "categoria": "FOCO ARCANO",
+      "campos": {
+        "Limite de Fadiga": "2"
+      },
+      "tags": [
+        "Foco Arcano"
+      ],
+      "habilidade": "2 de Fadiga: Até o final do turno, seus ataques mágicos causam seu Raciocínio ou sua Sabedoria a mais de dano.",
+      "revisao": "Custo 2, limite 2 e tag Foco Arcano foram extraídos do PDF. Definir atributo escolhido e se ativações repetidas acumulam; não reimprimir ocupação de mão ou definição de Foco.",
+      "fonte": "PDF: EQ-116, p. 13 | Apoio: Itens Mágicos!A3:C5",
+      "piloto": true,
+      "imagem": "artes/piloto/EQ-116_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-117",
+      "nome": "Cajado do Aprendiz",
+      "categoria": "FOCO ARCANO",
+      "campos": {
+        "Limite de Fadiga": "5"
+      },
+      "tags": [
+        "Foco Arcano"
+      ],
+      "habilidade": "2 de Fadiga: Vire a sua carta de Aprendiz.",
+      "revisao": "Custo 2 e limite 5 constam do PDF. Definir se pode escolher qualquer Aprendiz quando há vários. Ocupação de mãos é regra do Foco, não texto de carta.",
+      "fonte": "PDF: EQ-117, p. 13 | Apoio: Itens Mágicos!A6:C8",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-117_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-118",
+      "nome": "Cajado de Batalha",
+      "categoria": "FOCO ARCANO",
+      "campos": {
+        "Limite de Fadiga": "3"
+      },
+      "tags": [
+        "Foco Arcano"
+      ],
+      "habilidade": "Seus ataques mágicos têm +1 no limite do 21. 2 de Fadiga: Onda de força - empurre todos os inimigos adjacentes 2 quadrados.",
+      "revisao": "Definir velocidade da ativação e se cada inimigo pode resistir. O efeito não tem Ação Padrão na fonte; custo não inventado.",
+      "fonte": "PDF: EQ-118, p. 14 | Apoio: Itens Mágicos!A9:C12",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-118_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-119",
+      "nome": "Orbe de Concentração",
+      "categoria": "FOCO ARCANO",
+      "campos": {
+        "Limite de Fadiga": "2"
+      },
+      "tags": [
+        "Foco Arcano"
+      ],
+      "habilidade": "Ao realizar a ação Concentrar, você pode pagar 1 de Fadiga para comprar 1 carta adicional.",
+      "revisao": "Custo 1 e limite 2 extraídos do PDF. Proposta editorial vincula uma ativação a uma ação Concentrar; regra geral do Foco fica no livro.",
+      "fonte": "PDF: EQ-119, p. 14 | Apoio: Itens Mágicos!A13:C15",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-119_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-120",
+      "nome": "Orbe de Proteção",
+      "categoria": "FOCO ARCANO",
+      "campos": {
+        "Limite de Fadiga": "2"
+      },
+      "tags": [
+        "Foco Arcano"
+      ],
+      "habilidade": "Enquanto empunha o orbe, o limite do 21 na sua defesa aumenta em 1. 2 de Fadiga: Você ou um aliado adjacente ganha resistência 2 até o seu próximo turno.",
+      "revisao": "“Ganha resistência 2” pode fixar o valor em 2 ou acrescentar +2. A proposta é bônus +2; requer aprovação. Definir tipo da resistência e velocidade.",
+      "fonte": "PDF: EQ-120, p. 14 | Apoio: Itens Mágicos!A16:C19",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-120_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-121",
+      "nome": "Cálice da Vida",
+      "categoria": "FOCO SAGRADO",
+      "campos": {
+        "Limite de Fadiga": "2"
+      },
+      "tags": [
+        "Foco Sagrado"
+      ],
+      "habilidade": "Suas magias curam 1 a mais.",
+      "revisao": "Benefício é por alvo/instância de cura? Definir para múltiplas curas da mesma magia e evitar cura em magia que não cura. O custo geral de exílio permanece.",
+      "fonte": "PDF: EQ-121, p. 14 | Apoio: Itens Mágicos!A23:C25",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-121_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-122",
+      "nome": "Relicário do Guardião",
+      "categoria": "FOCO SAGRADO",
+      "campos": {
+        "Limite de Fadiga": "4"
+      },
+      "tags": [
+        "Foco Sagrado"
+      ],
+      "habilidade": "3 de Fadiga, Ação Padrão: um aliado ganha 1 ficha de Guarda.",
+      "revisao": "Faltam alcance e linha de visão; o código adiciona Curto/à vista, mas isso não está na fonte de mesa. Guarda vai ao aliado, que passa a proteger outros; não protege automaticamente o aliado.",
+      "fonte": "PDF: EQ-122, p. 14 | Apoio: Itens Mágicos!A26:C28",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-122_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-123",
+      "nome": "Marca da Punição",
+      "categoria": "FOCO SAGRADO",
+      "campos": {
+        "Limite de Fadiga": "4"
+      },
+      "tags": [
+        "Foco Sagrado"
+      ],
+      "habilidade": "Suas magias causam 2 de dano a mais e aplicam Ferimento.",
+      "revisao": "Proposta impede magias sem dano, como curas, de causar dano e Ferimento por acidente. Definir se a aplicação ocorre por alvo ou por instância e se dano totalmente absorvido dispara.",
+      "fonte": "PDF: EQ-123, p. 14 | Apoio: Itens Mágicos!A29:C31",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-123_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-124",
+      "nome": "Turíbulo das Bênçãos",
+      "categoria": "FOCO SAGRADO",
+      "campos": {
+        "Limite de Fadiga": "3"
+      },
+      "tags": [
+        "Foco Sagrado"
+      ],
+      "habilidade": "Você e aliados adjacentes a você removem 1 ficha de Fadiga adicional ao final do turno.",
+      "revisao": "A fonte não diz de quem é o fim do turno. Proposta usa o turno de cada beneficiário. Confirmar se a ficha adicional deve sair da mesma carta escolhida para a recuperação normal e se vários turíbulos acumulam.",
+      "fonte": "PDF: EQ-124, p. 14 | Apoio: Itens Mágicos!A32:C34",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-124_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-125",
+      "nome": "Escrituras de Maftoné",
+      "categoria": "FOCO SAGRADO",
+      "campos": {
+        "Limite de Fadiga": "2"
+      },
+      "tags": [
+        "Foco Sagrado"
+      ],
+      "habilidade": "1 de Fadiga: você ou um aliado adjacente faz scry 1.\n1 de Fadiga: acrescente seu Espírito ao dano de uma magia que você conjurou.",
+      "revisao": "Dois custos de 1 confirmados pelos ícones do PDF. Definir momento e limite de aplicação por magia. A definição de scry fica no livro.",
+      "fonte": "PDF: EQ-125, p. 14 | Apoio: Itens Mágicos!A35:C38",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-125_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-126",
+      "nome": "Rosário da Devoção",
+      "categoria": "FOCO SAGRADO",
+      "campos": {
+        "Limite de Fadiga": "3"
+      },
+      "tags": [
+        "Foco Sagrado"
+      ],
+      "habilidade": "Você tem 1 de resistência. 3 de Fadiga, Ação Padrão: substitua uma ficha de Ferimento por uma ficha de Foco.",
+      "revisao": "Alvo implícito é o usuário. Proposta mantém a ficha substituta na mesma carta. “Você tem 1 de resistência” foi lido como bônus +1, e não fixação em 1; confirmar.",
+      "fonte": "PDF: EQ-126, p. 14 | Apoio: Itens Mágicos!A39:C42",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-126_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-127",
+      "nome": "Runa de Fogo",
+      "categoria": "RUNA CONSUMÍVEL",
+      "campos": {},
+      "tags": [
+        "Consumível"
+      ],
+      "habilidade": "Ação Padrão — escolha um efeito:\n1. Acenda um objeto inflamável. \n2. Coloque 1 ficha de Fogo em um alvo adjacente. \n3. Retire uma ficha de Gelo de você, ou passe automaticamente em um teste de Constituição para resistir ao frio.",
+      "revisao": "Mantida a opção que remove ficha de Gelo. Decisão do autor: uma ficha de Gelo reduz o movimento em 1; a regra estará no manual.",
+      "fonte": "PDF: EQ-127, p. 15 | Apoio: Itens Mágicos!A47:C51",
+      "piloto": true,
+      "imagem": "artes/piloto/EQ-127_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-128",
+      "nome": "Runa de Água",
+      "categoria": "RUNA CONSUMÍVEL",
+      "campos": {},
+      "tags": [
+        "Consumível"
+      ],
+      "habilidade": "Ação Padrão — escolha um efeito:\n1. Purifique e torne potável até 5 litros de água, ou crie até 1 litro de água. \n2. Retire todas as fichas de Fogo de você ou de um alvo adjacente. \n3. Apague o fogo de um objeto de tamanho médio ou de uma área 1 × 1 × 1.",
+      "revisao": "Faltam alcance do objeto/água e duração da água criada. “Tamanho Médio” refere-se à escala de objetos, ainda não formalizada.",
+      "fonte": "PDF: EQ-128, p. 15 | Apoio: Itens Mágicos!A52:C56",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-128_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-129",
+      "nome": "Runa de Terra",
+      "categoria": "RUNA CONSUMÍVEL",
+      "campos": {},
+      "tags": [
+        "Consumível"
+      ],
+      "habilidade": "Ação Padrão — escolha um efeito:\n1. Quebre um bloco de 1 × 1 × 1 de pedra, transformando-o em cascalho. \n2. Conserte uma estrutura de pedra de até 100 kg. \n3. Coloque 1 ficha de Imobilizar em um alvo adjacente.",
+      "revisao": "Imobilização atualizado para Imobilizar. A fonte não diz se o bloco mede metros ou quadrados; unidade e alcance precisam ser definidos. Não presumir reparo ilimitado nem destruição instantânea de qualquer parede.",
+      "fonte": "PDF: EQ-129, p. 15 | Apoio: Itens Mágicos!A57:C61",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-129_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-130",
+      "nome": "Runa de Ar",
+      "categoria": "RUNA CONSUMÍVEL",
+      "campos": {},
+      "tags": [
+        "Consumível"
+      ],
+      "habilidade": "Ação Padrão — escolha um efeito:\n1. Você não precisa respirar por 30 segundos. \n2. Empurre um alvo médio 1 quadrado. \n3. Até o final do turno, plane.",
+      "revisao": "Faltam alcance do empurrão, oposição e conversão de segundos em turnos. Planar ainda precisa de regra formal.",
+      "fonte": "PDF: EQ-130, p. 15 | Apoio: Itens Mágicos!A62:C66",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-130_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-131",
+      "nome": "Runa de Luz",
+      "categoria": "RUNA CONSUMÍVEL",
+      "campos": {},
+      "tags": [
+        "Consumível"
+      ],
+      "habilidade": "Ação Padrão — escolha um efeito:\n1. Por 5 minutos, a runa ilumina ao alcance médio. \n2. Fique invisível até o final do turno. \n3. Coloque 1 ficha de Cegueira em um alvo ao alcance curto.",
+      "revisao": "Invisível não é estado definido nem equivale automaticamente a Oculto. Cegueira também carece de efeito detalhado; decidir oposição. O efeito de luz continua após o consumo físico da runa por sua duração.",
+      "fonte": "PDF: EQ-131, p. 15 | Apoio: Itens Mágicos!A67:C71",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-131_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-132",
+      "nome": "Runa de Sombra",
+      "categoria": "RUNA CONSUMÍVEL",
+      "campos": {},
+      "tags": [
+        "Consumível"
+      ],
+      "habilidade": "Ação Padrão — escolha um efeito:\n1. Ganhe 1 ficha de Sombra. \n2. Coloque 1 ficha de Medo em um alvo adjacente. \n3. Devolva uma carta do exílio para o descarte.",
+      "revisao": "Esclarecido que a carta pertence ao usuário, conforme a regra de alvo implícito. Não cura diretamente: a carta volta ao descarte, não ao baralho.",
+      "fonte": "PDF: EQ-132, p. 15 | Apoio: Itens Mágicos!A72:C76",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-132_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-133",
+      "nome": "Amuleto de Pacenas",
+      "categoria": "AMULETO",
+      "campos": {
+        "Limite de Fadiga": "1"
+      },
+      "tags": [
+        "Acessório"
+      ],
+      "habilidade": "Você tem +1 no limite de defesa contra ataques à distância. 1 ficha de Sombra, Ação Padrão: crie uma área 2 × 2 × 2 de neblina.",
+      "revisao": "Neblina não tem duração, alcance de criação ou efeito óptico definidos. Não substituí por fumaça automaticamente. O limite de Fadiga é um reservatório, mas a ativada não paga Fadiga.",
+      "fonte": "PDF: EQ-133, p. 15 | Apoio: Itens Mágicos!A80:C83",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-133_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-134",
+      "nome": "Amuleto de Grevha",
+      "categoria": "AMULETO",
+      "campos": {
+        "Limite de Fadiga": "2"
+      },
+      "tags": [
+        "Acessório"
+      ],
+      "habilidade": "Enquanto nenhum aliado estiver mais próximo de um inimigo do que você (você é a vanguarda), seus ataques causam +1 de dano e você tem +1 de resistência. 2 de Fadiga, Ação Padrão: rompa a linha -mova-se 3 quadrados em linha reta, podendo atravessar inimigos, e faça um ataque ao terminar.",
+      "revisao": "O alvo de comparação da vanguarda não está definido: cada inimigo ou o mais próximo? A ativada precisa dizer o tipo de ataque e se ignora impedimento/oportunidade; terminar dentro de criatura não deve ser permitido.",
+      "fonte": "PDF: EQ-134, p. 15 | Apoio: Itens Mágicos!A84:C87",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-134_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-135",
+      "nome": "Amuleto de Nebtor",
+      "categoria": "AMULETO",
+      "campos": {
+        "Limite de Fadiga": "1"
+      },
+      "tags": [
+        "Acessório"
+      ],
+      "habilidade": "Você tem +1 em Diplomacia. 1 de Fadiga, Ação Padrão: escolha uma pessoa e escreva uma mensagem; esta mensagem só é visível para a pessoa escolhida.",
+      "revisao": "Diplomacia é atributo: +1 pode conceder limiares 3/5 e exceder o teto, não é apenas bônus social. Definir se essa é a intenção, alcance da pessoa e duração da escrita.",
+      "fonte": "PDF: EQ-135, p. 15 | Apoio: Itens Mágicos!A88:C91",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-135_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-136",
+      "nome": "Amuleto de Vael",
+      "categoria": "AMULETO",
+      "campos": {
+        "Limite de Fadiga": "2"
+      },
+      "tags": [
+        "Acessório"
+      ],
+      "habilidade": "Contra alvos que tenham ao menos 1 ficha de Fogo, seus ataques causam +2 de dano. 2 de Fadiga, Ação Padrão: remova todas as fichas de Fogo ao alcance curto; cada personagem que teve fichas removidas assim cura 1.",
+      "revisao": "Explicitado que cada alvo cura 1, não 1 por ficha. Apagar incêndios em objetos não concede cura. Toda cura segue o custo de exílio.",
+      "fonte": "PDF: EQ-136, p. 16 | Apoio: Itens Mágicos!A92:C95",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-136_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-137",
+      "nome": "Amuleto de Kanil",
+      "categoria": "AMULETO",
+      "campos": {
+        "Limite de Fadiga": "2"
+      },
+      "tags": [
+        "Acessório"
+      ],
+      "habilidade": "Uma vez por cena, quando você seria derrubado por dano, permaneça de pé com 1 (o milho sempre renasce). 2 de Fadiga, Ação Padrão: ofereça o grão -um aliado à vista cura 3 e remove uma ficha de Sangramento, Veneno ou Ferimento.",
+      "revisao": "“Derrubado” podia significar Caído, e “com 1” não dizia de qual recurso. Proposta trata inconsciência e energia. Falta origem da carta se o baralho já ficou vazio; definir antes de retirar a última carta.",
+      "fonte": "PDF: EQ-137, p. 16 | Apoio: Itens Mágicos!A96:C99",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-137_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-138",
+      "nome": "Amuleto de Kagen",
+      "categoria": "AMULETO",
+      "campos": {
+        "Limite de Fadiga": "2"
+      },
+      "tags": [
+        "Acessório"
+      ],
+      "habilidade": "Você percebe espíritos e passagens ocultas entre os mundos; ataques de criaturas incorpóreas contra você têm o limite do 21 reduzido em 2. 2 de Fadiga, Ação Padrão: até o final do turno, seus ataques ignoram armadura.",
+      "revisao": "“Ignorar armadura” pode ser ignorar resistência, impedir absorção pela vida ou ambos. Definir também escudos, alcance da percepção e significado de passagem entre mundos. Não convertido em ignorar toda resistência.",
+      "fonte": "PDF: EQ-138, p. 16 | Apoio: Itens Mágicos!A100:C103",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-138_v01.png",
+      "diagramacao": "frente_unica"
+    },
+    {
+      "id": "EQ-139",
+      "nome": "Grimório do Fogo",
+      "categoria": "GRIMÓRIO BÁSICO",
+      "campos": {
+        "Magias": "3",
+        "Requisito": "Fogo"
+      },
+      "tags": [
+        "Grimório Básico",
+        "Permanente"
+      ],
+      "habilidade": "Impulso Ardente: 3 de Fadiga, Ação Padrão: mova-se 3 quadrados em linha reta e coloque uma ficha de Fogo em cada personagem que ficar adjacente a você pelo caminho.\nBola de Fogo: 5 de Fadiga, Ação Padrão: faça um ataque mágico em uma área 3 × 3 × 3 ao alcance médio. Causa a diferença do teste + 4 + seu Raciocínio de dano, e aplica duas fichas de Fogo em cada personagem dentro da área que falhar no teste de defesa.\nRespiração Flamejante — 2 de Fadiga, ação de Movimento: Você ganha resistência 2 contra dano de Gelo e não precisa fazer testes para resistir ao clima frio durante o resto da cena.",
+      "revisao": "Decisão do autor: Respiração Flamejante concede resistência 2 a Gelo durante a cena. Valores e demais efeitos do PDF preservados.",
+      "fonte": "PDF: EQ-139, p. 16 | Apoio: Grimórios!A4:C7",
+      "piloto": true,
+      "imagem": "artes/piloto/EQ-139_v01.png",
+      "diagramacao": "frente_verso"
+    },
+    {
+      "id": "EQ-140",
+      "nome": "Grimório da Água",
+      "categoria": "GRIMÓRIO BÁSICO",
+      "campos": {
+        "Magias": "3",
+        "Requisito": "Água"
+      },
+      "tags": [
+        "Grimório Básico",
+        "Permanente"
+      ],
+      "habilidade": "Disparos Salinos: 3 de Fadiga, Ação Padrão: faça um ataque mágico contra um alvo ao alcance médio. Cause a diferença + 1 de dano de Concussão; cause +4 se o alvo estiver de armadura.\nRespiração Aquática — 2 de Fadiga, ação de Movimento: Até o final da cena, você pode respirar na água, mas não pode respirar fora dela. Pode desfazer o efeito a qualquer momento como ação livre.\nBolha: 3 de Fadiga, Ação Padrão: teste de Raciocínio contra Destreza do alvo. Vencendo, o alvo fica Imobilizado dentro de uma esfera de água de raio 2 metros. Dentro dela, ele deve fazer um teste de Constituição 15 + nº de turnos dentro da esfera; ao falhar, se afoga e cai. O alvo pode gastar uma ação de movimento e uma ação padrão para fazer um teste de Atletismo dif. 19 e sair da bolha.",
+      "revisao": "Respiração Aquática custa 2 de Fadiga no PDF. Bolha aplica Imobilizado, mas cobra Movimento para escapar: proposta anterior elimina esse custo, mantendo uma Padrão e Atletismo 19; ainda depende de decisão. Faltam alcance, duração e regra de afogamento. Não Consumível foi normalizado como Permanente, sem mudar o efeito.",
+      "fonte": "PDF: EQ-140, p. 16 | Apoio: Grimórios!A8:C11",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-140_v01.png",
+      "diagramacao": "frente_verso"
+    },
+    {
+      "id": "EQ-141",
+      "nome": "Grimório da Terra",
+      "categoria": "GRIMÓRIO BÁSICO",
+      "campos": {
+        "Magias": "3",
+        "Requisito": "Terra"
+      },
+      "tags": [
+        "Grimório Básico",
+        "Permanente"
+      ],
+      "habilidade": "Esferas Compactadas: 3 de Fadiga, Ação Padrão: seus próximos quatro ataques causam +3 de dano, têm o tipo Concussão e causam o dobro de dano em armaduras.\nSentido Sísmico — 2 de Fadiga, ação de Movimento: Até o final da cena, você percebe o alcance médio através das vibrações nos pés.\nDisco de Cascalho: 3 de Fadiga, Ação Padrão: faça um ataque mágico contra todos os personagens em linha reta até 8 quadrados. Cada alvo que falhar sofre a diferença + 3 de dano e é derrubado.",
+      "revisao": "Definir prazo dos quatro ataques, se substitui todos os tipos de dano e como dobrar só o dano direcionado à armadura. Sentido Sísmico precisa de contato com o chão e limites de percepção. Disco carece de tipo de dano e largura; não fixados por suposição. Não Consumível foi normalizado como Permanente, sem mudar o efeito.",
+      "fonte": "PDF: EQ-141, p. 16 | Apoio: Grimórios!A12:C15",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-141_v01.png",
+      "diagramacao": "frente_verso"
+    },
+    {
+      "id": "EQ-142",
+      "nome": "Grimório do Ar",
+      "categoria": "GRIMÓRIO BÁSICO",
+      "campos": {
+        "Magias": "3",
+        "Requisito": "Ar"
+      },
+      "tags": [
+        "Grimório Básico",
+        "Permanente"
+      ],
+      "habilidade": "Vendaval: 3 de Fadiga, Ação Padrão: faça um ataque mágico contra todos os inimigos numa área 3 × 3 ao alcance curto. Cada um que falhar sofre a diferença de dano e é empurrado 3 quadrados; se colidir com algo, é derrubado.\nPassos de Vento — 2 de Fadiga, ação de Movimento: Até o final da cena, você ignora terreno difícil, não provoca ataques de oportunidade ao se mover, e não sofre dano de queda.\nForma de Vento: 3 de Fadiga, Ação Padrão: até o início do seu próximo turno, você vira vento - mova-se através de criaturas e frestas, e ataques contra você têm o limite do 21 reduzido em 3; enquanto durar, você não pode atacar nem manipular objetos.",
+      "revisao": "Forma de Vento não concede deslocamento por si só: preservado. Definir o que ocorre ao encerrar dentro de criatura/parede, se inclui magias sem ataque e se ignora impedimento. Vendaval precisa de tipo de dano e regra comum de empurrão/colisão. Não Consumível foi normalizado como Permanente, sem mudar o efeito.",
+      "fonte": "PDF: EQ-142, p. 16 | Apoio: Grimórios!A16:C19",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-142_v01.png",
+      "diagramacao": "frente_verso"
+    },
+    {
+      "id": "EQ-143",
+      "nome": "Grimório da Luz",
+      "categoria": "GRIMÓRIO BÁSICO",
+      "campos": {
+        "Magias": "3",
+        "Requisito": "Luz"
+      },
+      "tags": [
+        "Grimório Básico",
+        "Permanente"
+      ],
+      "habilidade": "Raio Radiante: 3 de Fadiga, Ação Padrão: faça um ataque mágico contra um alvo ao alcance médio. Cause a diferença + 2 de dano Radiante; +4 se o alvo for profano ou morto-vivo.\nAura Luminosa — 2 de Fadiga, ação de Movimento: Até o final da cena, você emana luz (ilumina o alcance médio e revela ocultos/furtivos a alcance curto); inimigos a alcance curto não podem usar Furtividade nem gastar fichas de Sombra.\nBênção Curativa: 3 de Fadiga, Ação Padrão: você e cada aliado numa área 3 × 3 ao alcance curto curam metade do seu Raciocínio (mínimo 2) e removem 1 ficha de Medo.",
+      "revisao": "Luz atualizado para Radiante, tipo canônico. Bônus +4 foi interpretado como adicional ao +2, não substituição; confirmar. Definir se o usuário precisa estar na área da cura, arredondamento e se cura cada alvo exige exílio (regra geral: sim). Não Consumível foi normalizado como Permanente, sem mudar o efeito.",
+      "fonte": "PDF: EQ-143, p. 16 | Apoio: Grimórios!A20:C23",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-143_v01.png",
+      "diagramacao": "frente_verso"
+    },
+    {
+      "id": "EQ-144",
+      "nome": "Grimório da Sombra",
+      "categoria": "GRIMÓRIO BÁSICO",
+      "campos": {
+        "Magias": "3",
+        "Requisito": "Sombra"
+      },
+      "tags": [
+        "Grimório Básico",
+        "Permanente"
+      ],
+      "habilidade": "Garra Umbral: 3 de Fadiga, Ação Padrão: faça um ataque mágico contra um alvo ao alcance médio. Cause a diferença + 2 de dano; +4 se você estava oculto ou na penumbra.\nVéu de Sombras — 2 de Fadiga, ação de Movimento: Até o final da cena, na penumbra ou no escuro você é considerado oculto enquanto não atacar, e tem Vantagem em Furtividade.\nManto do Terror: 3 de Fadiga, Ação Padrão: teste de Raciocínio contra Espírito contra cada inimigo numa área 3 × 3 ao alcance curto; cada um que perder recebe 1 ficha de Medo e 1 de Cegueira, e você remove 1 ficha de Fadiga por inimigo afetado.",
+      "revisao": "Manto do Terror pode devolver mais Fadiga do que custa e virar motor de energia; alvo e cartas da remoção precisam ser definidos. Garra carece de tipo de dano e +4 adicional/substitutivo. Véu precisa dizer se reoculta depois de atacar ou encerra essa parte do efeito. Não Consumível foi normalizado como Permanente, sem mudar o efeito.",
+      "fonte": "PDF: EQ-144, p. 16 | Apoio: Grimórios!A24:C27",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-144_v01.png",
+      "diagramacao": "frente_verso"
+    },
+    {
+      "id": "EQ-145",
+      "nome": "Códice das Cinzas",
+      "categoria": "GRIMÓRIO RARO · RARA",
+      "campos": {
+        "Magias": "2",
+        "Requisito": "Fogo Ar"
+      },
+      "tags": [
+        "Grimório Raro"
+      ],
+      "habilidade": "Tempestade de Brasas: 6 de Fadiga, Ação Padrão: crie uma área 4 × 4 × 4 a alcance médio. faça um ataque mágico contra todos dentro da área: cause a diferença + seu Raciocínio de dano e coloque 2 fichas de Fogo. Pague 2 de Fadiga para sustentar a área.\nSopro do Inferno: 5 de Fadiga, Ação Padrão: crie um furacão de fogo 2 × 2 × 2 a alcance médio. faça um ataque mágico contra todos na área ou adjacentes a ela: cause a diferença de dano em todos dentro da área e coloque 1 ficha de Fogo. Empurre 3 quadrados em relação ao centro todos os que falharem no teste, e cause dano igual ao seu Raciocínio em cada um que colidir com um obstáculo ao ser empurrado.",
+      "revisao": "Sustentar por 2 conflita com a convenção de pagar novamente o custo integral; definir exceção explícita, duração, momento e repetição do ataque. Sopro ataca adjacentes, mas dano principal é só no interior: preservada a assimetria; confirmar. Faltam tipos de dano.",
+      "fonte": "PDF: EQ-145, p. 17 | Apoio: Grimórios!A31:C34",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-145_v01.png",
+      "diagramacao": "frente_verso"
+    },
+    {
+      "id": "EQ-146",
+      "nome": "Sussurros do Breu",
+      "categoria": "GRIMÓRIO RARO · RARA",
+      "campos": {
+        "Magias": "2",
+        "Requisito": "Ar Sombra"
+      },
+      "tags": [
+        "Grimório Raro"
+      ],
+      "habilidade": "Vazio das Trevas: 6 de Fadiga, Ação Padrão: crie uma área 4 × 4 × 4 sem ar e coberta por trevas. Todos dentro dela não enxergam e sofrem dano sufocante igual ao seu Raciocínio; coloque 1 ficha de Medo em cada um dentro da área.\nVoz da Noite: 3 de Fadiga, Ação Padrão: coloque 1 ficha de Medo no alvo. Depois, cause dano igual ao seu Raciocínio vezes o número de fichas de Medo no alvo.",
+      "revisao": "Faltam alcance, duração e periodicidade do Vazio; sem isso dano Sufocante pode ser uma vez ou todo turno. Voz carece de alcance, tipo de dano e teste/oposição. A ficha recém-aplicada entra na contagem, conforme “depois”.",
+      "fonte": "PDF: EQ-146, p. 17 | Apoio: Grimórios!A35:C38",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-146_v01.png",
+      "diagramacao": "frente_verso"
+    },
+    {
+      "id": "EQ-147",
+      "nome": "Códice da Chama Negra",
+      "categoria": "GRIMÓRIO RARO · RARA",
+      "campos": {
+        "Magias": "2",
+        "Requisito": "Sombra Fogo"
+      },
+      "tags": [
+        "Grimório Raro"
+      ],
+      "habilidade": "Chama Negra: 5 de Fadiga e 5 de vida, Ação Padrão: faça um ataque mágico contra um alvo a alcance curto. Se causar 4 ou mais de dano, destrua a armadura do alvo. Se o alvo não tiver armadura, coloque 4 fichas de Fogo nele.\nDrenar Calor: 4 de Fadiga, Ação Padrão: retire a ficha de Fogo de todos a alcance curto. Para cada ficha de Fogo retirada, cure 2.",
+      "revisao": "Definir custo de vida, dano/tipo da Chama, se limiar usa dano após resistência e absorção, e se destruir a armadura também aplica Fogo no mesmo ataque. Drenar usa singular na fonte (“a ficha”) e depois conta várias: proposta remove todas, precisa de aprovação.",
+      "fonte": "PDF: EQ-147, p. 17 | Apoio: Grimórios!A39:C42",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-147_v01.png",
+      "diagramacao": "frente_verso"
+    },
+    {
+      "id": "EQ-148",
+      "nome": "Grimório do Lodo",
+      "categoria": "GRIMÓRIO RARO · RARA",
+      "campos": {
+        "Magias": "2",
+        "Requisito": "Água Terra"
+      },
+      "tags": [
+        "Grimório Raro"
+      ],
+      "habilidade": "Atoleiro: 6 de Fadiga, Ação Padrão: crie uma área 3 × 3 de lodo a alcance médio. A área é terreno difícil, e quem começar o turno nela afunda até o peito e fica Imobilizado.\nOnda de Lama: 5 de Fadiga, Ação Padrão: faça um ataque mágico em uma área 3 × 4 adjacente a você. Cause a diferença + seu Raciocínio de dano, empurre para fora da área e derrube todos que falharem no teste.",
+      "revisao": "Atoleiro não define duração nem forma de escapar; o estado Imobilizado requer ficha numa carta para poder ser removido pela virada. Onda precisa de tipo de dano, orientação e limite/direção do empurrão; “para fora” pode exigir distâncias diferentes.",
+      "fonte": "PDF: EQ-148, p. 17 | Apoio: Grimórios!A43:C46",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-148_v01.png",
+      "diagramacao": "frente_verso"
+    },
+    {
+      "id": "EQ-149",
+      "nome": "Estudo de Geofótons",
+      "categoria": "GRIMÓRIO RARO · RARA",
+      "campos": {
+        "Magias": "2",
+        "Requisito": "Terra Luz"
+      },
+      "tags": [
+        "Grimório Raro"
+      ],
+      "habilidade": "Cavar e Estruturar: 6 de Fadiga, Ação Padrão: abra uma área 2 × 6 em pedra ou terra, formando uma caverna artificial. A caverna dura 24 horas.\nLuz Penetrante: 2 de Fadiga, Ação Padrão: veja através de uma parede de até 20 cm de espessura (deve haver iluminação do outro lado). 1 de Fadiga para sustentar.",
+      "revisao": "Caverna tem duas dimensões sem unidade, alcance, altura ou regra de colapso após 24h. Luz carece de duração e momento da sustentação; custo reduzido de sustentar exige exceção à convenção geral. Não ampliada para mirar ataques através de parede.",
+      "fonte": "PDF: EQ-149, p. 17 | Apoio: Grimórios!A47:C50",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-149_v01.png",
+      "diagramacao": "frente_verso"
+    },
+    {
+      "id": "EQ-150",
+      "nome": "Portfólio do Luar Marinho",
+      "categoria": "GRIMÓRIO RARO · RARA",
+      "campos": {
+        "Magias": "2",
+        "Requisito": "Luz Água"
+      },
+      "tags": [
+        "Grimório Raro"
+      ],
+      "habilidade": "Reflexo Líquido: 4 de Fadiga, Ação Padrão: uma superfície alvo de até 5 × 5 torna-se um espelho perfeito. Magias conjuradas contra o espelho são refletidas. O espelho dura 10 minutos.\nNévoa Brilhante: 3 de Fadiga, Ação Padrão: crie uma nuvem 4 × 4 × 4 a alcance médio; alvos dentro dela ficam Cegos. Você pode gastar uma ação de movimento e 2 de Fadiga para explodir a nuvem, causando dano radiante igual ao seu Raciocínio em todos dentro dela e adjacentes. A nuvem dura até o fim da cena.",
+      "revisao": "Reflexo precisa de alcance, unidade da superfície, destino e limite contra reflexões infinitas. Névoa precisa esclarecer se Cegueira é ficha ou estado que termina ao sair; definir oposição à explosão e explicitar que explodir encerra a nuvem.",
+      "fonte": "PDF: EQ-150, p. 17 | Apoio: Grimórios!A51:C54",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-150_v01.png",
+      "diagramacao": "frente_verso"
+    },
+    {
+      "id": "EQ-151",
+      "nome": "A Batalha dos Anjos",
+      "categoria": "TEXTO SAGRADO",
+      "campos": {
+        "Magias": "3",
+        "Requisito": "Conjurador divino"
+      },
+      "tags": [
+        "Texto Sagrado"
+      ],
+      "habilidade": "Cântico de Guerra: 3 de Fadiga, Ação Padrão: você e aliados a alcance curto ganham +2 de dano e +1 no limite do 21 em ataques até o fim do seu próximo turno.\nOração da Lâmina: 3 de Fadiga, Ação Padrão: faça um ataque mágico com uma espada de luz contra 2 alvos a alcance médio; cause a diferença + seu Espírito de dano, e +3 contra profanos ou mortos-vivos.\nOração do Guardião: 3 de Fadiga, Ação Padrão: um aliado à vista ganha resistência 2 e não pode ser derrubado até o seu próximo turno.",
+      "revisao": "Espírito é proposta explícita da planilha; o atributo continua em avaliação no consolidado. Guardião “resistência 2” foi interpretado como +2: confirmar. Lâmina precisa de tipo de dano e testes para múltiplos alvos.",
+      "fonte": "PDF: EQ-151, p. 17 | Apoio: Grimórios!A58:C62",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-151_v01.png",
+      "diagramacao": "frente_verso"
+    },
+    {
+      "id": "EQ-152",
+      "nome": "A Criação da Luz",
+      "categoria": "TEXTO SAGRADO",
+      "campos": {
+        "Magias": "3",
+        "Requisito": "Conjurador divino"
+      },
+      "tags": [
+        "Texto Sagrado"
+      ],
+      "habilidade": "Cântico da Alvorada: 3 de Fadiga, Ação Padrão: uma área 10 × 10 é iluminada por energia sagrada. Retire a ficha de Sombra de todos dentro dela. Aliados na área têm +1 no limite do 21; inimigos na área têm -1. A área dura até o início do seu próximo turno; 1 de Fadiga para sustentar.\nOração do Fulgor: 3 de Fadiga, Ação Padrão: um clarão atinge um alvo a alcance médio; cause dano igual ao seu Espírito e coloque 1 ficha de Cegueira.\nCântico da Aurora: 3 de Fadiga, Ação Padrão: aliados adjacentes a você curam um valor igual ao seu Espírito.",
+      "revisao": "Alvorada carece de alcance de criação; remoção singular/plural e sustentação reduzida são escolhas pendentes. Limite dos “testes” inclui perícias? Fulgor carece de tipo/oposição. Aurora não inclui o conjurador, conforme regra de aliado.",
+      "fonte": "PDF: EQ-152, p. 17 | Apoio: Grimórios!A63:C67",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-152_v01.png",
+      "diagramacao": "frente_verso"
+    },
+    {
+      "id": "EQ-153",
+      "nome": "Os Ensinamentos Divinos",
+      "categoria": "TEXTO SAGRADO",
+      "campos": {
+        "Magias": "3",
+        "Requisito": "Conjurador divino"
+      },
+      "tags": [
+        "Texto Sagrado"
+      ],
+      "habilidade": "Mandamento da Justiça: 2 de Fadiga, Ação Padrão: faça um ataque mágico contra um inimigo que causou dano a você ou a um aliado desde o seu último turno. Se acertar, cause duas vezes o seu Espírito de dano radiante.\nMandamento do Ardor: 2 de Fadiga, Ação Padrão: retire todas as fichas de Veneno, Sangramento ou Ferimento de você ou de um aliado adjacente. Para cada ficha retirada, cause 1 de dano radiante em cada inimigo a alcance curto.\nMandamento da Obediência — 2 de Fadiga, Reação: Você se torna imune a fichas de Medo e a controle mental até o início do seu próximo turno.",
+      "revisao": "Mandamento da Obediência custa 2 de Fadiga e usa Reação, confirmado no PDF. Justiça exige ataque, mas fixa dano em 2 × Espírito: decidir exceção ou inclusão da margem. Ardor precisa dizer se remove um tipo ou todos os três.",
+      "fonte": "PDF: EQ-153, p. 17 | Apoio: Grimórios!A68:C72",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-153_v01.png",
+      "diagramacao": "frente_verso"
+    },
+    {
+      "id": "EQ-154",
+      "nome": "As Leis Fundamentais",
+      "categoria": "TEXTO SAGRADO",
+      "campos": {
+        "Magias": "3",
+        "Requisito": "Conjurador divino"
+      },
+      "tags": [
+        "Texto Sagrado"
+      ],
+      "habilidade": "Oração do Decreto: 3 de Fadiga, Ação Padrão: teste de Espírito contra Espírito contra um alvo à vista; vencendo, até o fim do próximo turno dele ele não pode se aproximar de você e deve usar seu movimento para se afastar antes de qualquer outra ação (mas ainda pode atacar).\nCântico da Ordem: 4 de Fadiga, Ação Padrão: crie uma área 3 × 3. Inimigos que começam o turno dentro dela devem escolher apenas se mover OU apenas atacar neste turno - não podem fazer as duas coisas.\nOração do Julgamento: 3 de Fadiga, Ação Padrão: coloque uma ficha de Marcação em um alvo à vista. Na próxima vez que ele atacar alguém, faça um ataque mágico contra ele: cause a diferença + seu Espírito de dano.",
+      "revisao": "Decreto precisa lidar com quem não pode mover e caminhos perigosos. Ordem carece de alcance/duração e deixa livre conjurar sem ataque, interagir e virar cartas. Julgamento carece de duração, alcance e custo/gatilho de reação; Marcação genérica só revela a carta oculta e não guarda esse efeito por si só.",
+      "fonte": "PDF: EQ-154, p. 18 | Apoio: Grimórios!A73:C77",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-154_v01.png",
+      "diagramacao": "frente_verso"
+    },
+    {
+      "id": "EQ-155",
+      "nome": "O Fogo Purificador",
+      "categoria": "TEXTO SAGRADO",
+      "campos": {
+        "Magias": "3",
+        "Requisito": "Conjurador divino"
+      },
+      "tags": [
+        "Texto Sagrado"
+      ],
+      "habilidade": "Oração da Chama: 3 de Fadiga, Ação Padrão: faça um ataque mágico com fogo sagrado contra um alvo a alcance médio; cause a diferença + seu Espírito de dano e 1 ficha de Fogo; contra profanos ou mortos-vivos, o dano dobra.\nMão Ardente de Deus: 3 de Fadiga, Ação Padrão: encoste em um alvo adjacente. Se for um aliado, ele cura um valor igual ao seu Espírito; se for um inimigo, ele sofre dano de Fogo igual ao seu Espírito e recebe 1 ficha de Ferimento.\nLouvar da Pira: 4 de Fadiga, Ação Padrão: crie uma pira numa área 2 × 2 a alcance curto. Enquanto você estiver adjacente à pira, você tem resistência 2 e suas magias custam 1 de Fadiga a menos. Inimigos que entrarem na área sofrem duas vezes o seu Espírito de dano. A pira dura até o fim da cena.",
+      "revisao": "Conservado o nome Louvar da Pira do PDF; proposta editorial: Louvor da Pira. Definir tipos de dano, dobro antes/depois de resistência, custo mínimo de magia e reentradas na pira. Espírito é o atributo impresso, com escolha global ainda em avaliação.",
+      "fonte": "PDF: EQ-155, p. 18 | Apoio: Grimórios!A78:C82",
+      "piloto": false,
+      "imagem": "artes/lote/EQ-155_v01.png",
+      "diagramacao": "frente_verso"
+    },
+    {
+      "id": "EQ-156",
+      "nome": "Corrente de Caça",
+      "categoria": "ARMA CORPO A CORPO · INCOMUM",
+      "campos": {
+        "Dano": "4 + Força",
+        "Alcance": "Corpo a corpo (2)",
+        "Requisito": "Força ≥ 1",
+        "Limite de Fadiga": "2"
+      },
+      "tags": [
+        "Concussão",
+        "Peso Médio",
+        "Tamanho Grande"
+      ],
+      "habilidade": "Laçar a Presa — 2 de Fadiga, Reação: quando um inimigo do seu tamanho ou menor, ao alcance desta arma, iniciar um deslocamento voluntário, faça um ataque corpo a corpo com esta arma contra ele antes que se mova. Se acertar, em vez de causar dano, encerre esse deslocamento e coloque 1 ficha de Imobilizar no alvo.",
+      "revisao": "Novo item incluído a pedido nesta conversa. Mantém a proposta apresentada: usa Reação, exige acerto e troca o dano por controle de movimento. As regras de peso, tamanho e Imobilizar permanecem no livro.",
+      "fonte": "Proposta criada nesta conversa; não consta no PDF-base nem na planilha 0.6.",
+      "piloto": true,
+      "imagem": "artes/piloto/EQ-156_v02.png",
+      "diagramacao": "frente_verso"
+    }
+  ],
+  "piloto": [
+    "EQ-001",
+    "EQ-010",
+    "EQ-156",
+    "EQ-046",
+    "EQ-060",
+    "EQ-061",
+    "EQ-116",
+    "EQ-127",
+    "EQ-139"
+  ],
+  "direcao_arte": "Ilustração de fantasia medieval sombria, pintada digitalmente com acabamento semirrealista e pinceladas discretas. Materiais fisicamente críveis, silhueta clara, detalhes seletivos para leitura em carta pequena. Um único equipamento isolado, sem pessoa, mão ou cenário. Luz principal quente suave pela esquerda e recorte frio sutil; cores naturais pouco saturadas. Objeto inteiro visível, centralizado, com margem livre em todos os lados. Fundo realmente transparente. Sem letras, números, marcas, molduras, interface ou texto.",
+  "decisoes_pendentes": {},
+  "decisoes_fechadas": {
+    "data": "2026-10-26",
+    "respiracao_flamejante_resistencia_gelo": 2,
+    "ficha_gelo": "Uma ficha de Gelo reduz o movimento em 1. A regra estará no manual.",
+    "scutum_flanqueamento": "Manter a proteção contra flanqueamento. A regra de flanqueamento estará no manual.",
+    "origem": "Respostas explícitas do autor nesta conversa.",
+    "cartas_com_muito_texto": "Usar frente com arte e dados; verso com habilidades completas. Substitui a carta de apoio.",
+    "criterio_diagramacao": "Modelo inicial: transferir habilidades para o verso quando o texto deixar menos de 28 mm de altura para a arte, preservando corpo mínimo de 8 pt.",
+    "dados_nas_duas_faces": "Nas cartas com arte na frente e habilidades no verso, repetir no verso o dano, o alcance quando houver e as tags. Repetir também o requisito, a categoria e o limite de Fadiga para consulta."
+  },
+  "padrao_versos": "Dados, requisitos e tags repetidos; todas as habilidades integrais no verso. As cartas curtas também conservam a habilidade na frente."
+}

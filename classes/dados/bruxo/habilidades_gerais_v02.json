@@ -1,0 +1,455 @@
+{
+  "titulo": "Dezoito habilidades gerais propostas para o Bruxo",
+  "versao": 2,
+  "data": "2026-10-27",
+  "estado": "propostas_para_discussao_e_playtest",
+  "requer": "Pacto",
+  "regras": "classes/dados/bruxo/regras_propostas_lote_v02.json",
+  "observacao": "9 cartas A/B de 1 XP, 6 meias cartas de ½ XP e 3 cartas A/B de 2 XP: 18 entradas de catálogo e 30 faces. As meias cartas seguem a regra de combinar duas faces. As habilidades iniciais dos patronos e as cartas de herói/pacto são contadas à parte.",
+  "cartas": [
+    {
+      "id": "BR-G01",
+      "xp": 1,
+      "nome": "Pacto Menor / Procuração",
+      "grupo": "Vínculos",
+      "lados": [
+        {
+          "nome": "Pacto Menor",
+          "texto": "Ao escolher esta carta, associe um patrono secundário. Suas tags, a reserva menor e a cobrança menor indicada para esse patrono permanecem nos dois lados. No começo da cena, a reserva menor recebe N Pactos. Enquanto este lado estiver revelado, você pode usar somente o benefício menor dele. Não recebe a habilidade inicial A/B nem os efeitos de herói. Virar ou reativar esta carta não repete o ganho inicial.",
+          "limite_fadiga": 2,
+          "custo_fadiga": 0,
+          "acao": null
+        },
+        {
+          "nome": "Procuração",
+          "texto": "2 Pactos da reserva menor, Ação de Movimento: retire 1 de Fadiga da habilidade inicial de seu pacto pleno. Uma vez por turno. A reserva menor e suas tags continuam associadas a esta carta nos dois lados; virar não repete o ganho inicial. O benefício menor fica inativo neste lado.",
+          "limite_fadiga": 2,
+          "custo_fadiga": 0,
+          "acao": "Movimento"
+        }
+      ]
+    },
+    {
+      "id": "BR-G02",
+      "xp": 1,
+      "nome": "Oferenda Selada / Resgatar o Penhor",
+      "grupo": "Preço e poder",
+      "lados": [
+        {
+          "nome": "Oferenda Selada",
+          "texto": "Exile 2 cartas comuns do seu descarte, Ação de Movimento: ganhe 2 Pactos em uma reserva sua que não esteja suspensa. Uma vez por cena. Esse ganho não conta como cumprir o gatilho de recompensa do patrono.",
+          "limite_fadiga": 2,
+          "custo_fadiga": 0,
+          "acao": "Movimento"
+        },
+        {
+          "nome": "Resgatar o Penhor",
+          "texto": "2 Pactos de uma reserva sua, Ação Padrão: devolva 1 carta comum do seu exílio para o descarte. Não recupera uma carta de habilidade exilada como custo nem gera Pacto por essa devolução.",
+          "limite_fadiga": 2,
+          "custo_fadiga": 0,
+          "acao": "Padrão"
+        }
+      ]
+    },
+    {
+      "id": "BR-G03",
+      "xp": 1,
+      "nome": "Concentrar a Manifestação / Estender o Sinal",
+      "grupo": "Potência especializada",
+      "lados": [
+        {
+          "nome": "Concentrar a Manifestação",
+          "texto": "1 de Fadiga e 1 Pacto: antes de conjurar uma magia concedida por esse pacto que afetaria dois ou mais inimigos, escolha somente um deles. Ignore todos os efeitos nos demais e some novamente seu Espírito ao dano direto da magia contra o escolhido. Uma aplicação por conjuração.",
+          "limite_fadiga": 2,
+          "custo_fadiga": 1,
+          "acao": null
+        },
+        {
+          "nome": "Estender o Sinal",
+          "texto": "2 de Fadiga e 1 Pacto: depois de sua magia desse pacto acertar e colocar fichas no alvo principal, faça um novo teste de ataque mágico contra outro inimigo adjacente a ele. Se acertar, coloque 1 ficha de um dos tipos que a magia colocou no primeiro alvo, mantendo a duração e as condições de remoção daquela ficha na magia de origem. Este ataque adicional não causa dano, não recebe aprimoramentos e não pode gerar outra extensão. Uma extensão por conjuração.",
+          "limite_fadiga": 2,
+          "custo_fadiga": 2,
+          "acao": null
+        }
+      ]
+    },
+    {
+      "id": "BR-G04",
+      "xp": 1,
+      "nome": "Presságio do Patrono / Ler o Destino",
+      "grupo": "Potência especializada",
+      "lados": [
+        {
+          "nome": "Presságio do Patrono",
+          "texto": "1 de Fadiga, Ação de Movimento: imediatamente antes de começar um ataque mágico concedido por seu pacto pleno, faça scry 3. O ataque ainda exige a ação e os custos normais de sua magia.",
+          "limite_fadiga": 1,
+          "custo_fadiga": 1,
+          "acao": "Movimento"
+        },
+        {
+          "nome": "Ler o Destino",
+          "texto": "1 de Fadiga: depois de revelar as duas cartas iniciais de um ataque mágico concedido por seu pacto pleno, coloque a carta Aberta no fundo do baralho e revele uma substituta. Uma vez por teste; a nova carta continua contando para o estouro.",
+          "limite_fadiga": 1,
+          "custo_fadiga": 1,
+          "acao": null
+        }
+      ]
+    },
+    {
+      "id": "BR-G05",
+      "xp": 1,
+      "nome": "Manter o Canal / Desatar o Nó",
+      "grupo": "Vínculos",
+      "lados": [
+        {
+          "nome": "Manter o Canal",
+          "texto": "1 de Fadiga, 1 Pacto e Reação: quando um efeito inimigo faria você virar a habilidade inicial desse pacto, mantenha a face atual e coloque 1 ficha de Atormentado nela. Isso não impede uma cobrança do patrono. Uma ativação por efeito de virada.",
+          "limite_fadiga": 2,
+          "custo_fadiga": 1,
+          "acao": "Reação"
+        },
+        {
+          "nome": "Desatar o Nó",
+          "texto": "1 de Fadiga, 1 Pacto e Ação de Movimento: vire a habilidade inicial desse pacto e mova-se 1 quadrado ignorando impedimento e sem provocar ataques de oportunidade. Respeite obstáculos e outros estados que impeçam movimento.",
+          "limite_fadiga": 2,
+          "custo_fadiga": 1,
+          "acao": "Movimento"
+        }
+      ]
+    },
+    {
+      "id": "BR-G06",
+      "xp": 1,
+      "nome": "Testemunho do Feito / O Patrono Lembra",
+      "grupo": "Preço e poder",
+      "lados": [
+        {
+          "nome": "Testemunho do Feito",
+          "texto": "Uma vez por turno, depois de receber Pacto pelo gatilho de cumprimento de seu patrono, você pode descartar 1 carta da mão para ganhar 1 Pacto adicional naquela reserva. O ganho adicional não dispara esta habilidade novamente; começo de cena e crítico não são esse gatilho.",
+          "limite_fadiga": 2,
+          "custo_fadiga": 0,
+          "acao": null
+        },
+        {
+          "nome": "O Patrono Lembra",
+          "texto": "1 de Fadiga e 1 Pacto: depois de resolver um ataque mágico estourado concedido por esse pacto, devolva à mão 1 carta usada naquele teste que esteja no seu descarte. Não refaz o ataque nem recupera uma carta exilada. Uma vez por teste.",
+          "limite_fadiga": 2,
+          "custo_fadiga": 1,
+          "acao": null
+        }
+      ]
+    },
+    {
+      "id": "BR-G07",
+      "xp": 1,
+      "nome": "Nominar o Devedor / Executar a Cláusula",
+      "grupo": "Potência especializada",
+      "lados": [
+        {
+          "nome": "Nominar o Devedor",
+          "texto": "1 de Fadiga, Ação de Movimento: escolha um inimigo em alcance curto. Faça um teste contestado de Espírito contra Espírito dele. Se vencer, coloque 1 ficha de Marcação no alvo.",
+          "limite_fadiga": 2,
+          "custo_fadiga": 1,
+          "acao": "Movimento"
+        },
+        {
+          "nome": "Executar a Cláusula",
+          "texto": "1 de Fadiga e 1 Pacto: antes de comprar as cartas de um ataque mágico concedido por esse pacto contra um inimigo Marcado, declare este aprimoramento. Imediatamente após as duas cartas iniciais do defensor serem colocadas, e antes de você decidir se compra cartas adicionais, você pode escolher uma dessas cartas que esteja revelada, colocá-la no fundo do baralho dele e revelar uma substituta. Depois, ambos seguem a ordem normal do ataque e da defesa; o defensor pode comprar mais cartas e estourar normalmente. Apenas uma substituição por teste, sempre nessa janela inicial.",
+          "limite_fadiga": 2,
+          "custo_fadiga": 1,
+          "acao": null
+        }
+      ],
+      "notas_de_revisao": [
+        "A preparação é Marcação; o verso usa a informação inicial para tentar mudar uma carta adversária.",
+        "O custo é pago antes do teste; não permite escolher depois de conhecer o resultado final da defesa.",
+        "A substituição não garante um resultado menor nem impede reação ou compras normais. Não gera um ataque ou uma conjuração nova."
+      ]
+    },
+    {
+      "id": "BR-G08",
+      "xp": 1,
+      "nome": "Patrono Presente / Canal sem Ruído",
+      "grupo": "Vínculos",
+      "lados": [
+        {
+          "nome": "Patrono Presente",
+          "texto": "1 de Fadiga, 1 Pacto e Reação: quando um efeito de uma criatura que você possa ver em alcance curto anularia uma magia concedida por esse pacto, antes de resolver a anulação, faça um teste contestado de Espírito contra Espírito dessa criatura. Se vencer, sua magia continua sua resolução normal. Se perder, ela é anulada normalmente. Os custos que você e a criatura já pagaram permanecem pagos. Uma conjuração só pode receber esta resistência uma vez, mesmo que sofra outra tentativa de anulação.",
+          "limite_fadiga": 2,
+          "custo_fadiga": 1,
+          "acao": "Reação"
+        },
+        {
+          "nome": "Canal sem Ruído",
+          "texto": "1 de Fadiga e 1 Pacto: remova 1 ficha de Penalidade ou de Atormentado da habilidade inicial desse pacto, sem virá-la. Uma vez por turno. Isso não repara nem impede a cobrança de um patrono.",
+          "limite_fadiga": 2,
+          "custo_fadiga": 1,
+          "acao": null
+        }
+      ],
+      "notas_de_revisao": [
+        "Preserva o mesmo repertório e exige oposição com risco para resistir a uma anulação.",
+        "Resistir à anulação não repete a magia, seus efeitos, seus custos ou o teste de ataque; apenas permite continuar a conjuração que já estava em andamento.",
+        "Só protege contra anulação, não contra perda de alvo, resistência a dano ou condições que impeçam conjurar.",
+        "A cobrança permanece devida. Não transforma remover Atormentado em cumprimento do patrono."
+      ]
+    },
+    {
+      "id": "BR-G09",
+      "xp": 1,
+      "nome": "Emprestar a Vontade / Ouvir a Reprimenda",
+      "grupo": "Preço e poder",
+      "lados": [
+        {
+          "nome": "Emprestar a Vontade",
+          "texto": "1 de Fadiga: antes de realizar um teste de perícia cuja tarefa avance diretamente o cumprimento da cobrança de seu pacto pleno, use Espírito no lugar do atributo pedido, mantendo a perícia e a dificuldade originais. O mestre confirma a relação concreta com a cobrança antes do pagamento. Uma vez por cena. Não se aplica a testes de ataque ou defesa.",
+          "limite_fadiga": 2,
+          "custo_fadiga": 1,
+          "acao": null
+        },
+        {
+          "nome": "Ouvir a Reprimenda",
+          "texto": "1 de Fadiga e 1 Pacto da reserva plena: depois de falhar em um teste de perícia cuja tarefa avance diretamente o cumprimento da cobrança desse pacto, compre 2 cartas para a mão. A falha e suas consequências continuam valendo. O mestre precisa ter confirmado a relação da tarefa com a cobrança antes do teste. Uma vez por cena. Não se aplica a testes de ataque ou defesa nem pode usar uma reserva suspensa.",
+          "limite_fadiga": 2,
+          "custo_fadiga": 1,
+          "acao": null
+        }
+      ],
+      "notas_de_revisao": [
+        "Ajuda em obrigações reais por uma janela estreita; não substitui atributos em qualquer interação.",
+        "As duas faces são alternativas. Ouvir a Reprimenda não pressupõe que Emprestar a Vontade tenha sido usado no mesmo teste.",
+        "A compra não refaz o teste, não significa cumprimento e não concede Pacto.",
+        "As condições e o prazo da cobrança da Fênix ainda dependem do autor, então esta carta não os cria."
+      ]
+    },
+    {
+      "id": "BR-M01",
+      "xp": 0.5,
+      "nome": "Ouvir o Chamado",
+      "grupo": "Meia carta",
+      "lados": [
+        {
+          "nome": "Ouvir o Chamado",
+          "texto": "1 de Fadiga: faça scry 1 imediatamente antes de comprar as cartas de um ataque mágico concedido por seu pacto pleno. Uma vez por teste.",
+          "limite_fadiga": 1,
+          "custo_fadiga": 1,
+          "acao": null
+        }
+      ]
+    },
+    {
+      "id": "BR-M02",
+      "xp": 0.5,
+      "nome": "Selo de Continuidade",
+      "grupo": "Meia carta",
+      "lados": [
+        {
+          "nome": "Selo de Continuidade",
+          "texto": "1 Pacto: no fim do seu turno, retire 1 de Fadiga adicional da habilidade inicial daquele pacto. Uma vez por turno.",
+          "limite_fadiga": 1,
+          "custo_fadiga": 0,
+          "acao": null
+        }
+      ]
+    },
+    {
+      "id": "BR-M03",
+      "xp": 0.5,
+      "nome": "Segredo Entre as Cartas",
+      "grupo": "Meia carta",
+      "lados": [
+        {
+          "nome": "Segredo Entre as Cartas",
+          "texto": "1 Pacto: antes de comprar as duas cartas iniciais de um ataque mágico concedido por aquele pacto, compre ambas ocultas, olhe-as e escolha qual revelar como carta Aberta. A outra será a Fechada. Uma vez por teste; os valores continuam contando normalmente para o estouro.",
+          "limite_fadiga": 1,
+          "custo_fadiga": 0,
+          "acao": null
+        }
+      ]
+    },
+    {
+      "id": "BR-M04",
+      "xp": 0.5,
+      "nome": "Favor de Última Hora",
+      "grupo": "Meia carta",
+      "lados": [
+        {
+          "nome": "Favor de Última Hora",
+          "texto": "Exile 1 carta do topo do seu baralho: ganhe 1 Pacto na reserva de seu pacto pleno, se ele não estiver suspenso. Uma vez por cena. Esse ganho não é um novo cumprimento do patrono.",
+          "limite_fadiga": 1,
+          "custo_fadiga": 0,
+          "acao": null
+        }
+      ]
+    },
+    {
+      "id": "BR-M05",
+      "xp": 0.5,
+      "nome": "Passo do Emissário",
+      "grupo": "Meia carta",
+      "lados": [
+        {
+          "nome": "Passo do Emissário",
+          "texto": "1 Pacto: após resolver uma magia concedida por aquele pacto, mova-se 1 quadrado ignorando impedimento e sem provocar ataques de oportunidade. Respeite obstáculos e outros estados que impeçam movimento. Uma vez por conjuração.",
+          "limite_fadiga": 1,
+          "custo_fadiga": 0,
+          "acao": null
+        }
+      ]
+    },
+    {
+      "id": "BR-M06",
+      "xp": 0.5,
+      "nome": "O Patrono Não Desperdiça",
+      "grupo": "Meia carta",
+      "lados": [
+        {
+          "nome": "O Patrono Não Desperdiça",
+          "texto": "1 Pacto: ao errar um ataque mágico concedido por aquele pacto, devolva ao fundo do baralho 1 carta usada nesse teste que esteja no seu descarte. Uma vez por ataque; não recupera cartas exiladas.",
+          "limite_fadiga": 1,
+          "custo_fadiga": 0,
+          "acao": null
+        }
+      ]
+    },
+    {
+      "id": "BR-X01",
+      "xp": 2,
+      "nome": "Manifestação Dupla / Descanso da Voz",
+      "grupo": "Cartas de 2 XP",
+      "lados": [
+        {
+          "nome": "Manifestação Dupla",
+          "texto": "2 de Fadiga, 3 Pactos e Ação Padrão: conjure a face revelada da habilidade inicial desse pacto, se suas condições de uso estiverem atendidas. Pague seus recursos normalmente, sem gastar sua ação individual. Depois, vire aquela carta. Até o início de seu próximo turno, você pode conjurar uma vez a outra face, enquanto ela estiver revelada e quando suas condições forem atendidas, pagando os recursos sem gastar sua ação ou Reação. Magia de reação exige seu gatilho. Resolva cada magia por completo. Ao conjurar a segunda ou terminar o prazo, vire esta carta. Enquanto aguarda a segunda magia, não ative Manifestação Dupla novamente.",
+          "limite_fadiga": 4,
+          "custo_fadiga": 2,
+          "acao": "Padrão"
+        },
+        {
+          "nome": "Descanso da Voz",
+          "texto": "Ao virar para este lado, você pode exilar 1 carta do seu descarte para retirar até 2 de Fadiga da habilidade inicial do pacto. Uma resolução deste efeito por virada.",
+          "limite_fadiga": 2,
+          "custo_fadiga": 0,
+          "acao": null
+        }
+      ]
+    },
+    {
+      "id": "BR-X02",
+      "xp": 2,
+      "nome": "Assinatura Vital / Quitar a Dívida",
+      "grupo": "Cartas de 2 XP",
+      "lados": [
+        {
+          "nome": "Assinatura Vital",
+          "texto": "Uma vez por turno, ao pagar um custo de Pacto de uma magia concedida por aquele pacto, você pode substituir uma das fichas por exilar 1 carta do topo do baralho. Pelo menos 1 ficha de Pacto precisa ser realmente gasta. O X escolhido e a potência calculada permanecem iguais; o custo mínimo de Fadiga também permanece.",
+          "limite_fadiga": 4,
+          "custo_fadiga": 0,
+          "acao": null
+        },
+        {
+          "nome": "Quitar a Dívida",
+          "texto": "3 Pactos e Ação Padrão: retire até 3 de Fadiga de uma única outra carta que conceda uma magia daquele pacto. Depois, vire esta carta. Esta habilidade reorganiza Fadiga; não quita nem ignora uma cobrança do patrono.",
+          "limite_fadiga": 4,
+          "custo_fadiga": 0,
+          "acao": "Padrão"
+        }
+      ]
+    },
+    {
+      "id": "BR-X03",
+      "xp": 2,
+      "nome": "Intercessão do Patrono / Retirar o Nome",
+      "grupo": "Cartas de 2 XP",
+      "lados": [
+        {
+          "nome": "Intercessão do Patrono",
+          "texto": "2 Pactos, exile esta carta: depois de falhar em um ataque da habilidade inicial daquele pacto, você pode fazer uma nova conjuração da mesma face, se ela ainda estiver revelada. Pague novamente seus custos e os aprimoramentos que escolher, sem gastar outra ação. O defensor faz uma nova defesa. A primeira falha, seus custos e seus efeitos já resolvidos permanecem. A carta de habilidade exilada fica indisponível pelo resto da cena.",
+          "limite_fadiga": 0,
+          "custo_fadiga": 0,
+          "acao": null
+        },
+        {
+          "nome": "Retirar o Nome",
+          "texto": "2 Pactos, exile esta carta e Reação: depois de aplicar as resistências a um ataque que causou dano a você, mas antes de distribuir esse dano, converta em Fadiga a parte que conseguir acomodar nos espaços atualmente livres de suas outras cartas. Cada espaço recebe 1 Fadiga em lugar de 1 dano. Distribua o restante normalmente. Essa conversão não permite transbordo nem usar cartas com limite 0. A carta exilada fica indisponível pelo resto da cena.",
+          "limite_fadiga": 0,
+          "custo_fadiga": 0,
+          "acao": "Reação"
+        }
+      ]
+    }
+  ],
+  "estrategias_1xp": {
+    "Vínculos": [
+      "BR-G01",
+      "BR-G05",
+      "BR-G08"
+    ],
+    "Preço e poder": [
+      "BR-G02",
+      "BR-G06",
+      "BR-G09"
+    ],
+    "Potência especializada": [
+      "BR-G03",
+      "BR-G04",
+      "BR-G07"
+    ]
+  },
+  "comparacao_quantidade": {
+    "resumo": "O Bruxo tinha 15 entradas e 24 faces. Foram acrescentadas apenas três cartas A/B de 1 XP para igualar as cinco classes existentes: 18 entradas e 30 faces de habilidades gerais.",
+    "classes": [
+      {
+        "classe": "Guerreiro",
+        "cartas_1xp": 9,
+        "meias_05xp": 6,
+        "cartas_2xp": 3,
+        "entradas": 18,
+        "faces": 30
+      },
+      {
+        "classe": "Clérigo",
+        "cartas_1xp": 9,
+        "meias_05xp": 6,
+        "cartas_2xp": 3,
+        "entradas": 18,
+        "faces": 30
+      },
+      {
+        "classe": "Caçador",
+        "cartas_1xp": 9,
+        "meias_05xp": 6,
+        "cartas_2xp": 3,
+        "entradas": 18,
+        "faces": 30
+      },
+      {
+        "classe": "Mago",
+        "cartas_1xp": 9,
+        "meias_05xp": 6,
+        "cartas_2xp": 3,
+        "entradas": 18,
+        "faces": 30
+      },
+      {
+        "classe": "Ladino",
+        "cartas_1xp": 9,
+        "meias_05xp": 6,
+        "cartas_2xp": 3,
+        "entradas": 18,
+        "faces": 30
+      },
+      {
+        "classe": "Bruxo",
+        "cartas_1xp": 9,
+        "meias_05xp": 6,
+        "cartas_2xp": 3,
+        "entradas": 18,
+        "faces": 30
+      }
+    ],
+    "criterio": "Contagem do PDF Habilidades_Cartas.pdf por faces e códigos de carta: 9 pares de 1 XP + 6 meias cartas + 3 pares de 2 XP. Duas meias podem formar uma carta física; por esse critério, são 15 cartas montadas. Heróis, cartas de pacto e habilidades iniciais dos patronos ficam fora da comparação das habilidades gerais do Bruxo.",
+    "adicoes": "Novas cartas gerais: Nominar o Devedor / Executar a Cláusula; Patrono Presente / Canal sem Ruído; Emprestar a Vontade / Ouvir a Reprimenda.",
+    "auditoria": "classes/dados/bruxo/contagem_habilidades_classes_v02.json"
+  }
+}

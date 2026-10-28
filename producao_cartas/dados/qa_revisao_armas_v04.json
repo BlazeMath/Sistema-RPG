@@ -1,0 +1,57 @@
+{
+  "versao": "v04",
+  "base_comparacao": "v03",
+  "revisadas_nesta_versao": [
+    "EQ-007",
+    "EQ-008",
+    "EQ-013",
+    "EQ-016",
+    "EQ-017",
+    "EQ-026",
+    "EQ-029",
+    "EQ-041",
+    "EQ-118"
+  ],
+  "total_revisadas_acumulado": 20,
+  "campos_mecanicos_preservados": true,
+  "paginas_com_texto_identico": 348,
+  "paginas_renderizadas": 348,
+  "frentes_individuais_alteradas": 9,
+  "paginas_A4_alteradas": [
+    1,
+    3,
+    5,
+    7,
+    9,
+    27
+  ],
+  "todos_versos_visualmente_identicos": true,
+  "gladio_visualmente_identico": true,
+  "corrente_preservada_e_presente": true,
+  "corrente_paginas_A4": [
+    35,
+    36
+  ],
+  "alteracoes_renderizadas": {
+    "colecao": [
+      "a4-01.png",
+      "a4-03.png",
+      "a4-05.png",
+      "a4-07.png",
+      "a4-09.png",
+      "a4-27.png"
+    ],
+    "individuais": [
+      "carta-013.png",
+      "carta-015.png",
+      "carta-025.png",
+      "carta-031.png",
+      "carta-033.png",
+      "carta-051.png",
+      "carta-057.png",
+      "carta-081.png",
+      "carta-235.png"
+    ]
+  },
+  "inspecao_visual_final": "Conferidas todas as nove frentes alteradas apos renderizacao final, mais folhas A4 1 e 27. Encaixes alinhados; sem corte, deformacao ou halo no PDF."
+}

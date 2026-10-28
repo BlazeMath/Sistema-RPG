@@ -1,0 +1,112 @@
+[
+  {
+    "id": "BR-P06",
+    "nome": "Pacto da Mesa Vazia",
+    "patrono": "Vorga, a Boca sob o Lago",
+    "tags": [
+      "Fome",
+      "Dreno"
+    ],
+    "papel": "Desgaste e consumo de esforço",
+    "identidade": "Cultivar o esforço de um inimigo e devorá-lo antes que ele consiga se libertar; sustenta o próprio canal por meio da Fadiga alheia.",
+    "ciclo": "Atormentar → deixar a Fadiga inimiga crescer → devorar o esforço acumulado → sustentar novas conjurações.",
+    "pacto": {
+      "beneficio": "Uma vez por rodada, depois de uma magia concedida por este pacto remover pelo menos 2 fichas de Fadiga de um inimigo, ganhe 1 Pacto. Fadiga de aliados e consumo combinado fora de um conflito real não contam.",
+      "cobranca": "Quando remover Fadiga de um inimigo com uma magia deste pacto, até o fim de seu próximo turno você não pode receber voluntariamente um efeito de outro personagem que remova sua Fadiga. A Boca exige que você se sustente pelo próprio banquete. Sua recuperação normal e seus próprios efeitos continuam permitidos.",
+      "quebra": "Aceitar voluntariamente essa remoção externa suspende o pacto depois que o efeito recebido for resolvido. Remoção imposta contra sua vontade não constitui quebra.",
+      "reparacao": "Gaste uma ação Padrão e descarte 2 cartas da mão. Se não tiver duas cartas na mão, não pode pagar esta reparação. Esse pagamento não gera Pacto.",
+      "habilidade_inicial": "Fermento da Fome / Devorar o Esforço"
+    },
+    "heroi": {
+      "limite_fadiga": 4,
+      "passiva": "Carta do Pacto da Mesa Vazia.",
+      "ativada": "X Pactos: antes de comprar as cartas de um ataque mágico concedido por este pacto contra um alvo com Atormentado, aumente em 2X o dano no acerto. Se o ataque causar dano, você pode curar X, pagando antes o exílio normal da cura. Uma ativação por ataque.",
+      "desencadeada": "Uma vez por rodada, depois de uma magia deste pacto remover Fadiga de um inimigo, retire 1 de Fadiga de uma de suas outras cartas. Essa recuperação não conta como redução do custo da magia nem como um novo banquete.",
+      "critico": "Ganhe fichas de Pacto iguais ao nível deste pacto."
+    },
+    "habilidade": {
+      "tipo": "Magia Arcana",
+      "requer": [
+        "Pacto",
+        "Fome",
+        "Dreno"
+      ],
+      "lados": [
+        {
+          "lado": "A",
+          "nome": "Fermento da Fome",
+          "custo_fadiga": 1,
+          "limite_fadiga": 2,
+          "acao": "Padrão",
+          "texto": "1 de Fadiga, Ação Padrão: faça um ataque mágico com foco em alcance curto, causando dano de Dreno. Se acertar, coloque 1 ficha de Atormentado em uma carta do defensor, escolhida por ele. Virar essa carta remove Atormentado normalmente."
+        },
+        {
+          "lado": "B",
+          "nome": "Devorar o Esforço",
+          "custo_fadiga": 1,
+          "limite_fadiga": 4,
+          "acao": "Padrão",
+          "texto": "1 de Fadiga, Ação Padrão: escolha um inimigo em alcance curto que tenha Fadiga. Faça um teste contestado de Espírito contra Espírito dele. Se vencer, remova até Espírito fichas de Fadiga das cartas do alvo e cause 2 de dano de Dreno por ficha efetivamente removida. Resistências se aplicam normalmente. Remover Fadiga pode liberar a capacidade das habilidades do inimigo; não remove outras fichas."
+        }
+      ]
+    },
+    "menor": "Uma vez por turno, 1 Pacto: depois de acertar um ataque mágico, se o defensor tiver Fadiga, remova 1 dessas fichas e retire 1 de Fadiga de uma de suas outras cartas. Não causa dano adicional nem concede Pacto por cumprimento.",
+    "teste": "O motor depende de inimigos que realmente acumulam Fadiga. Atormentado não gera fichas de Fadiga além do limite: seu transbordo normal não alimenta o banquete. Contra inimigo sem Fadiga, o Bruxo ainda tem o ataque normal de Fermento, mas perde a alimentação. Verificar se liberar a habilidade inimiga compensa o dano por ficha removida. A cura da ativada exige exilar antes de devolver cartas.",
+    "cobranca_menor": "Depois de usar o benefício menor, até o fim de seu próximo turno não aceite voluntariamente remoção de Fadiga causada por outro personagem. Descumprir suspende esta reserva menor. Repare com uma ação Padrão e descarte de 2 cartas da mão; recuperação normal e seus próprios efeitos permanecem permitidos."
+  },
+  {
+    "id": "BR-P07",
+    "nome": "Pacto do Trovão Cativo",
+    "patrono": "A Serpente de Cobre que Circunda a Tormenta",
+    "tags": [
+      "Raio",
+      "Tempestade"
+    ],
+    "papel": "Acumulação de Fadiga e descargas",
+    "identidade": "Manter o canal sobrecarregado e escolher o momento de liberar o esforço acumulado como dano; a reserva de Fadiga também é sua munição.",
+    "ciclo": "Conjurar → encher uma carta → ganhar Pacto e reação → consumir a Fadiga em uma descarga.",
+    "pacto": {
+      "beneficio": "Uma vez no seu turno, quando pagar a Fadiga de uma magia concedida por este pacto fizer uma carta sua passar de abaixo do limite para exatamente seu limite de Fadiga, ganhe 1 Pacto depois de resolver a magia. Uma carta já cheia, transbordo, simples transferência de Fadiga e reparação não geram esse ganho.",
+      "cobranca": "Se conjurou uma magia deste pacto no turno, preserve ao menos 1 ficha de Fadiga entre sua carta de herói e a habilidade inicial ao encerrar o turno, depois da recuperação normal. Você pode abrir mão da recuperação normal de 1 de Fadiga para preservar essa última ficha. Se recuperar de outra carta, mantenha a carga exigida. Não pode remover voluntariamente a última ficha dessas duas cartas e terminar o turno sem repô-la. Remoção imposta pelo inimigo não constitui quebra voluntária.",
+      "quebra": "Optar por terminar o turno sem essa carga suspende o pacto.",
+      "reparacao": "1 de Fadiga, Ação de Movimento: coloque essa Fadiga em sua carta de herói ou habilidade inicial, desde que exista espaço livre. Esse pagamento não gera Pacto nem Reação e não admite transbordo.",
+      "habilidade_inicial": "Fagulha Cativa / Descarregar a Tormenta"
+    },
+    "heroi": {
+      "limite_fadiga": 4,
+      "passiva": "Carta do Pacto do Trovão Cativo.",
+      "ativada": "X Pactos, Reação: depois de uma magia de Raio concedida por este pacto acertar um inimigo, cause 2X de dano de Raio a um segundo inimigo adjacente a ele, sem novo teste. A descarga depende do acerto original, respeita resistências e só pode acontecer uma vez por conjuração.",
+      "desencadeada": "Uma vez por rodada, quando pagar a Fadiga de uma magia deste pacto fizer uma carta sua passar de abaixo do limite para exatamente seu limite, se você não tiver nenhuma ficha de Reação, ganhe 1 ficha de Reação depois de resolver a magia. Não é disparada por carta já cheia, transbordo, transferência ou reparação.",
+      "critico": "Ganhe fichas de Pacto iguais ao nível deste pacto."
+    },
+    "habilidade": {
+      "tipo": "Magia Arcana",
+      "requer": [
+        "Pacto",
+        "Raio",
+        "Tempestade"
+      ],
+      "lados": [
+        {
+          "lado": "A",
+          "nome": "Fagulha Cativa",
+          "custo_fadiga": 1,
+          "limite_fadiga": 2,
+          "acao": "Padrão",
+          "texto": "1 de Fadiga, Ação Padrão: faça um ataque mágico com foco em alcance médio, causando dano de Raio. Esta magia tem Conjuração: você pode pagar sua Fadiga em outra carta sua com capacidade livre, conforme a regra normal."
+        },
+        {
+          "lado": "B",
+          "nome": "Descarregar a Tormenta",
+          "custo_fadiga": 1,
+          "limite_fadiga": 4,
+          "acao": "Reação",
+          "texto": "1 de Fadiga, Reação: depois que um inimigo em alcance curto concluir um ataque contra você, faça um ataque mágico de resposta contra ele com foco, causando dano de Raio. Como custo adicional, antes de comprar as cartas, remova de suas outras cartas até Espírito fichas de Fadiga, sem incluir a Fadiga paga por esta conjuração. Se acertar, cause +2 de dano por ficha assim removida. As fichas são removidas mesmo se errar. O inimigo faz sua defesa normalmente."
+        }
+      ]
+    },
+    "menor": "Uma vez por turno, 1 Pacto: depois de resolver uma magia que cause dano de Raio, mova 1 ficha de Fadiga da carta usada para outra carta sua que tenha espaço livre. Não remove a ficha, não permite transbordo e não dispara ganhos por atingir o limite.",
+    "teste": "A Fadiga precisa ser paga antes da recuperação ou descarga: o mínimo de 1 da magia permanece. A descarga consome fichas de outras cartas, separando a própria Fadiga paga, e compete com a ativada do herói pela Reação. Sua magia de resposta exige o ataque inimigo concluído, inclusive com Manifestação Dupla. A geração de Pacto e Reação tem limites explícitos e depende de pagamento real, não de mover fichas para frente e para trás. Verificar a combinação de alcance médio, reação extra e descarga, além do custo de renunciar à recuperação para conservar a última carga.",
+    "cobranca_menor": "Após usar o benefício menor, conserve ao menos 1 ficha de Fadiga em uma de suas cartas até o fim de seu próximo turno. Se deliberadamente eliminar toda sua Fadiga antes disso, suspenda esta reserva menor. Repare com 1 de Fadiga e ação de Movimento, colocando a ficha em uma carta com espaço livre, sem transbordo; isso não concede Pacto nem Reação."
+  }
+]

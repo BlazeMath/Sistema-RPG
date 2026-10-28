@@ -1,0 +1,18 @@
+{
+  "id": "EQ-022",
+  "nome": "Lâmina do Vento",
+  "arquivo": "artes/revisadas/EQ-022_v02.png",
+  "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-d970b120-0907-420b-8cf9-9b999d45d343.png",
+  "substitui": "C:/Users/Gamer/Documents/ChatGPT/SISTEMA DE RPG/producao_cartas/artes/lote/EQ-022_v01.png",
+  "dimensoes": [
+    1060,
+    1484
+  ],
+  "modo": "RGBA",
+  "alpha": [
+    0,
+    255
+  ],
+  "sha256": "226db2745d8f7a5c17ccf9838a93cd788b398989e515feec5b1ace27c579a174",
+  "status": "revisao_visual_pendente"
+}

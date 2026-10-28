@@ -1,0 +1,23 @@
+{
+  "especialidade": "bestiario",
+  "atualizado_em": "2026-10-27",
+  "titulo": "Bestiário, Mundo e Aventuras",
+  "thread_id": "01a17d41-0dd9-7ef3-885c-4f897fe15329",
+  "escopo": [
+    "Inimigos, elites, chefes, encontros e desafios de exploração",
+    "Missões, masmorras, NPCs, lore, facções e campanha",
+    "Conteúdo de mesa e especificações narrativas para o videogame"
+  ],
+  "fontes": [
+    "SISTEMA_21_Estado_do_Projeto.md",
+    "Sistema21_projeto_v0.23.zip",
+    "organizacao/fontes/videogame_documentos.json"
+  ],
+  "pontos_de_atencao": [
+    "Não há documento próprio de Bestiário ou Regras dos Monstros na raiz; resumo diz que são fontes separadas. Não inventar que foram lidas.",
+    "Usar dados de inimigos e missões dentro do ZIP como conteúdo do protótipo, com valores provisórios identificados.",
+    "Fantasia sombria; guilda, Pedravelha, Praga da Fome, Região Eldritch e Marcha da Morte.",
+    "Chefes devem recompensar estratégia por telegráfos, objetivos e vulnerabilidades."
+  ],
+  "decisoes_novas": []
+}

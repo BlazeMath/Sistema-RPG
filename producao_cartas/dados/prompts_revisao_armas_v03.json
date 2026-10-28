@@ -1,0 +1,19 @@
+{
+  "versao": "v03",
+  "ferramenta": "image_gen.imagegen integrado",
+  "motivo": "Alinhar a cabeça, o cabo e o pomo do Quebra-Elmos.",
+  "artes": [
+    {
+      "id": "EQ-025",
+      "nome": "Quebra-Elmos",
+      "arquivo": "artes/revisadas/EQ-025_v02.png",
+      "referencia": "artes/lote/EQ-025_v01.png",
+      "prompt": "Edite esta ilustração de uma maça para uma carta de jogo de fantasia. Corrija apenas o desenho: alinhe a cabeça, o cabo e o pomo em uma linha reta contínua. O cabo deve ficar reto, sem a curva que aparece na referência. Preserve as cores e o acabamento pintado. Mostre o objeto inteiro com folga nas bordas. Fundo transparente. Sem pessoas, ação ou texto.",
+      "status": "conferida_visual"
+    }
+  ],
+  "preservadas": [
+    "EQ-023",
+    "EQ-156"
+  ]
+}

@@ -1,0 +1,273 @@
+{
+  "data": "2026-10-27",
+  "pedido": "Ampliar poções com base em The Witcher 3, comparando o que já se parece e adicionando funções ausentes.",
+  "escopo": {
+    "familias_regulares": 13,
+    "referencias_especiais": 6,
+    "novas_cartas": 14,
+    "total_catalogo_antes": 156,
+    "total_catalogo_depois": 170,
+    "agrupamento": "Variantes básica, melhorada e superior foram tratadas por função, não transformadas automaticamente em três cartas.",
+    "decoctos": "Decoctos de mutagênicos são uma categoria separada de The Witcher 3 e não fazem parte desta expansão de poções.",
+    "rituais_e_ingredientes": "White Gull é ingrediente; Trial of the Grasses é ritual de missão. Não foram tratados como poções de uso comum do jogador.",
+    "conteudo_cortado": "Bear pheromones e Nekker pheromones foram registrados como conteudo cortado do jogo original; a funcao olfativa ja esta agrupada em EQ-169."
+  },
+  "fontes": [
+    {
+      "id": "witcher_lista",
+      "titulo": "Witcher Wiki — The Witcher 3 potions",
+      "url": "https://witcher.fandom.com/wiki/The_Witcher_3_potions"
+    },
+    {
+      "id": "maribor",
+      "titulo": "Maribor Forest — efeito no terceiro jogo",
+      "url": "https://witcher-games.fandom.com/wiki/Maribor_forest"
+    },
+    {
+      "id": "mergulho",
+      "titulo": "Killer Whale — efeito e ausência de melhorias",
+      "url": "https://witcher.fandom.com/wiki/Killer_Whale"
+    },
+    {
+      "id": "especiais",
+      "titulo": "Poções e variantes — catálogo de referências",
+      "url": "https://wiki.eso-ui.com/index.php/Category%3AWitcher_3_-_Potions"
+    },
+    {
+      "id": "clareza",
+      "titulo": "Potion of Clearance — redistribuição",
+      "url": "https://witcher.fandom.com/wiki/Potion_of_Clearance"
+    },
+    {
+      "id": "reinald",
+      "titulo": "Reinald's Philter — efeitos",
+      "url": "https://nukesdragons.com/witcher-3/db/consumables/reinalds-philter"
+    },
+    {
+      "id": "feromonios_cortados",
+      "titulo": "Bear pheromones e conteudo cortado",
+      "url": "https://witcher.fandom.com/wiki/Bear_pheromones"
+    }
+  ],
+  "comparacao": [
+    {
+      "origem": "White Raffard's Decoction",
+      "funcao_origem": "Cura imediata.",
+      "decisao": "já representada",
+      "itens_sistema21": [
+        "EQ-061"
+      ],
+      "justificativa": "A Poção de Cura Pequena já ocupa essa função; não foi criada uma cópia de cura imediata.",
+      "fonte": "witcher_lista"
+    },
+    {
+      "origem": "Thunderbolt",
+      "funcao_origem": "Aumenta o poder dos ataques.",
+      "decisao": "já representada por função",
+      "itens_sistema21": [
+        "EQ-076"
+      ],
+      "justificativa": "Sangue de Batalha já aumenta dano corpo a corpo. A Poção Carmim (EQ-072) é uma parente pela economia de ataques; nenhuma delas é reprodução exata.",
+      "fonte": "witcher_lista"
+    },
+    {
+      "origem": "Swallow",
+      "funcao_origem": "Regeneração de vida.",
+      "decisao": "equivalência parcial; adicionada",
+      "itens_sistema21": [
+        "EQ-061",
+        "EQ-157"
+      ],
+      "justificativa": "A cura imediata existente não cobre curas futuras interrompidas por dano.",
+      "fonte": "witcher_lista"
+    },
+    {
+      "origem": "Tawny Owl",
+      "funcao_origem": "Regeneração de vigor.",
+      "decisao": "equivalência parcial; adicionada",
+      "itens_sistema21": [
+        "EQ-068",
+        "EQ-158"
+      ],
+      "justificativa": "Mana Pequena remove Fadiga agora; Fôlego Prolongado remove Fadiga nos turnos seguintes.",
+      "fonte": "witcher_lista"
+    },
+    {
+      "origem": "Black Blood",
+      "funcao_origem": "Retaliação pelo sangue.",
+      "decisao": "adicionada",
+      "itens_sistema21": [
+        "EQ-161"
+      ],
+      "justificativa": "Retaliação condicionada a dano à vida; ampliada para o cenário próprio.",
+      "fonte": "witcher_lista"
+    },
+    {
+      "origem": "Blizzard",
+      "funcao_origem": "Vantagem temporal após abates.",
+      "decisao": "adicionada",
+      "itens_sistema21": [
+        "EQ-162"
+      ],
+      "justificativa": "Reações após derrotar inimigos, com defesas reveladas como contrapartida.",
+      "fonte": "witcher_lista"
+    },
+    {
+      "origem": "Cat",
+      "funcao_origem": "Visão no escuro.",
+      "decisao": "adicionada",
+      "itens_sistema21": [
+        "EQ-159"
+      ],
+      "justificativa": "A Tocha ilumina e ocupa uma mão; a nova poção oferece visão pessoal temporária.",
+      "fonte": "witcher_lista"
+    },
+    {
+      "origem": "Full Moon",
+      "funcao_origem": "Reserva maior de vitalidade.",
+      "decisao": "adicionada",
+      "itens_sistema21": [
+        "EQ-160"
+      ],
+      "justificativa": "Reserva na carta; sem aumentar o baralho nem criar fichas de vida temporária.",
+      "fonte": "witcher_lista"
+    },
+    {
+      "origem": "Golden Oriole",
+      "funcao_origem": "Limpeza e proteção contra veneno.",
+      "decisao": "equivalência parcial; adicionada",
+      "itens_sistema21": [
+        "EQ-063",
+        "EQ-163"
+      ],
+      "justificativa": "O Antídoto remove Veneno. Sangue Limpo acrescenta prevenção temporária.",
+      "fonte": "witcher_lista"
+    },
+    {
+      "origem": "Killer Whale",
+      "funcao_origem": "Fôlego e percepção subaquáticos.",
+      "decisao": "adicionada",
+      "itens_sistema21": [
+        "EQ-164"
+      ],
+      "justificativa": "Utilidade de mergulho com duração própria de mesa.",
+      "fonte": "mergulho"
+    },
+    {
+      "origem": "Maribor Forest",
+      "funcao_origem": "Geração de Adrenalina.",
+      "decisao": "adicionada",
+      "itens_sistema21": [
+        "EQ-165"
+      ],
+      "justificativa": "Adrenalina traduzida em Foco; não foi criado um recurso novo.",
+      "fonte": "maribor"
+    },
+    {
+      "origem": "Petri's Philter",
+      "funcao_origem": "Potência de Sinais.",
+      "decisao": "adicionada",
+      "itens_sistema21": [
+        "EQ-166"
+      ],
+      "justificativa": "Potência traduzida em duas amplificações pequenas de dano ou cura de magia.",
+      "fonte": "witcher_lista"
+    },
+    {
+      "origem": "White Honey",
+      "funcao_origem": "Limpeza e fim dos efeitos de poções.",
+      "decisao": "adicionada",
+      "itens_sistema21": [
+        "EQ-167"
+      ],
+      "justificativa": "Usa Veneno e efeitos ativos; cobra consequências de término.",
+      "fonte": "witcher_lista"
+    },
+    {
+      "origem": "Wolven Hour",
+      "funcao_origem": "Facilita requisitos de equipamento.",
+      "decisao": "adicionada",
+      "itens_sistema21": [
+        "EQ-168"
+      ],
+      "justificativa": "Redução de requisito convertida em +1 apenas para verificar Força/Destreza exigidas.",
+      "fonte": "witcher_lista"
+    },
+    {
+      "origem": "Drowner Pheromones",
+      "funcao_origem": "Camuflagem olfativa.",
+      "decisao": "adicionada",
+      "itens_sistema21": [
+        "EQ-169"
+      ],
+      "justificativa": "Camuflagem por cheiro adaptada a Furtividade; sem imunidade automática a monstros.",
+      "fonte": "especiais"
+    },
+    {
+      "origem": "Potion of Clearance",
+      "funcao_origem": "Reorganização de habilidades.",
+      "decisao": "adicionada",
+      "itens_sistema21": [
+        "EQ-170"
+      ],
+      "justificativa": "Troca lateral de uma habilidade comprada com XP, de mesma classe e custo.",
+      "fonte": "clareza"
+    },
+    {
+      "origem": "Potion of Restoration",
+      "funcao_origem": "Reorganização de mutações.",
+      "decisao": "agrupada por função",
+      "itens_sistema21": [
+        "EQ-170"
+      ],
+      "justificativa": "O projeto não usa as mutações de The Witcher. A função de reorganização fica na Poção de Reaprendizado.",
+      "fonte": "especiais"
+    },
+    {
+      "origem": "Pops' Mold Antidote",
+      "funcao_origem": "Proteção contra toxina específica.",
+      "decisao": "agrupada por função",
+      "itens_sistema21": [
+        "EQ-063",
+        "EQ-163"
+      ],
+      "justificativa": "Antídoto e prevenção de Veneno cobrem o papel. A toxina da missão não foi importada.",
+      "fonte": "especiais"
+    },
+    {
+      "origem": "Reinald's Philter",
+      "funcao_origem": "Potência mágica e recuperação de vigor.",
+      "decisao": "combinação já coberta após expansão",
+      "itens_sistema21": [
+        "EQ-158",
+        "EQ-166"
+      ],
+      "justificativa": "As duas funções foram separadas nas poções de Fôlego Prolongado e Amplificação.",
+      "fonte": "reinald"
+    },
+    {
+      "origem": "Bear pheromones",
+      "funcao_origem": "Camuflagem contra uma especie.",
+      "decisao": "conteudo cortado; funcao agrupada",
+      "itens_sistema21": [
+        "EQ-169"
+      ],
+      "justificativa": "Nao tratado como uma nova familia disponivel no jogo original; a adaptacao de feromonios ja cobre sua funcao.",
+      "fonte": "feromonios_cortados"
+    },
+    {
+      "origem": "Nekker pheromones",
+      "funcao_origem": "Camuflagem contra uma especie.",
+      "decisao": "conteudo cortado; funcao agrupada",
+      "itens_sistema21": [
+        "EQ-169"
+      ],
+      "justificativa": "Nao tratado como uma nova familia disponivel no jogo original; a adaptacao de feromonios ja cobre sua funcao.",
+      "fonte": "feromonios_cortados"
+    }
+  ],
+  "adaptacao": "Nomes, ações, quantidades, durações, fichas e contrapartidas são criação para o Sistema 21, implementadas a pedido do autor. Não representam os números originais de The Witcher 3.",
+  "playtest": "Todos os valores novos são iniciais para playtest; não se afirma balanceamento comprovado.",
+  "pdfs": "Não gerar nem modificar PDFs nesta etapa.",
+  "artes": "As 14 cartas novas estão sem ilustração; criar artes e diagramar na etapa de produção."
+}

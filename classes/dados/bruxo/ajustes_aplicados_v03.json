@@ -1,0 +1,111 @@
+{
+  "data": "2026-10-27",
+  "estado": "aplicado",
+  "origem": "Autorização do autor para aplicar o parecer, preservando Fênix e cobrança aberta.",
+  "fenix_preservada_integralmente": true,
+  "escolhas_editoriais": [
+    "Peso mantém Imobilizar e acrescenta 1 Atordoamento temporário.",
+    "Mesa aprimora também Devorar e restringe remoções próprias de Fadiga durante a cobrança.",
+    "Suspensão ampliada, com exceção integral da Fênix.",
+    "Conjuração mantida apenas onde já explícita; classificação arcana não cria tag nova.",
+    "Intercessão autoriza uma repetição imediata de reação na janela original.",
+    "Descanso funciona também em virada manual.",
+    "Sinergias de exílio com Abismo mantidas.",
+    "Inverno considera qualquer turno, sem estender automaticamente a obrigação."
+  ],
+  "ajustes_por_entrada": [
+    {
+      "id": "BR-P01",
+      "nome": "Pacto do Abismo"
+    },
+    {
+      "id": "BR-P02",
+      "nome": "Pacto da Última Porta"
+    },
+    {
+      "id": "BR-P03",
+      "nome": "Pacto do Olho Descoberto"
+    },
+    {
+      "id": "BR-P04",
+      "nome": "Pacto dos Caminhos Roubados"
+    },
+    {
+      "id": "BR-P05",
+      "nome": "Pacto dos Grilhões Vivos"
+    },
+    {
+      "id": "BR-P06",
+      "nome": "Pacto da Mesa Vazia"
+    },
+    {
+      "id": "BR-P07",
+      "nome": "Pacto do Trovão Cativo"
+    },
+    {
+      "id": "BR-P08",
+      "nome": "Pacto dos Sonhos Roubados"
+    },
+    {
+      "id": "BR-P09",
+      "nome": "Pacto do Inverno Imóvel"
+    },
+    {
+      "id": "BR-G01",
+      "nome": "Pacto Menor / Procuração"
+    },
+    {
+      "id": "BR-G02",
+      "nome": "Oferenda Selada / Resgatar o Penhor"
+    },
+    {
+      "id": "BR-G03",
+      "nome": "Concentrar a Manifestação / Estender o Sinal"
+    },
+    {
+      "id": "BR-G04",
+      "nome": "Presságio do Patrono / Ler o Destino"
+    },
+    {
+      "id": "BR-G06",
+      "nome": "Testemunho do Feito / O Patrono Lembra"
+    },
+    {
+      "id": "BR-G07",
+      "nome": "Nominar o Devedor / Executar a Cláusula"
+    },
+    {
+      "id": "BR-G08",
+      "nome": "Patrono Presente / Canal sem Ruído"
+    },
+    {
+      "id": "BR-G09",
+      "nome": "Emprestar a Vontade / Ouvir a Reprimenda"
+    },
+    {
+      "id": "BR-M02",
+      "nome": "Selo de Continuidade"
+    },
+    {
+      "id": "BR-M04",
+      "nome": "Favor de Última Hora"
+    },
+    {
+      "id": "BR-M06",
+      "nome": "O Patrono Não Desperdiça"
+    },
+    {
+      "id": "BR-X01",
+      "nome": "Manifestação Dupla / Descanso da Voz"
+    },
+    {
+      "id": "BR-X02",
+      "nome": "Assinatura Vital / Quitar a Dívida"
+    },
+    {
+      "id": "BR-X03",
+      "nome": "Intercessão do Patrono / Retirar o Nome"
+    }
+  ],
+  "testes_de_equilibrio": "Permanecem pendentes; observações de playtest não foram convertidas em nerfs automáticos."
+}

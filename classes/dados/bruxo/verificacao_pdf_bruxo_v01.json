@@ -1,0 +1,1599 @@
+{
+  "data": "2026-10-28",
+  "pdf": "output\\pdf\\Bruxo_Cartas_v01.pdf",
+  "paginas": 24,
+  "faces_impressas": 90,
+  "herois": 10,
+  "pactos": 10,
+  "iniciais_AB": 10,
+  "gerais_entradas": 18,
+  "gerais_faces": 30,
+  "fonte_minima_pt": 8.1,
+  "verificacao_textos": true,
+  "fenix_catalogo_preservado": true,
+  "redacao_condensada": [
+    "BR-X03 A, com texto integral em página de referência"
+  ],
+  "manifesto": [
+    {
+      "id": "BR-P00-H | FRENTE",
+      "titulo": "A Fênix",
+      "pagina": 2,
+      "tipo": "heroi_frente",
+      "tamanho_mm": [
+        90.24,
+        129.12
+      ],
+      "fonte_pt": 9.5,
+      "caixa": [
+        37.837795275590565,
+        45.0,
+        293.6377952755906,
+        411.0
+      ]
+    },
+    {
+      "id": "BR-P00-H | VERSO DE CONSULTA",
+      "titulo": "Pacto da Fênix",
+      "pagina": 2,
+      "tipo": "heroi_consulta",
+      "tamanho_mm": [
+        90.24,
+        129.12
+      ],
+      "fonte_pt": 9.5,
+      "caixa": [
+        301.6377952755906,
+        45.0,
+        557.4377952755906,
+        411.0
+      ]
+    },
+    {
+      "id": "BR-P00-P | FRENTE",
+      "titulo": "Pacto da Fênix",
+      "pagina": 2,
+      "tipo": "pacto_frente",
+      "tamanho_mm": [
+        90.24,
+        129.12
+      ],
+      "fonte_pt": 9.5,
+      "caixa": [
+        37.837795275590565,
+        420.0,
+        293.6377952755906,
+        786.0
+      ]
+    },
+    {
+      "id": "BR-P00-P | VERSO DE CONSULTA",
+      "titulo": "Pacto da Fênix",
+      "pagina": 2,
+      "tipo": "pacto_consulta",
+      "tamanho_mm": [
+        90.24,
+        129.12
+      ],
+      "fonte_pt": 9.5,
+      "caixa": [
+        301.6377952755906,
+        420.0,
+        557.4377952755906,
+        786.0
+      ]
+    },
+    {
+      "id": "BR-P01-H | FRENTE",
+      "titulo": "Malgor, o Credor do Último Fôlego",
+      "pagina": 3,
+      "tipo": "heroi_frente",
+      "tamanho_mm": [
+        90.24,
+        129.12
+      ],
+      "fonte_pt": 9.5,
+      "caixa": [
+        37.837795275590565,
+        45.0,
+        293.6377952755906,
+        411.0
+      ]
+    },
+    {
+      "id": "BR-P01-H | VERSO DE CONSULTA",
+      "titulo": "Pacto do Abismo",
+      "pagina": 3,
+      "tipo": "heroi_consulta",
+      "tamanho_mm": [
+        90.24,
+        129.12
+      ],
+      "fonte_pt": 9.5,
+      "caixa": [
+        301.6377952755906,
+        45.0,
+        557.4377952755906,
+        411.0
+      ]
+    },
+    {
+      "id": "BR-P01-P | FRENTE",
+      "titulo": "Pacto do Abismo",
+      "pagina": 3,
+      "tipo": "pacto_frente",
+      "tamanho_mm": [
+        90.24,
+        129.12
+      ],
+      "fonte_pt": 9.5,
+      "caixa": [
+        37.837795275590565,
+        420.0,
+        293.6377952755906,
+        786.0
+      ]
+    },
+    {
+      "id": "BR-P01-P | VERSO DE CONSULTA",
+      "titulo": "Pacto do Abismo",
+      "pagina": 3,
+      "tipo": "pacto_consulta",
+      "tamanho_mm": [
+        90.24,
+        129.12
+      ],
+      "fonte_pt": 9.5,
+      "caixa": [
+        301.6377952755906,
+        420.0,
+        557.4377952755906,
+        786.0
+      ]
+    },
+    {
+      "id": "BR-P02-H | FRENTE",
+      "titulo": "A Sentinela que Nunca Recuou",
+      "pagina": 4,
+      "tipo": "heroi_frente",
+      "tamanho_mm": [
+        90.24,
+        129.12
+      ],
+      "fonte_pt": 9.5,
+      "caixa": [
+        37.837795275590565,
+        45.0,
+        293.6377952755906,
+        411.0
+      ]
+    },
+    {
+      "id": "BR-P02-H | VERSO DE CONSULTA",
+      "titulo": "Pacto da Última Porta",
+      "pagina": 4,
+      "tipo": "heroi_consulta",
+      "tamanho_mm": [
+        90.24,
+        129.12
+      ],
+      "fonte_pt": 9.5,
+      "caixa": [
+        301.6377952755906,
+        45.0,
+        557.4377952755906,
+        411.0
+      ]
+    },
+    {
+      "id": "BR-P02-P | FRENTE",
+      "titulo": "Pacto da Última Porta",
+      "pagina": 4,
+      "tipo": "pacto_frente",
+      "tamanho_mm": [
+        90.24,
+        129.12
+      ],
+      "fonte_pt": 9.1,
+      "caixa": [
+        37.837795275590565,
+        420.0,
+        293.6377952755906,
+        786.0
+      ]
+    },
+    {
+      "id": "BR-P02-P | VERSO DE CONSULTA",
+      "titulo": "Pacto da Última Porta",
+      "pagina": 4,
+      "tipo": "pacto_consulta",
+      "tamanho_mm": [
+        90.24,
+        129.12
+      ],
+      "fonte_pt": 8.8,
+      "caixa": [
+        301.6377952755906,
+        420.0,
+        557.4377952755906,
+        786.0
+      ]
+    },
+    {
+      "id": "BR-P03-H | FRENTE",
+      "titulo": "A Testemunha Sem Rosto",
+      "pagina": 5,
+      "tipo": "heroi_frente",
+      "tamanho_mm": [
+        90.24,
+        129.12
+      ],
+      "fonte_pt": 9.5,
+      "caixa": [
+        37.837795275590565,
+        45.0,
+        293.6377952755906,
+        411.0
+      ]
+    },
+    {
+      "id": "BR-P03-H | VERSO DE CONSULTA",
+      "titulo": "Pacto do Olho Descoberto",
+      "pagina": 5,
+      "tipo": "heroi_consulta",
+      "tamanho_mm": [
+        90.24,
+        129.12
+      ],
+      "fonte_pt": 9.5,
+      "caixa": [
+        301.6377952755906,
+        45.0,
+        557.4377952755906,
+        411.0
+      ]
+    },
+    {
+      "id": "BR-P03-P | FRENTE",
+      "titulo": "Pacto do Olho Descoberto",
+      "pagina": 5,
+      "tipo": "pacto_frente",
+      "tamanho_mm": [
+        90.24,
+        129.12
+      ],
+      "fonte_pt": 9.5,
+      "caixa": [
+        37.837795275590565,
+        420.0,
+        293.6377952755906,
+        786.0
+      ]
+    },
+    {
+      "id": "BR-P03-P | VERSO DE CONSULTA",
+      "titulo": "Pacto do Olho Descoberto",
+      "pagina": 5,
+      "tipo": "pacto_consulta",
+      "tamanho_mm": [
+        90.24,
+        129.12
+      ],
+      "fonte_pt": 9.5,
+      "caixa": [
+        301.6377952755906,
+        420.0,
+        557.4377952755906,
+        786.0
+      ]
+    },
+    {
+      "id": "BR-P04-H | FRENTE",
+      "titulo": "A Serpente Entre as Portas",
+      "pagina": 6,
+      "tipo": "heroi_frente",
+      "tamanho_mm": [
+        90.24,
+        129.12
+      ],
+      "fonte_pt": 9.3,
+      "caixa": [
+        37.837795275590565,
+        45.0,
+        293.6377952755906,
+        411.0
+      ]
+    },
+    {
+      "id": "BR-P04-H | VERSO DE CONSULTA",
+      "titulo": "Pacto dos Caminhos Roubados",
+      "pagina": 6,
+      "tipo": "heroi_consulta",
+      "tamanho_mm": [
+        90.24,
+        129.12
+      ],
+      "fonte_pt": 9.5,
+      "caixa": [
+        301.6377952755906,
+        45.0,
+        557.4377952755906,
+        411.0
+      ]
+    },
+    {
+      "id": "BR-P04-P | FRENTE",
+      "titulo": "Pacto dos Caminhos Roubados",
+      "pagina": 6,
+      "tipo": "pacto_frente",
+      "tamanho_mm": [
+        90.24,
+        129.12
+      ],
+      "fonte_pt": 9.5,
+      "caixa": [
+        37.837795275590565,
+        420.0,
+        293.6377952755906,
+        786.0
+      ]
+    },
+    {
+      "id": "BR-P04-P | VERSO DE CONSULTA",
+      "titulo": "Pacto dos Caminhos Roubados",
+      "pagina": 6,
+      "tipo": "pacto_consulta",
+      "tamanho_mm": [
+        90.24,
+        129.12
+      ],
+      "fonte_pt": 9.5,
+      "caixa": [
+        301.6377952755906,
+        420.0,
+        557.4377952755906,
+        786.0
+      ]
+    },
+    {
+      "id": "BR-P05-H | FRENTE",
+      "titulo": "O Carcereiro Sem Chave",
+      "pagina": 7,
+      "tipo": "heroi_frente",
+      "tamanho_mm": [
+        90.24,
+        129.12
+      ],
+      "fonte_pt": 9.5,
+      "caixa": [
+        37.837795275590565,
+        45.0,
+        293.6377952755906,
+        411.0
+      ]
+    },
+    {
+      "id": "BR-P05-H | VERSO DE CONSULTA",
+      "titulo": "Pacto dos Grilhões Vivos",
+      "pagina": 7,
+      "tipo": "heroi_consulta",
+      "tamanho_mm": [
+        90.24,
+        129.12
+      ],
+      "fonte_pt": 9.5,
+      "caixa": [
+        301.6377952755906,
+        45.0,
+        557.4377952755906,
+        411.0
+      ]
+    },
+    {
+      "id": "BR-P05-P | FRENTE",
+      "titulo": "Pacto dos Grilhões Vivos",
+      "pagina": 7,
+      "tipo": "pacto_frente",
+      "tamanho_mm": [
+        90.24,
+        129.12
+      ],
+      "fonte_pt": 9.5,
+      "caixa": [
+        37.837795275590565,
+        420.0,
+        293.6377952755906,
+        786.0
+      ]
+    },
+    {
+      "id": "BR-P05-P | VERSO DE CONSULTA",
+      "titulo": "Pacto dos Grilhões Vivos",
+      "pagina": 7,
+      "tipo": "pacto_consulta",
+      "tamanho_mm": [
+        90.24,
+        129.12
+      ],
+      "fonte_pt": 9.5,
+      "caixa": [
+        301.6377952755906,
+        420.0,
+        557.4377952755906,
+        786.0
+      ]
+    },
+    {
+      "id": "BR-P06-H | FRENTE",
+      "titulo": "Vorga, a Boca sob o Lago",
+      "pagina": 8,
+      "tipo": "heroi_frente",
+      "tamanho_mm": [
+        90.24,
+        129.12
+      ],
+      "fonte_pt": 9.3,
+      "caixa": [
+        37.837795275590565,
+        45.0,
+        293.6377952755906,
+        411.0
+      ]
+    },
+    {
+      "id": "BR-P06-H | VERSO DE CONSULTA",
+      "titulo": "Pacto da Mesa Vazia",
+      "pagina": 8,
+      "tipo": "heroi_consulta",
+      "tamanho_mm": [
+        90.24,
+        129.12
+      ],
+      "fonte_pt": 9.5,
+      "caixa": [
+        301.6377952755906,
+        45.0,
+        557.4377952755906,
+        411.0
+      ]
+    },
+    {
+      "id": "BR-P06-P | FRENTE",
+      "titulo": "Pacto da Mesa Vazia",
+      "pagina": 8,
+      "tipo": "pacto_frente",
+      "tamanho_mm": [
+        90.24,
+        129.12
+      ],
+      "fonte_pt": 9.1,
+      "caixa": [
+        37.837795275590565,
+        420.0,
+        293.6377952755906,
+        786.0
+      ]
+    },
+    {
+      "id": "BR-P06-P | VERSO DE CONSULTA",
+      "titulo": "Pacto da Mesa Vazia",
+      "pagina": 8,
+      "tipo": "pacto_consulta",
+      "tamanho_mm": [
+        90.24,
+        129.12
+      ],
+      "fonte_pt": 9.5,
+      "caixa": [
+        301.6377952755906,
+        420.0,
+        557.4377952755906,
+        786.0
+      ]
+    },
+    {
+      "id": "BR-P07-H | FRENTE",
+      "titulo": "A Serpente de Cobre que Circunda a Tormenta",
+      "pagina": 9,
+      "tipo": "heroi_frente",
+      "tamanho_mm": [
+        90.24,
+        129.12
+      ],
+      "fonte_pt": 8.9,
+      "caixa": [
+        37.837795275590565,
+        45.0,
+        293.6377952755906,
+        411.0
+      ]
+    },
+    {
+      "id": "BR-P07-H | VERSO DE CONSULTA",
+      "titulo": "Pacto do Trovão Cativo",
+      "pagina": 9,
+      "tipo": "heroi_consulta",
+      "tamanho_mm": [
+        90.24,
+        129.12
+      ],
+      "fonte_pt": 9.5,
+      "caixa": [
+        301.6377952755906,
+        45.0,
+        557.4377952755906,
+        411.0
+      ]
+    },
+    {
+      "id": "BR-P07-P | FRENTE",
+      "titulo": "Pacto do Trovão Cativo",
+      "pagina": 9,
+      "tipo": "pacto_frente",
+      "tamanho_mm": [
+        90.24,
+        129.12
+      ],
+      "fonte_pt": 8.7,
+      "caixa": [
+        37.837795275590565,
+        420.0,
+        293.6377952755906,
+        786.0
+      ]
+    },
+    {
+      "id": "BR-P07-P | VERSO DE CONSULTA",
+      "titulo": "Pacto do Trovão Cativo",
+      "pagina": 9,
+      "tipo": "pacto_consulta",
+      "tamanho_mm": [
+        90.24,
+        129.12
+      ],
+      "fonte_pt": 9.5,
+      "caixa": [
+        301.6377952755906,
+        420.0,
+        557.4377952755906,
+        786.0
+      ]
+    },
+    {
+      "id": "BR-P08-H | FRENTE",
+      "titulo": "Niméria, a Dama dos Sonhos Inacabados",
+      "pagina": 10,
+      "tipo": "heroi_frente",
+      "tamanho_mm": [
+        90.24,
+        129.12
+      ],
+      "fonte_pt": 9.5,
+      "caixa": [
+        37.837795275590565,
+        45.0,
+        293.6377952755906,
+        411.0
+      ]
+    },
+    {
+      "id": "BR-P08-H | VERSO DE CONSULTA",
+      "titulo": "Pacto dos Sonhos Roubados",
+      "pagina": 10,
+      "tipo": "heroi_consulta",
+      "tamanho_mm": [
+        90.24,
+        129.12
+      ],
+      "fonte_pt": 9.5,
+      "caixa": [
+        301.6377952755906,
+        45.0,
+        557.4377952755906,
+        411.0
+      ]
+    },
+    {
+      "id": "BR-P08-P | FRENTE",
+      "titulo": "Pacto dos Sonhos Roubados",
+      "pagina": 10,
+      "tipo": "pacto_frente",
+      "tamanho_mm": [
+        90.24,
+        129.12
+      ],
+      "fonte_pt": 9.5,
+      "caixa": [
+        37.837795275590565,
+        420.0,
+        293.6377952755906,
+        786.0
+      ]
+    },
+    {
+      "id": "BR-P08-P | VERSO DE CONSULTA",
+      "titulo": "Pacto dos Sonhos Roubados",
+      "pagina": 10,
+      "tipo": "pacto_consulta",
+      "tamanho_mm": [
+        90.24,
+        129.12
+      ],
+      "fonte_pt": 9.5,
+      "caixa": [
+        301.6377952755906,
+        420.0,
+        557.4377952755906,
+        786.0
+      ]
+    },
+    {
+      "id": "BR-P09-H | FRENTE",
+      "titulo": "A Rainha da Última Geada",
+      "pagina": 11,
+      "tipo": "heroi_frente",
+      "tamanho_mm": [
+        90.24,
+        129.12
+      ],
+      "fonte_pt": 9.5,
+      "caixa": [
+        37.837795275590565,
+        45.0,
+        293.6377952755906,
+        411.0
+      ]
+    },
+    {
+      "id": "BR-P09-H | VERSO DE CONSULTA",
+      "titulo": "Pacto do Inverno Imóvel",
+      "pagina": 11,
+      "tipo": "heroi_consulta",
+      "tamanho_mm": [
+        90.24,
+        129.12
+      ],
+      "fonte_pt": 9.5,
+      "caixa": [
+        301.6377952755906,
+        45.0,
+        557.4377952755906,
+        411.0
+      ]
+    },
+    {
+      "id": "BR-P09-P | FRENTE",
+      "titulo": "Pacto do Inverno Imóvel",
+      "pagina": 11,
+      "tipo": "pacto_frente",
+      "tamanho_mm": [
+        90.24,
+        129.12
+      ],
+      "fonte_pt": 8.8,
+      "caixa": [
+        37.837795275590565,
+        420.0,
+        293.6377952755906,
+        786.0
+      ]
+    },
+    {
+      "id": "BR-P09-P | VERSO DE CONSULTA",
+      "titulo": "Pacto do Inverno Imóvel",
+      "pagina": 11,
+      "tipo": "pacto_consulta",
+      "tamanho_mm": [
+        90.24,
+        129.12
+      ],
+      "fonte_pt": 9.5,
+      "caixa": [
+        301.6377952755906,
+        420.0,
+        557.4377952755906,
+        786.0
+      ]
+    },
+    {
+      "id": "BR-P00-I | A",
+      "titulo": "Ave Fênix",
+      "pagina": 12,
+      "tipo": "inicial_A",
+      "tamanho_mm": [
+        63.0,
+        88.0
+      ],
+      "fonte_pt": 8.5,
+      "caixa": [
+        112.05511811023624,
+        45.0,
+        290.6377952755906,
+        294.4488188976378
+      ]
+    },
+    {
+      "id": "BR-P00-I | B",
+      "titulo": "Absorver as Chamas",
+      "pagina": 12,
+      "tipo": "inicial_B",
+      "tamanho_mm": [
+        63.0,
+        88.0
+      ],
+      "fonte_pt": 9.2,
+      "caixa": [
+        304.6377952755906,
+        45.0,
+        483.22047244094495,
+        294.4488188976378
+      ]
+    },
+    {
+      "id": "BR-P01-I | A",
+      "titulo": "Sangrar o Véu",
+      "pagina": 12,
+      "tipo": "inicial_A",
+      "tamanho_mm": [
+        63.0,
+        88.0
+      ],
+      "fonte_pt": 9.2,
+      "caixa": [
+        112.05511811023624,
+        301.4488188976378,
+        290.6377952755906,
+        550.8976377952756
+      ]
+    },
+    {
+      "id": "BR-P01-I | B",
+      "titulo": "Última Oferta",
+      "pagina": 12,
+      "tipo": "inicial_B",
+      "tamanho_mm": [
+        63.0,
+        88.0
+      ],
+      "fonte_pt": 9.2,
+      "caixa": [
+        304.6377952755906,
+        301.4488188976378,
+        483.22047244094495,
+        550.8976377952756
+      ]
+    },
+    {
+      "id": "BR-P02-I | A",
+      "titulo": "Vigília da Porta",
+      "pagina": 12,
+      "tipo": "inicial_A",
+      "tamanho_mm": [
+        63.0,
+        88.0
+      ],
+      "fonte_pt": 9.2,
+      "caixa": [
+        112.05511811023624,
+        557.8976377952756,
+        290.6377952755906,
+        807.3464566929134
+      ]
+    },
+    {
+      "id": "BR-P02-I | B",
+      "titulo": "Punho da Sentinela",
+      "pagina": 12,
+      "tipo": "inicial_B",
+      "tamanho_mm": [
+        63.0,
+        88.0
+      ],
+      "fonte_pt": 9.2,
+      "caixa": [
+        304.6377952755906,
+        557.8976377952756,
+        483.22047244094495,
+        807.3464566929134
+      ]
+    },
+    {
+      "id": "BR-P03-I | A",
+      "titulo": "Olhar que Despe",
+      "pagina": 13,
+      "tipo": "inicial_A",
+      "tamanho_mm": [
+        63.0,
+        88.0
+      ],
+      "fonte_pt": 9.2,
+      "caixa": [
+        112.05511811023624,
+        45.0,
+        290.6377952755906,
+        294.4488188976378
+      ]
+    },
+    {
+      "id": "BR-P03-I | B",
+      "titulo": "Veredito Antecipado",
+      "pagina": 13,
+      "tipo": "inicial_B",
+      "tamanho_mm": [
+        63.0,
+        88.0
+      ],
+      "fonte_pt": 9.2,
+      "caixa": [
+        304.6377952755906,
+        45.0,
+        483.22047244094495,
+        294.4488188976378
+      ]
+    },
+    {
+      "id": "BR-P04-I | A",
+      "titulo": "Mão Além do Limiar",
+      "pagina": 13,
+      "tipo": "inicial_A",
+      "tamanho_mm": [
+        63.0,
+        88.0
+      ],
+      "fonte_pt": 9.2,
+      "caixa": [
+        112.05511811023624,
+        301.4488188976378,
+        290.6377952755906,
+        550.8976377952756
+      ]
+    },
+    {
+      "id": "BR-P04-I | B",
+      "titulo": "Passagem Indevida",
+      "pagina": 13,
+      "tipo": "inicial_B",
+      "tamanho_mm": [
+        63.0,
+        88.0
+      ],
+      "fonte_pt": 9.2,
+      "caixa": [
+        304.6377952755906,
+        301.4488188976378,
+        483.22047244094495,
+        550.8976377952756
+      ]
+    },
+    {
+      "id": "BR-P05-I | A",
+      "titulo": "Grilhão de Sombra",
+      "pagina": 13,
+      "tipo": "inicial_A",
+      "tamanho_mm": [
+        63.0,
+        88.0
+      ],
+      "fonte_pt": 9.2,
+      "caixa": [
+        112.05511811023624,
+        557.8976377952756,
+        290.6377952755906,
+        807.3464566929134
+      ]
+    },
+    {
+      "id": "BR-P05-I | B",
+      "titulo": "Peso da Sentença",
+      "pagina": 13,
+      "tipo": "inicial_B",
+      "tamanho_mm": [
+        63.0,
+        88.0
+      ],
+      "fonte_pt": 8.6,
+      "caixa": [
+        304.6377952755906,
+        557.8976377952756,
+        483.22047244094495,
+        807.3464566929134
+      ]
+    },
+    {
+      "id": "BR-P06-I | A",
+      "titulo": "Fermento da Fome",
+      "pagina": 14,
+      "tipo": "inicial_A",
+      "tamanho_mm": [
+        63.0,
+        88.0
+      ],
+      "fonte_pt": 9.2,
+      "caixa": [
+        112.05511811023624,
+        45.0,
+        290.6377952755906,
+        294.4488188976378
+      ]
+    },
+    {
+      "id": "BR-P06-I | B",
+      "titulo": "Devorar o Esforço",
+      "pagina": 14,
+      "tipo": "inicial_B",
+      "tamanho_mm": [
+        63.0,
+        88.0
+      ],
+      "fonte_pt": 9.2,
+      "caixa": [
+        304.6377952755906,
+        45.0,
+        483.22047244094495,
+        294.4488188976378
+      ]
+    },
+    {
+      "id": "BR-P07-I | A",
+      "titulo": "Fagulha Cativa",
+      "pagina": 14,
+      "tipo": "inicial_A",
+      "tamanho_mm": [
+        63.0,
+        88.0
+      ],
+      "fonte_pt": 9.2,
+      "caixa": [
+        112.05511811023624,
+        301.4488188976378,
+        290.6377952755906,
+        550.8976377952756
+      ]
+    },
+    {
+      "id": "BR-P07-I | B",
+      "titulo": "Descarregar a Tormenta",
+      "pagina": 14,
+      "tipo": "inicial_B",
+      "tamanho_mm": [
+        63.0,
+        88.0
+      ],
+      "fonte_pt": 8.2,
+      "caixa": [
+        304.6377952755906,
+        301.4488188976378,
+        483.22047244094495,
+        550.8976377952756
+      ]
+    },
+    {
+      "id": "BR-P08-I | A",
+      "titulo": "Semeadura do Pesadelo",
+      "pagina": 14,
+      "tipo": "inicial_A",
+      "tamanho_mm": [
+        63.0,
+        88.0
+      ],
+      "fonte_pt": 9.2,
+      "caixa": [
+        112.05511811023624,
+        557.8976377952756,
+        290.6377952755906,
+        807.3464566929134
+      ]
+    },
+    {
+      "id": "BR-P08-I | B",
+      "titulo": "Colher o Sonho",
+      "pagina": 14,
+      "tipo": "inicial_B",
+      "tamanho_mm": [
+        63.0,
+        88.0
+      ],
+      "fonte_pt": 9.2,
+      "caixa": [
+        304.6377952755906,
+        557.8976377952756,
+        483.22047244094495,
+        807.3464566929134
+      ]
+    },
+    {
+      "id": "BR-P09-I | A",
+      "titulo": "Sopro da Geada",
+      "pagina": 15,
+      "tipo": "inicial_A",
+      "tamanho_mm": [
+        63.0,
+        88.0
+      ],
+      "fonte_pt": 8.7,
+      "caixa": [
+        112.05511811023624,
+        45.0,
+        290.6377952755906,
+        294.4488188976378
+      ]
+    },
+    {
+      "id": "BR-P09-I | B",
+      "titulo": "Coração do Inverno",
+      "pagina": 15,
+      "tipo": "inicial_B",
+      "tamanho_mm": [
+        63.0,
+        88.0
+      ],
+      "fonte_pt": 8.2,
+      "caixa": [
+        304.6377952755906,
+        45.0,
+        483.22047244094495,
+        294.4488188976378
+      ]
+    },
+    {
+      "id": "BR-G01 | A",
+      "titulo": "Pacto Menor",
+      "pagina": 16,
+      "tipo": "geral",
+      "tamanho_mm": [
+        63.0,
+        88.0
+      ],
+      "fonte_pt": 8.1,
+      "caixa": [
+        112.05511811023624,
+        45.0,
+        290.6377952755906,
+        294.4488188976378
+      ]
+    },
+    {
+      "id": "BR-G01 | B",
+      "titulo": "Procuração",
+      "pagina": 16,
+      "tipo": "geral",
+      "tamanho_mm": [
+        63.0,
+        88.0
+      ],
+      "fonte_pt": 9.2,
+      "caixa": [
+        304.6377952755906,
+        45.0,
+        483.22047244094495,
+        294.4488188976378
+      ]
+    },
+    {
+      "id": "BR-G02 | A",
+      "titulo": "Oferenda Selada",
+      "pagina": 16,
+      "tipo": "geral",
+      "tamanho_mm": [
+        63.0,
+        88.0
+      ],
+      "fonte_pt": 9.2,
+      "caixa": [
+        112.05511811023624,
+        301.4488188976378,
+        290.6377952755906,
+        550.8976377952756
+      ]
+    },
+    {
+      "id": "BR-G02 | B",
+      "titulo": "Resgatar o Penhor",
+      "pagina": 16,
+      "tipo": "geral",
+      "tamanho_mm": [
+        63.0,
+        88.0
+      ],
+      "fonte_pt": 9.2,
+      "caixa": [
+        304.6377952755906,
+        301.4488188976378,
+        483.22047244094495,
+        550.8976377952756
+      ]
+    },
+    {
+      "id": "BR-G03 | A",
+      "titulo": "Concentrar a Manifestação",
+      "pagina": 16,
+      "tipo": "geral",
+      "tamanho_mm": [
+        63.0,
+        88.0
+      ],
+      "fonte_pt": 9.2,
+      "caixa": [
+        112.05511811023624,
+        557.8976377952756,
+        290.6377952755906,
+        807.3464566929134
+      ]
+    },
+    {
+      "id": "BR-G03 | B",
+      "titulo": "Estender o Sinal",
+      "pagina": 16,
+      "tipo": "geral",
+      "tamanho_mm": [
+        63.0,
+        88.0
+      ],
+      "fonte_pt": 8.6,
+      "caixa": [
+        304.6377952755906,
+        557.8976377952756,
+        483.22047244094495,
+        807.3464566929134
+      ]
+    },
+    {
+      "id": "BR-G04 | A",
+      "titulo": "Presságio do Patrono",
+      "pagina": 17,
+      "tipo": "geral",
+      "tamanho_mm": [
+        63.0,
+        88.0
+      ],
+      "fonte_pt": 9.2,
+      "caixa": [
+        112.05511811023624,
+        45.0,
+        290.6377952755906,
+        294.4488188976378
+      ]
+    },
+    {
+      "id": "BR-G04 | B",
+      "titulo": "Ler o Destino",
+      "pagina": 17,
+      "tipo": "geral",
+      "tamanho_mm": [
+        63.0,
+        88.0
+      ],
+      "fonte_pt": 9.2,
+      "caixa": [
+        304.6377952755906,
+        45.0,
+        483.22047244094495,
+        294.4488188976378
+      ]
+    },
+    {
+      "id": "BR-G05 | A",
+      "titulo": "Manter o Canal",
+      "pagina": 17,
+      "tipo": "geral",
+      "tamanho_mm": [
+        63.0,
+        88.0
+      ],
+      "fonte_pt": 9.2,
+      "caixa": [
+        112.05511811023624,
+        301.4488188976378,
+        290.6377952755906,
+        550.8976377952756
+      ]
+    },
+    {
+      "id": "BR-G05 | B",
+      "titulo": "Desatar o Nó",
+      "pagina": 17,
+      "tipo": "geral",
+      "tamanho_mm": [
+        63.0,
+        88.0
+      ],
+      "fonte_pt": 9.2,
+      "caixa": [
+        304.6377952755906,
+        301.4488188976378,
+        483.22047244094495,
+        550.8976377952756
+      ]
+    },
+    {
+      "id": "BR-G06 | A",
+      "titulo": "Testemunho do Feito",
+      "pagina": 17,
+      "tipo": "geral",
+      "tamanho_mm": [
+        63.0,
+        88.0
+      ],
+      "fonte_pt": 9.2,
+      "caixa": [
+        112.05511811023624,
+        557.8976377952756,
+        290.6377952755906,
+        807.3464566929134
+      ]
+    },
+    {
+      "id": "BR-G06 | B",
+      "titulo": "O Patrono Lembra",
+      "pagina": 17,
+      "tipo": "geral",
+      "tamanho_mm": [
+        63.0,
+        88.0
+      ],
+      "fonte_pt": 9.2,
+      "caixa": [
+        304.6377952755906,
+        557.8976377952756,
+        483.22047244094495,
+        807.3464566929134
+      ]
+    },
+    {
+      "id": "BR-G07 | A",
+      "titulo": "Nominar o Devedor",
+      "pagina": 18,
+      "tipo": "geral",
+      "tamanho_mm": [
+        63.0,
+        88.0
+      ],
+      "fonte_pt": 9.2,
+      "caixa": [
+        112.05511811023624,
+        45.0,
+        290.6377952755906,
+        294.4488188976378
+      ]
+    },
+    {
+      "id": "BR-G07 | B",
+      "titulo": "Executar a Cláusula",
+      "pagina": 18,
+      "tipo": "geral",
+      "tamanho_mm": [
+        63.0,
+        88.0
+      ],
+      "fonte_pt": 8.4,
+      "caixa": [
+        304.6377952755906,
+        45.0,
+        483.22047244094495,
+        294.4488188976378
+      ]
+    },
+    {
+      "id": "BR-G08 | A",
+      "titulo": "Patrono Presente",
+      "pagina": 18,
+      "tipo": "geral",
+      "tamanho_mm": [
+        63.0,
+        88.0
+      ],
+      "fonte_pt": 9.1,
+      "caixa": [
+        112.05511811023624,
+        301.4488188976378,
+        290.6377952755906,
+        550.8976377952756
+      ]
+    },
+    {
+      "id": "BR-G08 | B",
+      "titulo": "Canal sem Ruído",
+      "pagina": 18,
+      "tipo": "geral",
+      "tamanho_mm": [
+        63.0,
+        88.0
+      ],
+      "fonte_pt": 9.2,
+      "caixa": [
+        304.6377952755906,
+        301.4488188976378,
+        483.22047244094495,
+        550.8976377952756
+      ]
+    },
+    {
+      "id": "BR-G09 | A",
+      "titulo": "Emprestar a Vontade",
+      "pagina": 18,
+      "tipo": "geral",
+      "tamanho_mm": [
+        63.0,
+        88.0
+      ],
+      "fonte_pt": 9.2,
+      "caixa": [
+        112.05511811023624,
+        557.8976377952756,
+        290.6377952755906,
+        807.3464566929134
+      ]
+    },
+    {
+      "id": "BR-G09 | B",
+      "titulo": "Ouvir a Reprimenda",
+      "pagina": 18,
+      "tipo": "geral",
+      "tamanho_mm": [
+        63.0,
+        88.0
+      ],
+      "fonte_pt": 9.2,
+      "caixa": [
+        304.6377952755906,
+        557.8976377952756,
+        483.22047244094495,
+        807.3464566929134
+      ]
+    },
+    {
+      "id": "BR-M01 | MEIA",
+      "titulo": "Ouvir o Chamado",
+      "pagina": 19,
+      "tipo": "geral",
+      "tamanho_mm": [
+        63.0,
+        88.0
+      ],
+      "fonte_pt": 9.2,
+      "caixa": [
+        112.05511811023624,
+        45.0,
+        290.6377952755906,
+        294.4488188976378
+      ]
+    },
+    {
+      "id": "BR-M02 | MEIA",
+      "titulo": "Selo de Continuidade",
+      "pagina": 19,
+      "tipo": "geral",
+      "tamanho_mm": [
+        63.0,
+        88.0
+      ],
+      "fonte_pt": 9.2,
+      "caixa": [
+        304.6377952755906,
+        45.0,
+        483.22047244094495,
+        294.4488188976378
+      ]
+    },
+    {
+      "id": "BR-M03 | MEIA",
+      "titulo": "Segredo Entre as Cartas",
+      "pagina": 19,
+      "tipo": "geral",
+      "tamanho_mm": [
+        63.0,
+        88.0
+      ],
+      "fonte_pt": 9.2,
+      "caixa": [
+        112.05511811023624,
+        301.4488188976378,
+        290.6377952755906,
+        550.8976377952756
+      ]
+    },
+    {
+      "id": "BR-M04 | MEIA",
+      "titulo": "Favor de Última Hora",
+      "pagina": 19,
+      "tipo": "geral",
+      "tamanho_mm": [
+        63.0,
+        88.0
+      ],
+      "fonte_pt": 9.2,
+      "caixa": [
+        304.6377952755906,
+        301.4488188976378,
+        483.22047244094495,
+        550.8976377952756
+      ]
+    },
+    {
+      "id": "BR-M05 | MEIA",
+      "titulo": "Passo do Emissário",
+      "pagina": 19,
+      "tipo": "geral",
+      "tamanho_mm": [
+        63.0,
+        88.0
+      ],
+      "fonte_pt": 9.2,
+      "caixa": [
+        112.05511811023624,
+        557.8976377952756,
+        290.6377952755906,
+        807.3464566929134
+      ]
+    },
+    {
+      "id": "BR-M06 | MEIA",
+      "titulo": "O Patrono Não Desperdiça",
+      "pagina": 19,
+      "tipo": "geral",
+      "tamanho_mm": [
+        63.0,
+        88.0
+      ],
+      "fonte_pt": 9.2,
+      "caixa": [
+        304.6377952755906,
+        557.8976377952756,
+        483.22047244094495,
+        807.3464566929134
+      ]
+    },
+    {
+      "id": "BR-X01 | A",
+      "titulo": "Manifestação Dupla",
+      "pagina": 20,
+      "tipo": "geral",
+      "tamanho_mm": [
+        63.0,
+        88.0
+      ],
+      "fonte_pt": 8.1,
+      "caixa": [
+        112.05511811023624,
+        45.0,
+        290.6377952755906,
+        294.4488188976378
+      ]
+    },
+    {
+      "id": "BR-X01 | B",
+      "titulo": "Descanso da Voz",
+      "pagina": 20,
+      "tipo": "geral",
+      "tamanho_mm": [
+        63.0,
+        88.0
+      ],
+      "fonte_pt": 9.2,
+      "caixa": [
+        304.6377952755906,
+        45.0,
+        483.22047244094495,
+        294.4488188976378
+      ]
+    },
+    {
+      "id": "BR-X02 | A",
+      "titulo": "Assinatura Vital",
+      "pagina": 20,
+      "tipo": "geral",
+      "tamanho_mm": [
+        63.0,
+        88.0
+      ],
+      "fonte_pt": 9.2,
+      "caixa": [
+        112.05511811023624,
+        301.4488188976378,
+        290.6377952755906,
+        550.8976377952756
+      ]
+    },
+    {
+      "id": "BR-X02 | B",
+      "titulo": "Quitar a Dívida",
+      "pagina": 20,
+      "tipo": "geral",
+      "tamanho_mm": [
+        63.0,
+        88.0
+      ],
+      "fonte_pt": 9.2,
+      "caixa": [
+        304.6377952755906,
+        301.4488188976378,
+        483.22047244094495,
+        550.8976377952756
+      ]
+    },
+    {
+      "id": "BR-X03 | A",
+      "titulo": "Intercessão do Patrono",
+      "pagina": 20,
+      "tipo": "geral",
+      "tamanho_mm": [
+        63.0,
+        88.0
+      ],
+      "fonte_pt": 8.6,
+      "caixa": [
+        112.05511811023624,
+        557.8976377952756,
+        290.6377952755906,
+        807.3464566929134
+      ]
+    },
+    {
+      "id": "BR-X03 | B",
+      "titulo": "Retirar o Nome",
+      "pagina": 20,
+      "tipo": "geral",
+      "tamanho_mm": [
+        63.0,
+        88.0
+      ],
+      "fonte_pt": 9.2,
+      "caixa": [
+        304.6377952755906,
+        557.8976377952756,
+        483.22047244094495,
+        807.3464566929134
+      ]
+    }
+  ],
+  "sha256": "28810884e668afcbe1e991c7b1ff5012b9d85df892569ac30f8939c46a408600",
+  "todos_textos_canonicos_presentes": true,
+  "trechos_verificados": 190,
+  "renderizador": "Poppler 110 dpi",
+  "paginas_inspecionadas_visualmente": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+  ],
+  "inspecao_detalhada": [
+    4,
+    20
+  ],
+  "resultado_visual": "Sem corte, sobreposição ou glifos inválidos nas páginas inspecionadas.",
+  "intermediarios": "Renderizações temporárias verificadas e removidas após inspeção.",
+  "fontes": [
+    {
+      "arquivo": "classes/dados/bruxo/novos_pactos_v03.json",
+      "sha256": "a088718b728b8f7e61a6d12b2089ff928ef90746865eeae61e235af66f3ff1bb"
+    },
+    {
+      "arquivo": "classes/dados/bruxo/habilidades_gerais_v03.json",
+      "sha256": "fa1e52639a985d316cf093b53a4dffd9474125df5c84812946b4995105bb298d"
+    },
+    {
+      "arquivo": "classes/dados/bruxo/regras_propostas_lote_v03.json",
+      "sha256": "4ff2655cc230c96983433d60148b0cb5cdbb4a489518f4d42ea52967575e8ad0"
+    }
+  ]
+}

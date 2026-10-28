@@ -1,0 +1,171 @@
+﻿ID;Item;Categoria;Raridade da carta;Unidade;Compra (prata);Compra (ouro);Faixa baixa (prata);Faixa alta (prata);Revenda referência (prata);Diárias brutas;Acesso;Justificativa;Ressalva
+EQ-001;Faca;ARMA CORPO A CORPO;COMUM;1 arma;4;0.04;3.2;5.0;1.6;2.0;Vila;"Lâmina pequena de uso diário; pouco metal e produção corrente.";Aparência dourada na arte não comprova ouro maciço.
+EQ-002;Florete;ARMA CORPO A CORPO;COMUM;1 arma;35;0.35;28.0;45.5;14.0;17.5;Cidade;"Lâmina longa e fina exige bom tratamento térmico e equilíbrio; dano baixo não a torna uma faca barata.";
+EQ-003;Bastão;ARMA CORPO A CORPO;COMUM;1 arma;1;0.01;0.8;1.3;0.4;0.5;Vila;Haste fácil de substituir, sem forja complexa nem habilidade especial.;
+EQ-004;Espada Curta;ARMA CORPO A CORPO;COMUM;1 arma;20;0.2;16.0;26.0;8.0;10.0;Cidade;"Espada curta militar; menos material e trabalho que uma espada longa bem acabada.";
+EQ-005;Espada Longa;ARMA CORPO A CORPO;COMUM;1 arma;30;0.3;24.0;39.0;12.0;15.0;Cidade;Referência central de arma profissional: acabamento funcional, fio e equilíbrio, sem prêmio mágico.;
+EQ-006;Lança;ARMA CORPO A CORPO;COMUM;1 arma;6;0.06;4.8;7.5;2.4;3.0;Vila;"Haste barata e ponta pequena; bom alcance não implica grande custo de fabricação.";
+EQ-007;Maça;ARMA CORPO A CORPO;COMUM;1 arma;10;0.1;8.0;12.5;4.0;5.0;Vila;"Forja robusta e simples; dano elevado vem da categoria pesada, não de metal precioso.";
+EQ-008;Machado de Guerra;ARMA CORPO A CORPO;COMUM;1 arma;14;0.14;11.2;17.5;5.6;7.0;Vila;"Peça militar com bom fio e encaixe; mais trabalho que ferramenta rural, menos que espada longa.";
+EQ-009;Montante;ARMA CORPO A CORPO;COMUM;1 arma;60;0.6;48.0;78.0;24.0;30.0;Cidade;Muito aço de qualidade e controle de têmpera numa lâmina grande justificam o preço.;
+EQ-010;Estilete;ARMA CORPO A CORPO;INCOMUM;1 arma;35;0.35;24.5;49.0;12.2;17.5;Especialista;"Ponta especializada e capacidade de superar resistência em crítico; uso estreito limita o prêmio.";
+EQ-011;Florete de Duelista;ARMA CORPO A CORPO;INCOMUM;1 arma;120;1.2;84.0;168.0;42.0;60.0;Especialista;"Equilíbrio superior e contra-ataque reutilizável; exige duelista competente e Reação.";
+EQ-012;Chicote;ARMA CORPO A CORPO;INCOMUM;1 arma;30;0.3;24.0;39.0;12.0;15.0;Cidade;"Controle de movimento é seu valor; material barato impede tratá-lo como joia.";
+EQ-013;Francisca;ARMA CORPO A CORPO;INCOMUM;1 arma;300;3.0;195.0;450.0;90.0;150.0;Encomenda;O retorno automático após o arremesso excede uma francisca normal e domina o preço.;Preço pressupõe que o retorno do texto funcione sempre, sem corda.
+EQ-014;Espada do Mestre-Ferreiro;ARMA CORPO A CORPO;INCOMUM;1 arma;220;2.2;154.0;308.0;77.0;110.0;Especialista;Precisão e troca de carta em cada ataque sustentam um prêmio alto de oficina ou encantamento.;
+EQ-015;Alabarda;ARMA CORPO A CORPO;INCOMUM;1 arma;45;0.45;36.0;58.5;18.0;22.5;Cidade;"Montagem militar trabalhada e controle tático; não pressupõe magia apenas por ser incomum.";
+EQ-016;Maça-Estrela;ARMA CORPO A CORPO;INCOMUM;1 arma;65;0.65;45.5;91.0;22.7;32.5;Especialista;Ferimento recorrente aumenta a utilidade, com procura de combatentes especializados.;
+EQ-017;Machado Barbado;ARMA CORPO A CORPO;INCOMUM;1 arma;90;0.9;63.0;126.0;31.5;45.0;Especialista;Acerto secundário que ignora resistência amplia o valor em combate contra grupos.;
+EQ-018;Montante de Batalha;ARMA CORPO A CORPO;INCOMUM;1 arma;180;1.8;126.0;252.0;63.0;90.0;Especialista;"Ataque de área e fabricação exigente; requisito alto e defesa exposta moderam a procura.";
+EQ-019;Adaga da Mão Vazia;ARMA CORPO A CORPO;RARA;1 arma;1200;12.0;720.0;1920.0;300.0;600.0;Relíquia;"Dano condicionado à mão vazia muda a estratégia; descarte obrigatório reduz o público comprador.";
+EQ-020;Florete do Contragolpe;ARMA CORPO A CORPO;RARA;1 arma;1800;18.0;1080.0;2880.0;450.0;900.0;Relíquia;"Retaliação sem teste de ataque cria grande valor; perder a proteção de armadura e escudo é custo real.";
+EQ-021;Cajado do Condutor;ARMA CORPO A CORPO;RARA;1 foco;2500;25.0;1500.0;4000.0;625.0;1250.0;Relíquia;"O valor é reduzir Fadiga de magias repetidamente; dano zero não mede sua utilidade.";
+EQ-022;Lâmina do Vento;ARMA CORPO A CORPO;RARA;1 arma;1800;18.0;1080.0;2880.0;450.0;900.0;Relíquia;Velocidade e conversão de ação em movimento interessam a combatentes móveis.;
+EQ-023;Gládio Inquietante;ARMA CORPO A CORPO;RARA;1 arma;1500;15.0;900.0;2400.0;375.0;750.0;Relíquia;"Virar habilidades todo turno permite motores específicos; não é melhoria universal para qualquer personagem.";Valor depende da regra completa de virar cartas e das habilidades disponíveis.
+EQ-024;Lança da Muralha;ARMA CORPO A CORPO;RARA;1 arma;1700;17.0;1020.0;2720.0;425.0;850.0;Relíquia;"Proteção reativa de aliados serve a guarda e formação; Imobilizar o portador limita o uso.";
+EQ-025;Quebra-Elmos;ARMA CORPO A CORPO;RARA;1 arma;2200;22.0;1320.0;3520.0;550.0;1100.0;Relíquia;"Ignorar resistência e quebrar proteção têm valor militar elevado; ausência de Reação exige estratégia própria.";
+EQ-026;Machado da Sepultura;ARMA CORPO A CORPO;RARA;1 arma;1600;16.0;960.0;2560.0;400.0;800.0;Relíquia;"Escala com figuras do descarte, mas exila recurso e reduz cura; poder condicionado evita preço automático por dano máximo.";
+EQ-027;Montante do Frenesi;ARMA CORPO A CORPO;RARA;1 arma;2400;24.0;1440.0;3840.0;600.0;1200.0;Relíquia;"Altera o estouro e o uso de Ases; Fadiga e falta de cartas da mão restringem os compradores.";
+EQ-028;Shuriken;ARMA À DISTÂNCIA;COMUM;1 peça;1;0.01;0.8;1.3;0.4;0.5;Cidade;"Peça pequena de arremesso; preço unitário, não um conjunto de munições.";
+EQ-029;Machado de Arremesso;ARMA À DISTÂNCIA;COMUM;1 arma;8;0.08;6.4;10.0;3.2;4.0;Vila;Arma reutilizável e recuperável de produção corrente.;
+EQ-030;Javelin;ARMA À DISTÂNCIA;COMUM;1 arma;4;0.04;3.2;5.0;1.6;2.0;Vila;"Uma única azagaia; dano alto não transforma a peça em lança encantada.";
+EQ-031;Arco Curto;ARMA À DISTÂNCIA;COMUM;1 arco;20;0.2;16.0;26.0;8.0;10.0;Cidade;"Curvatura e secagem cuidadosas exigem ofício; preço do arco sem munição avulsa.";
+EQ-032;Arco Longo;ARMA À DISTÂNCIA;COMUM;1 arco;40;0.4;32.0;52.0;16.0;20.0;Cidade;Seleção do arco e longa peça uniforme justificam preço acima do arco curto.;
+EQ-033;Besta Pesada;ARMA À DISTÂNCIA;COMUM;1 besta;100;1.0;80.0;130.0;40.0;50.0;Cidade;"Gatilho, encaixes e sistema de armar elevam o custo; não se calcula preço só pelo dano.";
+EQ-034;Adaga Balanceada;ARMA À DISTÂNCIA;INCOMUM;1 arma;40;0.4;28.0;56.0;14.0;20.0;Especialista;"Reciclagem de Foco interessa a um usuário preparado; aplicação estreita segura o preço.";
+EQ-035;Machete Farpado;ARMA À DISTÂNCIA;INCOMUM;1 arma;55;0.55;38.5;77.0;19.2;27.5;Especialista;Sangramento repetível oferece vantagem funcional acima da lâmina simples.;
+EQ-036;Lança Espiral;ARMA À DISTÂNCIA;INCOMUM;1 arma;140;1.4;98.0;196.0;49.0;70.0;Especialista;"Converte Fadiga da arma em dano; precisa de configuração e não rende seu máximo sempre.";
+EQ-037;Arco Recurvo;ARMA À DISTÂNCIA;INCOMUM;1 arco;100;1.0;70.0;140.0;35.0;50.0;Especialista;Construção recurva de qualidade e disparo reativo justificam prêmio moderado.;
+EQ-038;Arco de Teixo;ARMA À DISTÂNCIA;INCOMUM;1 arco;180;1.8;126.0;252.0;63.0;90.0;Especialista;Dobrar dano contra Marcação é forte, mas requer outra fonte da ficha.;
+EQ-039;Besta da Seta Dupla;ARMA À DISTÂNCIA;INCOMUM;1 besta;320;3.2;208.0;480.0;96.0;160.0;Encomenda;"Engenharia e dano num segundo inimigo tornam a peça superior; ainda exige recarga.";
+EQ-040;Leque de Lâminas;ARMA À DISTÂNCIA;RARA;1 arma;1800;18.0;1080.0;2880.0;450.0;900.0;Relíquia;"Alcançar vários alvos e limitar a mão cria função rara; exílio por alvo extra é custo persistente.";
+EQ-041;Machado Sedento;ARMA À DISTÂNCIA;RARA;1 arma;1600;16.0;960.0;2560.0;400.0;800.0;Relíquia;"Potencial depende das figuras no descarte e tritura cartas; não se cobra o teto de dano como benefício permanente.";
+EQ-042;Lança Trovejante;ARMA À DISTÂNCIA;RARA;1 arma;2500;25.0;1500.0;4000.0;625.0;1250.0;Relíquia;"Descarga contra alvo e adjacentes tem alto valor de área; fogo amigo e retorno de Raio restringem o uso.";
+EQ-043;Arco das Sombras;ARMA À DISTÂNCIA;RARA;1 arco;2200;22.0;1320.0;3520.0;550.0;1100.0;Relíquia;"Gera Sombra e permite disparo protegido; só causa dano começando Oculto, tornando o mercado especializado.";
+EQ-044;Arco da Maré;ARMA À DISTÂNCIA;RARA;1 arco;3200;32.0;1920.0;5120.0;800.0;1600.0;Relíquia;"Área 3 × 3, controle do solo e apagar Fogo valem muito; perda de recuperação de Fadiga impede uso irrestrito.";O cadastro não informa Alcance. Preço provisório sem inventar esse dado.
+EQ-045;Balestra de Cerco;ARMA À DISTÂNCIA;RARA;1 arma;2800;28.0;1680.0;4480.0;700.0;1400.0;Relíquia;"Tiro em linha acumulado é arma de posição; imobilidade e perda de carga sob dano reduzem a procura.";
+EQ-046;Couro do Batedor;ARMADURA;COMUM;1 armadura;40;0.4;32.0;52.0;16.0;20.0;Cidade;Proteção leve e bolso secreto são ofício útil de fabricação repetível.;
+EQ-047;Cota de Malha;ARMADURA;COMUM;1 armadura;300;3.0;240.0;390.0;120.0;150.0;Cidade;"Muitos elos e ajuste corporal exigem trabalho; comum na coleção não significa barata para um camponês.";
+EQ-048;Arnês de Placas;ARMADURA;COMUM;1 armadura;1200;12.0;780.0;1800.0;360.0;600.0;Encomenda;"Forja e ajuste de conjunto completo dominam o custo; investimento de elite mesmo sem raridade mágica.";
+EQ-049;Couro Élfico;ARMADURA;INCOMUM;1 armadura;300;3.0;210.0;420.0;105.0;150.0;Especialista;"Proteção leve melhor e movimento após sofrer dano; especialidade élfica limita a oferta.";
+EQ-050;Brunea de Escamas;ARMADURA;INCOMUM;1 armadura;900;9.0;585.0;1350.0;270.0;450.0;Encomenda;Montagem trabalhosa e Ferimento reativo justificam prêmio acima da armadura média comum.;
+EQ-051;Armadura Samurai Temperada;ARMADURA;INCOMUM;1 armadura;3200;32.0;2080.0;4800.0;960.0;1600.0;Encomenda;"Fabricação especializada e geração de Guarda em posição fixa; inclui custo de importação ou mestre local.";
+EQ-052;Manto do Vento;ARMADURA;RARA;1 armadura;3500;35.0;2100.0;5600.0;875.0;1750.0;Relíquia;"Planar e mudar o limite de defesa excedem um manto comum; atacar desfaz sua vantagem.";
+EQ-053;Couraça do Contra-Ataque;ARMADURA;RARA;1 armadura;4500;45.0;2700.0;7200.0;1125.0;2250.0;Relíquia;"Transforma Ferimento em ataque; o próprio dano alimenta um risco crescente ao usuário.";
+EQ-054;Peitoral de Dalpnor;ARMADURA;RARA;1 armadura;10000;100.0;6000.0;16000.0;2500.0;5000.0;Relíquia;"Proteção de aliados, cura e aura antiprofanidade fazem uma relíquia de guerra; trituração recorrente limita seu público.";
+EQ-055;Escudo Leve;ESCUDO;COMUM;1 escudo;18;0.18;14.4;22.5;7.2;9.0;Vila;Proteção leve com materiais comuns e montagem simples.;
+EQ-056;Escudo Pesado;ESCUDO;COMUM;1 escudo;50;0.5;40.0;65.0;20.0;25.0;Cidade;Área maior, ferragens e robustez tornam-no mais caro que o escudo leve.;
+EQ-057;Broquel Ágil;ESCUDO;INCOMUM;1 escudo;90;0.9;63.0;126.0;31.5;45.0;Especialista;"Interceptar dano de aliado é sua especialidade; gasta Reação e vida do escudo.";
+EQ-058;Escudo de Investida;ESCUDO;INCOMUM;1 escudo;180;1.8;126.0;252.0;63.0;90.0;Especialista;"Resiste a impacto e agrega empurrão em investidas; ofício militar especializado.";
+EQ-059;Placa de Luz;ESCUDO;RARA;1 escudo;3200;32.0;1920.0;5120.0;800.0;1600.0;Relíquia;"Defesa contra magia e revelação de ocultos têm grande valor; não protege contra corpo a corpo.";
+EQ-060;Scutum da Legião;ESCUDO;RARA;1 escudo;4000;40.0;2400.0;6400.0;1000.0;2000.0;Relíquia;"Protege vários aliados em formação; sozinho perde a função, reduzindo a demanda fora de tropas.";
+EQ-061;Poção de Cura Pequena;CONSUMÍVEL;COMUM;1 dose;12;0.12;8.4;16.8;4.2;6.0;Especialista;"Cura imediata e portátil é valiosa em risco; manter o preço de teste como prata dá seis diárias brutas de trabalhador.";
+EQ-062;Tocha;CONSUMÍVEL;COMUM;1 tocha;0.2;0.002;0.2;0.3;0.0;0.1;Vila;"Bem barato de iluminação por uma hora; preço não precisa acompanhar os demais consumíveis de combate.";
+EQ-063;Antídoto;CONSUMÍVEL;COMUM;1 dose;8;0.08;5.6;11.2;2.8;4.0;Especialista;"Remove Veneno e uma Fadiga; menor versatilidade que cura geral evita preço excessivo.";
+EQ-064;Ração de Viagem;CONSUMÍVEL;COMUM;1 ração;2;0.02;1.6;2.5;0.8;1.0;Vila;"Inclui o bônus de preparo da mão inicial, além de nutrição; não equivale a uma simples refeição.";Só uma ração contribui para a próxima mão inicial.
+EQ-065;Bomba de Fumaça;CONSUMÍVEL;COMUM;1 bomba;15;0.15;10.5;21.0;5.2;7.5;Especialista;"Cobertura de área oferece fuga e controle; preparação segura exige alquimista ou artífice.";
+EQ-066;Pedra de Amolar;CONSUMÍVEL;COMUM;1 uso de preparo;1;0.01;0.8;1.3;0.4;0.5;Vila;Preço do uso de manutenção que concede +1 de dano, não de uma pedra artesanal inesgotável.;"A carta é Consumível; separar ferramenta física comum de sua unidade de uso."
+EQ-067;Veneno Ácido;CONSUMÍVEL;COMUM;1 aplicação;12;0.12;8.4;16.8;4.2;6.0;Especialista;"Uma aplicação supera resistência no próximo golpe; utilidade forte mas duração de um ataque.";
+EQ-068;Poção de Mana Pequena;CONSUMÍVEL;COMUM;1 dose;12;0.12;8.4;16.8;4.2;6.0;Especialista;"Recuperação imediata de três Fadigas preserva opções táticas; referência igual à cura pequena.";
+EQ-069;Óleo Antiespectral;CONSUMÍVEL;COMUM;1 aplicação;20;0.2;14.0;28.0;7.0;10.0;Especialista;"Permite ferir Intangíveis durante uma cena; solução de preparação que pode decidir uma caçada.";
+EQ-070;Gazua;CONSUMÍVEL;COMUM;1 uso;3;0.03;2.4;3.9;1.2;1.5;Cidade;"Abrir fechadura comum sem teste tem utilidade superior ao metal; unidade consumida conforme a carta.";
+EQ-071;Poção de Pele de Pedra;CONSUMÍVEL;INCOMUM;1 dose;25;0.25;17.5;35.0;8.7;12.5;Especialista;"Três Guardas entregam proteção imediata; dose única, sem durabilidade de armadura.";
+EQ-072;Poção Carmim;CONSUMÍVEL;INCOMUM;1 dose;35;0.35;24.5;49.0;12.2;17.5;Especialista;"Duas ações extras de ataque podem decidir o turno; perda de vida limita o prêmio.";
+EQ-073;Incenso de Jasmim;CONSUMÍVEL;INCOMUM;1 porção;12;0.12;8.4;16.8;4.2;6.0;Especialista;"Reduz custo de magias na área por janela curta; valor cresce com coordenação do grupo.";
+EQ-074;Frasco de Piche;CONSUMÍVEL;INCOMUM;1 frasco;10;0.1;8.0;13.0;4.0;5.0;Cidade;"Controle de terreno e Imobilizar na área agregam valor; matérias-primas são baratas.";
+EQ-075;Poção Turquesa;CONSUMÍVEL;INCOMUM;1 dose;30;0.3;21.0;42.0;10.5;15.0;Especialista;"Dois movimentos extras servem a fuga e posição; cinco Fadigas restringem o uso.";
+EQ-076;Sangue de Batalha;CONSUMÍVEL;RARA;1 dose;120;1.2;78.0;180.0;36.0;60.0;Encomenda;"Bônus de três rodadas e imunidades são fortes; exilar oito cartas é custo severo que reduz compradores.";
+EQ-077;Flocos de Sombras;CONSUMÍVEL;RARA;1 porção;150;1.5;97.5;225.0;45.0;75.0;Encomenda;"Teleporte por Reação é ferramenta de sobrevivência; Medo e exigência de penumbra limitam a aplicação.";
+EQ-078;Água Abençoada;CONSUMÍVEL;RARA;1 dose;100;1.0;70.0;140.0;35.0;50.0;Especialista;"Cura do grupo por magias divinas tem valor situacional alto; aumenta Fadiga das magias.";
+EQ-079;Flecha Explosiva;CONSUMÍVEL;RARA;1 flecha;60;0.6;42.0;84.0;21.0;30.0;Especialista;"Uma munição de área; risco de explodir ao sofrer Fogo impede preço equivalente a arma permanente.";
+EQ-080;Pergaminho do Desencantamento;CONSUMÍVEL;RARA;1 uso;180;1.8;117.0;270.0;54.0;90.0;Encomenda;"Desfazer magia contínua é resposta rara e valiosa; exige quatro Fadigas e consome o recurso.";
+EQ-081;Corda (15 m);PERMANENTE;COMUM;15 metros;3;0.03;2.4;3.8;1.2;1.5;Vila;Ferramenta cotidiana de escalada, comprada por comprimento definido.;
+EQ-082;Pé de Cabra;PERMANENTE;COMUM;1 ferramenta;5;0.05;4.0;6.3;2.0;2.5;Vila;Ofício simples, reutilizável e útil a obras e exploração.;
+EQ-083;Pederneira;PERMANENTE;COMUM;1 conjunto;0.5;0.005;0.4;0.6;0.2;0.25;Vila;"Produção corrente e uso repetido; não confundir com uma tocha consumida.";
+EQ-084;Kit de Reparos;PERMANENTE;COMUM;1 kit reutilizável;40;0.4;32.0;52.0;16.0;20.0;Cidade;"Restaurar até três vidas em cada descanso oferece economia repetida; preço inclui a capacidade da carta.";O texto não define cargas ou reposição. Não cobrei materiais por uso que a regra não exige.
+EQ-085;Kit de Acampamento;PERMANENTE;COMUM;1 kit;15;0.15;12.0;18.8;6.0;7.5;Vila;"Conjunto funcional para descanso ao relento; valor de equipamento de viagem completo, não só uma manta.";
+EQ-086;Lanterna;PERMANENTE;COMUM;1 lanterna;8;0.08;6.4;10.4;3.2;4.0;Cidade;"Trabalho de funileiro e proteção da chama; bem durável de iluminação.";"O item não define consumo de combustível; não adicionei taxa de óleo à regra."
+EQ-087;Vara de 3 Metros;PERMANENTE;COMUM;1 vara de 3 m;0.3;0.003;0.2;0.4;0.1;0.15;Vila;"Muito pouco beneficiamento; a vantagem vem de usar a ferramenta correta.";
+EQ-088;Espelho de Bolso;PERMANENTE;COMUM;1 espelho;5;0.05;4.0;6.5;2.0;2.5;Cidade;"Superfície bem acabada exige ofício; tamanho pequeno limita matéria-prima.";
+EQ-089;Bandoleira de Armas;PERMANENTE;COMUM;1 bandoleira;20;0.2;16.0;26.0;8.0;10.0;Cidade;"Facilita virar a arma duas vezes por cena; o benefício funcional vale mais que correias simples.";
+EQ-090;Ferramentas de Ladrão;PERMANENTE;COMUM;1 kit;30;0.3;24.0;39.0;12.0;15.0;Cidade;"Conjunto de precisão durável; preço diferente da Gazua consumível de uma abertura.";
+EQ-091;Símbolo Sagrado;PERMANENTE;COMUM;1 foco;180;1.8;126.0;252.0;63.0;90.0;Especialista;"É um foco com recuperação própria de Fadiga; não é símbolo religioso decorativo comum.";
+EQ-092;Corda de Arco da Penumbra;PERMANENTE;COMUM;1 corda;80;0.8;56.0;112.0;28.0;40.0;Especialista;Scry repetido após ataque sob condição de Sombra ou penumbra justifica prêmio sobre uma corda normal.;
+EQ-093;Varinha Eletrizante;PERMANENTE;COMUM;1 foco;220;2.2;154.0;308.0;77.0;110.0;Especialista;"Dano sem teste de ataque que ignora resistência tem valor confiável; três Fadigas restringem a frequência.";
+EQ-094;Paraquedas Élfico;PERMANENTE;INCOMUM;1 equipamento;250;2.5;175.0;350.0;87.5;125.0;Especialista;Proteção automática contra quedas, reutilizável após descanso, excede tecido de viagem.;
+EQ-095;Bússola do Rumo;PERMANENTE;INCOMUM;1 bússola;350;3.5;245.0;490.0;122.5;175.0;Especialista;Apontar para posição marcada é localização mágica, diferente de apontar para o norte.;
+EQ-096;Equipamento de Pesca;PERMANENTE;INCOMUM;1 kit;8;0.08;6.4;10.0;3.2;4.0;Vila;"Ferramenta comum, embora incomum na coleção; utilidade vem de tempo e local apropriado.";Alimenta cinco pessoas em 30 minutos. Disponibilidade depende do ambiente, não de uma sobretaxa por raridade.
+EQ-097;Gancho de Escalada;PERMANENTE;INCOMUM;1 equipamento;45;0.45;36.0;58.5;18.0;22.5;Cidade;Alcance e capacidade de puxar objeto ou portador exigem montagem melhor que gancho solto.;
+EQ-098;Grilhão de Ferro;PERMANENTE;INCOMUM;1 conjunto;15;0.15;12.0;19.5;6.0;7.5;Cidade;"Contenção reutilizável; requer teste em combate e não paralisa automaticamente qualquer alvo.";
+EQ-099;Manopla de Bronze;PERMANENTE;INCOMUM;1 manopla;60;0.6;42.0;84.0;21.0;30.0;Especialista;Impedir desarme repetidamente exige ajuste especializado, além do metal.;
+EQ-100;Botas de Lince;PERMANENTE;INCOMUM;1 par;180;1.8;126.0;252.0;63.0;90.0;Especialista;Metade do dano de queda é proteção reutilizável para exploração e fuga.;
+EQ-101;Pergaminho Ancestral;PERMANENTE;INCOMUM;1 talismã;400;4.0;260.0;600.0;120.0;200.0;Encomenda;Aplicar Penalidade a atacantes à distância repetidamente vale mais que o suporte físico.;A carta é Permanente: não tratar como pergaminho de uso único.
+EQ-102;Manto Camuflado;PERMANENTE;INCOMUM;1 manto;120;1.2;84.0;168.0;42.0;60.0;Especialista;"Vantagem permanente de Furtividade atende exploradores; efeito amplo supera uma capa rústica.";
+EQ-103;Anel do Iniciado;PERMANENTE;INCOMUM;1 anel;500;5.0;350.0;700.0;175.0;250.0;Especialista;"Converte exílio em recuperação de Fadiga uma vez por turno; recurso perdido limita seu valor.";
+EQ-104;Elmo de Touro;PERMANENTE;INCOMUM;1 elmo;600;6.0;390.0;900.0;180.0;300.0;Encomenda;Imunidade a Cegueira e Confusão tem alto valor recorrente, sem depender de consumíveis.;
+EQ-105;Bainha Impetuosa;PERMANENTE;INCOMUM;1 bainha;200;2.0;140.0;280.0;70.0;100.0;Especialista;Bônus de dano após virar a arma é repetível, mas exige o gatilho correto.;
+EQ-106;Cachecol da Parceria;PERMANENTE;INCOMUM;1 cachecol;450;4.5;315.0;630.0;157.5;225.0;Especialista;"Duplicar fichas em aliado abre combinações; qualidade depende de que fichas o grupo gera.";
+EQ-107;Cinto Estelar;PERMANENTE;INCOMUM;1 cinto;600;6.0;390.0;900.0;180.0;300.0;Encomenda;"Ampliar impedimento muda o controle de área de um defensor; efeito reutilizável.";
+EQ-108;Botas Seccundas;PERMANENTE;INCOMUM;1 par;350;3.5;245.0;490.0;122.5;175.0;Especialista;Salto no ar é mobilidade incomum, com custo de Reação e dependência da regra de Salto.;
+EQ-109;Carta da Sorte;PERMANENTE;RARA;1 talismã;2000;20.0;1200.0;3200.0;500.0;1000.0;Relíquia;Escolher valor num teste uma vez por descanso tem grande alcance tático e social.;
+EQ-110;Ampulheta Trincada;PERMANENTE;RARA;1 relíquia;3500;35.0;2100.0;5600.0;875.0;1750.0;Relíquia;"Antecipar um turno permite explosões de ações; pular o próximo mantém um custo real.";
+EQ-111;Máscara do Impostor;PERMANENTE;RARA;1 máscara;5000;50.0;3000.0;8000.0;1250.0;2500.0;Relíquia;"Imitação de voz e rosto interessa a espionagem e intriga; dano ou remoção encerram o efeito.";
+EQ-112;Selo de Sangue;PERMANENTE;RARA;1 talismã;4000;40.0;2400.0;6400.0;1000.0;2000.0;Relíquia;"Trocar exílio por custos de Fadiga rompe a cadência de habilidades; custo em baralho restringe demanda.";
+EQ-113;Colar Vinculador;PERMANENTE;RARA;1 colar;4500;45.0;2700.0;7200.0;1125.0;2250.0;Relíquia;"Redistribuir dano e cura durante uma cena é proteção de dupla; requer aliado e coordenação.";
+EQ-114;Grevas do Vazio;PERMANENTE;RARA;1 par;6500;65.0;3900.0;10400.0;1625.0;3250.0;Relíquia;"Teleporte reutilizável com vantagem ofensiva tem aplicação ampla; limite por turno e Fadiga moderam.";
+EQ-115;Espelho Arcano;PERMANENTE;RARA;1 espelho;12000;120.0;7200.0;19200.0;3000.0;6000.0;Relíquia;"Refletir magia arcana por Reação interessa a corte e guerra; público e oferta são restritos.";O texto não estabelece limite por cena. Preço alto não substitui futura revisão de equilíbrio.
+EQ-116;Varinha de Cristal;FOCO ARCANO;Não informada;1 foco;400;4.0;280.0;560.0;140.0;200.0;Especialista;"Aumenta dano de vários ataques mágicos no turno; depende de atributos e janela de conjuração.";
+EQ-117;Cajado do Aprendiz;FOCO ARCANO;Não informada;1 foco;250;2.5;175.0;350.0;87.5;125.0;Especialista;"Virar a carta de Aprendiz é função própria de classe; pouca procura fora desse usuário.";Depende do texto atualizado da carta de Aprendiz para medir todas as combinações.
+EQ-118;Cajado de Batalha;FOCO ARCANO;Não informada;1 foco;1200;12.0;780.0;1800.0;360.0;600.0;Encomenda;"Eleva limite do 21 em magia e empurra vários inimigos; ganho permanente e controle em área.";
+EQ-119;Orbe de Concentração;FOCO ARCANO;Não informada;1 foco;700;7.0;490.0;980.0;245.0;350.0;Especialista;Comprar carta adicional ao Concentrar oferece vantagem recorrente e exige gastar Fadiga.;
+EQ-120;Orbe de Proteção;FOCO ARCANO;Não informada;1 foco;900;9.0;630.0;1260.0;315.0;450.0;Especialista;Defesa passiva melhor e resistência temporária de aliado fazem dele proteção arcana versátil.;
+EQ-121;Cálice da Vida;FOCO SAGRADO;Não informada;1 foco;800;8.0;560.0;1120.0;280.0;400.0;Especialista;"Melhora todas as magias de cura do usuário; efeito pequeno por uso, valioso pela repetição.";
+EQ-122;Relicário do Guardião;FOCO SAGRADO;Não informada;1 foco;450;4.5;315.0;630.0;157.5;225.0;Especialista;"Fornece Guarda a um aliado com custo alto; útil, mas inferior a uma aura sem esse gasto.";
+EQ-123;Marca da Punição;FOCO SAGRADO;Não informada;1 foco;2400;24.0;1560.0;3600.0;720.0;1200.0;Encomenda;Dois danos extras e Ferimento em magias são aumentos recorrentes, especialmente em ataques de área.;O texto não limita a um alvo ou uma vez por turno. A avaliação assume sua redação atual.
+EQ-124;Turíbulo das Bênçãos;FOCO SAGRADO;Não informada;1 foco;4500;45.0;2925.0;6750.0;1350.0;2250.0;Encomenda;Recuperar Fadiga extra do portador e adjacentes acelera o grupo inteiro, com grande valor coletivo.;Não acrescentei gasto de incenso: a regra atual não exige reposição.
+EQ-125;Escrituras de Maftoné;FOCO SAGRADO;Não informada;1 foco;700;7.0;490.0;980.0;245.0;350.0;Especialista;"Scry para aliado e dano extra por Espírito combinam suporte e ataque; o livro transmite função reutilizável.";
+EQ-126;Rosário da Devoção;FOCO SAGRADO;Não informada;1 foco;900;9.0;630.0;1260.0;315.0;450.0;Especialista;Resistência passiva e conversão de Ferimento em Foco dão proteção e gestão de fichas.;
+EQ-127;Runa de Fogo;RUNA CONSUMÍVEL;Não informada;1 runa;8;0.08;5.6;11.2;2.8;4.0;Especialista;"Fogo e alívio de frio são efeitos de uma carga; não vale como foco de uso permanente.";
+EQ-128;Runa de Água;RUNA CONSUMÍVEL;Não informada;1 runa;10;0.1;7.0;14.0;3.5;5.0;Especialista;Água potável e apagar Fogo têm utilidade civil e de expedição, com volume limitado.;
+EQ-129;Runa de Terra;RUNA CONSUMÍVEL;Não informada;1 runa;40;0.4;28.0;56.0;14.0;20.0;Especialista;Quebrar um metro cúbico de pedra ou reparar estrutura tem valor de obra além do combate.;"Preço sensível ao uso em mineração e construção; não presume criar minério ou material vendável."
+EQ-130;Runa de Ar;RUNA CONSUMÍVEL;Não informada;1 runa;10;0.1;7.0;14.0;3.5;5.0;Especialista;Respiração curta, empurrão ou planar por um turno oferecem soluções pontuais.;
+EQ-131;Runa de Luz;RUNA CONSUMÍVEL;Não informada;1 runa;18;0.18;12.6;25.2;6.3;9.0;Especialista;Cegueira a distância ou descarte de Sombra na área são respostas táticas fortes de uso único.;
+EQ-132;Runa de Sombra;RUNA CONSUMÍVEL;Não informada;1 runa;30;0.3;21.0;42.0;10.5;15.0;Especialista;Retornar carta do exílio é recuperação persistente, além das outras escolhas da runa.;Definir acesso ao exílio é relevante para não banalizar custos permanentes de outras cartas.
+EQ-133;Amuleto de Pacenas;AMULETO;Não informada;1 amuleto;1000;10.0;650.0;1500.0;300.0;500.0;Encomenda;"Defesa contra distância e neblina reutilizável; defesa específica vale menos que proteção geral.";
+EQ-134;Amuleto de Grevha;AMULETO;Não informada;1 amuleto;2500;25.0;1625.0;3750.0;750.0;1250.0;Encomenda;"Dano, resistência e avanço ofensivo servem a vanguarda; condição de posição impede benefício universal.";
+EQ-135;Amuleto de Nebtor;AMULETO;Não informada;1 amuleto;1400;14.0;910.0;2100.0;420.0;700.0;Encomenda;Diplomacia e mensagem privada têm valor político e de espionagem, além do combate.;
+EQ-136;Amuleto de Vael;AMULETO;Não informada;1 amuleto;2000;20.0;1300.0;3000.0;600.0;1000.0;Encomenda;"Amplifica ataques contra Fogo e transforma remoção de fichas em cura; exige fontes de Fogo.";
+EQ-137;Amuleto de Kanil;AMULETO;Não informada;1 amuleto;3500;35.0;2275.0;5250.0;1050.0;1750.0;Encomenda;Evitar a última perda por dano uma vez por cena e curar aliado com remoção de condição são funções recorrentes de sobrevivência.;
+EQ-138;Amuleto de Kagen;AMULETO;Não informada;1 amuleto;4500;45.0;2925.0;6750.0;1350.0;2250.0;Encomenda;Perceber espíritos e passagens e ignorar armadura dão valor de exploração e guerra.;
+EQ-139;Grimório do Fogo;GRIMÓRIO BÁSICO;Não informada;1 exemplar funcional;400;4.0;280.0;560.0;140.0;200.0;Especialista;"Três magias elementais de ataque, movimento e resistência; preço inclui conhecimento funcional, não só o livro.";Regras de copiar, ensinar e vender cópias não estão definidas.
+EQ-140;Grimório da Água;GRIMÓRIO BÁSICO;Não informada;1 exemplar funcional;350;3.5;245.0;490.0;122.5;175.0;Especialista;Ataque, respiração aquática e controle tornam o volume útil a expedições especializadas.;Cópias e ensino não têm regra de custo definida.
+EQ-141;Grimório da Terra;GRIMÓRIO BÁSICO;Não informada;1 exemplar funcional;450;4.5;315.0;630.0;157.5;225.0;Especialista;Dano contra armadura, percepção sísmica e ataque em linha têm utilidade militar e subterrânea.;Cópias e ensino não têm regra de custo definida.
+EQ-142;Grimório do Ar;GRIMÓRIO BÁSICO;Não informada;1 exemplar funcional;450;4.5;315.0;630.0;157.5;225.0;Especialista;Mobilidade, defesa e passagem por frestas ampliam utilidade além do dano de combate.;Cópias e ensino não têm regra de custo definida.
+EQ-143;Grimório da Luz;GRIMÓRIO BÁSICO;Não informada;1 exemplar funcional;500;5.0;350.0;700.0;175.0;250.0;Especialista;Revelação de ocultos, cura em grupo e ataque radiante atendem segurança e caçadas.;Cópias e ensino não têm regra de custo definida.
+EQ-144;Grimório da Sombra;GRIMÓRIO BÁSICO;Não informada;1 exemplar funcional;450;4.5;315.0;630.0;157.5;225.0;Especialista;Ocultação e fichas em área têm alto valor para infiltração e controle.;Cópias e ensino não têm regra de custo definida.
+EQ-145;Códice das Cinzas;GRIMÓRIO RARO;RARA;1 exemplar funcional;3500;35.0;2100.0;5600.0;875.0;1750.0;Relíquia;Áreas grandes de Fogo e manutenção de efeito exigem especialista com dois elementos.;
+EQ-146;Sussurros do Breu;GRIMÓRIO RARO;RARA;1 exemplar funcional;4500;45.0;2700.0;7200.0;1125.0;2250.0;Relíquia;Área sem ar, trevas e dano que escala com Medo têm valor de cerco e controle.;"Efeitos de sufocamento e sustentação merecem teste de mesa; preço não resolve sua intensidade."
+EQ-147;Códice da Chama Negra;GRIMÓRIO RARO;RARA;1 exemplar funcional;4000;40.0;2400.0;6400.0;1000.0;2000.0;Relíquia;"Destruir armadura e drenar calor são ferramentas fortes; custos de vida e Fadiga restringem uso.";
+EQ-148;Grimório do Lodo;GRIMÓRIO RARO;RARA;1 exemplar funcional;3000;30.0;1800.0;4800.0;750.0;1500.0;Relíquia;Controle de solo em área e deslocamento de inimigos servem a defesa e emboscada.;
+EQ-149;Estudo de Geofótons;GRIMÓRIO RARO;RARA;1 exemplar funcional;5000;50.0;3000.0;8000.0;1250.0;2500.0;Relíquia;Escavar e ver através de paredes têm valor de engenharia, mineração e espionagem além de combate.;"Caverna dura 24 horas; não trate como obra permanente nem suponha que o texto crie minério."
+EQ-150;Portfólio do Luar Marinho;GRIMÓRIO RARO;RARA;1 exemplar funcional;4200;42.0;2520.0;6720.0;1050.0;2100.0;Relíquia;Refletir magia por superfície e controlar área luminosa atendem defesa preparada e intriga.;
+EQ-151;A Batalha dos Anjos;TEXTO SAGRADO;Não informada;1 exemplar funcional;800;8.0;520.0;1200.0;240.0;400.0;Encomenda;Bônus para aliados, ataque múltiplo e proteção valem pela coordenação de grupo.;
+EQ-152;A Criação da Luz;TEXTO SAGRADO;Não informada;1 exemplar funcional;900;9.0;585.0;1350.0;270.0;450.0;Encomenda;Iluminação extensa, mudança no limite do 21 e cura tornam o volume útil a comunidades e expedições.;
+EQ-153;Os Ensinamentos Divinos;TEXTO SAGRADO;Não informada;1 exemplar funcional;1100;11.0;715.0;1650.0;330.0;550.0;Encomenda;Remover condições em conjunto e imunidade mental de reação têm valor de sobrevivência coletiva.;
+EQ-154;As Leis Fundamentais;TEXTO SAGRADO;Não informada;1 exemplar funcional;1000;10.0;650.0;1500.0;300.0;500.0;Encomenda;Controlar ações e movimento de inimigos e puni-los por atacar favorece defesa organizada.;
+EQ-155;O Fogo Purificador;TEXTO SAGRADO;Não informada;1 exemplar funcional;1200;12.0;780.0;1800.0;360.0;600.0;Encomenda;Cura, dano antiprofanidade e pira de redução de Fadiga oferecem grande utilidade coletiva.;
+EQ-156;Corrente de Caça;ARMA CORPO A CORPO;INCOMUM;1 arma;60;0.6;42.0;84.0;21.0;30.0;Especialista;"Elos soldados de boa resistência e reação de captura justificam prêmio funcional; não exige corrente mágica flamejante.";
+EQ-157;Poção de Regeneração;CONSUMÍVEL;COMUM;1 dose;10;0.1;7.0;14.0;3.5;5.0;Especialista;"Pode curar seis ao longo de três turnos, mas dano faz perder uma cura; vale menos que a cura imediata de cinco.";
+EQ-158;Poção de Fôlego Prolongado;CONSUMÍVEL;COMUM;1 dose;10;0.1;7.0;14.0;3.5;5.0;Especialista;Três Fadigas removidas futuramente são menos flexíveis que a recuperação imediata da Mana Pequena.;
+EQ-159;Poção de Visão Noturna;CONSUMÍVEL;COMUM;1 dose;15;0.15;10.5;21.0;5.2;7.5;Especialista;"Visão no escuro por dez minutos liberta a mão da luz e ajuda infiltração; duração curta limita o preço.";
+EQ-160;Poção de Vigor Lunar;CONSUMÍVEL;INCOMUM;1 dose;22;0.22;15.4;30.8;7.7;11.0;Especialista;"Reserva de seis vidas absorve dano de armadura por uma cena; não se cura nem persiste como armadura real.";
+EQ-161;Poção de Sangue Cáustico;CONSUMÍVEL;INCOMUM;1 dose;28;0.28;19.6;39.2;9.8;14.0;Especialista;"Retalia por três turnos, mas exige perder vida em corpo a corpo; efeito forte e arriscado.";
+EQ-162;Poção de Reflexos Predatórios;CONSUMÍVEL;RARA;1 dose;90;0.9;58.5;135.0;27.0;45.0;Encomenda;"Pode gerar Reações ao derrotar inimigos; revela as defesas e depende de abates durante janela curta.";
+EQ-163;Poção de Sangue Limpo;CONSUMÍVEL;INCOMUM;1 dose;18;0.18;12.6;25.2;6.3;9.0;Especialista;"Remove Veneno e protege de novas fichas por três turnos; uso preventivo cobra prêmio sobre Antídoto.";
+EQ-164;Poção de Mergulho;CONSUMÍVEL;COMUM;1 dose;20;0.2;14.0;28.0;7.0;10.0;Especialista;Dez minutos de respiração aquática e Percepção são segurança valiosa, com demanda concentrada em exploração.;
+EQ-165;Poção de Foco Crescente;CONSUMÍVEL;INCOMUM;1 dose;24;0.24;16.8;33.6;8.4;12.0;Especialista;"Até três Focos exigem acertos distribuídos nos próprios turnos; ganho futuro e condicionado.";
+EQ-166;Poção de Amplificação;CONSUMÍVEL;COMUM;1 dose;16;0.16;11.2;22.4;5.6;8.0;Especialista;"Aumenta duas magias em um alvo por uso; quatro pontos totais potenciais não amplificam a área inteira.";
+EQ-167;Poção de Purificação;CONSUMÍVEL;COMUM;1 dose;8;0.08;5.6;11.2;2.8;4.0;Especialista;"Remove Veneno e termina poções, inclusive bônus; não evita consequências de término.";
+EQ-168;Poção de Superação;CONSUMÍVEL;INCOMUM;1 dose;18;0.18;12.6;25.2;6.3;9.0;Especialista;"Libera requisitos de equipamento por uma cena; não aumenta dano nem testes, evitando preço de melhoria de atributo.";
+EQ-169;Poção de Feromônios;CONSUMÍVEL;COMUM;1 dose;10;0.1;7.0;14.0;3.5;5.0;Especialista;"Oculta cheiro por dez minutos; benefício estreito para infiltração e caçada, sem invisibilidade geral.";
+EQ-170;Poção de Reaprendizado;CONSUMÍVEL;INCOMUM;1 dose;80;0.8;52.0;120.0;24.0;40.0;Encomenda;"Troca uma escolha de habilidade por outra de mesmo custo; serviço valioso de treinamento, sem gerar XP.";Não muda raça, classe, atributos ou carta de herói.

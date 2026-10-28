@@ -1,0 +1,94 @@
+{
+  "titulo": "Três cartas gerais adicionais propostas para o Bruxo",
+  "versao": 2,
+  "data": "2026-10-27",
+  "estado": "rascunho_para_integracao_e_revisao",
+  "requer": "Pacto",
+  "objetivo": "Completar as habilidades gerais em nove pares de 1 XP, seis meia cartas de ½ XP e três pares de 2 XP. Não conta habilidades iniciais de patronos nem metades de herói.",
+  "observacao": "Estas cartas são habilidades gerais; não concedem um repertório novo de magias. Custos em Pacto usam a reserva do pacto ao qual se referem. As propostas não alteram a cobrança da Fênix.",
+  "cartas": [
+    {
+      "id": "BR-G07",
+      "xp": 1,
+      "nome": "Nominar o Devedor / Executar a Cláusula",
+      "grupo": "Potência especializada",
+      "lados": [
+        {
+          "nome": "Nominar o Devedor",
+          "texto": "1 de Fadiga, Ação de Movimento: escolha um inimigo em alcance curto. Faça um teste contestado de Espírito contra Espírito dele. Se vencer, coloque 1 ficha de Marcação no alvo.",
+          "limite_fadiga": 2,
+          "custo_fadiga": 1,
+          "acao": "Movimento"
+        },
+        {
+          "nome": "Executar a Cláusula",
+          "texto": "1 de Fadiga e 1 Pacto: antes de comprar as cartas de um ataque mágico concedido por esse pacto contra um inimigo Marcado, declare este aprimoramento. Imediatamente após as duas cartas iniciais do defensor serem colocadas, e antes de você decidir se compra cartas adicionais, você pode escolher uma dessas cartas que esteja revelada, colocá-la no fundo do baralho dele e revelar uma substituta. Depois, ambos seguem a ordem normal do ataque e da defesa; o defensor pode comprar mais cartas e estourar normalmente. Apenas uma substituição por teste, sempre nessa janela inicial.",
+          "limite_fadiga": 2,
+          "custo_fadiga": 1,
+          "acao": null
+        }
+      ],
+      "notas_de_revisao": [
+        "A preparação é Marcação; o verso usa a informação inicial para tentar mudar uma carta adversária.",
+        "O custo é pago antes do teste; não permite escolher depois de conhecer o resultado final da defesa.",
+        "A substituição não garante um resultado menor nem impede reação ou compras normais. Não gera um ataque ou uma conjuração nova."
+      ]
+    },
+    {
+      "id": "BR-G08",
+      "xp": 1,
+      "nome": "Patrono Presente / Canal sem Ruído",
+      "grupo": "Vínculos",
+      "lados": [
+        {
+          "nome": "Patrono Presente",
+          "texto": "1 de Fadiga, 1 Pacto e Reação: quando um efeito de uma criatura que você possa ver em alcance curto anularia uma magia concedida por esse pacto, antes de resolver a anulação, faça um teste contestado de Espírito contra Espírito dessa criatura. Se vencer, sua magia continua sua resolução normal. Se perder, ela é anulada normalmente. Os custos que você e a criatura já pagaram permanecem pagos. Uma conjuração só pode receber esta resistência uma vez, mesmo que sofra outra tentativa de anulação.",
+          "limite_fadiga": 2,
+          "custo_fadiga": 1,
+          "acao": "Reação"
+        },
+        {
+          "nome": "Canal sem Ruído",
+          "texto": "1 de Fadiga e 1 Pacto: remova 1 ficha de Penalidade ou de Atormentado da habilidade inicial desse pacto, sem virá-la. Uma vez por turno. Isso não repara nem impede a cobrança de um patrono.",
+          "limite_fadiga": 2,
+          "custo_fadiga": 1,
+          "acao": null
+        }
+      ],
+      "notas_de_revisao": [
+        "Preserva o mesmo repertório e exige oposição com risco para resistir a uma anulação.",
+        "Resistir à anulação não repete a magia, seus efeitos, seus custos ou o teste de ataque; apenas permite continuar a conjuração que já estava em andamento.",
+        "Só protege contra anulação, não contra perda de alvo, resistência a dano ou condições que impeçam conjurar.",
+        "A cobrança permanece devida. Não transforma remover Atormentado em cumprimento do patrono."
+      ]
+    },
+    {
+      "id": "BR-G09",
+      "xp": 1,
+      "nome": "Emprestar a Vontade / Ouvir a Reprimenda",
+      "grupo": "Preço e poder",
+      "lados": [
+        {
+          "nome": "Emprestar a Vontade",
+          "texto": "1 de Fadiga: antes de realizar um teste de perícia cuja tarefa avance diretamente o cumprimento da cobrança de seu pacto pleno, use Espírito no lugar do atributo pedido, mantendo a perícia e a dificuldade originais. O mestre confirma a relação concreta com a cobrança antes do pagamento. Uma vez por cena. Não se aplica a testes de ataque ou defesa.",
+          "limite_fadiga": 2,
+          "custo_fadiga": 1,
+          "acao": null
+        },
+        {
+          "nome": "Ouvir a Reprimenda",
+          "texto": "1 de Fadiga e 1 Pacto da reserva plena: depois de falhar em um teste de perícia cuja tarefa avance diretamente o cumprimento da cobrança desse pacto, compre 2 cartas para a mão. A falha e suas consequências continuam valendo. O mestre precisa ter confirmado a relação da tarefa com a cobrança antes do teste. Uma vez por cena. Não se aplica a testes de ataque ou defesa nem pode usar uma reserva suspensa.",
+          "limite_fadiga": 2,
+          "custo_fadiga": 1,
+          "acao": null
+        }
+      ],
+      "notas_de_revisao": [
+        "Ajuda em obrigações reais por uma janela estreita; não substitui atributos em qualquer interação.",
+        "As duas faces são alternativas. Ouvir a Reprimenda não pressupõe que Emprestar a Vontade tenha sido usado no mesmo teste.",
+        "A compra não refaz o teste, não significa cumprimento e não concede Pacto.",
+        "As condições e o prazo da cobrança da Fênix ainda dependem do autor, então esta carta não os cria."
+      ]
+    }
+  ]
+}

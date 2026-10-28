@@ -1,0 +1,18 @@
+{
+  "id": "EQ-011",
+  "nome": "Florete de Duelista",
+  "arquivo": "artes/revisadas/EQ-011_v02.png",
+  "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-a34146ae-6f0c-4227-9cc4-f0204444ef3e.png",
+  "substitui": "C:/Users/Gamer/Documents/ChatGPT/SISTEMA DE RPG/producao_cartas/artes/lote/EQ-011_v01.png",
+  "dimensoes": [
+    1061,
+    1483
+  ],
+  "modo": "RGBA",
+  "alpha": [
+    0,
+    255
+  ],
+  "sha256": "40eb625d1856a7e880f26b3b345975074cdf70df69c92d5809a3c33c851342b5",
+  "status": "revisao_visual_pendente"
+}

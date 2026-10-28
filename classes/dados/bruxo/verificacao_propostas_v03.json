@@ -1,0 +1,54 @@
+{
+  "data": "2026-10-27",
+  "estado": "revisao_aplicada_sem_playtest",
+  "versao": 3,
+  "patronos": 10,
+  "cartas_gerais": 18,
+  "paineis": 28,
+  "abrir_e_recolher": true,
+  "ids_unicos": true,
+  "desktop": {
+    "width": 1440,
+    "document": 1440,
+    "overflow": 0
+  },
+  "mobile": {
+    "width": 480,
+    "document": 480,
+    "overflow": 0
+  },
+  "erros_javascript": [],
+  "partidas_ou_simulacoes_de_equilibrio": false,
+  "fenix_integralmente_preservada": true,
+  "cobranca_fenix": "em_aberto",
+  "fontes_da_revisao_preservadas": true,
+  "pdf_habilidades_preservado": true,
+  "faces_gerais": 30,
+  "distribuicao_xp": {
+    "1_xp": 9,
+    "meia_carta": 6,
+    "2_xp": 3
+  },
+  "inspecao_visual": [
+    "previa_patrono_novo_v03.png",
+    "previa_habilidade_nova_celular_v03.png"
+  ],
+  "arquivos": [
+    {
+      "arquivo": "novos_pactos_v03.json",
+      "sha256": "a088718b728b8f7e61a6d12b2089ff928ef90746865eeae61e235af66f3ff1bb"
+    },
+    {
+      "arquivo": "habilidades_gerais_v03.json",
+      "sha256": "fa1e52639a985d316cf093b53a4dffd9474125df5c84812946b4995105bb298d"
+    },
+    {
+      "arquivo": "regras_propostas_lote_v03.json",
+      "sha256": "4ff2655cc230c96983433d60148b0cb5cdbb4a489518f4d42ea52967575e8ad0"
+    },
+    {
+      "arquivo": "ajustes_aplicados_v03.json",
+      "sha256": "978a71503a9ff3a0712bf2f09a7fdc6bd906b165cbe082ff1710d7e3047b87ac"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "EQ-020",
+  "nome": "Florete do Contragolpe",
+  "arquivo": "artes/revisadas/EQ-020_v02.png",
+  "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-e15ff41c-8cd9-4247-863f-8d19a00ed981.png",
+  "substitui": "C:/Users/Gamer/Documents/ChatGPT/SISTEMA DE RPG/producao_cartas/artes/lote/EQ-020_v01.png",
+  "dimensoes": [
+    1061,
+    1482
+  ],
+  "modo": "RGBA",
+  "alpha": [
+    0,
+    255
+  ],
+  "sha256": "0da9586566cf4f7e54a4b8ec4df806194468827235050e5ad642146fdcf84ec9",
+  "status": "revisao_visual_pendente"
+}

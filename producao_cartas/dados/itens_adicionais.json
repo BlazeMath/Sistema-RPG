@@ -1,0 +1,284 @@
+[
+  {
+    "id": "EQ-157",
+    "nome": "Poção de Regeneração",
+    "categoria": "CONSUMÍVEL · COMUM",
+    "campos": {},
+    "tags": [
+      "Consumível",
+      "Poção"
+    ],
+    "habilidade": "Ação Padrão: no início de cada um dos seus próximos 3 turnos, cure 2. Se você sofrer dano à vida enquanto o efeito durar, a próxima dessas curas não ocorre.",
+    "revisao": "Regeneração gradual com uma pausa após dano. Cada cura segue o custo normal de cura do sistema. Adaptação implementada a pedido do autor; valores iniciais para playtest.",
+    "fonte": "Adaptação de Swallow (The Witcher 3), criada para o Sistema 21 em 27/10/2026. Ver comparacao_pocoes_witcher3_2026-10-27.json.",
+    "piloto": false,
+    "imagem": "artes/pocoes/EQ-157_v01.png",
+    "diagramacao": "frente_unica",
+    "tipo_consumivel": "Poção",
+    "referencia_witcher3": "Swallow",
+    "estado_arte": "concluida",
+    "origem": "expansao_pocoes_2026-10-27"
+  },
+  {
+    "id": "EQ-158",
+    "nome": "Poção de Fôlego Prolongado",
+    "categoria": "CONSUMÍVEL · COMUM",
+    "campos": {},
+    "tags": [
+      "Consumível",
+      "Poção"
+    ],
+    "habilidade": "Ação Padrão: no início de cada um dos seus próximos 3 turnos, remova 1 ficha de Fadiga de uma de suas cartas.",
+    "revisao": "Recuperação futura, em contraste com a remoção imediata da Poção de Mana Pequena. Não oferece recuperação permanente. Adaptação implementada a pedido do autor; valores iniciais para playtest.",
+    "fonte": "Adaptação de Tawny Owl (The Witcher 3), criada para o Sistema 21 em 27/10/2026. Ver comparacao_pocoes_witcher3_2026-10-27.json.",
+    "piloto": false,
+    "imagem": "artes/pocoes/EQ-158_v01.png",
+    "diagramacao": "frente_unica",
+    "tipo_consumivel": "Poção",
+    "referencia_witcher3": "Tawny Owl",
+    "estado_arte": "concluida",
+    "origem": "expansao_pocoes_2026-10-27"
+  },
+  {
+    "id": "EQ-159",
+    "nome": "Poção de Visão Noturna",
+    "categoria": "CONSUMÍVEL · COMUM",
+    "campos": {},
+    "tags": [
+      "Consumível",
+      "Poção"
+    ],
+    "habilidade": "Ação Padrão: por 10 minutos, você enxerga normalmente na penumbra e na escuridão até o alcance curto.",
+    "revisao": "Visão pessoal sem emitir luz. Não revela automaticamente criaturas Ocultas nem permite enxergar através de obstáculos. Adaptação implementada a pedido do autor; valores iniciais para playtest.",
+    "fonte": "Adaptação de Cat (The Witcher 3), criada para o Sistema 21 em 27/10/2026. Ver comparacao_pocoes_witcher3_2026-10-27.json.",
+    "piloto": false,
+    "imagem": "artes/pocoes/EQ-159_v01.png",
+    "diagramacao": "frente_unica",
+    "tipo_consumivel": "Poção",
+    "referencia_witcher3": "Cat",
+    "estado_arte": "concluida",
+    "origem": "expansao_pocoes_2026-10-27"
+  },
+  {
+    "id": "EQ-160",
+    "nome": "Poção de Vigor Lunar",
+    "categoria": "CONSUMÍVEL · INCOMUM",
+    "campos": {
+      "Vida": "6"
+    },
+    "tags": [
+      "Consumível",
+      "Poção"
+    ],
+    "habilidade": "Ação Padrão: mantenha esta carta à sua frente até o fim da cena. Você pode direcionar à vida desta carta o dano que poderia direcionar a uma armadura, mesmo sem vestir uma. A vida desta carta não pode ser curada nem reparada. Descarte esta carta quando a vida dela chegar a 0 ou quando a cena terminar.",
+    "revisao": "Reserva de vida temporária na própria carta, usando o mecanismo de vida de equipamentos. Não acrescenta cartas ao baralho fixo. Adaptação implementada a pedido do autor; valores iniciais para playtest.",
+    "fonte": "Adaptação de Full Moon (The Witcher 3), criada para o Sistema 21 em 27/10/2026. Ver comparacao_pocoes_witcher3_2026-10-27.json.",
+    "piloto": false,
+    "imagem": "artes/pocoes/EQ-160_v01.png",
+    "diagramacao": "frente_verso",
+    "tipo_consumivel": "Poção",
+    "referencia_witcher3": "Full Moon",
+    "estado_arte": "concluida",
+    "origem": "expansao_pocoes_2026-10-27"
+  },
+  {
+    "id": "EQ-161",
+    "nome": "Poção de Sangue Cáustico",
+    "categoria": "CONSUMÍVEL · INCOMUM",
+    "campos": {},
+    "tags": [
+      "Consumível",
+      "Poção"
+    ],
+    "habilidade": "Ação Padrão: durante os seus próximos 3 turnos, na primeira vez em cada turno em que um inimigo adjacente causar dano à sua vida com um ataque corpo a corpo, ele sofre 3 de dano de Ácido.",
+    "revisao": "Retaliação limitada a uma vez por turno e condicionada a dano efetivo à vida. Dano destinado à armadura ou ao escudo não ativa o efeito. Adaptação implementada a pedido do autor; valores iniciais para playtest.",
+    "fonte": "Adaptação de Black Blood (The Witcher 3), criada para o Sistema 21 em 27/10/2026. Ver comparacao_pocoes_witcher3_2026-10-27.json.",
+    "piloto": false,
+    "imagem": "artes/pocoes/EQ-161_v01.png",
+    "diagramacao": "frente_unica",
+    "tipo_consumivel": "Poção",
+    "referencia_witcher3": "Black Blood",
+    "estado_arte": "concluida",
+    "origem": "expansao_pocoes_2026-10-27"
+  },
+  {
+    "id": "EQ-162",
+    "nome": "Poção de Reflexos Predatórios",
+    "categoria": "CONSUMÍVEL · RARA",
+    "campos": {},
+    "tags": [
+      "Consumível",
+      "Poção"
+    ],
+    "habilidade": "Ação Padrão: durante os seus próximos 3 turnos, na primeira vez em cada turno seu em que você derrotar um inimigo com um ataque, receba 1 ficha de Reação. Enquanto o efeito durar, todas as cartas usadas nas suas defesas ficam reveladas.",
+    "revisao": "A desaceleração do tempo foi adaptada como oportunidades de Reação após derrotar inimigos. O defeito expõe a informação das defesas e define a estratégia. Não concede ações ou ataques gratuitos em cadeia. Adaptação implementada a pedido do autor; valores iniciais para playtest.",
+    "fonte": "Adaptação de Blizzard (The Witcher 3), criada para o Sistema 21 em 27/10/2026. Ver comparacao_pocoes_witcher3_2026-10-27.json.",
+    "piloto": false,
+    "imagem": "artes/pocoes/EQ-162_v01.png",
+    "diagramacao": "frente_unica",
+    "tipo_consumivel": "Poção",
+    "referencia_witcher3": "Blizzard",
+    "estado_arte": "concluida",
+    "origem": "expansao_pocoes_2026-10-27"
+  },
+  {
+    "id": "EQ-163",
+    "nome": "Poção de Sangue Limpo",
+    "categoria": "CONSUMÍVEL · INCOMUM",
+    "campos": {},
+    "tags": [
+      "Consumível",
+      "Poção"
+    ],
+    "habilidade": "Ação Padrão: remova todas as suas fichas de Veneno. Durante os seus próximos 3 turnos, você não pode receber fichas de Veneno.",
+    "revisao": "O Antídoto já oferece remoção; esta poção acrescenta uma janela de prevenção. Não transforma Veneno em cura nem concede imunidade a outros tipos de dano. Adaptação implementada a pedido do autor; valores iniciais para playtest.",
+    "fonte": "Adaptação de Golden Oriole (The Witcher 3), criada para o Sistema 21 em 27/10/2026. Ver comparacao_pocoes_witcher3_2026-10-27.json.",
+    "piloto": false,
+    "imagem": "artes/pocoes/EQ-163_v01.png",
+    "diagramacao": "frente_unica",
+    "tipo_consumivel": "Poção",
+    "referencia_witcher3": "Golden Oriole",
+    "estado_arte": "concluida",
+    "origem": "expansao_pocoes_2026-10-27"
+  },
+  {
+    "id": "EQ-164",
+    "nome": "Poção de Mergulho",
+    "categoria": "CONSUMÍVEL · COMUM",
+    "campos": {},
+    "tags": [
+      "Consumível",
+      "Poção"
+    ],
+    "habilidade": "Ação Padrão: por 10 minutos, você pode respirar debaixo d'água e tem Vantagem em testes de Percepção realizados enquanto estiver submerso.",
+    "revisao": "Adaptação da reserva de ar e da visão subaquática. Não concede movimento aquático automático nem elimina obstáculos. Adaptação implementada a pedido do autor; valores iniciais para playtest.",
+    "fonte": "Adaptação de Killer Whale (The Witcher 3), criada para o Sistema 21 em 27/10/2026. Ver comparacao_pocoes_witcher3_2026-10-27.json.",
+    "piloto": false,
+    "imagem": "artes/pocoes/EQ-164_v01.png",
+    "diagramacao": "frente_unica",
+    "tipo_consumivel": "Poção",
+    "referencia_witcher3": "Killer Whale",
+    "estado_arte": "concluida",
+    "origem": "expansao_pocoes_2026-10-27"
+  },
+  {
+    "id": "EQ-165",
+    "nome": "Poção de Foco Crescente",
+    "categoria": "CONSUMÍVEL · INCOMUM",
+    "campos": {},
+    "tags": [
+      "Consumível",
+      "Poção"
+    ],
+    "habilidade": "Ação Padrão: durante os seus próximos 3 turnos, na primeira vez em cada turno seu em que acertar um ataque, receba 1 ficha de Foco.",
+    "revisao": "A geração de Adrenalina foi convertida em geração limitada de Foco. Um ataque em área não concede uma ficha por alvo. Adaptação implementada a pedido do autor; valores iniciais para playtest.",
+    "fonte": "Adaptação de Maribor Forest (The Witcher 3), criada para o Sistema 21 em 27/10/2026. Ver comparacao_pocoes_witcher3_2026-10-27.json.",
+    "piloto": false,
+    "imagem": "artes/pocoes/EQ-165_v01.png",
+    "diagramacao": "frente_unica",
+    "tipo_consumivel": "Poção",
+    "referencia_witcher3": "Maribor Forest",
+    "estado_arte": "concluida",
+    "origem": "expansao_pocoes_2026-10-27"
+  },
+  {
+    "id": "EQ-166",
+    "nome": "Poção de Amplificação",
+    "categoria": "CONSUMÍVEL · COMUM",
+    "campos": {},
+    "tags": [
+      "Consumível",
+      "Poção"
+    ],
+    "habilidade": "Ação Padrão: até o fim da cena, suas próximas 2 magias que aplicarem dano ou cura imediatos acrescentam 2 a um desses valores, em um único alvo afetado à sua escolha por conjuração.",
+    "revisao": "Amplificação de magia com duas utilizações. Não multiplica o bônus por alvo, por ficha de Fogo ou por dano posterior. Adaptação implementada a pedido do autor; valores iniciais para playtest.",
+    "fonte": "Adaptação de Petri's Philter (The Witcher 3), criada para o Sistema 21 em 27/10/2026. Ver comparacao_pocoes_witcher3_2026-10-27.json.",
+    "piloto": false,
+    "imagem": "artes/pocoes/EQ-166_v01.png",
+    "diagramacao": "frente_unica",
+    "tipo_consumivel": "Poção",
+    "referencia_witcher3": "Petri's Philter",
+    "estado_arte": "concluida",
+    "origem": "expansao_pocoes_2026-10-27"
+  },
+  {
+    "id": "EQ-167",
+    "nome": "Poção de Purificação",
+    "categoria": "CONSUMÍVEL · COMUM",
+    "campos": {},
+    "tags": [
+      "Consumível",
+      "Poção"
+    ],
+    "habilidade": "Ação Padrão: remova todas as suas fichas de Veneno e encerre todos os efeitos de poções ainda ativos em você, benéficos ou prejudiciais. Encerrar um efeito desta forma também aplica suas consequências de término.",
+    "revisao": "A limpeza de Toxicidade foi adaptada aos efeitos já existentes, sem introduzir uma barra de Toxicidade. Não desfaz curas, dano ou ações já resolvidas; não evita a cobrança final de Sangue de Batalha. Adaptação implementada a pedido do autor; valores iniciais para playtest.",
+    "fonte": "Adaptação de White Honey (The Witcher 3), criada para o Sistema 21 em 27/10/2026. Ver comparacao_pocoes_witcher3_2026-10-27.json.",
+    "piloto": false,
+    "imagem": "artes/pocoes/EQ-167_v01.png",
+    "diagramacao": "frente_unica",
+    "tipo_consumivel": "Poção",
+    "referencia_witcher3": "White Honey",
+    "estado_arte": "concluida",
+    "origem": "expansao_pocoes_2026-10-27"
+  },
+  {
+    "id": "EQ-168",
+    "nome": "Poção de Superação",
+    "categoria": "CONSUMÍVEL · INCOMUM",
+    "campos": {},
+    "tags": [
+      "Consumível",
+      "Poção"
+    ],
+    "habilidade": "Ação Padrão: até o fim da cena, ao verificar requisitos de Força ou Destreza de equipamentos, considere seu atributo 1 ponto maior. Esse aumento não se aplica ao dano nem a testes.",
+    "revisao": "Requisitos temporariamente facilitados. Não concede tags, escolas ou treinamento. Quando o efeito termina, equipamentos cujos requisitos deixem de ser atendidos não podem ser usados. Adaptação implementada a pedido do autor; valores iniciais para playtest.",
+    "fonte": "Adaptação de Wolven Hour (The Witcher 3), criada para o Sistema 21 em 27/10/2026. Ver comparacao_pocoes_witcher3_2026-10-27.json.",
+    "piloto": false,
+    "imagem": "artes/pocoes/EQ-168_v01.png",
+    "diagramacao": "frente_unica",
+    "tipo_consumivel": "Poção",
+    "referencia_witcher3": "Wolven Hour",
+    "estado_arte": "concluida",
+    "origem": "expansao_pocoes_2026-10-27"
+  },
+  {
+    "id": "EQ-169",
+    "nome": "Poção de Feromônios",
+    "categoria": "CONSUMÍVEL · COMUM",
+    "campos": {},
+    "tags": [
+      "Consumível",
+      "Poção"
+    ],
+    "habilidade": "Ação Padrão: por 10 minutos, você tem Vantagem em testes de Furtividade contra criaturas que tentem localizar ou seguir você pelo cheiro.",
+    "revisao": "Camuflagem olfativa adaptada para criaturas do próprio cenário. Não equivale a Oculto automático, invisibilidade ou controle mental. Adaptação implementada a pedido do autor; valores iniciais para playtest.",
+    "fonte": "Adaptação de Drowner Pheromones (The Witcher 3), criada para o Sistema 21 em 27/10/2026. Ver comparacao_pocoes_witcher3_2026-10-27.json.",
+    "piloto": false,
+    "imagem": "artes/pocoes/EQ-169_v01.png",
+    "diagramacao": "frente_unica",
+    "tipo_consumivel": "Poção",
+    "referencia_witcher3": "Drowner Pheromones",
+    "estado_arte": "concluida",
+    "origem": "expansao_pocoes_2026-10-27"
+  },
+  {
+    "id": "EQ-170",
+    "nome": "Poção de Reaprendizado",
+    "categoria": "CONSUMÍVEL · INCOMUM",
+    "campos": {},
+    "tags": [
+      "Consumível",
+      "Poção"
+    ],
+    "habilidade": "Durante um descanso longo, consuma esta poção para trocar uma carta de habilidade adquirida com XP por outra da mesma classe e do mesmo custo em XP, cujos requisitos você atenda. Você deixa de possuir a carta substituída. Esta troca não altera raça, classe, atributos ou carta de herói.",
+    "revisao": "As funções de redistribuição foram agrupadas numa troca lateral de uma habilidade comprada. Não cria XP nem um subsistema de mutações; não troca habilidades iniciais que não foram adquiridas com XP. Adaptação implementada a pedido do autor; valores iniciais para playtest.",
+    "fonte": "Adaptação de Potion of Clearance / Potion of Restoration (The Witcher 3), criada para o Sistema 21 em 27/10/2026. Ver comparacao_pocoes_witcher3_2026-10-27.json.",
+    "piloto": false,
+    "imagem": "artes/pocoes/EQ-170_v01.png",
+    "diagramacao": "frente_unica",
+    "tipo_consumivel": "Poção",
+    "referencia_witcher3": "Potion of Clearance / Potion of Restoration",
+    "estado_arte": "concluida",
+    "origem": "expansao_pocoes_2026-10-27"
+  }
+]

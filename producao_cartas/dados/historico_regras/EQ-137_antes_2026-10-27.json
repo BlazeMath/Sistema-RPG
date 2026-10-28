@@ -1,0 +1,17 @@
+{
+  "id": "EQ-137",
+  "nome": "Amuleto de Kanil",
+  "categoria": "AMULETO",
+  "campos": {
+    "Limite de Fadiga": "2"
+  },
+  "tags": [
+    "Acessório"
+  ],
+  "habilidade": "Uma vez por cena, quando você seria derrubado por dano, permaneça de pé com 1 (o milho sempre renasce). 2 de Fadiga, Ação Padrão: ofereça o grão -um aliado à vista cura 3 e remove uma ficha de Sangramento, Veneno ou Ferimento.",
+  "revisao": "“Derrubado” podia significar Caído, e “com 1” não dizia de qual recurso. Proposta trata inconsciência e energia. Falta origem da carta se o baralho já ficou vazio; definir antes de retirar a última carta.",
+  "fonte": "PDF: EQ-137, p. 16 | Apoio: Itens Mágicos!A96:C99",
+  "piloto": false,
+  "imagem": "artes/lote/EQ-137_v01.png",
+  "diagramacao": "frente_unica"
+}

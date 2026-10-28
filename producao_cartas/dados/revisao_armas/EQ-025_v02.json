@@ -1,0 +1,20 @@
+{
+  "id": "EQ-025",
+  "nome": "Quebra-Elmos",
+  "arquivo": "artes/revisadas/EQ-025_v02.png",
+  "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-01d8698e-377f-45af-968e-0dada45e083a.png",
+  "substitui": "artes/lote/EQ-025_v01.png",
+  "dimensoes": [
+    1060,
+    1484
+  ],
+  "modo": "RGBA",
+  "alpha": [
+    0,
+    255
+  ],
+  "sha256": "fe027d14e9dd4d321c5bd7a35a443bcb4e4f76920c17287c9f856e189f7fc123",
+  "status": "conferida_visual",
+  "rotacao_diagramacao_graus": 30,
+  "ajuste_diagramacao": "Rotacao rigida de 30 graus somente na composicao do PDF; PNG preservado."
+}

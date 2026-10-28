@@ -1,0 +1,411 @@
+{
+  "versao": "v04",
+  "armas_revisadas": 46,
+  "focos_adicionais_revisados": 3,
+  "armas_corrigidas_nesta_versao": 8,
+  "focos_corrigidos_nesta_versao": 1,
+  "total_artes_corrigidas_nesta_versao": 9,
+  "metodo": "Revisao visual das 46 cartas de armas, ampliacao dos encaixes suspeitos e inspecao em tamanho completo dos nove redesenhos. Incluidos tres focos com haste.",
+  "criterios": [
+    "Continuidade do eixo em partes rígidas",
+    "Cabeça ou lâmina bem encaixada no cabo",
+    "Ausência de curvatura ou quebra de direção acidental",
+    "Preservar curvas próprias de arcos, corrente, chicote e lâminas curvas"
+  ],
+  "pendencias": [],
+  "itens": [
+    {
+      "id": "EQ-001",
+      "nome": "Faca",
+      "categoria": "ARMA CORPO A CORPO · COMUM",
+      "imagem": "artes/piloto/EQ-001_v01.png",
+      "status": "conferida_sem_troca",
+      "observacao": "Eixo e encaixes coerentes na revisao visual; sem desvio a corrigir."
+    },
+    {
+      "id": "EQ-002",
+      "nome": "Florete",
+      "categoria": "ARMA CORPO A CORPO · COMUM",
+      "imagem": "artes/revisadas/EQ-002_v02.png",
+      "status": "conferida_sem_troca",
+      "observacao": "Eixo e encaixes coerentes na revisao visual; sem desvio a corrigir."
+    },
+    {
+      "id": "EQ-003",
+      "nome": "Bastão",
+      "categoria": "ARMA CORPO A CORPO · COMUM",
+      "imagem": "artes/lote/EQ-003_v01.png",
+      "status": "conferida_sem_troca",
+      "observacao": "Eixo e encaixes coerentes na revisao visual; sem desvio a corrigir."
+    },
+    {
+      "id": "EQ-004",
+      "nome": "Espada Curta",
+      "categoria": "ARMA CORPO A CORPO · COMUM",
+      "imagem": "artes/revisadas/EQ-004_v02.png",
+      "status": "conferida_sem_troca",
+      "observacao": "Eixo e encaixes coerentes na revisao visual; sem desvio a corrigir."
+    },
+    {
+      "id": "EQ-005",
+      "nome": "Espada Longa",
+      "categoria": "ARMA CORPO A CORPO · COMUM",
+      "imagem": "artes/revisadas/EQ-005_v02.png",
+      "status": "conferida_sem_troca",
+      "observacao": "Eixo e encaixes coerentes na revisao visual; sem desvio a corrigir."
+    },
+    {
+      "id": "EQ-006",
+      "nome": "Lança",
+      "categoria": "ARMA CORPO A CORPO · COMUM",
+      "imagem": "artes/lote/EQ-006_v01.png",
+      "status": "conferida_sem_troca",
+      "observacao": "Eixo e encaixes coerentes na revisao visual; sem desvio a corrigir."
+    },
+    {
+      "id": "EQ-007",
+      "nome": "Maça",
+      "categoria": "ARMA CORPO A CORPO · COMUM",
+      "imagem": "artes/revisadas/EQ-007_v02.png",
+      "status": "corrigida_e_conferida",
+      "observacao": "Haste ou cabo rigido e encaixes alinhados no redesenho; arte inteira conferida."
+    },
+    {
+      "id": "EQ-008",
+      "nome": "Machado de Guerra",
+      "categoria": "ARMA CORPO A CORPO · COMUM",
+      "imagem": "artes/revisadas/EQ-008_v02.png",
+      "status": "corrigida_e_conferida",
+      "observacao": "Haste ou cabo rigido e encaixes alinhados no redesenho; arte inteira conferida."
+    },
+    {
+      "id": "EQ-009",
+      "nome": "Montante",
+      "categoria": "ARMA CORPO A CORPO · COMUM",
+      "imagem": "artes/revisadas/EQ-009_v02.png",
+      "status": "conferida_sem_troca",
+      "observacao": "Eixo e encaixes coerentes na revisao visual; sem desvio a corrigir."
+    },
+    {
+      "id": "EQ-010",
+      "nome": "Estilete",
+      "categoria": "ARMA CORPO A CORPO · INCOMUM",
+      "imagem": "artes/piloto/EQ-010_v01.png",
+      "status": "conferida_sem_troca",
+      "observacao": "Eixo e encaixes coerentes na revisao visual; sem desvio a corrigir."
+    },
+    {
+      "id": "EQ-011",
+      "nome": "Florete de Duelista",
+      "categoria": "ARMA CORPO A CORPO · INCOMUM",
+      "imagem": "artes/revisadas/EQ-011_v02.png",
+      "status": "conferida_sem_troca",
+      "observacao": "Eixo e encaixes coerentes na revisao visual; sem desvio a corrigir."
+    },
+    {
+      "id": "EQ-012",
+      "nome": "Chicote",
+      "categoria": "ARMA CORPO A CORPO · INCOMUM",
+      "imagem": "artes/lote/EQ-012_v01.png",
+      "status": "conferida_sem_troca",
+      "observacao": "Curvas proprias de um objeto flexivel, preservadas."
+    },
+    {
+      "id": "EQ-013",
+      "nome": "Francisca",
+      "categoria": "ARMA CORPO A CORPO · INCOMUM",
+      "imagem": "artes/revisadas/EQ-013_v02.png",
+      "status": "corrigida_e_conferida",
+      "observacao": "Haste ou cabo rigido e encaixes alinhados no redesenho; arte inteira conferida."
+    },
+    {
+      "id": "EQ-014",
+      "nome": "Espada do Mestre-Ferreiro",
+      "categoria": "ARMA CORPO A CORPO · INCOMUM",
+      "imagem": "artes/revisadas/EQ-014_v02.png",
+      "status": "conferida_sem_troca",
+      "observacao": "Eixo e encaixes coerentes na revisao visual; sem desvio a corrigir."
+    },
+    {
+      "id": "EQ-015",
+      "nome": "Alabarda",
+      "categoria": "ARMA CORPO A CORPO · INCOMUM",
+      "imagem": "artes/lote/EQ-015_v01.png",
+      "status": "conferida_sem_troca",
+      "observacao": "Eixo e encaixes coerentes na revisao visual; sem desvio a corrigir."
+    },
+    {
+      "id": "EQ-016",
+      "nome": "Maça-Estrela",
+      "categoria": "ARMA CORPO A CORPO · INCOMUM",
+      "imagem": "artes/revisadas/EQ-016_v02.png",
+      "status": "corrigida_e_conferida",
+      "observacao": "Haste ou cabo rigido e encaixes alinhados no redesenho; arte inteira conferida."
+    },
+    {
+      "id": "EQ-017",
+      "nome": "Machado Barbado",
+      "categoria": "ARMA CORPO A CORPO · INCOMUM",
+      "imagem": "artes/revisadas/EQ-017_v02.png",
+      "status": "corrigida_e_conferida",
+      "observacao": "Haste ou cabo rigido e encaixes alinhados no redesenho; arte inteira conferida."
+    },
+    {
+      "id": "EQ-018",
+      "nome": "Montante de Batalha",
+      "categoria": "ARMA CORPO A CORPO · INCOMUM",
+      "imagem": "artes/revisadas/EQ-018_v02.png",
+      "status": "conferida_sem_troca",
+      "observacao": "Eixo e encaixes coerentes na revisao visual; sem desvio a corrigir."
+    },
+    {
+      "id": "EQ-019",
+      "nome": "Adaga da Mão Vazia",
+      "categoria": "ARMA CORPO A CORPO · RARA",
+      "imagem": "artes/lote/EQ-019_v01.png",
+      "status": "conferida_sem_troca",
+      "observacao": "Eixo e encaixes coerentes na revisao visual; sem desvio a corrigir."
+    },
+    {
+      "id": "EQ-020",
+      "nome": "Florete do Contragolpe",
+      "categoria": "ARMA CORPO A CORPO · RARA",
+      "imagem": "artes/revisadas/EQ-020_v02.png",
+      "status": "conferida_sem_troca",
+      "observacao": "Eixo e encaixes coerentes na revisao visual; sem desvio a corrigir."
+    },
+    {
+      "id": "EQ-021",
+      "nome": "Cajado do Condutor",
+      "categoria": "ARMA CORPO A CORPO · RARA",
+      "imagem": "artes/lote/EQ-021_v01.png",
+      "status": "conferida_sem_troca",
+      "observacao": "Forma organica da madeira preservada; encaixes coerentes."
+    },
+    {
+      "id": "EQ-022",
+      "nome": "Lâmina do Vento",
+      "categoria": "ARMA CORPO A CORPO · RARA",
+      "imagem": "artes/revisadas/EQ-022_v02.png",
+      "status": "conferida_sem_troca",
+      "observacao": "Eixo e encaixes coerentes na revisao visual; sem desvio a corrigir."
+    },
+    {
+      "id": "EQ-023",
+      "nome": "Gládio Inquietante",
+      "categoria": "ARMA CORPO A CORPO · RARA",
+      "imagem": "artes/lote/EQ-023_v01.png",
+      "status": "conferida_sem_troca",
+      "observacao": "Conferida; arte preservada conforme decisao explicita do autor."
+    },
+    {
+      "id": "EQ-024",
+      "nome": "Lança da Muralha",
+      "categoria": "ARMA CORPO A CORPO · RARA",
+      "imagem": "artes/lote/EQ-024_v01.png",
+      "status": "conferida_sem_troca",
+      "observacao": "Eixo e encaixes coerentes na revisao visual; sem desvio a corrigir."
+    },
+    {
+      "id": "EQ-025",
+      "nome": "Quebra-Elmos",
+      "categoria": "ARMA CORPO A CORPO · RARA",
+      "imagem": "artes/revisadas/EQ-025_v02.png",
+      "status": "conferida_sem_troca",
+      "observacao": "Eixo e encaixes coerentes na revisao visual; sem desvio a corrigir."
+    },
+    {
+      "id": "EQ-026",
+      "nome": "Machado da Sepultura",
+      "categoria": "ARMA CORPO A CORPO · RARA",
+      "imagem": "artes/revisadas/EQ-026_v02.png",
+      "status": "corrigida_e_conferida",
+      "observacao": "Haste ou cabo rigido e encaixes alinhados no redesenho; arte inteira conferida."
+    },
+    {
+      "id": "EQ-027",
+      "nome": "Montante do Frenesi",
+      "categoria": "ARMA CORPO A CORPO · RARA",
+      "imagem": "artes/revisadas/EQ-027_v02.png",
+      "status": "conferida_sem_troca",
+      "observacao": "Eixo e encaixes coerentes na revisao visual; sem desvio a corrigir."
+    },
+    {
+      "id": "EQ-028",
+      "nome": "Shuriken",
+      "categoria": "ARMA À DISTÂNCIA · COMUM",
+      "imagem": "artes/lote/EQ-028_v01.png",
+      "status": "conferida_sem_troca",
+      "observacao": "Eixo e encaixes coerentes na revisao visual; sem desvio a corrigir."
+    },
+    {
+      "id": "EQ-029",
+      "nome": "Machado de Arremesso",
+      "categoria": "ARMA À DISTÂNCIA · COMUM",
+      "imagem": "artes/revisadas/EQ-029_v02.png",
+      "status": "corrigida_e_conferida",
+      "observacao": "Haste ou cabo rigido e encaixes alinhados no redesenho; arte inteira conferida."
+    },
+    {
+      "id": "EQ-030",
+      "nome": "Javelin",
+      "categoria": "ARMA À DISTÂNCIA · COMUM",
+      "imagem": "artes/lote/EQ-030_v01.png",
+      "status": "conferida_sem_troca",
+      "observacao": "Eixo e encaixes coerentes na revisao visual; sem desvio a corrigir."
+    },
+    {
+      "id": "EQ-031",
+      "nome": "Arco Curto",
+      "categoria": "ARMA À DISTÂNCIA · COMUM",
+      "imagem": "artes/lote/EQ-031_v01.png",
+      "status": "conferida_sem_troca",
+      "observacao": "Curvatura propria do arco preservada; empunhadura e corda coerentes."
+    },
+    {
+      "id": "EQ-032",
+      "nome": "Arco Longo",
+      "categoria": "ARMA À DISTÂNCIA · COMUM",
+      "imagem": "artes/lote/EQ-032_v01.png",
+      "status": "conferida_sem_troca",
+      "observacao": "Curvatura propria do arco preservada; empunhadura e corda coerentes."
+    },
+    {
+      "id": "EQ-033",
+      "nome": "Besta Pesada",
+      "categoria": "ARMA À DISTÂNCIA · COMUM",
+      "imagem": "artes/lote/EQ-033_v01.png",
+      "status": "conferida_sem_troca",
+      "observacao": "Eixo e encaixes coerentes na revisao visual; sem desvio a corrigir."
+    },
+    {
+      "id": "EQ-034",
+      "nome": "Adaga Balanceada",
+      "categoria": "ARMA À DISTÂNCIA · INCOMUM",
+      "imagem": "artes/lote/EQ-034_v01.png",
+      "status": "conferida_sem_troca",
+      "observacao": "Eixo e encaixes coerentes na revisao visual; sem desvio a corrigir."
+    },
+    {
+      "id": "EQ-035",
+      "nome": "Machete Farpado",
+      "categoria": "ARMA À DISTÂNCIA · INCOMUM",
+      "imagem": "artes/lote/EQ-035_v01.png",
+      "status": "conferida_sem_troca",
+      "observacao": "Lamina curva de machete preservada; encaixe e cabo coerentes."
+    },
+    {
+      "id": "EQ-036",
+      "nome": "Lança Espiral",
+      "categoria": "ARMA À DISTÂNCIA · INCOMUM",
+      "imagem": "artes/lote/EQ-036_v01.png",
+      "status": "conferida_sem_troca",
+      "observacao": "Eixo e encaixes coerentes na revisao visual; sem desvio a corrigir."
+    },
+    {
+      "id": "EQ-037",
+      "nome": "Arco Recurvo",
+      "categoria": "ARMA À DISTÂNCIA · INCOMUM",
+      "imagem": "artes/lote/EQ-037_v01.png",
+      "status": "conferida_sem_troca",
+      "observacao": "Curvatura propria do arco preservada; empunhadura e corda coerentes."
+    },
+    {
+      "id": "EQ-038",
+      "nome": "Arco de Teixo",
+      "categoria": "ARMA À DISTÂNCIA · INCOMUM",
+      "imagem": "artes/lote/EQ-038_v01.png",
+      "status": "conferida_sem_troca",
+      "observacao": "Curvatura propria do arco preservada; empunhadura e corda coerentes."
+    },
+    {
+      "id": "EQ-039",
+      "nome": "Besta da Seta Dupla",
+      "categoria": "ARMA À DISTÂNCIA · INCOMUM",
+      "imagem": "artes/lote/EQ-039_v01.png",
+      "status": "conferida_sem_troca",
+      "observacao": "Eixo e encaixes coerentes na revisao visual; sem desvio a corrigir."
+    },
+    {
+      "id": "EQ-040",
+      "nome": "Leque de Lâminas",
+      "categoria": "ARMA À DISTÂNCIA · RARA",
+      "imagem": "artes/lote/EQ-040_v01.png",
+      "status": "conferida_sem_troca",
+      "observacao": "Laminas radiais proprias de leque preservadas."
+    },
+    {
+      "id": "EQ-041",
+      "nome": "Machado Sedento",
+      "categoria": "ARMA À DISTÂNCIA · RARA",
+      "imagem": "artes/revisadas/EQ-041_v02.png",
+      "status": "corrigida_e_conferida",
+      "observacao": "Haste ou cabo rigido e encaixes alinhados no redesenho; arte inteira conferida."
+    },
+    {
+      "id": "EQ-042",
+      "nome": "Lança Trovejante",
+      "categoria": "ARMA À DISTÂNCIA · RARA",
+      "imagem": "artes/lote/EQ-042_v01.png",
+      "status": "conferida_sem_troca",
+      "observacao": "Eixo e encaixes coerentes na revisao visual; sem desvio a corrigir."
+    },
+    {
+      "id": "EQ-043",
+      "nome": "Arco das Sombras",
+      "categoria": "ARMA À DISTÂNCIA · RARA",
+      "imagem": "artes/lote/EQ-043_v01.png",
+      "status": "conferida_sem_troca",
+      "observacao": "Curvatura propria do arco preservada; empunhadura e corda coerentes."
+    },
+    {
+      "id": "EQ-044",
+      "nome": "Arco da Maré",
+      "categoria": "ARMA À DISTÂNCIA · RARA",
+      "imagem": "artes/lote/EQ-044_v01.png",
+      "status": "conferida_sem_troca",
+      "observacao": "Curvatura propria do arco preservada; empunhadura e corda coerentes."
+    },
+    {
+      "id": "EQ-045",
+      "nome": "Balestra de Cerco",
+      "categoria": "ARMA À DISTÂNCIA · RARA",
+      "imagem": "artes/lote/EQ-045_v01.png",
+      "status": "conferida_sem_troca",
+      "observacao": "Eixo e encaixes coerentes na revisao visual; sem desvio a corrigir."
+    },
+    {
+      "id": "EQ-116",
+      "nome": "Varinha de Cristal",
+      "categoria": "FOCO ARCANO",
+      "imagem": "artes/piloto/EQ-116_v01.png",
+      "status": "conferida_sem_troca",
+      "observacao": "Forma organica da madeira preservada; encaixes coerentes."
+    },
+    {
+      "id": "EQ-117",
+      "nome": "Cajado do Aprendiz",
+      "categoria": "FOCO ARCANO",
+      "imagem": "artes/lote/EQ-117_v01.png",
+      "status": "conferida_sem_troca",
+      "observacao": "Forma organica da madeira preservada; encaixes coerentes."
+    },
+    {
+      "id": "EQ-118",
+      "nome": "Cajado de Batalha",
+      "categoria": "FOCO ARCANO",
+      "imagem": "artes/revisadas/EQ-118_v02.png",
+      "status": "corrigida_e_conferida",
+      "observacao": "Haste ou cabo rigido e encaixes alinhados no redesenho; arte inteira conferida."
+    },
+    {
+      "id": "EQ-156",
+      "nome": "Corrente de Caça",
+      "categoria": "ARMA CORPO A CORPO · INCOMUM",
+      "imagem": "artes/piloto/EQ-156_v02.png",
+      "status": "conferida_sem_troca",
+      "observacao": "Curvas proprias de um objeto flexivel, preservadas."
+    }
+  ],
+  "inspecao_visual_final": "Conferidas todas as nove frentes alteradas apos renderizacao final, mais folhas A4 1 e 27. Encaixes alinhados; sem corte, deformacao ou halo no PDF."
+}

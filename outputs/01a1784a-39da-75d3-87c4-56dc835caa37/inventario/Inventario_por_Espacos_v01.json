@@ -1,0 +1,3480 @@
+{
+  "titulo": "Inventário por espaços — proposta v01",
+  "data": "2026-10-27",
+  "status": "Proposta para discussão e teste; não incorporada ao catálogo, manual ou PDFs",
+  "capacidades": {
+    "armadura": 1,
+    "costas": 1,
+    "cabeca": 1,
+    "pes": 1,
+    "acessorios": 2,
+    "amuletos": 1,
+    "armamentos": 4,
+    "consumiveis": 6,
+    "mochila": 6
+  },
+  "regras": [
+    {
+      "titulo": "Capacidade básica",
+      "texto": "Cada personagem tem 1 Armadura, 1 Costas, 1 Cabeça, 1 Pés, 2 Acessórios, 4 espaços compartilhados de Armamentos e Repertórios, 6 cargas de Consumíveis Especiais e 6 espaços de Mochila. Um dos dois acessórios pode ser um amuleto ou colar; não há um terceiro espaço de amuleto. O Colar Vinculador também usa esse limite de pescoço."
+    },
+    {
+      "titulo": "Armamentos",
+      "texto": "Armas pequenas ou médias, escudo leve e focos compactos ocupam 1 espaço. Armas com Tamanho Grande, arcos, bestas, lanças de arremesso, escudo pesado e cajados longos ocupam 2. Até 3 shurikens ou 3 adagas balanceadas iguais formam um estojo de 1 espaço. Cada grimório ou texto sagrado ocupa 1 espaço. Armas, escudos, focos e livros de reserva também contam nos quatro espaços: escondê-los na mochila não aumenta o limite."
+    },
+    {
+      "titulo": "Mãos são outra coisa",
+      "texto": "Espaço de transporte não é quantidade de mãos. O personagem tem suas duas mãos normais e respeita as exigências de empunhadura existentes. Tamanho Grande não passa automaticamente a exigir duas mãos. Armas e focos guardados não funcionam como itens empunhados."
+    },
+    {
+      "titulo": "Consumíveis especiais",
+      "texto": "Cada dose, aplicação, runa, bomba, pergaminho consumível, flecha especial, gazua ou uso de Pedra de Amolar ocupa 1 carga. São 6 cargas ao todo, não 6 tipos. Seis curas preenchem a bolsa inteira. Não é permitido carregar mais doses próprias escondidas na mochila ou em outra bolsa."
+    },
+    {
+      "titulo": "Suprimentos comuns",
+      "texto": "Tochas e Rações de Viagem ficam na mochila: até 3 unidades iguais ocupam 1 espaço. Um pacote parcialmente usado continua ocupando 1 espaço até esvaziar. Uma aljava ou estojo de munição comum ocupa 1 espaço de mochila; esta regra não cria contagem de munição onde o sistema não a faz. Flechas especiais continuam nas seis cargas de consumíveis."
+    },
+    {
+      "titulo": "Mochila",
+      "texto": "Uma ferramenta ou item comum pequeno ocupa 1 espaço; um kit ou objeto volumoso, 2. Kit de Reparos, Kit de Acampamento, Equipamento de Pesca e Vara de 3 Metros usam 2. Corda, lanterna, ferramentas de ladrão, pederneira e os demais utensílios listados usam 1. Um kit contém seus componentes usuais e não serve para esconder itens sem relação com sua função."
+    },
+    {
+      "titulo": "Reservas de vestuário",
+      "texto": "Apenas uma armadura pode estar vestida. Uma armadura leve reserva ocupa 2 espaços de mochila; média ou pesada, 4. Capa, elmo, máscara ou acessório reserva ocupa 1; par de botas, grevas ou paraquedas reserva ocupa 2. Guardar não permite usar o efeito de uma segunda peça. Armamentos, livros de repertório e consumíveis continuam respeitando seus limites próprios."
+    },
+    {
+      "titulo": "Repertório preparado",
+      "texto": "Cada grimório ou texto sagrado ocupa 1 dos quatro espaços compartilhados com armas, escudos e focos. Não existem espaços extras nem um limite separado de dois repertórios. Antes da cena, durante uma pausa segura de pelo menos 1 minuto, escolha quais livros carregados estão preparados: são eles que disponibilizam suas magias, respeitando os requisitos existentes. Livros de reserva também contam nos mesmos quatro espaços, mesmo guardados na mochila. Escrituras de Maftoné continuam sendo FOCO SAGRADO no catálogo e usam seu espaço como foco, sem contagem dupla."
+    },
+    {
+      "titulo": "Somente o equipamento ativo funciona",
+      "texto": "Proteções e acessórios só concedem seus efeitos quando vestidos nos espaços corretos. Armas, escudos e focos só os concedem quando empunhados. Livros de repertório só concedem as magias quando preparados. Ferramentas funcionam quando retiradas e usadas. Durante combate, equipamento de reserva não recebe Fadiga de Conjuração, não concede seus bônus e não recupera Fadiga passivamente."
+    },
+    {
+      "titulo": "Trocas e Fadiga",
+      "texto": "Guardar, largar, trocar ou reequipar não remove fichas, não repara vida e não renova um uso limitado. Fora de combate, a recuperação normal de Fadiga continua valendo. Conserve as fichas nas cartas de reserva. Cópias de um mesmo acessório não acumulam bônus passivos."
+    },
+    {
+      "titulo": "Acesso em combate",
+      "texto": "A bolsa especial fica acessível. Sacar sua dose faz parte do uso, sem cobrar uma segunda ação só por pegar o frasco; pague a ação da carta e tenha mão livre quando for necessário manipular o item. Retirar uma ferramenta da mochila custa 1 ação de Movimento, além da ação necessária para utilizá-la. Trocar armamento pequeno ou médio custa 1 Movimento; trocas que envolvem Tamanho Grande conservam o custo de duas ações da regra existente. Largar item continua ação livre."
+    },
+    {
+      "titulo": "Troca de vestuário e repertório",
+      "texto": "Vestir ou ativar outra armadura, peça de roupa, acessório ou repertório de reserva exige uma pausa segura de pelo menos 1 minuto; não se faz durante o combate. É permitido retirar uma peça em combate para encerrar seu efeito, mas isso não permite ativar sua substituta imediatamente. Uma carta que diga expressamente que permite uma troca é uma exceção."
+    },
+    {
+      "titulo": "Efeitos que já começaram",
+      "texto": "Poção consumida sai do inventário. Se sua carta fica na mesa para acompanhar duração ou a vida de Vigor Lunar, ela é só um marcador do efeito e não outra dose carregada. Efeitos já aplicados continuam pelo tempo da própria regra; retirar a fonte interrompe benefícios que dependam de vestir, empunhar ou manter o item ativo."
+    },
+    {
+      "titulo": "Sem excesso e sem bolsas infinitas",
+      "texto": "Se não houver espaço, deixe, distribua ou transporte por animal ou veículo. Uma segunda mochila, saco ou bolso não aumenta a capacidade básica. O bolso secreto do Couro do Batedor ajuda a ocultar, mas não cria espaço. Peças de tamanho incompatível com um corpo, como barris e grandes baús, precisam de transporte separado. Agrupe moedas e pequenas joias em uma bolsa de tesouro de 1 espaço, sem registrar peça por peça para volume; quando a bolsa estiver cheia, o mestre avisa antes de acrescentar mais."
+    },
+    {
+      "titulo": "Habilidades não são carga",
+      "texto": "Cartas de raça, classe, herói, background e habilidades representam o personagem e não ocupam inventário. Equipamentos continuam ocupando seus espaços mesmo que sua carta esteja virada ou temporariamente sem vida."
+    }
+  ],
+  "itens": [
+    {
+      "id": "EQ-001",
+      "nome": "Faca",
+      "categoria_original": "ARMA CORPO A CORPO · COMUM",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate.",
+      "campos": {
+        "Dano": "2 + Destreza",
+        "Alcance": "Corpo a corpo (1)"
+      },
+      "tags_originais": [
+        "Perfuração",
+        "Peso Leve",
+        "Tamanho Pequeno"
+      ]
+    },
+    {
+      "id": "EQ-002",
+      "nome": "Florete",
+      "categoria_original": "ARMA CORPO A CORPO · COMUM",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate.",
+      "campos": {
+        "Dano": "2 + Destreza",
+        "Alcance": "Corpo a corpo (1)"
+      },
+      "tags_originais": [
+        "Perfuração",
+        "Peso Leve",
+        "Tamanho Médio"
+      ]
+    },
+    {
+      "id": "EQ-003",
+      "nome": "Bastão",
+      "categoria_original": "ARMA CORPO A CORPO · COMUM",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 2
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate.",
+      "campos": {
+        "Dano": "2 + Destreza",
+        "Alcance": "Corpo a corpo (2)"
+      },
+      "tags_originais": [
+        "Concussão",
+        "Peso Leve",
+        "Tamanho Grande"
+      ]
+    },
+    {
+      "id": "EQ-004",
+      "nome": "Espada Curta",
+      "categoria_original": "ARMA CORPO A CORPO · COMUM",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate.",
+      "campos": {
+        "Dano": "4 + Força",
+        "Alcance": "Corpo a corpo (1)",
+        "Requisito": "Força ≥ 1"
+      },
+      "tags_originais": [
+        "Corte",
+        "Peso Médio",
+        "Tamanho Pequeno"
+      ]
+    },
+    {
+      "id": "EQ-005",
+      "nome": "Espada Longa",
+      "categoria_original": "ARMA CORPO A CORPO · COMUM",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate.",
+      "campos": {
+        "Dano": "4 + Força",
+        "Alcance": "Corpo a corpo (1)",
+        "Requisito": "Força ≥ 1"
+      },
+      "tags_originais": [
+        "Corte",
+        "Peso Médio",
+        "Tamanho Médio"
+      ]
+    },
+    {
+      "id": "EQ-006",
+      "nome": "Lança",
+      "categoria_original": "ARMA CORPO A CORPO · COMUM",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 2
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate.",
+      "campos": {
+        "Dano": "4 + Força",
+        "Alcance": "Corpo a corpo (2)",
+        "Requisito": "Força ≥ 1"
+      },
+      "tags_originais": [
+        "Perfuração",
+        "Peso Médio",
+        "Tamanho Grande"
+      ]
+    },
+    {
+      "id": "EQ-007",
+      "nome": "Maça",
+      "categoria_original": "ARMA CORPO A CORPO · COMUM",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate.",
+      "campos": {
+        "Dano": "6 + Força",
+        "Alcance": "Corpo a corpo (1)",
+        "Requisito": "Força ≥ 2"
+      },
+      "tags_originais": [
+        "Concussão",
+        "Peso Pesado",
+        "Tamanho Pequeno"
+      ]
+    },
+    {
+      "id": "EQ-008",
+      "nome": "Machado de Guerra",
+      "categoria_original": "ARMA CORPO A CORPO · COMUM",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate.",
+      "campos": {
+        "Dano": "6 + Força",
+        "Alcance": "Corpo a corpo (1)",
+        "Requisito": "Força ≥ 2"
+      },
+      "tags_originais": [
+        "Corte",
+        "Peso Pesado",
+        "Tamanho Médio"
+      ]
+    },
+    {
+      "id": "EQ-009",
+      "nome": "Montante",
+      "categoria_original": "ARMA CORPO A CORPO · COMUM",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 2
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate.",
+      "campos": {
+        "Dano": "6 + Força",
+        "Alcance": "Corpo a corpo (2)",
+        "Requisito": "Força ≥ 2"
+      },
+      "tags_originais": [
+        "Corte",
+        "Peso Pesado",
+        "Tamanho Grande"
+      ]
+    },
+    {
+      "id": "EQ-010",
+      "nome": "Estilete",
+      "categoria_original": "ARMA CORPO A CORPO · INCOMUM",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate.",
+      "campos": {
+        "Dano": "2 + Destreza",
+        "Alcance": "Corpo a corpo (1)",
+        "Requisito": "Destreza ≥ 1",
+        "Limite de Fadiga": "1"
+      },
+      "tags_originais": [
+        "Perfuração",
+        "Peso Leve",
+        "Tamanho Pequeno"
+      ]
+    },
+    {
+      "id": "EQ-011",
+      "nome": "Florete de Duelista",
+      "categoria_original": "ARMA CORPO A CORPO · INCOMUM",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate.",
+      "campos": {
+        "Dano": "2 + Destreza",
+        "Alcance": "Corpo a corpo (1)",
+        "Requisito": "Destreza ≥ 2",
+        "Limite de Fadiga": "1"
+      },
+      "tags_originais": [
+        "Perfuração",
+        "Peso Leve",
+        "Tamanho Médio"
+      ]
+    },
+    {
+      "id": "EQ-012",
+      "nome": "Chicote",
+      "categoria_original": "ARMA CORPO A CORPO · INCOMUM",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 2
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate.",
+      "campos": {
+        "Dano": "2 + Destreza",
+        "Alcance": "Corpo a corpo (2)",
+        "Requisito": "Destreza ≥ 1",
+        "Limite de Fadiga": "1"
+      },
+      "tags_originais": [
+        "Concussão",
+        "Peso Leve",
+        "Tamanho Grande"
+      ]
+    },
+    {
+      "id": "EQ-013",
+      "nome": "Francisca",
+      "categoria_original": "ARMA CORPO A CORPO · INCOMUM",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate.",
+      "campos": {
+        "Dano": "4 + Força",
+        "Alcance": "Corpo a corpo (1)",
+        "Limite de Fadiga": "1"
+      },
+      "tags_originais": [
+        "Corte",
+        "Peso Médio",
+        "Tamanho Pequeno"
+      ]
+    },
+    {
+      "id": "EQ-014",
+      "nome": "Espada do Mestre-Ferreiro",
+      "categoria_original": "ARMA CORPO A CORPO · INCOMUM",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate.",
+      "campos": {
+        "Dano": "4 + Força",
+        "Alcance": "Corpo a corpo (1)",
+        "Requisito": "Força ≥ 1",
+        "Limite de Fadiga": "3"
+      },
+      "tags_originais": [
+        "Corte",
+        "Peso Médio",
+        "Tamanho Médio"
+      ]
+    },
+    {
+      "id": "EQ-015",
+      "nome": "Alabarda",
+      "categoria_original": "ARMA CORPO A CORPO · INCOMUM",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 2
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate.",
+      "campos": {
+        "Dano": "4 + Força",
+        "Alcance": "Corpo a corpo (2)",
+        "Requisito": "Força ≥ 1",
+        "Limite de Fadiga": "1"
+      },
+      "tags_originais": [
+        "Perfuração",
+        "Peso Médio",
+        "Tamanho Grande"
+      ]
+    },
+    {
+      "id": "EQ-016",
+      "nome": "Maça-Estrela",
+      "categoria_original": "ARMA CORPO A CORPO · INCOMUM",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate.",
+      "campos": {
+        "Dano": "6 + Força",
+        "Alcance": "Corpo a corpo (1)",
+        "Requisito": "Força ≥ 2",
+        "Limite de Fadiga": "2"
+      },
+      "tags_originais": [
+        "Concussão",
+        "Peso Pesado",
+        "Tamanho Pequeno"
+      ]
+    },
+    {
+      "id": "EQ-017",
+      "nome": "Machado Barbado",
+      "categoria_original": "ARMA CORPO A CORPO · INCOMUM",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate.",
+      "campos": {
+        "Dano": "6 + Força",
+        "Alcance": "Corpo a corpo (1)",
+        "Requisito": "Força ≥ 2",
+        "Limite de Fadiga": "2"
+      },
+      "tags_originais": [
+        "Corte",
+        "Peso Pesado",
+        "Tamanho Médio"
+      ]
+    },
+    {
+      "id": "EQ-018",
+      "nome": "Montante de Batalha",
+      "categoria_original": "ARMA CORPO A CORPO · INCOMUM",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 2
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate.",
+      "campos": {
+        "Dano": "6 + Força",
+        "Alcance": "Corpo a corpo (2)",
+        "Requisito": "Força ≥ 3",
+        "Limite de Fadiga": "2"
+      },
+      "tags_originais": [
+        "Corte",
+        "Peso Pesado",
+        "Tamanho Grande"
+      ]
+    },
+    {
+      "id": "EQ-019",
+      "nome": "Adaga da Mão Vazia",
+      "categoria_original": "ARMA CORPO A CORPO · RARA",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate.",
+      "campos": {
+        "Dano": "2 + Destreza",
+        "Alcance": "Corpo a corpo (1)",
+        "Limite de Fadiga": "2"
+      },
+      "tags_originais": [
+        "Peso Leve",
+        "Tamanho Pequeno"
+      ]
+    },
+    {
+      "id": "EQ-020",
+      "nome": "Florete do Contragolpe",
+      "categoria_original": "ARMA CORPO A CORPO · RARA",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate.",
+      "campos": {
+        "Dano": "2 + Destreza",
+        "Alcance": "Corpo a corpo (1)",
+        "Limite de Fadiga": "1"
+      },
+      "tags_originais": [
+        "Peso Leve",
+        "Tamanho Médio"
+      ]
+    },
+    {
+      "id": "EQ-021",
+      "nome": "Cajado do Condutor",
+      "categoria_original": "ARMA CORPO A CORPO · RARA",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 2
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate.",
+      "campos": {
+        "Dano": "0",
+        "Alcance": "Corpo a corpo (2)",
+        "Limite de Fadiga": "6"
+      },
+      "tags_originais": [
+        "Peso Leve",
+        "Tamanho Grande"
+      ]
+    },
+    {
+      "id": "EQ-022",
+      "nome": "Lâmina do Vento",
+      "categoria_original": "ARMA CORPO A CORPO · RARA",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate.",
+      "campos": {
+        "Dano": "4 + Força",
+        "Alcance": "Corpo a corpo (1)",
+        "Limite de Fadiga": "2"
+      },
+      "tags_originais": [
+        "Peso Médio",
+        "Tamanho Pequeno"
+      ]
+    },
+    {
+      "id": "EQ-023",
+      "nome": "Gládio Inquietante",
+      "categoria_original": "ARMA CORPO A CORPO · RARA",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate.",
+      "campos": {
+        "Dano": "4 + Força",
+        "Alcance": "Corpo a corpo (1)",
+        "Limite de Fadiga": "1"
+      },
+      "tags_originais": [
+        "Peso Médio",
+        "Tamanho Médio"
+      ]
+    },
+    {
+      "id": "EQ-024",
+      "nome": "Lança da Muralha",
+      "categoria_original": "ARMA CORPO A CORPO · RARA",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 2
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate.",
+      "campos": {
+        "Dano": "4 + Força",
+        "Alcance": "Corpo a corpo (2)",
+        "Limite de Fadiga": "2"
+      },
+      "tags_originais": [
+        "Peso Médio",
+        "Tamanho Grande"
+      ]
+    },
+    {
+      "id": "EQ-025",
+      "nome": "Quebra-Elmos",
+      "categoria_original": "ARMA CORPO A CORPO · RARA",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate.",
+      "campos": {
+        "Dano": "6 + Força",
+        "Alcance": "Corpo a corpo (1)",
+        "Limite de Fadiga": "2"
+      },
+      "tags_originais": [
+        "Peso Pesado",
+        "Tamanho Pequeno"
+      ]
+    },
+    {
+      "id": "EQ-026",
+      "nome": "Machado da Sepultura",
+      "categoria_original": "ARMA CORPO A CORPO · RARA",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate.",
+      "campos": {
+        "Dano": "6 + Força",
+        "Alcance": "Corpo a corpo (1)",
+        "Limite de Fadiga": "2"
+      },
+      "tags_originais": [
+        "Peso Pesado",
+        "Tamanho Médio"
+      ]
+    },
+    {
+      "id": "EQ-027",
+      "nome": "Montante do Frenesi",
+      "categoria_original": "ARMA CORPO A CORPO · RARA",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 2
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate.",
+      "campos": {
+        "Dano": "6 + Força",
+        "Alcance": "Corpo a corpo (2)",
+        "Limite de Fadiga": "2"
+      },
+      "tags_originais": [
+        "Peso Pesado",
+        "Tamanho Grande"
+      ]
+    },
+    {
+      "id": "EQ-028",
+      "nome": "Shuriken",
+      "categoria_original": "ARMA À DISTÂNCIA · COMUM",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 1
+      },
+      "unidades_por_pacote": 3,
+      "reserva_na_mochila": 0,
+      "observacao": "Até 3 exemplares iguais por estojo de 1 espaço de armamento. Rastrear cada peça arremessada.",
+      "campos": {
+        "Dano": "2 + Des",
+        "Alcance": "Curto (3)",
+        "Limite de Fadiga": "0"
+      },
+      "tags_originais": [
+        "Arremessável"
+      ]
+    },
+    {
+      "id": "EQ-029",
+      "nome": "Machado de Arremesso",
+      "categoria_original": "ARMA À DISTÂNCIA · COMUM",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Custo de transporte. As regras de mãos, alcance e recarga continuam independentes.",
+      "campos": {
+        "Dano": "4 + For",
+        "Alcance": "Médio (5)",
+        "Limite de Fadiga": "0"
+      },
+      "tags_originais": [
+        "Arremessável",
+        "Recuperável"
+      ]
+    },
+    {
+      "id": "EQ-030",
+      "nome": "Javelin",
+      "categoria_original": "ARMA À DISTÂNCIA · COMUM",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 2
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Custo de transporte. As regras de mãos, alcance e recarga continuam independentes.",
+      "campos": {
+        "Dano": "6 + For",
+        "Alcance": "Longo (7)",
+        "Limite de Fadiga": "0"
+      },
+      "tags_originais": [
+        "Arremessável",
+        "Recuperável"
+      ]
+    },
+    {
+      "id": "EQ-031",
+      "nome": "Arco Curto",
+      "categoria_original": "ARMA À DISTÂNCIA · COMUM",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 2
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Custo de transporte. As regras de mãos, alcance e recarga continuam independentes.",
+      "campos": {
+        "Dano": "3 + Des",
+        "Alcance": "Curto e Médio",
+        "Limite de Fadiga": "1"
+      },
+      "tags_originais": [
+        "Arma de Tiro"
+      ]
+    },
+    {
+      "id": "EQ-032",
+      "nome": "Arco Longo",
+      "categoria_original": "ARMA À DISTÂNCIA · COMUM",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 2
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Custo de transporte. As regras de mãos, alcance e recarga continuam independentes.",
+      "campos": {
+        "Dano": "4 + Des",
+        "Alcance": "Médio e Longo",
+        "Limite de Fadiga": "1"
+      },
+      "tags_originais": [
+        "Arma de Tiro"
+      ]
+    },
+    {
+      "id": "EQ-033",
+      "nome": "Besta Pesada",
+      "categoria_original": "ARMA À DISTÂNCIA · COMUM",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 2
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Custo de transporte. As regras de mãos, alcance e recarga continuam independentes.",
+      "campos": {
+        "Dano": "6",
+        "Alcance": "Médio e Longo",
+        "Limite de Fadiga": "2"
+      },
+      "tags_originais": [
+        "Arma de Tiro",
+        "Ignora Resistência",
+        "Recarga"
+      ]
+    },
+    {
+      "id": "EQ-034",
+      "nome": "Adaga Balanceada",
+      "categoria_original": "ARMA À DISTÂNCIA · INCOMUM",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 1
+      },
+      "unidades_por_pacote": 3,
+      "reserva_na_mochila": 0,
+      "observacao": "Até 3 exemplares iguais por estojo de 1 espaço de armamento. Rastrear cada peça arremessada.",
+      "campos": {
+        "Dano": "2 + Des",
+        "Alcance": "Curta",
+        "Limite de Fadiga": "0"
+      },
+      "tags_originais": [
+        "Arremessável"
+      ]
+    },
+    {
+      "id": "EQ-035",
+      "nome": "Machete Farpado",
+      "categoria_original": "ARMA À DISTÂNCIA · INCOMUM",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Custo de transporte. As regras de mãos, alcance e recarga continuam independentes.",
+      "campos": {
+        "Dano": "4 + For",
+        "Alcance": "Curta",
+        "Limite de Fadiga": "0"
+      },
+      "tags_originais": [
+        "Arremessável",
+        "Recuperável"
+      ]
+    },
+    {
+      "id": "EQ-036",
+      "nome": "Lança Espiral",
+      "categoria_original": "ARMA À DISTÂNCIA · INCOMUM",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 2
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Custo de transporte. As regras de mãos, alcance e recarga continuam independentes.",
+      "campos": {
+        "Dano": "6 + For",
+        "Alcance": "Curta-Média",
+        "Limite de Fadiga": "3"
+      },
+      "tags_originais": [
+        "Arremessável",
+        "Recuperável"
+      ]
+    },
+    {
+      "id": "EQ-037",
+      "nome": "Arco Recurvo",
+      "categoria_original": "ARMA À DISTÂNCIA · INCOMUM",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 2
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Custo de transporte. As regras de mãos, alcance e recarga continuam independentes.",
+      "campos": {
+        "Dano": "3 + Des",
+        "Alcance": "Curta-Média",
+        "Limite de Fadiga": "1"
+      },
+      "tags_originais": [
+        "Arma de Tiro"
+      ]
+    },
+    {
+      "id": "EQ-038",
+      "nome": "Arco de Teixo",
+      "categoria_original": "ARMA À DISTÂNCIA · INCOMUM",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 2
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Custo de transporte. As regras de mãos, alcance e recarga continuam independentes.",
+      "campos": {
+        "Dano": "4 + Des",
+        "Alcance": "Média-Longa",
+        "Limite de Fadiga": "1"
+      },
+      "tags_originais": [
+        "Arma de Tiro"
+      ]
+    },
+    {
+      "id": "EQ-039",
+      "nome": "Besta da Seta Dupla",
+      "categoria_original": "ARMA À DISTÂNCIA · INCOMUM",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 2
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Custo de transporte. As regras de mãos, alcance e recarga continuam independentes.",
+      "campos": {
+        "Dano": "6",
+        "Alcance": "Média-Longa",
+        "Limite de Fadiga": "2"
+      },
+      "tags_originais": [
+        "Arma de Tiro",
+        "Ignora Resistência",
+        "Recarga"
+      ]
+    },
+    {
+      "id": "EQ-040",
+      "nome": "Leque de Lâminas",
+      "categoria_original": "ARMA À DISTÂNCIA · RARA",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Custo de transporte. As regras de mãos, alcance e recarga continuam independentes.",
+      "campos": {
+        "Dano": "2 + Destreza",
+        "Alcance": "Curta"
+      },
+      "tags_originais": [
+        "Arremessável"
+      ]
+    },
+    {
+      "id": "EQ-041",
+      "nome": "Machado Sedento",
+      "categoria_original": "ARMA À DISTÂNCIA · RARA",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Custo de transporte. As regras de mãos, alcance e recarga continuam independentes.",
+      "campos": {
+        "Dano": "4 + Força",
+        "Alcance": "Curta"
+      },
+      "tags_originais": [
+        "Arremessável"
+      ]
+    },
+    {
+      "id": "EQ-042",
+      "nome": "Lança Trovejante",
+      "categoria_original": "ARMA À DISTÂNCIA · RARA",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 2
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Custo de transporte. As regras de mãos, alcance e recarga continuam independentes.",
+      "campos": {
+        "Dano": "6 + Força",
+        "Alcance": "Longo",
+        "Limite de Fadiga": "2"
+      },
+      "tags_originais": [
+        "Arremessável",
+        "Arremesso Grande",
+        "Raio"
+      ]
+    },
+    {
+      "id": "EQ-043",
+      "nome": "Arco das Sombras",
+      "categoria_original": "ARMA À DISTÂNCIA · RARA",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 2
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Custo de transporte. As regras de mãos, alcance e recarga continuam independentes.",
+      "campos": {
+        "Dano": "3 + Destreza",
+        "Alcance": "Curta-Média"
+      },
+      "tags_originais": [
+        "Arma de Tiro"
+      ]
+    },
+    {
+      "id": "EQ-044",
+      "nome": "Arco da Maré",
+      "categoria_original": "ARMA À DISTÂNCIA · RARA",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 2
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Custo de transporte. As regras de mãos, alcance e recarga continuam independentes.",
+      "campos": {
+        "Dano": "4 + Destreza"
+      },
+      "tags_originais": [
+        "Arma de Tiro"
+      ]
+    },
+    {
+      "id": "EQ-045",
+      "nome": "Balestra de Cerco",
+      "categoria_original": "ARMA À DISTÂNCIA · RARA",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 2
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Custo de transporte. As regras de mãos, alcance e recarga continuam independentes.",
+      "campos": {
+        "Dano": "6",
+        "Alcance": "Média-Longa"
+      },
+      "tags_originais": [
+        "Arma de Tiro",
+        "Ignora Resistência"
+      ]
+    },
+    {
+      "id": "EQ-046",
+      "nome": "Couro do Batedor",
+      "categoria_original": "ARMADURA · COMUM",
+      "tipo_inventario": "Vestido",
+      "ocupacao_em_uso": {
+        "armadura": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 2,
+      "observacao": "",
+      "campos": {
+        "Vida": "4",
+        "Resistência": "2"
+      },
+      "tags_originais": [
+        "Armadura",
+        "Leve"
+      ]
+    },
+    {
+      "id": "EQ-047",
+      "nome": "Cota de Malha",
+      "categoria_original": "ARMADURA · COMUM",
+      "tipo_inventario": "Vestido",
+      "ocupacao_em_uso": {
+        "armadura": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 4,
+      "observacao": "",
+      "campos": {
+        "Vida": "9",
+        "Resistência": "3"
+      },
+      "tags_originais": [
+        "Armadura",
+        "Média"
+      ]
+    },
+    {
+      "id": "EQ-048",
+      "nome": "Arnês de Placas",
+      "categoria_original": "ARMADURA · COMUM",
+      "tipo_inventario": "Vestido",
+      "ocupacao_em_uso": {
+        "armadura": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 4,
+      "observacao": "",
+      "campos": {
+        "Vida": "16",
+        "Resistência": "3"
+      },
+      "tags_originais": [
+        "Armadura",
+        "Pesada"
+      ]
+    },
+    {
+      "id": "EQ-049",
+      "nome": "Couro Élfico",
+      "categoria_original": "ARMADURA · INCOMUM",
+      "tipo_inventario": "Vestido",
+      "ocupacao_em_uso": {
+        "armadura": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 2,
+      "observacao": "",
+      "campos": {
+        "Vida": "5",
+        "Resistência": "2"
+      },
+      "tags_originais": [
+        "Armadura",
+        "Leve"
+      ]
+    },
+    {
+      "id": "EQ-050",
+      "nome": "Brunea de Escamas",
+      "categoria_original": "ARMADURA · INCOMUM",
+      "tipo_inventario": "Vestido",
+      "ocupacao_em_uso": {
+        "armadura": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 4,
+      "observacao": "",
+      "campos": {
+        "Vida": "10",
+        "Resistência": "3"
+      },
+      "tags_originais": [
+        "Armadura",
+        "Média"
+      ]
+    },
+    {
+      "id": "EQ-051",
+      "nome": "Armadura Samurai Temperada",
+      "categoria_original": "ARMADURA · INCOMUM",
+      "tipo_inventario": "Vestido",
+      "ocupacao_em_uso": {
+        "armadura": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 4,
+      "observacao": "",
+      "campos": {
+        "Vida": "18",
+        "Resistência": "3"
+      },
+      "tags_originais": [
+        "Armadura",
+        "Pesada"
+      ]
+    },
+    {
+      "id": "EQ-052",
+      "nome": "Manto do Vento",
+      "categoria_original": "ARMADURA · RARA",
+      "tipo_inventario": "Vestido",
+      "ocupacao_em_uso": {
+        "armadura": 1,
+        "costas": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 2,
+      "observacao": "O Manto do Vento é ARMADURA no catálogo e também usa Costas. Não acumula outra armadura nem outra capa.",
+      "campos": {
+        "Vida": "3",
+        "Resistência": "1"
+      },
+      "tags_originais": [
+        "Armadura",
+        "Leve",
+        "Planar"
+      ]
+    },
+    {
+      "id": "EQ-053",
+      "nome": "Couraça do Contra-Ataque",
+      "categoria_original": "ARMADURA · RARA",
+      "tipo_inventario": "Vestido",
+      "ocupacao_em_uso": {
+        "armadura": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 4,
+      "observacao": "",
+      "campos": {
+        "Vida": "9",
+        "Resistência": "3"
+      },
+      "tags_originais": [
+        "Armadura",
+        "Média"
+      ]
+    },
+    {
+      "id": "EQ-054",
+      "nome": "Peitoral de Dalpnor",
+      "categoria_original": "ARMADURA · RARA",
+      "tipo_inventario": "Vestido",
+      "ocupacao_em_uso": {
+        "armadura": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 4,
+      "observacao": "",
+      "campos": {
+        "Vida": "18",
+        "Resistência": "3"
+      },
+      "tags_originais": [
+        "Armadura",
+        "Pesada"
+      ]
+    },
+    {
+      "id": "EQ-055",
+      "nome": "Escudo Leve",
+      "categoria_original": "ESCUDO · COMUM",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Ocupa uma mão quando empunhado. Guardado não dá proteção nem recebe Fadiga de Conjuração.",
+      "campos": {
+        "Vida": "5",
+        "Resistência": "1"
+      },
+      "tags_originais": [
+        "Escudo",
+        "Leve"
+      ]
+    },
+    {
+      "id": "EQ-056",
+      "nome": "Escudo Pesado",
+      "categoria_original": "ESCUDO · COMUM",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 2
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Ocupa uma mão quando empunhado. Guardado não dá proteção nem recebe Fadiga de Conjuração.",
+      "campos": {
+        "Vida": "10",
+        "Resistência": "2"
+      },
+      "tags_originais": [
+        "Escudo",
+        "Pesado"
+      ]
+    },
+    {
+      "id": "EQ-057",
+      "nome": "Broquel Ágil",
+      "categoria_original": "ESCUDO · INCOMUM",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Ocupa uma mão quando empunhado. Guardado não dá proteção nem recebe Fadiga de Conjuração.",
+      "campos": {
+        "Vida": "6",
+        "Resistência": "1"
+      },
+      "tags_originais": [
+        "Escudo",
+        "Leve"
+      ]
+    },
+    {
+      "id": "EQ-058",
+      "nome": "Escudo de Investida",
+      "categoria_original": "ESCUDO · INCOMUM",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 2
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Ocupa uma mão quando empunhado. Guardado não dá proteção nem recebe Fadiga de Conjuração.",
+      "campos": {
+        "Vida": "12",
+        "Resistência": "2"
+      },
+      "tags_originais": [
+        "Escudo",
+        "Pesado"
+      ]
+    },
+    {
+      "id": "EQ-059",
+      "nome": "Placa de Luz",
+      "categoria_original": "ESCUDO · RARA",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Ocupa uma mão quando empunhado. Guardado não dá proteção nem recebe Fadiga de Conjuração.",
+      "campos": {
+        "Vida": "8",
+        "Resistência": "3"
+      },
+      "tags_originais": [
+        "Escudo",
+        "Leve"
+      ]
+    },
+    {
+      "id": "EQ-060",
+      "nome": "Scutum da Legião",
+      "categoria_original": "ESCUDO · RARA",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 2
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Ocupa uma mão quando empunhado. Guardado não dá proteção nem recebe Fadiga de Conjuração.",
+      "campos": {
+        "Vida": "14",
+        "Resistência": "2"
+      },
+      "tags_originais": [
+        "Escudo",
+        "Pesado"
+      ]
+    },
+    {
+      "id": "EQ-061",
+      "nome": "Poção de Cura Pequena",
+      "categoria_original": "CONSUMÍVEL · COMUM",
+      "tipo_inventario": "Consumível especial",
+      "ocupacao_em_uso": {
+        "consumiveis": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa.",
+      "campos": {},
+      "tags_originais": [
+        "Consumível",
+        "Poção"
+      ]
+    },
+    {
+      "id": "EQ-062",
+      "nome": "Tocha",
+      "categoria_original": "CONSUMÍVEL · COMUM",
+      "tipo_inventario": "Suprimento de viagem",
+      "ocupacao_em_uso": {
+        "mochila": 1
+      },
+      "unidades_por_pacote": 3,
+      "reserva_na_mochila": 0,
+      "observacao": "Até 3 unidades iguais por pacote. Tochas e rações não ocupam a bolsa de consumíveis especiais.",
+      "campos": {},
+      "tags_originais": [
+        "Consumível"
+      ]
+    },
+    {
+      "id": "EQ-063",
+      "nome": "Antídoto",
+      "categoria_original": "CONSUMÍVEL · COMUM",
+      "tipo_inventario": "Consumível especial",
+      "ocupacao_em_uso": {
+        "consumiveis": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa.",
+      "campos": {},
+      "tags_originais": [
+        "Consumível",
+        "Poção"
+      ]
+    },
+    {
+      "id": "EQ-064",
+      "nome": "Ração de Viagem",
+      "categoria_original": "CONSUMÍVEL · COMUM",
+      "tipo_inventario": "Suprimento de viagem",
+      "ocupacao_em_uso": {
+        "mochila": 1
+      },
+      "unidades_por_pacote": 3,
+      "reserva_na_mochila": 0,
+      "observacao": "Até 3 unidades iguais por pacote. Tochas e rações não ocupam a bolsa de consumíveis especiais.",
+      "campos": {},
+      "tags_originais": [
+        "Consumível"
+      ]
+    },
+    {
+      "id": "EQ-065",
+      "nome": "Bomba de Fumaça",
+      "categoria_original": "CONSUMÍVEL · COMUM",
+      "tipo_inventario": "Consumível especial",
+      "ocupacao_em_uso": {
+        "consumiveis": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa.",
+      "campos": {},
+      "tags_originais": [
+        "Consumível"
+      ]
+    },
+    {
+      "id": "EQ-066",
+      "nome": "Pedra de Amolar",
+      "categoria_original": "CONSUMÍVEL · COMUM",
+      "tipo_inventario": "Consumível especial",
+      "ocupacao_em_uso": {
+        "consumiveis": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa.",
+      "campos": {},
+      "tags_originais": [
+        "Consumível"
+      ]
+    },
+    {
+      "id": "EQ-067",
+      "nome": "Veneno Ácido",
+      "categoria_original": "CONSUMÍVEL · COMUM",
+      "tipo_inventario": "Consumível especial",
+      "ocupacao_em_uso": {
+        "consumiveis": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa.",
+      "campos": {},
+      "tags_originais": [
+        "Consumível"
+      ]
+    },
+    {
+      "id": "EQ-068",
+      "nome": "Poção de Mana Pequena",
+      "categoria_original": "CONSUMÍVEL · COMUM",
+      "tipo_inventario": "Consumível especial",
+      "ocupacao_em_uso": {
+        "consumiveis": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa.",
+      "campos": {},
+      "tags_originais": [
+        "Consumível",
+        "Poção"
+      ]
+    },
+    {
+      "id": "EQ-069",
+      "nome": "Óleo Antiespectral",
+      "categoria_original": "CONSUMÍVEL · COMUM",
+      "tipo_inventario": "Consumível especial",
+      "ocupacao_em_uso": {
+        "consumiveis": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa.",
+      "campos": {},
+      "tags_originais": [
+        "Consumível"
+      ]
+    },
+    {
+      "id": "EQ-070",
+      "nome": "Gazua",
+      "categoria_original": "CONSUMÍVEL · COMUM",
+      "tipo_inventario": "Consumível especial",
+      "ocupacao_em_uso": {
+        "consumiveis": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa.",
+      "campos": {},
+      "tags_originais": [
+        "Consumível"
+      ]
+    },
+    {
+      "id": "EQ-071",
+      "nome": "Poção de Pele de Pedra",
+      "categoria_original": "CONSUMÍVEL · INCOMUM",
+      "tipo_inventario": "Consumível especial",
+      "ocupacao_em_uso": {
+        "consumiveis": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa.",
+      "campos": {},
+      "tags_originais": [
+        "Consumível",
+        "Poção"
+      ]
+    },
+    {
+      "id": "EQ-072",
+      "nome": "Poção Carmim",
+      "categoria_original": "CONSUMÍVEL · INCOMUM",
+      "tipo_inventario": "Consumível especial",
+      "ocupacao_em_uso": {
+        "consumiveis": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa.",
+      "campos": {},
+      "tags_originais": [
+        "Consumível",
+        "Poção"
+      ]
+    },
+    {
+      "id": "EQ-073",
+      "nome": "Incenso de Jasmim",
+      "categoria_original": "CONSUMÍVEL · INCOMUM",
+      "tipo_inventario": "Consumível especial",
+      "ocupacao_em_uso": {
+        "consumiveis": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa.",
+      "campos": {},
+      "tags_originais": [
+        "Consumível"
+      ]
+    },
+    {
+      "id": "EQ-074",
+      "nome": "Frasco de Piche",
+      "categoria_original": "CONSUMÍVEL · INCOMUM",
+      "tipo_inventario": "Consumível especial",
+      "ocupacao_em_uso": {
+        "consumiveis": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa.",
+      "campos": {},
+      "tags_originais": [
+        "Consumível"
+      ]
+    },
+    {
+      "id": "EQ-075",
+      "nome": "Poção Turquesa",
+      "categoria_original": "CONSUMÍVEL · INCOMUM",
+      "tipo_inventario": "Consumível especial",
+      "ocupacao_em_uso": {
+        "consumiveis": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa.",
+      "campos": {},
+      "tags_originais": [
+        "Consumível",
+        "Poção"
+      ]
+    },
+    {
+      "id": "EQ-076",
+      "nome": "Sangue de Batalha",
+      "categoria_original": "CONSUMÍVEL · RARA",
+      "tipo_inventario": "Consumível especial",
+      "ocupacao_em_uso": {
+        "consumiveis": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa.",
+      "campos": {},
+      "tags_originais": [
+        "Consumível",
+        "Poção"
+      ]
+    },
+    {
+      "id": "EQ-077",
+      "nome": "Flocos de Sombras",
+      "categoria_original": "CONSUMÍVEL · RARA",
+      "tipo_inventario": "Consumível especial",
+      "ocupacao_em_uso": {
+        "consumiveis": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa.",
+      "campos": {},
+      "tags_originais": [
+        "Consumível"
+      ]
+    },
+    {
+      "id": "EQ-078",
+      "nome": "Água Abençoada",
+      "categoria_original": "CONSUMÍVEL · RARA",
+      "tipo_inventario": "Consumível especial",
+      "ocupacao_em_uso": {
+        "consumiveis": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa.",
+      "campos": {},
+      "tags_originais": [
+        "Consumível"
+      ]
+    },
+    {
+      "id": "EQ-079",
+      "nome": "Flecha Explosiva",
+      "categoria_original": "CONSUMÍVEL · RARA",
+      "tipo_inventario": "Consumível especial",
+      "ocupacao_em_uso": {
+        "consumiveis": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa.",
+      "campos": {},
+      "tags_originais": [
+        "Consumível"
+      ]
+    },
+    {
+      "id": "EQ-080",
+      "nome": "Pergaminho do Desencantamento",
+      "categoria_original": "CONSUMÍVEL · RARA",
+      "tipo_inventario": "Consumível especial",
+      "ocupacao_em_uso": {
+        "consumiveis": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa.",
+      "campos": {},
+      "tags_originais": [
+        "Consumível"
+      ]
+    },
+    {
+      "id": "EQ-081",
+      "nome": "Corda (15 m)",
+      "categoria_original": "PERMANENTE · COMUM",
+      "tipo_inventario": "Ferramenta",
+      "ocupacao_em_uso": {
+        "mochila": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Retire para usar. Não concede bônus passivo de combate nem capacidade de Fadiga enquanto guardado.",
+      "campos": {},
+      "tags_originais": [
+        "Permanente"
+      ]
+    },
+    {
+      "id": "EQ-082",
+      "nome": "Pé de Cabra",
+      "categoria_original": "PERMANENTE · COMUM",
+      "tipo_inventario": "Ferramenta",
+      "ocupacao_em_uso": {
+        "mochila": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Retire para usar. Não concede bônus passivo de combate nem capacidade de Fadiga enquanto guardado.",
+      "campos": {},
+      "tags_originais": [
+        "Permanente"
+      ]
+    },
+    {
+      "id": "EQ-083",
+      "nome": "Pederneira",
+      "categoria_original": "PERMANENTE · COMUM",
+      "tipo_inventario": "Ferramenta",
+      "ocupacao_em_uso": {
+        "mochila": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Retire para usar. Não concede bônus passivo de combate nem capacidade de Fadiga enquanto guardado.",
+      "campos": {},
+      "tags_originais": [
+        "Permanente"
+      ]
+    },
+    {
+      "id": "EQ-084",
+      "nome": "Kit de Reparos",
+      "categoria_original": "PERMANENTE · COMUM",
+      "tipo_inventario": "Ferramenta",
+      "ocupacao_em_uso": {
+        "mochila": 2
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Retire para usar. Não concede bônus passivo de combate nem capacidade de Fadiga enquanto guardado.",
+      "campos": {},
+      "tags_originais": [
+        "Permanente"
+      ]
+    },
+    {
+      "id": "EQ-085",
+      "nome": "Kit de Acampamento",
+      "categoria_original": "PERMANENTE · COMUM",
+      "tipo_inventario": "Ferramenta",
+      "ocupacao_em_uso": {
+        "mochila": 2
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Retire para usar. Não concede bônus passivo de combate nem capacidade de Fadiga enquanto guardado.",
+      "campos": {},
+      "tags_originais": [
+        "Permanente"
+      ]
+    },
+    {
+      "id": "EQ-086",
+      "nome": "Lanterna",
+      "categoria_original": "PERMANENTE · COMUM",
+      "tipo_inventario": "Ferramenta",
+      "ocupacao_em_uso": {
+        "mochila": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Retire para usar. Não concede bônus passivo de combate nem capacidade de Fadiga enquanto guardado.",
+      "campos": {},
+      "tags_originais": [
+        "Permanente"
+      ]
+    },
+    {
+      "id": "EQ-087",
+      "nome": "Vara de 3 Metros",
+      "categoria_original": "PERMANENTE · COMUM",
+      "tipo_inventario": "Ferramenta",
+      "ocupacao_em_uso": {
+        "mochila": 2
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Retire para usar. Não concede bônus passivo de combate nem capacidade de Fadiga enquanto guardado.",
+      "campos": {},
+      "tags_originais": [
+        "Permanente"
+      ]
+    },
+    {
+      "id": "EQ-088",
+      "nome": "Espelho de Bolso",
+      "categoria_original": "PERMANENTE · COMUM",
+      "tipo_inventario": "Ferramenta",
+      "ocupacao_em_uso": {
+        "mochila": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Retire para usar. Não concede bônus passivo de combate nem capacidade de Fadiga enquanto guardado.",
+      "campos": {},
+      "tags_originais": [
+        "Permanente"
+      ]
+    },
+    {
+      "id": "EQ-089",
+      "nome": "Bandoleira de Armas",
+      "categoria_original": "PERMANENTE · COMUM",
+      "tipo_inventario": "Acessório",
+      "ocupacao_em_uso": {
+        "acessorios": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 1,
+      "observacao": "Mantém a habilidade de virar a arma. Não aumenta os quatro espaços de armamento.",
+      "campos": {},
+      "tags_originais": [
+        "Permanente"
+      ]
+    },
+    {
+      "id": "EQ-090",
+      "nome": "Ferramentas de Ladrão",
+      "categoria_original": "PERMANENTE · COMUM",
+      "tipo_inventario": "Ferramenta",
+      "ocupacao_em_uso": {
+        "mochila": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Retire para usar. Não concede bônus passivo de combate nem capacidade de Fadiga enquanto guardado.",
+      "campos": {},
+      "tags_originais": [
+        "Permanente"
+      ]
+    },
+    {
+      "id": "EQ-091",
+      "nome": "Símbolo Sagrado",
+      "categoria_original": "PERMANENTE · COMUM",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Foco ocupa uma mão segundo as regras do projeto. Volume de 2 espaços não cria exigência de duas mãos.",
+      "campos": {
+        "Dano": "1",
+        "Alcance": "—",
+        "Limite de Fadiga": "4"
+      },
+      "tags_originais": [
+        "Arma",
+        "Foco"
+      ]
+    },
+    {
+      "id": "EQ-092",
+      "nome": "Corda de Arco da Penumbra",
+      "categoria_original": "PERMANENTE · COMUM",
+      "tipo_inventario": "Acessório",
+      "ocupacao_em_uso": {
+        "acessorios": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 1,
+      "observacao": "É um acessório de arma: continua ocupando 1 dos dois acessórios quando instalada no arco.",
+      "campos": {},
+      "tags_originais": [
+        "Permanente"
+      ]
+    },
+    {
+      "id": "EQ-093",
+      "nome": "Varinha Eletrizante",
+      "categoria_original": "PERMANENTE · COMUM",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Foco ocupa uma mão segundo as regras do projeto. Volume de 2 espaços não cria exigência de duas mãos.",
+      "campos": {
+        "Limite de Fadiga": "3"
+      },
+      "tags_originais": [
+        "Arma",
+        "Foco"
+      ]
+    },
+    {
+      "id": "EQ-094",
+      "nome": "Paraquedas Élfico",
+      "categoria_original": "PERMANENTE · INCOMUM",
+      "tipo_inventario": "Vestido",
+      "ocupacao_em_uso": {
+        "costas": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 2,
+      "observacao": "O Paraquedas Élfico compete por Costas com capas e mantos. Dobrado, pode ser reserva de 2 espaços na mochila.",
+      "campos": {},
+      "tags_originais": [
+        "Permanente"
+      ]
+    },
+    {
+      "id": "EQ-095",
+      "nome": "Bússola do Rumo",
+      "categoria_original": "PERMANENTE · INCOMUM",
+      "tipo_inventario": "Ferramenta",
+      "ocupacao_em_uso": {
+        "mochila": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Retire para usar. Não concede bônus passivo de combate nem capacidade de Fadiga enquanto guardado.",
+      "campos": {},
+      "tags_originais": [
+        "Permanente"
+      ]
+    },
+    {
+      "id": "EQ-096",
+      "nome": "Equipamento de Pesca",
+      "categoria_original": "PERMANENTE · INCOMUM",
+      "tipo_inventario": "Ferramenta",
+      "ocupacao_em_uso": {
+        "mochila": 2
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Retire para usar. Não concede bônus passivo de combate nem capacidade de Fadiga enquanto guardado.",
+      "campos": {},
+      "tags_originais": [
+        "Permanente"
+      ]
+    },
+    {
+      "id": "EQ-097",
+      "nome": "Gancho de Escalada",
+      "categoria_original": "PERMANENTE · INCOMUM",
+      "tipo_inventario": "Ferramenta",
+      "ocupacao_em_uso": {
+        "mochila": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Retire para usar. Não concede bônus passivo de combate nem capacidade de Fadiga enquanto guardado.",
+      "campos": {},
+      "tags_originais": [
+        "Permanente"
+      ]
+    },
+    {
+      "id": "EQ-098",
+      "nome": "Grilhão de Ferro",
+      "categoria_original": "PERMANENTE · INCOMUM",
+      "tipo_inventario": "Ferramenta",
+      "ocupacao_em_uso": {
+        "mochila": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Retire para usar. Não concede bônus passivo de combate nem capacidade de Fadiga enquanto guardado.",
+      "campos": {},
+      "tags_originais": [
+        "Permanente"
+      ]
+    },
+    {
+      "id": "EQ-099",
+      "nome": "Manopla de Bronze",
+      "categoria_original": "PERMANENTE · INCOMUM",
+      "tipo_inventario": "Acessório",
+      "ocupacao_em_uso": {
+        "acessorios": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 1,
+      "observacao": "Manopla usa acessório; não cria mão adicional nem altera a empunhadura das armas.",
+      "campos": {},
+      "tags_originais": [
+        "Permanente"
+      ]
+    },
+    {
+      "id": "EQ-100",
+      "nome": "Botas de Lince",
+      "categoria_original": "PERMANENTE · INCOMUM",
+      "tipo_inventario": "Vestido",
+      "ocupacao_em_uso": {
+        "pes": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 2,
+      "observacao": "",
+      "campos": {},
+      "tags_originais": [
+        "Permanente"
+      ]
+    },
+    {
+      "id": "EQ-101",
+      "nome": "Pergaminho Ancestral",
+      "categoria_original": "PERMANENTE · INCOMUM",
+      "tipo_inventario": "Acessório",
+      "ocupacao_em_uso": {
+        "acessorios": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 1,
+      "observacao": "Apesar do nome Pergaminho, a carta é permanente: usa acessório, não consumível nem repertório.",
+      "campos": {},
+      "tags_originais": [
+        "Permanente"
+      ]
+    },
+    {
+      "id": "EQ-102",
+      "nome": "Manto Camuflado",
+      "categoria_original": "PERMANENTE · INCOMUM",
+      "tipo_inventario": "Vestido",
+      "ocupacao_em_uso": {
+        "costas": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 1,
+      "observacao": "",
+      "campos": {},
+      "tags_originais": [
+        "Permanente"
+      ]
+    },
+    {
+      "id": "EQ-103",
+      "nome": "Anel do Iniciado",
+      "categoria_original": "PERMANENTE · INCOMUM",
+      "tipo_inventario": "Acessório",
+      "ocupacao_em_uso": {
+        "acessorios": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 1,
+      "observacao": "Acessório equipado; não fornece benefícios se estiver de reserva na mochila.",
+      "campos": {},
+      "tags_originais": [
+        "Permanente"
+      ]
+    },
+    {
+      "id": "EQ-104",
+      "nome": "Elmo de Touro",
+      "categoria_original": "PERMANENTE · INCOMUM",
+      "tipo_inventario": "Vestido",
+      "ocupacao_em_uso": {
+        "cabeca": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 1,
+      "observacao": "",
+      "campos": {},
+      "tags_originais": [
+        "Permanente"
+      ]
+    },
+    {
+      "id": "EQ-105",
+      "nome": "Bainha Impetuosa",
+      "categoria_original": "PERMANENTE · INCOMUM",
+      "tipo_inventario": "Acessório",
+      "ocupacao_em_uso": {
+        "acessorios": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 1,
+      "observacao": "Acessório equipado; não fornece benefícios se estiver de reserva na mochila.",
+      "campos": {},
+      "tags_originais": [
+        "Permanente"
+      ]
+    },
+    {
+      "id": "EQ-106",
+      "nome": "Cachecol da Parceria",
+      "categoria_original": "PERMANENTE · INCOMUM",
+      "tipo_inventario": "Acessório",
+      "ocupacao_em_uso": {
+        "acessorios": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 1,
+      "observacao": "Acessório equipado; não fornece benefícios se estiver de reserva na mochila.",
+      "campos": {},
+      "tags_originais": [
+        "Permanente"
+      ]
+    },
+    {
+      "id": "EQ-107",
+      "nome": "Cinto Estelar",
+      "categoria_original": "PERMANENTE · INCOMUM",
+      "tipo_inventario": "Acessório",
+      "ocupacao_em_uso": {
+        "acessorios": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 1,
+      "observacao": "Acessório equipado; não fornece benefícios se estiver de reserva na mochila.",
+      "campos": {},
+      "tags_originais": [
+        "Permanente"
+      ]
+    },
+    {
+      "id": "EQ-108",
+      "nome": "Botas Seccundas",
+      "categoria_original": "PERMANENTE · INCOMUM",
+      "tipo_inventario": "Vestido",
+      "ocupacao_em_uso": {
+        "pes": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 2,
+      "observacao": "",
+      "campos": {},
+      "tags_originais": [
+        "Permanente"
+      ]
+    },
+    {
+      "id": "EQ-109",
+      "nome": "Carta da Sorte",
+      "categoria_original": "PERMANENTE · RARA",
+      "tipo_inventario": "Acessório",
+      "ocupacao_em_uso": {
+        "acessorios": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 1,
+      "observacao": "Acessório equipado; não fornece benefícios se estiver de reserva na mochila.",
+      "campos": {},
+      "tags_originais": [
+        "Permanente"
+      ]
+    },
+    {
+      "id": "EQ-110",
+      "nome": "Ampulheta Trincada",
+      "categoria_original": "PERMANENTE · RARA",
+      "tipo_inventario": "Acessório",
+      "ocupacao_em_uso": {
+        "acessorios": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 1,
+      "observacao": "Acessório equipado; não fornece benefícios se estiver de reserva na mochila.",
+      "campos": {},
+      "tags_originais": [
+        "Permanente"
+      ]
+    },
+    {
+      "id": "EQ-111",
+      "nome": "Máscara do Impostor",
+      "categoria_original": "PERMANENTE · RARA",
+      "tipo_inventario": "Vestido",
+      "ocupacao_em_uso": {
+        "cabeca": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 1,
+      "observacao": "",
+      "campos": {},
+      "tags_originais": [
+        "Permanente"
+      ]
+    },
+    {
+      "id": "EQ-112",
+      "nome": "Selo de Sangue",
+      "categoria_original": "PERMANENTE · RARA",
+      "tipo_inventario": "Acessório",
+      "ocupacao_em_uso": {
+        "acessorios": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 1,
+      "observacao": "Acessório equipado; não fornece benefícios se estiver de reserva na mochila.",
+      "campos": {},
+      "tags_originais": [
+        "Permanente"
+      ]
+    },
+    {
+      "id": "EQ-113",
+      "nome": "Colar Vinculador",
+      "categoria_original": "PERMANENTE · RARA",
+      "tipo_inventario": "Acessório",
+      "ocupacao_em_uso": {
+        "acessorios": 1,
+        "amuletos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 1,
+      "observacao": "O colar usa um dos dois acessórios e compete com amuletos pelo único lugar de pescoço.",
+      "campos": {},
+      "tags_originais": [
+        "Permanente"
+      ]
+    },
+    {
+      "id": "EQ-114",
+      "nome": "Grevas do Vazio",
+      "categoria_original": "PERMANENTE · RARA",
+      "tipo_inventario": "Vestido",
+      "ocupacao_em_uso": {
+        "pes": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 2,
+      "observacao": "",
+      "campos": {
+        "Limite de Fadiga": "2"
+      },
+      "tags_originais": [
+        "Permanente"
+      ]
+    },
+    {
+      "id": "EQ-115",
+      "nome": "Espelho Arcano",
+      "categoria_original": "PERMANENTE · RARA",
+      "tipo_inventario": "Acessório",
+      "ocupacao_em_uso": {
+        "acessorios": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 1,
+      "observacao": "Acessório equipado; não fornece benefícios se estiver de reserva na mochila.",
+      "campos": {},
+      "tags_originais": [
+        "Permanente"
+      ]
+    },
+    {
+      "id": "EQ-116",
+      "nome": "Varinha de Cristal",
+      "categoria_original": "FOCO ARCANO",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Foco ocupa uma mão segundo as regras do projeto. Volume de 2 espaços não cria exigência de duas mãos.",
+      "campos": {
+        "Limite de Fadiga": "2"
+      },
+      "tags_originais": [
+        "Foco Arcano"
+      ]
+    },
+    {
+      "id": "EQ-117",
+      "nome": "Cajado do Aprendiz",
+      "categoria_original": "FOCO ARCANO",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 2
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Foco ocupa uma mão segundo as regras do projeto. Volume de 2 espaços não cria exigência de duas mãos.",
+      "campos": {
+        "Limite de Fadiga": "5"
+      },
+      "tags_originais": [
+        "Foco Arcano"
+      ]
+    },
+    {
+      "id": "EQ-118",
+      "nome": "Cajado de Batalha",
+      "categoria_original": "FOCO ARCANO",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 2
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Foco ocupa uma mão segundo as regras do projeto. Volume de 2 espaços não cria exigência de duas mãos.",
+      "campos": {
+        "Limite de Fadiga": "3"
+      },
+      "tags_originais": [
+        "Foco Arcano"
+      ]
+    },
+    {
+      "id": "EQ-119",
+      "nome": "Orbe de Concentração",
+      "categoria_original": "FOCO ARCANO",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Foco ocupa uma mão segundo as regras do projeto. Volume de 2 espaços não cria exigência de duas mãos.",
+      "campos": {
+        "Limite de Fadiga": "2"
+      },
+      "tags_originais": [
+        "Foco Arcano"
+      ]
+    },
+    {
+      "id": "EQ-120",
+      "nome": "Orbe de Proteção",
+      "categoria_original": "FOCO ARCANO",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Foco ocupa uma mão segundo as regras do projeto. Volume de 2 espaços não cria exigência de duas mãos.",
+      "campos": {
+        "Limite de Fadiga": "2"
+      },
+      "tags_originais": [
+        "Foco Arcano"
+      ]
+    },
+    {
+      "id": "EQ-121",
+      "nome": "Cálice da Vida",
+      "categoria_original": "FOCO SAGRADO",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Foco ocupa uma mão segundo as regras do projeto. Volume de 2 espaços não cria exigência de duas mãos.",
+      "campos": {
+        "Limite de Fadiga": "2"
+      },
+      "tags_originais": [
+        "Foco Sagrado"
+      ]
+    },
+    {
+      "id": "EQ-122",
+      "nome": "Relicário do Guardião",
+      "categoria_original": "FOCO SAGRADO",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Foco ocupa uma mão segundo as regras do projeto. Volume de 2 espaços não cria exigência de duas mãos.",
+      "campos": {
+        "Limite de Fadiga": "4"
+      },
+      "tags_originais": [
+        "Foco Sagrado"
+      ]
+    },
+    {
+      "id": "EQ-123",
+      "nome": "Marca da Punição",
+      "categoria_original": "FOCO SAGRADO",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Foco ocupa uma mão segundo as regras do projeto. Volume de 2 espaços não cria exigência de duas mãos.",
+      "campos": {
+        "Limite de Fadiga": "4"
+      },
+      "tags_originais": [
+        "Foco Sagrado"
+      ]
+    },
+    {
+      "id": "EQ-124",
+      "nome": "Turíbulo das Bênçãos",
+      "categoria_original": "FOCO SAGRADO",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Foco ocupa uma mão segundo as regras do projeto. Volume de 2 espaços não cria exigência de duas mãos.",
+      "campos": {
+        "Limite de Fadiga": "3"
+      },
+      "tags_originais": [
+        "Foco Sagrado"
+      ]
+    },
+    {
+      "id": "EQ-125",
+      "nome": "Escrituras de Maftoné",
+      "categoria_original": "FOCO SAGRADO",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Foco ocupa uma mão segundo as regras do projeto. Volume de 2 espaços não cria exigência de duas mãos.",
+      "campos": {
+        "Limite de Fadiga": "2"
+      },
+      "tags_originais": [
+        "Foco Sagrado"
+      ]
+    },
+    {
+      "id": "EQ-126",
+      "nome": "Rosário da Devoção",
+      "categoria_original": "FOCO SAGRADO",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Foco ocupa uma mão segundo as regras do projeto. Volume de 2 espaços não cria exigência de duas mãos.",
+      "campos": {
+        "Limite de Fadiga": "3"
+      },
+      "tags_originais": [
+        "Foco Sagrado"
+      ]
+    },
+    {
+      "id": "EQ-127",
+      "nome": "Runa de Fogo",
+      "categoria_original": "RUNA CONSUMÍVEL",
+      "tipo_inventario": "Consumível especial",
+      "ocupacao_em_uso": {
+        "consumiveis": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa.",
+      "campos": {},
+      "tags_originais": [
+        "Consumível"
+      ]
+    },
+    {
+      "id": "EQ-128",
+      "nome": "Runa de Água",
+      "categoria_original": "RUNA CONSUMÍVEL",
+      "tipo_inventario": "Consumível especial",
+      "ocupacao_em_uso": {
+        "consumiveis": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa.",
+      "campos": {},
+      "tags_originais": [
+        "Consumível"
+      ]
+    },
+    {
+      "id": "EQ-129",
+      "nome": "Runa de Terra",
+      "categoria_original": "RUNA CONSUMÍVEL",
+      "tipo_inventario": "Consumível especial",
+      "ocupacao_em_uso": {
+        "consumiveis": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa.",
+      "campos": {},
+      "tags_originais": [
+        "Consumível"
+      ]
+    },
+    {
+      "id": "EQ-130",
+      "nome": "Runa de Ar",
+      "categoria_original": "RUNA CONSUMÍVEL",
+      "tipo_inventario": "Consumível especial",
+      "ocupacao_em_uso": {
+        "consumiveis": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa.",
+      "campos": {},
+      "tags_originais": [
+        "Consumível"
+      ]
+    },
+    {
+      "id": "EQ-131",
+      "nome": "Runa de Luz",
+      "categoria_original": "RUNA CONSUMÍVEL",
+      "tipo_inventario": "Consumível especial",
+      "ocupacao_em_uso": {
+        "consumiveis": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa.",
+      "campos": {},
+      "tags_originais": [
+        "Consumível"
+      ]
+    },
+    {
+      "id": "EQ-132",
+      "nome": "Runa de Sombra",
+      "categoria_original": "RUNA CONSUMÍVEL",
+      "tipo_inventario": "Consumível especial",
+      "ocupacao_em_uso": {
+        "consumiveis": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa.",
+      "campos": {},
+      "tags_originais": [
+        "Consumível"
+      ]
+    },
+    {
+      "id": "EQ-133",
+      "nome": "Amuleto de Pacenas",
+      "categoria_original": "AMULETO",
+      "tipo_inventario": "Acessório",
+      "ocupacao_em_uso": {
+        "acessorios": 1,
+        "amuletos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 1,
+      "observacao": "Usa um dos dois acessórios. Máximo 1 amuleto, independentemente de qual divindade.",
+      "campos": {
+        "Limite de Fadiga": "1"
+      },
+      "tags_originais": [
+        "Acessório"
+      ]
+    },
+    {
+      "id": "EQ-134",
+      "nome": "Amuleto de Grevha",
+      "categoria_original": "AMULETO",
+      "tipo_inventario": "Acessório",
+      "ocupacao_em_uso": {
+        "acessorios": 1,
+        "amuletos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 1,
+      "observacao": "Usa um dos dois acessórios. Máximo 1 amuleto, independentemente de qual divindade.",
+      "campos": {
+        "Limite de Fadiga": "2"
+      },
+      "tags_originais": [
+        "Acessório"
+      ]
+    },
+    {
+      "id": "EQ-135",
+      "nome": "Amuleto de Nebtor",
+      "categoria_original": "AMULETO",
+      "tipo_inventario": "Acessório",
+      "ocupacao_em_uso": {
+        "acessorios": 1,
+        "amuletos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 1,
+      "observacao": "Usa um dos dois acessórios. Máximo 1 amuleto, independentemente de qual divindade.",
+      "campos": {
+        "Limite de Fadiga": "1"
+      },
+      "tags_originais": [
+        "Acessório"
+      ]
+    },
+    {
+      "id": "EQ-136",
+      "nome": "Amuleto de Vael",
+      "categoria_original": "AMULETO",
+      "tipo_inventario": "Acessório",
+      "ocupacao_em_uso": {
+        "acessorios": 1,
+        "amuletos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 1,
+      "observacao": "Usa um dos dois acessórios. Máximo 1 amuleto, independentemente de qual divindade.",
+      "campos": {
+        "Limite de Fadiga": "2"
+      },
+      "tags_originais": [
+        "Acessório"
+      ]
+    },
+    {
+      "id": "EQ-137",
+      "nome": "Amuleto de Kanil",
+      "categoria_original": "AMULETO",
+      "tipo_inventario": "Acessório",
+      "ocupacao_em_uso": {
+        "acessorios": 1,
+        "amuletos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 1,
+      "observacao": "Usa um dos dois acessórios. Máximo 1 amuleto, independentemente de qual divindade.",
+      "campos": {
+        "Limite de Fadiga": "2"
+      },
+      "tags_originais": [
+        "Acessório"
+      ]
+    },
+    {
+      "id": "EQ-138",
+      "nome": "Amuleto de Kagen",
+      "categoria_original": "AMULETO",
+      "tipo_inventario": "Acessório",
+      "ocupacao_em_uso": {
+        "acessorios": 1,
+        "amuletos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 1,
+      "observacao": "Usa um dos dois acessórios. Máximo 1 amuleto, independentemente de qual divindade.",
+      "campos": {
+        "Limite de Fadiga": "2"
+      },
+      "tags_originais": [
+        "Acessório"
+      ]
+    },
+    {
+      "id": "EQ-139",
+      "nome": "Grimório do Fogo",
+      "categoria_original": "GRIMÓRIO BÁSICO",
+      "tipo_inventario": "Repertório",
+      "ocupacao_em_uso": {
+        "armamentos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Cada grimório ou texto sagrado usa 1 dos quatro espaços compartilhados com armas, escudos e focos, inclusive se for reserva. Só disponibiliza suas magias quando preparado.",
+      "campos": {
+        "Magias": "3",
+        "Requisito": "Fogo"
+      },
+      "tags_originais": [
+        "Grimório Básico",
+        "Permanente"
+      ]
+    },
+    {
+      "id": "EQ-140",
+      "nome": "Grimório da Água",
+      "categoria_original": "GRIMÓRIO BÁSICO",
+      "tipo_inventario": "Repertório",
+      "ocupacao_em_uso": {
+        "armamentos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Cada grimório ou texto sagrado usa 1 dos quatro espaços compartilhados com armas, escudos e focos, inclusive se for reserva. Só disponibiliza suas magias quando preparado.",
+      "campos": {
+        "Magias": "3",
+        "Requisito": "Água"
+      },
+      "tags_originais": [
+        "Grimório Básico",
+        "Permanente"
+      ]
+    },
+    {
+      "id": "EQ-141",
+      "nome": "Grimório da Terra",
+      "categoria_original": "GRIMÓRIO BÁSICO",
+      "tipo_inventario": "Repertório",
+      "ocupacao_em_uso": {
+        "armamentos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Cada grimório ou texto sagrado usa 1 dos quatro espaços compartilhados com armas, escudos e focos, inclusive se for reserva. Só disponibiliza suas magias quando preparado.",
+      "campos": {
+        "Magias": "3",
+        "Requisito": "Terra"
+      },
+      "tags_originais": [
+        "Grimório Básico",
+        "Permanente"
+      ]
+    },
+    {
+      "id": "EQ-142",
+      "nome": "Grimório do Ar",
+      "categoria_original": "GRIMÓRIO BÁSICO",
+      "tipo_inventario": "Repertório",
+      "ocupacao_em_uso": {
+        "armamentos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Cada grimório ou texto sagrado usa 1 dos quatro espaços compartilhados com armas, escudos e focos, inclusive se for reserva. Só disponibiliza suas magias quando preparado.",
+      "campos": {
+        "Magias": "3",
+        "Requisito": "Ar"
+      },
+      "tags_originais": [
+        "Grimório Básico",
+        "Permanente"
+      ]
+    },
+    {
+      "id": "EQ-143",
+      "nome": "Grimório da Luz",
+      "categoria_original": "GRIMÓRIO BÁSICO",
+      "tipo_inventario": "Repertório",
+      "ocupacao_em_uso": {
+        "armamentos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Cada grimório ou texto sagrado usa 1 dos quatro espaços compartilhados com armas, escudos e focos, inclusive se for reserva. Só disponibiliza suas magias quando preparado.",
+      "campos": {
+        "Magias": "3",
+        "Requisito": "Luz"
+      },
+      "tags_originais": [
+        "Grimório Básico",
+        "Permanente"
+      ]
+    },
+    {
+      "id": "EQ-144",
+      "nome": "Grimório da Sombra",
+      "categoria_original": "GRIMÓRIO BÁSICO",
+      "tipo_inventario": "Repertório",
+      "ocupacao_em_uso": {
+        "armamentos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Cada grimório ou texto sagrado usa 1 dos quatro espaços compartilhados com armas, escudos e focos, inclusive se for reserva. Só disponibiliza suas magias quando preparado.",
+      "campos": {
+        "Magias": "3",
+        "Requisito": "Sombra"
+      },
+      "tags_originais": [
+        "Grimório Básico",
+        "Permanente"
+      ]
+    },
+    {
+      "id": "EQ-145",
+      "nome": "Códice das Cinzas",
+      "categoria_original": "GRIMÓRIO RARO · RARA",
+      "tipo_inventario": "Repertório",
+      "ocupacao_em_uso": {
+        "armamentos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Cada grimório ou texto sagrado usa 1 dos quatro espaços compartilhados com armas, escudos e focos, inclusive se for reserva. Só disponibiliza suas magias quando preparado.",
+      "campos": {
+        "Magias": "2",
+        "Requisito": "Fogo Ar"
+      },
+      "tags_originais": [
+        "Grimório Raro"
+      ]
+    },
+    {
+      "id": "EQ-146",
+      "nome": "Sussurros do Breu",
+      "categoria_original": "GRIMÓRIO RARO · RARA",
+      "tipo_inventario": "Repertório",
+      "ocupacao_em_uso": {
+        "armamentos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Cada grimório ou texto sagrado usa 1 dos quatro espaços compartilhados com armas, escudos e focos, inclusive se for reserva. Só disponibiliza suas magias quando preparado.",
+      "campos": {
+        "Magias": "2",
+        "Requisito": "Ar Sombra"
+      },
+      "tags_originais": [
+        "Grimório Raro"
+      ]
+    },
+    {
+      "id": "EQ-147",
+      "nome": "Códice da Chama Negra",
+      "categoria_original": "GRIMÓRIO RARO · RARA",
+      "tipo_inventario": "Repertório",
+      "ocupacao_em_uso": {
+        "armamentos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Cada grimório ou texto sagrado usa 1 dos quatro espaços compartilhados com armas, escudos e focos, inclusive se for reserva. Só disponibiliza suas magias quando preparado.",
+      "campos": {
+        "Magias": "2",
+        "Requisito": "Sombra Fogo"
+      },
+      "tags_originais": [
+        "Grimório Raro"
+      ]
+    },
+    {
+      "id": "EQ-148",
+      "nome": "Grimório do Lodo",
+      "categoria_original": "GRIMÓRIO RARO · RARA",
+      "tipo_inventario": "Repertório",
+      "ocupacao_em_uso": {
+        "armamentos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Cada grimório ou texto sagrado usa 1 dos quatro espaços compartilhados com armas, escudos e focos, inclusive se for reserva. Só disponibiliza suas magias quando preparado.",
+      "campos": {
+        "Magias": "2",
+        "Requisito": "Água Terra"
+      },
+      "tags_originais": [
+        "Grimório Raro"
+      ]
+    },
+    {
+      "id": "EQ-149",
+      "nome": "Estudo de Geofótons",
+      "categoria_original": "GRIMÓRIO RARO · RARA",
+      "tipo_inventario": "Repertório",
+      "ocupacao_em_uso": {
+        "armamentos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Cada grimório ou texto sagrado usa 1 dos quatro espaços compartilhados com armas, escudos e focos, inclusive se for reserva. Só disponibiliza suas magias quando preparado.",
+      "campos": {
+        "Magias": "2",
+        "Requisito": "Terra Luz"
+      },
+      "tags_originais": [
+        "Grimório Raro"
+      ]
+    },
+    {
+      "id": "EQ-150",
+      "nome": "Portfólio do Luar Marinho",
+      "categoria_original": "GRIMÓRIO RARO · RARA",
+      "tipo_inventario": "Repertório",
+      "ocupacao_em_uso": {
+        "armamentos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Cada grimório ou texto sagrado usa 1 dos quatro espaços compartilhados com armas, escudos e focos, inclusive se for reserva. Só disponibiliza suas magias quando preparado.",
+      "campos": {
+        "Magias": "2",
+        "Requisito": "Luz Água"
+      },
+      "tags_originais": [
+        "Grimório Raro"
+      ]
+    },
+    {
+      "id": "EQ-151",
+      "nome": "A Batalha dos Anjos",
+      "categoria_original": "TEXTO SAGRADO",
+      "tipo_inventario": "Repertório",
+      "ocupacao_em_uso": {
+        "armamentos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Cada grimório ou texto sagrado usa 1 dos quatro espaços compartilhados com armas, escudos e focos, inclusive se for reserva. Só disponibiliza suas magias quando preparado.",
+      "campos": {
+        "Magias": "3",
+        "Requisito": "Conjurador divino"
+      },
+      "tags_originais": [
+        "Texto Sagrado"
+      ]
+    },
+    {
+      "id": "EQ-152",
+      "nome": "A Criação da Luz",
+      "categoria_original": "TEXTO SAGRADO",
+      "tipo_inventario": "Repertório",
+      "ocupacao_em_uso": {
+        "armamentos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Cada grimório ou texto sagrado usa 1 dos quatro espaços compartilhados com armas, escudos e focos, inclusive se for reserva. Só disponibiliza suas magias quando preparado.",
+      "campos": {
+        "Magias": "3",
+        "Requisito": "Conjurador divino"
+      },
+      "tags_originais": [
+        "Texto Sagrado"
+      ]
+    },
+    {
+      "id": "EQ-153",
+      "nome": "Os Ensinamentos Divinos",
+      "categoria_original": "TEXTO SAGRADO",
+      "tipo_inventario": "Repertório",
+      "ocupacao_em_uso": {
+        "armamentos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Cada grimório ou texto sagrado usa 1 dos quatro espaços compartilhados com armas, escudos e focos, inclusive se for reserva. Só disponibiliza suas magias quando preparado.",
+      "campos": {
+        "Magias": "3",
+        "Requisito": "Conjurador divino"
+      },
+      "tags_originais": [
+        "Texto Sagrado"
+      ]
+    },
+    {
+      "id": "EQ-154",
+      "nome": "As Leis Fundamentais",
+      "categoria_original": "TEXTO SAGRADO",
+      "tipo_inventario": "Repertório",
+      "ocupacao_em_uso": {
+        "armamentos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Cada grimório ou texto sagrado usa 1 dos quatro espaços compartilhados com armas, escudos e focos, inclusive se for reserva. Só disponibiliza suas magias quando preparado.",
+      "campos": {
+        "Magias": "3",
+        "Requisito": "Conjurador divino"
+      },
+      "tags_originais": [
+        "Texto Sagrado"
+      ]
+    },
+    {
+      "id": "EQ-155",
+      "nome": "O Fogo Purificador",
+      "categoria_original": "TEXTO SAGRADO",
+      "tipo_inventario": "Repertório",
+      "ocupacao_em_uso": {
+        "armamentos": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Cada grimório ou texto sagrado usa 1 dos quatro espaços compartilhados com armas, escudos e focos, inclusive se for reserva. Só disponibiliza suas magias quando preparado.",
+      "campos": {
+        "Magias": "3",
+        "Requisito": "Conjurador divino"
+      },
+      "tags_originais": [
+        "Texto Sagrado"
+      ]
+    },
+    {
+      "id": "EQ-156",
+      "nome": "Corrente de Caça",
+      "categoria_original": "ARMA CORPO A CORPO · INCOMUM",
+      "tipo_inventario": "Armamento",
+      "ocupacao_em_uso": {
+        "armamentos": 2
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate.",
+      "campos": {
+        "Dano": "4 + Força",
+        "Alcance": "Corpo a corpo (2)",
+        "Requisito": "Força ≥ 1",
+        "Limite de Fadiga": "2"
+      },
+      "tags_originais": [
+        "Concussão",
+        "Peso Médio",
+        "Tamanho Grande"
+      ]
+    },
+    {
+      "id": "EQ-157",
+      "nome": "Poção de Regeneração",
+      "categoria_original": "CONSUMÍVEL · COMUM",
+      "tipo_inventario": "Consumível especial",
+      "ocupacao_em_uso": {
+        "consumiveis": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa.",
+      "campos": {},
+      "tags_originais": [
+        "Consumível",
+        "Poção"
+      ]
+    },
+    {
+      "id": "EQ-158",
+      "nome": "Poção de Fôlego Prolongado",
+      "categoria_original": "CONSUMÍVEL · COMUM",
+      "tipo_inventario": "Consumível especial",
+      "ocupacao_em_uso": {
+        "consumiveis": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa.",
+      "campos": {},
+      "tags_originais": [
+        "Consumível",
+        "Poção"
+      ]
+    },
+    {
+      "id": "EQ-159",
+      "nome": "Poção de Visão Noturna",
+      "categoria_original": "CONSUMÍVEL · COMUM",
+      "tipo_inventario": "Consumível especial",
+      "ocupacao_em_uso": {
+        "consumiveis": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa.",
+      "campos": {},
+      "tags_originais": [
+        "Consumível",
+        "Poção"
+      ]
+    },
+    {
+      "id": "EQ-160",
+      "nome": "Poção de Vigor Lunar",
+      "categoria_original": "CONSUMÍVEL · INCOMUM",
+      "tipo_inventario": "Consumível especial",
+      "ocupacao_em_uso": {
+        "consumiveis": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa.",
+      "campos": {
+        "Vida": "6"
+      },
+      "tags_originais": [
+        "Consumível",
+        "Poção"
+      ]
+    },
+    {
+      "id": "EQ-161",
+      "nome": "Poção de Sangue Cáustico",
+      "categoria_original": "CONSUMÍVEL · INCOMUM",
+      "tipo_inventario": "Consumível especial",
+      "ocupacao_em_uso": {
+        "consumiveis": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa.",
+      "campos": {},
+      "tags_originais": [
+        "Consumível",
+        "Poção"
+      ]
+    },
+    {
+      "id": "EQ-162",
+      "nome": "Poção de Reflexos Predatórios",
+      "categoria_original": "CONSUMÍVEL · RARA",
+      "tipo_inventario": "Consumível especial",
+      "ocupacao_em_uso": {
+        "consumiveis": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa.",
+      "campos": {},
+      "tags_originais": [
+        "Consumível",
+        "Poção"
+      ]
+    },
+    {
+      "id": "EQ-163",
+      "nome": "Poção de Sangue Limpo",
+      "categoria_original": "CONSUMÍVEL · INCOMUM",
+      "tipo_inventario": "Consumível especial",
+      "ocupacao_em_uso": {
+        "consumiveis": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa.",
+      "campos": {},
+      "tags_originais": [
+        "Consumível",
+        "Poção"
+      ]
+    },
+    {
+      "id": "EQ-164",
+      "nome": "Poção de Mergulho",
+      "categoria_original": "CONSUMÍVEL · COMUM",
+      "tipo_inventario": "Consumível especial",
+      "ocupacao_em_uso": {
+        "consumiveis": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa.",
+      "campos": {},
+      "tags_originais": [
+        "Consumível",
+        "Poção"
+      ]
+    },
+    {
+      "id": "EQ-165",
+      "nome": "Poção de Foco Crescente",
+      "categoria_original": "CONSUMÍVEL · INCOMUM",
+      "tipo_inventario": "Consumível especial",
+      "ocupacao_em_uso": {
+        "consumiveis": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa.",
+      "campos": {},
+      "tags_originais": [
+        "Consumível",
+        "Poção"
+      ]
+    },
+    {
+      "id": "EQ-166",
+      "nome": "Poção de Amplificação",
+      "categoria_original": "CONSUMÍVEL · COMUM",
+      "tipo_inventario": "Consumível especial",
+      "ocupacao_em_uso": {
+        "consumiveis": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa.",
+      "campos": {},
+      "tags_originais": [
+        "Consumível",
+        "Poção"
+      ]
+    },
+    {
+      "id": "EQ-167",
+      "nome": "Poção de Purificação",
+      "categoria_original": "CONSUMÍVEL · COMUM",
+      "tipo_inventario": "Consumível especial",
+      "ocupacao_em_uso": {
+        "consumiveis": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa.",
+      "campos": {},
+      "tags_originais": [
+        "Consumível",
+        "Poção"
+      ]
+    },
+    {
+      "id": "EQ-168",
+      "nome": "Poção de Superação",
+      "categoria_original": "CONSUMÍVEL · INCOMUM",
+      "tipo_inventario": "Consumível especial",
+      "ocupacao_em_uso": {
+        "consumiveis": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa.",
+      "campos": {},
+      "tags_originais": [
+        "Consumível",
+        "Poção"
+      ]
+    },
+    {
+      "id": "EQ-169",
+      "nome": "Poção de Feromônios",
+      "categoria_original": "CONSUMÍVEL · COMUM",
+      "tipo_inventario": "Consumível especial",
+      "ocupacao_em_uso": {
+        "consumiveis": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa.",
+      "campos": {},
+      "tags_originais": [
+        "Consumível",
+        "Poção"
+      ]
+    },
+    {
+      "id": "EQ-170",
+      "nome": "Poção de Reaprendizado",
+      "categoria_original": "CONSUMÍVEL · INCOMUM",
+      "tipo_inventario": "Consumível especial",
+      "ocupacao_em_uso": {
+        "consumiveis": 1
+      },
+      "unidades_por_pacote": 1,
+      "reserva_na_mochila": 0,
+      "observacao": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa.",
+      "campos": {},
+      "tags_originais": [
+        "Consumível",
+        "Poção"
+      ]
+    }
+  ],
+  "exemplos": [
+    {
+      "nome": "Guerreiro de arma e escudo",
+      "itens": [
+        "1 × Maça",
+        "1 × Escudo Pesado",
+        "1 × Faca",
+        "1 × Cota de Malha",
+        "3 × Poção de Cura Pequena",
+        "1 × Antídoto",
+        "1 × Bomba de Fumaça",
+        "1 × Runa de Fogo",
+        "1 × Kit de Acampamento",
+        "1 × Corda (15 m)",
+        "1 × Pederneira",
+        "3 × Tocha",
+        "3 × Ração de Viagem"
+      ],
+      "ocupacao": {
+        "armamentos": 4,
+        "armadura": 1,
+        "consumiveis": 6,
+        "mochila": 6
+      },
+      "excesso": {}
+    },
+    {
+      "nome": "Arqueiro com alternativa corpo a corpo",
+      "itens": [
+        "1 × Arco Longo",
+        "1 × Espada Curta",
+        "1 × Faca",
+        "1 × Couro do Batedor",
+        "1 × Manto Camuflado",
+        "1 × Botas de Lince",
+        "1 × Corda de Arco da Penumbra",
+        "1 × Anel do Iniciado",
+        "2 × Poção de Cura Pequena",
+        "1 × Poção de Visão Noturna",
+        "1 × Poção de Feromônios",
+        "2 × Flecha Explosiva",
+        "1 × Kit de Acampamento",
+        "1 × Corda (15 m)",
+        "1 × Pederneira",
+        "3 × Ração de Viagem"
+      ],
+      "ocupacao": {
+        "armamentos": 4,
+        "armadura": 1,
+        "costas": 1,
+        "pes": 1,
+        "acessorios": 2,
+        "consumiveis": 6,
+        "mochila": 6
+      },
+      "excesso": {}
+    },
+    {
+      "nome": "Mago com dois repertórios",
+      "itens": [
+        "1 × Cajado do Aprendiz",
+        "1 × Grimório do Fogo",
+        "1 × Grimório do Ar",
+        "3 × Poção de Mana Pequena",
+        "2 × Poção de Cura Pequena",
+        "1 × Runa de Luz",
+        "1 × Kit de Acampamento",
+        "1 × Pederneira",
+        "3 × Ração de Viagem"
+      ],
+      "ocupacao": {
+        "armamentos": 4,
+        "consumiveis": 6,
+        "mochila": 4
+      },
+      "excesso": {}
+    },
+    {
+      "nome": "Corrente e proteção",
+      "itens": [
+        "1 × Corrente de Caça",
+        "1 × Escudo Leve",
+        "1 × Faca"
+      ],
+      "ocupacao": {
+        "armamentos": 4
+      },
+      "excesso": {}
+    },
+    {
+      "nome": "Excesso de armamentos",
+      "itens": [
+        "1 × Montante",
+        "1 × Besta Pesada",
+        "1 × Faca"
+      ],
+      "ocupacao": {
+        "armamentos": 5
+      },
+      "excesso": {
+        "armamentos": 1
+      }
+    },
+    {
+      "nome": "Excesso de poções",
+      "itens": [
+        "4 × Poção de Cura Pequena",
+        "3 × Poção de Mana Pequena"
+      ],
+      "ocupacao": {
+        "consumiveis": 7
+      },
+      "excesso": {
+        "consumiveis": 1
+      }
+    },
+    {
+      "nome": "Duas armaduras vestidas",
+      "itens": [
+        "1 × Cota de Malha",
+        "1 × Manto do Vento"
+      ],
+      "ocupacao": {
+        "armadura": 2,
+        "costas": 1
+      },
+      "excesso": {
+        "armadura": 1
+      }
+    },
+    {
+      "nome": "Amuleto e outro acessório",
+      "itens": [
+        "1 × Amuleto de Kanil",
+        "1 × Anel do Iniciado"
+      ],
+      "ocupacao": {
+        "acessorios": 2,
+        "amuletos": 1
+      },
+      "excesso": {}
+    },
+    {
+      "nome": "Dois amuletos",
+      "itens": [
+        "1 × Amuleto de Kanil",
+        "1 × Amuleto de Kagen"
+      ],
+      "ocupacao": {
+        "acessorios": 2,
+        "amuletos": 2
+      },
+      "excesso": {
+        "amuletos": 1
+      }
+    },
+    {
+      "nome": "Paraquedas e capa",
+      "itens": [
+        "1 × Paraquedas Élfico",
+        "1 × Manto Camuflado"
+      ],
+      "ocupacao": {
+        "costas": 2
+      },
+      "excesso": {
+        "costas": 1
+      }
+    },
+    {
+      "nome": "Armadura pesada de reserva ocupa a mochila",
+      "itens": [
+        "1 × Arnês de Placas (reserva)",
+        "1 × Kit de Acampamento",
+        "1 × Corda (15 m)"
+      ],
+      "ocupacao": {
+        "mochila": 7
+      },
+      "excesso": {
+        "mochila": 1
+      }
+    },
+    {
+      "nome": "Amuleto e Colar Vinculador",
+      "itens": [
+        "1 × Amuleto de Kanil",
+        "1 × Colar Vinculador"
+      ],
+      "ocupacao": {
+        "acessorios": 2,
+        "amuletos": 2
+      },
+      "excesso": {
+        "amuletos": 1
+      }
+    },
+    {
+      "nome": "Repertório de reserva também conta",
+      "itens": [
+        "1 × Cajado do Aprendiz",
+        "1 × Grimório do Fogo",
+        "1 × Grimório do Ar",
+        "1 × Grimório da Água (reserva)"
+      ],
+      "ocupacao": {
+        "armamentos": 5
+      },
+      "excesso": {
+        "armamentos": 1
+      }
+    },
+    {
+      "nome": "Foco compacto, adaga e dois repertórios",
+      "itens": [
+        "1 × Varinha de Cristal",
+        "1 × Faca",
+        "1 × Grimório do Fogo",
+        "1 × Grimório do Ar"
+      ],
+      "ocupacao": {
+        "armamentos": 4
+      },
+      "excesso": {}
+    },
+    {
+      "nome": "Quatro repertórios sem arma nem foco",
+      "itens": [
+        "1 × Grimório do Fogo",
+        "1 × Grimório da Água",
+        "1 × Grimório do Ar",
+        "1 × Grimório da Sombra"
+      ],
+      "ocupacao": {
+        "armamentos": 4
+      },
+      "excesso": {}
+    }
+  ],
+  "catalogo_sha256": "6ac6e165cd1f4c8c4574577339e5df1965d77f63c6488e9f605727943c8f6086",
+  "fontes_projeto": [
+    "SISTEMA_21_Estado_do_Projeto.md, seções 4, 7, 8 e 9",
+    "producao_cartas/dados/catalogo_cartas.json, coleção v06",
+    "producao_cartas/dados/regras_pocoes_para_manual.json"
+  ]
+}

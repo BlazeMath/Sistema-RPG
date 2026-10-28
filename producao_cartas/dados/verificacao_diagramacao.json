@@ -1,0 +1,65 @@
+[
+  {
+    "id": "EQ-001",
+    "texto_pt": 0,
+    "arte_mm": 51.1,
+    "font_pt": 8,
+    "fit": true
+  },
+  {
+    "id": "EQ-010",
+    "texto_pt": 28.0,
+    "arte_mm": 32.4,
+    "font_pt": 8,
+    "fit": true
+  },
+  {
+    "id": "EQ-156",
+    "texto_pt": 74.8,
+    "arte_mm": 15.9,
+    "font_pt": 8,
+    "fit": true
+  },
+  {
+    "id": "EQ-046",
+    "texto_pt": 28.0,
+    "arte_mm": 37.2,
+    "font_pt": 8,
+    "fit": true
+  },
+  {
+    "id": "EQ-060",
+    "texto_pt": 93.5,
+    "arte_mm": 14.1,
+    "font_pt": 8,
+    "fit": true
+  },
+  {
+    "id": "EQ-061",
+    "texto_pt": 18.7,
+    "arte_mm": 50.5,
+    "font_pt": 8,
+    "fit": true
+  },
+  {
+    "id": "EQ-116",
+    "texto_pt": 28.0,
+    "arte_mm": 47.2,
+    "font_pt": 8,
+    "fit": true
+  },
+  {
+    "id": "EQ-127",
+    "texto_pt": 65.5,
+    "arte_mm": 34.0,
+    "font_pt": 8,
+    "fit": true
+  },
+  {
+    "id": "EQ-139",
+    "texto_pt": 28.0,
+    "arte_mm": 42.4,
+    "font_pt": 8,
+    "fit": true
+  }
+]

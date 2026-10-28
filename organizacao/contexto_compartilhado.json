@@ -1,0 +1,137 @@
+{
+  "projeto": "Sistema 21 / Coleção Masmorras (MMR)",
+  "atualizado_em": "2026-10-27",
+  "idioma": "pt-BR",
+  "pedido_de_organizacao": "O usuário pediu este chat dedicado a classes, o chat original dedicado a itens, um novo chat de programação e outros chats úteis ao projeto. Esta organização distribui áreas; não aprova regras novas nem solicita implementação de novas funcionalidades.",
+  "fontes_e_precedencia": [
+    "Instruções e decisões explícitas mais recentes do usuário têm prioridade. Confirmar o domínio e a data; nunca transformar proposta do assistente em aprovação.",
+    "Publicação de 27/10: Habilidades_Cartas.pdf já inclui as 17 correções deste chat, incluindo Predador Absoluto. A versão original fica em classes/fontes/Habilidades_Cartas_original_2026-10-27.pdf. Dados e verificação em classes/dados. A redação do Predador foi incorporada no pedido de atualização de todas as correções.",
+    "Rodada Mago de 27/10: Mana Densa, Servo Sombrio e a adequação de Conjuração Perfeita estão em classes/dados/ajustes_cartas_v01.json. Mente Afiada e De Volta ao Básico ficam para observar em playtest, e os elementos permanecem como estão. Os atributos adotados nos testes contestados são critérios editoriais explicitamente identificados.",
+    "Classes: decisões do autor após a revisão v01 e os textos em classes/dados/ajustes_cartas_v01.json prevalecem sobre as avaliações anteriores e as faces originais correspondentes. Predador Absoluto está separado como proposta de redação; preservar o PDF original como fonte histórica.",
+    "SISTEMA_21_Estado_do_Projeto.md é o resumo geral de entrada, sujeito às revisões posteriores. Não usar sua contagem antiga de 155 equipamentos como atual.",
+    "Equipamentos: usuário corrigiu a preferência inicial de planilha e escolheu PDF como base no chat original. Usar catálogo atual, ajustes_autor.json e decisoes_fechadas.json para as alterações posteriores incorporadas à v06.",
+    "Classes, heróis e origens: consultar PDFs na raiz, resumo e dados disponíveis. A regra de precedência do PDF foi explicitamente decidida para a revisão dos itens; divergências de classes devem ser identificadas, sem generalizar aprovação.",
+    "Videogame: consultar CLAUDE.md e DECISOES_0.x.md dentro do ZIP; o código e seus números provisórios não tornam uma regra oficial da mesa.",
+    "Extrações em organizacao/fontes são auxiliares com origem registrada. Conferir símbolos e valores no PDF visual antes de editar custos."
+  ],
+  "regras_centrais": [
+    "Baralho pessoal de 52 cartas comuns, sem efeitos: é sorte, vida e energia. Zonas: baralho, mão, descarte, exílio.",
+    "Testes começam com duas cartas e permitem puxar mais; acima de 21, puxa uma última carta que passa a valer sozinha. Atributos e perícias são somados depois nos testes comuns.",
+    "Ataque e defesa usam cartas sem somar atributos e perícias; atributos entram no dano. Defesa age depois do atacante e tem vantagem de informação.",
+    "Turno: 1 Movimento, 2 Padrão, 1 Reação. Pode rebaixar Padrão em Movimento. Velocidade base 3.",
+    "Fadiga: no fim do turno remove 1 ficha de uma única carta, salvo habilidade específica. Virar é uma ação e limpa voláteis; persistentes continuam. Carta com limite zero não armazena Fadiga.",
+    "Momentum e cartas com efeito no baralho foram abandonados. Não reintroduzir por aparecerem em PDFs ou arquivos antigos.",
+    "Aliado não inclui o usuário da habilidade. Você ou um aliado inclui. Sombra é recurso; Oculto é estado.",
+    "Requisitos exigem fontes que existem, como tags, atributos, perícias, equipamentos ou origens. Tags oferecidas não são texto de descrição de propriedade.",
+    "Regras de mesa e adaptações digitais precisam de identificação explícita; não sincronizar automaticamente divergências.",
+    "Decisão do autor em 27/10: quando uma habilidade manda virar uma carta, essa virada integra a resolução e não cobra outra ação. O limite zero não impede a virada normal nem a virada pelo efeito.",
+    "Decisão do autor em 27/10: remover uma ficha sem especificar tipo inclui Fadiga e fichas persistentes; conservar as condições de alvo e quantidade.",
+    "Decisão do autor em 27/10: Água Benta é habilidade, não magia. Cajado do Condutor não reduz seu custo. Não classificar automaticamente toda habilidade de conjurador como magia.",
+    "Decisão do autor em 27/10: Sombra representa furtividade; Ataque Furtivo permanece com seu custo em Sombra e sem exigir vantagem ou Oculto adicionais.",
+    "Decisão do autor em 27/10, rodada Mago: o custo de Fadiga de uma magia não pode ser reduzido a menos de 1, inclusive com descontos combinados. Conjuração Perfeita foi adequada para uma magia por turno a 1 de Fadiga. Mana Densa e Servo Sombrio exigem testes contestados."
+  ],
+  "filosofia": [
+    "Priorizar escolhas táticas, leitura do inimigo, posicionamento, cooperação, risco real e recursos escassos.",
+    "Mecânica antes de sabor. Efeitos devem criar modos de jogar e dilemas; evitar apenas bônus numéricos genéricos.",
+    "Comum tem personalidade; incomum abre eixo de jogo; raro é build-around com defeito que define estratégia.",
+    "Classes têm hierarquia de papéis e motores próprios. Guerreiro domina combate direto; Ladino domina interação e representa furtividade pelo recurso Sombra; Caçador é forte interactor em ambiente não urbano.",
+    "Habilidades de duas faces: uma prepara a situação e a outra explora; virar tem custo real. Herói tem quatro efeitos coerentes por metade.",
+    "Chefes ficam difíceis por mecânicas legíveis e contrajogo, não apenas mais vida."
+  ],
+  "estado_atual": {
+    "classes": [
+      "Guerreiro",
+      "Ladino",
+      "Clérigo",
+      "Caçador",
+      "Mago"
+    ],
+    "racas": [
+      "Humano",
+      "Elfo",
+      "Anão",
+      "Halfling",
+      "Orc"
+    ],
+    "backgrounds": [
+      "Soldado",
+      "Bandido",
+      "Escravo",
+      "Explorador",
+      "Fervoroso"
+    ],
+    "equipamentos": "170 itens ilustrados na v06; 14 poções acrescentadas, 21 poções ao todo. Catálogo e PDFs já produzidos.",
+    "economia": "Estudo v01 com preços de 170 itens. 1 ouro = 100 pratas = 1000 cobres e diária de 2 pratas são propostas de estudo, não aprovação registrada.",
+    "inventario": "Pedido mais recente no chat de itens: limitar carga por volume e slots por categoria, sem contabilidade de peso. Está em elaboração no chat original; consultar a versão mais recente.",
+    "videogame": "Protótipo Godot 4.4 / GDScript no ZIP v0.23, com core, ui, tests, data/cartas e assets. O ZIP não foi extraído nem o jogo modificado nesta organização.",
+    "habilidades": "PDF de habilidades atualizado em 27/10/2026: 20 páginas, 150 faces, 17 faces corrigidas; preserva demais textos e apresentação. Heróis seguem em PDF separado."
+  },
+  "preferencias_registradas": [
+    "Fantasia medieval sombria, referências The Witcher e Game of Thrones.",
+    "Cartas 63 x 88 mm, A4 com 9 por página, corpo mínimo 8 pt; muito texto pode ir ao verso. Repetir dano, alcance se houver, tags e dados essenciais no verso.",
+    "Usar símbolos de Fadiga e Conjuração onde apropriado. Conferir proporções e alinhamento das armas nas artes.",
+    "Respeitar pedidos locais de não gerar PDF ainda; uma autorização para um lote anterior não autoriza todos os futuros lotes.",
+    "Histórico digital registra entregas acessíveis e ZIPs; não presumir que o usuário usa terminal."
+  ],
+  "coordenacao": [
+    "Cada chat é uma especialidade deste mesmo projeto e usa os arquivos compartilhados. Histórico e contexto não se sincronizam automaticamente entre chats.",
+    "Ler organizacao/mapa_chats.json e este contexto no começo de trabalho relevante e após mudanças de domínio.",
+    "Registrar decisões aprovadas no arquivo do domínio e indicar origem, data, estado (proposta, aprovado, implementado ou substituído) e impacto sobre outras áreas. Estudos não equivalem a regras aprovadas.",
+    "Antes de editar arquivo compartilhado, reler sua versão atual. Não sobrescrever produção em andamento de outro chat. Preferir outputs por chat/área.",
+    "Mudanças de classe pertencem a Classes; item a Itens; regra transversal a Regras; implementação a Programação; encontro e mundo a Bestiário; apresentação a Arte. Identificar impactos sem mudar outro domínio silenciosamente.",
+    "Esta organização não autoriza os novos chats a enviar mensagens a outros chats, criar subagentes, rodar tarefas recorrentes ou iniciar produção em lote. Pedidos futuros do usuário podem autorizar essas ações."
+  ],
+  "fontes": [
+    {
+      "arquivo": "Habilidades_Cartas.pdf",
+      "paginas": 20,
+      "consulta": "organizacao/fontes/Habilidades_Cartas.json"
+    },
+    {
+      "arquivo": "Herois_Cartas.pdf",
+      "paginas": 8,
+      "consulta": "organizacao/fontes/Herois_Cartas.json"
+    },
+    {
+      "arquivo": "Racas_Backgrounds_Cartas.pdf",
+      "paginas": 10,
+      "consulta": "organizacao/fontes/Racas_Backgrounds_Cartas.json"
+    },
+    {
+      "arquivo": "Manual_de_Mesa.pdf",
+      "paginas": 6,
+      "consulta": "organizacao/fontes/Manual_de_Mesa.json"
+    },
+    {
+      "arquivo": "SISTEMA_21_Estado_do_Projeto.md"
+    },
+    {
+      "arquivo": "producao_cartas/dados/catalogo_cartas.json"
+    },
+    {
+      "arquivo": "producao_cartas/dados/decisoes_fechadas.json"
+    },
+    {
+      "arquivo": "producao_cartas/dados/ajustes_autor.json"
+    },
+    {
+      "arquivo": "producao_cartas/dados/regras_pocoes_para_manual.json"
+    },
+    {
+      "arquivo": "Sistema21_projeto_v0.23.zip",
+      "consulta": "organizacao/fontes/videogame_documentos.json"
+    },
+    {
+      "arquivo": "organizacao/fontes/historico_itens.json"
+    },
+    {
+      "arquivo": "outputs/01a1784a-39da-75d3-87c4-56dc835caa37/economia/modelo_economico_v01.json"
+    },
+    {
+      "arquivo": "classes/dados/ajustes_cartas_v01.json"
+    },
+    {
+      "arquivo": "regras/decisoes_classes_para_manual_2026-10-27.json"
+    }
+  ]
+}

@@ -1,0 +1,1250 @@
+[
+  {
+    "id": "EQ-001",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 0.0,
+    "espaco_mm": 47.88,
+    "arte_frente_mm": 51.1
+  },
+  {
+    "id": "EQ-002",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 0.0,
+    "espaco_mm": 47.88,
+    "arte_frente_mm": 51.1
+  },
+  {
+    "id": "EQ-003",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 0.0,
+    "espaco_mm": 47.88,
+    "arte_frente_mm": 51.1
+  },
+  {
+    "id": "EQ-004",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 0.0,
+    "espaco_mm": 43.08,
+    "arte_frente_mm": 46.3
+  },
+  {
+    "id": "EQ-005",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 0.0,
+    "espaco_mm": 43.08,
+    "arte_frente_mm": 46.3
+  },
+  {
+    "id": "EQ-006",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 0.0,
+    "espaco_mm": 43.08,
+    "arte_frente_mm": 46.3
+  },
+  {
+    "id": "EQ-007",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 0.0,
+    "espaco_mm": 43.08,
+    "arte_frente_mm": 46.3
+  },
+  {
+    "id": "EQ-008",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 0.0,
+    "espaco_mm": 43.08,
+    "arte_frente_mm": 46.3
+  },
+  {
+    "id": "EQ-009",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 0.0,
+    "espaco_mm": 43.08,
+    "arte_frente_mm": 46.3
+  },
+  {
+    "id": "EQ-010",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 11.43,
+    "espaco_mm": 43.08,
+    "arte_frente_mm": 32.4
+  },
+  {
+    "id": "EQ-011",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 15.24,
+    "espaco_mm": 43.08,
+    "arte_frente_mm": 29.1
+  },
+  {
+    "id": "EQ-012",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 19.05,
+    "espaco_mm": 43.08,
+    "arte_frente_mm": 46.3
+  },
+  {
+    "id": "EQ-013",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 22.86,
+    "espaco_mm": 47.88,
+    "arte_frente_mm": 30.6
+  },
+  {
+    "id": "EQ-014",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 22.86,
+    "espaco_mm": 43.08,
+    "arte_frente_mm": 46.3
+  },
+  {
+    "id": "EQ-015",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 11.43,
+    "espaco_mm": 43.08,
+    "arte_frente_mm": 32.4
+  },
+  {
+    "id": "EQ-016",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 11.43,
+    "espaco_mm": 43.08,
+    "arte_frente_mm": 32.4
+  },
+  {
+    "id": "EQ-017",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 15.24,
+    "espaco_mm": 43.08,
+    "arte_frente_mm": 29.1
+  },
+  {
+    "id": "EQ-018",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 22.86,
+    "espaco_mm": 43.08,
+    "arte_frente_mm": 46.3
+  },
+  {
+    "id": "EQ-019",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 22.86,
+    "espaco_mm": 47.88,
+    "arte_frente_mm": 30.6
+  },
+  {
+    "id": "EQ-020",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 22.86,
+    "espaco_mm": 47.88,
+    "arte_frente_mm": 51.1
+  },
+  {
+    "id": "EQ-021",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 11.43,
+    "espaco_mm": 47.88,
+    "arte_frente_mm": 37.2
+  },
+  {
+    "id": "EQ-022",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 22.86,
+    "espaco_mm": 47.88,
+    "arte_frente_mm": 30.6
+  },
+  {
+    "id": "EQ-023",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 11.43,
+    "espaco_mm": 47.88,
+    "arte_frente_mm": 40.5
+  },
+  {
+    "id": "EQ-024",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 22.86,
+    "espaco_mm": 47.88,
+    "arte_frente_mm": 51.1
+  },
+  {
+    "id": "EQ-025",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 15.24,
+    "espaco_mm": 47.88,
+    "arte_frente_mm": 33.9
+  },
+  {
+    "id": "EQ-026",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 26.67,
+    "espaco_mm": 47.88,
+    "arte_frente_mm": 51.1
+  },
+  {
+    "id": "EQ-027",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 30.48,
+    "espaco_mm": 47.88,
+    "arte_frente_mm": 51.1
+  },
+  {
+    "id": "EQ-028",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 0.0,
+    "espaco_mm": 47.88,
+    "arte_frente_mm": 51.1
+  },
+  {
+    "id": "EQ-029",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 0.0,
+    "espaco_mm": 47.88,
+    "arte_frente_mm": 51.1
+  },
+  {
+    "id": "EQ-030",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 0.0,
+    "espaco_mm": 47.88,
+    "arte_frente_mm": 51.1
+  },
+  {
+    "id": "EQ-031",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 0.0,
+    "espaco_mm": 47.88,
+    "arte_frente_mm": 51.1
+  },
+  {
+    "id": "EQ-032",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 0.0,
+    "espaco_mm": 47.88,
+    "arte_frente_mm": 51.1
+  },
+  {
+    "id": "EQ-033",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 0.0,
+    "espaco_mm": 47.88,
+    "arte_frente_mm": 51.1
+  },
+  {
+    "id": "EQ-034",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 15.24,
+    "espaco_mm": 47.88,
+    "arte_frente_mm": 33.9
+  },
+  {
+    "id": "EQ-035",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 11.43,
+    "espaco_mm": 47.88,
+    "arte_frente_mm": 40.5
+  },
+  {
+    "id": "EQ-036",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 19.05,
+    "espaco_mm": 47.88,
+    "arte_frente_mm": 33.9
+  },
+  {
+    "id": "EQ-037",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 15.24,
+    "espaco_mm": 47.88,
+    "arte_frente_mm": 33.9
+  },
+  {
+    "id": "EQ-038",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 11.43,
+    "espaco_mm": 47.88,
+    "arte_frente_mm": 40.5
+  },
+  {
+    "id": "EQ-039",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 15.24,
+    "espaco_mm": 47.88,
+    "arte_frente_mm": 37.2
+  },
+  {
+    "id": "EQ-040",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 22.86,
+    "espaco_mm": 47.88,
+    "arte_frente_mm": 30.6
+  },
+  {
+    "id": "EQ-041",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 15.24,
+    "espaco_mm": 47.88,
+    "arte_frente_mm": 37.2
+  },
+  {
+    "id": "EQ-042",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 45.72,
+    "espaco_mm": 47.88,
+    "arte_frente_mm": 51.1
+  },
+  {
+    "id": "EQ-043",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 38.1,
+    "espaco_mm": 47.88,
+    "arte_frente_mm": 51.1
+  },
+  {
+    "id": "EQ-044",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 34.29,
+    "espaco_mm": 47.88,
+    "arte_frente_mm": 51.1
+  },
+  {
+    "id": "EQ-045",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 30.48,
+    "espaco_mm": 47.88,
+    "arte_frente_mm": 51.1
+  },
+  {
+    "id": "EQ-046",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 15.24,
+    "espaco_mm": 47.88,
+    "arte_frente_mm": 37.2
+  },
+  {
+    "id": "EQ-047",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 15.24,
+    "espaco_mm": 47.88,
+    "arte_frente_mm": 33.9
+  },
+  {
+    "id": "EQ-048",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 11.43,
+    "espaco_mm": 47.88,
+    "arte_frente_mm": 37.2
+  },
+  {
+    "id": "EQ-049",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 11.43,
+    "espaco_mm": 47.88,
+    "arte_frente_mm": 40.5
+  },
+  {
+    "id": "EQ-050",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 11.43,
+    "espaco_mm": 47.88,
+    "arte_frente_mm": 37.2
+  },
+  {
+    "id": "EQ-051",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 11.43,
+    "espaco_mm": 47.88,
+    "arte_frente_mm": 40.5
+  },
+  {
+    "id": "EQ-052",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 26.67,
+    "espaco_mm": 47.88,
+    "arte_frente_mm": 51.1
+  },
+  {
+    "id": "EQ-053",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 15.24,
+    "espaco_mm": 47.88,
+    "arte_frente_mm": 33.9
+  },
+  {
+    "id": "EQ-054",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 34.29,
+    "espaco_mm": 47.88,
+    "arte_frente_mm": 51.1
+  },
+  {
+    "id": "EQ-055",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 0.0,
+    "espaco_mm": 47.88,
+    "arte_frente_mm": 51.1
+  },
+  {
+    "id": "EQ-056",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 0.0,
+    "espaco_mm": 47.88,
+    "arte_frente_mm": 51.1
+  },
+  {
+    "id": "EQ-057",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 19.05,
+    "espaco_mm": 47.88,
+    "arte_frente_mm": 33.9
+  },
+  {
+    "id": "EQ-058",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 19.05,
+    "espaco_mm": 47.88,
+    "arte_frente_mm": 33.9
+  },
+  {
+    "id": "EQ-059",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 41.91,
+    "espaco_mm": 47.88,
+    "arte_frente_mm": 51.1
+  },
+  {
+    "id": "EQ-060",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 45.72,
+    "espaco_mm": 47.88,
+    "arte_frente_mm": 51.1
+  },
+  {
+    "id": "EQ-061",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 7.62,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 50.5
+  },
+  {
+    "id": "EQ-062",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 45.72,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 61.1
+  },
+  {
+    "id": "EQ-063",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 15.24,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 43.9
+  },
+  {
+    "id": "EQ-064",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 11.43,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 47.2
+  },
+  {
+    "id": "EQ-065",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 15.24,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 47.2
+  },
+  {
+    "id": "EQ-066",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 15.24,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 43.9
+  },
+  {
+    "id": "EQ-067",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 11.43,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 47.2
+  },
+  {
+    "id": "EQ-068",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 7.62,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 50.5
+  },
+  {
+    "id": "EQ-069",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 15.24,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 43.9
+  },
+  {
+    "id": "EQ-070",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 15.24,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 47.2
+  },
+  {
+    "id": "EQ-071",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 7.62,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 53.8
+  },
+  {
+    "id": "EQ-072",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 11.43,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 50.5
+  },
+  {
+    "id": "EQ-073",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 15.24,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 43.9
+  },
+  {
+    "id": "EQ-074",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 22.86,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 40.6
+  },
+  {
+    "id": "EQ-075",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 11.43,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 47.2
+  },
+  {
+    "id": "EQ-076",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 22.86,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 40.6
+  },
+  {
+    "id": "EQ-077",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 15.24,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 43.9
+  },
+  {
+    "id": "EQ-078",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 22.86,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 40.6
+  },
+  {
+    "id": "EQ-079",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 19.05,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 43.9
+  },
+  {
+    "id": "EQ-080",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 7.62,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 50.5
+  },
+  {
+    "id": "EQ-081",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 11.43,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 50.5
+  },
+  {
+    "id": "EQ-082",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 15.24,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 47.2
+  },
+  {
+    "id": "EQ-083",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 7.62,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 50.5
+  },
+  {
+    "id": "EQ-084",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 7.62,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 50.5
+  },
+  {
+    "id": "EQ-085",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 7.62,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 50.5
+  },
+  {
+    "id": "EQ-086",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 3.81,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 53.8
+  },
+  {
+    "id": "EQ-087",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 11.43,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 47.2
+  },
+  {
+    "id": "EQ-088",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 7.62,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 50.5
+  },
+  {
+    "id": "EQ-089",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 7.62,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 50.5
+  },
+  {
+    "id": "EQ-090",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 11.43,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 50.5
+  },
+  {
+    "id": "EQ-091",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 7.62,
+    "espaco_mm": 47.88,
+    "arte_frente_mm": 40.5
+  },
+  {
+    "id": "EQ-092",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 11.43,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 47.2
+  },
+  {
+    "id": "EQ-093",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 11.43,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 47.2
+  },
+  {
+    "id": "EQ-094",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 19.05,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 43.9
+  },
+  {
+    "id": "EQ-095",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 7.62,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 50.5
+  },
+  {
+    "id": "EQ-096",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 11.43,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 47.2
+  },
+  {
+    "id": "EQ-097",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 19.05,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 43.9
+  },
+  {
+    "id": "EQ-098",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 19.05,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 43.9
+  },
+  {
+    "id": "EQ-099",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 3.81,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 53.8
+  },
+  {
+    "id": "EQ-100",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 3.81,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 53.8
+  },
+  {
+    "id": "EQ-101",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 11.43,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 50.5
+  },
+  {
+    "id": "EQ-102",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 7.62,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 50.5
+  },
+  {
+    "id": "EQ-103",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 11.43,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 47.2
+  },
+  {
+    "id": "EQ-104",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 7.62,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 53.8
+  },
+  {
+    "id": "EQ-105",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 7.62,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 50.5
+  },
+  {
+    "id": "EQ-106",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 15.24,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 47.2
+  },
+  {
+    "id": "EQ-107",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 7.62,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 50.5
+  },
+  {
+    "id": "EQ-108",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 11.43,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 50.5
+  },
+  {
+    "id": "EQ-109",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 15.24,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 47.2
+  },
+  {
+    "id": "EQ-110",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 11.43,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 47.2
+  },
+  {
+    "id": "EQ-111",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 22.86,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 37.3
+  },
+  {
+    "id": "EQ-112",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 11.43,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 47.2
+  },
+  {
+    "id": "EQ-113",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 22.86,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 40.6
+  },
+  {
+    "id": "EQ-114",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 22.86,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 40.6
+  },
+  {
+    "id": "EQ-115",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 11.43,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 47.2
+  },
+  {
+    "id": "EQ-116",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 11.43,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 47.2
+  },
+  {
+    "id": "EQ-117",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 3.81,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 53.8
+  },
+  {
+    "id": "EQ-118",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 15.24,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 47.2
+  },
+  {
+    "id": "EQ-119",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 11.43,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 47.2
+  },
+  {
+    "id": "EQ-120",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 15.24,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 43.9
+  },
+  {
+    "id": "EQ-121",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 3.81,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 53.8
+  },
+  {
+    "id": "EQ-122",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 7.62,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 50.5
+  },
+  {
+    "id": "EQ-123",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 7.62,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 50.5
+  },
+  {
+    "id": "EQ-124",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 11.43,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 50.5
+  },
+  {
+    "id": "EQ-125",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 15.24,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 47.2
+  },
+  {
+    "id": "EQ-126",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 11.43,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 47.2
+  },
+  {
+    "id": "EQ-127",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 26.67,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 34.0
+  },
+  {
+    "id": "EQ-128",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 30.48,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 34.0
+  },
+  {
+    "id": "EQ-129",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 26.67,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 34.0
+  },
+  {
+    "id": "EQ-130",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 19.05,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 40.6
+  },
+  {
+    "id": "EQ-131",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 22.86,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 37.3
+  },
+  {
+    "id": "EQ-132",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 22.86,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 37.3
+  },
+  {
+    "id": "EQ-133",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 15.24,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 47.2
+  },
+  {
+    "id": "EQ-134",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 30.48,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 34.0
+  },
+  {
+    "id": "EQ-135",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 15.24,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 43.9
+  },
+  {
+    "id": "EQ-136",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 22.86,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 40.6
+  },
+  {
+    "id": "EQ-137",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 22.86,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 37.3
+  },
+  {
+    "id": "EQ-138",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 22.86,
+    "espaco_mm": 57.88,
+    "arte_frente_mm": 40.6
+  },
+  {
+    "id": "EQ-139",
+    "verso_compacto": false,
+    "corpo_pt": 8,
+    "texto_altura_mm": 50.8,
+    "espaco_mm": 53.08,
+    "arte_frente_mm": 56.3
+  },
+  {
+    "id": "EQ-140",
+    "verso_compacto": true,
+    "corpo_pt": 8,
+    "texto_altura_mm": 58.98,
+    "espaco_mm": 62.4,
+    "arte_frente_mm": 56.3
+  },
+  {
+    "id": "EQ-141",
+    "verso_compacto": false,
+    "corpo_pt": 8.5,
+    "texto_altura_mm": 50.38,
+    "espaco_mm": 53.08,
+    "arte_frente_mm": 56.3
+  },
+  {
+    "id": "EQ-142",
+    "verso_compacto": true,
+    "corpo_pt": 8.5,
+    "texto_altura_mm": 61.17,
+    "espaco_mm": 62.4,
+    "arte_frente_mm": 56.3
+  },
+  {
+    "id": "EQ-143",
+    "verso_compacto": false,
+    "corpo_pt": 8,
+    "texto_altura_mm": 47.62,
+    "espaco_mm": 53.08,
+    "arte_frente_mm": 56.3
+  },
+  {
+    "id": "EQ-144",
+    "verso_compacto": false,
+    "corpo_pt": 8,
+    "texto_altura_mm": 44.45,
+    "espaco_mm": 53.08,
+    "arte_frente_mm": 56.3
+  },
+  {
+    "id": "EQ-145",
+    "verso_compacto": true,
+    "corpo_pt": 8.5,
+    "texto_altura_mm": 61.17,
+    "espaco_mm": 62.4,
+    "arte_frente_mm": 56.3
+  },
+  {
+    "id": "EQ-146",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 41.91,
+    "espaco_mm": 53.08,
+    "arte_frente_mm": 56.3
+  },
+  {
+    "id": "EQ-147",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 41.91,
+    "espaco_mm": 53.08,
+    "arte_frente_mm": 56.3
+  },
+  {
+    "id": "EQ-148",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 41.91,
+    "espaco_mm": 53.08,
+    "arte_frente_mm": 56.3
+  },
+  {
+    "id": "EQ-149",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 30.48,
+    "espaco_mm": 53.08,
+    "arte_frente_mm": 56.3
+  },
+  {
+    "id": "EQ-150",
+    "verso_compacto": false,
+    "corpo_pt": 8.5,
+    "texto_altura_mm": 46.78,
+    "espaco_mm": 53.08,
+    "arte_frente_mm": 56.3
+  },
+  {
+    "id": "EQ-151",
+    "verso_compacto": false,
+    "corpo_pt": 8.5,
+    "texto_altura_mm": 46.78,
+    "espaco_mm": 53.08,
+    "arte_frente_mm": 56.3
+  },
+  {
+    "id": "EQ-152",
+    "verso_compacto": false,
+    "corpo_pt": 8.5,
+    "texto_altura_mm": 50.38,
+    "espaco_mm": 53.08,
+    "arte_frente_mm": 56.3
+  },
+  {
+    "id": "EQ-153",
+    "verso_compacto": false,
+    "corpo_pt": 8,
+    "texto_altura_mm": 47.62,
+    "espaco_mm": 53.08,
+    "arte_frente_mm": 56.3
+  },
+  {
+    "id": "EQ-154",
+    "verso_compacto": true,
+    "corpo_pt": 8,
+    "texto_altura_mm": 52.78,
+    "espaco_mm": 62.4,
+    "arte_frente_mm": 56.3
+  },
+  {
+    "id": "EQ-155",
+    "verso_compacto": true,
+    "corpo_pt": 8,
+    "texto_altura_mm": 52.78,
+    "espaco_mm": 62.4,
+    "arte_frente_mm": 56.3
+  },
+  {
+    "id": "EQ-156",
+    "verso_compacto": false,
+    "corpo_pt": 9,
+    "texto_altura_mm": 34.29,
+    "espaco_mm": 43.08,
+    "arte_frente_mm": 46.3
+  }
+]

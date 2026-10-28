@@ -1,0 +1,137 @@
+{
+  "EQ-001": {
+    "id": "EQ-001",
+    "arquivo": "C:\\Users\\Gamer\\Documents\\ChatGPT\\SISTEMA DE RPG\\producao_cartas\\artes\\piloto\\EQ-001_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-0591ec13-be39-4b3c-ad72-4c59aa3ff901.png",
+    "dimensoes": [
+      1254,
+      1254
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "status": "piloto_para_avaliacao"
+  },
+  "EQ-010": {
+    "id": "EQ-010",
+    "arquivo": "C:\\Users\\Gamer\\Documents\\ChatGPT\\SISTEMA DE RPG\\producao_cartas\\artes\\piloto\\EQ-010_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-ef49af06-452a-4b94-8126-baf2aa79fcc5.png",
+    "dimensoes": [
+      1418,
+      1109
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "status": "piloto_para_avaliacao"
+  },
+  "EQ-156": {
+    "id": "EQ-156",
+    "arquivo": "C:\\Users\\Gamer\\Documents\\ChatGPT\\SISTEMA DE RPG\\producao_cartas\\artes\\piloto\\EQ-156_v02.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-26a28708-3919-495b-8ae3-68a705a30bc6.png",
+    "dimensoes": [
+      1536,
+      1024
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      254
+    ],
+    "status": "piloto_para_avaliacao"
+  },
+  "EQ-046": {
+    "id": "EQ-046",
+    "arquivo": "C:\\Users\\Gamer\\Documents\\ChatGPT\\SISTEMA DE RPG\\producao_cartas\\artes\\piloto\\EQ-046_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-b74c7fdf-5b16-440d-9893-68caa1ebe9b0.png",
+    "dimensoes": [
+      1207,
+      1303
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "status": "piloto_para_avaliacao"
+  },
+  "EQ-060": {
+    "id": "EQ-060",
+    "arquivo": "C:\\Users\\Gamer\\Documents\\ChatGPT\\SISTEMA DE RPG\\producao_cartas\\artes\\piloto\\EQ-060_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-138bbb82-102a-41f6-b34c-d4af9130cbd8.png",
+    "dimensoes": [
+      1024,
+      1536
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      254
+    ],
+    "status": "piloto_para_avaliacao"
+  },
+  "EQ-061": {
+    "id": "EQ-061",
+    "arquivo": "C:\\Users\\Gamer\\Documents\\ChatGPT\\SISTEMA DE RPG\\producao_cartas\\artes\\piloto\\EQ-061_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-8ab16fa6-b11b-4668-a734-f45c4d1220fb.png",
+    "dimensoes": [
+      1024,
+      1536
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      254
+    ],
+    "status": "piloto_para_avaliacao"
+  },
+  "EQ-116": {
+    "id": "EQ-116",
+    "arquivo": "C:\\Users\\Gamer\\Documents\\ChatGPT\\SISTEMA DE RPG\\producao_cartas\\artes\\piloto\\EQ-116_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-7834ea53-6740-4143-8e79-0116db718b9d.png",
+    "dimensoes": [
+      1374,
+      1145
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "status": "piloto_para_avaliacao"
+  },
+  "EQ-127": {
+    "id": "EQ-127",
+    "arquivo": "C:\\Users\\Gamer\\Documents\\ChatGPT\\SISTEMA DE RPG\\producao_cartas\\artes\\piloto\\EQ-127_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-82d0f72f-bf28-458a-8b52-96ad721e8880.png",
+    "dimensoes": [
+      1295,
+      1214
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "status": "piloto_para_avaliacao"
+  },
+  "EQ-139": {
+    "id": "EQ-139",
+    "arquivo": "C:\\Users\\Gamer\\Documents\\ChatGPT\\SISTEMA DE RPG\\producao_cartas\\artes\\piloto\\EQ-139_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-85e93309-8fc9-4617-88d2-b35acc90f5ab.png",
+    "dimensoes": [
+      1312,
+      1199
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "status": "piloto_para_avaliacao"
+  }
+}

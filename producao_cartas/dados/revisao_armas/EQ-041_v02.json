@@ -1,0 +1,19 @@
+{
+  "id": "EQ-041",
+  "nome": "Machado Sedento",
+  "arquivo": "artes/revisadas/EQ-041_v02.png",
+  "origem": "C:/Users/Gamer/.codex/generated_images/01a1784a-39da-75d3-87c4-56dc835caa37/exec-74c3148f-e039-4821-b1f2-e21f5f11ae7a.png",
+  "substitui": "artes/lote/EQ-041_v01.png",
+  "dimensoes": [
+    1060,
+    1484
+  ],
+  "modo": "RGBA",
+  "alpha": [
+    0,
+    255
+  ],
+  "sha256": "75412c3449ae2797f5c3ab64ee4e77f15625e19f95a5874d93cd37f9dfff2db1",
+  "status": "conferida_visual",
+  "rotacao_diagramacao_graus": 0
+}

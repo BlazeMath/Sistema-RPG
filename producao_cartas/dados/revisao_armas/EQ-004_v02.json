@@ -1,0 +1,18 @@
+{
+  "id": "EQ-004",
+  "nome": "Espada Curta",
+  "arquivo": "artes/revisadas/EQ-004_v02.png",
+  "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-74915465-b3f1-412b-b94f-4cdcc91e45e9.png",
+  "substitui": "C:/Users/Gamer/Documents/ChatGPT/SISTEMA DE RPG/producao_cartas/artes/lote/EQ-004_v01.png",
+  "dimensoes": [
+    1061,
+    1483
+  ],
+  "modo": "RGBA",
+  "alpha": [
+    0,
+    255
+  ],
+  "sha256": "ad6bc9ae2bff9dde8d949e536c6af94c96f74342dabfa7f34013b6121c85818e",
+  "status": "revisao_visual_pendente"
+}

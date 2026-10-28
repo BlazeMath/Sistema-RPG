@@ -1,0 +1,99 @@
+{
+  "EQ-044": {
+    "campos": {
+      "Dano": "4 + Destreza"
+    },
+    "habilidade": "Ataque em área: atinge os inimigos em uma área de 3 × 3 quadrados. Se a área for terra/solo, ela vira TERRENO DIFÍCIL; se houver fichas de Fogo ou objetos em chamas na área, apague todos. No fim do seu turno, você NÃO retira 1 de Fadiga (a maré não recua). Seu ritmo de Fadiga fica permanentemente mais apertado.",
+    "diagramacao": "frente_verso",
+    "revisao": "Decisão do autor: área de 3 × 3 quadrados. Faltam alcance ideal, tipo de dano e duração do terreno. A recuperação negada é a normal de 1 por turno; decidir se efeitos adicionais continuam. Área afeta inimigos no dano, mas o apagamento afeta todos: proposta explicita a assimetria.",
+    "fonte": "PDF: EQ-044, p. 5 | Apoio: Armas!A299:D303 | Decisao do autor, revisao v05"
+  },
+  "EQ-042": {
+    "campos": {
+      "Dano": "6 + Força",
+      "Alcance": "Longo",
+      "Limite de Fadiga": "2"
+    },
+    "habilidade": "2 de Fadiga, Ação Padrão: faça um único teste de ataque à distância contra o alvo e todas as criaturas adjacentes a ele, incluindo aliados. O alvo deve estar dentro do alcance desta arma. Cada criatura faz sua defesa. Cada criatura atingida sofre dano de Raio igual ao dano desta arma.\nRetorno da descarga: depois de resolver esta habilidade, você sofre 3 de dano de Raio, mesmo que nenhum alvo seja atingido.",
+    "diagramacao": "frente_verso",
+    "revisao": "Decisão do autor: alcance Longo; descarga atinge o alvo e todas as criaturas adjacentes a ele, incluindo aliados; um teste de ataque e defesas individuais. Retorno de 3 de dano de Raio apenas ao usar esta habilidade. Ataques normais não ativam o retorno. A definição comum da tag Arremesso Grande permanece no manual.",
+    "fonte": "PDF: EQ-042, p. 5 | Apoio: Armas!A285:D289 | Decisao do autor, revisao v05"
+  },
+  "EQ-043": {
+    "campos": {
+      "Dano": "3 + Destreza",
+      "Alcance": "Curta-Média"
+    },
+    "habilidade": "Antes de fazer um ataque com esta arma, você pode gastar 1 ficha de Sombra. Se fizer isso, o ataque não pode ser respondido por reações e suas duas cartas iniciais ficam ocultas para o defensor.\nDepois de resolver o ataque, receba 1 ficha de Sombra.\nEsta arma só causa dano se você estiver Oculto no início do ataque.",
+    "diagramacao": "frente_verso",
+    "revisao": "Proposta aprovada pelo autor: o gasto de Sombra ocorre antes do ataque e o ganho depois da resolução. O requisito de começar o ataque Oculto substitui a antiga restrição de não causar dano a inimigos adjacentes. Sombra é recurso; Oculto é estado. A defesa normal não é uma reação.",
+    "fonte": "PDF: EQ-043, p. 5 | Apoio: Armas!A293:D297 | Decisao do autor, revisao v05"
+  },
+  "EQ-131": {
+    "habilidade": "Ação Padrão — escolha um efeito:\n1. Por 5 minutos, a runa ilumina ao alcance médio. \n2. Descarte todas as fichas de Sombra em alcance curto. \n3. Coloque 1 ficha de Cegueira em um alvo ao alcance curto.",
+    "revisao": "Decisão do autor em 27/10/2026: substituir apenas a segunda opção por descartar todas as fichas de Sombra em alcance curto. Cegueira carece de efeito detalhado; decidir oposição. O efeito de luz continua após o consumo físico da runa por sua duração.",
+    "fonte": "PDF: EQ-131, p. 15 | Apoio: Itens Mágicos!A67:C71 | Decisao do autor em 2026-10-27",
+    "diagramacao": "frente_unica"
+  },
+  "EQ-137": {
+    "habilidade": "Uma vez por cena, quando um dano esgotaria seu baralho, deixe 1 carta nele em vez de retirar a última.\n2 de Fadiga, Ação Padrão: escolha um aliado que você possa ver. Ele cura 3 e remove 1 ficha de Sangramento, Veneno ou Ferimento.",
+    "revisao": "Correção de texto solicitada pelo autor: o primeiro efeito impede que um dano retire a última carta do baralho, preservando 1 de vida sem mover cartas de outras zonas. O segundo efeito mantém custo de 2 de Fadiga, Ação Padrão, cura 3 e remoção de uma única ficha de Sangramento, Veneno ou Ferimento de um aliado à vista. Removidos os fragmentos de ambientação que quebravam a clareza do texto. PDFs em espera.",
+    "fonte": "PDF: EQ-137, p. 16 | Apoio: Itens Mágicos!A96:C99 | Correcao do autor em 2026-10-27",
+    "diagramacao": "frente_unica"
+  },
+  "EQ-064": {
+    "habilidade": "Durante um descanso curto, consuma esta ração. No início da próxima cena, compre 1 carta adicional para formar sua mão inicial. Consumir mais de uma ração não aumenta esse bônus.",
+    "revisao": "Proposta implementada a pedido do autor: preparar a mão da próxima cena, substituindo a remoção de Fadiga durante o descanso. Bônus não cumulativo. Nenhuma exigência de fome ou alimentação foi criada.",
+    "fonte": "PDF: EQ-064, p. 8 | Apoio: Itens!A74:C75 | Decisao do autor em 2026-10-27",
+    "diagramacao": "frente_unica"
+  },
+  "EQ-061": {
+    "tags": [
+      "Consumível",
+      "Poção"
+    ],
+    "tipo_consumivel": "Poção"
+  },
+  "EQ-063": {
+    "tags": [
+      "Consumível",
+      "Poção"
+    ],
+    "tipo_consumivel": "Poção"
+  },
+  "EQ-068": {
+    "tags": [
+      "Consumível",
+      "Poção"
+    ],
+    "tipo_consumivel": "Poção"
+  },
+  "EQ-071": {
+    "tags": [
+      "Consumível",
+      "Poção"
+    ],
+    "tipo_consumivel": "Poção"
+  },
+  "EQ-072": {
+    "tags": [
+      "Consumível",
+      "Poção"
+    ],
+    "tipo_consumivel": "Poção"
+  },
+  "EQ-075": {
+    "tags": [
+      "Consumível",
+      "Poção"
+    ],
+    "tipo_consumivel": "Poção"
+  },
+  "EQ-076": {
+    "tags": [
+      "Consumível",
+      "Poção"
+    ],
+    "tipo_consumivel": "Poção"
+  }
+}

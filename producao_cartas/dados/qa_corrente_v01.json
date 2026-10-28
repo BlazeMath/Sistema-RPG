@@ -1,0 +1,15 @@
+{
+  "id": "EQ-156",
+  "formato_mm": [
+    63,
+    88
+  ],
+  "regras_preservadas": true,
+  "custo_fadiga": 2,
+  "limite_fadiga": 2,
+  "tipo_ativacao": "Reação",
+  "duplex": "borda longa, posições verificadas",
+  "arte": "EQ-156_v02.png",
+  "corpo_verso_pt": 9,
+  "revisao_visual": "Quatro páginas renderizadas e inspecionadas; texto completo, arte v02 inteira, gotas legíveis e faces alinhadas no arquivo."
+}

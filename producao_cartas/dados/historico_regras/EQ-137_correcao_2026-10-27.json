@@ -1,0 +1,6 @@
+{
+  "id": "EQ-137",
+  "data": "2026-10-27",
+  "habilidade": "Uma vez por cena, quando um dano esgotaria seu baralho, deixe 1 carta nele em vez de retirar a última.\n2 de Fadiga, Ação Padrão: escolha um aliado que você possa ver. Ele cura 3 e remove 1 ficha de Sangramento, Veneno ou Ferimento.",
+  "revisao": "Correção de texto solicitada pelo autor: o primeiro efeito impede que um dano retire a última carta do baralho, preservando 1 de vida sem mover cartas de outras zonas. O segundo efeito mantém custo de 2 de Fadiga, Ação Padrão, cura 3 e remoção de uma única ficha de Sangramento, Veneno ou Ferimento de um aliado à vista. Removidos os fragmentos de ambientação que quebravam a clareza do texto. PDFs em espera."
+}

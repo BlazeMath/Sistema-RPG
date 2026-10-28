@@ -1,0 +1,8 @@
+{
+  "versao": "03",
+  "fadiga": "Gota laranja: quantidade de gotas no custo; gota junto ao número no limite de Fadiga.",
+  "conjuracao": ["EQ-139"],
+  "criterio_conjuracao": "Magias do Grimório do Fogo, conforme a regra geral de Conjuração da seção 8.3 do estado do projeto. Não aplicar a símbolo de Conjuração à ativação da Varinha nem à Runa consumível.",
+  "origem_visual": "Gotas e cartas sobrepostas dos PDFs originais, redesenhadas em vetor para impressão.",
+  "alteracao_mecanica": false
+}

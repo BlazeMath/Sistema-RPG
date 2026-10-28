@@ -1,0 +1,18 @@
+{
+  "id": "EQ-002",
+  "nome": "Florete",
+  "arquivo": "artes/revisadas/EQ-002_v02.png",
+  "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-49a325c7-d276-4581-95c9-ed647fb6742d.png",
+  "substitui": "C:/Users/Gamer/Documents/ChatGPT/SISTEMA DE RPG/producao_cartas/artes/lote/EQ-002_v01.png",
+  "dimensoes": [
+    1061,
+    1482
+  ],
+  "modo": "RGBA",
+  "alpha": [
+    0,
+    255
+  ],
+  "sha256": "d9ec20b73d88b6bdd6f49b30876921161b18f2418469b76855c9ff30e079ee2d",
+  "status": "revisao_visual_pendente"
+}

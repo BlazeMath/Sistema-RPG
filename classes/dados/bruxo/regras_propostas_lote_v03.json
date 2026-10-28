@@ -1,0 +1,55 @@
+{
+  "titulo": "Bruxo — regras de trabalho para dez patronos",
+  "versao": 3,
+  "estado": "ajustes_da_revisao_aplicados_conforme_autorizacao",
+  "data": "2026-10-27",
+  "base_confirmada": [
+    "Espírito é o atributo de conjuração e entra no dano, não no teste de ataque.",
+    "Cada pacto pleno tem três cartas: herói, pacto e habilidade inicial com lados A e B.",
+    "Somente um pacto pleno fica na carta de herói; pactos adicionais terão benefícios inferiores.",
+    "Pacto pleno: nível de 1 a 5, 2 × nível de fichas no começo da cena, reserva própria sobre sua carta e descarte de toda a reserva no fim da cena.",
+    "O mestre decide a progressão conforme o cumprimento do pacto.",
+    "Magias mantêm custo mínimo de 1 de Fadiga. Curas seguem a regra normal de exílio."
+  ],
+  "convencoes_propostas": [
+    "A habilidade inicial é concedida pelo pacto. Seu custo de aquisição em XP permanece por definir; os valores de ½, 1 e 2 XP abaixo são para as habilidades gerais.",
+    "Magia do pacto significa uma magia concedida expressamente por esse pacto. Compartilhar uma tag elemental com um item não faz a magia do item contar automaticamente como magia concedida pelo pacto.",
+    "Tags continuam satisfazendo os requisitos normais dos itens. Esta proposta não proíbe o Bruxo de usar grimórios ou equipamentos compatíveis.",
+    "Custos da carta de herói e das magias iniciais são pagos com a reserva do próprio pacto. Uma carta geral que referencia uma magia usa essa mesma reserva. Se o efeito permitir escolher uma reserva, escolha apenas uma: reservas não são somadas para pagar um custo. Procuração usa expressamente a reserva menor.",
+    "N é o nível do pacto. Em custos com X, escolha um inteiro positivo que você consiga pagar; X só pode ser zero quando o texto permitir expressamente. Todos os custos escolhidos são pagos antes do teste, salvo o momento diferente escrito na habilidade.",
+    "Escolha e pague os aprimoramentos antes do teste, salvo quando o texto indicar outro momento. Cada efeito só pode modificar uma mesma conjuração uma vez; aprimoramentos diferentes podem se combinar pagando todos os custos.",
+    "Ganhos de Pacto por uma ação entram após a resolução da ação. Ganhos extras das habilidades gerais não repetem seu próprio gatilho nem são novos cumprimentos do patrono.",
+    "Somente ameaças, custos e conflitos reais contam para ganhos por cumprimento. Inimigos conjurados pelo próprio grupo, dano combinado entre aliados e microações repetidas sem risco não abastecem os pactos.",
+    "Pactos menores são uma proposta: recebem N fichas no começo da cena, onde N é seu nível, e concedem apenas o benefício menor e as tags. Não concedem habilidade inicial A/B, efeitos do herói, ganho por cumprimento nem ganho por crítico.",
+    "Devolver cartas comuns do exílio ao descarte não devolve habilidades exiladas como custo nem gera Pacto. Fichas de Pacto continuam na carta do pacto ao virar outra carta.",
+    "O conjunto geral agora acompanha a quantidade das cinco classes: nove cartas A/B de 1 XP em três estratégias, seis meias cartas de ½ XP e três cartas A/B de 2 XP. As dez habilidades iniciais A/B dos patronos ficam em um catálogo separado desse total."
+  ],
+  "testes_prioritarios": [
+    "Potência da Fênix com aprimoramentos em cada alvo; calcular o total da área, não apenas um alvo.",
+    "Quantidade de pactos menores ativos e acesso a itens por suas tags.",
+    "Carcereiro contra monstros com uma única carta; duração e remoção de Atordoamento.",
+    "Ordem de compra da Testemunha e sua interação com Marcação/Percepção.",
+    "Consumo líquido de cartas ao oferecer e resgatar, e custos totais de Manifestação Dupla.",
+    "Proteção contra um golpe forte: o benefício menor precisa ficar abaixo do pleno.",
+    "Prazo e gravidade das cobranças em cenas de combate, exploração e interação.",
+    "Fome: cura segue o exílio normal e não deve devolver mais vida do que o confronto e seus custos permitem sustentar.",
+    "Tempestade: contar ações investidas em preparar e descarregar; verificar se o pico de dano compensa a preparação sem repetir ganhos sobre o próprio gasto.",
+    "Pesadelo: testar a remoção de Atormentado, a pressão de Fadiga e a duração de Confusão; o alvo deve ter caminhos reais para reagir.",
+    "Inverno: verificar a troca entre conservar Fadiga, abrir mão da recuperação e permanecer na posição; a transferência não elimina Fadiga nem cria uma segunda reserva.",
+    "Três novas cartas gerais: combinar com os dez patronos e com Manifestação Dupla, conferindo gatilhos, custos e número de ativações."
+  ],
+  "ajustes_aplicados": [
+    "Suspensão nos nove pactos além da Fênix: ficam inativos ganhos e gastos de Pacto, favor menor, ativada, desencadeada, crítico e aprimoramentos concedidos pelo vínculo. As tags e a associação permanecem, e as magias básicas continuam acessíveis para reparar. Aprimoramento é uma opção adicional da própria magia ou do patrono; o efeito básico obrigatório não é retirado. Habilidades gerais não podem alimentar a reserva suspensa ou restituir um benefício suspenso. A Fênix não recebe essa regra: sua consequência continua em aberto.",
+    "Efeitos já resolvidos, fichas já colocadas e custos pagos não são desfeitos por suspensão, salvo texto expresso. Depois da reparação, o vínculo volta a funcionar sem refazer o ganho inicial da cena.",
+    "Cartas dos nove heróis revisados têm limite 4. Pacto fica na carta do contrato e não ocupa capacidade de Fadiga. O limite da Fênix permanece como estava, sem nova definição.",
+    "Magia Arcana classifica as habilidades iniciais; não concede por si só uma tag adicional à carta de herói. O Bruxo recebe Pacto e as tags expressamente concedidas por seus vínculos. Requisitos de itens continuam normais.",
+    "Conjuração está expressa em Fagulha Cativa. As demais faces dos nove patronos não têm esse símbolo; pagam na própria carta, salvo outro efeito que autorize distribuição. A Fênix mantém sua definição anterior. Recuperações ligadas ao pagamento identificam a carta que efetivamente recebeu Fadiga.",
+    "Magias identificadas como rápidas usam Reação no gatilho escrito. Dispensa de ação não elimina condições, salvo a autorização expressa de repetição de Intercessão. Uma vez por turno inclui turnos alheios; uma vez no seu turno é restrito ao próprio.",
+    "Custos normalmente são pagos antes do teste. Quando uma habilidade é usada depois de acerto, falha, estouro, dano ou descarte, seus próprios recursos são pagos nessa janela posterior, antes do efeito adicional. Isso não reabre a resolução anterior.",
+    "Olhar uma carta informa apenas quem a olha; revelar a torna pública. A desencadeada do Olho considera uma Fechada conhecida pelo Bruxo, inclusive por Marcação. Não exige revelá-la publicamente para receber Foco.",
+    "No fim do turno: resolva ou renuncie à recuperação normal; resolva ganhos que dependam dessa escolha; depois as recuperações adicionais declaradas para essa janela; por último confira cobranças que exigem conservar Fadiga no encerramento. Restrições de vínculos continuam valendo em todas as etapas.",
+    "Cada aquisição de Pacto Menor associa outro patrono, com nível próprio de 1 a 5, progressão decidida pelo mestre, reserva e carta separadas. Tags, reserva e cobrança menor permanecem nos dois lados; só o favor menor exige o lado A. Virar não repete recursos iniciais nem reinicia limites por cena.",
+    "Sinergias de exílio voluntário de Oferenda e Favor com o Abismo foram mantidas expressamente. Cada origem de ganho respeita seu limite; ganhos adicionais não repetem seu próprio gatilho. Não há exceção nova para recuperar habilidades exiladas.",
+    "A entrada inteira da Fênix, incluindo efeitos, valores, pendências e cobranças em aberto, foi preservada. Nenhuma restrição nova exige Fogo para usar Absorver as Chamas; permanece F + 2X."
+  ]
+}

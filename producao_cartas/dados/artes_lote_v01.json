@@ -1,0 +1,2354 @@
+[
+  {
+    "id": "EQ-002",
+    "arquivo": "artes/lote/EQ-002_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-06528386-4d17-4741-bcac-60cf9e96be62.png",
+    "dimensoes": [
+      1061,
+      1482
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "4197b82e1b28336d8b16504591f340a12f3436c413537b2eaba09ece9f48d65d",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-003",
+    "arquivo": "artes/lote/EQ-003_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-1e076642-2924-4661-aaec-ea76d4025626.png",
+    "dimensoes": [
+      1061,
+      1482
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "411b15f8e08a9dd2d9853abdb16cbab7b5a4d00625373ba10a8de14bd89170ce",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-004",
+    "arquivo": "artes/lote/EQ-004_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-ca5b8a7c-a2e4-46ab-8c69-ac13f44ef7ab.png",
+    "dimensoes": [
+      1061,
+      1482
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "860e3d781721c9f04f860bd613a80899d32d5f1c0c29be55257c5acf37e60ba2",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-005",
+    "arquivo": "artes/lote/EQ-005_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-3194ae5e-d8c8-4685-908f-c8a16f6acbc7.png",
+    "dimensoes": [
+      1061,
+      1482
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "f4de9973f1eeecb5a79aed8c247094bdb6b0c61bec1144979303887e44d961cf",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-006",
+    "arquivo": "artes/lote/EQ-006_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-16e7b86a-59ca-40f3-b7a6-0a54371acd63.png",
+    "dimensoes": [
+      1062,
+      1481
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "b49bd5ba4aea84bcf885e0272e93daed7eea8e6aa40c53f85b466790c01f3abe",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-007",
+    "arquivo": "artes/lote/EQ-007_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-4f334df4-da30-4088-9b9d-29669b20f3a5.png",
+    "dimensoes": [
+      1060,
+      1484
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "d1e440d75a0196acdb690e0cf39676ff118c4d99337069e8e2e9283882285be8",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-008",
+    "arquivo": "artes/lote/EQ-008_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-81cfce4b-f980-49ff-9875-5ffefe6d2081.png",
+    "dimensoes": [
+      1062,
+      1482
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "2d53685dabd922e32f4d2cadd55f1b7d0549b6b0762c17db2627efcd8c8e9d04",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-009",
+    "arquivo": "artes/lote/EQ-009_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-6fd18f7b-f965-493b-88f0-4e240c6d9054.png",
+    "dimensoes": [
+      1063,
+      1480
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "bb3815982e8ce14fd845f661933f9a4e2b1ef78c0f11396434fb813c01eb62c8",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-011",
+    "arquivo": "artes/lote/EQ-011_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-3e1607e7-cb54-4726-9c36-7c9f698af159.png",
+    "dimensoes": [
+      1061,
+      1482
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "f2e9fe2d7fc8e2fb3c5ddb7b4a4398dd3c22958b7875608f71752010aa98d5be",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-012",
+    "arquivo": "artes/lote/EQ-012_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-0c67279b-5c84-462b-9dc4-8afeaa505a34.png",
+    "dimensoes": [
+      1060,
+      1484
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "b8bbb1fde3d8d71b7ae547b0cb1fc7061dfeb4a81216d68162d1dadfe64aace1",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-013",
+    "arquivo": "artes/lote/EQ-013_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-4cd529be-eafd-47c3-9a74-9c2e3cb19af6.png",
+    "dimensoes": [
+      1083,
+      1452
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "04fb6f4eb4e924741d1aaa152c767121371031a5cb4d162d8a1fb0349576aa01",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-014",
+    "arquivo": "artes/lote/EQ-014_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-8cf0a1d8-074b-4106-a71a-444e5dfd476b.png",
+    "dimensoes": [
+      1060,
+      1484
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "a7c347315a1f21e962cbb995a34cede3b26d022f69c577171eaa4a26a914a516",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-015",
+    "arquivo": "artes/lote/EQ-015_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-7b8d5c0b-1c60-44af-b48b-acad0dd07a40.png",
+    "dimensoes": [
+      1061,
+      1483
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "e0d5c746494727b8858307ba2597fc095d512402947f303c8d7a0a898d5b4a2e",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-016",
+    "arquivo": "artes/lote/EQ-016_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-5d1ec971-45b7-402d-9e64-f9e49a6e81e3.png",
+    "dimensoes": [
+      1062,
+      1482
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "0ba4e88e39528a26f2b8ac5c80d774cd3b594b567d92fa9d268b1e89ab45841a",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-017",
+    "arquivo": "artes/lote/EQ-017_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-fed40a3e-cce0-417a-9505-434557f402ac.png",
+    "dimensoes": [
+      1061,
+      1482
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "7d0d76f23bac6f8ca3ac430092e81c2b51fd867d90ac295a8fba9f458c4f6d0d",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-018",
+    "arquivo": "artes/lote/EQ-018_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-889ba491-3f30-4a75-964e-6974bfce8fb5.png",
+    "dimensoes": [
+      1061,
+      1482
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "b0130609400285a2ee3009fcf8bba3949bad7ccb37aa35d860e3066416bf9374",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-019",
+    "arquivo": "artes/lote/EQ-019_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-891ed1a3-9bb5-427a-bdab-eb00dc5dc1b9.png",
+    "dimensoes": [
+      1063,
+      1480
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "31f3836f59108c1a7828fb9427fa594082ab882fad154f45984ded14558866ad",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-020",
+    "arquivo": "artes/lote/EQ-020_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-de09cbf0-b1ea-4952-bc6a-536beb150ec4.png",
+    "dimensoes": [
+      1061,
+      1483
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "436f8e772436029fa94489933911971a5321af16473fff337a52bb94b8397bff",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-021",
+    "arquivo": "artes/lote/EQ-021_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-8fca8491-c472-4e47-98ea-92e11c936e91.png",
+    "dimensoes": [
+      1061,
+      1483
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "2932c338103fd33a79a3ecc7ffdc427e8feb5635a33c05b7a9e11a4b3fbfa8ce",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-022",
+    "arquivo": "artes/lote/EQ-022_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-d1a4163f-4e70-4e44-af5b-4833a7a8bd41.png",
+    "dimensoes": [
+      1060,
+      1484
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "c064d4f15e8e4cc6dee45ae8d7a742458fa418d37d39048d0edb3f9be4a229cc",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-023",
+    "arquivo": "artes/lote/EQ-023_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-289d2b7a-0b14-41f6-ac0a-da9b6c7216a5.png",
+    "dimensoes": [
+      1061,
+      1482
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "5f9ab18a565864716d172df215ea93fe69602e4ee3529329f39c4ba4c1734930",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-024",
+    "arquivo": "artes/lote/EQ-024_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-d2bfb227-2d1b-43d6-abdf-72fa5ce61458.png",
+    "dimensoes": [
+      1062,
+      1481
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "7859d88af7d1d254e5a7cd79d49f5c1917bbce7a85ae19ae2ff8da28982be3e3",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-025",
+    "arquivo": "artes/lote/EQ-025_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-234ecfde-56c9-49ff-9350-1a75da8a055d.png",
+    "dimensoes": [
+      1060,
+      1484
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "766c61e4c29e9c1837e01b414792929f38318d1b507baeb7be497bd6db2c074d",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-026",
+    "arquivo": "artes/lote/EQ-026_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-426877cf-4780-4378-8f25-abfc66f66326.png",
+    "dimensoes": [
+      1060,
+      1484
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "c2e5819ed1e71fda42c6c01b423d2e7ec70a723abff75fb5dbde02c052a27131",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-027",
+    "arquivo": "artes/lote/EQ-027_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-9b29a434-28d4-4a57-af38-62e3275bcae8.png",
+    "dimensoes": [
+      1060,
+      1484
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "cf031c53eaac90dd72a2d5dce44e4bcb5c7e7580ba4c5c062436f0b926e1326b",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-028",
+    "arquivo": "artes/lote/EQ-028_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-7976293a-b344-4878-a4e2-23fb9e304867.png",
+    "dimensoes": [
+      1245,
+      1263
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "db26bebdf689fd8d3b8a61d20f2f74d76ee84110db4e9f2f56cf89fdd5fc20b2",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-029",
+    "arquivo": "artes/lote/EQ-029_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-1636a899-1c68-4491-bee2-d3a3be53f16a.png",
+    "dimensoes": [
+      1060,
+      1484
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "6b3488b2fa78e8551db62b187b139b3b825e751fc1b7aebf1f1279a4ab64b778",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-030",
+    "arquivo": "artes/lote/EQ-030_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-a13a8f89-2dc2-4653-987c-72d781a0f098.png",
+    "dimensoes": [
+      1060,
+      1484
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "1cdab62c46e4480d27dad2bb0fa0001c66e1b24fe8e78874a31120870863bf7e",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-031",
+    "arquivo": "artes/lote/EQ-031_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-9d74a6d7-e8c4-40a0-bf03-8f1d3457905d.png",
+    "dimensoes": [
+      1060,
+      1484
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "f6e0a7ffbc2cacea0fabd2672914447e999165821af0ff89a46ddbc155e51876",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-032",
+    "arquivo": "artes/lote/EQ-032_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-d13b105d-018e-4903-ba23-10064a2c5b03.png",
+    "dimensoes": [
+      1062,
+      1482
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "1b1218a33757acfdc87b89df863e92680ca69d963706124284a781487e9af272",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-033",
+    "arquivo": "artes/lote/EQ-033_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-a2091712-b7a6-48f6-a87c-dba6bb0c0ccb.png",
+    "dimensoes": [
+      1061,
+      1483
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "52c1a68a92d61c3bf3f9fcd1215452db477f5e5eca74706cfa1b36c1d87f74cc",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-034",
+    "arquivo": "artes/lote/EQ-034_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-6b29ddd0-218a-4d70-8502-1000a8f6aa38.png",
+    "dimensoes": [
+      1061,
+      1482
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "ed603aa174b3c67df3267777347efcc47e45361fd7368a90e3e31ea82727e244",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-035",
+    "arquivo": "artes/lote/EQ-035_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-08504ebd-4a81-46ca-a54d-1377481888c6.png",
+    "dimensoes": [
+      1051,
+      1496
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "3529206fe7bed2dac4e757267ebf6755bca2c618f01052cfca8f58b1327a3e77",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-036",
+    "arquivo": "artes/lote/EQ-036_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-04f3dc0e-a9c0-4514-9c80-971f198bfb4f.png",
+    "dimensoes": [
+      1061,
+      1482
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "43813e4f63684210ab38d1e4e9c09d0a73bd7a3b296eacad461da547504d23b4",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-037",
+    "arquivo": "artes/lote/EQ-037_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-7388d6c1-dd46-4bfb-a988-5a9a7d9f7460.png",
+    "dimensoes": [
+      1060,
+      1484
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "da1bf278f54d739bddc38fccb99e9068c343ec660207dbb48f8061c453a4df6d",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-038",
+    "arquivo": "artes/lote/EQ-038_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-a28d9fcd-2016-42ac-a740-5caefd56576d.png",
+    "dimensoes": [
+      1061,
+      1482
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "89d60e82b94aa54b1ef0bd26db40c048b05866fbfa22973541bd8f136f36057f",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-039",
+    "arquivo": "artes/lote/EQ-039_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-3f5c47cd-c4bc-4c8f-9f2a-216759ee126c.png",
+    "dimensoes": [
+      1049,
+      1499
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "eb776e885750ee5cb7a2e9df7ae1888f96e1799239831edd8f1a915b03731768",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-040",
+    "arquivo": "artes/lote/EQ-040_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-b5880488-3b3f-4d63-a6df-86187df94803.png",
+    "dimensoes": [
+      1496,
+      1051
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "a52332f6b57388c9b174c633a87d02687183ce8a9d0bc138381d77c43badb22c",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-041",
+    "arquivo": "artes/lote/EQ-041_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-96b204c8-af49-4c1c-b841-4e3a4a7a205c.png",
+    "dimensoes": [
+      1060,
+      1484
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "ff92321f04a7bf9127059a966c6d5b499a7eb7496751421686b7087f75559a67",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-042",
+    "arquivo": "artes/lote/EQ-042_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-297caa5d-0842-4c3d-bc4d-2281349d5c98.png",
+    "dimensoes": [
+      1060,
+      1484
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "4f043e4514084ff0d56d6163733027527eb7c6f2872790ebeef7b3bac4998808",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-043",
+    "arquivo": "artes/lote/EQ-043_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-00f85e6c-65e9-4db3-a018-ea32b8476e9f.png",
+    "dimensoes": [
+      1062,
+      1481
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "c85f899ccc9396a00e39a8453c4178f13100b1a4fcc36b51559f8d4f8ff4ae3d",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-044",
+    "arquivo": "artes/lote/EQ-044_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-a3d4a712-bd08-458f-a2f3-e47903ee6178.png",
+    "dimensoes": [
+      1062,
+      1481
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "97f825492f79edac036a8821672eaba7f15ca5945b81eb4a2a56f162e38e19bf",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-045",
+    "arquivo": "artes/lote/EQ-045_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-5248e6d2-935a-454c-9031-626cd96bc5ef.png",
+    "dimensoes": [
+      1499,
+      1049
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "4d4e4f76c5b2a13298900beaa352268669bc4c2508c9318614c14b3ca5d9da00",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-047",
+    "arquivo": "artes/lote/EQ-047_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-4d55dff0-2316-4fc3-ab0a-4dbe68ca6a9a.png",
+    "dimensoes": [
+      1060,
+      1484
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "d7e6f89e04cf9bbe068b9a0e3a266461e5ef0cd23a3aec36ce2aa8f3d8bfa588",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-048",
+    "arquivo": "artes/lote/EQ-048_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-331dd3e3-c8f4-4aad-822e-a34f1a90a59e.png",
+    "dimensoes": [
+      1060,
+      1484
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "f840165426d3eb4e6ec9467e103cb68056254b3c7b35093a633e4b04c69c7421",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-049",
+    "arquivo": "artes/lote/EQ-049_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-469c61c4-5174-41e1-9827-bb2357474885.png",
+    "dimensoes": [
+      1061,
+      1482
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "fe9cb27ea9f9d24b386927b1f546c77ee24a5764f7c7796d5990d5b2ff5c1e6f",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-050",
+    "arquivo": "artes/lote/EQ-050_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-0b9843c0-b682-4553-8859-6b0d0eb01b1b.png",
+    "dimensoes": [
+      1062,
+      1482
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "8e07d3cb9b69fb8df786695e43a916afc71967cdf4e27b20eff24ca70332451e",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-051",
+    "arquivo": "artes/lote/EQ-051_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-24fbffe2-e149-4df3-ba38-d9ab64f911b7.png",
+    "dimensoes": [
+      1062,
+      1482
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "573ecdab98bbd209f4754f1d101834575fd5c3178e37cb2e10d83f2fe0dabc49",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-052",
+    "arquivo": "artes/lote/EQ-052_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-961bd1d5-d961-490f-8ba4-2eee5605db42.png",
+    "dimensoes": [
+      1062,
+      1482
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "7ea668388557dc7e3bed1b2f46e9832cf7d1dc48321952619e18e4ee17c4e34a",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-053",
+    "arquivo": "artes/lote/EQ-053_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-933f7e19-a3df-4476-8a9f-d3bdad142da3.png",
+    "dimensoes": [
+      1061,
+      1482
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "fdffa8fd8d8015cd1775c462980d1daf4c4644067eae374e6367550e62d72fd4",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-054",
+    "arquivo": "artes/lote/EQ-054_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-8e823ff1-3f8b-4ae9-8783-dcb19f7c7546.png",
+    "dimensoes": [
+      1060,
+      1484
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "fb486b10c7f50ff17dc433ed89e96565dc453826efe046b36ff4dedb52545a29",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-055",
+    "arquivo": "artes/lote/EQ-055_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-954e21f3-c051-4f3c-8004-012ad4d7d80b.png",
+    "dimensoes": [
+      1230,
+      1278
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "df71deb11dd1cdc8e41a51d337d07a87249b80a8688ddc4661f84de65e33d619",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-056",
+    "arquivo": "artes/lote/EQ-056_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-db20124d-d0da-4b56-a2a9-046b6de50187.png",
+    "dimensoes": [
+      1062,
+      1481
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "a945bae723842abc1fa78eb83c80872b6b63911b9268cf0b7b0b5249be618f92",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-057",
+    "arquivo": "artes/lote/EQ-057_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-be88993a-1a63-4ba3-9f45-a468ad05abf7.png",
+    "dimensoes": [
+      1236,
+      1272
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "9c706a62e38d3f89af95a90c9d8d56eb1060c66ec887a0d7cfbbd0e0c66b6a01",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-058",
+    "arquivo": "artes/lote/EQ-058_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-178909e2-28bb-4734-a44f-a13da1fa443f.png",
+    "dimensoes": [
+      1062,
+      1480
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "3bc4bddfa3e97c3d09a1b5c0581e8b27a44f2ecf03ece69023ad05a3618d4e13",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-059",
+    "arquivo": "artes/lote/EQ-059_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-5e252f7f-2a6e-43df-9e44-70a154f6a3d0.png",
+    "dimensoes": [
+      1061,
+      1482
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "6c7be4c7e2871e1f6dc6f84074b0df3a4d7e742ba2c1717f7179802108b7516a",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-062",
+    "arquivo": "artes/lote/EQ-062_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-c7a10bff-59a1-421b-85fd-0e83b9dd3365.png",
+    "dimensoes": [
+      1061,
+      1482
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "9a0b486d29190097e6a135ac5c5ee6c85b603478df39e52c615a04f2acf1cecf",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-063",
+    "arquivo": "artes/lote/EQ-063_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-c411ff79-9eba-4fdb-bb11-478f4bbaa8b2.png",
+    "dimensoes": [
+      1060,
+      1484
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "082098c3affb380103b48f8b02a50ac3064b1c3ab3b6bb513d5fc6e79f824201",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-064",
+    "arquivo": "artes/lote/EQ-064_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-c2afb59e-9341-4c02-b64b-348e9584b3de.png",
+    "dimensoes": [
+      1386,
+      1135
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "14c48797a5c41adc1632856faf89c7900959a73208cf0d673b3d9b691454241b",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-065",
+    "arquivo": "artes/lote/EQ-065_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-ab9ad610-fa94-4303-8dab-9b0b83f9a96e.png",
+    "dimensoes": [
+      1145,
+      1374
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "46bdc7457ef7bd1eef3bea5132a54f0aae200984708ccfb0a834e7fe2ba55a39",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-066",
+    "arquivo": "artes/lote/EQ-066_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-d5411953-6a4a-4e0f-a4f5-adfa1ead309a.png",
+    "dimensoes": [
+      1500,
+      1049
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "b7eb66649409746b58587dbb738e5c5d6098d21eef35bf853ed608df3975502e",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-067",
+    "arquivo": "artes/lote/EQ-067_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-33197baa-616e-4c6d-906d-d00a6e5900c3.png",
+    "dimensoes": [
+      1059,
+      1485
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "a69ae5a3877a9ba46873aa8fea3d2968d17d8a35c40d8d78a188eaf3b1f0deb6",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-068",
+    "arquivo": "artes/lote/EQ-068_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-dd57506d-8509-4e14-bfb5-840c46ed0c9f.png",
+    "dimensoes": [
+      1062,
+      1481
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "517f9c861c62e952110f9f32653e7a424f188dc6fb88199ad0e165d9bd669f69",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-069",
+    "arquivo": "artes/lote/EQ-069_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-e4b96ec8-5cd9-4b62-a48d-635cd930e834.png",
+    "dimensoes": [
+      1060,
+      1484
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "38cc5c4bd5a7d8c377db986512cf958bf42f7a52153b7320360fb5804f9a26e5",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-070",
+    "arquivo": "artes/lote/EQ-070_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-eddeb0d9-f295-4e55-b938-f70a23483597.png",
+    "dimensoes": [
+      1060,
+      1484
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "0a0a918d70566311474b7414f163ad4576bef63997e6bd4fa0c582ecbb0afd6e",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-071",
+    "arquivo": "artes/lote/EQ-071_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-1e3f8865-97c9-4d09-b570-75caf15dbc68.png",
+    "dimensoes": [
+      1062,
+      1481
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "615431e0551f2f7dc9e8a6db626cacb10eb087aefa5bdb5713930d896c9556d8",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-072",
+    "arquivo": "artes/lote/EQ-072_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-1f6df93d-9515-4b3a-8ac0-c6dde03a10e6.png",
+    "dimensoes": [
+      1061,
+      1482
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "5353c29f0bd19f1cb2749ed49a675327e38ff4f6c61b2e202f087a7eddf8e6f1",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-073",
+    "arquivo": "artes/lote/EQ-073_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-325052df-6919-418e-b2f4-b709e16a3552.png",
+    "dimensoes": [
+      1062,
+      1482
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "604c055c74ae3355e16b71e29b2ec7ccf8f56856b9c691cffbfd7288906ad3c1",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-074",
+    "arquivo": "artes/lote/EQ-074_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-cd1293f8-0e0f-488b-952c-78f7214384e2.png",
+    "dimensoes": [
+      1062,
+      1482
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "18ac89bfa275101b81236863ca9b6b786fdaab89b7901e5667c4ee8ce39f9a21",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-075",
+    "arquivo": "artes/lote/EQ-075_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-125d66e5-1903-40a4-b9f0-0bb6a8a93fc8.png",
+    "dimensoes": [
+      1060,
+      1484
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "f66cb2fb1f64158be2bc38f528428d74051c8779162a4d3111420ece062dbd9d",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-076",
+    "arquivo": "artes/lote/EQ-076_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-171674a2-8a36-426b-9be5-9f672129428d.png",
+    "dimensoes": [
+      1063,
+      1480
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "37fbdafc7fe1f9a3cf120144eecad23d06ab93b5131e56c0cba80f1e9facf85d",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-077",
+    "arquivo": "artes/lote/EQ-077_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-c1908f87-463c-4d28-be9d-6948c785c703.png",
+    "dimensoes": [
+      1061,
+      1482
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "2629c6b4a7179f4b67f74bc11697268d575f7abd6dae9de0129292a07bec37ee",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-078",
+    "arquivo": "artes/lote/EQ-078_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-e8713b28-8a41-464e-a4a4-d97ef414c6d2.png",
+    "dimensoes": [
+      1062,
+      1482
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "3a3b477f2679c1b06695614a14fdf851e182817627117c3136071bbcddf47b88",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-079",
+    "arquivo": "artes/lote/EQ-079_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-42c05154-ebbe-4d15-a56c-a895bf9a3f9e.png",
+    "dimensoes": [
+      1054,
+      1492
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "b032a05bb3fe324e09a19b65c731614b09812b2666935908af065bf83ad539f0",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-080",
+    "arquivo": "artes/lote/EQ-080_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-f38460c4-45f0-43e8-a6cd-36174b83c3bb.png",
+    "dimensoes": [
+      1060,
+      1484
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "e8a2e1e4c3c119e28aa3878534bc7c922ee0cfe3c5e0ea51f9e5e296cb2f1863",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-081",
+    "arquivo": "artes/lote/EQ-081_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-85231972-1e26-45aa-b535-7c652f30edbb.png",
+    "dimensoes": [
+      1230,
+      1278
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "a6f7cb9234de73d5ea1c4eb7bb18b9114adf0469823cb1d6de0c471c5c701749",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-082",
+    "arquivo": "artes/lote/EQ-082_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-789c09c3-c7e2-4205-b255-52e3b6613bc3.png",
+    "dimensoes": [
+      1061,
+      1483
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "0e61fc7856d64a2b9984525193b766f34173dd783d1d9b4683dfb114471768fc",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-083",
+    "arquivo": "artes/lote/EQ-083_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-d97f91b1-4e4b-43aa-9188-7054a73b7343.png",
+    "dimensoes": [
+      1060,
+      1484
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "a8ae07345b1bf80262e15061da2d4689ec9241cb68cd31098dbee851eed6ef17",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-084",
+    "arquivo": "artes/lote/EQ-084_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-0b8fd044-e38a-4efe-ac55-1b464ae57f47.png",
+    "dimensoes": [
+      1159,
+      1357
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "47c4bf5ea68f39aac593a392d72537b6afc715afe68f32da91291478095712b6",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-085",
+    "arquivo": "artes/lote/EQ-085_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-2ca6ccae-a213-4189-853e-c970dc1a6061.png",
+    "dimensoes": [
+      1060,
+      1484
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "902c7069e247169f37fc6be0b93ee88ce15bcc4179704edf5a16c11702ced72d",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-086",
+    "arquivo": "artes/lote/EQ-086_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-75365474-2752-44ea-ac89-45fc610000a2.png",
+    "dimensoes": [
+      1062,
+      1480
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "83ddd7d83c48314df74a165e4b4d9b06f030926490fc8d7e7625ee3e8dce741f",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-087",
+    "arquivo": "artes/lote/EQ-087_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-2dcab46e-0644-4c14-92a5-c00e5511a682.png",
+    "dimensoes": [
+      1060,
+      1484
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "2ce8705f4f9eea346a8306797aae8496d8f5325bcd5a3164b93aa07bc428985b",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-088",
+    "arquivo": "artes/lote/EQ-088_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-a21460f3-09ef-447a-93c4-97c053fed56c.png",
+    "dimensoes": [
+      1061,
+      1482
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "9ac6ee0d777cc273e831a4c1bd740fa3fbbda2e7b5c7350d20bb2f6ff17e4ba1",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-089",
+    "arquivo": "artes/lote/EQ-089_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-a3bfedb6-66a4-46e9-bf7f-6fa4eede2dbc.png",
+    "dimensoes": [
+      1060,
+      1484
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "cb72f0fa85b49a81f0ddec36908bf407413724b30dd98222baa8e74db783a794",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-090",
+    "arquivo": "artes/lote/EQ-090_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-c1f1d053-968d-4162-a57b-2df4fee780e6.png",
+    "dimensoes": [
+      1536,
+      1024
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      254
+    ],
+    "sha256": "e7bec11afbe16e07eecc88801a9b976d6d9855921451f807ab713d7067cc71ec",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-091",
+    "arquivo": "artes/lote/EQ-091_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-86d5f742-34b4-4802-a5c3-d20e1751654d.png",
+    "dimensoes": [
+      1062,
+      1480
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "96cd307a652a1b1bb9e01a979ef09873b1e9c9e546938ae897fd1ec6ae945b35",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-092",
+    "arquivo": "artes/lote/EQ-092_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-42691604-27f3-4a2b-8384-9aada6d41318.png",
+    "dimensoes": [
+      1060,
+      1484
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "2ac4ae2bad9a60975dd240dd4d603bd31538f5e6d4099e477362f5e403a8ea5f",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-093",
+    "arquivo": "artes/lote/EQ-093_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-d5b3fb79-1a62-4bf7-980e-32a1cf29bb73.png",
+    "dimensoes": [
+      1060,
+      1484
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "146fa646484b206f8c171cc1401879658acfd544ea9fbd8bf29970dc79b54c78",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-094",
+    "arquivo": "artes/lote/EQ-094_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-5036414a-15b0-4356-aba6-43f4f79365ea.png",
+    "dimensoes": [
+      1145,
+      1374
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "cb7f4c45832cf1781753e8aa0e7b27317da6d797edb47ddb10a1e785d9b6aeff",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-095",
+    "arquivo": "artes/lote/EQ-095_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-78d8215a-035d-415c-869c-617fce37d90d.png",
+    "dimensoes": [
+      1062,
+      1481
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "90803448ee9edff1d905ea97c0e3621697e447d42264108272ba2f62600ee2b1",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-096",
+    "arquivo": "artes/lote/EQ-096_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-058c9ecb-8e33-45d6-8d7c-38052bdc39c4.png",
+    "dimensoes": [
+      1060,
+      1484
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "1248c4b78a75488aa131b74e3ecdffce9f538a49ffb35124da2547473a0d735a",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-097",
+    "arquivo": "artes/lote/EQ-097_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-e03d603a-8460-4bc4-b4e0-929cdfc0b335.png",
+    "dimensoes": [
+      1060,
+      1484
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "66ccc0b495cf060028e559e4b1ab298cf1d3e47f92d3fc9c234e7b4aae4e8477",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-098",
+    "arquivo": "artes/lote/EQ-098_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-01df9003-ab6f-415b-9cb6-2daafe58e054.png",
+    "dimensoes": [
+      1536,
+      1024
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      254
+    ],
+    "sha256": "9f77cbcdb9cd01d6d6250b24af01384f618dd7f31f744a9497ae0f159d771a4a",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-099",
+    "arquivo": "artes/lote/EQ-099_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-8098de19-7a09-4d6d-b752-651a6cf67e2c.png",
+    "dimensoes": [
+      1145,
+      1374
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "9f01800e34e59d97a9552970200916e47b7fac08bcc3aa53230afdbb5050a470",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-100",
+    "arquivo": "artes/lote/EQ-100_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-50a4b682-134d-487f-9de3-71201cf4b957.png",
+    "dimensoes": [
+      1185,
+      1327
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "d08b0f7475053f197c6bb8778c98e0c31edbe006ca2cf197e8a982cfb0c23af3",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-101",
+    "arquivo": "artes/lote/EQ-101_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-f19635ed-f063-455e-8912-9d6862dea1d9.png",
+    "dimensoes": [
+      1060,
+      1484
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "b806602fb4c1eabc9e3af3065fe337a64be99d55c339782260f35262897feeb9",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-102",
+    "arquivo": "artes/lote/EQ-102_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-cc090f61-d408-496f-9017-7e1c5baac9d5.png",
+    "dimensoes": [
+      1060,
+      1484
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "38a38a5943a859b549b1e59e2976120a9fff07080f402d8a67d6f36864cb7bbd",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-103",
+    "arquivo": "artes/lote/EQ-103_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-59176535-a858-41d8-b7c4-39d6eed483cd.png",
+    "dimensoes": [
+      1290,
+      1219
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "40d5a7be2e4fa5f71a47b5fdbf2e537e5e36a9aa58deae107bcc414df00e2a91",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-104",
+    "arquivo": "artes/lote/EQ-104_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-18906b65-1312-4f6d-9043-5a4ea95764fb.png",
+    "dimensoes": [
+      1061,
+      1483
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "72254f67576d987100409a0bb72b1a4124cdb4ae4bb7b185252d9292f4260562",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-105",
+    "arquivo": "artes/lote/EQ-105_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-96259eef-e8be-48ce-b17d-426dd09083e5.png",
+    "dimensoes": [
+      1060,
+      1484
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "265c1dd5d167dd5e1e63a6a3aa5d9415c036d9b9b9a4370df17ba78d9c35e756",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-106",
+    "arquivo": "artes/lote/EQ-106_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-a86fed32-d517-4517-865e-1ef153cabed0.png",
+    "dimensoes": [
+      1060,
+      1484
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "53a9900da757d35732164155ff3391493fd493c055e9e25c3f98a89341987678",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-107",
+    "arquivo": "artes/lote/EQ-107_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-518d4795-8247-409b-b427-f44032bb39dd.png",
+    "dimensoes": [
+      1500,
+      1049
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "8e1da2e088c85bc077812fd1fade731e1fd0b84bf07aca238f34264bbb63ec42",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-108",
+    "arquivo": "artes/lote/EQ-108_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-6b05ef76-9024-4cda-a0a3-5c9969258989.png",
+    "dimensoes": [
+      1199,
+      1312
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "53c3fb0c2d6c414533f21e9dd480d4dead035ed11714201e543bd304899579b0",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-109",
+    "arquivo": "artes/lote/EQ-109_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-7b09e8eb-3752-4d92-98f6-ed27be298f72.png",
+    "dimensoes": [
+      1062,
+      1482
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "d4ce9694e9e242a18f27e4fe0f4e17b444f2d417dbb5294c7d8309bc92ccc07d",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-110",
+    "arquivo": "artes/lote/EQ-110_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-d2292ded-9d6e-4607-bd5f-44417747b03b.png",
+    "dimensoes": [
+      1061,
+      1482
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "d444ad610c93bf60f7e17cab627ea6118c52bdac516c970d0cdef1f7623616ec",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-111",
+    "arquivo": "artes/lote/EQ-111_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-f048a861-4f76-42b3-a3b2-f73a9e3f498d.png",
+    "dimensoes": [
+      1062,
+      1480
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "b5845db699c37dd7ff080bb8861bdd9e99f9221d4ed7f788bdc40693325c541a",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-112",
+    "arquivo": "artes/lote/EQ-112_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-94907e7a-5965-465a-a001-aa49dd2cc530.png",
+    "dimensoes": [
+      1063,
+      1480
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "78b326a8ffe85f8a2b2c4208c9e5e3f91ee5286f83ed5f840306b5424a22cfcb",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-113",
+    "arquivo": "artes/lote/EQ-113_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-3bd58eaf-e0e4-4eac-878b-d3e267c2d20c.png",
+    "dimensoes": [
+      1062,
+      1481
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "4bab72d2a60dcba27c3b20be43db96e466585add78d084df5b8465aa76dd063e",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-114",
+    "arquivo": "artes/lote/EQ-114_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-5d348d49-4fe7-4165-8bc9-3506dd2dadd1.png",
+    "dimensoes": [
+      1060,
+      1484
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "630dfdd806df98bd6ff8e475e650cc9a201875bd9b2caed96e6f7b770ff10866",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-115",
+    "arquivo": "artes/lote/EQ-115_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-eba31f03-d548-403f-a3ef-c8c638dd5b93.png",
+    "dimensoes": [
+      1062,
+      1482
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "b5c80bf4baa6c09fb905f4dddca90bb2410cf3a477351113307d9a7537671441",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-117",
+    "arquivo": "artes/lote/EQ-117_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-d439d405-f18f-46a3-b354-53f83021e8d3.png",
+    "dimensoes": [
+      1062,
+      1482
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "cabeda9ae8672d15d32aaa128667c97ab29a946184a9df5f96ed91dabc55ba2f",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-118",
+    "arquivo": "artes/lote/EQ-118_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-928b6f4b-bd7d-455c-bfce-a99df43e35c8.png",
+    "dimensoes": [
+      1062,
+      1480
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "4e747402af52dd2dcc4c55c8e2d4bbb9a14b324e43aa68c61186fa86fefe9429",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-119",
+    "arquivo": "artes/lote/EQ-119_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-58658df3-6092-4592-824d-bca0e349a6e7.png",
+    "dimensoes": [
+      1063,
+      1480
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "d24797bcdfad4d6caabdae9b4bea17588d1af9a96746aafe9d0117facc62c535",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-120",
+    "arquivo": "artes/lote/EQ-120_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-880cb1f3-a155-44a6-8ce1-ad0046a58871.png",
+    "dimensoes": [
+      1062,
+      1481
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "1e4ea6d5b01b7203d85f311f804ed0e184a8b6f6042a90d745de6a7688805dfe",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-121",
+    "arquivo": "artes/lote/EQ-121_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-1ac29ae1-89a4-4269-866e-f1954cb30800.png",
+    "dimensoes": [
+      1062,
+      1482
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "7f3386308ad01a84389aa533bfb8be2ee096087e9d7ad5dafdd83b06409c1403",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-122",
+    "arquivo": "artes/lote/EQ-122_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-2e26fe91-e00f-4ab6-8ff1-a72dfd295eee.png",
+    "dimensoes": [
+      1145,
+      1374
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "f6211ad23b24a44d8d487d1d3336ca91fd7c23bdb2fc089aa48447b7de100d85",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-123",
+    "arquivo": "artes/lote/EQ-123_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-ad9aa9e7-c625-42a0-8535-528ea50807d9.png",
+    "dimensoes": [
+      1061,
+      1483
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "88625f36d68c9161ded8d5d1bdb97f3aed1068701707d0ca1e08fe8965279e98",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-124",
+    "arquivo": "artes/lote/EQ-124_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-1fe12d93-8f5a-4f9b-92a0-12e50b83634b.png",
+    "dimensoes": [
+      1060,
+      1484
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "6500f63b6a4b8c96d739b6676da95d4a4566d0a1742f07fed9d1af5934c9328d",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-125",
+    "arquivo": "artes/lote/EQ-125_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-26368471-c5e0-4f79-8d7b-c521a220cf94.png",
+    "dimensoes": [
+      1187,
+      1325
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "ddfd7439241eab016c895e49e8f5cfd5d8d407e5e19e433b65a96e72bea71b80",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-126",
+    "arquivo": "artes/lote/EQ-126_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-8ac25446-e9cd-4d1f-b111-51e331eedbe3.png",
+    "dimensoes": [
+      1062,
+      1482
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "875302bb28b46761c4f3e413258efe2d42d4e20721d3de213c0a0ed0ce2998b5",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-128",
+    "arquivo": "artes/lote/EQ-128_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-ce330cf1-14f3-46fa-a600-04fdaafaa88b.png",
+    "dimensoes": [
+      1062,
+      1481
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "1431317c60c47a09875795225385547d28f71b22617edf0a4b33ce828a573044",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-129",
+    "arquivo": "artes/lote/EQ-129_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-9b3d3fd6-f5d1-45ec-9fd7-caef8e4a3ed9.png",
+    "dimensoes": [
+      1062,
+      1481
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "007a88eb58875c356bbf5d77dc0ad845e9a2fc787da241bc2936e24ef7c7ee2d",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-130",
+    "arquivo": "artes/lote/EQ-130_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-1c96145a-05ca-4e88-bece-d61b09884dff.png",
+    "dimensoes": [
+      1061,
+      1482
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "fbbbc2ce24ee28c9b72dbfa5f142cd308ea07ca735e920af37bfb00f6be53257",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-131",
+    "arquivo": "artes/lote/EQ-131_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-d1027693-f8af-4835-b22c-568c68fb5046.png",
+    "dimensoes": [
+      1062,
+      1482
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "0fc0e4e233f9efe741686acbd49f662fc30902769a9cc601e08ffc242530c68e",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-132",
+    "arquivo": "artes/lote/EQ-132_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-665e1cd8-a8ae-4896-9ca9-26225b3ddb9f.png",
+    "dimensoes": [
+      1061,
+      1483
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "5bf9951c139f30dbae20163d59e0ec057fabf521386ab56df55ee0e3be217474",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-133",
+    "arquivo": "artes/lote/EQ-133_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-08caaa3d-be34-4858-beb2-d8f64e2ac672.png",
+    "dimensoes": [
+      1062,
+      1481
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "bf7351b8ae0c17452047cb7a9b877ec9aad19bc13a94fd0c90a520d5ab83b828",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-134",
+    "arquivo": "artes/lote/EQ-134_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-0199d92f-60f8-48cf-8265-a8ca090b2e10.png",
+    "dimensoes": [
+      1062,
+      1482
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "346a5e9b51b7f689d174c33108be65c74d59cd6eff57b9f9e9c006a52c02e260",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-135",
+    "arquivo": "artes/lote/EQ-135_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-e2550286-6b09-4ad9-bbbb-78d5ad4ab5f8.png",
+    "dimensoes": [
+      1062,
+      1481
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "ca25885f75611f08f4334a6d17e97a354d72b09206e18176a3e1ab2b58651675",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-136",
+    "arquivo": "artes/lote/EQ-136_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-12c1a7ef-07b7-4e93-9e25-cb2cd6b73664.png",
+    "dimensoes": [
+      1062,
+      1481
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "f6c6e925e9acc60a40832847ab30882bff63eb960191ed9ff10d41808c433243",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-137",
+    "arquivo": "artes/lote/EQ-137_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-d6fa94e0-197b-4cb6-b97d-b0e5dbefa1b4.png",
+    "dimensoes": [
+      1060,
+      1484
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "bedd8fc6e4a5ddf45c514ce1fd92d64ce9a723549e89e4eec537f85829d8b3e9",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-138",
+    "arquivo": "artes/lote/EQ-138_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-4231d39a-d190-49f5-a1b5-ba6a80363496.png",
+    "dimensoes": [
+      1062,
+      1482
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "01c062c7fe906cc824743df5400deb1d3decdd13c93ed8094a5304a6837876d8",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-140",
+    "arquivo": "artes/lote/EQ-140_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-0645c91b-a366-4164-bf66-1d124ca3234a.png",
+    "dimensoes": [
+      1123,
+      1401
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "2eacf92a835d8ddd531a8dd74a675165061f7ef81a18d3ccb12666e05a98c413",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-141",
+    "arquivo": "artes/lote/EQ-141_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-1896c240-dad9-46d1-9960-7b4fdb980b09.png",
+    "dimensoes": [
+      1061,
+      1482
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "56ab56a77d37ab9b374699e6f7c13b36306565df3e250baf8015464e0b24fb20",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-142",
+    "arquivo": "artes/lote/EQ-142_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-c34b0cf5-0afd-4e5c-bc03-fece9993f935.png",
+    "dimensoes": [
+      1062,
+      1482
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "dd0f442f5766e048c838119fa0b65ab4b349d5a510d1069c249b96f54a42edc5",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-143",
+    "arquivo": "artes/lote/EQ-143_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-3231e7c5-7a39-45ed-9587-90005306ee71.png",
+    "dimensoes": [
+      1061,
+      1483
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "828ccc9fe09d733eac65b4859e4c3bc463e9465bc99c20137a03da9a635032ad",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-144",
+    "arquivo": "artes/lote/EQ-144_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-5149a356-0e74-4ce8-ba16-6c7ad39beb3a.png",
+    "dimensoes": [
+      1061,
+      1482
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "7444dabdea1ada11dfe4cb7bc5b28920a935e93a81b72267f760a5392668b196",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-145",
+    "arquivo": "artes/lote/EQ-145_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-d60b5593-1ef5-4e37-9dbc-e7a4f1c97074.png",
+    "dimensoes": [
+      1062,
+      1480
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "7e49250fa3878431bfb0ea947ae369bd823bc68e9b5501e2eb995dc8cf5bd0a8",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-146",
+    "arquivo": "artes/lote/EQ-146_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-fb8a6a3e-fb3a-4078-83c3-d84343851b4a.png",
+    "dimensoes": [
+      1061,
+      1482
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "97e31571637c48bd069bb5f81aa74ad3f2b51b5915c7b8a35b36b1f05f5b68a7",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-147",
+    "arquivo": "artes/lote/EQ-147_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-a73933ba-9d8e-47e6-8240-6efaf7b21f7d.png",
+    "dimensoes": [
+      1062,
+      1481
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "07974a85e020664b01494941ac2b3c05d22759fca96195bc0d3e2cbef5213d1b",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-148",
+    "arquivo": "artes/lote/EQ-148_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-13b1fbd8-0bcb-4dff-97e7-f395594af133.png",
+    "dimensoes": [
+      1062,
+      1481
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "71fc3154061e0cd8e60a575c9978415a662eb6f93c6e7ad4a696a81bc5581dc4",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-149",
+    "arquivo": "artes/lote/EQ-149_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-588d55fb-0a34-4ef3-a677-252ae30f1396.png",
+    "dimensoes": [
+      1061,
+      1483
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "15c8764cc06f2013b22c74a88bebdb53a722ae241df57e8bf8d55cebe3e3c955",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-150",
+    "arquivo": "artes/lote/EQ-150_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-dddc579a-a111-4ed7-a6e5-7de27297a635.png",
+    "dimensoes": [
+      1060,
+      1484
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "2c3b9d1e1db47fc44d1738aeaa642e08dee2335b11f25d2e8155a74b972a6333",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-151",
+    "arquivo": "artes/lote/EQ-151_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-dc25b9fc-c654-4a6b-b89a-fd08389b0fba.png",
+    "dimensoes": [
+      1060,
+      1484
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "7841e549e7889467ae4f7b7dfecbbaefc79783972f64f26277abd49e8cd22f75",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-152",
+    "arquivo": "artes/lote/EQ-152_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-bad49a53-6841-45b2-bba2-ecd95d1b1ed4.png",
+    "dimensoes": [
+      1054,
+      1493
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "6c966773f5cc8e9cc8cb128053e167e31800dc2daba62ccc0800b678955fc103",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-153",
+    "arquivo": "artes/lote/EQ-153_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-fb998105-3d16-44e8-9e05-c13bd476eea0.png",
+    "dimensoes": [
+      1061,
+      1482
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "c1977ee5fd9a49ecf54833ae5c4640ddd806ca6ac1fcaf0958409a8be56bec56",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-154",
+    "arquivo": "artes/lote/EQ-154_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-3837462c-2d32-414c-8eee-8cef3f8f0cb2.png",
+    "dimensoes": [
+      1061,
+      1483
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "a03f03b62e837583ca97568f9ea35c1a1586bef15397a684c82e865c4e61d561",
+    "status": "conferida_visual_no_catalogo"
+  },
+  {
+    "id": "EQ-155",
+    "arquivo": "artes/lote/EQ-155_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-98a895cf-5ca7-432a-89ef-771ae8872d40.png",
+    "dimensoes": [
+      1061,
+      1483
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "f395741f2861ae78bc9f11586432cd38e4410f168cadf7254addb8f9b212e875",
+    "status": "conferida_visual_no_catalogo"
+  }
+]

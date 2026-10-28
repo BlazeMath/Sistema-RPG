@@ -1,0 +1,24 @@
+{
+  "conjuracao": [
+    "EQ-139",
+    "EQ-140",
+    "EQ-141",
+    "EQ-142",
+    "EQ-143",
+    "EQ-144",
+    "EQ-145",
+    "EQ-146",
+    "EQ-147",
+    "EQ-148",
+    "EQ-149",
+    "EQ-150",
+    "EQ-151",
+    "EQ-152",
+    "EQ-153",
+    "EQ-154",
+    "EQ-155"
+  ],
+  "custo_fadiga": "Gotas antes da ativação; custos mistos conservam o pagamento de vida por extenso.",
+  "limite_fadiga": "Gota junto ao número em ambas as faces.",
+  "ferramenta_artes": "image_gen.imagegen integrada"
+}

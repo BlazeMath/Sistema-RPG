@@ -1,0 +1,85 @@
+{
+  "versao": 1,
+  "data": "2026-10-27",
+  "estado": "conceito_do_autor_com_detalhes_em_aberto",
+  "classe": {
+    "nome": "Bruxo",
+    "identidade": "Arcanista de alta potência e eficiência, com pouca versatilidade.",
+    "tag_confirmada": "Pacto",
+    "pactos_simultaneos": null
+  },
+  "estrutura_confirmada": [
+    "Cada pacto tem sua própria carta de herói.",
+    "A passiva da carta de herói corresponde à carta do pacto.",
+    "A carta do pacto tem o mesmo tamanho da carta de herói.",
+    "O pacto registra bônus por cumprimento, cobrança para manutenção, habilidade inicial, nível de 1 a 5 e tags do tipo de pacto.",
+    "Ativada, desencadeada e crítico da carta de herói têm relação com o pacto escolhido."
+  ],
+  "recurso": {
+    "nome": "Pacto",
+    "inicio_cena": "Ganhe 2 vezes o nível do pacto em fichas de Pacto.",
+    "critico": "Ganhe fichas de Pacto iguais ao nível do pacto.",
+    "local_armazenamento": null,
+    "compartilhado_entre_pactos": null,
+    "persiste_entre_cenas": null,
+    "removido_ao_virar": null
+  },
+  "pacto_fenix": {
+    "nome": "Pacto da Fênix",
+    "tags": [
+      "Fogo",
+      "Fênix"
+    ],
+    "cumprimento": "Ganhar fichas de Pacto quando matar monstros.",
+    "cobranca": "Precisa matar monstros.",
+    "quantidade_por_morte": null,
+    "atribuicao_da_morte": null,
+    "prazo_cobranca": null,
+    "consequencia_descumprimento": null,
+    "progressao_nivel": null,
+    "magia_dupla": {
+      "lado_a": {
+        "nome": "Ave Fênix",
+        "tipo": "Ataque mágico",
+        "alcance": "Curto",
+        "limite_fadiga": 2,
+        "custo_fadiga": 1,
+        "custo_acao": null,
+        "texto_autor": "Causa dano e coloca um marcador de chamas na criatura e cada inimigo adjacente. Pode gastar X fichas de pacto para aumentar o dano de todas as criaturas afetadas em 2 vezes o número de fichas gastas.",
+        "dano_base": null,
+        "atributo_conjuracao": null,
+        "adjacentes_recebem_dano_direto": null
+      },
+      "lado_b": {
+        "nome": "Absorver as Chamas",
+        "alcance": "Curto",
+        "limite_fadiga": 4,
+        "custo_fadiga": 2,
+        "custo_acao": null,
+        "texto_autor": "Remove todas as fichas de Fogo em alcance curto e se cura igual ao número de fichas removidas. Pode gastar X fichas de Pacto para aumentar a cura em 2 vezes o número de fichas absorvidas.",
+        "formula_cura_ampliada": null
+      }
+    },
+    "heroi": {
+      "ativada": {
+        "texto": "Gaste X fichas de Pacto: cure 3 vezes X de um alvo em alcance curto.",
+        "custo_acao": null
+      },
+      "desencadeada": {
+        "texto": "Quando Fogo causar dano, causa 2 em vez de 1.",
+        "apenas_fogo_do_bruxo": null
+      },
+      "critico": "Ganhe fichas de Pacto iguais ao nível do pacto."
+    }
+  },
+  "pendencias": [
+    "Quantas cartas físicas compõem cada pacto e como se encaixam nas metades de herói.",
+    "Limite de pactos simultâneos e acesso a magias fora deles.",
+    "Quota, prazo e consequência da cobrança; quantidade de fichas por morte e atribuição da morte.",
+    "Armazenamento e duração das fichas de Pacto; progressão dos níveis.",
+    "Foco e atributo de conjuração, distribuição do dano e de Fogo nos alvos de Ave Fênix.",
+    "Fórmula da cura amplificada e relação das curas com o exílio.",
+    "Escopo do aumento de dano de Fogo e custos de ação."
+  ],
+  "observacao": "Registro da proposta recebida. Não modifica as cinco classes existentes, não define regras em aberto e não inicia produção de PDF."
+}

@@ -1,0 +1,19 @@
+{
+  "id": "EQ-017",
+  "nome": "Machado Barbado",
+  "arquivo": "artes/revisadas/EQ-017_v02.png",
+  "origem": "C:/Users/Gamer/.codex/generated_images/01a1784a-39da-75d3-87c4-56dc835caa37/exec-f5f1ddad-a62e-49e0-924e-497e67651f7e.png",
+  "substitui": "artes/lote/EQ-017_v01.png",
+  "dimensoes": [
+    1061,
+    1483
+  ],
+  "modo": "RGBA",
+  "alpha": [
+    0,
+    255
+  ],
+  "sha256": "d4b57d685ef27c63832f60bb0bcca63ac0a6b36ce40714961556cf9e7a97e057",
+  "status": "conferida_visual",
+  "rotacao_diagramacao_graus": 0
+}

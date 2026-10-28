@@ -1,0 +1,16 @@
+{
+  "id": "EQ-016",
+  "arquivo": "artes/lote/EQ-016_v01.png",
+  "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-5d1ec971-45b7-402d-9e64-f9e49a6e81e3.png",
+  "dimensoes": [
+    1062,
+    1482
+  ],
+  "modo": "RGBA",
+  "alpha": [
+    0,
+    255
+  ],
+  "sha256": "0ba4e88e39528a26f2b8ac5c80d774cd3b594b567d92fa9d268b1e89ab45841a",
+  "status": "gerada_a_conferir"
+}

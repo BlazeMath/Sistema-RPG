@@ -1,0 +1,10 @@
+{
+  "id": "EQ-156",
+  "versao": "v02",
+  "ferramenta": "image_gen.imagegen (integrada)",
+  "tipo": "edicao",
+  "referencia": "artes/piloto/EQ-156_v01.png",
+  "resultado": "artes/piloto/EQ-156_v02.png",
+  "transparent_background": true,
+  "prompt": "Use case: precise-object-edit. Asset type: isolated illustration for a dark medieval fantasy RPG equipment card. Edit target: the provided chain illustration. Primary request: remove BOTH extra end attachments: the large leather loop handle at the upper right AND the heavy cylindrical metal weight at the lower right. Replace those attachments with normal oval chain links. The result must be ONLY a single ordinary heavy iron chain, one continuous length of interlocking oval links, with TWO FREE ENDS, each ending in an ordinary closed oval link of the same size as the rest. Like the plain chain wielded as a weapon in The Witcher or Ghost Rider, but no fire or supernatural glow. Preserve the existing dark weathered iron material, semirealistic painted rendering, warm metallic highlights, clear link shapes, loose curved/coiled composition, and roughly the same camera angle. Keep all of the chain visible, centered, with generous empty margin. No handle, no leather, no grip, no end weight, no ball, no blade, no hook, no clasp, no rings larger than ordinary links, no characters, no hands, no text, no frame. Background must be genuinely transparent, including gaps between the links; no colored backdrop or smoke."
+}

@@ -1,0 +1,1318 @@
+{
+  "titulo": "Auditoria da quantidade de habilidades de classe",
+  "versao": 2,
+  "data": "2026-10-27",
+  "estado": "contagem_verificada",
+  "fontes": [
+    {
+      "arquivo": "Habilidades_Cartas.pdf",
+      "sha256": "828802069bb45066e045b8f0803aa54395d16d6e05749c83bfcb35a42ded6fcf",
+      "paginas": 20,
+      "uso": "Fonte primária da contagem: cabeçalho de cada face, ID, indicação A/B e custo de XP impresso."
+    },
+    {
+      "arquivo": "organizacao/fontes/Habilidades_Cartas.json",
+      "sha256_pdf_referido": "828802069bb45066e045b8f0803aa54395d16d6e05749c83bfcb35a42ded6fcf",
+      "uso": "Extração de consulta; hash conferido com o PDF atual."
+    },
+    {
+      "arquivo": "Herois_Cartas.pdf",
+      "sha256": "f246966262f87b9e858fe5351e78db4f2ed88bbfb0eaa73e926812b9457d636d",
+      "uso": "Contagem separada das metades de herói, para não confundi-las com habilidades."
+    },
+    {
+      "arquivo": "classes/dados/bruxo/habilidades_gerais_v01.json",
+      "sha256": "28942ef04aa76e2ca91f0bd71447315e94d2b0dbe8f24e874c060f9ef9a4f77b",
+      "uso": "Estado observado: 15 entradas e 24 faces gerais do Bruxo."
+    },
+    {
+      "arquivo": "classes/dados/bruxo/rascunho_gerais_v02.json",
+      "sha256": "bbd7a0a3f89f2f038794e84792d200e6a41b3f08e4522d0e9838ac4ef54cd97f",
+      "uso": "Três pares adicionais propostos nesta auditoria."
+    }
+  ],
+  "metodo": [
+    "Leitura direta do PDF com PyMuPDF, identificando as molduras externas de cada face.",
+    "Extração do cabeçalho de classe, do ID e do lado A/B dentro de cada moldura.",
+    "Leitura do número ou símbolo ½ no círculo de XP no canto superior direito.",
+    "Agrupamento pelo ID: dois lados A/B são uma entrada de carta; face sem lado é uma meia carta.",
+    "Contagem das duas metades de herói de cada classe no PDF próprio, sem somá-las às habilidades.",
+    "Comparação dos objetos e lados declarados no JSON geral do Bruxo. Arquivos não foram editados, exceto estes dois resultados da tarefa."
+  ],
+  "definicoes": {
+    "entrada_de_catalogo": "Uma carta A/B ou uma meia carta identificada por seu ID.",
+    "carta_AB": "Uma unidade de habilidade com duas faces; conta uma entrada e duas faces.",
+    "meia_carta": "Uma opção de uma face por ½ XP; duas opções são combinadas para montar uma carta de duas faces.",
+    "heroi": "Duas metades por classe no PDF separado; não entram nas 30 faces de habilidades.",
+    "inicial_de_patrono": "A/B concedido por um pacto; é conteúdo adicional aos gerais neste pedido. Não foi usado para preencher o déficit das habilidades gerais."
+  },
+  "classes_publicadas": [
+    {
+      "classe": "Guerreiro",
+      "paginas": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "entradas_de_catalogo": 18,
+      "pares_AB": 12,
+      "meia_cartas": 6,
+      "cartas_montadas_apos_combinar_as_meias": 15,
+      "faces": 30,
+      "entradas_por_xp": {
+        "½": 6,
+        "2": 3,
+        "1": 9
+      },
+      "faces_por_xp": {
+        "1": 18,
+        "½": 6,
+        "2": 6
+      },
+      "entradas": [
+        {
+          "id": "GRMMR-M1",
+          "xp_impresso": "½",
+          "tipo": "meia carta",
+          "faces": [
+            "único"
+          ],
+          "paginas": [
+            3
+          ]
+        },
+        {
+          "id": "GRMMR-M2",
+          "xp_impresso": "½",
+          "tipo": "meia carta",
+          "faces": [
+            "único"
+          ],
+          "paginas": [
+            3
+          ]
+        },
+        {
+          "id": "GRMMR-M3",
+          "xp_impresso": "½",
+          "tipo": "meia carta",
+          "faces": [
+            "único"
+          ],
+          "paginas": [
+            3
+          ]
+        },
+        {
+          "id": "GRMMR-M4",
+          "xp_impresso": "½",
+          "tipo": "meia carta",
+          "faces": [
+            "único"
+          ],
+          "paginas": [
+            3
+          ]
+        },
+        {
+          "id": "GRMMR-M5",
+          "xp_impresso": "½",
+          "tipo": "meia carta",
+          "faces": [
+            "único"
+          ],
+          "paginas": [
+            3
+          ]
+        },
+        {
+          "id": "GRMMR-M6",
+          "xp_impresso": "½",
+          "tipo": "meia carta",
+          "faces": [
+            "único"
+          ],
+          "paginas": [
+            3
+          ]
+        },
+        {
+          "id": "GRMMR-X1",
+          "xp_impresso": "2",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            3
+          ]
+        },
+        {
+          "id": "GRMMR-X2",
+          "xp_impresso": "2",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            3,
+            4
+          ]
+        },
+        {
+          "id": "GRMMR-X3",
+          "xp_impresso": "2",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            4
+          ]
+        },
+        {
+          "id": "GRMMR01",
+          "xp_impresso": "1",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            1
+          ]
+        },
+        {
+          "id": "GRMMR02",
+          "xp_impresso": "1",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            1
+          ]
+        },
+        {
+          "id": "GRMMR03",
+          "xp_impresso": "1",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            1
+          ]
+        },
+        {
+          "id": "GRMMR04",
+          "xp_impresso": "1",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            1
+          ]
+        },
+        {
+          "id": "GRMMR05",
+          "xp_impresso": "1",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "GRMMR06",
+          "xp_impresso": "1",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            2
+          ]
+        },
+        {
+          "id": "GRMMR07",
+          "xp_impresso": "1",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            2
+          ]
+        },
+        {
+          "id": "GRMMR08",
+          "xp_impresso": "1",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            2
+          ]
+        },
+        {
+          "id": "GRMMR09",
+          "xp_impresso": "1",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "classe": "Clérigo",
+      "paginas": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "entradas_de_catalogo": 18,
+      "pares_AB": 12,
+      "meia_cartas": 6,
+      "cartas_montadas_apos_combinar_as_meias": 15,
+      "faces": 30,
+      "entradas_por_xp": {
+        "1": 9,
+        "½": 6,
+        "2": 3
+      },
+      "faces_por_xp": {
+        "1": 18,
+        "½": 6,
+        "2": 6
+      },
+      "entradas": [
+        {
+          "id": "CLMMR-C1",
+          "xp_impresso": "1",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            5
+          ]
+        },
+        {
+          "id": "CLMMR-C2",
+          "xp_impresso": "1",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            5
+          ]
+        },
+        {
+          "id": "CLMMR-E1",
+          "xp_impresso": "1",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            6
+          ]
+        },
+        {
+          "id": "CLMMR-E2",
+          "xp_impresso": "1",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            6
+          ]
+        },
+        {
+          "id": "CLMMR-E3",
+          "xp_impresso": "1",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            6
+          ]
+        },
+        {
+          "id": "CLMMR-M1",
+          "xp_impresso": "½",
+          "tipo": "meia carta",
+          "faces": [
+            "único"
+          ],
+          "paginas": [
+            7
+          ]
+        },
+        {
+          "id": "CLMMR-M2",
+          "xp_impresso": "½",
+          "tipo": "meia carta",
+          "faces": [
+            "único"
+          ],
+          "paginas": [
+            7
+          ]
+        },
+        {
+          "id": "CLMMR-M3",
+          "xp_impresso": "½",
+          "tipo": "meia carta",
+          "faces": [
+            "único"
+          ],
+          "paginas": [
+            7
+          ]
+        },
+        {
+          "id": "CLMMR-M4",
+          "xp_impresso": "½",
+          "tipo": "meia carta",
+          "faces": [
+            "único"
+          ],
+          "paginas": [
+            7
+          ]
+        },
+        {
+          "id": "CLMMR-M5",
+          "xp_impresso": "½",
+          "tipo": "meia carta",
+          "faces": [
+            "único"
+          ],
+          "paginas": [
+            7
+          ]
+        },
+        {
+          "id": "CLMMR-M6",
+          "xp_impresso": "½",
+          "tipo": "meia carta",
+          "faces": [
+            "único"
+          ],
+          "paginas": [
+            7
+          ]
+        },
+        {
+          "id": "CLMMR-O1",
+          "xp_impresso": "1",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            6
+          ]
+        },
+        {
+          "id": "CLMMR-O2",
+          "xp_impresso": "1",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            6,
+            7
+          ]
+        },
+        {
+          "id": "CLMMR-O3",
+          "xp_impresso": "1",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            7
+          ]
+        },
+        {
+          "id": "CLMMR-X1",
+          "xp_impresso": "2",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            8
+          ]
+        },
+        {
+          "id": "CLMMR-X2",
+          "xp_impresso": "2",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            8
+          ]
+        },
+        {
+          "id": "CLMMR-X3",
+          "xp_impresso": "2",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            8
+          ]
+        },
+        {
+          "id": "CLMMR01",
+          "xp_impresso": "1",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "classe": "Caçador",
+      "paginas": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "entradas_de_catalogo": 18,
+      "pares_AB": 12,
+      "meia_cartas": 6,
+      "cartas_montadas_apos_combinar_as_meias": 15,
+      "faces": 30,
+      "entradas_por_xp": {
+        "1": 9,
+        "½": 6,
+        "2": 3
+      },
+      "faces_por_xp": {
+        "1": 18,
+        "½": 6,
+        "2": 6
+      },
+      "entradas": [
+        {
+          "id": "CDMMR-01",
+          "xp_impresso": "1",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            9
+          ]
+        },
+        {
+          "id": "CDMMR-02",
+          "xp_impresso": "1",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            9
+          ]
+        },
+        {
+          "id": "CDMMR-03",
+          "xp_impresso": "1",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            9
+          ]
+        },
+        {
+          "id": "CDMMR-04",
+          "xp_impresso": "1",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            10
+          ]
+        },
+        {
+          "id": "CDMMR-05",
+          "xp_impresso": "1",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            10
+          ]
+        },
+        {
+          "id": "CDMMR-06",
+          "xp_impresso": "1",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            10
+          ]
+        },
+        {
+          "id": "CDMMR-07",
+          "xp_impresso": "1",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            10
+          ]
+        },
+        {
+          "id": "CDMMR-08",
+          "xp_impresso": "1",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            10,
+            11
+          ]
+        },
+        {
+          "id": "CDMMR-09",
+          "xp_impresso": "1",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            11
+          ]
+        },
+        {
+          "id": "CDMMR-M1",
+          "xp_impresso": "½",
+          "tipo": "meia carta",
+          "faces": [
+            "único"
+          ],
+          "paginas": [
+            11
+          ]
+        },
+        {
+          "id": "CDMMR-M2",
+          "xp_impresso": "½",
+          "tipo": "meia carta",
+          "faces": [
+            "único"
+          ],
+          "paginas": [
+            11
+          ]
+        },
+        {
+          "id": "CDMMR-M3",
+          "xp_impresso": "½",
+          "tipo": "meia carta",
+          "faces": [
+            "único"
+          ],
+          "paginas": [
+            11
+          ]
+        },
+        {
+          "id": "CDMMR-M4",
+          "xp_impresso": "½",
+          "tipo": "meia carta",
+          "faces": [
+            "único"
+          ],
+          "paginas": [
+            11
+          ]
+        },
+        {
+          "id": "CDMMR-M5",
+          "xp_impresso": "½",
+          "tipo": "meia carta",
+          "faces": [
+            "único"
+          ],
+          "paginas": [
+            11
+          ]
+        },
+        {
+          "id": "CDMMR-M6",
+          "xp_impresso": "½",
+          "tipo": "meia carta",
+          "faces": [
+            "único"
+          ],
+          "paginas": [
+            11
+          ]
+        },
+        {
+          "id": "CDMMR-X1",
+          "xp_impresso": "2",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            12
+          ]
+        },
+        {
+          "id": "CDMMR-X2",
+          "xp_impresso": "2",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            12
+          ]
+        },
+        {
+          "id": "CDMMR-X3",
+          "xp_impresso": "2",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "classe": "Mago",
+      "paginas": [
+        13,
+        14,
+        15,
+        16
+      ],
+      "entradas_de_catalogo": 18,
+      "pares_AB": 12,
+      "meia_cartas": 6,
+      "cartas_montadas_apos_combinar_as_meias": 15,
+      "faces": 30,
+      "entradas_por_xp": {
+        "1": 9,
+        "½": 6,
+        "2": 3
+      },
+      "faces_por_xp": {
+        "1": 18,
+        "½": 6,
+        "2": 6
+      },
+      "entradas": [
+        {
+          "id": "MGMMR-AG",
+          "xp_impresso": "1",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            15
+          ]
+        },
+        {
+          "id": "MGMMR-AR",
+          "xp_impresso": "1",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            16
+          ]
+        },
+        {
+          "id": "MGMMR-EF",
+          "xp_impresso": "1",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            13
+          ]
+        },
+        {
+          "id": "MGMMR-EN",
+          "xp_impresso": "1",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            13
+          ]
+        },
+        {
+          "id": "MGMMR-F",
+          "xp_impresso": "1",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            15
+          ]
+        },
+        {
+          "id": "MGMMR-GU",
+          "xp_impresso": "1",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            13
+          ]
+        },
+        {
+          "id": "MGMMR-L",
+          "xp_impresso": "1",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            16
+          ]
+        },
+        {
+          "id": "MGMMR-MM1",
+          "xp_impresso": "½",
+          "tipo": "meia carta",
+          "faces": [
+            "único"
+          ],
+          "paginas": [
+            14
+          ]
+        },
+        {
+          "id": "MGMMR-MM2",
+          "xp_impresso": "½",
+          "tipo": "meia carta",
+          "faces": [
+            "único"
+          ],
+          "paginas": [
+            14
+          ]
+        },
+        {
+          "id": "MGMMR-MM3",
+          "xp_impresso": "½",
+          "tipo": "meia carta",
+          "faces": [
+            "único"
+          ],
+          "paginas": [
+            14
+          ]
+        },
+        {
+          "id": "MGMMR-MM4",
+          "xp_impresso": "½",
+          "tipo": "meia carta",
+          "faces": [
+            "único"
+          ],
+          "paginas": [
+            14
+          ]
+        },
+        {
+          "id": "MGMMR-MM5",
+          "xp_impresso": "½",
+          "tipo": "meia carta",
+          "faces": [
+            "único"
+          ],
+          "paginas": [
+            14
+          ]
+        },
+        {
+          "id": "MGMMR-MM6",
+          "xp_impresso": "½",
+          "tipo": "meia carta",
+          "faces": [
+            "único"
+          ],
+          "paginas": [
+            14
+          ]
+        },
+        {
+          "id": "MGMMR-S",
+          "xp_impresso": "1",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            16
+          ]
+        },
+        {
+          "id": "MGMMR-T",
+          "xp_impresso": "1",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            15
+          ]
+        },
+        {
+          "id": "MGMMR-X1",
+          "xp_impresso": "2",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            14
+          ]
+        },
+        {
+          "id": "MGMMR-X2",
+          "xp_impresso": "2",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            14,
+            15
+          ]
+        },
+        {
+          "id": "MGMMR-X3",
+          "xp_impresso": "2",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "classe": "Ladino",
+      "paginas": [
+        17,
+        18,
+        19,
+        20
+      ],
+      "entradas_de_catalogo": 18,
+      "pares_AB": 12,
+      "meia_cartas": 6,
+      "cartas_montadas_apos_combinar_as_meias": 15,
+      "faces": 30,
+      "entradas_por_xp": {
+        "1": 9,
+        "½": 6,
+        "2": 3
+      },
+      "faces_por_xp": {
+        "1": 18,
+        "½": 6,
+        "2": 6
+      },
+      "entradas": [
+        {
+          "id": "LDMMR-01",
+          "xp_impresso": "1",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            17
+          ]
+        },
+        {
+          "id": "LDMMR-02",
+          "xp_impresso": "1",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            17
+          ]
+        },
+        {
+          "id": "LDMMR-03",
+          "xp_impresso": "1",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            17
+          ]
+        },
+        {
+          "id": "LDMMR-04",
+          "xp_impresso": "1",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            18
+          ]
+        },
+        {
+          "id": "LDMMR-05",
+          "xp_impresso": "1",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            18
+          ]
+        },
+        {
+          "id": "LDMMR-06",
+          "xp_impresso": "1",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            18
+          ]
+        },
+        {
+          "id": "LDMMR-07",
+          "xp_impresso": "1",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            18
+          ]
+        },
+        {
+          "id": "LDMMR-08",
+          "xp_impresso": "1",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            18,
+            19
+          ]
+        },
+        {
+          "id": "LDMMR-09",
+          "xp_impresso": "1",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            19
+          ]
+        },
+        {
+          "id": "LDMMR-M1",
+          "xp_impresso": "½",
+          "tipo": "meia carta",
+          "faces": [
+            "único"
+          ],
+          "paginas": [
+            19
+          ]
+        },
+        {
+          "id": "LDMMR-M2",
+          "xp_impresso": "½",
+          "tipo": "meia carta",
+          "faces": [
+            "único"
+          ],
+          "paginas": [
+            19
+          ]
+        },
+        {
+          "id": "LDMMR-M3",
+          "xp_impresso": "½",
+          "tipo": "meia carta",
+          "faces": [
+            "único"
+          ],
+          "paginas": [
+            19
+          ]
+        },
+        {
+          "id": "LDMMR-M4",
+          "xp_impresso": "½",
+          "tipo": "meia carta",
+          "faces": [
+            "único"
+          ],
+          "paginas": [
+            19
+          ]
+        },
+        {
+          "id": "LDMMR-M5",
+          "xp_impresso": "½",
+          "tipo": "meia carta",
+          "faces": [
+            "único"
+          ],
+          "paginas": [
+            19
+          ]
+        },
+        {
+          "id": "LDMMR-M6",
+          "xp_impresso": "½",
+          "tipo": "meia carta",
+          "faces": [
+            "único"
+          ],
+          "paginas": [
+            19
+          ]
+        },
+        {
+          "id": "LDMMR-X1",
+          "xp_impresso": "2",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            20
+          ]
+        },
+        {
+          "id": "LDMMR-X2",
+          "xp_impresso": "2",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            20
+          ]
+        },
+        {
+          "id": "LDMMR-X3",
+          "xp_impresso": "2",
+          "tipo": "carta de dois lados",
+          "faces": [
+            "A",
+            "B"
+          ],
+          "paginas": [
+            20
+          ]
+        }
+      ]
+    }
+  ],
+  "herois_contados_separadamente": {
+    "Guerreiro": [
+      "GRMMR-H1",
+      "GRMMR-H2"
+    ],
+    "Clérigo": [
+      "CLMMR-H1",
+      "CLMMR-H2"
+    ],
+    "Caçador": [
+      "CDMMR-H1",
+      "CDMMR-H2"
+    ],
+    "Mago": [
+      "MGMMR-H1",
+      "MGMMR-H2"
+    ],
+    "Ladino": [
+      "LDMMR-H1",
+      "LDMMR-H2"
+    ]
+  },
+  "bruxo_gerais_observados": {
+    "entradas": 15,
+    "faces": 24,
+    "entradas_por_xp": {
+      "1": 6,
+      "½": 6,
+      "2": 3
+    },
+    "pares_AB": 9,
+    "meia_cartas": 6,
+    "cartas_montadas_apos_combinar_as_meias": 12,
+    "ids": [
+      "BR-G01",
+      "BR-G02",
+      "BR-G03",
+      "BR-G04",
+      "BR-G05",
+      "BR-G06",
+      "BR-M01",
+      "BR-M02",
+      "BR-M03",
+      "BR-M04",
+      "BR-M05",
+      "BR-M06",
+      "BR-X01",
+      "BR-X02",
+      "BR-X03"
+    ]
+  },
+  "deficit_exato": {
+    "entradas": 3,
+    "pares_AB_de_1XP": 3,
+    "faces": 6,
+    "meia_cartas": 0,
+    "cartas_de_2XP": 0
+  },
+  "apos_integrar_rascunho": {
+    "entradas": 18,
+    "faces": 30,
+    "entradas_por_xp": {
+      "1": 9,
+      "½": 6,
+      "2": 3
+    },
+    "pares_AB": 12,
+    "meia_cartas": 6,
+    "cartas_montadas_apos_combinar_as_meias": 15,
+    "novos_ids": [
+      "BR-G07",
+      "BR-G08",
+      "BR-G09"
+    ]
+  },
+  "esclarecimentos": [
+    "A estrutura teórica de 20 componentes soma 18 entradas de habilidades e duas metades de herói; não são 20 cartas A/B gerais.",
+    "No Mago, as seis cartas de Aprendiz já integram os nove pares de 1 XP publicados.",
+    "O Clérigo publicado tem três pares de 2 XP. Saltério de Cura e Grimório da Chama Sagrada são citados em outras fontes, mas não são faces adicionais neste PDF e não foram contados.",
+    "Com dez patronos haverá vinte faces iniciais adicionais, separadas das trinta faces gerais propostas. Não é necessário reduzir o catálogo de patronos para igualar o núcleo geral."
+  ]
+}

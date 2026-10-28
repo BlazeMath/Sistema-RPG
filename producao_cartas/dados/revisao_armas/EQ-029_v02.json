@@ -1,0 +1,19 @@
+{
+  "id": "EQ-029",
+  "nome": "Machado de Arremesso",
+  "arquivo": "artes/revisadas/EQ-029_v02.png",
+  "origem": "C:/Users/Gamer/.codex/generated_images/01a1784a-39da-75d3-87c4-56dc835caa37/exec-0ee15154-e74d-4cc1-866d-4d43aea2d70f.png",
+  "substitui": "artes/lote/EQ-029_v01.png",
+  "dimensoes": [
+    1060,
+    1484
+  ],
+  "modo": "RGBA",
+  "alpha": [
+    0,
+    255
+  ],
+  "sha256": "adcc2b53c45f9ea54f3cf2b8151b527056d9a6da355bb273a6ef623f1784ab85",
+  "status": "conferida_visual",
+  "rotacao_diagramacao_graus": 0
+}

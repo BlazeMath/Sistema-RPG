@@ -1,0 +1,34 @@
+{
+  "versao": "v05",
+  "status": "aprovado_pelo_autor",
+  "origem": "Decisões explícitas nesta conversa; adjacentes confirmados como o alvo e todas as criaturas adjacentes a ele, incluindo aliados.",
+  "alteracoes": [
+    {
+      "id": "EQ-042",
+      "nome": "Lança Trovejante",
+      "campos": {
+        "Dano": "6 + Força",
+        "Alcance": "Longo",
+        "Limite de Fadiga": "2"
+      },
+      "diagramacao": "frente_verso",
+      "habilidade": "2 de Fadiga, Ação Padrão: faça um único teste de ataque à distância contra o alvo e todas as criaturas adjacentes a ele, incluindo aliados. O alvo deve estar dentro do alcance desta arma. Cada criatura faz sua defesa. Cada criatura atingida sofre dano de Raio igual ao dano desta arma.\nRetorno da descarga: depois de resolver esta habilidade, você sofre 3 de dano de Raio, mesmo que nenhum alvo seja atingido.",
+      "revisao": "Decisão do autor: alcance Longo; descarga atinge o alvo e todas as criaturas adjacentes a ele, incluindo aliados; um teste de ataque e defesas individuais. Retorno de 3 de dano de Raio apenas ao usar esta habilidade. Ataques normais não ativam o retorno. A definição comum da tag Arremesso Grande permanece no manual."
+    },
+    {
+      "id": "EQ-043",
+      "nome": "Arco das Sombras",
+      "habilidade": "Antes de fazer um ataque com esta arma, você pode gastar 1 ficha de Sombra. Se fizer isso, o ataque não pode ser respondido por reações e suas duas cartas iniciais ficam ocultas para o defensor.\nDepois de resolver o ataque, receba 1 ficha de Sombra.\nEsta arma só causa dano se você estiver Oculto no início do ataque.",
+      "revisao": "Proposta aprovada pelo autor: o gasto de Sombra ocorre antes do ataque e o ganho depois da resolução. O requisito de começar o ataque Oculto substitui a antiga restrição de não causar dano a inimigos adjacentes. Sombra é recurso; Oculto é estado. A defesa normal não é uma reação."
+    },
+    {
+      "id": "EQ-044",
+      "nome": "Arco da Maré",
+      "area_quadrados": [
+        3,
+        3
+      ],
+      "observacao": "Manter a alteração já aprovada e registrada: área de 3 × 3 quadrados."
+    }
+  ]
+}

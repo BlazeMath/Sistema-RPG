@@ -1,0 +1,112 @@
+[
+  {
+    "id": "BR-P08",
+    "nome": "Pacto dos Sonhos Roubados",
+    "patrono": "Niméria, a Dama dos Sonhos Inacabados",
+    "tags": [
+      "Trevas",
+      "Sonho"
+    ],
+    "papel": "Pressão sobre Fadiga, mão e desorientação",
+    "identidade": "Semear pesadelos que o inimigo precisa suportar ou dissipar; colher os sonhos que ele abandona para preparar os próprios testes.",
+    "ciclo": "Atormentar → esperar o inimigo acumular Fadiga ou virar a carta → colher Pacto ou Foco → consumir o pesadelo para formar uma mão melhor.",
+    "pacto": {
+      "beneficio": "Uma vez por rodada, quando um inimigo receber Fadiga de uma ficha de Atormentado colocada por você, ganhe 1 Pacto. Transbordo que substitua essa Fadiga por outro pagamento não conta como receber Fadiga para este benefício.",
+      "cobranca": "Depois de comprar sua mão inicial da cena e antes de usar benefícios deste pacto, escolha 1 carta dessa mão e exile-a como o sonho entregue à patrona. Esse exílio obrigatório não gera Pacto.",
+      "quebra": "Recusar a entrega suspende o pacto; as magias básicas continuam acessíveis conforme as regras de trabalho do lote.",
+      "reparacao": "Ação Padrão: exile 1 carta de sua mão e entregue o sonho atrasado. Esse pagamento não gera Pacto.",
+      "habilidade_inicial": "Semeadura do Pesadelo / Colher o Sonho"
+    },
+    "heroi": {
+      "limite_fadiga": 4,
+      "passiva": "Carta do Pacto dos Sonhos Roubados.",
+      "ativada": "2 Pactos, Reação: quando um inimigo em alcance curto que tenha Atormentado colocado por você escolher o alvo de um ataque, faça um teste contestado de Espírito contra Espírito dele. Se vencer, coloque 1 Confusão na mesma carta que contém Atormentado antes de resolver a escolha de alvo. Resolva o ataque usando a escolha aleatória de alvos válidos da regra de Confusão. Uma intervenção deste herói por ataque.",
+      "desencadeada": "Uma vez por rodada, depois que um inimigo virar uma carta e remover dela Atormentado colocado por você, ganhe 1 Foco.",
+      "critico": "Ganhe fichas de Pacto iguais ao nível deste pacto."
+    },
+    "habilidade": {
+      "tipo": "Magia Arcana",
+      "requer": [
+        "Pacto",
+        "Trevas",
+        "Sonho"
+      ],
+      "lados": [
+        {
+          "lado": "A",
+          "nome": "Semeadura do Pesadelo",
+          "custo_fadiga": 1,
+          "limite_fadiga": 2,
+          "acao": "Padrão",
+          "texto": "1 de Fadiga, Ação Padrão: faça um ataque mágico com foco em alcance curto, causando dano Psíquico. Se causar dano, coloque 1 Atormentado em uma carta do defensor que possa receber Fadiga. Esta magia não coloca outro Atormentado se o defensor já tiver um colocado por você."
+        },
+        {
+          "lado": "B",
+          "nome": "Colher o Sonho",
+          "custo_fadiga": 2,
+          "limite_fadiga": 3,
+          "acao": "Padrão",
+          "texto": "2 de Fadiga, Ação Padrão: escolha um inimigo em alcance curto que tenha Atormentado colocado por você e remova 1 dessas fichas. Olhe as 3 cartas do topo de seu baralho, coloque 2 delas em sua mão e as demais no fundo do baralho na ordem que quiser. Antes de olhar, você pode gastar X Pactos para olhar X cartas adicionais; continua colocando apenas 2 na mão. Se houver menos cartas no baralho, use as disponíveis. A remoção por esta magia não gera o Foco da desencadeada do herói."
+        }
+      ]
+    },
+    "menor": "1 Pacto, Reação: quando um inimigo em alcance curto que tenha Atormentado escolher você como alvo de um ataque, faça um teste contestado de Espírito contra Espírito dele. Se vencer, ele recebe 1 Confusão antes de resolver a escolha de alvo. Use os alvos válidos da regra de Confusão. Uma intervenção deste benefício por ataque.",
+    "teste": "Atormentado é pressão de Fadiga, não Medo nem Sono. Inimigos precisam ter uma carta que receba Fadiga; não dar Pacto por colocar pressão em inimigo incapaz de suportá-la. Colher não é cura e compra do próprio baralho, sem devolver descarte ou exílio. Observar o ganho de mão (2 cartas por ação), a duração de Confusão e a combinação com intervenção de outros pactos; o mesmo ataque só recebe uma intervenção deste benefício.",
+    "cobranca_menor": "Depois da mão inicial, antes de usar este benefício menor, exile 1 carta da mão como sonho entregue. Recusar suspende esta reserva menor; reparar exige uma ação Padrão e exilar 1 carta da mão. O exílio obrigatório não gera Pacto."
+  },
+  {
+    "id": "BR-P09",
+    "nome": "Pacto do Inverno Imóvel",
+    "patrono": "A Rainha da Última Geada",
+    "tags": [
+      "Gelo",
+      "Conservação"
+    ],
+    "papel": "Concentração de Fadiga e controle do ritmo de aproximação",
+    "identidade": "Conservar o frio dentro das próprias cartas, abrir espaço em outros poderes e obrigar o inimigo a atravessar a distância lentamente.",
+    "ciclo": "Conservar Fadiga → ganhar Pacto → concentrar a Fadiga num disparo → sustentar a posição ou quebrar a camada virando a carta.",
+    "pacto": {
+      "beneficio": "Uma vez por seu turno numa cena de conflito real, se tiver pelo menos 1 Fadiga numa carta e abrir mão da remoção normal de 1 Fadiga do fim do turno, ganhe 1 Pacto depois de encerrar o turno. Não recebe Pacto se não havia Fadiga que pudesse remover nem por deixar de usar recuperações adicionais opcionais.",
+      "cobranca": "Em um turno em que gastar fichas deste pacto, não pode ter se deslocado voluntariamente nem voltar a se deslocar voluntariamente antes de encerrar esse turno. Deslocamento imposto por outra criatura não quebra a cobrança. Você pode optar por mover-se ou gastar depois de se mover, mas isso quebra o compromisso e suspende o pacto após a ação que provocou a quebra.",
+      "quebra": "Escolher mover-se e gastar Pacto no mesmo turno suspende ganhos e gastos da reserva.",
+      "reparacao": "Encerre um turno de conflito real sem se mover voluntariamente, tendo pelo menos 1 Fadiga na habilidade inicial deste pacto e abrindo mão da recuperação normal de fim de turno. A reparação não gera Pacto.",
+      "habilidade_inicial": "Sopro da Geada / Coração do Inverno"
+    },
+    "heroi": {
+      "limite_fadiga": 4,
+      "passiva": "Carta do Pacto do Inverno Imóvel.",
+      "ativada": "1 Pacto: transfira 1 Fadiga de outra carta sua para esta carta de herói, apenas se houver espaço. Uma vez no seu turno. A transferência não altera o total de Fadiga nem conta como pagar Fadiga de uma magia.",
+      "desencadeada": "Uma vez no seu turno, quando a habilidade inicial deste pacto atingir seu limite de Fadiga após a resolução da magia, se você não tiver Bloqueio, coloque 1 Bloqueio em sua carta de herói. Receber mais Fadiga por transbordo numa carta já cheia não repete esse gatilho.",
+      "critico": "Ganhe fichas de Pacto iguais ao nível deste pacto."
+    },
+    "habilidade": {
+      "tipo": "Magia Arcana",
+      "requer": [
+        "Pacto",
+        "Gelo",
+        "Conservação"
+      ],
+      "lados": [
+        {
+          "lado": "A",
+          "nome": "Sopro da Geada",
+          "custo_fadiga": 1,
+          "limite_fadiga": 2,
+          "acao": "Padrão",
+          "texto": "1 de Fadiga, Ação Padrão: faça um ataque mágico com foco em alcance curto, causando dano de Gelo. Se causar dano, a próxima ação de Movimento que o defensor usar até o início do seu próximo turno rende apenas 1 quadrado, em vez do deslocamento normal. A ação ainda é gasta e não impede outras ações do alvo. Aplicações desta magia não se acumulam: não afetam várias ações nem prolongam a duração. Deslocamentos explicitamente dados por outras habilidades continuam seguindo seus próprios textos."
+        },
+        {
+          "lado": "B",
+          "nome": "Coração do Inverno",
+          "custo_fadiga": 2,
+          "limite_fadiga": 4,
+          "acao": "Padrão",
+          "texto": "2 de Fadiga, Ação Padrão: depois de pagar a Fadiga desta magia e antes de comprar as cartas do ataque, você pode transferir até 2 Fadigas de uma outra carta sua para esta carta, sem ultrapassar seu limite. Faça um ataque mágico com foco em alcance curto, causando dano de Gelo. Se acertar, cause +2 de dano por Fadiga transferida. O custo da conjuração é pago normalmente; transferir Fadiga não paga esse custo nem conta como receber recuperação."
+        }
+      ]
+    },
+    "menor": "1 Pacto, Reação: depois que um inimigo em alcance curto causar dano a você com um ataque, a próxima ação de Movimento que ele usar até o início do seu próximo turno rende apenas 1 quadrado. Não se acumula com outra redução desta mesma origem; uma ativação por ataque. Não impede ações nem deslocamentos dados explicitamente por outras habilidades.",
+    "teste": "Não cria ficha de Gelo: usa o tipo de dano e uma redução de movimento descrita no texto. Verificar o momento exato do limite antes de remover a Fadiga normal e impedir Pacto gratuito quando não haveria nada a remover. Coração move Fadiga, não a apaga, e só pode transferir até os 2 espaços livres restantes; uma carta cheia não aceita transferência por transbordo. Observar se a postura imóvel fica onerosa demais e se o benefício de Bloqueio é suficiente para sustentá-la. A regra proposta não proíbe virar cartas normalmente para limpar Fadiga.",
+    "cobranca_menor": "Depois de usar o benefício menor, no fim do seu próximo turno abra mão da recuperação normal de 1 Fadiga se tiver alguma Fadiga que pudesse remover. Se não tiver Fadiga, o preço foi cumprido. Se optar por recuperar normalmente, suspenda esta reserva menor; para reparar, abra mão de uma recuperação normal de Fadiga que poderia realizar em um turno de conflito real, sem gerar Pacto."
+  }
+]

@@ -1,0 +1,26 @@
+; Arquivo de configuração do projeto Godot.
+config_version=5
+
+[application]
+
+config/name="Sistema 21"
+config/description="RPG tático de grupo baseado no Sistema 21."
+run/main_scene="res://ui/main.tscn"
+config/features=PackedStringArray("4.4", "GL Compatibility")
+config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+
+[autoload]
+
+Musica="*res://ui/musica.gd"

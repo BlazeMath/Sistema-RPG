@@ -1,0 +1,73 @@
+{
+  "data": "2026-10-27",
+  "estado": "proposta_sem_playtest",
+  "versao": 2,
+  "patronos": 10,
+  "cartas_gerais": 18,
+  "paineis": 28,
+  "abrir_e_recolher": true,
+  "ids_unicos": true,
+  "desktop": {
+    "width": 1440,
+    "document": 1440,
+    "overflow": 0
+  },
+  "mobile": {
+    "width": 480,
+    "document": 480,
+    "overflow": 0
+  },
+  "erros_javascript": [],
+  "partidas_ou_simulacoes_de_equilibrio": false,
+  "integridade_dados": true,
+  "faces_gerais": 30,
+  "distribuicao_xp": {
+    "1_xp": 9,
+    "meia_carta": 6,
+    "2_xp": 3
+  },
+  "pdf_habilidades_existente_preservado": true,
+  "fenix_nucleo_preservado": true,
+  "cinco_pactos_anteriores_preservados": true,
+  "quinze_gerais_anteriores_preservadas": true,
+  "cobranca_fenix": "Em aberto, sem nova decisão aplicada.",
+  "arquivos": [
+    {
+      "caminho": "classes/dados/bruxo/novos_pactos_v02.json",
+      "sha256": "35e841af90a53080ce3b47f86aac17025fb1875a1e34f7cf8969f8ca0c46f0b8"
+    },
+    {
+      "caminho": "classes/dados/bruxo/habilidades_gerais_v02.json",
+      "sha256": "957ff6c88f166bb28b1be7ac9e3b2108442718c1f72d7d90e33dbf08f2cd4bb4"
+    },
+    {
+      "caminho": "classes/dados/bruxo/regras_propostas_lote_v02.json",
+      "sha256": "0b8c5604f903d3644b1092a1f588c4431342c773987c28e53f50d61711fca8e7"
+    },
+    {
+      "caminho": "classes/dados/bruxo/contagem_habilidades_classes_v02.json",
+      "sha256": "e539745c9dca64ff4aa42607438d8487ccc267bc130bedb4aa85b9fc82fd5fa9"
+    },
+    {
+      "caminho": "outputs/01a17d39-9806-7153-9510-d82d1e7aaeea/classes/Bruxo_Pactos_e_Habilidades_Proposta_v02.html",
+      "sha256": "e620c95680c3c01732ced5505c5d22a6d085b4c729e2ac3be21b2920773f94de"
+    }
+  ],
+  "revisao_mecanica": "Leitura pelo agente principal e revisão independente dos quatro patronos e dos três pares gerais; não substitui partidas de teste.",
+  "ajustes_apos_revisao": [
+    "A cobrança do Trovão permite renunciar à recuperação normal para preservar a última Fadiga exigida.",
+    "A descarga do Trovão exige Reação após um ataque inimigo concluído, distinguindo sua cadência da conservação do Inverno.",
+    "Colher o Sonho exige alvo com Atormentado colocado pelo Bruxo antes de gerar a compra para a mão.",
+    "Executar a Cláusula é pago antecipadamente e substitui somente uma carta inicial da defesa antes das compras adicionais.",
+    "Patrono Presente oferece apenas uma resistência contestada por conjuração; Emprestar a Vontade não altera ataque nem defesa."
+  ],
+  "revisao_visual": {
+    "capturas_inspecionadas": [
+      "previa_catalogo_bruxo_v02.png",
+      "previa_pacto_fenix_v02.png",
+      "previa_patrono_novo_v02.png",
+      "previa_habilidade_nova_celular_v02.png"
+    ],
+    "resultado": "Texto legível, sem corte ou sobreposição nas capturas verificadas."
+  }
+}

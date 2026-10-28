@@ -1,0 +1,123 @@
+{
+  "id": "EQ-156",
+  "arte": "artes/piloto/EQ-156_v02.png",
+  "corpo_verso_pt": 9,
+  "medidas": [
+    {
+      "id": "EQ-156",
+      "texto_pt": 0,
+      "arte_mm": 46.3,
+      "font_pt": 8,
+      "fit": true,
+      "modo": "frente_verso"
+    },
+    {
+      "id": "EQ-156",
+      "face": "verso",
+      "font_pt": 9,
+      "texto_pt": 97.2,
+      "fit": true
+    },
+    {
+      "id": "EQ-156",
+      "texto_pt": 0,
+      "arte_mm": 46.3,
+      "font_pt": 8,
+      "fit": true,
+      "modo": "frente_verso"
+    },
+    {
+      "id": "EQ-156",
+      "face": "verso",
+      "font_pt": 9,
+      "texto_pt": 97.2,
+      "fit": true
+    }
+  ],
+  "simbolos": [
+    {
+      "tipo": "limite_fadiga",
+      "id": "EQ-156",
+      "valor": 2,
+      "pagina": 1
+    },
+    {
+      "tipo": "custo_fadiga",
+      "valor": 2,
+      "pagina": 2
+    },
+    {
+      "tipo": "limite_fadiga",
+      "id": "EQ-156",
+      "valor": 2,
+      "pagina": 2
+    },
+    {
+      "tipo": "limite_fadiga",
+      "id": "EQ-156",
+      "valor": 2,
+      "pagina": 1
+    },
+    {
+      "tipo": "custo_fadiga",
+      "valor": 2,
+      "pagina": 2
+    },
+    {
+      "tipo": "limite_fadiga",
+      "id": "EQ-156",
+      "valor": 2,
+      "pagina": 2
+    }
+  ],
+  "arquivos": [
+    {
+      "arquivo": "C:\\Users\\Gamer\\Documents\\ChatGPT\\SISTEMA DE RPG\\producao_cartas\\pdf\\Corrente_de_Caca_v01_Frente_Verso.pdf",
+      "paginas": 2,
+      "pagina_mm": [
+        63.0,
+        88.0
+      ],
+      "posicoes": [
+        {
+          "face": "FRENTE",
+          "x_pt": 0.0,
+          "y_pt": 0.0,
+          "largura_pt": 178.58267716535434,
+          "altura_pt": 249.4488188976378
+        },
+        {
+          "face": "VERSO",
+          "x_pt": 0.0,
+          "y_pt": 0.0,
+          "largura_pt": 178.58267716535434,
+          "altura_pt": 249.4488188976378
+        }
+      ]
+    },
+    {
+      "arquivo": "C:\\Users\\Gamer\\Documents\\ChatGPT\\SISTEMA DE RPG\\producao_cartas\\pdf\\Corrente_de_Caca_v01_A4_Impressao.pdf",
+      "paginas": 2,
+      "pagina_mm": [
+        210.0,
+        297.0
+      ],
+      "posicoes": [
+        {
+          "face": "FRENTE",
+          "x_pt": 208.34645669291342,
+          "y_pt": 296.22047244094495,
+          "largura_pt": 178.58267716535434,
+          "altura_pt": 249.4488188976378
+        },
+        {
+          "face": "VERSO",
+          "x_pt": 208.34645669291342,
+          "y_pt": 296.22047244094495,
+          "largura_pt": 178.58267716535434,
+          "altura_pt": 249.4488188976378
+        }
+      ]
+    }
+  ]
+}

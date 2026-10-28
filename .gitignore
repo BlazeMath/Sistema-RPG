@@ -1,0 +1,21 @@
+# Caches locais e arquivos gerados pelas ferramentas.
+__pycache__/
+*.py[cod]
+.godot/
+node_modules/
+.venv/
+venv/
+.cache/
+
+# Credenciais e configurações privadas não pertencem ao projeto.
+.env
+.env.*
+!.env.example
+!.env.template
+*.pem
+*.key
+
+# Arquivos auxiliares do sistema operacional.
+Thumbs.db
+Desktop.ini
+.DS_Store

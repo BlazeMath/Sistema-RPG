@@ -1,0 +1,35 @@
+{
+  "especialidade": "itens",
+  "atualizado_em": "2026-10-27",
+  "titulo": "Itens, Inventário e Economia",
+  "thread_id": "01a1784a-39da-75d3-87c4-56dc835caa37",
+  "escopo": [
+    "Armas, armaduras, escudos, focos, grimórios, consumíveis e acessórios",
+    "Inventário por volume e slots, equipamento ativo e reservas",
+    "Preços, moedas, lojas, loot econômico e fabricação quando solicitada"
+  ],
+  "fontes": [
+    "producao_cartas/dados/catalogo_cartas.json",
+    "producao_cartas/dados/ajustes_autor.json",
+    "producao_cartas/dados/decisoes_fechadas.json",
+    "outputs/01a1784a-39da-75d3-87c4-56dc835caa37/economia",
+    "organizacao/fontes/historico_itens.json"
+  ],
+  "pontos_de_atencao": [
+    "Continuar a proposta de inventário em andamento.",
+    "Preservar histórico e decisões aprovadas; economia ainda é estudo.",
+    "Arte e Diagramação assume futuras tarefas visuais como especialidade, sem interromper o trabalho corrente."
+  ],
+  "decisoes_novas": [
+    {
+      "data": "2026-10-27",
+      "origem": "Pedido direto do usuário no chat Itens, Inventário e Economia (01a1784a-39da-75d3-87c4-56dc835caa37)",
+      "instrucao_usuario": "Os grimórios e textos sagrados precisam compartilhar os espaços com armamentos",
+      "status": "Compartilhamento definido pelo autor; demais valores do inventário continuam como proposta",
+      "decisao": "Grimórios e textos sagrados usam a mesma capacidade de armamentos, sem espaços exclusivos de repertório.",
+      "aplicacao_na_proposta": "Cada livro custa 1 dos 4 espaços compartilhados, inclusive reservas. Removido o limite separado de 2 repertórios. Custo de 1 por livro e capacidade total de 4 seguem como valores propostos.",
+      "arquivo": "outputs/01a1784a-39da-75d3-87c4-56dc835caa37/inventario/Inventario_por_Espacos_v01.html",
+      "incorporado_ao_manual_ou_pdf": false
+    }
+  ]
+}

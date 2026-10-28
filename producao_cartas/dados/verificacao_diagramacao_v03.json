@@ -1,0 +1,278 @@
+{
+  "medidas": [
+    {
+      "id": "EQ-001",
+      "texto_pt": 0,
+      "arte_mm": 51.1,
+      "font_pt": 8,
+      "fit": true,
+      "modo": "texto_na_frente"
+    },
+    {
+      "id": "EQ-010",
+      "texto_pt": 28.0,
+      "arte_mm": 32.4,
+      "font_pt": 8,
+      "fit": true,
+      "modo": "texto_na_frente"
+    },
+    {
+      "id": "EQ-156",
+      "texto_pt": 0,
+      "arte_mm": 46.3,
+      "font_pt": 8,
+      "fit": true,
+      "modo": "frente_verso"
+    },
+    {
+      "id": "EQ-046",
+      "texto_pt": 28.0,
+      "arte_mm": 37.2,
+      "font_pt": 8,
+      "fit": true,
+      "modo": "texto_na_frente"
+    },
+    {
+      "id": "EQ-060",
+      "texto_pt": 0,
+      "arte_mm": 51.1,
+      "font_pt": 8,
+      "fit": true,
+      "modo": "frente_verso"
+    },
+    {
+      "id": "EQ-061",
+      "texto_pt": 18.7,
+      "arte_mm": 50.5,
+      "font_pt": 8,
+      "fit": true,
+      "modo": "texto_na_frente"
+    },
+    {
+      "id": "EQ-116",
+      "texto_pt": 28.0,
+      "arte_mm": 47.2,
+      "font_pt": 8,
+      "fit": true,
+      "modo": "texto_na_frente"
+    },
+    {
+      "id": "EQ-127",
+      "texto_pt": 65.5,
+      "arte_mm": 34.0,
+      "font_pt": 8,
+      "fit": true,
+      "modo": "texto_na_frente"
+    },
+    {
+      "id": "EQ-139",
+      "texto_pt": 0,
+      "arte_mm": 56.3,
+      "font_pt": 8,
+      "fit": true,
+      "modo": "frente_verso"
+    },
+    {
+      "id": "EQ-156",
+      "face": "verso",
+      "font_pt": 9,
+      "texto_pt": 97.2,
+      "fit": true
+    },
+    {
+      "id": "EQ-060",
+      "face": "verso",
+      "font_pt": 9,
+      "texto_pt": 129.6,
+      "fit": true
+    },
+    {
+      "id": "EQ-139",
+      "face": "verso",
+      "font_pt": 8.5,
+      "texto_pt": 173.4,
+      "fit": true
+    }
+  ],
+  "imposicao_duplex": [
+    {
+      "id": "EQ-001",
+      "frente": {
+        "linha": 1,
+        "coluna": 1
+      },
+      "verso": {
+        "linha": 1,
+        "coluna": 3
+      },
+      "regra_no_verso": false
+    },
+    {
+      "id": "EQ-010",
+      "frente": {
+        "linha": 1,
+        "coluna": 2
+      },
+      "verso": {
+        "linha": 1,
+        "coluna": 2
+      },
+      "regra_no_verso": false
+    },
+    {
+      "id": "EQ-156",
+      "frente": {
+        "linha": 1,
+        "coluna": 3
+      },
+      "verso": {
+        "linha": 1,
+        "coluna": 1
+      },
+      "regra_no_verso": true
+    },
+    {
+      "id": "EQ-046",
+      "frente": {
+        "linha": 2,
+        "coluna": 1
+      },
+      "verso": {
+        "linha": 2,
+        "coluna": 3
+      },
+      "regra_no_verso": false
+    },
+    {
+      "id": "EQ-060",
+      "frente": {
+        "linha": 2,
+        "coluna": 2
+      },
+      "verso": {
+        "linha": 2,
+        "coluna": 2
+      },
+      "regra_no_verso": true
+    },
+    {
+      "id": "EQ-061",
+      "frente": {
+        "linha": 2,
+        "coluna": 3
+      },
+      "verso": {
+        "linha": 2,
+        "coluna": 1
+      },
+      "regra_no_verso": false
+    },
+    {
+      "id": "EQ-116",
+      "frente": {
+        "linha": 3,
+        "coluna": 1
+      },
+      "verso": {
+        "linha": 3,
+        "coluna": 3
+      },
+      "regra_no_verso": false
+    },
+    {
+      "id": "EQ-127",
+      "frente": {
+        "linha": 3,
+        "coluna": 2
+      },
+      "verso": {
+        "linha": 3,
+        "coluna": 2
+      },
+      "regra_no_verso": false
+    },
+    {
+      "id": "EQ-139",
+      "frente": {
+        "linha": 3,
+        "coluna": 3
+      },
+      "verso": {
+        "linha": 3,
+        "coluna": 1
+      },
+      "regra_no_verso": true
+    }
+  ],
+  "simbolos": [
+    {
+      "tipo": "limite_fadiga",
+      "id": "EQ-010",
+      "valor": 1,
+      "pagina": 1
+    },
+    {
+      "tipo": "limite_fadiga",
+      "id": "EQ-156",
+      "valor": 2,
+      "pagina": 1
+    },
+    {
+      "tipo": "custo_fadiga",
+      "valor": 2,
+      "pagina": 1
+    },
+    {
+      "tipo": "limite_fadiga",
+      "id": "EQ-116",
+      "valor": 2,
+      "pagina": 1
+    },
+    {
+      "tipo": "conjuracao",
+      "pagina": 1
+    },
+    {
+      "tipo": "limite_fadiga",
+      "id": "EQ-010",
+      "valor": 1,
+      "pagina": 2
+    },
+    {
+      "tipo": "custo_fadiga",
+      "valor": 2,
+      "pagina": 2
+    },
+    {
+      "tipo": "limite_fadiga",
+      "id": "EQ-156",
+      "valor": 2,
+      "pagina": 2
+    },
+    {
+      "tipo": "limite_fadiga",
+      "id": "EQ-116",
+      "valor": 2,
+      "pagina": 2
+    },
+    {
+      "tipo": "conjuracao",
+      "pagina": 2
+    },
+    {
+      "tipo": "custo_fadiga",
+      "valor": 3,
+      "pagina": 2
+    },
+    {
+      "tipo": "custo_fadiga",
+      "valor": 5,
+      "pagina": 2
+    },
+    {
+      "tipo": "custo_fadiga",
+      "valor": 2,
+      "pagina": 2
+    }
+  ]
+}

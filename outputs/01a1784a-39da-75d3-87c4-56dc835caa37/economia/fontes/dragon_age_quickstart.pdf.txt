@@ -1,0 +1,2675 @@
+
+[PÁGINA PDF 1]
+
+
+[PÁGINA PDF 2]
+
+
+[PÁGINA PDF 3]
+Quickstart Guide
+Dragon Age RPG Quickstart Guide is copyright © 2011  
+Green Ronin Publishing, LLC. All rights reserved. 
+Reference to other copyrighted material  
+in no way constitutes a challenge to the  
+respective copyright holders of that material. 
+© 2011 Electronic Arts Inc. EA and EA logo are trademarks 
+of Electronic Arts Inc. BioWare, BioWare logo, and Dragon 
+Age are trademarks of EA International (Studio and 
+Publishing) Ltd. All other trademarks are the property of 
+their respective owners. 
+Green Ronin, Adventure Game 
+Engine, and their associated  
+logos are trademarks of  
+Green Ronin Publishing. 
+Printed in the USA.
+Green  r onin  PublishinG
+3815 S. Othello St. Suite 100, #304
+Seattle, WA 98118
+Email: custserv@greenronin.com
+Web Site: greenronin.com
+Quickstart  Guide  d esiGn : Walt  c iechanoWski        
+d eveloPment : Jeff  t idball
+e ditinG : e van  s ass        
+a rt  d irection  and  GraPhic  d esiGn : h al  m anGold
+c over  a rt : a lan  l athWell      
+c artoGraPhy : t yler  l ee  and  s ean  m ac d onald
+i nterior  a rt :  a ndre W b osley , Jason  c hen , d avid  k e GG, s un G k im ,  
+m att  r hodes , m ike  s ass , and  f rancisco  t orres
+Publisher , d raGon  a Ge  rPG d esiGn : c hris  Pramas
+Green  r onin  s taff : b ill  b odden , s teve  k enson , Jon  l eitheusser ,  
+n icole  l indroos , h al  m anGold , c hris  Pramas , e van  s ass ,  
+m arc  s chmalz , and  Jeff  t idball
+Playtesters : a lexander  b eldan , Jeb  b oyt , Jason  d urall , c harles  f rank , 
+Johnathan  Greene , e u Gene  Gualtieri , d ave  h anlon , a lexis  k ristan  h einz ,  
+John  i llin GWorth , d an  i lut , r obert  W.b . l l Wyd , a dam  l ud Wi G, m ichael  
+m ur Phy , n ick  n uber , m ark  Philli PPi , t roy  Pichelman , t homas  m . r eid ,  
+b ob  r oeh , m att  r yan , Gre G s ch Wei Ger , Jesse  s coble , Jason  m . s troik ,  
+d eanna  t ousi Gnant , m aurice  t ousi Gnant , and  n atalie  Wallace
+DaRk Fantasy Roleplaying
+
+
+[PÁGINA PDF 4]
+Welcome to Dragon Age !
+You hold in your hands a gateway to the tabletop, pen-
+and-paper Dragon Age Roleplaying Game. It includes 
+everything you need—abbreviated rules, player char-
+acter heroes, and a full adventure—to try this acclaimed 
+RPG.
+The Dragon Age RPG is based on BioWare’s award-
+winning video game Dragon Age: Origins and its 
+existing and future sequels. If you don’t know anything 
+about Dragon Age yet, first and foremost, welcome! We 
+at Green Ronin hope you have a great time giving our 
+roleplaying game a try.
+Here’s the first thing you should know: Dragon Age is a 
+dark fantasy setting. Its world of Thedas is not a place 
+of faeries and unicorns. It’s a grim, medieval setting 
+that is often brutal and at times unfair. The player char-
+acters must routinely make difficult moral decisions 
+where there are no correct, right, or clear choices. The 
+setting’s heroes—the Player Characters (PCs)—start 
+at the bottom and must prove their mettle through 
+adventuring. Not every challenge can be overcome; 
+at times the heroes must choose discretion over valor. 
+Darkspawn stalk Thedas, evil creatures who sally forth 
+from dark, underground places. In some areas, a super-
+natural Blight stains the land itself, sickening crops and 
+befouling the waters. Mentors and patrons sometimes 
+offer assistance to Dragon Age  Player Characters, but 
+even they usually have their own agendas as well.
+If you’re already familiar with the Dragon Age video 
+games, then what you know about its world of Thedas 
+will enrich your experience here. But be aware that 
+you’ll find the gameplay different between the video 
+games and this roleplaying game. Things will not 
+always work exactly as you expect.
+If you’re already familiar with the Dragon Age RPG—
+perhaps you own the boxed Set 1, and maybe you’ve 
+even played before—you can still take advantage of the 
+adventure included here. It’s an excellent scenario for 
+introducing new players to the game. The quickstart’s 
+summary of the RPG’s rules is also a convenient refer-
+ence.
+What ’s Included
+There are three parts to this quickstart. The first is a 
+condensed guide to the rules of the Dragon Age RPG, 
+including a reference sheet the players can keep handy 
+during play. The second is an adventure called An Arl’s 
+Ransom. The third is a set of five pre-generated Player 
+Characters.
+Welcome to 
+Dragon Age!!
+Introduction
+2
+
+[PÁGINA PDF 5]
+Welcome to Dragon Age !
+What  e lse   
+You ’ll  n eed
+As with most roleplaying games, to play this quickstart 
+you’ll need at least two people, though four to six is 
+best. One will be the Game Master (GM) and the others 
+will be players. You’ll also need at least three regular, 
+six-sided dice. Ideally, one of the dice should be a 
+different color from the others. You’ll also need some 
+copies of various portions of this quickstart, but more 
+on that later.
+If You ’ve  n ever  
+r olepla Yed  Before
+If you’re interested in giving this thing a try but you 
+have no idea what tabletop roleplaying is all about, 
+that’s great. Roleplaying is some of the most fun you’ll 
+ever have with your friends. But to teach the basics of 
+roleplaying is a bit beyond this quickstart. Grab your 
+computer, fire up your web browser, and search for 
+some basic info. The Wikipedia page “role-playing 
+game (pen and paper)” is a little dry, but as good a 
+starting point as any. Or better yet, track down a friend 
+who’s done this kind of thing before and rope them into 
+showing you how it’s done. Trust us, you’re going to 
+love it.
+Before  You  pla Y
+Before the group gets together to play, the Game Master 
+should read this whole quickstart, print out one copy 
+of each pre-generated Player Character, and print out 
+enough copies of the reference sheet so each player can 
+have one. Other players can read the rules section of 
+the quickstart if they want to, but shouldn’t read An 
+Arl’s Ransom. It may also help the players get into the 
+world if you print or copy the page that describes the 
+kingdom of Ferelden (immediately following) so each 
+player can read that, too.
+The Character 
+Sheet
+All of the information that a player needs can be found 
+on his character sheet. We’ll start a tour of the Dragon 
+Age character sheet by looking at its backbone, the 
+eight abilities.
+•	
+c ommunication  describes your character’s social 
+skills, personal interactions, and ability to deal 
+with others. 
+•	 c onstitution  is your character’s fortitude and 
+resistance to harm. 
+•	 c unninG  is a measure of your character’s 
+intelligence, knowledge, and education. 
+•	 d exterity  encompasses agility, hand-eye 
+coordination, and quickness. 
+•	 m aGic  determines your character’s innate arcane 
+power. 
+•	 PercePtion  covers all the senses and the ability to 
+interpret sensory data. 
+•	 s trenGth  is your character’s physical brawn. 
+•	 WillPoWer  encompasses mental toughness, 
+discipline, and confidence.
+Each of the eight abilities is described by a single 
+number, which can be negative or positive. A score of 
+zero is the average for an average person—that is, a 
+non-hero!—in Thedas.
+Some abilities have one or more words in their box. 
+These are focuses, which are areas of particular exper -
+tise that fall under that ability. These focuses are gener-
+ally self-explanatory. For example, characters with the 
+Persuasion focus are especially good at using their 
+Communication ability to persuade someone. 
+It’s important to note that characters don’t need to 
+have a focus to try something. For example, characters 
+without Persuasion can still try to persuade people. 
+They simply use their Communication score without 
+an additional bonus. A focus is just an added benefit for 
+characters with special aptitude or training.
+When abilities and focuses are written out in the rules, 
+or an adventure, the focus follows its ability. You might 
+read “Communication (Persuasion)” or “Perception 
+(Seeing),” for example.
+Next, you’ll also notice some other numbers on your 
+character sheet. 
+About the Condensed Rules
+The condensed rules presented in the Dragon Age Quick-
+start Guide cover all of the basics, but you should be 
+aware that many rules included in the full game have 
+been left out here. None of the character generation 
+rules are included, for example. In addition, many rules 
+have been simplified or narrowed for use in a single 
+context here.
+If you are running An Arl’s Ransom with the full 
+Dragon Age RPG rules then you should treat them as the 
+definitive ruleset. Some tests in the adventure do not list 
+otherwise relevant focuses simply because none of the 
+pre-generated PCs have them. Other areas, particularly 
+in spellcasting, have been streamlined here.
+continued on page 5
+3
+
+[PÁGINA PDF 6]
+Welcome to Dragon Age !
+Dragon Age takes place in the world of Thedas. The players’ 
+first adventures happen in the kingdom of Ferelden, which is 
+roughly the size of Ireland.
+The Fereldans have only recently become “civilized.” Just a 
+few centuries ago they were a loose association of barbaric 
+tribes. While they’ve come a long way in a short period of time, Fereldans still have the heart and stamina of fierce 
+warriors. Ferelden is also a land of gender equity, where women can be found in all professions and ranks. Ferel -
+dans value skill and fortitude, no matter its trappings.
+The Waking Sea and the Amaranthine Ocean bound Ferelden on the north and east, respectively. Ferelden’s capital 
+and largest city, Denerim, sits on the realm’s northeastern shore. The heart of Ferelden is the central Bannorn, its 
+breadbasket. Much of east Ferelden is covered by the Brecilian Forest, a dangerous woodland. The Southron Hills 
+set the Brecilian Forest apart from south central Ferelden. Lake Calenhad is a large freshwater lake notable for the 
+fact that one of its islands houses the Circle Tower, where every mage in Ferelden must be educated to avoid being 
+branded an apostate. The Frostback Mountains border Ferelden to the west.
+Deep within them live the dwarves of Orzammar, which is one of the last two major dwarven cities on Thedas. 
+Beyond the Frostbacks lies the Empire of Orlais. To the south of Ferelden lie the Hinterlands and the Korcari Wilds. 
+The Hinterlands are a harsh land where the most stoic of the Fereldans live. The Korcari Wilds are dangerous lands 
+shrouded in mists and home to the Chasind, a barbaric people who didn’t join their Fereldan brethren in becoming 
+civilized. It is from the Korcari Wilds that the darkspawn are coming, and in great numbers.
+Unlike in most other lands of Thedas, Fereldan nobles aren’t seen as better than commoners. Their purpose is to 
+protect Ferelden from threats. The lands are actually owned by Fereldan freemen, who pledge their lands to partic-
+ular banns (similar to “baron”) in return for protection. Freemen may shift allegiances if and as they wish, so the 
+nobility are responsible to those they protect. Banns commonly recruit and title knights to support them. Knights 
+hold the title of “Ser,” whether male or female. Occasionally, the king appoints a noble to oversee one of the strong-
+holds on the outskirts of Ferelden. These nobles are known as arls, and their holdings as arlings.
+While the overwhelming majority of Fereldans are human men and women, there are also dwarves and elves in 
+Thedas. Most dwarves encountered above ground are either merchants or outcasts from the great dwarven cities. 
+Even dwarf merchants, who provide a much-needed service to their people, are considered low-class people among 
+their own kind.
+The elves of Thedas are a scattered and victimized race. They once lived in a realm called the Dales, west of the 
+Frostbacks, but a religious war waged by the Chantry sacked their homeland and scattered their people. Now, some 
+elves—the Dalish—live off the land as nomads while the remainder huddle as second-class citizens in the ghettoes 
+of human cities.
+The Chantry is the dominant religion of most humans in Thedas, and the state religion of Ferelden. Its followers 
+venerate a single deity called the Maker and follow the teachings of His Prophet, Andraste. 
+The Chantry licenses mages and has a martial order of templars to enforce their obedience. All mages have a 
+special connection to the Fade, an otherworldly realm where both benevolent and malevolent spirits dwell. Elves 
+and humans can see the Fade in their dreams. The Fade’s malevolent spirits—demons—sometimes possess mages’ 
+bodies to enter the material world. The Chantry claims that the Fade is the abode of the dead, although many mages 
+dispute that claim. Dwarves do not dream and cannot enter the Fade; accordingly, there are no dwarf mages.
+The Kingdom  
+of Ferelden
+Permission is Granted to PhotocoPy this PaGe for Personal use only.
+4
+
+[PÁGINA PDF 7]
+Welcome to Dragon Age !
+•	 s Peed  governs how fast your character can move. 
+The Run and Move actions (see the Actions 
+section) use Speed to determine how far you can 
+go on your turn.
+•	 d efense  is the target number (TN) that your 
+opponent needs to roll in order to hit your 
+character in battle. (More on target numbers is 
+coming soon.)
+•	
+a rmor  r atinG  measures your character’s physical 
+protection. The Armor Rating is subtracted from 
+any damage done to your character, including 
+damage from spells, unless the attack somehow 
+bypasses your armor.
+•	
+h ealth  is the amount of damage that your 
+character can take before he starts dying.
+Each character has a background, a race, and a class. 
+Each PC’s background is explained on their character 
+sheet. It describes the character’s race and upbringing. 
+One important benefit gained from a background is 
+languages. The four languages present in An Arl’s 
+Ransom include the Trade Tongue (which all characters 
+know), Ancient Tevinter (a language used primarily by 
+mages), Dwarven, and Orlesian. The last two are the 
+home tongues of dwarves and Orlesians respectively, 
+although most Orlesians use the Trade Tongue as or 
+more often than they use Orlesian, even in Orlais. In 
+Ferelden, the Trade Tongue is also called the King’s 
+Tongue.
+Each pre-generated character has two names, one male 
+and one female. Each player can choose freely which 
+gender they wish to play.
+The Dragon Age Roleplaying Game has three classes: 
+mages, rogues, and warriors. A character’s class—their 
+profession, essentially—determines their health, class 
+powers, talents, and weapon groups, all of which are 
+also explained on the character sheet.
+•	
+m a Ges  are characters schooled in the use of 
+magic. Circle Mages are members of the Circle of 
+Magi, trained at a Circle Tower and licensed to 
+practice magic. Those who practice magic outside 
+the sanction of the Circle are known as apostates, 
+and are mercilessly hunted by the templars. 
+Mages use their spells to aid the party, using 
+potent energies to blast enemies, heal allies, and 
+offer protection.
+•	
+r oGues  are those characters skilled in thievery, 
+scouting, and spying, and are generally helpful 
+in situations where a witty retort or a perceptive 
+eye is necessary, rather than a strong sword arm 
+or spell. Rogues generally wear light armor and 
+prefer weapons that rely on finesse rather than 
+brute strength. 
+Mage Warrior Rogue
+Permission is Granted to PhotocoPy this PaGe for Personal use only.
+Character Classes
+5
+
+[PÁGINA PDF 8]
+Welcome to Dragon Age !
+•	 Warriors  are characters trained in the art of battle 
+who favor power over finesse. They have the widest 
+range of weapons and armor available to them and 
+are among the first in the party to engage the enemy.
+Over time, characters can increase in level, improving 
+their abilities and gaining other benefits. The pre-gener-
+ated characters here are level 1 characters. Some of the 
+non-player characters (NPCs) in An Arl’s Ransom are 
+higher level, but the specifics are unimportant. Their 
+stat blocks accurately reflect their capabilities.
+Each class grants a character several class powers. Class 
+powers differentiate each class and define their roles. 
+A mage’s class powers grant access to magic spells, a 
+rogue’s class powers grant the ability to backstab and 
+ignore penalties for light armor, and a warrior’s class 
+powers provide better fighting capabilities.
+Characters also have talents that give them specific 
+benefits that arise through natural aptitude or special-
+ized training. You may note that talents appear to give 
+different benefits to different PCs and NPCs. That’s 
+because talents come in several grades (novice, jour -
+neyman, and master). To keep it simple, the descriptions 
+of the talents in each case have simply been adjusted.
+The pre-generated characters’ class powers and talents 
+are explained on their character sheets and stat blocks. 
+Mana points are more fully explained in the Magic 
+section.
+armor  and  sh Ields
+Armor provides an Armor Rating that is subtracted 
+from damage inflicted on the character. It also applies an 
+Armor Penalty to Speed and Defense. Shields provide a 
+bonus to Defense. Though several kinds of shields exist 
+in Dragon Age, only medium shields are present in An 
+Arl’s Ransom. If a character has the Weapon and Shield 
+Style talent, then a medium shield gives a +2 bonus to 
+Defense. Otherwise the bonus is +1. These bonuses and 
+penalties are already figured into the pre-generated 
+characters’ statistics and the NPC stat blocks in An Arl’s 
+Ransom.
+Weapons  and  Weapon  
+Groups
+A character must be familiar with a weapon’s use to 
+wield it effectively. A character can effectively use any 
+weapon that belongs to a weapon group that he knows. 
+The table shows which weapons belong to which 
+weapon groups. A character using a weapon they are 
+not trained in using suffers a –2 penalty on attack rolls 
+and inflicts only half damage. In An Arl’s Ransom, you 
+can assume each NPC can effectively use any weapon 
+listed in their stat block.
+Weapons
+WeaPon d amaGe m in . s tr c ost
+a xes  GrouP  (s trenGth )
+Battle Axe 2d6 1 14 sp
+Throwing Axe 1d6+2 1 10 sp
+Two-handed Axe 3d6 3 20 sp
+b ludGeons  GrouP  (s trenGth )
+Mace 2d6 1 12 sp
+Maul 1d6+3 1 14 sp
+Two-handed Maul 2d6+3 3 19 sp
+b oWs  GrouP  (d exterity )
+Crossbow 2d6+1 1 20 sp
+Short Bow 1d6+1 –1 9 sp
+Long Bow 1d6+3 1 15 sp
+b raWlinG  GrouP  (d exterity )
+Fist 1d3 - -
+Gauntlet 1d3+1 - 4 sp
+Improvised Weapon 1d6–1 - -
+h eavy  b lades  GrouP  (s trenGth )
+Bastard Sword 2d6+1 2 20 sp
+Long Sword 2d6 1 18 sp
+Two-handed Sword 3d6 3 23 sp
+l iGht  b lades  GrouP  (d exterity )
+Dagger 1d6+1 - 9 sp
+Short Sword 1d6+2 –1 14 sp
+Throwing Knife 1d6 - 10 sp
+s Pears  GrouP  (s trenGth )
+Spear 1d6+3 0 12 sp
+Throwing Spear 1d6+3 0 12 sp
+Two-handed Spear 2d6 1 20 sp
+s taves  GrouP  (d exterity )
+Club 1d6 - 1 sp
+Morningstar 1d6+3 1 11 sp
+Quarterstaff 1d6+1 - 3 sp
+Missile Weapon Ranges
+WeaPon
+s hort  
+r anGe
+l onG  
+r anGe
+r eload
+Crossbow 30 yards 60 yards Major Action
+Long Bow 26 yards 52 yards Minor Action
+Short Bow 16 yards 32 yards Minor Action
+Throwing Axe 4 yards 8 yards Minor Action
+Throwing Knife 6 yards 12 yards Minor Action
+Throwing Spear 8 yards 16 yards Minor Action
+6
+
+[PÁGINA PDF 9]
+Welcome to Dragon Age !
+Each weapon is described by the weapon group it 
+belongs to, the damage it inflicts, the minimum Strength 
+ability required to wield it, and its typical cost in coin.
+Missile weapons have three additional statistics: short 
+range, long range, and reload. Short range is the distance 
+in yards in which a character can fire that weapon with 
+no penalties. At distances from short range up to long 
+range, the character suffers a –2 penalty to attack rolls. 
+Shots in excess of long range aren’t possible. Reload 
+tells whether it requires a major or minor action to get 
+ready to fire or throw. (For thrown weapons, the action 
+listed is for pulling out another weapon, not retrieving 
+the original one).
+Tests
+Dragon Age uses three standard six-sided dice (3d6) for 
+tests. Two of the dice should be one color and the third 
+die a different color. The different-colored die is known 
+as the dragon die.  You’ll make tests to find out whether 
+you succeed or fail any time a chancy situation comes 
+up in the game.
+sImple  tests
+To make simple tests, which are the most common 
+kind, roll 3d6 and add the relevant ability. If you have 
+an appropriate focus for that ability, add +2 more. For 
+example, when attempting to stay in the saddle in a 
+tricky situation you roll 3d6, add your Dexterity score, 
+and add +2 if you have the Riding focus. A character 
+may only add one ability score and one focus bonus per 
+test. Always remember that you don’t need to have a 
+focus to try a test.
+Appropriate focuses for a given test are listed in paren-
+thesis after the ability the test calls for. For example, “a 
+Cunning (Navigation) test.”
+The sum of your die roll, ability, and focus are compared 
+to a target number (TN) that represents the difficulty of 
+the test. The harder it is to succeed, the higher the TN. If 
+your sum matches or beats the TN then you have won 
+the test.
+3D6 + ABILITY SCORE + FOCUS BONUS (+2)  
+VS. TARGET NUMBER 
+Sometimes the circumstances of a particular test will 
+make it easier or more difficult than normal, giving a 
+bonus or penalty to the total. Such bonuses are rarely 
+greater than +3, and penalties rarely worse than –3.
+In some cases it’s helpful to know not just whether you 
+succeed, but how well you do. The quality of a success 
+is determined by the unmodified result on the roll’s 
+Basic Test Difficulty
+t est  
+d ifficulty
+t arGet  
+n umber
+e xamPle
+Routine 7 Riding a horse at a 
+standard pace
+Easy 9 Swimming across a pond
+Average 11 Applying first aid
+Challenging 13 Climbing a brick wall in 
+the dark
+Hard 15 Convincing the town 
+guard that your 
+broadsword is no threat
+Formidable 17 Following old tracks 
+during a heavy rainstorm
+Imposing 19 Shooting an apple while 
+blindfolded
+Nigh 
+Impossible
+21 Swimming across an ocean
+Focus List
+For your reference, these are the focuses that are part of Dragon Age Set 1. Remember that having a focus is not 
+necessary to try a test, and that sometimes several focuses may apply equally well to the same test (though 
+when they do, focus bonuses never stack).
+c ommunication : Animal Handling, Bargaining, Deception, Disguise, Etiquette, Gambling, Investigation, 
+Leadership, Performance, Persuasion, and Seduction.
+c onstitution : Drinking, Rowing, Running, Stamina, and Swimming.
+c unninG : Arcane Lore, Cartography, Cultural Lore, Engineering, Evaluation, Healing, Heraldry, Historical 
+Lore, Military Lore, Musical Lore, Natural Lore, Navigation, Research, Religious Lore, and Writing.
+d exterity : Acrobatics, Bows, Brawling, Calligraphy, Initiative, Legerdemain, Light Blades, Lock Picking, 
+Riding, Staves, Stealth, and Traps.
+m aGic : Arcane Lance, Creation, Entropy, Primal, and Spirit.
+PercePtion : Empathy, Hearing, Searching, Seeing, Smelling, and Tracking.
+s trenGth : Axes, Bludgeons, Climbing, Driving, Heavy Blades, Intimidation, Jumping, Might, and Spears.
+WillPoWer : Courage, Faith, Morale, and Self-Discipline.
+7
+
+[PÁGINA PDF 10]
+Welcome to Dragon Age !
+dragon die (which, remember, is the die among your 
+three of a unique color). A dragon die’s result is never 
+important if the test is failed, however.
+For example, a character trying to blend in at an aristo-
+cratic ball must make a Communication (Etiquette) test. 
+Assuming the character succeeds at the test in the first 
+place, a dragon die result of 1 may mean that the char -
+acter barely stammers out appropriate introductions 
+and addresses, while a dragon die result of 5 or 6 might 
+mean that the character conducts himself so gracefully 
+that he impresses the hosts. In most cases the GM deter-
+mines the precise effects of the dragon die. Combat and 
+spellcasting are notable exceptions, where there are 
+more complex rules for the dragon die.
+o pposed  tests
+Sometimes you must pit your character’s ability against 
+another character’s ability. This is called an opposed 
+test. In an opposed test all sides make simple tests 
+simultaneously, but rather than comparing their results 
+to a target number, the character with the highest total 
+wins. If there’s a tie, the character with the highest 
+dragon die wins. If it’s still a tie, the highest ability 
+score wins.
+The counterparts in an opposed test sometimes use 
+different abilities. For example, a character attempting 
+to sneak past a guard rolls his Dexterity (Stealth) against 
+the guard’s Perception (Hearing).
+If one character has a particular advantage over his 
+opponent that’s not already reflected by his ability or 
+focus, those circumstances may give him a bonus or 
+penalty to his roll. Such modifiers are usually no worse 
+than –3 or better than +3.
+advanced  tests
+Sometimes a test is so complicated or time-consuming 
+that it seems inappropriate to settle it with a single test. 
+Examples might include researching esoteric facts in a 
+library, navigating a ship through a storm to a far-off 
+shore, or competing with another public speaker to win 
+a crowd’s approval. Advanced tests are used in these 
+situations.
+Advanced tests are basic or opposed tests that require a 
+series of rolls before success can be achieved. Each indi-
+vidual roll is carried out just like a basic or opposed test. 
+On a sufficient roll—one that meets the TN or exceeds 
+the opponent’s result—the result of your dragon die 
+is added to a running total. On an insufficient roll, 
+nothing is added. (Or your opponent’s running total is 
+increased, for an opposed advanced test.) Success at the 
+advanced test is achieved when the running total meets 
+or exceeds the advanced test’s success threshold.
+Importantly, each roll takes a certain amount of time—a 
+round, a minute, an hour, or any other increment—
+depending on the test, so an advanced test can be 
+used to determine how long a task takes. Sometimes 
+each roll also consumes some amount of resources. So, 
+usually, an advanced test can only be failed if time or 
+resources run out, or if—in an opposed advanced test—
+your opponent wins the test first.
+Combat
+Combat in Dragon Age is very easy to execute. An 
+order of initiative is determined once, at the beginning 
+of the fight, and then all combatants take turns in that 
+order. Each cycle of all characters taking one turn each 
+is called a round. When each round ends, a new round 
+begins, using the same initiative order.
+In ItIat Ive
+At the beginning of combat, each combatant makes 
+an initiative test using Dexterity (Initiative). This 
+is a simple test, but rather than being compared to a 
+target number, all combatants’ test results are ranked. 
+Combatants will then act in that order, with higher 
+results going before lower results. Ties are broken the 
+same way as in opposed tests.
+The GM will usually roll separately for each important 
+NPC, but roll for minor NPCs in groups who all act at 
+the same time, to keep things simple.
+act Ions
+On their turns, characters take actions. There are two 
+types of actions: major and minor.
+On any given one of their turns a character takes one 
+major action and one minor action. If the character 
+wishes, however, he may take two minor actions 
+instead. A character may also decline either or both 
+actions and do nothing.
+Battle Maps and Miniatures
+The Dragon Age RPG defaults to descriptive combat where the GM and players keep a mental picture of the 
+adventure’s evolving battlefields. If you prefer to use a battle map and miniatures, however, Dragon Age can 
+accommodate them easily. Square and hex grids work equally well. The best scale is one where each square or 
+hex is 2 yards across.
+8
+
+[PÁGINA PDF 11]
+Welcome to Dragon Age !
+The most common major and minor actions are listed 
+here. The GM can adjudicate other actions, using these 
+as a guide. Actions even less substantial than the minor 
+actions listed here are “free” actions. Examples might 
+include shouting something simple or looking around. 
+A character can take as many free actions as they wish 
+as long as the GM agrees.
+Major Actions
+m elee  a ttack : You attack an enemy within 2 yards in 
+hand-to-hand combat.
+r anGed  a ttack : You attack an enemy by firing or 
+throwing a missile weapon.
+r un : You travel up to double your Speed in yards. You 
+must be in a standing position to do this. 
+d efend : You gain a +2 bonus to your Defense until the 
+beginning of your next turn.
+h eal : You provide first aid to an injured ally. You must be 
+within 2 yards of them and have bandages ready (per the 
+ready action). Make a TN 11 Cunning (Healing) test. If 
+successful, your ally gains Health equal to your Cunning 
+plus your dragon die result; that ally can’t benefit from 
+another heal action until he takes more damage.
+Minor Actions
+r eady : You unsheathe a weapon, pull out a tool, or 
+otherwise get ready to use some stowed item on your 
+person. As part of this action, you can also put away 
+something you already had in hand.
+m ove : You travel up to your Speed in yards. If you limit 
+your travel to half your Speed you can also fall prone, 
+stand up, or mount or dismount a horse or vehicle.
+a im : You carefully plan your next strike. If your next 
+action is a melee attack or ranged attack (even on your 
+next turn), you gain a +1 bonus on that attack roll.
+a ctivate : This action is used with certain powers or 
+items whose descriptions say something like, “Use an 
+activate action to…”
+m ak In G attacks
+When attacking an enemy, you make a simple test. The 
+target number is your target’s Defense. On a success the 
+attacker inflicts damage. On a failure the attack does 
+nothing. Each pre-generated character and NPC stat 
+block has a pre-calculated attack bonus that includes 
+the appropriate ability score, focus bonus, and any 
+other bonuses that always apply. 
+Infl Ict In G d ama Ge
+Each pre-generated character and NPC stat block lists 
+the damage each of their weapons inflicts. To inflict 
+9
+
+[PÁGINA PDF 12]
+Welcome to Dragon Age !
+damage, simply make that roll and subtract the results 
+from the target’s Health. If the target has armor, though, 
+subtract their Armor Rating from the damage before 
+reducing Health, unless the damage is “penetrating” 
+damage, in which case armor is not helpful.
+When a character has Health 0, he is dying. (There is 
+no negative Health.) A dying character can talk, but 
+otherwise take no actions. Unless he receives first aid 
+to increase his Health, the character dies in a number 
+of rounds equal to 2 + his Constitution.  The GM may 
+rule that NPCs simply die when their Health reaches 
+0, rather than bothering to wait the requisite number 
+of turns. However, combatants can also always elect 
+to incapacitate rather than kill their Health 0 enemies 
+when they would otherwise inflict a killing blow.
+stunts
+Stunts are one of the most exciting aspects of the Dragon 
+Age RPG. Here’s how it works.
+Whenever you make a successful attack and also get 
+doubles on the roll, you get stunt points (SP) you can 
+use to perform stunts. “Doubles” just means that two of 
+the dice from your test show the same result. It doesn’t 
+matter if one of the dice is the dragon die or not.
+The number of stunt points you get is equal to the 
+number showing on the dragon die. You must use your 
+stunt points right away, or they’re wasted. You spend 
+stunt points on the menu of stunts shown here. You can 
+choose any combination of stunts as long as you don’t 
+spend more stunt points than you have. You can only 
+choose each stunt once per attack, though, with the 
+exception of the skirmish stunt, which can be chosen as 
+many times as you wish.
+For clarity’s sake, NPCs can perform stunts just like 
+Player Characters can.
+h ealth  and  h eal In G
+There are three ways to recover lost Health.
+The first is through the heal action, as described. The 
+second is to be the target of a Heal spell. The third is to 
+take a five-minute breather after a combat encounter. At 
+the end of the breather you recover 6 + your Constitu -
+tion in Health. But you can’t take a breather if you have 
+Health 0. (There are also long-term ways to recover 
+Health, but An Arl’s Ransom won’t last long enough to 
+worry about them.)
+Spellcasting
+Casting spells in Dragon Age is straightforward.
+A mage must know a spell (that is, have it listed on their 
+sheet or in their stat block) to use it. The mage must 
+then spend an action and expend mana points (MP) to 
+cast it. Each spell’s description lists the type of action—
+major or minor—needed to cast it.
+Once a mage has spent an action and MP to cast a spell, 
+they must make a casting test to see what happens. This 
+is a simple test whose target number depends on the 
+spell, and is listed in each case. On a failure, nothing 
+Standard Stunts
+sP c ost s tunt
+1+ s kirmish : You can move yourself or the target of your attack 2 yards in any direction for each 1 SP you spend. 
+1 r aPid  r eload : You can immediately reload a missile weapon.
+2 k nock  Prone : You knock your enemy prone. Any character making a melee attack against a prone foe gains +1 
+bonus on the attack roll.
+2 d efensive  s tance : Your attack sets you up for defense. You gain a +2 bonus to Defense until the beginning of 
+your next turn.
+2 d isarm : You attempt to disarm the target with your melee attack. You and your opponent must make an 
+opposed attack roll. These attack rolls do not generate stunt points. If you win the test, you knock your enemy’s 
+weapon 1d6 + Strength yards away in a direction you nominate.  
+2
+m iGhty  b loW : You inflict an extra 1d6 damage on your attack. 
+2 Pierce  a rmor : You find a chink in your enemy’s armor. His armor rating is halved (rounded down) vs. this attack. 
+3 l i Ghtnin G a ttack : You can make a second attack against the same enemy or a different one within range and 
+sight. You must have a loaded missile weapon to make a ranged attack. If you roll doubles on this attack roll, 
+you do not get any more stunt points. 
+4
+d ual  s trike : Your attack is so strong it affects two targets. First, pick a secondary target. He must be adjacent to you 
+if you are using a melee weapon or within 6 yards of your primary target if you are using a missile weapon. Apply 
+the test result of your original attack roll to the secondary target (in other words, you only make one attack roll and 
+apply it to both opponents). If you hit the secondary target, inflict your normal damage on him. 
+4
+s eize  the  i nitiative : Your attack changes the tempo of the battle. You move to the top of the initiative order. 
+This means you may get to take another turn before some of the combatants get to act again. You remain at the 
+top of the order until someone else seizes the initiative.
+10
+
+[PÁGINA PDF 13]
+Welcome to Dragon Age !
+Standard Spell Stunts
+sP c ost s Pell  s tunt
+1-3 Puissant  c astinG : Increase the Spellpower of your spell by 1 per stunt point spent, to a maximum of 3.
+2 s killful  c astinG : Reduce the mana cost of the spell by 1. This can reduce the mana cost to 0.
+2 m iGhty  s Pell : If the spell does damage, one target of the spell of your choice takes an extra d6 damage.
+3 m ana  s hield : You use the residual mana of the spell casting to set up a temporary protective shield. You gain a 
++2 bonus to Defense until the beginning of your next turn. 
+4 f ast  c astinG : After you resolve this spell, you can immediately cast another spell. The second spell must have a 
+casting time of a major action or a minor action. If you roll doubles on this casting roll, you do not get any more 
+stunt points.
+4 i mPosinG  s Pell : The effect of the spell is much more dramatic than usual. Until the beginning of your next turn, 
+anyone attempting to make a melee attack against you must make a successful WillPoWer  (c ouraGe ) test.  The 
+target number (TN) is 10 + your Magic ability. Those who fail must take a move or defend action instead.
+happens. On a success, the effects of the spell are carried 
+out, with one important complication: Sometimes a 
+spell’s target(s) are allowed a resistance test of some kind 
+to avoid some or all of the spell’s effects. Instructions for 
+these resistance tests are part of each spell’s description.
+Mages regain 1d6+4 MPs for each full hour they rest.
+For simplicity’s sake, assume that mages can’t cast 
+spells while wearing armor. In the full rules it’s a little 
+more complicated than that, and the NPC Hana in An 
+Arl’s Ransom is able to do it, but the drawbacks are 
+already factored into her stat block. 
+spell  stunts
+As with combat, rolling doubles when casting a spell 
+lets you perform stunts. Also as with combat, you get 
+SPs equal to the casting test’s dragon die result and can 
+only choose a given stunt once per success. The stunts 
+available when casting spells are listed here. “Spell -
+power” (a term used in the puissant casting stunt) is 
+the target number of tests to resist a spell’s effects.
+Non-Player 
+Characters
+Non-Player Characters (NPCs) use all the same rules 
+that apply to Player Character heroes, unless otherwise 
+noted.
+In An Arl’s Ransom, NPCs are described with stat 
+blocks. Combatants have longer stat blocks than NPCs 
+who aren’t likely to be involved in fights. Both types 
+have their abilities and focuses listed. Combatants also 
+have Speed, Health, Defense, Armor Rating, attack 
+statistics, and power descriptions. As well, some have 
+special stunts that only they are allowed to use.
+NPCs also have a Favored Stunts entry. These are 
+suggestions to help the GM keep things moving along 
+briskly, but the GM is free to choose other stunts.
+Further 
+Adventures 
+Await!
+Hopefully this quickstart will whet your appetite for 
+more Dragon Age.
+The best place to turn next is the boxed Dragon Age 
+Roleplaying Game Set 1. It contains everything you 
+need to run adventures for PCs of levels 1–5, including 
+the introductory adventure The Dalish Curse. 
+The Dragon Age Game Master’s Kit is a play screen 
+covered with convenient reference tables and including 
+another adventure, A Bann Too Many, which is a sequel 
+to The Dalish Curse.
+Blood in Ferelden is a supplement containing three 
+complete adventures: Amber Rage, Where Eagles Lair, 
+and A Fragile Web. It includes advice for weaving 
+together all five official adventures into a complete 
+campaign. (It’s also worth noting that some of the NPCs 
+in An Arl’s Ransom are connected to Amber Rage, as 
+well).
+The second Dragon Age boxed set, Set 2, includes rules 
+for characters of levels 6–10. It includes new back -
+grounds, rules for PC specializations, and stunts for use 
+in exploration and roleplaying encounters.
+Even more products are planned for the future. Ask 
+at your local game shop or check out the Green Ronin 
+website at greenronin.com to see what the most recent 
+releases are.
+11
+
+[PÁGINA PDF 14]
+An Arl’s Ransom
+Actions
+You can take a major action and a minor action, or two minor actions on 
+your turn. 
+MAJOR ACTIONS
+m elee  a ttack : You attack an enemy within 2 yards in hand-to-hand 
+combat.
+r anGed  a ttack : You attack an enemy by firing or throwing a missile 
+weapon.
+r un : You travel up to double your Speed in yards. You must be in a 
+standing position to do this. 
+d efend : You gain a +2 bonus to your Defense until the beginning of your 
+next turn.
+h eal : You provide first aid to an injured ally. You must be within 2 yards 
+of them and have bandages ready (per the ready action). Make a tn  11 
+c unnin G (h ealin G) test. If successful, your ally gains Health equal to your 
+Cunning plus your dragon die result; that ally can’t benefit from another 
+heal action until he takes more damage. 
+MINOR ACTIONS
+r eady : You unsheathe a weapon, pull out a tool, or otherwise get ready to 
+use some stowed item on your person. As part of this action, you can also 
+put away something you already had in hand.
+m ove : You travel up to your Speed in yards. If you limit your travel to 
+half your Speed you can also fall prone, stand up, or mount or dismount 
+a horse or vehicle.
+a im : You carefully plan your next strike. If your next action is a melee 
+attack or ranged attack (even on your next turn), you gain a +1 bonus on 
+that attack roll.
+a ctivate : This action is used with certain powers or items whose descrip-
+tions say something like, “Use an activate action to…” 
+Quick Reference Sheet: Actions and Stunts
+Standard Stunts
+When you roll doubles on a successful attack roll, you generate stunt points (SP) equal to the dragon die and can spend them to perform stunts. 
+sP c ost s tunt
+1+ s kirmish : You can move yourself or the target of your attack 2 yards in any direction for each 1 SP you spend. 
+1 r aPid  r eload : You can immediately reload a missile weapon.
+2 k nock  Prone : You knock your enemy prone. Any character making a melee attack against a prone foe gains +1 bonus on the attack roll.
+2 d efensive  s tance : Your attack sets you up for defense. You gain a +2 bonus to Defense until the beginning of your next turn.
+2 d isarm : You attempt to disarm the target with your melee attack. You and your opponent must make an opposed attack roll. These attack rolls 
+do not generate stunt points. If you win the test, you knock your enemy’s weapon 1d6 + Strength yards away in a direction you nominate.  
+2 m iGhty  b loW : You inflict an extra 1d6 damage on your attack. 
+2 Pierce  a rmor : You find a chink in your enemy’s armor. His armor rating is halved (rounded down) vs. this attack. 
+3 l iGhtninG  a ttack : You can make a second attack against the same enemy or a different one within range and sight. You must have a 
+loaded missile weapon to make a ranged attack. If you roll doubles on this attack roll, you do not get any more stunt points. 
+4 d ual  s trike : Your attack is so strong it affects two targets. First, pick a secondary target. He must be adjacent to you if you are using a 
+melee weapon or within 6 yards of your primary target if you are using a missile weapon. Apply the test result of your original attack 
+roll to the secondary target (in other words, you only make one attack roll and apply it to both opponents). If you hit the secondary 
+target, inflict your normal damage on him. 
+4
+s eize  the  i nitiative : Your attack changes the tempo of the battle. You move to the top of the initiative order. This means you may get to take 
+another turn before some of the combatants get to act again. You remain at the top of the order until someone else seizes the initiative.
+Standard Spell Stunts
+When you roll doubles on a successful casting roll, you generate stunt points (SP) equal to the dragon die and can spend them to perform spell stunts. 
+sP c ost s Pell  s tunt
+1-3 Puissant  c astinG : Increase the Spellpower of your spell by 1 per stunt point spent, to a maximum of 3.
+2 s killful  c astinG : Reduce the mana cost of the spell by 1. This can reduce the mana cost to 0.
+2 m iGhty  s Pell : If the spell does damage, one target of the spell of your choice takes an extra 1d6 damage.
+3 m ana  s hield : You use the residual mana of the spell casting to set up a temporary protective shield. You gain a +2 bonus to Defense until 
+the beginning of your next turn. 
+4 f ast  c astinG : After you resolve this spell, you can immediately cast another spell. The second spell must have a casting time of a major 
+action or a minor action. If you roll doubles on this casting roll, you do not get any more stunt points.
+4 i mPosinG  s Pell : The effect of the spell is much more dramatic than usual. Until the beginning of your next turn, anyone attempting to 
+make a melee attack against you must make a successful WillPoWer  (c ouraGe ) test.  The target number (TN) is 10 + your Magic ability. 
+Those who fail must take a move or defend action instead.
+Permission  is  Granted  to  PhotocoPy  this  PaGe  for  Personal  use  only .
+BASIC TASK FORMULA: 3D6 + ABILITY SCORE + FOCUS BONUS (+2) VS. TARGET NUMBER 
+
+[PÁGINA PDF 15]
+An Arl’s Ransom
+An Arl’s Ransom is an introductory adventure for the Dragon 
+Age Roleplaying Game. You can expect that it will take about 
+four hours. Only the Game Master should read the adven -
+ture, which contains information that will spoil your fun if 
+you intend to play a hero instead.
+Back Ground   
+and  summar Y
+In this adventure, Arl Voychek Neruda is expecting his chil -
+dren to return to their home, the fortress Stenhold, from an 
+extended visit with relatives in Denerim. Unfortunately, the 
+arling is being overrun with darkspawn and the arl needs 
+every available soldier to head south with him to stop the 
+incursion. Thus, rather than send his personal guard to 
+accompany his steward, Alenka, to meet his children at the 
+appointed location, the arl hires the Player Characters.
+Unfortunately, the steward has evil plans. She’s arranged a 
+ransom scheme with the arl’s relative, one Ser Blaker Corbin. 
+They plan to kidnap the children and force the arl to pay for 
+their release. The steward had bribed the arl’s guards to join 
+the scheme for a share of the profits, but since they’ve been 
+drafted into the expedition, the heroes are about to fall into 
+the middle of the situation.
+In addition to the steward’s machinations the journey to the 
+meeting waypoint will be treacherous, for there are dark-
+spawn abroad, and more mundane challenges as well.
+Physical challenges, moral perils, duplicitous allies… all in a 
+day’s work for Dragon Age heroes.
+usIn G the  adventure
+An Arl’s Ransom  is broken down into a series of eight 
+encounters. Each encounter is labeled as a combat encounter, 
+an exploration encounter, or a roleplaying encounter. These 
+labels let you know, broadly, what the players are expected to 
+accomplish before moving on. Each encounter is also summa-
+rized, to help you get your bearings.
+Combat encounters offer battle. The heroes are faced with 
+hostile adversaries who must likely be fought.  Exploration 
+encounters allow the PCs to interact with the environment 
+and usually involve searching for information or some hidden 
+route forward. Roleplaying encounters require the heroes to 
+interact with NPCs, often to learn information or negotiate 
+aid. Sometimes the nature of an encounter can shift due to the 
+PCs’ actions. That’s fine; the three encounter types are loose, 
+rather than definitive.
+Most encounters have blocks of shaded text. It can be read 
+aloud to the players, though it’s even better if you summarize 
+and embellish it in your own voice.
+You may wish to eliminate encounters based on how much 
+time you have to play. Encounter 5 is the easiest to cut. If you’re 
+exceedingly pressed for time, you might be able to play the 
+adventure in as little as two hours if you also skip encounter 2.
+Be  flex IBle   
+and  r espons Ive
+Ultimately, Dragon Age is a game about choices. An Arl’s 
+Ransom is built around a moral choice: will the player char-
+acters join the steward in her scheme, or remain loyal to the 
+arl who hired them? 
+Furthermore, while the adventure’s encounters follow a 
+linear progression typical of quest stories, the players may 
+make choices that seem like they should alter the encounters’ 
+order or nature. This should be encouraged rather than stifled 
+and in fact, An Arl’s Ransom takes pains to ensure that even 
+wildly unpredictable choices will still allow the heroes to play 
+through each encounter. For example, if the player characters 
+reject the steward’s offer outright and in no uncertain terms, 
+the children still need to be met, and there are still darkspawn 
+and other dangers—the steward’s allies, for one—abroad in 
+the land.
+Keep in mind that no matter what decisions the player char -
+acters make, you’ll still be able to move forward and complete 
+the adventure. 
+prolo Gue
+As you hand out the character sheets, you can make the 
+players aware that they’ll need to choose their characters’ 
+genders. You can also hand out copies of the Adventurer’s 
+Gear table and let them buy any additional gear they’d like. 
+One gold piece (gp) equals 100 silver pieces (sp) equals 10,000 
+copper pieces (cp). Gold pieces are also called “sovereigns” 
+and copper pieces “bits.”
+An Arl’s Ransom
+Adventurer ’s Gear
+Gear c ost
+Arrows (20) 2 sp
+Bolts (20) 3 sp
+Backpack 9 sp
+Candle (Pair) 5 cp
+Flask 50 cp
+Flint and Steel 10 cp
+Healer’s Kit 25 sp
+Ink (Black, one vial) 20 cp
+Lamp 2 sp
+Lantern 5 sp
+Lock Picks 12 sp
+Mountain Garb 10 sp
+Musical Instrument 10 sp
+Oil, Pint 8 cp
+Pouch (Belt) 1 sp
+Quiver 2 sp
+Rope (20 yards) 2 sp
+Spike 5 cp
+Tent, Large 35 sp
+Tent, Small 10 sp 
+Torch 10 cp
+Traveler’s Garb 15 sp
+Waterskin 40 cp
+Whetstone 10 cp
+13
+
+[PÁGINA PDF 16]
+An Arl’s Ransom
+As the players are preparing, make it known that they’ve 
+recently been hired by one of the arl’s servants for a special 
+mission. Each of the pre-generated characters has a reason 
+for seeking or accepting this kind of opportunity. The heroes 
+already know that Arl Neruda’s lands are being invaded by 
+darkspawn; some of them may suspect that their hiring may 
+be related.
+The adventure will begin as the PCs are standing in Stenhold’s 
+courtyard, awaiting the arrival of the arl’s steward. This is a 
+good time for each player to describe his character’s appear -
+ance and mannerisms to the other players. Allow the PCs to 
+converse in character for as long as it remains interesting to 
+the players. Make sure they at least learn each other’s names.
+1: an  arl ’s r equest
+ROLEPLAYING ENCOUNTER
+The PCs are brought before the arl, who wishes to hire 
+them to meet his children and escort them back to Sten-
+hold. 
+The fortress of Stenhold has seen better days. A hard 
+rain pummels the crumbling stones and thatched roofs, 
+exposing the cracks and gaps as water pours through 
+them. Soldiers drill both in the courtyard and in the 
+field outside. A few masons struggle to patch holes in 
+the wall.
+After a while, a woman appears. “I am Alenka,” she 
+says. “Follow me.” She leads you to the door to the 
+fortress’s main hall. She struggles a bit as she pushes 
+the rain-swollen door open.
+Call for a TN 9 Perception (Seeing) test. Those who succeed 
+notice the following:
+As she opens the door, Alenka doesn’t notice as a single 
+gold sovereign rolls from her pocket and into a puddle. 
+She steps inside and motions for you to follow.
+From the beginning, the characters should feel a bit 
+uncomfortable about Alenka the steward. In addition to 
+being the arl’s steward she is also a Circle Mage, on loan 
+from the Circle Tower to the arl, an arrangement possible 
+due to the arl’s political connections. She wears her Circle 
+regalia proudly, understanding that it has an intimidating 
+and unsettling effect among those around her. This effect 
+somewhat offsets her pleasing appearance and welcoming 
+demeanor, however.
+In spite of the appearance of losing it, Alenka deliberately 
+dropped the coin. It’s her first test of the PCs’ moral char -
+acter. If a PC wonders whether Alenka noticed the coin but 
+ignored it, they must make an opposed Perception (Seeing) 
+test against Alenka’s Willpower (Self-Discipline).
+Alenka says nothing if a PC pockets the sovereign. If a hero 
+presents it to her, she makes a wry comment about “honor -
+able mercenaries” and suggests that the arl has chosen well. 
+If a PC tries to read her after the coin is returned, a successful 
+opposed Perception (Empathy) test against Alenka’s Will-
+power (Self-Discipline) enables the character to realize that 
+Alenka’s a bit disappointed. 
+Once the characters enter the great hall they are introduced 
+to the arl.
+In the great hall a short, stocky man stands in the center 
+of the room, being fitted into a suit of gleaming plate 
+armor by elves with downcast eyes. He looks over in 
+irritation when you enter, then grunts in pain and spins 
+back to cuff one of the elves in the head, pinched by the 
+greave the servant was fitting. The elf sprawls.
+This must be Arl Neruda. He turns back to you.
+“Well?”
+Through your portrayal of the arl you should impress upon 
+the players that he is not a terribly sympathetic employer. He 
+cares more about protecting his land than his family, as he 
+is willing to risk their lives with mercenaries rather than a 
+proper escort.
+Once either Alenka introduces the PCs, or the heroes do it 
+themselves, the arl looks them over with a skeptical eye and 
+pronounces his judgment.
+Knife-Ears
+If you’d like to give the players a little culture shock 
+over the differences between Dragon Age and other 
+fantasy roleplaying games, sprinkle a few elves into the 
+background of the beginning of this scene. All should be 
+servants or laborers doing menial tasks such as patching 
+roofs, cleaning floors, or taking out bedpans. Their 
+human masters treat them poorly, referring to them as 
+“knife-ears.”
+14
+
+[PÁGINA PDF 17]
+An Arl’s Ransom
+“You’ll do. My children are returning from Denerim, 
+and Alenka is due to meet them. My land is being 
+encroached by darkspawn and I need every warrior I 
+have to combat the threat. You will accompany Alenka 
+and return here with her and the children. I’ll pay 50 
+silver pieces to each of you for the service of two days 
+or less. Well?”
+Given the urgency of the situation, enterprising PCs may 
+wish to negotiate a better price. This gets Alenka’s attention, 
+as those who care about making even more money are prone 
+to bribery.
+To negotiate, a PC and the arl must make opposed Commu-
+nication (Bargaining) tests . If the PC wins, then the price 
+increases by 5 sp times the hero’s dragon die result. Once the 
+negotiation is concluded, the arl returns to his map, muttering 
+something unkind.
+The PCs may also be able to negotiate supplies from the arl, 
+although he will under no circumstances allow them to take 
+his valuable horses. He gives the heroes leave to ride in the 
+children’s wagon on the way back if they’re as tender as all 
+that.
+Either Alenka or the arl can tell the PCs that the waypoint 
+is a full day’s travel from Stenhold on foot, through hilly 
+and largely unpopulated land that’s part of Neruda’s arling. 
+There is a track that they’ll be able to follow most of the way.
+If the characters ask, the arl’s children are Joseph and Hana, 
+aged 15 and 13 respectively, but the arl does not volunteer this 
+information.
+The players may ask unpredictable and detailed questions 
+about the NPCs they’ve met or might meet, about the situa-
+tion in the arling, about the lands through which they’ll be 
+traveling, and so on. Don’t fret. Invent answers that seem 
+sensible and keep the adventure moving forward.
+After the meeting is concluded Alenka leads the PCs out of 
+the great hall. Once they are outside, Lady Macia approaches 
+them.
+As you cross the courtyard away from the great hall, 
+someone walks up behind you wearing a hastily thrown-
+on cloak. She is a well-dressed middle-aged woman, 
+obviously a noble. “Please forgive my husband,” she 
+pleads. “This incursion is trying for all of us, and the arl 
+deals with worry in his own way. For my part, I thank 
+you for your help.”
+“From what I’ve been hearing the countryside is very 
+dangerous. I would die if something were to happen to 
+Joseph or Hana. Please take this a sign of a mother’s 
+gratitude.”
+Lady Macia offers a gold sovereign for the PCs to split among 
+themselves. The heroes’ reaction, again, gets Alenka’s attention, 
+especially if the PCs do not accept it. Lady Macia hurries back 
+to her rooms so as to not draw too much attention to herself.
+Alenka then leads the group out of the castle and toward the 
+forest that covers the northern part of the arl’s land.
+Arl Voychek Neruda
+Arl Voychek Neruda is an angry man whose imperious 
+personality and temper compensate for his short stature. As 
+one of the king’s few arls, Neruda feels the weight of the posi-
+tion on his shoulders, and the fact that his arling borders the 
+Korcari Wilds at the dawn of what may be a rising Blight has 
+multiplied his anxiety. Now, faced with an actual incursion, 
+Neruda has his blinders on. He is devoting all of his resources 
+to expelling the invaders before they destroy his valuable 
+Ryott?
+Ryott is a protein-rich grain highly valued throughout 
+Ferelden. It is notoriously difficult to grow and the 
+arling includes some of the few areas in southern 
+Ferelden where it thrives.
+The grain is not so much farmed as gathered, and 
+attempts to domesticate it have proven largely unsuc -
+cessful. Fereldan farmers often simply build fences 
+around existing patches.
+ARL VOYCHEK NERUDA  
+CaustiC  nobleman  with  muCh  on  his  mind .
+a bilities  (FoCuses )
+5 CommuniCation  (l eadership , p ersuasion )
+3 Constitution
+3 Cunning  (m ilitary  l ore )
+2 d exterity   
+0 m agiC
+2 p erCeption
+4 s trength  (a xes , h eavy  b lades )
+4 w illpower  (Courage )
+LADY MACIA NERUDA  
+s ober  noblewoman  and  worried  mother .
+a bilities  (FoCuses )
+3 CommuniCation  (p ersuasion )
+1 Constitution  (s tamina )
+2 Cunning  
+2 d exterity  
+0 m agiC
+3 p erCeption
+0 s trength  
+2 w illpower  
+15
+
+[PÁGINA PDF 18]
+An Arl’s Ransom
+ryott crop. He has little concern even for his own children, 
+whom he believes are safe enough in the hands of a distant 
+cousin and his steward.
+Lady Macia Neruda
+Lady Macia Neruda is the daughter of a well-respected 
+bann whose lands neighbor the arling. It was a marriage of 
+convenience, as Neruda wished to absorb the bannorn into 
+ALENKA THE STEWARD  
+h ousehold  retainer  and  turnCoat .
+a bilities  (FoCuses )
+1 CommuniCation  (e tiquette )
+0 Constitution
+4 Cunning  (a rCane  l ore )
+1 d exterity  
+4 m agiC
+1 p erCeption
+0 s trength  
+2 w illpower  
+c ombat  r atinGs
+s Peed h ealth d efense a rmor  r atinG
+11 28 11 0
+a ttacks
+WeaPon a ttack  r oll d amaGe
+a rCane  l anCe +4 1d 6+4
+Features
+f avored  s tunts : Knock Prone and Mighty Spell.
+l anGuaGes :  Ancient Tevinter, Trade Tongue
+Class  p owers
+a rcane  l ance : When holding a quarterstaff or wand, 
+you can make a special ranged attack. This is resolved 
+like a normal ranged attack (so stunts are possible) and 
+requires no mana points. It has a range of 16 yards.
+s Pells : Arcane Bolt, Drain Life, Rock Armor, and 
+Winter’s Grasp.
+m ana  Points : 25     c astinG  r oll : 3d6+
+t alents
+Chirurgy: Heal is a minor action.
+Lore: The GM grants extra information when on a 
+successful Arcane Lore test.
+WeaPon  GrouPs : Brawling and Staves.
+e quipment
+b aCkpaCk , traveler ’s  garb , waterskin , quarterstaFF , 
+wand , 2 lesser  healing  potions  (use  an  aCtivate  aCtion  
+to   reCover  2d 6 + Constitution  h ealth ), 1 lesser  
+lyrium  potion  (use  an  aCtivate  aCtion  to  reCover  1d 6 + 
+m agiC  mana  points )
+Alenka’s Spells
+Arcane Bolt
+Mana Cost: 2 MP • Action: Major • TN: 10
+A bolt of arcane energy springs from your hand or staff 
+and streaks towards a visible target within 30 yards. 
+It inflicts 2d6 damage plus your casting roll’s dragon 
+die result. But if the target makes a successful TN 14 
+Dexterity (Acrobatics) test the spell only inflicts 1d6 
+damage.
+Drain Life
+Mana Cost: 4 MP • Action: Major • TN: 12
+You suck life energy out of a visible target within 10 
+yards to heal yourself. The target takes 1d6+4 pene-
+trating damage and you are healed by the same amount. 
+But if the target makes a successful TN 14 Constitution 
+(Stamina) test the spell only inflicts 1d6 penetrating 
+damage.
+Rock Armor
+Mana Cost: 3–8 MP • TN: 10
+Action: Special (1 Minute, only outside combat) 
+Your skin becomes as hard as stone, giving you Armor 
+Rating 4. The spell normally lasts for one hour, but its 
+duration can be extended. For each additional MP spent 
+beyond the first 3, the spell remains in effect for another 
+hour, to a maximum of 6 hours. You can only cast this 
+on yourself.
+Winter’s Grasp
+Mana Cost: 3 MP • Action: Major • TN: 12
+Test: Constitution (Stamina) 
+You envelop a visible target within 20 yards of you in a 
+cloud of frost and ice that lasts up to four rounds. On the 
+turn you cast it the spell inflicts 1d6 penetrating damage. 
+Furthermore, while the spell is in effect the target must 
+make a TN 14 Constitution (Stamina) test  at the start 
+of each of his turns. If successful, the spell ends. Other -
+wise the target takes 1d6 more penetrating damage and 
+suffers a cumulative –2 penalty to Speed that lasts as 
+long as the spell does. Those killed by winter’s grasp are 
+frozen solid. This spell’s effects can’t be stacked simulta-
+neously on the same target.
+his arling. Unfortunately, Macia’s father died two years ago 
+and only her own charity and personality have kept her 
+freeholders loyal to the arl. Now, the stress is taking its toll. 
+Macia looks a bit older than her years and she is in a state of 
+constant worry.
+Alenka the Steward 
+Alenka’s family has served the arl for several generations. 
+This, and her affinity with magic, has enabled her to succeed 
+her uncle’s position as steward. Unfortunately, Alenka soon 
+16
+
+[PÁGINA PDF 19]
+An Arl’s Ransom
+learned how poorly Neruda treats those in his employ and is 
+less interested than her predecessors in putting up with it. As 
+the opportunity has presented itself for her to be free of the arl 
+and relieve him of some of his money in the process, Alenka is 
+in the process of taking it.
+2: e nd  of  the  r oad
+COMBAT ENCOUNTER
+The PCs are ambushed as they arrive at the chasm 
+where a bridge is supposed to be.
+Before you begin reading the following text, ask the players 
+to describe their traveling order and any other precautions 
+they’re observing while they travel.
+You may want to point out to any player of a mage character 
+that the beginning of the day is a good time to cast Rock 
+Armor, because given its casting time, waiting until battle 
+erupts may be too late. Alenka casts her own Rock Armor 
+spell soon after the group’s departure from Stenhold.
+As you approach a break in the trees Alenka tells you 
+that once you’ve crossed the bridge ahead there’s an 
+excellent place to stop for lunch and to rest. Once you 
+emerge from the woods, however, it’s obvious that 
+something is wrong. 
+There’s a deep chasm directly ahead of you, but no 
+bridge to be seen. Just as you notice the heavy stakes 
+to which a wooden bridge was probably once attached 
+you hear a shout, followed by a chorus of answers. 
+Suddenly a band of horrifically ugly, squat humanoids 
+with yellowish-grey skin charge out of the woods, 
+brandishing throwing axes. 
+“By the Maker!” Alenka cries. “Genlocks!”
+A band of genlocks led by a genlock alpha has sabotaged the 
+bridge in hopes of trapping travelers against the chasm and 
+slaughtering them. The heroes begin the fight 10 yards from 
+the chasm. The genlocks emerge from the trees a further 20 
+yards away from the heroes.
+There is a chance the genlocks may surprise the PCs and get a 
+free turn to act. Each PC must succeed in an opposed test of 
+Perception (Hearing or Seeing) against the regular genlocks’ 
+Dexterity (Stealth) in order to act in the first round. Just roll 
+once for all of the genlocks. Don’t use the alpha’s stats for this.
+There is one genlock per hero, plus the genlock alpha. (See page 
+18 for statistics.) Their plan is to close, hurl their throwing axes, 
+then switch to their battle axes and charge. The alpha singles 
+out the strongest-looking hero. The others try to double up on 
+weak-looking targets, especially mages, which may include 
+Alenka.
+Each time the darkspawn suffer a casualty, each survivor other 
+than the alpha must make a TN 11 Willpower (Morale) test or 
+flee the battle. The alpha never flees.
+One common genlock tactic will be to use the skirmish stunt 
+to try to push PCs off the edge and into the chasm. A char -
+acter pushed into the chasm can try a TN 13 Dexterity (Acro-
+batics) test  to grab hold of a root or rock. On a failure the 
+character takes 1d6 penetrating damage and falls for another 
+round, sliding down the rocky wall of the chasm. On each of 
+the falling character’s subsequent turns they can try another 
+test, but the TN increases by +2 each time. This goes on for 
+four rounds before the character hits bottom, where another 
+6d6 penetrating damage are likely to end the suffering.
+A character who halts their fall can climb back up with a TN 13 
+Strength (Climbing) test. Although only one test is required, 
+it takes twice as many rounds to climb as were spent falling.
+3. cross In G the  chasm
+EXPLORATION ENCOUNTER
+The PCs must figure out how to cross the chasm where 
+the bridge has been destroyed.
+With the genlocks defeated, you return your attention 
+to the missing bridge. Alenka shakes her head. “We 
+need to cross here somehow. It’ll many hours—that we 
+don’t have—to reach the next crossing to the west, or 
+circle the lake to the east.” 
+The chasm is 12 yards across. How do you plan to 
+bridge the gap?
+This encounter is designed to get the players to use their 
+problem-solving abilities.
+Twelve yards is too far for nearly anyone to jump across, 
+although the PCs are welcome to give it a try with a TN 21 
+Strength (Jumping) test . (The real-world record for long 
+jumping stands at just under 10 yards.) Of course, a hero 
+who tries the jump has to land somewhere. Crashing into the 
+chasm’s far wall at speed causes 1d6+3 penetrating damage. 
+Grabbing onto a root or rock on the chasm’s far face takes 
+a TN 13 Dexterity (Acrobatics) test. With that done, it takes 
+a TN 13 Strength (Climbing) test  to climb up. Failure at 
+Dexterity (Acrobatics) sees the character fall into the chasm 
+as described in the previous scene.
+Climbing down the gulf and then back up the other side is 
+possible. It requires an advanced TN 13 Strength (Climbing) 
+test with a success threshold of 10 to climb down the near side, 
+and a similar test with a success threshold of 15 to climb back up 
+the other side. Each test takes just a minute or so, but a climbing 
+failure results in the character falling from the halfway point, 
+as described in the previous scene. A character may spend an 
+exhaustive amount of time preparing ropes for safety to reduce 
+the TNs of the Strength (Climbing) tests to TN 11, but then 
+each test takes 10 minutes and sorely tries Alenka’s patience.
+A character who makes it to the other side with a rope by 
+whatever method can tether it to a large rock or one of the 
+bridge posts. Unless the character has about 100 feet of 
+Covering Ground
+Keep in mind that a combatant’s Speed statistic is not 
+the limit of the number of yards they can move in a 
+round. The Run major action allows a character to move 
+twice their Speed, and the Move minor action allows a 
+character to move yards equal to their Speed. A char-
+acter who does both in a turn can cover a number of 
+yards equal to three times their base Speed stat.
+17
+
+[PÁGINA PDF 20]
+An Arl’s Ransom
+GENLOCK ALPHA  DARKSPAWN  
+a bilities  (FoCuses )
+0 CommuniCation  (l eadership )
+3 Constitution  (r unning )
+1 Cunning  (m ilitary  l ore )
+2 d exterity  (b rawling )
+2 m agiC
+2 p erCeption  (s eeing , s melling )
+4 s trength  (a xes , i ntimidation )
+2 w illpower
+c ombat  r atinGs
+s Peed h ealth d efense a rmor  r atinG
+6 40 11 (13 with  s hield ) 7
+a ttacks
+WeaPon a ttack  r oll d amaGe
+b attle  a xe +6 2d 6+4
+t hrowing  a xe +6 1d 6+4
+Features
+f avored  s tunts : Cripple (see below) and Dual Strike.
+c riPPle : A genlock alpha can make a crippling attack as 
+a special stunt for 3 SP. The target suffers a –2 penalty 
+to attack tests and damage, and has their Speed halved. 
+The penalty to attack tests and damage expires after three 
+rounds, but the movement penalty persists until the target 
+is able to take a breather.
+m aGic  r esistance : A genlock alpha gains a +2 bonus on 
+tests to resist spells.
+t actical  s kirmish : A genlock alpha can move a genlock 
+under its command 2 yards using a skirmish stunt 
+(in addition to being able to move itself or its target as 
+normal).
+t alents
+a rmor  t raininG : The genlock alpha can wear leather, 
+mail, or plate armor without a penalty to Dexterity 
+(already figured into its stats).
+Wea Pon  and  s hield  s tyle : The genlock alpha gets the full 
+Defense bonus when using a shield (already figured into its 
+stats), and can perform the defensive stance stunt for 1 SP.
+WeaPon  GrouPs : Axes, Brawling, and Bludgeons.
+e quipment
+b attle  axe , heavy  mail , medium  shield , and  throwing  
+axe .
+GENLOCK  DARKSPAWN
+a bilities  (FoCuses )
+0 CommuniCation
+2 Constitution  (r unning )
+1 Cunning  (m ilitary  l ore )
+1 d exterity  (b rawling )
+2 m agiC
+2 p erCeption  (s melling )
+3 s trength  (a xes , i ntimidation )
+2 w illpower
+c ombat  r atinGs
+s Peed h ealth d efense a rmor  r atinG
+7 22 11 (13 with  s hield ) 5
+a ttacks
+WeaPon a ttack  r oll d amaGe
+b attle  a xe +5 2d 6+3
+t hrowing  a xe +5 1d 6+5
+Features
+f avored  s tunts : Knock Prone and Mighty Blow.
+m a Gic  r esistance : A genlock gets a +2 bonus on ability 
+tests to resist the effects of spells and other magical attacks. 
+t alents
+a rmor  t raininG : The genlocks can wear leather, mail, 
+or plate armor without a penalty their Dexterity (already 
+figured into their stats).
+Wea Pon  and  s hield  s tyle : The genlocks get the full 
+Defense bonus when using a shield (already figured into 
+their stats).
+WeaPon  GrouPs : Axes, Brawling, and Bludgeons.
+e quipment
+b attle  axe , light  mail , medium  shield , and   
+throwing  axe .
+18
+
+[PÁGINA PDF 21]
+An Arl’s Ransom
+rope he won’t be able to tie it to a tree. A TN 9 Cunning (Engi-
+neering or Military Lore) test is necessary to properly tie the 
+rope. If the rope is not properly tied then the first person to 
+try and cross it falls into the chasm per the earlier rules for 
+that misfortune.
+Crossing the chasm on a rope rigging requires a TN 11 
+Dexterity (Acrobatics) test.
+Another way to cross the chasm is to cut down a tree and posi-
+tion it across the chasm. Selecting an appropriate tree requires 
+a TN 11 Cunning (Natural Lore) test . Failing at this test can 
+result in anything from a deadly fall during the crossing to 
+simply wasted time, at your discretion. To prepare the tree 
+requires a TN 11 Dexterity (Crafting) test. Failure at this test 
+makes the eventual crossing more difficult. Finally, one or 
+more of the characters must either cut down the tree so that it 
+falls to create a bridge or somehow move the chosen trunk to 
+the edge and get it to lay across the gulf. This requires a TN 
+13 Cunning (Engineering) test  or TN 15 Strength (Might) 
+test. In the latter case, each character who helps adds a +1 to 
+the primary test-taker’s roll. On a failure at either strategy, the 
+tree is lost into the ravine.
+With a trunk is place, crossing requires a TN 11 Dexterity 
+(Acrobatics) test, or a TN 13 test  if the Dexterity (Crafting) 
+test was failed.
+Adjudicate other, less obvious strategies as best you can. 
+Remember: Be responsive and flexible!
+4: WIshful  th Ink In G
+ROLEPLAYING ENCOUNTER
+Alenka offers the PCs a chance to make more money.
+The road on the other side of the missing bridge cuts 
+through rockier, hilly terrain. Alenka leads you to a 
+defensible location just off the road and suggests eating 
+a quick meal to keep your strength up. She suggests that 
+someone keep watch, and that someone else may wish 
+to go hunting, as there is a small grove not far from the 
+trail. What do you decide to do?
+Alenka has decided that the time has come to ask the PCs to 
+join her scheme of kidnapping the children. She’s opting for 
+a “divide and conquer” approach, using what she’s learned 
+from their actions in the first encounter to make her pitch 
+to greedy, less moral PCs and out of earshot of any upright, 
+honest PCs, but she realizes that eventually all of them will 
+learn of her plan. She hopes that those who want to join her 
+will help deal with those who won’t.
+After the PCs split up, Alenka approaches the most sympa-
+thetic hero(es):
+“You’re definitely not getting paid enough to risk your 
+life fighting the likes of genlocks.” Alenka shakes the 
+sand from a boot. “You could probably earn a fifty-coin 
+payment in gold sovereigns—one hundred times what 
+you’ll make otherwise—if the children were held and 
+ransomed, instead of escorted back to Stenhold.”
+Alenka pauses here to assess the characters’ reactions. Make 
+sure the players understand the magnitude of wealth Alenka 
+is talking about: one gold sovereign is worth 100 silver coins, 
+and 50 sovereigns would be enough to buy three dozen good 
+riding horses or a Denerim townhouse outright. A PC could 
+live on that sum for years; it’s more money than most Ferel -
+dans will see in their lifetimes.
+If the heroes balk then Alenka laughs, passing the thought off 
+as nothing, and leaves to work on another character. If they 
+seem keen on the idea of ransom, she continues, earnestly:
+“Blaker is the children’s escort back from Denerim. 
+I know for a fact that he has some debts in need of 
+settling. He could easily be talked into ransoming the 
+whelps providing that his share covers his debts. What 
+do you think? Is it worth the risk?”
+What Alenka is failing to mention is that she is already in 
+league with Ser Blaker and he expects her to arrive with 
+accomplices in tow. PCs that suspect Alenka of not telling 
+the whole truth can confirm it with an opposed Perception 
+(Empathy) test against Alenka’s Communication (Decep-
+tion). If pressed, she admits that she already has an agree-
+ment with Ser Blaker. They’ll hold the children for 500 sover-
+eigns.
+If the characters seem cautiously receptive or at least willing 
+to listen, then Alenka continues:
+“If things go well, the children won’t even know what’s 
+happening. When we meet I’ll tell them that there’s been 
+a darkspawn incursion and it’s too dangerous for them 
+to return home. I’ll say that the arl has tasked me with 
+imploring Ser Blaker to keep them for a bit longer. In 
+the meantime, we return to the Stenhold with a ransom 
+note. Neruda pays the money, we all get richer, and his 
+children are returned unharmed.
+“You’ve met the man. You’ve seen how he treats those 
+around him. What harm is there to spread his wealth 
+around a little? You’ll take your share, won’t you?”
+If any PCs seem worried about the potential for retaliation, 
+Alenka suggests that Neruda’s attention and resources will be 
+too tied up with fighting the darkspawn to come after them 
+with strength or numbers. She thinks he’ll pay them off just to 
+be done with the problem.
+Alenka’s Distraction
+PCs who decide to hunt or forage at Alenka’s sugges -
+tion can choose from a variety of focuses: A TN 9 
+Cunning (Natural Lore) test  can be used to identify 
+appropriate types of plants and animals that may be 
+found here. A TN 11 Perception (Searching) test can 
+be used to find the plants available in the grove. A  
+TN 11 Perception (Tracking) test can reveal a suit -
+able animal to shoot with a bow or crossbow and a TN 
+11 Dexterity (Stealth) test can prevent it from bolting 
+while the hunter aims. A TN 11 Dexterity (Traps) test  
+allows a character to trap small game.
+19
+
+[PÁGINA PDF 22]
+An Arl’s Ransom
+If the PCs opt to join Alenka then she eagerly leads them 
+to the waypoint. If they reject her offer then she reluctantly 
+sighs. She has pre-arranged a code word with Ser Blaker to 
+signal that the ransom scheme is off and that he should just 
+hand the children over for return to the arl.
+If Alenka senses that some of the PCs will join her while 
+others won’t, she’ll try to arrange the deaths of intransigent 
+PCs—they now know enough to threaten her plan. She may 
+do this directly, by inciting the other PCs to help her kill them, 
+or she may arrange for “accidents.”
+It’s also entirely possible that the PCs turn against Alenka and 
+either subdue or kill her. Even so, the adventure continues, as 
+the children must still be met and returned to Stenhold.
+5: str Ike  after  d usk
+COMBAT ENCOUNTER
+The PCs are attacked by blight owls hunting for food.
+You follow the road into a lightly wooded area as 
+the sun sets. Alenka tells you that the waypoint isn’t 
+far now. As darkness sets over the land, you begin to 
+hear the sounds of night. Crickets chirp, beasts scurry 
+through the brush, and hooting owls can be heard in the 
+distance. The hooting gets louder as you venture into 
+the woods.
+Characters making a TN 11 Perception (Seeing) test notice 
+an extremely large owl (or two, if there are four or more PCs) 
+with blood red eyes flying towards them. The blight owl is 
+hungry and looking for food. It hopes to kill a character and 
+drive off the rest so that it can feast on the fresh corpse. This 
+is an excellent opportunity for Alenka to dispose of “trouble-
+some” PCs.
+Blight owls use special flying rules; see Flying Combatants. The 
+blight owls begin the encounter flying high. Thus, they can dive 
+and attack in the first round of combat.
+Blight owls are relatively small enemies. Attack rolls against 
+them suffer a –1 penalty.
+The dark of night also causes a –1 penalty to relevant tests like 
+Perception (Seeing) tests and ranged attacks.
+A character who flees the road to take cover in the trees and 
+shrubs imposes a –1 penalty to all of the tests made by any 
+blight owl that gives chase. A fleeing hero who makes a TN 13 
+Perception (Seeing) test spies an especially good bit of cover 
+that increases this penalty to either –2 or –3, for dragon die 
+results of 1–4 and 5–6, respectively.
+Blight Owl
+A blight owl is an owl, the size of a bulldog, which has been 
+tainted and warped by the Blight. It has black feathers, large 
+blood red eyes, and a toothy beak segmented into four parts.
+Flying Combatants
+Flying combatants have the same complement of actions as 
+other combatants. In addition to the regular menu of major 
+and minor actions, flying combatants have a few extra action 
+options. They also have a restriction: When in flight, on each 
+of their turns, they must perform one circle, fly, dive, or fly 
+high action, or else plummet to the ground. Perhaps obvi -
+BLIGHT OWL
+a bilities  (FoCuses )
+–1 CommuniCation  
+0 Constitution  
+–1 Cunning  
+7 d exterity  (b ite )
+0 m agiC
+3 p erCeption  (s eeing )
+6 s trength  (t alon )
+3 w illpower  
+c ombat  r atinGs
+s Peed h ealth d efense a rmor  r atinG
+19 (22 Flying ) 40 17 1
+a ttacks
+WeaPon a ttack  r oll d amaGe
+b ite +6 2d 6+6
+t alon +7 1d 6+6
+Features
+f avored  s tunts : Mighty Blow.
+f liGht : Blight Owls have a flight speed of 22.
+20
+
+[PÁGINA PDF 23]
+An Arl’s Ransom
+ously, a flying combatant cannot choose the move or run 
+actions while flying.
+The following action descriptions are customized for blight 
+owls, the only flying combatants in An Arl’s Ransom.
+MINOR ACTIONS
+c ircle : The blight owl circles above the battlefield, moving 22 
+lateral yards. Ranged attacks from the ground add 20 yards 
+to the horizontal distance from the shooter to the target to 
+represent the owl’s altitude. A blight owl must start its turn 
+in flight to circle.
+f ly : The blight owl flies just above the ground, moving 22 
+lateral yards. The blight owl can make melee attacks from 
+this height, and receives a +1 bonus to do so. The blight 
+owl’s enemies can also make melee attacks against it, on their 
+own turns. A blight owl can land at the end of a fly action if 
+it wishes, or take off at the beginning of one. A prone blight 
+owl cannot fly until it takes a move action to stand up first, 
+however.
+MAJOR ACTIONS
+d ive : A blight owl can only dive if it used a circle or fly high 
+action on its last turn. A blight owl that was circling can move 
+22 lateral yards and make a melee attack against an opponent 
+on the ground. A blight owl that was flying high can move 44 
+lateral yards and make a melee attack against an opponent on 
+the ground. In either case the attack can take place at any point 
+in the blight owl’s movement and receives +1 bonus on both 
+the attack roll and damage roll. At the end of the dive the blight 
+owl is just a few yards off the ground, as if it had taken the fly 
+action. It is thus subject to the melee attacks of any earth-bound 
+opponents who can reach the location where it ends its dive.
+f ly  h i Gh : The blight owl moves 22 lateral yards while climbing 
+far above the battlefield. While flying high, the blight owl can 
+neither attack nor be attacked. A blight owl can only fly high if it 
+used a circle action on its last turn. 
+6: Wa Ypo Int  m assacre
+EXPLORATION ENCOUNTER
+The PCs arrive at the waypoint and find evidence of 
+battle. Worse, the children are missing.
+As you approach the waypoint you can see the light of 
+a dying campfire ahead. At first you are relieved, as Ser 
+Blaker and the children must be waiting for you ahead. 
+But as you draw closer, you realize something is wrong.
+First you notice a distinct lack of the noises of camp. 
+Then you see the wagon, lying on its side, one of its 
+wheels sheared off. And then you see the bodies…
+What now?
+A quick scan of the immediate area turns up the bodies of half 
+a dozen horses, three Fereldan guardsmen, two blight wolves, 
+two genlocks, and a hurlock. They’re scattered; clearly a battle 
+was fought here, and not long ago. One of the blight wolves 
+came to rest in the campfire, its smoldering fur sending up 
+an awful reek. There is no sign of Ser Blaker or either of the 
+children among the dead.
+Nightfall has brought with it a –1 penalty to sight-based tests 
+like Perception (Searching, Seeing, and Tracking).
+A more thorough search of the site’s surroundings requires 
+a TN 13 Perception (Searching) test. Success turns up two 
+more dead guards, three more dead genlocks, and two more 
+dead blight wolves, but still no sign of Blaker or the children.
+A search for tracks requires a TN 13 Perception (Tracking) 
+test and turns up the running footprints of six bipeds. A 
+dragon die result of 4 or better confirms that at least one of the 
+children was among them. A dragon die result of 6 confirms 
+that both were. These tracks lead toward what the PCs can tell 
+is higher ground, perhaps a quarter-mile away.
+A search of the wagon requires a TN 15 Perception 
+(Searching) test. Success turns up a locked strongbox that a 
+good shake reveals is full of coin. Picking the lock takes a few 
+minutes and a TN 15 Dexterity (Lock Picking) test. Inside are 
+a single gold sovereign and 80 silver pieces, what’s left of the 
+children’s funds. Alenka makes no comment if the heroes loot 
+the strongbox.
+Do your best to convey a sense of urgency in this scene. Before 
+the heroes have had a chance to do everything they wish to 
+do, they hear a chilling scream pierce the night air; move on 
+to the next encounter.
+7: Bes Ie Ged !
+COMBAT ENCOUNTER
+The PCs find the remainder of Ser Blaker’s party fending 
+for their lives against a superior force.
+Rushing in the direction of the scream, you emerge from 
+a thicket of trees. 
+You’re halfway up a steep hillside. Ahead, you see an 
+outcropping of rock just a bit higher than you are on the 
+hillside, at the top of a switchback trail but on the other 
+side of a treacherous-looking, washed-out gorge.
+There’s a leather-armored Fereldan on the outcrop -
+ping, in cover, a crossbow in his hands. On the trail 
+below him are the bodies of more fallen guardsmen, 
+more genlocks, more blight wolves.
+At the bottom of the trail you see a knot of dark -
+spawn in cover, but as you watch they emerge as one 
+and charge howling up the trail. One falls, a crossbow 
+bolt in his eye, but the others surge on.
+You might be able to beat them to the defenders, but 
+the gorge in your way looks treacherous.
+Roll for initiative!
+Obviously, this is where Ser Blaker, the Neruda children 
+Hana and Joseph, and Ser Blaker’s last remaining guard Ser 
+Bridget are holed up. These four are in a defensible position, 
+an outcropping ringed by rock. The small area has a narrow 
+entrance, wide enough for only one combatant at a time, but 
+no overhead cover.
+Any PC who asks can count one hurlock (see page 23) and 
+three genlocks (see page 18) still living, charging up the 
+switchback trail. A PC who asks about their equipment notices 
+that these genlocks are better armored than those they fought 
+at the gorge. Although the hurlock is injured, the surviving 
+genlocks are fresh combatants.
+21
+
+[PÁGINA PDF 24]
+An Arl’s Ransom
+Any action spent moving across the gorge requires a TN 13 
+Strength (Climbing) or Dexterity (Acrobatics) test . Success 
+allows full movement. Failure halves movement from that 
+action and deals 1d6 penetrating damage in cuts, bruises, 
+twisted ankles, and the like. The heroes can avoid this test by 
+descending the hill and running around to the base of the trail, 
+but it takes them much longer to unite with the defenders by 
+taking this long way around.
+Any action spent charging straight up the hill (as opposed 
+to using the trail) requires a TN 11 Strength (Climbing)  or 
+Dexterity (Acrobatics) test. Success allows full movement. 
+Failure halves movement. The darkspawn were intending 
+to use the trail until the heroes showed up. How their plan 
+changes—if it does—depends on what the PCs do.
+Characters who make it to the other side of the gorge—
+whether they cross it or go around—can make TN 13 Percep -
+tion (Seeing) tests. On success, they notice a pair of blight 
+wolves (see page 23) prowling the hillside above the defenders’ 
+position, unnoticed, preparing an ambush. They spring down 
+to attack in the round after the heroes notice them, or fail to, 
+attacking the children from surprise. However, if you judge 
+that the heroes spent too much time investigating the camp-
+site, or were insufficiently hurried in running toward the 
+scream they heard in the previous encounter, advance the 
+Fighting Against Yourself
+If you wish, you can delegate tactical decision-making responsibility for Alenka, Ser Blaker, and Ser Bridget to one or 
+more players during the Besieged encounter. (You should reserve Joseph and Hana, though.) This can give the players 
+a chance to try out a few different powers and be more even more engaged in the combat. It will also save you some 
+work in rolling dice on both sides of the fights that are likely to arise between these NPCs and their darkspawn enemies.
+If you turn control of these NPCs over to the players, keep the NPCs’ ultimate aims outside the immediate combat in 
+the back of your mind. If any of the players make decisions for these NPCs that aren’t in keeping with their long-term 
+goals, you’re within your rights to overrule them.
+22
+
+[PÁGINA PDF 25]
+An Arl’s Ransom
+BLIGHT WOLF
+a bilities  (FoCuses )
+0 CommuniCation
+3 Constitution  (r unning )
+–2 Cunning
+2 d exterity  (b ite , s tealth )
+0 m agiC
+3 p erCeption  (h earing , s melling )
+2 s trength  (Jumping )
+1 w illpower
+c ombat  r atinGs
+s Peed h ealth d efense a rmor  r atinG
+14 25 12 3
+a ttacks
+WeaPon a ttack  r oll d amaGe
+b ite +4 1d 6+4
+p owers
+f avored  s tunts : Knock Prone and Lightning Attack.
+t ouGh  h ide : The bony spines of a blight wolf give the 
+creature an AR of 3.
+HURLOCK  DARKSPAWN
+a bilities  (FoCuses )
+0 CommuniCation
+3 Constitution  (s tamina )
+1 Cunning  
+2 d exterity  (b rawling )
+1 m agiC
+2 p erCeption  (s melling )
+4 s trength  (h eavy  b lades , i ntimidation )
+3 w illpower  (Courage , m orale )
+c ombat  r atinGs
+s Peed h ealth d efense a rmor  r atinG
+10 30 (24 leFt ) 12 5
+a ttacks
+WeaPon a ttack  r oll d amaGe
+s hort  b ow +2 1d 6+5
+t wo -handed  s word +6 3d 6+4
+p owers
+b erserk  s trike : A hurlock can perform the Dual Strike 
+stunt for 3 SP instead of the usual 4 when wielding a 
+melee weapon. 
+f avored  s tunts : Dual Strike and Mighty Blow.
+t alents
+a rmor  t raininG : The hurlock can wear leather, mail, 
+or plate armor without a penalty to Dexterity (already 
+figured into its stats).
+t Wo -h ander  s tyle : When the hurlock hits with a melee 
+attack when using a two-handed weapon, it can shove its 
+target 2 yards in any direction.
+Wea Pon  and  s hield  s tyle : The hurlock gets the full Defense 
+bonus when using a shield (already figured into its stats).
+WeaPon  GrouPs : Bows, Brawling, and Heavy Blades.
+e quipment
+l ight  mail , short  bow , and  two -handed  sword .
+blight wolves’ timeline and announce that they spring their 
+attack from above in the same round that the heroes arrive 
+on the scene.
+The hurlock’s and genlocks’ plan is simple: to slay the 
+defenders. Once it becomes clear that there are new enemies, 
+they do their best to fight both groups of foes, although it 
+occurs to them that if they can take the defensible position 
+they’ll have a better chance against the PCs.
+The defenders’ plan is very simple: to survive.
+Combatants fighting enemies who are on higher ground suffer 
+a –1 penalty to their attack rolls. Those who fight enemies on 
+lower ground gain a +1 bonus. As in the previous scenes that 
+take place after dark, sight-based Perception tests, and ranged 
+attacks, suffer a –1 penalty.
+23
+
+[PÁGINA PDF 26]
+An Arl’s Ransom
+HANA NERUDA  
+b ookish  daughter  and  budding  mage .
+a bilities  (FoCuses )
+0 CommuniCation  
+1 Constitution  (s tamina )
+0 Cunning  
+0 d exterity  
+3 m agiC
+1 p erCeption
+–1 s trength  
+0 w illpower  
+c ombat  r atinGs
+s Peed h ealth d efense a rmor  r atinG
+11 21 (11 leFt ) 10 3
+a ttacks
+WeaPon a ttack  r oll d amaGe
+s hort  s word +0 1d 6+1
+d agger +0 1d 6
+Features
+f avored  s tunts : Defensive Stance.
+l anGuaGes : Trade Tongue.
+WeaPon  GrouPs : Brawling and Staves.
+s Pells : Mind Blast.
+m ana  Points : 6 (3 remaining)     c astinG  r oll : 3d6+2
+e quipment
+b aCkpaCk , traveler ’s  garb , waterskin , light  leather  
+armor , short  sword , and  dagger .
+Hana’s Spell
+Mind Blast
+Mana Cost: 3 MP • Action: Major • TN: 12
+You create a circular blast of telekinetic force with a 
+2-yard radius centered on a point within 50 yards that 
+you can see. Anyone caught in the blast is knocked 
+prone and cannot take a major action on their next 
+turn, unless they make a TN 12 Strength (Might) test,  
+in which case they are only knocked prone.
+If Hana casts her spell again she collapses into unconscious -
+ness, exhausted. Her nose and ears bleed from using this 
+magic without training, but she’ll recover with a good night’s 
+sleep.
+These enemies fight until slain, or until they are victorious.
+Hana Neruda
+Hana has always been an odd duck, bookish and aloof. 
+Recently, Hana was accosted by some rough boys and 
+her magical power manifested—she used a mind blast to 
+knock them prone and run away. Alenka has warned the arl 
+repeatedly of the dangers of not taking Hana to the Circle 
+for training now that this power has manifested, but the arl 
+still has fantasies of marrying his daughter off first, and has 
+instructed Alenka that she is not to breathe a word of his 
+daughter’s abilities to anyone.
+Joseph Neruda
+Joseph is a young lad of 13 who’s fiercely protective of his 
+sister. He’s training to be a warrior, but thus far has only 
+learned the rudimentary skills of brawling and using light 
+weapons.
+Ser Blaker Corbin
+Ser Blaker was once Bann Corbin, but mismanagement of his 
+lands led to his freeholders electing the protection of others. 
+He’s since settled in a townhome in Denerim where he 
+spends his time socializing and gambling. He’s accumulated 
+much debt. He and Alenka have been lovers, but both realize 
+that the ransom means they’ll have to part ways, which hurts 
+Alenka more than it does Blaker.
+JOSEPH NERUDA  
+s Cion  oF  the  n eruda  bloodline .
+a bilities  (FoCuses )
+0 CommuniCation  
+1 Constitution  (s tamina )
+0 Cunning  
+1 d exterity  
+0 m agiC
+1 p erCeption
+0 s trength  
+0 w illpower  
+c ombat  r atinGs
+s Peed h ealth d efense a rmor  r atinG
+11 21 (16 leFt ) 11 3
+a ttacks
+WeaPon a ttack  r oll d amaGe
+s hort  s word +1 1d 6+2
+d agger +1 1d 6+1
+Features
+f avored  s tunts : Skirmish.
+l anGuaGes : Trade Tongue.
+WeaPon  GrouPs : Brawling and Light Blades.
+e quipment
+b aCkpaCk , traveler ’s  garb , waterskin , light  leather  
+armor , short  sword , and  dagger .
+24
+
+[PÁGINA PDF 27]
+An Arl’s Ransom
+Ser Bridget
+Ser Bridget is a strong woman with a face chiseled from 
+granite. She’s served Ser Blaker loyally throughout the years, 
+even in the toughest times. She’s also honorable and will have 
+no part in kidnapping the children—and in fact, will fight to 
+the death against it—once the plan becomes clear. 
+SER BLAKER CORBIN  
+b laCkguard , sCoundrel , and  Conspirator .
+a bilities  (FoCuses )
+3 CommuniCation  (l eadership )
+0 Constitution  (s tamina )
+1 Cunning  
+3 d exterity  (b ows , r iding )
+0 m agiC
+3 p erCeption
+2 s trength  
+1 w illpower  
+c ombat  r atinGs
+s Peed h ealth d efense a rmor  r atinG
+13 33 (27 leFt ) 13 4
+a ttacks
+WeaPon a ttack  r oll d amaGe
+Crossbow +5 2d 6+4
+m orningstar +3 1d 6+5
+d agger +3 1d 6+3
+Features
+f avored  s tunts : Disarm and Pierce Armor.
+l anGuaGes : Trade Tongue.
+Class  p owers
+b ackstab : Blaker inflicts extra damage with a melee 
+attack if he strikes from an unexpected direction. He 
+must approach his target with a move action and win 
+an opposed test of his Dexterity vs. the target’s 
+Perception (Seeing). If he does both he can use his major 
+action this turn to backstab. This is a melee attack with a +2 
+bonus to the attack roll that inflicts +1d6 extra damage. He 
+can’t backstab the same target in successive rounds. 
+r oGue ’s  a rmor : Blaker ignores penalties for wearing 
+leather armor (already figured into his stats).
+s tunt  b onus : The Pierce Armor stunt only costs Blaker 
+1 SP.
+t alents
+d ual  WeaPon  s tyle : When wielding two weapons, 
+Blaker can use an activate action to gain either a +1 bonus 
+to melee attacks or a +1 bonus to Defense against melee 
+attacks. The bonus persists until the end of combat. Blaker 
+can switch the bonus with another activate action.
+s coutinG : Blaker can re-roll a failed Dexterity (Stealth) 
+test, but must keep the second roll.
+Wea Pon  Grou Ps : Bows, Brawling, Light Blades, and Staves
+e quipment
+b aCkpaCk , traveler ’s  garb , waterskin , heavy  leather  
+armor , Four  daggers , morningstar , Crossbow , and  
+quiver  with  20 bolts  (11 remaining ).
+SER BRIDGET  
+h onorable  knight -proteCtor .
+a bilities  (FoCuses )
+1 CommuniCation  
+2 Constitution
+0 Cunning  
+2 d exterity  
+0 m agiC
+1 p erCeption
+5 s trength  (h eavy  b lades )
+1 w illpower  (Courage )
+c ombat  r atinGs
+s Peed h ealth d efense a rmor  r atinG
+5 42 (18 leFt ) 12 (14 with   
+s hield )
+7
+a ttacks
+WeaPon a ttack  r oll d amaGe
+b astard  s word +7 2d 6+6
+d agger +2 1d 6+6
+s pear +5 1d 6+8
+Features
+f avored  s tunts : Pierce Armor and Lightning Attack.
+l anGuaGes : Trade Tongue.
+t alents
+a rmor  t raininG : Bridget can wear leather or mail armor 
+without suffering a penalty to Dexterity (already figured 
+into her stats).
+d ual  Wea Pon  s tyle : When wielding two weapons, 
+Bridget can use an activate action to gain either a +1 
+bonus to melee attacks or a +1 bonus to Defense against 
+melee attacks. The bonus persists until the end of 
+combat. She can switch the bonus with another activate 
+action.
+WeaPon  and  s hield  s tyle : Bridget gets the full Defense 
+bonus when using a shield (already figured into her stats).
+WeaPon  GrouPs : Brawling, Heavy Blades, Light Blades, 
+and Spears.
+e quipment
+b aCkpaCk , traveler ’s  garb , waterskin , heavy  mail , 
+medium  shield , bastard  sword , dagger , and  spear .
+25
+
+[PÁGINA PDF 28]
+An Arl’s Ransom
+8: the  fInal  cho Ice
+ROLEPLAYING ENCOUNTER
+The PCs choose between honor and profit.
+The dust has cleared. The darkspawn are dead. Your 
+wounds are bandaged. After taking a breather, it’s time 
+to leave this place.
+What happens in this last scene of An Arl’s Ransom depends 
+in great measure on whether either or both of Alenka and Ser 
+Blaker survive, and whether Alenka was able to persuade any 
+of the heroes to join her in the kidnapping plot.
+You know what all of the characters want; what remains is to 
+play out their attempts to secure their desires.
+If you need to get roleplaying and other post-battle activities 
+moving, Ser Bridget insists on a proper burial for the bodies at 
+the campsite, and suggests that the heroes join her in digging 
+graves. If it becomes relevant, the damaged wagon can be 
+roughly repaired with a TN 11 Dexterity (Crafting) test  and 
+the investment of a half-hour or so.
+If the PCs wait for the plotters to make the first move, Ser 
+Blaker stiltedly asks Alenka how the journey went. Alenka 
+responds by saying, “We encountered much resistance; it is 
+simply too dangerous to return.”  Opposed Communica-
+tion (Empathy) tests against the plotters’ Communication 
+(Deception) can alert the heroes that the pair are exchanging 
+some kind of code.
+After their exchange, Ser Blaker insists that the children return 
+to Denerim with him until Arl Neruda can get the region 
+under control. Alenka replies that she’ll return to Stenhold 
+and inform the arl. The children—shaken by the fight—seem 
+quite happy to avoid additional dangers.
+Of course, if Bridget is dead and all of the heroes have joined 
+the plotters, their discussions can be more frank, although it 
+would probably be wise to hide their true plans from the chil-
+dren.
+Alenka plans to tell the arl that she and Ser Blaker were 
+ambushed by brigands who kidnapped the children. She has 
+instructions (she’ll say) on how to pay the brigands’ ransom 
+and get the children back. Should the PCs join the plotters, 
+they are to accompany Ser Blaker and the children. The plan 
+works—Neruda pays the ransom at his wife’s insistence and 
+the heroes (well, “heroes,”) are paid.
+Should it come to a fight, Alenka and Blaker go down 
+fighting, though not stupidly. They’ll take any chance they 
+can to strike from surprise, use duplicity, take the children 
+hostage, or anything else they can think of. Call for opposed 
+tests involving their Communication (Deception), Dexterity 
+(Stealth), and the like as appropriate.
+Ser Bridget turns against Blaker if he turns to open dishonor, 
+as well as against any PCs who do the same.
+In whatever case, the heroes’ further travels—whether to 
+Stenhold or Denerim—are uneventful.
+e pIlo Gue
+Whatever the heroes choose, they are paid—either a ransom 
+or their hard-won wage. The parsimonious arl offers no addi-
+tional payment even to heroes who have obviously gone 
+above and beyond. As far as he’s concerned they’ve done 
+exactly what they were hired to do and there’s no reason they 
+should be paid more than they were promised.
+An Arls’s Ransom can serve as a springboard into other 
+published Dragon Age adventures. Should you wish to play 
+through The Dalish Curse  next, the characters are hired by 
+a merchant to protect a cargo of ryott he’s planning to sell in 
+Denerim, and the town of Vintiver lies along the route. Or, if 
+you wish to play Amber Rage, the first adventure in Blood in 
+Ferelden, the village of Sothmere is in the southwest of Neru-
+da’s arling.
+If you continue playing with these PCs, the consequences 
+of their actions in An Arl’s Ransom should benefit or haunt 
+them. If they returned the children they gain a grateful and 
+powerful ally in Lady Macia. If they participated in the 
+kidnapping, they find themselves stalked by bounty hunters, 
+since the arl believes that the “money-hungry mercenaries” 
+he hired were the culprits in the ransom scheme—a belief that 
+both Alenka and Ser Blaker encourage.
+Moral choices and their consequences… Welcome to Dragon 
+Age!
+Permission  is  Granted  to  PhotocoPy  this  PaGe  for  Personal  use  only .
+26
+
+[PÁGINA PDF 29]
+Appearance
+Weapon/ DamageAttack Roll
+Weapon Groups & Notes
+Talents & Languages
+Class Powers, Talents & Spells
+Speed Armor healthDefense
+Armor Type
+Communication
+Focuses
+Rating
+Experience PointsClass
+Level
+Height
+Weight
+Name
+Background
+Age Gender
+Willpower
+Focuses
+Rating
+Constitution
+Focuses
+Rating
+Cunning
+Focuses
+Rating
+Dexterity
+Focuses
+Rating
+Magic
+Focuses
+Rating
+Perception
+Focuses
+Rating
+Strength
+Focuses
+Rating
+ap
+distinguishing
+features
+MANA
++/-
+Background: You are a recent graduate of the Circle Tower. For reasons unknown 
+to you—probably political—you’ve been given an unusual dispensation to travel 
+on your own to deliver a message on the Circle’s business. You made good time on 
+your outbound trip and have an extra week before you’re expected back. You heard 
+you could make a respectable wage for just two days’ work at Stenhold, so you took 
+a few hours’ detour to go there. You’re always on the lookout for a few more coins 
+to line your purse.
+Take a moment to customize your character’s age, gender, height, weight, and 
+distinguishing features.
+Class Power - Arcane Lance: When holding a quarterstaff or wand, 
+you can make a special ranged attack. This is resolved like a normal 
+ranged attack (so stunts are possible) and requires no mana points. It 
+has a range of 16 yards.
+Class Power - Spells: Arcane Bolt, Heal, Rock Armor
+Languages: Ancient Tevinter and Trade Tongue.
+Talent - Chirurgy: Heal is a minor action.
+Weapon Groups: Brawling and Staves.
+Mana Points: 18     Casting Roll: 3d6+4
+Equipment: Backpack, traveler’s garb, waterskin, healer’s kit, quarterstaff, 
+wand, and 34 silver pieces.
+Spell - Arcane Bolt - Mana Cost: 2 MP• Action: Major • TN: 10
+A bolt of arcane energy springs from your hand or staff and streaks towards 
+a visible target within 30 yards. It inflicts 2d6 damage plus your casting roll’s 
+dragon die result. But if the target makes a successful TN 14 Dexterity (Acro-
+batics) test the spell only inflicts 1d6 damage.
+Spell - Heal - Mana Cost: 1–3 MP • Action: Major • TN: 10
+Your touch seals wounds and restores vigor to one wounded target, either 
+yourself or someone you touch. Choose how many MP to spend when 
+casting; heal 1d6 Health per MP spent.
+Spell: Rock Armor - Mana Cost: 3–8 MP • Action: Special (1 Minute, only 
+outside combat) • TN: 10
+Your skin becomes as hard as stone, giving you Armor Rating 4. The spell 
+normally lasts for one hour, but its duration can be extended. For each addi -
+tional MP spent beyond the first 3, the spell remains in effect for another hour, 
+to a maximum of 6 hours. You can only cast this on yourself.
+18
+11
+0
+3
+1
+4
+1
+0
+2
+11 0 24
+1
+Arcane Lore, Religious Lore
+Mage
+ Arcane Lance  +4 1d6+4
+ Quarterstaff +1 1d6+1
+Human Circle Mage
+Wallace (m) or Wanda (f)
+1
+None
+Permission  is  Granted  to  PhotocoPy  this  PaGe  for  Personal  use  only .
+
+[PÁGINA PDF 30]
+Appearance
+Weapon/ DamageAttack Roll
+Weapon Groups & Notes
+Talents & Languages
+Class Powers, Talents & Spells
+Speed Armor healthDefense
+Armor Type
+Communication
+Focuses
+Rating
+Experience PointsClass
+Level
+Height
+Weight
+Name
+Background
+Age Gender
+Willpower
+Focuses
+Rating
+Constitution
+Focuses
+Rating
+Cunning
+Focuses
+Rating
+Dexterity
+Focuses
+Rating
+Magic
+Focuses
+Rating
+Perception
+Focuses
+Rating
+Strength
+Focuses
+Rating
+ap
+distinguishing
+features
+MANA
++/-
+Languages: Trade Tongue.
+Class Power - Backstab: You inflict extra damage with a melee 
+attack if you strike from an unexpected direction. You must approach 
+your target with a move action and win an opposed test of your Dexterity 
+vs. your target’s Perception (Seeing). If you do both you can use your major 
+action this turn to backstab. This is a melee attack with a +2 bonus to the 
+attack roll that inflicts +1d6 extra damage. You can’t backstab the same target 
+in successive rounds. 
+Class Power - Rogue’s Armor: Ignore penalties for wearing leather armor 
+(already figured into your stats).
+Talent - Contacts: You can attempt to make a contact out of an NPC with a 
+TN 13 Communication (Persuasion) test. A contact is always friendly to you, 
+but won’t go out of the way to help you without additional motivation. 
+Weapon Groups: Bows, Brawling, Light Blades, and Staves.
+Equipment: Backpack, traveler’s garb, waterskin, heavy leather armor, 
+longbow, quiver with 20 arrows, short sword, dagger, and 37 silver pieces.
+Background: You are a skilled craftsman who’s just finished your apprenticeship. 
+Striking out on your own, you’ve recently discovered that what people want and 
+what they are willing to pay are two different things. You came to Stenhold because 
+you heard that the arl was mobilizing and figured you might be able to make a 
+better wage from someone in a pinch, but it turns out that the arl’s a stingy louse, 
+paying even worse than most. While you’re here, though, you’ve learned of another 
+opportunity to make some fast money for just a bit of work in the arl’s service. It’s 
+not your regular line of business, but coin’s coin.
+Take a moment to customize your character’s age, gender, height, weight, and distin-
+guishing features.
+14
+1
+1
+4
+0
+2
+1
+0
+14 4 30
+2Persuasion
+Crafting
+Smithing
+*Short Range: 26 yards,     Long Range: 52 yards,     Reload: Minor Action)
+ Longbow* +4 1d6+5
+ Short Sword  +4 1d6+3
+ Dagger +4 1d6+2
+Fereldan Craftsman
+Clayton (m) or Clayre (f)
+Rogue 1
+n/a
+Heavy Leather
+Permission is Granted to PhotocoPy this PaGe for Personal use only.
+Permission  is  Granted  to  PhotocoPy  this  PaGe  for  Personal  use  only .
+
+[PÁGINA PDF 31]
+Permission is Granted to PhotocoPy this PaGe for Personal use only.
+Appearance
+Weapon/ DamageAttack Roll
+Weapon Groups & Notes
+Talents & Languages
+Class Powers, Talents & Spells
+Speed Armor healthDefense
+Armor Type
+Communication
+Focuses
+Rating
+Experience PointsClass
+Level
+Height
+Weight
+Name
+Background
+Age Gender
+Willpower
+Focuses
+Rating
+Constitution
+Focuses
+Rating
+Cunning
+Focuses
+Rating
+Dexterity
+Focuses
+Rating
+Magic
+Focuses
+Rating
+Perception
+Focuses
+Rating
+Strength
+Focuses
+Rating
+ap
+distinguishing
+features
+MANA
++/-
+Background: You come from the most powerful and cultured nation in Thedas. 
+Unfortunately, a “misunderstanding” between you and your lover’s aggrieved 
+spouse has led you to seek refuge in the rough-and-tumble realm of Ferelden. You 
+attempted to lick your wounds in Denerim, the most “civilized” city in this nation 
+of barbarians, but unfortunately your Orlesian enemy has a number of merchant 
+friends there. Now you’re roaming the countryside, wooing and thieving your way 
+through farmhouses as a means of survival. Your travels have brought you to Sten -
+hold, where you’ve discovered an opportunity to earn some quick silver.
+Take a moment to customize your character’s age, gender, height, weight, and distin-
+guishing features.
+Languages: Orlesian and Trade Tongue.
+Class Power - Backstab: You inflict extra damage with a melee attack 
+if you strike from an unexpected direction. You must approach your 
+target with a move action and win an opposed test of your Dexterity vs. your 
+target’s Perception (Seeing). If you do both you can use your major action this 
+turn to backstab. This is a melee attack with a +2 bonus to the attack roll that 
+inflicts +1d6 extra damage. You can’t backstab the same target in successive 
+rounds. 
+Class Power - Rogue’s Armor: Ignore penalties for wearing leather armor 
+(already figured into your stats).
+Talent - Thievery: If you fail a Dexterity (Lock Picking) test you can re-roll, 
+but you must keep the second result.
+Weapon Groups: Bows, Brawling, Light Blades, and Staves.
+Equipment: Backpack, traveler’s garb, waterskin, heavy leather armor, 
+crossbow, quiver with 20 bolts, short sword, throwing knife, and 22 silver 
+pieces.
+13
+1
+1
+3
+0
+2
+2
+0
+13 4 30
+3
+n/a
+Rogue
+Deception, Persuasion
+ Crossbow* +3 2d6+3
+ Short Sword  +3 1d6+4
+ Throwing Knife** +3 1d6+2
+*Short Range: 30 yards,  Long Range: 60 yards,  Reload: Major Action
+**Short Range: 4 yards,  Long Range: 8 yards,  Reload: Minor Action)
+Orlesian Exile
+Xavier (m) or Xavia (f)
+1
+Heavy Leather
+Permission  is  Granted  to  PhotocoPy  this  PaGe  for  Personal  use  only .
+
+[PÁGINA PDF 32]
+Appearance
+Weapon/ DamageAttack Roll
+Weapon Groups & Notes
+Talents & Languages
+Class Powers, Talents & Spells
+Speed Armor healthDefense
+Armor Type
+Communication
+Focuses
+Rating
+Experience PointsClass
+Level
+Height
+Weight
+Name
+Background
+Age Gender
+Willpower
+Focuses
+Rating
+Constitution
+Focuses
+Rating
+Cunning
+Focuses
+Rating
+Dexterity
+Focuses
+Rating
+Magic
+Focuses
+Rating
+Perception
+Focuses
+Rating
+Strength
+Focuses
+Rating
+ap
+distinguishing
+features
+MANA
++/-
+Background: You are a sell-sword, a mercenary who offers martial skill to those who 
+need it and are willing to pay. You hope to be knighted and own land someday, but 
+for now you simply want to build your reputation and fill your coffers. Upon hearing 
+that the arl is preparing for war against the darkspawn, you’ve come to Stenhold 
+to offer your services. You met his steward, Alenka, upon your arrival and she’s 
+offering you a quick way to raise some coin before you join the arl’s army.
+Take a moment to customize your character’s age, gender, height, weight, and distin-
+guishing features.
+Languages: Trade Tongue.
+Talent - Archery Style: When you take the aim action with a bow or 
+crossbow, you get a +2 bonus instead of the usual +1.
+Talent - Armor Training:  You can wear leather or mail armor without 
+suffering a penalty to Dexterity (already figured into your stats).
+Talent - Weapon and Shield Style: You get the full Defense bonus when using 
+a shield (already figured into your stats).
+Weapon Groups: Bows, Brawling, Heavy Blades, and Light Blades.
+Equipment: Backpack, traveler’s garb, waterskin, heavy mail armor, 
+crossbow, quiver with 20 bolts, bastard sword, dagger, medium shield, and 
+16 silver pieces.
+0
+3
+0
+2
+0
+1
+3
+2
+14* 7 37
+1
+*12 without 
+your shield
+n/a
+Warrior
+*Short Range: 30 yards,     Long Range: 60 yards,     Reload: Major Action)
+ Crossbow* +2 2d6+2
+ Bastard Sword  +3 2d6+4
+ Dagger +2 1d6+4
+Fereldan Freeman
+Davies (m) or Davne (f)
+1
+Stamina
+Riding
+Heavy Mail
+Permission is Granted to PhotocoPy this PaGe for Personal use only.
+Permission  is  Granted  to  PhotocoPy  this  PaGe  for  Personal  use  only .
+
+[PÁGINA PDF 33]
+Permission is Granted to PhotocoPy this PaGe for Personal use only.
+Appearance
+Weapon/ DamageAttack Roll
+Weapon Groups & Notes
+Talents & Languages
+Class Powers, Talents & Spells
+Speed Armor healthDefense
+Armor Type
+Communication
+Focuses
+Rating
+Experience PointsClass
+Level
+Height
+Weight
+Name
+Background
+Age Gender
+Willpower
+Focuses
+Rating
+Constitution
+Focuses
+Rating
+Cunning
+Focuses
+Rating
+Dexterity
+Focuses
+Rating
+Magic
+Focuses
+Rating
+Perception
+Focuses
+Rating
+Strength
+Focuses
+Rating
+ap
+distinguishing
+features
+MANA
++/-
+Background: You are a merchant, trading goods mined and forged in Orzammar 
+to the people of Ferelden. It’s been a long time since you’ve trod the caverns of your 
+homeland, and frankly, you have no desire to return to them. While your people 
+need the contracts you negotiate with the humans, they place you in the lowest caste 
+of dwarf society. You’ve recently come to Stenhold to renegotiate a ryott contract. 
+Unfortunately, the arl’s wholly occupied with his mobilization and won’t spare five 
+minutes—much less five days—to negotiate. You’ve learned of a way to earn a few 
+silvers by taking on another job for him in the meantime. No sense doing—and 
+earning—nothing while you wait for him.
+Take a moment to customize your character’s age, gender, height, weight, and distin-
+guishing features.
+Languages: Dwarven and Trade Tongue.
+Talent - Armor Training: You can wear leather or mail armor without 
+suffering a penalty to Dexterity (already figured into your stats).
+Talent - Dual Weapon Style: When you wielding two weapons, you can use 
+an activate action to gain either a +1 bonus to melee attacks or a +1 bonus to 
+Defense against melee attacks. The bonus persists until the end of combat. 
+You can switch the bonus with another activate action. (Your battle axe is a 
+one-handed weapon.)
+Talent - Two-Hander Style:  When you hit with a melee attack when using 
+a two-handed weapon, you can shove your target 2 yards in any direction.
+Weapon Groups: Axes, Bludgeons, Brawling, and Spears.
+Equipment: Backpack, traveler’s garb, waterskin, light mail armor, battle axe, 
+mace, two-handed spear, and 41 silver pieces.
+8
+3
+0
+2
+0
+1
+3
+1
+12 5 37
+2
+n/a
+Warrior
+ Battle axe  +5* 2d6+3
+ Mace +3 2d6+3
+ Two-Handed Spear +3 2d6+2
+*Includes Focus Bonus
+Bargaining
+Axes
+Surface Dwarf
+Djuric (m) or Duska (f)
+1
+Light Mail
+Permission  is  Granted  to  PhotocoPy  this  PaGe  for  Personal  use  only .
+
+[PÁGINA PDF 34]
+Based on the hit 
+Dragon Age series of 
+computer games, the 
+Dragon Age Roleplaying 
+Game brings the 
+excitement of BioWare’s 
+rich fantasy world to the 
+tabletop. This classic-
+style boxed set includes 
+a Player’s Guide, GM’s Guide, 
+poster map of Ferelden, and three 6-sided dice. 
+ALL FOR THE LOW PRICE OF $29.95!
+Available
+now!
+A NEW AGE OF 
+FANTASY ROLEPLAYING 
+HAS BEGUN! 
+
+[PÁGINA PDF 35]
+The Dragon Age  
+Game Master’s Kit
+The Game Master’s Kit is here to make your job as a 
+Dragon Age GM easier. This handy accessory features a 
+three-panel hardback screen that puts all the essential 
+game info right in front you. It also includes a 32-page 
+adventure by Jeff Tidball, A Bann Too Many, that can serve 
+as an introduction to the game or as a follow-up to the 
+adventure in the boxed set. With the Game Master’s Kit and 
+Set 1 of the Dragon Age RPG, you’ll be ready to kickstart 
+your dark fantasy campaign.
+Hardcover GM Screen and 32-page Booklet 
+GRR2802     MSRP $17.95 
+ISBN 10: 1-934547-32-8     ISBN 13: 978-1-934547-32-8
+Blood In Ferelden
+Adventures are the heart of any roleplaying game but GMs on the go 
+don’t always have time to create their own. Blood in Ferelden contains 
+three full-length adventures for the Dragon Age RPG, as well as three 
+adventure outlines whose bare bones can be fleshed out for even more 
+action. The player characters will visit savage borderlands like the 
+Korcari Wilds and Frostback Mountains, as well as facing foes of a 
+different sort in Ferelden’s capital of Denerim. The adventures in Blood in 
+Ferelden are suitable for characters of level 1-5 and add a wealth of detail 
+to any Dragon Age campaign. But be warned: There will be blood!
+128 page black and white softcover       GRR2803     MSRP $17.95 
+ISBN 10: 1-934547-33-6     ISBN 13: 978-1-934547-33-5
+Dragon Age Set 2
+The Dragon Age RPG has been called the best introduction to RPGs in 
+30 years. Set 1 put adventurers on their path and covered characters of 
+level 1 to 5. Now Set 2 brings them to the next stage of their journey, 
+providing everything needed to play characters of level 6 to 10. Its 
+many highlights include rules for playing the legendary Grey Wardens, 
+the introduction of roleplaying and exploration stunts, nearly 40 new 
+spells, expanded world info and character backgrounds, and the 
+addition of specializations like arcane warrior, berserker, and assassin.
+Dragon Age RPG Set 2 is a boxed set containing two beautiful full color 
+books (an 80-page Player’s Guide and an 80-page Game Master’s Guide), 
+two different heavy reference cards (with multiple copies of each to 
+share around the table), and a poster map of the world of Thedas 
+depicting Orlais, Rivain, and everything in between.
+Return to Ferelden and face the Blight in Dragon Age Set 2!
+Boxed Set: Two 80 page books,  
+Stunt & Spellcasting Reference Cards, Poster Map
+GRR2804     MSRP $39.95 
+ISBN 10: 1-934547-44-1    ISBN 13: 978-1-934547-44-1

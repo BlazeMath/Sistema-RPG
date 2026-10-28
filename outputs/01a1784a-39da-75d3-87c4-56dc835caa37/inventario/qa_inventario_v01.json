@@ -1,0 +1,18 @@
+{
+  "itens_classificados": 170,
+  "categorias_170": {
+    "Armamento": 65,
+    "Vestido": 16,
+    "Consumível especial": 38,
+    "Suprimento de viagem": 2,
+    "Ferramenta": 13,
+    "Acessório": 19,
+    "Repertório": 17
+  },
+  "exemplos_conferidos": 15,
+  "casos_que_cabem": 7,
+  "casos_com_excesso": 8,
+  "sem_limite_alternativo_por_bolsa": true,
+  "catalogo_preservado": true,
+  "status": "Proposta para revisão; sem alteração do manual ou dos PDFs"
+}

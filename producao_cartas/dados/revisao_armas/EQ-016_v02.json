@@ -1,0 +1,19 @@
+{
+  "id": "EQ-016",
+  "nome": "Maça-Estrela",
+  "arquivo": "artes/revisadas/EQ-016_v02.png",
+  "origem": "C:/Users/Gamer/.codex/generated_images/01a1784a-39da-75d3-87c4-56dc835caa37/exec-503a8225-4c79-48ac-9b47-edbbe7f7cf8e.png",
+  "substitui": "artes/lote/EQ-016_v01.png",
+  "dimensoes": [
+    1061,
+    1483
+  ],
+  "modo": "RGBA",
+  "alpha": [
+    0,
+    255
+  ],
+  "sha256": "aadd63d32f57cc87c483c3de24fb74c72038121c1da67942cda2df0f8e319cc4",
+  "status": "conferida_visual",
+  "rotacao_diagramacao_graus": 30
+}

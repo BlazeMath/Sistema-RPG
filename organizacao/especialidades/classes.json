@@ -1,0 +1,370 @@
+{
+  "especialidade": "classes",
+  "atualizado_em": "2026-10-27",
+  "titulo": "Classes, Heróis e Origens",
+  "thread_id": "01a17d39-9806-7153-9510-d82d1e7aaeea",
+  "escopo": [
+    "Identidade e funções das cinco classes",
+    "Estratégias, cartas de habilidade, meia cartas, XP, Fadiga, tags e sinergias",
+    "Heróis, raças e backgrounds ligados à construção de personagem",
+    "Progressão e equilíbrio entre builds em diálogo com Regras"
+  ],
+  "fontes": [
+    "Habilidades_Cartas.pdf",
+    "Herois_Cartas.pdf",
+    "Racas_Backgrounds_Cartas.pdf",
+    "SISTEMA_21_Estado_do_Projeto.md",
+    "classes/dados/ajustes_cartas_v01.json",
+    "classes/dados/bruxo/conceito_v02.json",
+    "classes/dados/bruxo/conceito_v03.json",
+    "classes/dados/bruxo/pacto_fenix_v01.json",
+    "classes/dados/bruxo/regras_propostas_lote_v01.json",
+    "classes/dados/bruxo/novos_pactos_v01.json",
+    "classes/dados/bruxo/habilidades_gerais_v01.json"
+  ],
+  "pontos_de_atencao": [
+    "Estrutura de referência: 3 estratégias de 3 cartas + 6 meia cartas + 2 metades de herói + 3 cartas de 2 XP. Não forçar exceções existentes a caber sem revisão.",
+    "As meia cartas dos PDFs custam 1/2 XP; não apagar esse custo por um resumo genérico de 1, 2 e 3 XP.",
+    "Clérigo tem Saltério de Cura mencionado no resumo, mas ausente das oito primeiras páginas de habilidades. Confirmar fonte antes de tratar a lista como completa.",
+    "Crítico de O Feérico ainda cita carta com efeito no cemitério, incompatível com o baralho atual.",
+    "Manual ainda cita Momentum e resumo alerta sobre limiares antigos de Mentira.",
+    "Mira aparece como regra geral no resumo e como habilidade em Tiro Certeiro. O histórico digital diz qualquer ataque; confirmar o âmbito antes de universalizar na mesa.",
+    "Guerreiro melhor no combate direto; Ladino melhor na interação, Caçador segundo em natureza.",
+    "Revisar conexões de Foco, Sombra, Mira, Conjuração, recuperação e geração de ações, preservando recursos limitados."
+  ],
+  "decisoes_novas": [
+    {
+      "data": "2026-10-27",
+      "origem": "Resposta do autor à revisão v01",
+      "tema": "Virar cartas",
+      "estado": "aprovado",
+      "texto": "Normalmente virar uma carta custa uma ação. Quando a habilidade manda virar, a virada faz parte de sua resolução e não custa uma ação adicional. Limite de Fadiga zero não impede a virada."
+    },
+    {
+      "data": "2026-10-27",
+      "origem": "Resposta do autor à revisão v01",
+      "tema": "Magia versus habilidade",
+      "estado": "aprovado",
+      "texto": "Cajado do Condutor reduz somente custos de magias. Água Benta é uma habilidade, não uma magia; não recebe essa redução. O cenário de repetição ilimitada da revisão v01 não se aplica a essa combinação."
+    },
+    {
+      "data": "2026-10-27",
+      "origem": "Resposta do autor à revisão v01",
+      "tema": "Sinergias específicas",
+      "estado": "manter_conforme_autor",
+      "texto": "Habilidades podem ter relação específica com backgrounds, itens e outras partes do jogo. Manter os requisitos de Soldado."
+    },
+    {
+      "data": "2026-10-27",
+      "origem": "Resposta do autor à revisão v01",
+      "tema": "Sombra e Ataque Furtivo",
+      "estado": "manter_conforme_autor",
+      "texto": "Sombra simula furtividade e pode ser trocada por dano; manter Ataque Furtivo sem adicionar outra exigência de vantagem ou estado Oculto."
+    },
+    {
+      "data": "2026-10-27",
+      "origem": "Resposta do autor à revisão v01",
+      "tema": "Lâmina na Manga / Nunca Visto / Bote Fatal",
+      "estado": "manter_conforme_autor",
+      "texto": "Manter o crescimento por Sombra e a geração de Nunca Visto. Bote Fatal recebe apenas a correção de aplicação no acerto. Observação documental: Lâmina na Manga está marcada como 1 XP no PDF, e Nunca Visto/Bote Fatal como 2 XP; nenhum custo de XP foi alterado."
+    },
+    {
+      "data": "2026-10-27",
+      "origem": "Resposta do autor à revisão v01",
+      "tema": "Assalto do Gatuno",
+      "estado": "manter_conforme_autor",
+      "texto": "Resolver a habilidade em sequência: conceder Foco quando sua condição for satisfeita, depois realizar o teste de Ladinagem contra Percepção. Roubo/desarme exige o sucesso desse teste. Não acrescentar um requisito de Oculto/Caído ao teste."
+    },
+    {
+      "data": "2026-10-27",
+      "origem": "Resposta do autor à revisão v01",
+      "tema": "Ficha de Reação",
+      "estado": "aprovado",
+      "texto": "Roubo Arcano requer deliberadamente uma ficha de Reação fornecida por outra classe ou carta de herói. Não substituir pelo uso da reação normal."
+    },
+    {
+      "data": "2026-10-27",
+      "origem": "Resposta do autor à revisão v01",
+      "tema": "Remover uma ficha",
+      "estado": "aprovado",
+      "texto": "Quando um efeito permite remover uma ficha sem especificar tipo, ele abrange qualquer tipo, inclusive Fadiga e persistentes. Manter as condições de alvo e quantidade da própria habilidade."
+    },
+    {
+      "data": "2026-10-27",
+      "origem": "Resposta do autor à revisão v01",
+      "tema": "Zona da Penitência / Terra do Louvor",
+      "estado": "manter_conforme_autor",
+      "texto": "O dano da divindade será especificado na carta da divindade. Manter os dois lados como estão; não reformular Terra do Louvor por ser bônus genérico."
+    },
+    {
+      "data": "2026-10-27",
+      "origem": "Resposta do autor à revisão v01",
+      "tema": "Benção dos Salmos",
+      "estado": "manter_conforme_autor",
+      "texto": "Manter números e custo de XP. A carta é menos focada que Toque Restaurador e justifica a escolha pela versatilidade das três modalidades."
+    },
+    {
+      "data": "2026-10-27",
+      "origem": "Resposta do autor à revisão v01",
+      "tema": "Foco Mortal / Folha de Carvalho",
+      "estado": "esclarecimento_de_fonte",
+      "texto": "São metades de herói, não faces do arquivo de habilidades. Foco Mortal está na página 1 e Folha de Carvalho na página 2 de Herois_Cartas.pdf. Sem alterações solicitadas nesses heróis."
+    },
+    {
+      "data": "2026-10-27",
+      "origem": "Resposta do autor à revisão v01",
+      "tema": "Mago e demais sugestões",
+      "estado": "nao_decidido_nesta_rodada",
+      "texto": "Não aplicar outras sugestões da revisão v01 sem pedido. Não interpretar o silêncio sobre a revisão do Mago como aprovação."
+    },
+    {
+      "data": "2026-10-27",
+      "origem": "Resposta do autor: Faltou o mago",
+      "tema": "Custo mínimo das magias",
+      "estado": "aprovado",
+      "texto": "O custo de Fadiga de uma magia não pode ser reduzido a menos de 1, mesmo por reduções combinadas. Não aplicar essa regra como custo automático de habilidades que não são magias. Conjuração Perfeita foi adequada a esse mínimo, mantendo os demais custos da magia."
+    },
+    {
+      "data": "2026-10-27",
+      "origem": "Resposta do autor: Faltou o mago",
+      "tema": "Mana Densa",
+      "estado": "aprovado",
+      "texto": "A anulação depende de vencer um teste contestado. Manter o descarte de uma carta."
+    },
+    {
+      "data": "2026-10-27",
+      "origem": "Resposta do autor: Faltou o mago",
+      "tema": "Mente Afiada / De Volta ao Básico",
+      "estado": "manter_e_observar_em_playtest",
+      "texto": "Manter as duas habilidades como estão. Observar seu desempenho nos testes de jogo; isso não constitui pedido de automação ou monitoramento recorrente."
+    },
+    {
+      "data": "2026-10-27",
+      "origem": "Resposta do autor: Faltou o mago",
+      "tema": "Elementos do Mago",
+      "estado": "manter_conforme_autor",
+      "texto": "Manter Água, Terra, Sombra e os demais elementos com seus efeitos atuais. Não implementar a reformulação de identidade sugerida na revisão v01."
+    },
+    {
+      "data": "2026-10-27",
+      "origem": "Resposta do autor: Faltou o mago",
+      "tema": "Servo Sombrio",
+      "estado": "aprovado",
+      "texto": "O controle depende de vencer um teste contestado. Preservar os demais custos e o requisito de uma ficha de Medo."
+    },
+    {
+      "data": "2026-10-27",
+      "origem": "Resposta do autor: Faltou o mago",
+      "tema": "Controlador do Arcano / Devorador de Grimórios",
+      "estado": "esclarecimento_de_fonte",
+      "texto": "São metades de herói do Mago, ambas na página 2 de Herois_Cartas.pdf: MGMMR-H1 e MGMMR-H2. Não ficam em Habilidades_Cartas.pdf. Não foram modificadas nesta rodada."
+    },
+    {
+      "data": "2026-10-27",
+      "origem": "Resposta do autor: Faltou o mago",
+      "tema": "Atributos dos testes contestados",
+      "estado": "criterio_editorial_explicito",
+      "texto": "O autor pediu testes contestados sem indicar os atributos. Na redação, Mana Densa usa Raciocínio contra Sabedoria do conjurador, por analogia com Contramagia; Servo Sombrio usa Raciocínio contra Espírito do alvo. Esses pares são escolhas editoriais para completar a regra, sujeitos a revisão pelo autor."
+    },
+    {
+      "data": "2026-10-27",
+      "origem": "Pedido do autor: atualizar o PDF das habilidades com todas as correções",
+      "estado": "implementado",
+      "texto": "17 faces corrigidas incorporadas ao PDF principal, incluindo Predador Absoluto; original preservado e 20 páginas conferidas."
+    },
+    {
+      "data": "2026-10-27",
+      "origem": "Confirmação do autor sobre o Bruxo e Ave Fênix",
+      "estado": "aprovado",
+      "texto": "Bruxo usa Espírito no dano mágico. Ave Fênix mantém Fogo automático nos adjacentes, sem defesa adicional; dano direto adjacente só ao gastar Pacto, no valor de 1 + 2X. As regras da cobrança ainda não foram aprovadas."
+    }
+  ],
+  "resumo_classes_da_fonte": "| Classe | Estratégias (3 cartas cada) | Meia cartas (6) | Cartas de 2 XP | Metades de herói |\n|---|---|---|---|---|\n| **Guerreiro** | **Tanque de Guerra** (tank/aggro/control): Peso da Muralha, Ombro de Ferro, Provocar · **Mestre das Posturas** (aggro/tank/interactor): Postura do Leão, Postura da Tartaruga, Marcha Militar · **Hoplita** (escudo + lança, sinergia com Soldado): Lança em Riste, Parede de Escudos, Avanço Combinado | Respirar Fundo, Firmar os Pés, Golpe de Oportunidade, Reposicionar, Foco Marcial, Segundo Fôlego | Sangue Fervente, Âncora, Instruir Armamento | **Foco Mortal** (fura armadura) · **A Muralha** (é armadura) |\n| **Ladino** | **Ladrão** (furtividade, roubo): Dedos de Seda, Ataque Furtivo, Passo de Sombra · **Malandro** (lábia, contatos): Mas Veja Bem, Finta, Rede de Contatos · **Mágico** (prestidigitação, ilusão): Truques de Salão, Mancha Sombria, Gancho Fantasma | Olho de Ladrão, Pé Ligeiro, Lâmina Rápida, Empurrão Místico, Torcer a Lâmina, Sumiço | Nunca Visto, Sempre um Plano, Passo Espectral | **Larápio** (corpo, Sombra, velocidade) · **Impostor** (blefe, contatos, trapaça) |\n| **Clérigo** | **Curandeiro da Igreja**: Toque Restaurador, Feixe de Luz, Lanterna da Fé · **Exorcista**: Água Benta, Palavra de Banimento, Voz do Exorcista · **Orador Divino** (zonas e marcações): Palavra de Ânimo, Condenar, Zona da Penitência | Teologia, Primeiros Socorros, Prece Rápida, Fé Inabalável, Mão Angelical, Luz da Verdade | Ressurgir, Benção dos Salmos, Halo do Conduíte, Saltério de Cura | **Estrela do Amanhecer** (cura e sustento) · **Arma do Panteão** (abençoa o aço) |\n| **Caçador** | **Mestre Arqueiro** (Mira, marcação): Preparar o Tiro, Marca do Caçador, Flecha Aleijadora · **Rastreador da Floresta** (armadilhas, óleos, iscas): Rastrear, Armadilha de Caça, Flecha Envenenada · **Caçador das Montanhas** (funda, escalada, anti‑fera): Funda Certeira, Cabra da Montanha, Flecha Pesada | Camuflagem, Tiro Rápido, Faro Aguçado, Salto de Recuo, Olho de Águia, Preparar Emboscada | Tiro Perfeito, Predador Absoluto, Tiro Mortal | **Folha de Carvalho** · **Predador da Selva** (imóvel e invisível, arma o terreno) |\n| **Mago** | Uma por arquétipo, sem elemento fixo: **Conjuração Econômica**, **Poder de Combate**, **Improviso do Erudito** + 6 **Aprendizes** (Fogo, Água, Terra, Ar, Luz, Sombra) | Repertório arcano básico: Mão Mágica, Mísseis Mágicos, Contramagia, Armadura Arcana, Telepatia, Detectar Magia | Conjuração Perfeita, Mente Bélica, Mente Afiada | **Controlador do Arcano** (fôlego inesgotável, magia nas armas dos aliados) · **Devorador de Grimórios** (um caminho extra de graça, troca de foco rápida) |\n\n**Notas sobre as classes:**\n- O Clérigo tem uma carta de 2 XP a mais, Saltério de Cura, que é um repertório em forma de carta. Tem também o\n  Grimório da Chama Sagrada.",
+  "filosofia_classes_da_fonte": "- **Estrutura fixa de 20 cartas:**\n  - 3 estratégias de 3 cartas (função principal + secundária + uma terceira variável);\n  - 6 meia cartas;\n  - 2 metades de herói;\n  - 3 cartas de 2 XP.\n- **Cada classe tem uma ficha‑assinatura**, que é o seu motor: o Ladino gira Sombra; o Caçador, Mira.\n- **Hierarquia de papéis explícita.** Ninguém é bom em tudo.\n  - O Guerreiro é o melhor no combate direto.\n  - O Ladino é o melhor interactor, mais forte fora do combate e de propósito abaixo do Guerreiro no combate.\n  - O Caçador é o segundo melhor interactor, em terreno não urbano.\n- **O combate das classes utilitárias é condicional.** O Ladino só bate forte com vantagem, e o dano dele vem de\n  veneno e sangramento.\n- **A jornada do arquétipo pode estar nas cartas.** A básica tenta com risco; a capstone domina.\n\nAtualização do autor em 27/10: Sombra já representa furtividade; manter Ataque Furtivo sem exigir vantagem ou Oculto adicionais. A avaliação v01 que pediu essa condição foi superada.",
+  "criacao_na_mesa_da_fonte": "1. Escolha **raça** e **background**.\n2. Escolha **1 ou 2 classes**.\n3. **Distribua os atributos** (seção 10.1).\n4. **Baralho:** 52 cartas comuns.\n5. **Cartas de habilidade:** o personagem começa no **nível 2**, com **2 de XP**, ou seja, duas habilidades de 1 XP\n   ou uma de 2 XP.\n6. **Equipamento:** até duas armas e uma armadura ou escudo.\n7. **Carta de herói:** escolha **2 metades** (seção 11).\n8. **Fonte de magia,** para conjuradores: a divindade, no Clérigo; as Chaves elementais, no Mago.",
+  "aviso_dos_trechos": "Trechos do resumo de outubro, sujeitos às fontes posteriores; incluem exceções e divergências apontadas nos pontos de atenção.",
+  "ultima_revisao": {
+    "data": "2026-10-27",
+    "estado": "incorporado_ao_pdf",
+    "dados": "classes/dados/ajustes_cartas_v01.json",
+    "relatorio": "outputs/01a17d39-9806-7153-9510-d82d1e7aaeea/classes/Correcoes_Aprovadas_Classes_v03.html",
+    "historico_anterior": "outputs/01a17d39-9806-7153-9510-d82d1e7aaeea/classes/revisao_classes_v02.json",
+    "rodada_mago": [
+      {
+        "tema": "Custo mínimo das magias",
+        "estado": "aprovado",
+        "texto": "O custo de Fadiga de uma magia não pode ser reduzido a menos de 1, mesmo por reduções combinadas. Não aplicar essa regra como custo automático de habilidades que não são magias. Conjuração Perfeita foi adequada a esse mínimo, mantendo os demais custos da magia."
+      },
+      {
+        "tema": "Mana Densa",
+        "estado": "aprovado",
+        "texto": "A anulação depende de vencer um teste contestado. Manter o descarte de uma carta."
+      },
+      {
+        "tema": "Mente Afiada / De Volta ao Básico",
+        "estado": "manter_e_observar_em_playtest",
+        "texto": "Manter as duas habilidades como estão. Observar seu desempenho nos testes de jogo; isso não constitui pedido de automação ou monitoramento recorrente."
+      },
+      {
+        "tema": "Elementos do Mago",
+        "estado": "manter_conforme_autor",
+        "texto": "Manter Água, Terra, Sombra e os demais elementos com seus efeitos atuais. Não implementar a reformulação de identidade sugerida na revisão v01."
+      },
+      {
+        "tema": "Servo Sombrio",
+        "estado": "aprovado",
+        "texto": "O controle depende de vencer um teste contestado. Preservar os demais custos e o requisito de uma ficha de Medo."
+      },
+      {
+        "tema": "Controlador do Arcano / Devorador de Grimórios",
+        "estado": "esclarecimento_de_fonte",
+        "texto": "São metades de herói do Mago, ambas na página 2 de Herois_Cartas.pdf: MGMMR-H1 e MGMMR-H2. Não ficam em Habilidades_Cartas.pdf. Não foram modificadas nesta rodada."
+      },
+      {
+        "tema": "Atributos dos testes contestados",
+        "estado": "criterio_editorial_explicito",
+        "texto": "O autor pediu testes contestados sem indicar os atributos. Na redação, Mana Densa usa Raciocínio contra Sabedoria do conjurador, por analogia com Contramagia; Servo Sombrio usa Raciocínio contra Espírito do alvo. Esses pares são escolhas editoriais para completar a regra, sujeitos a revisão pelo autor."
+      }
+    ],
+    "propostas_pendentes": [],
+    "criterios_editoriais": [
+      "Pares de atributos dos testes contestados, descritos nos dados e relatório"
+    ],
+    "pdf": {
+      "principal": "Habilidades_Cartas.pdf",
+      "versao": "output/pdf/Habilidades_Cartas_Atualizadas_v01.pdf",
+      "sha256": "828802069bb45066e045b8f0803aa54395d16d6e05749c83bfcb35a42ded6fcf",
+      "data": "2026-10-27",
+      "verificacao": "classes/dados/verificacao_pdf_habilidades_v01.json"
+    }
+  },
+  "classe_em_desenvolvimento": {
+    "nome": "Bruxo",
+    "estado": "nucleo_fenix_confirmado_cobranca_em_aberto",
+    "fonte": "classes/dados/bruxo/conceito_v03.json",
+    "pacto_inicial": "Fênix",
+    "atributo_confirmado": "Espírito",
+    "decisoes_confirmadas": [
+      "Adjacentes de Ave Fênix recebem Fogo automaticamente.",
+      "Dano direto nos adjacentes somente com gasto de Pacto."
+    ],
+    "propostas": [
+      "Consequência e prazo da cobrança ainda sem definição final"
+    ],
+    "lote_proposto": {
+      "versao": 3,
+      "estado": "revisao_autorizada_aplicada_sem_playtest",
+      "patronos": [
+        "Pacto da Fênix",
+        "Pacto do Abismo",
+        "Pacto da Última Porta",
+        "Pacto do Olho Descoberto",
+        "Pacto dos Caminhos Roubados",
+        "Pacto dos Grilhões Vivos",
+        "Pacto da Mesa Vazia",
+        "Pacto do Trovão Cativo",
+        "Pacto dos Sonhos Roubados",
+        "Pacto do Inverno Imóvel"
+      ],
+      "total_patronos": 10,
+      "fenix_incluida": true,
+      "novos_nesta_rodada": [
+        "Pacto da Mesa Vazia",
+        "Pacto do Trovão Cativo",
+        "Pacto dos Sonhos Roubados",
+        "Pacto do Inverno Imóvel"
+      ],
+      "cartas_gerais": 18,
+      "faces_gerais": 30,
+      "distribuicao_xp": {
+        "1_xp": 9,
+        "meia_carta": 6,
+        "2_xp": 3
+      },
+      "dados_patronos": "classes/dados/bruxo/novos_pactos_v03.json",
+      "dados_gerais": "classes/dados/bruxo/habilidades_gerais_v03.json",
+      "contagem_comparada": "classes/dados/bruxo/contagem_habilidades_classes_v02.json",
+      "relatorio": "outputs/01a17d39-9806-7153-9510-d82d1e7aaeea/classes/Bruxo_Pactos_e_Habilidades_Proposta_v03.html",
+      "cobranca_fenix": "Continua em aberto; não foi alterada."
+    },
+    "historico_lotes": {
+      "v01": {
+        "versao": 1,
+        "estado": "propostas_nao_aprovadas",
+        "novos_pactos": [
+          "Pacto do Abismo",
+          "Pacto da Última Porta",
+          "Pacto do Olho Descoberto",
+          "Pacto dos Caminhos Roubados",
+          "Pacto dos Grilhões Vivos"
+        ],
+        "cartas_gerais": 15,
+        "distribuicao_xp": {
+          "1_xp": 6,
+          "meia_carta": 6,
+          "2_xp": 3
+        },
+        "relatorio": "outputs/01a17d39-9806-7153-9510-d82d1e7aaeea/classes/Bruxo_Pactos_e_Habilidades_Proposta_v01.html",
+        "cobranca_fenix": "Continua em aberto; não foi alterada."
+      },
+      "v02": {
+        "versao": 2,
+        "estado": "fenix_com_nucleo_confirmado_demais_propostas_nao_aprovadas",
+        "patronos": [
+          "Pacto da Fênix",
+          "Pacto do Abismo",
+          "Pacto da Última Porta",
+          "Pacto do Olho Descoberto",
+          "Pacto dos Caminhos Roubados",
+          "Pacto dos Grilhões Vivos",
+          "Pacto da Mesa Vazia",
+          "Pacto do Trovão Cativo",
+          "Pacto dos Sonhos Roubados",
+          "Pacto do Inverno Imóvel"
+        ],
+        "total_patronos": 10,
+        "fenix_incluida": true,
+        "novos_nesta_rodada": [
+          "Pacto da Mesa Vazia",
+          "Pacto do Trovão Cativo",
+          "Pacto dos Sonhos Roubados",
+          "Pacto do Inverno Imóvel"
+        ],
+        "cartas_gerais": 18,
+        "faces_gerais": 30,
+        "distribuicao_xp": {
+          "1_xp": 9,
+          "meia_carta": 6,
+          "2_xp": 3
+        },
+        "dados_patronos": "classes/dados/bruxo/novos_pactos_v02.json",
+        "dados_gerais": "classes/dados/bruxo/habilidades_gerais_v02.json",
+        "contagem_comparada": "classes/dados/bruxo/contagem_habilidades_classes_v02.json",
+        "relatorio": "outputs/01a17d39-9806-7153-9510-d82d1e7aaeea/classes/Bruxo_Pactos_e_Habilidades_Proposta_v02.html",
+        "cobranca_fenix": "Continua em aberto; não foi alterada."
+      }
+    },
+    "revisao": {
+      "data": "2026-10-27",
+      "estado": "ajustes_aplicados_com_excecao_fenix_preservada",
+      "dados": "classes/dados/bruxo/revisao_bruxo_v01.json",
+      "relatorio": "outputs/01a17d39-9806-7153-9510-d82d1e7aaeea/classes/Revisao_Bruxo_v01.html",
+      "cobertura": {
+        "patronos": 10,
+        "habilidades_gerais": 18
+      },
+      "aplicacao": "classes/dados/bruxo/ajustes_aplicados_v03.json"
+    },
+    "pdf_cartas": {
+      "arquivo": "output/pdf/Bruxo_Cartas_v01.pdf",
+      "data": "2026-10-28",
+      "catalogo": 3,
+      "paginas": 24,
+      "patronos": 10,
+      "habilidades_gerais": 18,
+      "cobranca_fenix": "em_aberto",
+      "verificacao": "classes/dados/bruxo/verificacao_pdf_bruxo_v01.json",
+      "sha256": "28810884e668afcbe1e991c7b1ff5012b9d85df892569ac30f8939c46a408600"
+    }
+  }
+}

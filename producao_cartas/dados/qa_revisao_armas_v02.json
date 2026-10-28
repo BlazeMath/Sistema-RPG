@@ -1,0 +1,49 @@
+{
+  "revisadas": [
+    "EQ-020",
+    "EQ-018",
+    "EQ-002",
+    "EQ-004",
+    "EQ-005",
+    "EQ-009",
+    "EQ-011",
+    "EQ-014",
+    "EQ-022",
+    "EQ-027"
+  ],
+  "total": 10,
+  "campos_mecanicos_preservados": true,
+  "corrente_preservada": true,
+  "gladio": "Mantido por decisão explícita do autor.",
+  "metodo": "Edição das ilustrações pelo image_gen.imagegen integrado; sem modificação de regras.",
+  "paginas_com_texto_identico_a_v01": 348,
+  "paginas_renderizadas": 348,
+  "frentes_individuais_alteradas": 10,
+  "paginas_A4_alteradas": [
+    1,
+    3,
+    5
+  ],
+  "todos_versos_visualmente_identicos": true,
+  "gladio_visualmente_identico": true,
+  "alteracoes_renderizadas": {
+    "colecao_v02": [
+      "a4-01.png",
+      "a4-03.png",
+      "a4-05.png"
+    ],
+    "individuais_v02": [
+      "carta-003.png",
+      "carta-007.png",
+      "carta-009.png",
+      "carta-017.png",
+      "carta-021.png",
+      "carta-027.png",
+      "carta-035.png",
+      "carta-039.png",
+      "carta-043.png",
+      "carta-053.png"
+    ]
+  },
+  "inspecao_visual_final": "Conferidas as folhas A4 1, 3 e 5 após o enquadramento final; todas as 10 artes revistas completas, sem deformação ou corte."
+}

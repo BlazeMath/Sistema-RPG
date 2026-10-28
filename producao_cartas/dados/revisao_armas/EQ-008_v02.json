@@ -1,0 +1,19 @@
+{
+  "id": "EQ-008",
+  "nome": "Machado de Guerra",
+  "arquivo": "artes/revisadas/EQ-008_v02.png",
+  "origem": "C:/Users/Gamer/.codex/generated_images/01a1784a-39da-75d3-87c4-56dc835caa37/exec-cd7b6b9b-5716-4ede-ace6-964d784e6435.png",
+  "substitui": "artes/lote/EQ-008_v01.png",
+  "dimensoes": [
+    1061,
+    1482
+  ],
+  "modo": "RGBA",
+  "alpha": [
+    0,
+    255
+  ],
+  "sha256": "8feadca30419b466f2b8a479bc91211064bb4493b893f28615f940a1416a4286",
+  "status": "conferida_visual",
+  "rotacao_diagramacao_graus": 0
+}

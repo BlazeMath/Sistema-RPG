@@ -1,0 +1,16 @@
+{
+  "id": "EQ-033",
+  "arquivo": "artes/lote/EQ-033_v01.png",
+  "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-a2091712-b7a6-48f6-a87c-dba6bb0c0ccb.png",
+  "dimensoes": [
+    1061,
+    1483
+  ],
+  "modo": "RGBA",
+  "alpha": [
+    0,
+    255
+  ],
+  "sha256": "52c1a68a92d61c3bf3f9fcd1215452db477f5e5eca74706cfa1b36c1d87f74cc",
+  "status": "gerada_a_conferir"
+}

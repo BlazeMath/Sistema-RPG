@@ -1,0 +1,50 @@
+{
+  "data": "2026-10-27",
+  "estado": "correcoes_mago_implementadas_nos_dados",
+  "dados": "classes/dados/ajustes_cartas_v01.json",
+  "relatorio": "outputs/01a17d39-9806-7153-9510-d82d1e7aaeea/classes/Correcoes_Aprovadas_Classes_v03.html",
+  "historico_anterior": "outputs/01a17d39-9806-7153-9510-d82d1e7aaeea/classes/revisao_classes_v02.json",
+  "rodada_mago": [
+    {
+      "tema": "Custo mínimo das magias",
+      "estado": "aprovado",
+      "texto": "O custo de Fadiga de uma magia não pode ser reduzido a menos de 1, mesmo por reduções combinadas. Não aplicar essa regra como custo automático de habilidades que não são magias. Conjuração Perfeita foi adequada a esse mínimo, mantendo os demais custos da magia."
+    },
+    {
+      "tema": "Mana Densa",
+      "estado": "aprovado",
+      "texto": "A anulação depende de vencer um teste contestado. Manter o descarte de uma carta."
+    },
+    {
+      "tema": "Mente Afiada / De Volta ao Básico",
+      "estado": "manter_e_observar_em_playtest",
+      "texto": "Manter as duas habilidades como estão. Observar seu desempenho nos testes de jogo; isso não constitui pedido de automação ou monitoramento recorrente."
+    },
+    {
+      "tema": "Elementos do Mago",
+      "estado": "manter_conforme_autor",
+      "texto": "Manter Água, Terra, Sombra e os demais elementos com seus efeitos atuais. Não implementar a reformulação de identidade sugerida na revisão v01."
+    },
+    {
+      "tema": "Servo Sombrio",
+      "estado": "aprovado",
+      "texto": "O controle depende de vencer um teste contestado. Preservar os demais custos e o requisito de uma ficha de Medo."
+    },
+    {
+      "tema": "Controlador do Arcano / Devorador de Grimórios",
+      "estado": "esclarecimento_de_fonte",
+      "texto": "São metades de herói do Mago, ambas na página 2 de Herois_Cartas.pdf: MGMMR-H1 e MGMMR-H2. Não ficam em Habilidades_Cartas.pdf. Não foram modificadas nesta rodada."
+    },
+    {
+      "tema": "Atributos dos testes contestados",
+      "estado": "criterio_editorial_explicito",
+      "texto": "O autor pediu testes contestados sem indicar os atributos. Na redação, Mana Densa usa Raciocínio contra Sabedoria do conjurador, por analogia com Contramagia; Servo Sombrio usa Raciocínio contra Espírito do alvo. Esses pares são escolhas editoriais para completar a regra, sujeitos a revisão pelo autor."
+    }
+  ],
+  "propostas_pendentes": [
+    "Redação de Predador Absoluto"
+  ],
+  "criterios_editoriais": [
+    "Pares de atributos dos testes contestados, descritos nos dados e relatório"
+  ]
+}

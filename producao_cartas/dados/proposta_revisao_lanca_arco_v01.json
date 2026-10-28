@@ -1,0 +1,42 @@
+{
+  "status": "substituida_pelas_regras_aprovadas_v05",
+  "observacao": "Não substituir o catálogo nem gerar PDFs antes de fechar estes textos com o autor. A área 3 × 3 do Arco da Maré já está aprovada separadamente.",
+  "itens": [
+    {
+      "id": "EQ-042",
+      "nome": "Lança Trovejante",
+      "campos_propostos": {
+        "Dano": "6 + Força",
+        "Alcance": "Longo",
+        "Limite de Fadiga": "2"
+      },
+      "habilidade_proposta": "2 de Fadiga, Ação Padrão: faça um ataque à distância contra todos os inimigos em uma área de 3 × 3 quadrados dentro do alcance desta arma. Use o mesmo teste de ataque para todos os alvos; cada um faz sua defesa. Cada inimigo atingido sofre dano de Raio igual ao dano desta arma.\nRetorno da descarga: depois de resolver qualquer ataque com esta arma, acerte ou erre, você sofre 6 de dano de Raio. Esse retorno ocorre uma única vez por ataque, independentemente do número de alvos.",
+      "eixo": "Dano em área em troca de dano ao próprio portador. Construir proteção contra Raio, sustento e cadência de ataques.",
+      "novas_escolhas_a_discutir": [
+        "Alcance Longo",
+        "Área de 3 × 3 quadrados",
+        "Retorno fixo de 6 de dano de Raio"
+      ],
+      "tags_preservadas": [
+        "Arremessável",
+        "Arremesso Grande",
+        "Raio"
+      ]
+    },
+    {
+      "id": "EQ-043",
+      "nome": "Arco das Sombras",
+      "campos_preservados": {
+        "Dano": "3 + Destreza",
+        "Alcance": "Curta-Média"
+      },
+      "habilidade_proposta": "Antes de fazer um ataque com esta arma, você pode gastar 1 ficha de Sombra. Se fizer isso, o ataque não pode ser respondido por reações e suas duas cartas iniciais ficam ocultas para o defensor. Depois de resolver o ataque, receba 1 ficha de Sombra.\nEsta arma só causa dano se você estiver Oculto no início do ataque.",
+      "eixo": "Emboscadas: preparar Oculto, atacar e recuperar a condição para o próximo disparo. Sombra continua sendo recurso distinto do estado Oculto.",
+      "substitui_defeito": "A restrição de não causar dano a inimigos adjacentes é substituída pela exigência de começar o ataque Oculto.",
+      "tags_preservadas": [
+        "Arma de Tiro"
+      ]
+    }
+  ],
+  "documento_final": "regras_raras_aprovadas_v05.json"
+}

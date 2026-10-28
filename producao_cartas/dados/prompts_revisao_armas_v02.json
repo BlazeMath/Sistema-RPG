@@ -1,0 +1,115 @@
+{
+  "versao": "v02",
+  "ferramenta": "image_gen.imagegen integrada",
+  "motivo": "Correção solicitada pelo autor: alinhamento e proporções visuais das espadas.",
+  "artes": [
+    {
+      "id": "EQ-020",
+      "nome": "Florete do Contragolpe",
+      "tipo": "rapier",
+      "referencia": "C:/Users/Gamer/Documents/ChatGPT/SISTEMA DE RPG/producao_cartas/artes/lote/EQ-020_v01.png",
+      "arquivo": "artes/revisadas/EQ-020_v02.png",
+      "prompt": "Edite esta ilustração de um florete decorativo para uma carta de jogo de fantasia. Corrija apenas o desenho: deixe o cabo visualmente menor e a linha central da lâmina reta e alinhada com o cabo. Simplifique um pouco os arabescos da guarda. Preserve as cores, o acabamento pintado e a identidade visual do objeto. Mostre o objeto inteiro com folga nas bordas. Fundo transparente. Sem pessoas, ação, texto ou medidas técnicas.",
+      "transparent_background": true,
+      "status": "gerada_e_conferida"
+    },
+    {
+      "id": "EQ-018",
+      "nome": "Montante de Batalha",
+      "tipo": "greatsword",
+      "referencia": "C:/Users/Gamer/Documents/ChatGPT/SISTEMA DE RPG/producao_cartas/artes/lote/EQ-018_v01.png",
+      "arquivo": "artes/revisadas/EQ-018_v02.png",
+      "prompt": "Edite esta ilustração de uma espada decorativa para uma carta de jogo de fantasia. Corrija apenas o desenho: deixe o cabo e o pomo visualmente menores, e a lâmina mais longa em relação ao cabo. Mantenha o eixo do desenho reto. Preserve as cores e o acabamento pintado. Mostre a espada inteira com folga nas bordas. Fundo transparente. Sem pessoas, ação ou texto.",
+      "transparent_background": true,
+      "status": "gerada_e_conferida"
+    },
+    {
+      "id": "EQ-002",
+      "nome": "Florete",
+      "tipo": "rapier",
+      "referencia": "C:/Users/Gamer/Documents/ChatGPT/SISTEMA DE RPG/producao_cartas/artes/lote/EQ-002_v01.png",
+      "arquivo": "artes/revisadas/EQ-002_v02.png",
+      "prompt": "Edite esta ilustração de Florete para uma carta de jogo de fantasia medieval. Corrija apenas as proporções e o alinhamento do desenho. Na composição, a lâmina deve ocupar aproximadamente 83% do comprimento do objeto. Faça um cabo curto e uma guarda bem menor, com poucos arcos equilibrados. A linha da lâmina deve continuar exatamente a linha do centro do cabo. Desenhe o objeto em vista lateral quase plana: pomo, centro do cabo e centro da lâmina devem formar uma única linha reta. Preserve as cores, os materiais aparentes, os motivos decorativos e o acabamento pintado da referência. Mostre o objeto inteiro com folga nas bordas. Fundo realmente transparente, também nos vazios. Sem pessoas, mãos, ação, texto, números, esquemas ou medidas técnicas.",
+      "transparent_background": true,
+      "status": "gerada_e_conferida"
+    },
+    {
+      "id": "EQ-004",
+      "nome": "Espada Curta",
+      "tipo": "shortsword",
+      "referencia": "C:/Users/Gamer/Documents/ChatGPT/SISTEMA DE RPG/producao_cartas/artes/lote/EQ-004_v01.png",
+      "arquivo": "artes/revisadas/EQ-004_v02.png",
+      "prompt": "Use case: precise-object-edit. Asset type: isolated dark medieval fantasy RPG equipment illustration. Input image is the edit target. Correct the weapon geometry and proportions, preserving the SAME weapon's visual identity, weathered metal and leather colors, semirealistic painted finish, warm highlights, subdued cool rim and overall diagonal orientation. This is a substantial proportion correction, so do NOT retain the old oversized hilt. This is a ONE-HANDED short sword, not a dagger or a two-handed sword. Give it a broad convincing blade occupying approximately 76-79 percent of total weapon axial length, a compact grip of approximately 13-15 percent, a small pommel and a modest crossguard. Shorten the existing enlarged grip noticeably. Preserve its established steel finish and decorative identity. Pommel center, grip center, guard center, fuller and tip must all lie on ONE straight axis, with a balanced symmetrical blade silhouette. No bent or offset blade, huge handgrip, oversized pommel or distorted guard. Measure the proportions along the sword itself, not the canvas diagonal. Render a near-orthographic broadside view with minimal perspective and no foreshortening, so its straight construction is immediately visible. Keep the entire weapon inside the frame with at least 6 percent clear margin around tip, pommel and guard. A truly transparent background, also through guard openings. Clean alpha edges. One sword only. No people, hands, comparison panels, text, labels, numbers, floor, scene, frame, glow or watermark.",
+      "transparent_background": true,
+      "status": "gerada_e_conferida"
+    },
+    {
+      "id": "EQ-005",
+      "nome": "Espada Longa",
+      "tipo": "sword",
+      "referencia": "C:/Users/Gamer/Documents/ChatGPT/SISTEMA DE RPG/producao_cartas/artes/lote/EQ-005_v01.png",
+      "arquivo": "artes/revisadas/EQ-005_v02.png",
+      "prompt": "Edite esta ilustração de Espada Longa para uma carta de jogo de fantasia medieval. Corrija apenas as proporções e o alinhamento do desenho. Na composição, a lâmina deve ocupar aproximadamente 80% do comprimento do objeto. Encurte bem o cabo atual e diminua o pomo, deixando uma guarda equilibrada. Desenhe o objeto em vista lateral quase plana: pomo, centro do cabo e centro da lâmina devem formar uma única linha reta. Preserve as cores, os materiais aparentes, os motivos decorativos e o acabamento pintado da referência. Mostre o objeto inteiro com folga nas bordas. Fundo realmente transparente, também nos vazios. Sem pessoas, mãos, ação, texto, números, esquemas ou medidas técnicas.",
+      "transparent_background": true,
+      "status": "gerada_e_conferida"
+    },
+    {
+      "id": "EQ-009",
+      "nome": "Montante",
+      "tipo": "greatsword",
+      "referencia": "C:/Users/Gamer/Documents/ChatGPT/SISTEMA DE RPG/producao_cartas/artes/lote/EQ-009_v01.png",
+      "arquivo": "artes/revisadas/EQ-009_v02.png",
+      "prompt": "Edite esta ilustração de uma espada decorativa para uma carta de jogo de fantasia. Corrija apenas o desenho: deixe o cabo e o pomo visualmente menores, e a lâmina mais longa em relação ao cabo. Mantenha o eixo do desenho reto. Preserve as cores e o acabamento pintado. Mostre a espada inteira com folga nas bordas. Fundo transparente. Sem pessoas, ação ou texto.",
+      "transparent_background": true,
+      "status": "gerada_e_conferida"
+    },
+    {
+      "id": "EQ-011",
+      "nome": "Florete de Duelista",
+      "tipo": "rapier",
+      "referencia": "C:/Users/Gamer/Documents/ChatGPT/SISTEMA DE RPG/producao_cartas/artes/lote/EQ-011_v01.png",
+      "arquivo": "artes/revisadas/EQ-011_v02.png",
+      "prompt": "Edite esta ilustração de Florete de Duelista para uma carta de jogo de fantasia medieval. Corrija apenas as proporções e o alinhamento do desenho. Na composição, a lâmina deve ocupar aproximadamente 83% do comprimento do objeto. Faça um cabo curto e uma guarda bem menor, com poucos arcos equilibrados. A linha da lâmina deve continuar exatamente a linha do centro do cabo. Desenhe o objeto em vista lateral quase plana: pomo, centro do cabo e centro da lâmina devem formar uma única linha reta. Preserve as cores, os materiais aparentes, os motivos decorativos e o acabamento pintado da referência. Mostre o objeto inteiro com folga nas bordas. Fundo realmente transparente, também nos vazios. Sem pessoas, mãos, ação, texto, números, esquemas ou medidas técnicas.",
+      "transparent_background": true,
+      "status": "gerada_e_conferida"
+    },
+    {
+      "id": "EQ-014",
+      "nome": "Espada do Mestre-Ferreiro",
+      "tipo": "sword",
+      "referencia": "C:/Users/Gamer/Documents/ChatGPT/SISTEMA DE RPG/producao_cartas/artes/lote/EQ-014_v01.png",
+      "arquivo": "artes/revisadas/EQ-014_v02.png",
+      "prompt": "Edite esta ilustração de uma espada decorativa para uma carta de jogo de fantasia. Corrija apenas o desenho: deixe o cabo e o pomo visualmente menores, e a lâmina mais longa em relação ao cabo. Mantenha o eixo do desenho reto. Preserve as cores e o acabamento pintado. Mostre a espada inteira com folga nas bordas. Fundo transparente. Sem pessoas, ação ou texto.",
+      "transparent_background": true,
+      "status": "gerada_e_conferida"
+    },
+    {
+      "id": "EQ-022",
+      "nome": "Lâmina do Vento",
+      "tipo": "sword",
+      "referencia": "C:/Users/Gamer/Documents/ChatGPT/SISTEMA DE RPG/producao_cartas/artes/lote/EQ-022_v01.png",
+      "arquivo": "artes/revisadas/EQ-022_v02.png",
+      "prompt": "Edite esta ilustração de Lâmina do Vento para uma carta de jogo de fantasia medieval. Corrija apenas as proporções e o alinhamento do desenho. Na composição, a lâmina deve ocupar aproximadamente 80% do comprimento do objeto. Encurte bem o cabo atual e diminua o pomo, deixando uma guarda equilibrada. Desenhe o objeto em vista lateral quase plana: pomo, centro do cabo e centro da lâmina devem formar uma única linha reta. Preserve as cores, os materiais aparentes, os motivos decorativos e o acabamento pintado da referência. Mostre o objeto inteiro com folga nas bordas. Fundo realmente transparente, também nos vazios. Sem pessoas, mãos, ação, texto, números, esquemas ou medidas técnicas.",
+      "transparent_background": true,
+      "status": "gerada_e_conferida"
+    },
+    {
+      "id": "EQ-027",
+      "nome": "Montante do Frenesi",
+      "tipo": "greatsword",
+      "referencia": "C:/Users/Gamer/Documents/ChatGPT/SISTEMA DE RPG/producao_cartas/artes/lote/EQ-027_v01.png",
+      "arquivo": "artes/revisadas/EQ-027_v02.png",
+      "prompt": "Edite esta ilustração de uma espada decorativa para uma carta de jogo de fantasia. Corrija apenas o desenho: deixe o cabo e o pomo visualmente menores, e a lâmina mais longa em relação ao cabo. Mantenha o eixo do desenho reto. Preserve as cores e o acabamento pintado. Mostre a espada inteira com folga nas bordas. Fundo transparente. Sem pessoas, ação ou texto.",
+      "transparent_background": true,
+      "status": "gerada_e_conferida"
+    }
+  ],
+  "mantidas_por_decisao_autor": [
+    {
+      "id": "EQ-023",
+      "nome": "Gládio Inquietante",
+      "arquivo": "artes/lote/EQ-023_v01.png",
+      "decisao": "Manter a arte atual por enquanto."
+    }
+  ]
+}

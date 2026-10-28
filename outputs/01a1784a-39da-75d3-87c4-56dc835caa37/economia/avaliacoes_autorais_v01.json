@@ -1,0 +1,1708 @@
+{
+  "status": "Proposta econômica para discussão e playtest; não incorporada às cartas",
+  "data": "2026-10-27",
+  "unidades": "1 ouro = 100 pratas; 1 prata = 10 cobres, proposta",
+  "criterio": "Suporte inclui um equivalente mundano acabado, não custo puro de matéria-prima. O prêmio reúne função especial, conhecimento, oferta e comprador especializado; todas as avaliações são estimativas de design.",
+  "itens": [
+    {
+      "id": "EQ-001",
+      "suporte_prata": 4,
+      "preco_prata": 4,
+      "mercado": "V",
+      "unidade": "1 arma",
+      "materiais_estimados": "Aço simples, cabo de madeira ou couro",
+      "justificativa": "Lâmina pequena de uso diário; pouco metal e produção corrente.",
+      "ressalva": "Aparência dourada na arte não comprova ouro maciço."
+    },
+    {
+      "id": "EQ-002",
+      "suporte_prata": 30,
+      "preco_prata": 35,
+      "mercado": "C",
+      "unidade": "1 arma",
+      "materiais_estimados": "Aço temperado, guarda trabalhada e couro",
+      "justificativa": "Lâmina longa e fina exige bom tratamento térmico e equilíbrio; dano baixo não a torna uma faca barata.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-003",
+      "suporte_prata": 1,
+      "preco_prata": 1,
+      "mercado": "V",
+      "unidade": "1 arma",
+      "materiais_estimados": "Madeira dura, acabamento simples",
+      "justificativa": "Haste fácil de substituir, sem forja complexa nem habilidade especial.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-004",
+      "suporte_prata": 20,
+      "preco_prata": 20,
+      "mercado": "C",
+      "unidade": "1 arma",
+      "materiais_estimados": "Aço temperado, guarda e couro",
+      "justificativa": "Espada curta militar; menos material e trabalho que uma espada longa bem acabada.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-005",
+      "suporte_prata": 30,
+      "preco_prata": 30,
+      "mercado": "C",
+      "unidade": "1 arma",
+      "materiais_estimados": "Aço temperado, guarda e couro",
+      "justificativa": "Referência central de arma profissional: acabamento funcional, fio e equilíbrio, sem prêmio mágico.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-006",
+      "suporte_prata": 6,
+      "preco_prata": 6,
+      "mercado": "V",
+      "unidade": "1 arma",
+      "materiais_estimados": "Madeira selecionada e ponta de aço",
+      "justificativa": "Haste barata e ponta pequena; bom alcance não implica grande custo de fabricação.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-007",
+      "suporte_prata": 10,
+      "preco_prata": 10,
+      "mercado": "V",
+      "unidade": "1 arma",
+      "materiais_estimados": "Cabeça de ferro ou aço e cabo",
+      "justificativa": "Forja robusta e simples; dano elevado vem da categoria pesada, não de metal precioso.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-008",
+      "suporte_prata": 14,
+      "preco_prata": 14,
+      "mercado": "V",
+      "unidade": "1 arma",
+      "materiais_estimados": "Cabeça de aço e cabo reforçado",
+      "justificativa": "Peça militar com bom fio e encaixe; mais trabalho que ferramenta rural, menos que espada longa.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-009",
+      "suporte_prata": 60,
+      "preco_prata": 60,
+      "mercado": "C",
+      "unidade": "1 arma",
+      "materiais_estimados": "Lâmina longa de aço e punho reforçado",
+      "justificativa": "Muito aço de qualidade e controle de têmpera numa lâmina grande justificam o preço.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-010",
+      "suporte_prata": 7,
+      "preco_prata": 35,
+      "mercado": "E",
+      "unidade": "1 arma",
+      "materiais_estimados": "Aço fino e empunhadura compacta",
+      "justificativa": "Ponta especializada e capacidade de superar resistência em crítico; uso estreito limita o prêmio.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-011",
+      "suporte_prata": 40,
+      "preco_prata": 120,
+      "mercado": "E",
+      "unidade": "1 arma",
+      "materiais_estimados": "Aço de precisão, guarda elaborada",
+      "justificativa": "Equilíbrio superior e contra-ataque reutilizável; exige duelista competente e Reação.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-012",
+      "suporte_prata": 5,
+      "preco_prata": 30,
+      "mercado": "C",
+      "unidade": "1 arma",
+      "materiais_estimados": "Couro trançado e reforços",
+      "justificativa": "Controle de movimento é seu valor; material barato impede tratá-lo como joia.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-013",
+      "suporte_prata": 10,
+      "preco_prata": 300,
+      "mercado": "O",
+      "unidade": "1 arma",
+      "materiais_estimados": "Aço e cabo reforçado",
+      "justificativa": "O retorno automático após o arremesso excede uma francisca normal e domina o preço.",
+      "ressalva": "Preço pressupõe que o retorno do texto funcione sempre, sem corda."
+    },
+    {
+      "id": "EQ-014",
+      "suporte_prata": 40,
+      "preco_prata": 220,
+      "mercado": "E",
+      "unidade": "1 arma",
+      "materiais_estimados": "Aço superior, guarda e couro",
+      "justificativa": "Precisão e troca de carta em cada ataque sustentam um prêmio alto de oficina ou encantamento.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-015",
+      "suporte_prata": 18,
+      "preco_prata": 45,
+      "mercado": "C",
+      "unidade": "1 arma",
+      "materiais_estimados": "Haste de madeira, ponta e lâmina de aço",
+      "justificativa": "Montagem militar trabalhada e controle tático; não pressupõe magia apenas por ser incomum.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-016",
+      "suporte_prata": 14,
+      "preco_prata": 65,
+      "mercado": "E",
+      "unidade": "1 arma",
+      "materiais_estimados": "Cabeça de aço com ressaltos",
+      "justificativa": "Ferimento recorrente aumenta a utilidade, com procura de combatentes especializados.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-017",
+      "suporte_prata": 18,
+      "preco_prata": 90,
+      "mercado": "E",
+      "unidade": "1 arma",
+      "materiais_estimados": "Aço, encaixe e cabo reforçado",
+      "justificativa": "Acerto secundário que ignora resistência amplia o valor em combate contra grupos.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-018",
+      "suporte_prata": 75,
+      "preco_prata": 180,
+      "mercado": "E",
+      "unidade": "1 arma",
+      "materiais_estimados": "Aço temperado em peça grande",
+      "justificativa": "Ataque de área e fabricação exigente; requisito alto e defesa exposta moderam a procura.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-019",
+      "suporte_prata": 8,
+      "preco_prata": 1200,
+      "mercado": "R",
+      "unidade": "1 arma",
+      "materiais_estimados": "Aço fino e montagem ritual",
+      "justificativa": "Dano condicionado à mão vazia muda a estratégia; descarte obrigatório reduz o público comprador.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-020",
+      "suporte_prata": 45,
+      "preco_prata": 1800,
+      "mercado": "R",
+      "unidade": "1 arma",
+      "materiais_estimados": "Lâmina de precisão e guarda elaborada",
+      "justificativa": "Retaliação sem teste de ataque cria grande valor; perder a proteção de armadura e escudo é custo real.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-021",
+      "suporte_prata": 5,
+      "preco_prata": 2500,
+      "mercado": "R",
+      "unidade": "1 foco",
+      "materiais_estimados": "Madeira trabalhada e condutor ritual",
+      "justificativa": "O valor é reduzir Fadiga de magias repetidamente; dano zero não mede sua utilidade.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-022",
+      "suporte_prata": 30,
+      "preco_prata": 1800,
+      "mercado": "R",
+      "unidade": "1 arma",
+      "materiais_estimados": "Aço leve, montagem equilibrada",
+      "justificativa": "Velocidade e conversão de ação em movimento interessam a combatentes móveis.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-023",
+      "suporte_prata": 35,
+      "preco_prata": 1500,
+      "mercado": "R",
+      "unidade": "1 arma",
+      "materiais_estimados": "Aço, guarda e montagem ritual",
+      "justificativa": "Virar habilidades todo turno permite motores específicos; não é melhoria universal para qualquer personagem.",
+      "ressalva": "Valor depende da regra completa de virar cartas e das habilidades disponíveis."
+    },
+    {
+      "id": "EQ-024",
+      "suporte_prata": 10,
+      "preco_prata": 1700,
+      "mercado": "R",
+      "unidade": "1 arma",
+      "materiais_estimados": "Madeira, ponta de aço e inscrições",
+      "justificativa": "Proteção reativa de aliados serve a guarda e formação; Imobilizar o portador limita o uso.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-025",
+      "suporte_prata": 18,
+      "preco_prata": 2200,
+      "mercado": "R",
+      "unidade": "1 arma",
+      "materiais_estimados": "Cabeça de aço reforçada e cabo",
+      "justificativa": "Ignorar resistência e quebrar proteção têm valor militar elevado; ausência de Reação exige estratégia própria.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-026",
+      "suporte_prata": 20,
+      "preco_prata": 1600,
+      "mercado": "R",
+      "unidade": "1 arma",
+      "materiais_estimados": "Aço trabalhado e montagem ritual",
+      "justificativa": "Escala com figuras do descarte, mas exila recurso e reduz cura; poder condicionado evita preço automático por dano máximo.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-027",
+      "suporte_prata": 80,
+      "preco_prata": 2400,
+      "mercado": "R",
+      "unidade": "1 arma",
+      "materiais_estimados": "Grande lâmina de aço e punho reforçado",
+      "justificativa": "Altera o estouro e o uso de Ases; Fadiga e falta de cartas da mão restringem os compradores.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-028",
+      "suporte_prata": 1,
+      "preco_prata": 1,
+      "mercado": "C",
+      "unidade": "1 peça",
+      "materiais_estimados": "Aço recortado e afiado",
+      "justificativa": "Peça pequena de arremesso; preço unitário, não um conjunto de munições.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-029",
+      "suporte_prata": 8,
+      "preco_prata": 8,
+      "mercado": "V",
+      "unidade": "1 arma",
+      "materiais_estimados": "Aço e cabo curto",
+      "justificativa": "Arma reutilizável e recuperável de produção corrente.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-030",
+      "suporte_prata": 4,
+      "preco_prata": 4,
+      "mercado": "V",
+      "unidade": "1 arma",
+      "materiais_estimados": "Haste leve e ponta de aço",
+      "justificativa": "Uma única azagaia; dano alto não transforma a peça em lança encantada.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-031",
+      "suporte_prata": 20,
+      "preco_prata": 20,
+      "mercado": "C",
+      "unidade": "1 arco",
+      "materiais_estimados": "Madeira selecionada, corda e cola",
+      "justificativa": "Curvatura e secagem cuidadosas exigem ofício; preço do arco sem munição avulsa.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-032",
+      "suporte_prata": 40,
+      "preco_prata": 40,
+      "mercado": "C",
+      "unidade": "1 arco",
+      "materiais_estimados": "Madeira de qualidade e corda forte",
+      "justificativa": "Seleção do arco e longa peça uniforme justificam preço acima do arco curto.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-033",
+      "suporte_prata": 100,
+      "preco_prata": 100,
+      "mercado": "C",
+      "unidade": "1 besta",
+      "materiais_estimados": "Madeira, arco de aço e mecanismo",
+      "justificativa": "Gatilho, encaixes e sistema de armar elevam o custo; não se calcula preço só pelo dano.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-034",
+      "suporte_prata": 5,
+      "preco_prata": 40,
+      "mercado": "E",
+      "unidade": "1 arma",
+      "materiais_estimados": "Aço equilibrado e punho curto",
+      "justificativa": "Reciclagem de Foco interessa a um usuário preparado; aplicação estreita segura o preço.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-035",
+      "suporte_prata": 12,
+      "preco_prata": 55,
+      "mercado": "E",
+      "unidade": "1 arma",
+      "materiais_estimados": "Lâmina de aço com farpas",
+      "justificativa": "Sangramento repetível oferece vantagem funcional acima da lâmina simples.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-036",
+      "suporte_prata": 8,
+      "preco_prata": 140,
+      "mercado": "E",
+      "unidade": "1 arma",
+      "materiais_estimados": "Haste, ponta helicoidal e montagem especial",
+      "justificativa": "Converte Fadiga da arma em dano; precisa de configuração e não rende seu máximo sempre.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-037",
+      "suporte_prata": 40,
+      "preco_prata": 100,
+      "mercado": "E",
+      "unidade": "1 arco",
+      "materiais_estimados": "Madeira laminada, cola e corda",
+      "justificativa": "Construção recurva de qualidade e disparo reativo justificam prêmio moderado.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-038",
+      "suporte_prata": 55,
+      "preco_prata": 180,
+      "mercado": "E",
+      "unidade": "1 arco",
+      "materiais_estimados": "Teixo selecionado e corda reforçada",
+      "justificativa": "Dobrar dano contra Marcação é forte, mas requer outra fonte da ficha.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-039",
+      "suporte_prata": 140,
+      "preco_prata": 320,
+      "mercado": "O",
+      "unidade": "1 besta",
+      "materiais_estimados": "Mecanismo de disparo e armação dupla",
+      "justificativa": "Engenharia e dano num segundo inimigo tornam a peça superior; ainda exige recarga.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-040",
+      "suporte_prata": 18,
+      "preco_prata": 1800,
+      "mercado": "R",
+      "unidade": "1 arma",
+      "materiais_estimados": "Lâminas de aço e articulações",
+      "justificativa": "Alcançar vários alvos e limitar a mão cria função rara; exílio por alvo extra é custo persistente.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-041",
+      "suporte_prata": 18,
+      "preco_prata": 1600,
+      "mercado": "R",
+      "unidade": "1 arma",
+      "materiais_estimados": "Aço e montagem ritual",
+      "justificativa": "Potencial depende das figuras no descarte e tritura cartas; não se cobra o teto de dano como benefício permanente.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-042",
+      "suporte_prata": 12,
+      "preco_prata": 2500,
+      "mercado": "R",
+      "unidade": "1 arma",
+      "materiais_estimados": "Haste reforçada, aço e condutor arcano",
+      "justificativa": "Descarga contra alvo e adjacentes tem alto valor de área; fogo amigo e retorno de Raio restringem o uso.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-043",
+      "suporte_prata": 35,
+      "preco_prata": 2200,
+      "mercado": "R",
+      "unidade": "1 arco",
+      "materiais_estimados": "Madeira escura, corda e montagem arcana",
+      "justificativa": "Gera Sombra e permite disparo protegido; só causa dano começando Oculto, tornando o mercado especializado.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-044",
+      "suporte_prata": 55,
+      "preco_prata": 3200,
+      "mercado": "R",
+      "unidade": "1 arco",
+      "materiais_estimados": "Madeira tratada e montagem elemental",
+      "justificativa": "Área 3 × 3, controle do solo e apagar Fogo valem muito; perda de recuperação de Fadiga impede uso irrestrito.",
+      "ressalva": "O cadastro não informa Alcance. Preço provisório sem inventar esse dado."
+    },
+    {
+      "id": "EQ-045",
+      "suporte_prata": 220,
+      "preco_prata": 2800,
+      "mercado": "R",
+      "unidade": "1 arma",
+      "materiais_estimados": "Aço, madeira reforçada e mecanismo de cerco",
+      "justificativa": "Tiro em linha acumulado é arma de posição; imobilidade e perda de carga sob dano reduzem a procura.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-046",
+      "suporte_prata": 40,
+      "preco_prata": 40,
+      "mercado": "C",
+      "unidade": "1 armadura",
+      "materiais_estimados": "Couro, acolchoamento e costura",
+      "justificativa": "Proteção leve e bolso secreto são ofício útil de fabricação repetível.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-047",
+      "suporte_prata": 300,
+      "preco_prata": 300,
+      "mercado": "C",
+      "unidade": "1 armadura",
+      "materiais_estimados": "Malha de aço, acolchoamento e correias",
+      "justificativa": "Muitos elos e ajuste corporal exigem trabalho; comum na coleção não significa barata para um camponês.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-048",
+      "suporte_prata": 1200,
+      "preco_prata": 1200,
+      "mercado": "O",
+      "unidade": "1 armadura",
+      "materiais_estimados": "Placas de aço ajustadas, acolchoamento e correias",
+      "justificativa": "Forja e ajuste de conjunto completo dominam o custo; investimento de elite mesmo sem raridade mágica.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-049",
+      "suporte_prata": 60,
+      "preco_prata": 300,
+      "mercado": "E",
+      "unidade": "1 armadura",
+      "materiais_estimados": "Couro selecionado e costura precisa",
+      "justificativa": "Proteção leve melhor e movimento após sofrer dano; especialidade élfica limita a oferta.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-050",
+      "suporte_prata": 400,
+      "preco_prata": 900,
+      "mercado": "O",
+      "unidade": "1 armadura",
+      "materiais_estimados": "Escamas de aço, base flexível e correias",
+      "justificativa": "Montagem trabalhosa e Ferimento reativo justificam prêmio acima da armadura média comum.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-051",
+      "suporte_prata": 1600,
+      "preco_prata": 3200,
+      "mercado": "O",
+      "unidade": "1 armadura",
+      "materiais_estimados": "Placas temperadas, tecido e cordões",
+      "justificativa": "Fabricação especializada e geração de Guarda em posição fixa; inclui custo de importação ou mestre local.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-052",
+      "suporte_prata": 100,
+      "preco_prata": 3500,
+      "mercado": "R",
+      "unidade": "1 armadura",
+      "materiais_estimados": "Tecido técnico ou encantado e fechos",
+      "justificativa": "Planar e mudar o limite de defesa excedem um manto comum; atacar desfaz sua vantagem.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-053",
+      "suporte_prata": 450,
+      "preco_prata": 4500,
+      "mercado": "R",
+      "unidade": "1 armadura",
+      "materiais_estimados": "Aço, acolchoamento e montagem ritual",
+      "justificativa": "Transforma Ferimento em ataque; o próprio dano alimenta um risco crescente ao usuário.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-054",
+      "suporte_prata": 1600,
+      "preco_prata": 10000,
+      "mercado": "R",
+      "unidade": "1 armadura",
+      "materiais_estimados": "Placas de aço e montagem sacra",
+      "justificativa": "Proteção de aliados, cura e aura antiprofanidade fazem uma relíquia de guerra; trituração recorrente limita seu público.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-055",
+      "suporte_prata": 18,
+      "preco_prata": 18,
+      "mercado": "V",
+      "unidade": "1 escudo",
+      "materiais_estimados": "Madeira, couro e ferragens",
+      "justificativa": "Proteção leve com materiais comuns e montagem simples.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-056",
+      "suporte_prata": 50,
+      "preco_prata": 50,
+      "mercado": "C",
+      "unidade": "1 escudo",
+      "materiais_estimados": "Madeira grossa, couro e aço",
+      "justificativa": "Área maior, ferragens e robustez tornam-no mais caro que o escudo leve.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-057",
+      "suporte_prata": 25,
+      "preco_prata": 90,
+      "mercado": "E",
+      "unidade": "1 escudo",
+      "materiais_estimados": "Aço ou madeira reforçada e correias",
+      "justificativa": "Interceptar dano de aliado é sua especialidade; gasta Reação e vida do escudo.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-058",
+      "suporte_prata": 65,
+      "preco_prata": 180,
+      "mercado": "E",
+      "unidade": "1 escudo",
+      "materiais_estimados": "Madeira, aço e fixações reforçadas",
+      "justificativa": "Resiste a impacto e agrega empurrão em investidas; ofício militar especializado.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-059",
+      "suporte_prata": 100,
+      "preco_prata": 3200,
+      "mercado": "R",
+      "unidade": "1 escudo",
+      "materiais_estimados": "Suporte metálico e foco luminoso",
+      "justificativa": "Defesa contra magia e revelação de ocultos têm grande valor; não protege contra corpo a corpo.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-060",
+      "suporte_prata": 80,
+      "preco_prata": 4000,
+      "mercado": "R",
+      "unidade": "1 escudo",
+      "materiais_estimados": "Madeira reforçada, aço e símbolos da legião",
+      "justificativa": "Protege vários aliados em formação; sozinho perde a função, reduzindo a demanda fora de tropas.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-061",
+      "suporte_prata": 2,
+      "preco_prata": 12,
+      "mercado": "E",
+      "unidade": "1 dose",
+      "materiais_estimados": "Frasco e preparação alquímica",
+      "justificativa": "Cura imediata e portátil é valiosa em risco; manter o preço de teste como prata dá seis diárias brutas de trabalhador.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-062",
+      "suporte_prata": 0.2,
+      "preco_prata": 0.2,
+      "mercado": "V",
+      "unidade": "1 tocha",
+      "materiais_estimados": "Madeira, fibras e combustível",
+      "justificativa": "Bem barato de iluminação por uma hora; preço não precisa acompanhar os demais consumíveis de combate.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-063",
+      "suporte_prata": 2,
+      "preco_prata": 8,
+      "mercado": "E",
+      "unidade": "1 dose",
+      "materiais_estimados": "Frasco, ervas e reagentes",
+      "justificativa": "Remove Veneno e uma Fadiga; menor versatilidade que cura geral evita preço excessivo.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-064",
+      "suporte_prata": 0.8,
+      "preco_prata": 2,
+      "mercado": "V",
+      "unidade": "1 ração",
+      "materiais_estimados": "Alimentos conservados e embalagem",
+      "justificativa": "Inclui o bônus de preparo da mão inicial, além de nutrição; não equivale a uma simples refeição.",
+      "ressalva": "Só uma ração contribui para a próxima mão inicial."
+    },
+    {
+      "id": "EQ-065",
+      "suporte_prata": 3,
+      "preco_prata": 15,
+      "mercado": "E",
+      "unidade": "1 bomba",
+      "materiais_estimados": "Recipiente e mistura fumígena",
+      "justificativa": "Cobertura de área oferece fuga e controle; preparação segura exige alquimista ou artífice.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-066",
+      "suporte_prata": 0.5,
+      "preco_prata": 1,
+      "mercado": "V",
+      "unidade": "1 uso de preparo",
+      "materiais_estimados": "Abrasivo e material de acabamento",
+      "justificativa": "Preço do uso de manutenção que concede +1 de dano, não de uma pedra artesanal inesgotável.",
+      "ressalva": "A carta é Consumível; separar ferramenta física comum de sua unidade de uso."
+    },
+    {
+      "id": "EQ-067",
+      "suporte_prata": 2,
+      "preco_prata": 12,
+      "mercado": "E",
+      "unidade": "1 aplicação",
+      "materiais_estimados": "Frasco e reagente corrosivo",
+      "justificativa": "Uma aplicação supera resistência no próximo golpe; utilidade forte mas duração de um ataque.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-068",
+      "suporte_prata": 2,
+      "preco_prata": 12,
+      "mercado": "E",
+      "unidade": "1 dose",
+      "materiais_estimados": "Frasco e reagentes arcanos",
+      "justificativa": "Recuperação imediata de três Fadigas preserva opções táticas; referência igual à cura pequena.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-069",
+      "suporte_prata": 3,
+      "preco_prata": 20,
+      "mercado": "E",
+      "unidade": "1 aplicação",
+      "materiais_estimados": "Óleo tratado e reagente antiespectral",
+      "justificativa": "Permite ferir Intangíveis durante uma cena; solução de preparação que pode decidir uma caçada.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-070",
+      "suporte_prata": 0.5,
+      "preco_prata": 3,
+      "mercado": "C",
+      "unidade": "1 uso",
+      "materiais_estimados": "Aço fino trabalhado",
+      "justificativa": "Abrir fechadura comum sem teste tem utilidade superior ao metal; unidade consumida conforme a carta.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-071",
+      "suporte_prata": 3,
+      "preco_prata": 25,
+      "mercado": "E",
+      "unidade": "1 dose",
+      "materiais_estimados": "Frasco e reagentes minerais",
+      "justificativa": "Três Guardas entregam proteção imediata; dose única, sem durabilidade de armadura.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-072",
+      "suporte_prata": 4,
+      "preco_prata": 35,
+      "mercado": "E",
+      "unidade": "1 dose",
+      "materiais_estimados": "Frasco e reagentes estimulantes",
+      "justificativa": "Duas ações extras de ataque podem decidir o turno; perda de vida limita o prêmio.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-073",
+      "suporte_prata": 2,
+      "preco_prata": 12,
+      "mercado": "E",
+      "unidade": "1 porção",
+      "materiais_estimados": "Resina aromática e mistura ritual",
+      "justificativa": "Reduz custo de magias na área por janela curta; valor cresce com coordenação do grupo.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-074",
+      "suporte_prata": 2,
+      "preco_prata": 10,
+      "mercado": "C",
+      "unidade": "1 frasco",
+      "materiais_estimados": "Piche, recipiente e mistura aderente",
+      "justificativa": "Controle de terreno e Imobilizar na área agregam valor; matérias-primas são baratas.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-075",
+      "suporte_prata": 4,
+      "preco_prata": 30,
+      "mercado": "E",
+      "unidade": "1 dose",
+      "materiais_estimados": "Frasco e reagentes estimulantes",
+      "justificativa": "Dois movimentos extras servem a fuga e posição; cinco Fadigas restringem o uso.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-076",
+      "suporte_prata": 5,
+      "preco_prata": 120,
+      "mercado": "O",
+      "unidade": "1 dose",
+      "materiais_estimados": "Preparação alquímica de difícil síntese",
+      "justificativa": "Bônus de três rodadas e imunidades são fortes; exilar oito cartas é custo severo que reduz compradores.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-077",
+      "suporte_prata": 3,
+      "preco_prata": 150,
+      "mercado": "O",
+      "unidade": "1 porção",
+      "materiais_estimados": "Reagente umbral preservado",
+      "justificativa": "Teleporte por Reação é ferramenta de sobrevivência; Medo e exigência de penumbra limitam a aplicação.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-078",
+      "suporte_prata": 2,
+      "preco_prata": 100,
+      "mercado": "E",
+      "unidade": "1 dose",
+      "materiais_estimados": "Água e consagração ritual",
+      "justificativa": "Cura do grupo por magias divinas tem valor situacional alto; aumenta Fadiga das magias.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-079",
+      "suporte_prata": 1,
+      "preco_prata": 60,
+      "mercado": "E",
+      "unidade": "1 flecha",
+      "materiais_estimados": "Haste, ponta e carga alquímica",
+      "justificativa": "Uma munição de área; risco de explodir ao sofrer Fogo impede preço equivalente a arma permanente.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-080",
+      "suporte_prata": 5,
+      "preco_prata": 180,
+      "mercado": "O",
+      "unidade": "1 uso",
+      "materiais_estimados": "Pergaminho, tinta e inscrição arcana",
+      "justificativa": "Desfazer magia contínua é resposta rara e valiosa; exige quatro Fadigas e consome o recurso.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-081",
+      "suporte_prata": 3,
+      "preco_prata": 3,
+      "mercado": "V",
+      "unidade": "15 metros",
+      "materiais_estimados": "Cânhamo ou fibra equivalente",
+      "justificativa": "Ferramenta cotidiana de escalada, comprada por comprimento definido.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-082",
+      "suporte_prata": 5,
+      "preco_prata": 5,
+      "mercado": "V",
+      "unidade": "1 ferramenta",
+      "materiais_estimados": "Barra de ferro forjada",
+      "justificativa": "Ofício simples, reutilizável e útil a obras e exploração.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-083",
+      "suporte_prata": 0.5,
+      "preco_prata": 0.5,
+      "mercado": "V",
+      "unidade": "1 conjunto",
+      "materiais_estimados": "Pederneira, aço e mecha",
+      "justificativa": "Produção corrente e uso repetido; não confundir com uma tocha consumida.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-084",
+      "suporte_prata": 20,
+      "preco_prata": 40,
+      "mercado": "C",
+      "unidade": "1 kit reutilizável",
+      "materiais_estimados": "Ferramentas, abrasivos e pequenos reparos",
+      "justificativa": "Restaurar até três vidas em cada descanso oferece economia repetida; preço inclui a capacidade da carta.",
+      "ressalva": "O texto não define cargas ou reposição. Não cobrei materiais por uso que a regra não exige."
+    },
+    {
+      "id": "EQ-085",
+      "suporte_prata": 15,
+      "preco_prata": 15,
+      "mercado": "V",
+      "unidade": "1 kit",
+      "materiais_estimados": "Tecido, cobertores e utensílios",
+      "justificativa": "Conjunto funcional para descanso ao relento; valor de equipamento de viagem completo, não só uma manta.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-086",
+      "suporte_prata": 8,
+      "preco_prata": 8,
+      "mercado": "C",
+      "unidade": "1 lanterna",
+      "materiais_estimados": "Chapa, vidro ou mica e encaixes",
+      "justificativa": "Trabalho de funileiro e proteção da chama; bem durável de iluminação.",
+      "ressalva": "O item não define consumo de combustível; não adicionei taxa de óleo à regra."
+    },
+    {
+      "id": "EQ-087",
+      "suporte_prata": 0.3,
+      "preco_prata": 0.3,
+      "mercado": "V",
+      "unidade": "1 vara de 3 m",
+      "materiais_estimados": "Madeira reta",
+      "justificativa": "Muito pouco beneficiamento; a vantagem vem de usar a ferramenta correta.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-088",
+      "suporte_prata": 5,
+      "preco_prata": 5,
+      "mercado": "C",
+      "unidade": "1 espelho",
+      "materiais_estimados": "Metal polido ou pequeno vidro espelhado",
+      "justificativa": "Superfície bem acabada exige ofício; tamanho pequeno limita matéria-prima.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-089",
+      "suporte_prata": 5,
+      "preco_prata": 20,
+      "mercado": "C",
+      "unidade": "1 bandoleira",
+      "materiais_estimados": "Couro, fivelas e encaixes",
+      "justificativa": "Facilita virar a arma duas vezes por cena; o benefício funcional vale mais que correias simples.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-090",
+      "suporte_prata": 25,
+      "preco_prata": 30,
+      "mercado": "C",
+      "unidade": "1 kit",
+      "materiais_estimados": "Aço fino e ferramentas variadas",
+      "justificativa": "Conjunto de precisão durável; preço diferente da Gazua consumível de uma abertura.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-091",
+      "suporte_prata": 5,
+      "preco_prata": 180,
+      "mercado": "E",
+      "unidade": "1 foco",
+      "materiais_estimados": "Metal, madeira ou osso e consagração",
+      "justificativa": "É um foco com recuperação própria de Fadiga; não é símbolo religioso decorativo comum.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-092",
+      "suporte_prata": 1,
+      "preco_prata": 80,
+      "mercado": "E",
+      "unidade": "1 corda",
+      "materiais_estimados": "Fibra tratada e trama especial",
+      "justificativa": "Scry repetido após ataque sob condição de Sombra ou penumbra justifica prêmio sobre uma corda normal.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-093",
+      "suporte_prata": 5,
+      "preco_prata": 220,
+      "mercado": "E",
+      "unidade": "1 foco",
+      "materiais_estimados": "Madeira, metal condutor e inscrição",
+      "justificativa": "Dano sem teste de ataque que ignora resistência tem valor confiável; três Fadigas restringem a frequência.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-094",
+      "suporte_prata": 35,
+      "preco_prata": 250,
+      "mercado": "E",
+      "unidade": "1 equipamento",
+      "materiais_estimados": "Tecido leve, linhas e armação",
+      "justificativa": "Proteção automática contra quedas, reutilizável após descanso, excede tecido de viagem.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-095",
+      "suporte_prata": 25,
+      "preco_prata": 350,
+      "mercado": "E",
+      "unidade": "1 bússola",
+      "materiais_estimados": "Caixa, agulha e montagem arcana",
+      "justificativa": "Apontar para posição marcada é localização mágica, diferente de apontar para o norte.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-096",
+      "suporte_prata": 8,
+      "preco_prata": 8,
+      "mercado": "V",
+      "unidade": "1 kit",
+      "materiais_estimados": "Linha, anzóis, rede pequena e utensílios",
+      "justificativa": "Ferramenta comum, embora incomum na coleção; utilidade vem de tempo e local apropriado.",
+      "ressalva": "Alimenta cinco pessoas em 30 minutos. Disponibilidade depende do ambiente, não de uma sobretaxa por raridade."
+    },
+    {
+      "id": "EQ-097",
+      "suporte_prata": 10,
+      "preco_prata": 45,
+      "mercado": "C",
+      "unidade": "1 equipamento",
+      "materiais_estimados": "Ferro, corda e mecanismo",
+      "justificativa": "Alcance e capacidade de puxar objeto ou portador exigem montagem melhor que gancho solto.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-098",
+      "suporte_prata": 8,
+      "preco_prata": 15,
+      "mercado": "C",
+      "unidade": "1 conjunto",
+      "materiais_estimados": "Ferro, fecho e corrente curta",
+      "justificativa": "Contenção reutilizável; requer teste em combate e não paralisa automaticamente qualquer alvo.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-099",
+      "suporte_prata": 12,
+      "preco_prata": 60,
+      "mercado": "E",
+      "unidade": "1 manopla",
+      "materiais_estimados": "Bronze, couro e fechos de trava",
+      "justificativa": "Impedir desarme repetidamente exige ajuste especializado, além do metal.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-100",
+      "suporte_prata": 12,
+      "preco_prata": 180,
+      "mercado": "E",
+      "unidade": "1 par",
+      "materiais_estimados": "Couro, sola e amortecimento especial",
+      "justificativa": "Metade do dano de queda é proteção reutilizável para exploração e fuga.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-101",
+      "suporte_prata": 10,
+      "preco_prata": 400,
+      "mercado": "O",
+      "unidade": "1 talismã",
+      "materiais_estimados": "Pergaminho preservado e inscrição",
+      "justificativa": "Aplicar Penalidade a atacantes à distância repetidamente vale mais que o suporte físico.",
+      "ressalva": "A carta é Permanente: não tratar como pergaminho de uso único."
+    },
+    {
+      "id": "EQ-102",
+      "suporte_prata": 20,
+      "preco_prata": 120,
+      "mercado": "E",
+      "unidade": "1 manto",
+      "materiais_estimados": "Tecido de qualidade e acabamento camuflado",
+      "justificativa": "Vantagem permanente de Furtividade atende exploradores; efeito amplo supera uma capa rústica.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-103",
+      "suporte_prata": 10,
+      "preco_prata": 500,
+      "mercado": "E",
+      "unidade": "1 anel",
+      "materiais_estimados": "Metal trabalhado e ligação arcana",
+      "justificativa": "Converte exílio em recuperação de Fadiga uma vez por turno; recurso perdido limita seu valor.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-104",
+      "suporte_prata": 35,
+      "preco_prata": 600,
+      "mercado": "O",
+      "unidade": "1 elmo",
+      "materiais_estimados": "Metal, acolchoamento e montagem especial",
+      "justificativa": "Imunidade a Cegueira e Confusão tem alto valor recorrente, sem depender de consumíveis.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-105",
+      "suporte_prata": 8,
+      "preco_prata": 200,
+      "mercado": "E",
+      "unidade": "1 bainha",
+      "materiais_estimados": "Couro, encaixes e montagem ritual",
+      "justificativa": "Bônus de dano após virar a arma é repetível, mas exige o gatilho correto.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-106",
+      "suporte_prata": 8,
+      "preco_prata": 450,
+      "mercado": "E",
+      "unidade": "1 cachecol",
+      "materiais_estimados": "Tecido trabalhado e vínculo ritual",
+      "justificativa": "Duplicar fichas em aliado abre combinações; qualidade depende de que fichas o grupo gera.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-107",
+      "suporte_prata": 10,
+      "preco_prata": 600,
+      "mercado": "O",
+      "unidade": "1 cinto",
+      "materiais_estimados": "Couro, fivela e trama arcana",
+      "justificativa": "Ampliar impedimento muda o controle de área de um defensor; efeito reutilizável.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-108",
+      "suporte_prata": 15,
+      "preco_prata": 350,
+      "mercado": "E",
+      "unidade": "1 par",
+      "materiais_estimados": "Couro, solas e montagem arcana",
+      "justificativa": "Salto no ar é mobilidade incomum, com custo de Reação e dependência da regra de Salto.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-109",
+      "suporte_prata": 1,
+      "preco_prata": 2000,
+      "mercado": "R",
+      "unidade": "1 talismã",
+      "materiais_estimados": "Carta preparada e inscrição",
+      "justificativa": "Escolher valor num teste uma vez por descanso tem grande alcance tático e social.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-110",
+      "suporte_prata": 20,
+      "preco_prata": 3500,
+      "mercado": "R",
+      "unidade": "1 relíquia",
+      "materiais_estimados": "Vidro, metal e mecanismo temporal",
+      "justificativa": "Antecipar um turno permite explosões de ações; pular o próximo mantém um custo real.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-111",
+      "suporte_prata": 15,
+      "preco_prata": 5000,
+      "mercado": "R",
+      "unidade": "1 máscara",
+      "materiais_estimados": "Suporte moldado e encantamento de aparência",
+      "justificativa": "Imitação de voz e rosto interessa a espionagem e intriga; dano ou remoção encerram o efeito.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-112",
+      "suporte_prata": 10,
+      "preco_prata": 4000,
+      "mercado": "R",
+      "unidade": "1 talismã",
+      "materiais_estimados": "Metal, selo e vínculo de sangue",
+      "justificativa": "Trocar exílio por custos de Fadiga rompe a cadência de habilidades; custo em baralho restringe demanda.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-113",
+      "suporte_prata": 20,
+      "preco_prata": 4500,
+      "mercado": "R",
+      "unidade": "1 colar",
+      "materiais_estimados": "Metal, corrente e vínculo ritual",
+      "justificativa": "Redistribuir dano e cura durante uma cena é proteção de dupla; requer aliado e coordenação.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-114",
+      "suporte_prata": 30,
+      "preco_prata": 6500,
+      "mercado": "R",
+      "unidade": "1 par",
+      "materiais_estimados": "Metal, couro e montagem espacial",
+      "justificativa": "Teleporte reutilizável com vantagem ofensiva tem aplicação ampla; limite por turno e Fadiga moderam.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-115",
+      "suporte_prata": 40,
+      "preco_prata": 12000,
+      "mercado": "R",
+      "unidade": "1 espelho",
+      "materiais_estimados": "Superfície polida e montagem arcana",
+      "justificativa": "Refletir magia arcana por Reação interessa a corte e guerra; público e oferta são restritos.",
+      "ressalva": "O texto não estabelece limite por cena. Preço alto não substitui futura revisão de equilíbrio."
+    },
+    {
+      "id": "EQ-116",
+      "suporte_prata": 12,
+      "preco_prata": 400,
+      "mercado": "E",
+      "unidade": "1 foco",
+      "materiais_estimados": "Cristal, suporte e gravação",
+      "justificativa": "Aumenta dano de vários ataques mágicos no turno; depende de atributos e janela de conjuração.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-117",
+      "suporte_prata": 5,
+      "preco_prata": 250,
+      "mercado": "E",
+      "unidade": "1 foco",
+      "materiais_estimados": "Madeira e montagem arcana",
+      "justificativa": "Virar a carta de Aprendiz é função própria de classe; pouca procura fora desse usuário.",
+      "ressalva": "Depende do texto atualizado da carta de Aprendiz para medir todas as combinações."
+    },
+    {
+      "id": "EQ-118",
+      "suporte_prata": 20,
+      "preco_prata": 1200,
+      "mercado": "O",
+      "unidade": "1 foco",
+      "materiais_estimados": "Madeira reforçada, metal e inscrições",
+      "justificativa": "Eleva limite do 21 em magia e empurra vários inimigos; ganho permanente e controle em área.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-119",
+      "suporte_prata": 20,
+      "preco_prata": 700,
+      "mercado": "E",
+      "unidade": "1 foco",
+      "materiais_estimados": "Vidro ou cristal e montagem",
+      "justificativa": "Comprar carta adicional ao Concentrar oferece vantagem recorrente e exige gastar Fadiga.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-120",
+      "suporte_prata": 25,
+      "preco_prata": 900,
+      "mercado": "E",
+      "unidade": "1 foco",
+      "materiais_estimados": "Esfera trabalhada e montagem protetora",
+      "justificativa": "Defesa passiva melhor e resistência temporária de aliado fazem dele proteção arcana versátil.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-121",
+      "suporte_prata": 25,
+      "preco_prata": 800,
+      "mercado": "E",
+      "unidade": "1 foco",
+      "materiais_estimados": "Metal trabalhado e consagração",
+      "justificativa": "Melhora todas as magias de cura do usuário; efeito pequeno por uso, valioso pela repetição.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-122",
+      "suporte_prata": 20,
+      "preco_prata": 450,
+      "mercado": "E",
+      "unidade": "1 foco",
+      "materiais_estimados": "Relicário, corrente e consagração",
+      "justificativa": "Fornece Guarda a um aliado com custo alto; útil, mas inferior a uma aura sem esse gasto.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-123",
+      "suporte_prata": 10,
+      "preco_prata": 2400,
+      "mercado": "O",
+      "unidade": "1 foco",
+      "materiais_estimados": "Selo ou marca ritual",
+      "justificativa": "Dois danos extras e Ferimento em magias são aumentos recorrentes, especialmente em ataques de área.",
+      "ressalva": "O texto não limita a um alvo ou uma vez por turno. A avaliação assume sua redação atual."
+    },
+    {
+      "id": "EQ-124",
+      "suporte_prata": 35,
+      "preco_prata": 4500,
+      "mercado": "O",
+      "unidade": "1 foco",
+      "materiais_estimados": "Metal, incenso ritual e consagração",
+      "justificativa": "Recuperar Fadiga extra do portador e adjacentes acelera o grupo inteiro, com grande valor coletivo.",
+      "ressalva": "Não acrescentei gasto de incenso: a regra atual não exige reposição."
+    },
+    {
+      "id": "EQ-125",
+      "suporte_prata": 60,
+      "preco_prata": 700,
+      "mercado": "E",
+      "unidade": "1 foco",
+      "materiais_estimados": "Manuscrito, tintas e encadernação",
+      "justificativa": "Scry para aliado e dano extra por Espírito combinam suporte e ataque; o livro transmite função reutilizável.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-126",
+      "suporte_prata": 15,
+      "preco_prata": 900,
+      "mercado": "E",
+      "unidade": "1 foco",
+      "materiais_estimados": "Contas, metal e consagração",
+      "justificativa": "Resistência passiva e conversão de Ferimento em Foco dão proteção e gestão de fichas.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-127",
+      "suporte_prata": 1,
+      "preco_prata": 8,
+      "mercado": "E",
+      "unidade": "1 runa",
+      "materiais_estimados": "Pedra gravada e carga elemental",
+      "justificativa": "Fogo e alívio de frio são efeitos de uma carga; não vale como foco de uso permanente.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-128",
+      "suporte_prata": 1,
+      "preco_prata": 10,
+      "mercado": "E",
+      "unidade": "1 runa",
+      "materiais_estimados": "Pedra gravada e carga elemental",
+      "justificativa": "Água potável e apagar Fogo têm utilidade civil e de expedição, com volume limitado.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-129",
+      "suporte_prata": 1,
+      "preco_prata": 40,
+      "mercado": "E",
+      "unidade": "1 runa",
+      "materiais_estimados": "Pedra gravada e carga elemental",
+      "justificativa": "Quebrar um metro cúbico de pedra ou reparar estrutura tem valor de obra além do combate.",
+      "ressalva": "Preço sensível ao uso em mineração e construção; não presume criar minério ou material vendável."
+    },
+    {
+      "id": "EQ-130",
+      "suporte_prata": 1,
+      "preco_prata": 10,
+      "mercado": "E",
+      "unidade": "1 runa",
+      "materiais_estimados": "Pedra gravada e carga elemental",
+      "justificativa": "Respiração curta, empurrão ou planar por um turno oferecem soluções pontuais.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-131",
+      "suporte_prata": 1,
+      "preco_prata": 18,
+      "mercado": "E",
+      "unidade": "1 runa",
+      "materiais_estimados": "Pedra gravada e carga luminosa",
+      "justificativa": "Cegueira a distância ou descarte de Sombra na área são respostas táticas fortes de uso único.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-132",
+      "suporte_prata": 1,
+      "preco_prata": 30,
+      "mercado": "E",
+      "unidade": "1 runa",
+      "materiais_estimados": "Pedra gravada e carga umbral",
+      "justificativa": "Retornar carta do exílio é recuperação persistente, além das outras escolhas da runa.",
+      "ressalva": "Definir acesso ao exílio é relevante para não banalizar custos permanentes de outras cartas."
+    },
+    {
+      "id": "EQ-133",
+      "suporte_prata": 25,
+      "preco_prata": 1000,
+      "mercado": "O",
+      "unidade": "1 amuleto",
+      "materiais_estimados": "Metal, pedra e consagração",
+      "justificativa": "Defesa contra distância e neblina reutilizável; defesa específica vale menos que proteção geral.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-134",
+      "suporte_prata": 35,
+      "preco_prata": 2500,
+      "mercado": "O",
+      "unidade": "1 amuleto",
+      "materiais_estimados": "Metal, emblema e consagração",
+      "justificativa": "Dano, resistência e avanço ofensivo servem a vanguarda; condição de posição impede benefício universal.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-135",
+      "suporte_prata": 20,
+      "preco_prata": 1400,
+      "mercado": "O",
+      "unidade": "1 amuleto",
+      "materiais_estimados": "Metal, inscrição e consagração",
+      "justificativa": "Diplomacia e mensagem privada têm valor político e de espionagem, além do combate.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-136",
+      "suporte_prata": 30,
+      "preco_prata": 2000,
+      "mercado": "O",
+      "unidade": "1 amuleto",
+      "materiais_estimados": "Metal, pedra e consagração",
+      "justificativa": "Amplifica ataques contra Fogo e transforma remoção de fichas em cura; exige fontes de Fogo.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-137",
+      "suporte_prata": 30,
+      "preco_prata": 3500,
+      "mercado": "O",
+      "unidade": "1 amuleto",
+      "materiais_estimados": "Metal trabalhado e consagração",
+      "justificativa": "Evitar a última perda por dano uma vez por cena e curar aliado com remoção de condição são funções recorrentes de sobrevivência.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-138",
+      "suporte_prata": 35,
+      "preco_prata": 4500,
+      "mercado": "O",
+      "unidade": "1 amuleto",
+      "materiais_estimados": "Metal, pedra e vínculo espiritual",
+      "justificativa": "Perceber espíritos e passagens e ignorar armadura dão valor de exploração e guerra.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-139",
+      "suporte_prata": 80,
+      "preco_prata": 400,
+      "mercado": "E",
+      "unidade": "1 exemplar funcional",
+      "materiais_estimados": "Pergaminho ou papel, tintas e encadernação",
+      "justificativa": "Três magias elementais de ataque, movimento e resistência; preço inclui conhecimento funcional, não só o livro.",
+      "ressalva": "Regras de copiar, ensinar e vender cópias não estão definidas."
+    },
+    {
+      "id": "EQ-140",
+      "suporte_prata": 80,
+      "preco_prata": 350,
+      "mercado": "E",
+      "unidade": "1 exemplar funcional",
+      "materiais_estimados": "Pergaminho ou papel, tintas e encadernação",
+      "justificativa": "Ataque, respiração aquática e controle tornam o volume útil a expedições especializadas.",
+      "ressalva": "Cópias e ensino não têm regra de custo definida."
+    },
+    {
+      "id": "EQ-141",
+      "suporte_prata": 80,
+      "preco_prata": 450,
+      "mercado": "E",
+      "unidade": "1 exemplar funcional",
+      "materiais_estimados": "Pergaminho ou papel, tintas e encadernação",
+      "justificativa": "Dano contra armadura, percepção sísmica e ataque em linha têm utilidade militar e subterrânea.",
+      "ressalva": "Cópias e ensino não têm regra de custo definida."
+    },
+    {
+      "id": "EQ-142",
+      "suporte_prata": 80,
+      "preco_prata": 450,
+      "mercado": "E",
+      "unidade": "1 exemplar funcional",
+      "materiais_estimados": "Pergaminho ou papel, tintas e encadernação",
+      "justificativa": "Mobilidade, defesa e passagem por frestas ampliam utilidade além do dano de combate.",
+      "ressalva": "Cópias e ensino não têm regra de custo definida."
+    },
+    {
+      "id": "EQ-143",
+      "suporte_prata": 80,
+      "preco_prata": 500,
+      "mercado": "E",
+      "unidade": "1 exemplar funcional",
+      "materiais_estimados": "Pergaminho ou papel, tintas e encadernação",
+      "justificativa": "Revelação de ocultos, cura em grupo e ataque radiante atendem segurança e caçadas.",
+      "ressalva": "Cópias e ensino não têm regra de custo definida."
+    },
+    {
+      "id": "EQ-144",
+      "suporte_prata": 80,
+      "preco_prata": 450,
+      "mercado": "E",
+      "unidade": "1 exemplar funcional",
+      "materiais_estimados": "Pergaminho ou papel, tintas e encadernação",
+      "justificativa": "Ocultação e fichas em área têm alto valor para infiltração e controle.",
+      "ressalva": "Cópias e ensino não têm regra de custo definida."
+    },
+    {
+      "id": "EQ-145",
+      "suporte_prata": 150,
+      "preco_prata": 3500,
+      "mercado": "R",
+      "unidade": "1 exemplar funcional",
+      "materiais_estimados": "Manuscrito especializado e encadernação",
+      "justificativa": "Áreas grandes de Fogo e manutenção de efeito exigem especialista com dois elementos.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-146",
+      "suporte_prata": 150,
+      "preco_prata": 4500,
+      "mercado": "R",
+      "unidade": "1 exemplar funcional",
+      "materiais_estimados": "Manuscrito especializado e encadernação",
+      "justificativa": "Área sem ar, trevas e dano que escala com Medo têm valor de cerco e controle.",
+      "ressalva": "Efeitos de sufocamento e sustentação merecem teste de mesa; preço não resolve sua intensidade."
+    },
+    {
+      "id": "EQ-147",
+      "suporte_prata": 150,
+      "preco_prata": 4000,
+      "mercado": "R",
+      "unidade": "1 exemplar funcional",
+      "materiais_estimados": "Manuscrito especializado e encadernação",
+      "justificativa": "Destruir armadura e drenar calor são ferramentas fortes; custos de vida e Fadiga restringem uso.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-148",
+      "suporte_prata": 150,
+      "preco_prata": 3000,
+      "mercado": "R",
+      "unidade": "1 exemplar funcional",
+      "materiais_estimados": "Manuscrito especializado e encadernação",
+      "justificativa": "Controle de solo em área e deslocamento de inimigos servem a defesa e emboscada.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-149",
+      "suporte_prata": 150,
+      "preco_prata": 5000,
+      "mercado": "R",
+      "unidade": "1 exemplar funcional",
+      "materiais_estimados": "Manuscrito técnico e encadernação",
+      "justificativa": "Escavar e ver através de paredes têm valor de engenharia, mineração e espionagem além de combate.",
+      "ressalva": "Caverna dura 24 horas; não trate como obra permanente nem suponha que o texto crie minério."
+    },
+    {
+      "id": "EQ-150",
+      "suporte_prata": 150,
+      "preco_prata": 4200,
+      "mercado": "R",
+      "unidade": "1 exemplar funcional",
+      "materiais_estimados": "Manuscrito especializado e encadernação",
+      "justificativa": "Refletir magia por superfície e controlar área luminosa atendem defesa preparada e intriga.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-151",
+      "suporte_prata": 100,
+      "preco_prata": 800,
+      "mercado": "O",
+      "unidade": "1 exemplar funcional",
+      "materiais_estimados": "Manuscrito litúrgico e consagração",
+      "justificativa": "Bônus para aliados, ataque múltiplo e proteção valem pela coordenação de grupo.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-152",
+      "suporte_prata": 100,
+      "preco_prata": 900,
+      "mercado": "O",
+      "unidade": "1 exemplar funcional",
+      "materiais_estimados": "Manuscrito litúrgico e consagração",
+      "justificativa": "Iluminação extensa, mudança no limite do 21 e cura tornam o volume útil a comunidades e expedições.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-153",
+      "suporte_prata": 100,
+      "preco_prata": 1100,
+      "mercado": "O",
+      "unidade": "1 exemplar funcional",
+      "materiais_estimados": "Manuscrito litúrgico e consagração",
+      "justificativa": "Remover condições em conjunto e imunidade mental de reação têm valor de sobrevivência coletiva.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-154",
+      "suporte_prata": 100,
+      "preco_prata": 1000,
+      "mercado": "O",
+      "unidade": "1 exemplar funcional",
+      "materiais_estimados": "Manuscrito litúrgico e consagração",
+      "justificativa": "Controlar ações e movimento de inimigos e puni-los por atacar favorece defesa organizada.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-155",
+      "suporte_prata": 100,
+      "preco_prata": 1200,
+      "mercado": "O",
+      "unidade": "1 exemplar funcional",
+      "materiais_estimados": "Manuscrito litúrgico e consagração",
+      "justificativa": "Cura, dano antiprofanidade e pira de redução de Fadiga oferecem grande utilidade coletiva.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-156",
+      "suporte_prata": 12,
+      "preco_prata": 60,
+      "mercado": "E",
+      "unidade": "1 arma",
+      "materiais_estimados": "Elos de ferro ou aço, sem pesos nas pontas",
+      "justificativa": "Elos soldados de boa resistência e reação de captura justificam prêmio funcional; não exige corrente mágica flamejante.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-157",
+      "suporte_prata": 2,
+      "preco_prata": 10,
+      "mercado": "E",
+      "unidade": "1 dose",
+      "materiais_estimados": "Frasco e preparação regenerativa",
+      "justificativa": "Pode curar seis ao longo de três turnos, mas dano faz perder uma cura; vale menos que a cura imediata de cinco.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-158",
+      "suporte_prata": 2,
+      "preco_prata": 10,
+      "mercado": "E",
+      "unidade": "1 dose",
+      "materiais_estimados": "Frasco e reagentes de recuperação",
+      "justificativa": "Três Fadigas removidas futuramente são menos flexíveis que a recuperação imediata da Mana Pequena.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-159",
+      "suporte_prata": 2,
+      "preco_prata": 15,
+      "mercado": "E",
+      "unidade": "1 dose",
+      "materiais_estimados": "Frasco e reagentes sensoriais",
+      "justificativa": "Visão no escuro por dez minutos liberta a mão da luz e ajuda infiltração; duração curta limita o preço.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-160",
+      "suporte_prata": 3,
+      "preco_prata": 22,
+      "mercado": "E",
+      "unidade": "1 dose",
+      "materiais_estimados": "Frasco e reagentes protetores",
+      "justificativa": "Reserva de seis vidas absorve dano de armadura por uma cena; não se cura nem persiste como armadura real.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-161",
+      "suporte_prata": 3,
+      "preco_prata": 28,
+      "mercado": "E",
+      "unidade": "1 dose",
+      "materiais_estimados": "Frasco e reagentes cáusticos",
+      "justificativa": "Retalia por três turnos, mas exige perder vida em corpo a corpo; efeito forte e arriscado.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-162",
+      "suporte_prata": 4,
+      "preco_prata": 90,
+      "mercado": "O",
+      "unidade": "1 dose",
+      "materiais_estimados": "Frasco e reagentes de reflexo",
+      "justificativa": "Pode gerar Reações ao derrotar inimigos; revela as defesas e depende de abates durante janela curta.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-163",
+      "suporte_prata": 3,
+      "preco_prata": 18,
+      "mercado": "E",
+      "unidade": "1 dose",
+      "materiais_estimados": "Frasco e preparação antitóxica",
+      "justificativa": "Remove Veneno e protege de novas fichas por três turnos; uso preventivo cobra prêmio sobre Antídoto.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-164",
+      "suporte_prata": 2,
+      "preco_prata": 20,
+      "mercado": "E",
+      "unidade": "1 dose",
+      "materiais_estimados": "Frasco e reagentes de adaptação",
+      "justificativa": "Dez minutos de respiração aquática e Percepção são segurança valiosa, com demanda concentrada em exploração.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-165",
+      "suporte_prata": 3,
+      "preco_prata": 24,
+      "mercado": "E",
+      "unidade": "1 dose",
+      "materiais_estimados": "Frasco e reagentes de concentração",
+      "justificativa": "Até três Focos exigem acertos distribuídos nos próprios turnos; ganho futuro e condicionado.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-166",
+      "suporte_prata": 2,
+      "preco_prata": 16,
+      "mercado": "E",
+      "unidade": "1 dose",
+      "materiais_estimados": "Frasco e preparação de amplificação",
+      "justificativa": "Aumenta duas magias em um alvo por uso; quatro pontos totais potenciais não amplificam a área inteira.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-167",
+      "suporte_prata": 2,
+      "preco_prata": 8,
+      "mercado": "E",
+      "unidade": "1 dose",
+      "materiais_estimados": "Frasco e preparação depurativa",
+      "justificativa": "Remove Veneno e termina poções, inclusive bônus; não evita consequências de término.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-168",
+      "suporte_prata": 3,
+      "preco_prata": 18,
+      "mercado": "E",
+      "unidade": "1 dose",
+      "materiais_estimados": "Frasco e reagentes de adaptação",
+      "justificativa": "Libera requisitos de equipamento por uma cena; não aumenta dano nem testes, evitando preço de melhoria de atributo.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-169",
+      "suporte_prata": 2,
+      "preco_prata": 10,
+      "mercado": "E",
+      "unidade": "1 dose",
+      "materiais_estimados": "Frasco e preparação odorífera",
+      "justificativa": "Oculta cheiro por dez minutos; benefício estreito para infiltração e caçada, sem invisibilidade geral.",
+      "ressalva": ""
+    },
+    {
+      "id": "EQ-170",
+      "suporte_prata": 5,
+      "preco_prata": 80,
+      "mercado": "O",
+      "unidade": "1 dose",
+      "materiais_estimados": "Frasco e reagentes de memória",
+      "justificativa": "Troca uma escolha de habilidade por outra de mesmo custo; serviço valioso de treinamento, sem gerar XP.",
+      "ressalva": "Não muda raça, classe, atributos ou carta de herói."
+    }
+  ]
+}

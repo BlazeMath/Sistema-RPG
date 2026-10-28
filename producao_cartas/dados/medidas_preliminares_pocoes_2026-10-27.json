@@ -1,0 +1,141 @@
+{
+  "itens_conferidos": [
+    {
+      "id": "EQ-064",
+      "modo": "frente_unica",
+      "verso_cabe": true,
+      "font_verso_pt": 9,
+      "altura_texto_verso_pt": 54.0,
+      "altura_arte_original_mm": 40.6
+    },
+    {
+      "id": "EQ-131",
+      "modo": "frente_unica",
+      "verso_cabe": true,
+      "font_verso_pt": 9,
+      "altura_texto_verso_pt": 75.6,
+      "altura_arte_original_mm": 34.0
+    },
+    {
+      "id": "EQ-137",
+      "modo": "frente_unica",
+      "verso_cabe": true,
+      "font_verso_pt": 9,
+      "altura_texto_verso_pt": 75.6,
+      "altura_arte_original_mm": 37.3
+    },
+    {
+      "id": "EQ-157",
+      "modo": "frente_unica",
+      "verso_cabe": true,
+      "font_verso_pt": 9,
+      "altura_texto_verso_pt": 54.0,
+      "altura_arte_original_mm": 43.9
+    },
+    {
+      "id": "EQ-158",
+      "modo": "frente_unica",
+      "verso_cabe": true,
+      "font_verso_pt": 9,
+      "altura_texto_verso_pt": 32.4,
+      "altura_arte_original_mm": 47.2
+    },
+    {
+      "id": "EQ-159",
+      "modo": "frente_unica",
+      "verso_cabe": true,
+      "font_verso_pt": 9,
+      "altura_texto_verso_pt": 32.4,
+      "altura_arte_original_mm": 47.2
+    },
+    {
+      "id": "EQ-160",
+      "modo": "frente_verso",
+      "verso_cabe": true,
+      "font_verso_pt": 9,
+      "altura_texto_verso_pt": 97.2,
+      "altura_arte_original_mm": 20.7
+    },
+    {
+      "id": "EQ-161",
+      "modo": "frente_unica",
+      "verso_cabe": true,
+      "font_verso_pt": 9,
+      "altura_texto_verso_pt": 64.8,
+      "altura_arte_original_mm": 40.6
+    },
+    {
+      "id": "EQ-162",
+      "modo": "frente_unica",
+      "verso_cabe": true,
+      "font_verso_pt": 9,
+      "altura_texto_verso_pt": 75.6,
+      "altura_arte_original_mm": 37.3
+    },
+    {
+      "id": "EQ-163",
+      "modo": "frente_unica",
+      "verso_cabe": true,
+      "font_verso_pt": 9,
+      "altura_texto_verso_pt": 43.2,
+      "altura_arte_original_mm": 43.9
+    },
+    {
+      "id": "EQ-164",
+      "modo": "frente_unica",
+      "verso_cabe": true,
+      "font_verso_pt": 9,
+      "altura_texto_verso_pt": 43.2,
+      "altura_arte_original_mm": 43.9
+    },
+    {
+      "id": "EQ-165",
+      "modo": "frente_unica",
+      "verso_cabe": true,
+      "font_verso_pt": 9,
+      "altura_texto_verso_pt": 43.2,
+      "altura_arte_original_mm": 43.9
+    },
+    {
+      "id": "EQ-166",
+      "modo": "frente_unica",
+      "verso_cabe": true,
+      "font_verso_pt": 9,
+      "altura_texto_verso_pt": 54.0,
+      "altura_arte_original_mm": 40.6
+    },
+    {
+      "id": "EQ-167",
+      "modo": "frente_unica",
+      "verso_cabe": true,
+      "font_verso_pt": 9,
+      "altura_texto_verso_pt": 64.8,
+      "altura_arte_original_mm": 37.3
+    },
+    {
+      "id": "EQ-168",
+      "modo": "frente_unica",
+      "verso_cabe": true,
+      "font_verso_pt": 9,
+      "altura_texto_verso_pt": 64.8,
+      "altura_arte_original_mm": 40.6
+    },
+    {
+      "id": "EQ-169",
+      "modo": "frente_unica",
+      "verso_cabe": true,
+      "font_verso_pt": 9,
+      "altura_texto_verso_pt": 43.2,
+      "altura_arte_original_mm": 43.9
+    },
+    {
+      "id": "EQ-170",
+      "modo": "frente_unica",
+      "verso_cabe": true,
+      "font_verso_pt": 9,
+      "altura_texto_verso_pt": 86.4,
+      "altura_arte_original_mm": 30.7
+    }
+  ],
+  "observacao": "Somente calculo de encaixe tipografico. Nenhum PDF ou arte foi gerado."
+}

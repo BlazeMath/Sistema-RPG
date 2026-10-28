@@ -1,0 +1,282 @@
+[
+  {
+    "id": "EQ-157",
+    "arquivo": "artes/pocoes/EQ-157_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-d49d904e-3836-4fd6-9b70-bb440524e289.png",
+    "sha256": "42dd3001ea005fd4e382742fdbb2408db20b1e1090cad2d7071e0d775ea48d49",
+    "tamanho_px": [
+      1216,
+      1293
+    ],
+    "modo": "RGBA",
+    "bbox_alpha_64": [
+      219,
+      63,
+      1067,
+      1210
+    ],
+    "ferramenta": "image_gen.imagegen integrada",
+    "modo_ferramenta": "geração nova, fundo transparente",
+    "qa_visual": "frasco inteiro, sem texto, eixo reto, estilo aprovado para diagramação"
+  },
+  {
+    "id": "EQ-158",
+    "arquivo": "artes/pocoes/EQ-158_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-1f5c73f9-d311-4edb-92db-0af88dd22b4f.png",
+    "sha256": "0b10288bcc4de27900fe28ec38699c31f9f61ce65862eaeee26337014010be0e",
+    "tamanho_px": [
+      1024,
+      1536
+    ],
+    "modo": "RGBA",
+    "bbox_alpha_64": [
+      257,
+      12,
+      858,
+      1503
+    ],
+    "ferramenta": "image_gen.imagegen integrada",
+    "modo_ferramenta": "geração nova, fundo transparente",
+    "qa_visual": "frasco inteiro, sem texto, eixo reto, estilo aprovado para diagramação"
+  },
+  {
+    "id": "EQ-159",
+    "arquivo": "artes/pocoes/EQ-159_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-a37ddaaf-8e38-45ab-aa23-8adf05ffcd8a.png",
+    "sha256": "a5e931941181d2e8beb6f779c724d6e307b52dad27c9345454413e5d6b87de9e",
+    "tamanho_px": [
+      1214,
+      1295
+    ],
+    "modo": "RGBA",
+    "bbox_alpha_64": [
+      148,
+      15,
+      1068,
+      1264
+    ],
+    "ferramenta": "image_gen.imagegen integrada",
+    "modo_ferramenta": "geração nova, fundo transparente",
+    "qa_visual": "frasco inteiro, sem texto, eixo reto, estilo aprovado para diagramação"
+  },
+  {
+    "id": "EQ-160",
+    "arquivo": "artes/pocoes/EQ-160_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-c4f2a390-c326-491d-baaa-24f3b2631603.png",
+    "sha256": "6895e09a6fb312a1748426e751ffafcad6645ae11fbb24d805dd9c5d37c6b659",
+    "tamanho_px": [
+      1212,
+      1297
+    ],
+    "modo": "RGBA",
+    "bbox_alpha_64": [
+      207,
+      16,
+      1006,
+      1281
+    ],
+    "ferramenta": "image_gen.imagegen integrada",
+    "modo_ferramenta": "geração nova, fundo transparente",
+    "qa_visual": "frasco inteiro, sem texto, eixo reto, estilo aprovado para diagramação"
+  },
+  {
+    "id": "EQ-161",
+    "arquivo": "artes/pocoes/EQ-161_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-52fd2654-2ae0-48d5-b60e-d053e8ff881b.png",
+    "sha256": "9be55a5ca1ae4cd2c74549ee4918e8da79f61fb8f0fd1bbac3da21b9d55cf894",
+    "tamanho_px": [
+      1202,
+      1308
+    ],
+    "modo": "RGBA",
+    "bbox_alpha_64": [
+      153,
+      12,
+      1052,
+      1293
+    ],
+    "ferramenta": "image_gen.imagegen integrada",
+    "modo_ferramenta": "geração nova, fundo transparente",
+    "qa_visual": "frasco inteiro, sem texto, eixo reto, estilo aprovado para diagramação"
+  },
+  {
+    "id": "EQ-162",
+    "arquivo": "artes/pocoes/EQ-162_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-10827a39-5033-464d-88a2-e8790053b6c6.png",
+    "sha256": "71a19beae4ca0c8819009aa2ce09f02f15d0f9b29f5d77be30e86dfe7cc3b0f0",
+    "tamanho_px": [
+      1024,
+      1536
+    ],
+    "modo": "RGBA",
+    "bbox_alpha_64": [
+      128,
+      32,
+      895,
+      1473
+    ],
+    "ferramenta": "image_gen.imagegen integrada",
+    "modo_ferramenta": "geração nova, fundo transparente",
+    "qa_visual": "frasco inteiro, sem texto, eixo reto, estilo aprovado para diagramação"
+  },
+  {
+    "id": "EQ-163",
+    "arquivo": "artes/pocoes/EQ-163_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-9b2674fe-16bc-40f2-a601-f3c960f29b5e.png",
+    "sha256": "36bd54b54d3f32f8f0dda77fdd7e698da28b809bbd672ce4933c604be1489aac",
+    "tamanho_px": [
+      1199,
+      1312
+    ],
+    "modo": "RGBA",
+    "bbox_alpha_64": [
+      303,
+      90,
+      947,
+      1184
+    ],
+    "ferramenta": "image_gen.imagegen integrada",
+    "modo_ferramenta": "geração nova, fundo transparente",
+    "qa_visual": "frasco inteiro, sem texto, eixo reto, estilo aprovado para diagramação"
+  },
+  {
+    "id": "EQ-164",
+    "arquivo": "artes/pocoes/EQ-164_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-d518eacc-0ae3-4c15-8dfa-1244b30c1b24.png",
+    "sha256": "f26cf4b6166468ec985975a6e4a4e2bed7af8664b8ca7f0b3e4f8a147303d33e",
+    "tamanho_px": [
+      1223,
+      1286
+    ],
+    "modo": "RGBA",
+    "bbox_alpha_64": [
+      166,
+      58,
+      1076,
+      1194
+    ],
+    "ferramenta": "image_gen.imagegen integrada",
+    "modo_ferramenta": "geração nova, fundo transparente",
+    "qa_visual": "frasco inteiro, sem texto, eixo reto, estilo aprovado para diagramação"
+  },
+  {
+    "id": "EQ-165",
+    "arquivo": "artes/pocoes/EQ-165_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-ee6232d5-6943-45c3-bfdf-72b57636aded.png",
+    "sha256": "3c7d9b1ecd5650e4304ff33c98204c638ae84ca1ee62a15de31ab9e7fca690dc",
+    "tamanho_px": [
+      1024,
+      1536
+    ],
+    "modo": "RGBA",
+    "bbox_alpha_64": [
+      169,
+      90,
+      856,
+      1395
+    ],
+    "ferramenta": "image_gen.imagegen integrada",
+    "modo_ferramenta": "geração nova, fundo transparente",
+    "qa_visual": "frasco inteiro, sem texto, eixo reto, estilo aprovado para diagramação"
+  },
+  {
+    "id": "EQ-166",
+    "arquivo": "artes/pocoes/EQ-166_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-742ce5ed-14a1-40f2-b1d0-851aa3b56191.png",
+    "sha256": "ad46c0947ef75867628b90f6fa2f634c0d251aac0a872c24e9b05f9bc252b05d",
+    "tamanho_px": [
+      1024,
+      1536
+    ],
+    "modo": "RGBA",
+    "bbox_alpha_64": [
+      141,
+      70,
+      878,
+      1438
+    ],
+    "ferramenta": "image_gen.imagegen integrada",
+    "modo_ferramenta": "geração nova, fundo transparente",
+    "qa_visual": "frasco inteiro, sem texto, eixo reto, estilo aprovado para diagramação"
+  },
+  {
+    "id": "EQ-167",
+    "arquivo": "artes/pocoes/EQ-167_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-7db68e36-b787-4329-9bf2-a33802d2558c.png",
+    "sha256": "edd0a70c6f603a91451ce4fb75d8a72e98c3ea1fdef80de5b0b5b816c786e156",
+    "tamanho_px": [
+      1145,
+      1374
+    ],
+    "modo": "RGBA",
+    "bbox_alpha_64": [
+      148,
+      64,
+      998,
+      1302
+    ],
+    "ferramenta": "image_gen.imagegen integrada",
+    "modo_ferramenta": "geração nova, fundo transparente",
+    "qa_visual": "frasco inteiro, sem texto, eixo reto, estilo aprovado para diagramação"
+  },
+  {
+    "id": "EQ-168",
+    "arquivo": "artes/pocoes/EQ-168_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-ed3b994c-6275-46e2-8bfa-59c8f22c3652.png",
+    "sha256": "b7472c3312e9eed823a01e4bd490d749d9c7cb54705fbd98bd9819a741741448",
+    "tamanho_px": [
+      1145,
+      1374
+    ],
+    "modo": "RGBA",
+    "bbox_alpha_64": [
+      181,
+      91,
+      991,
+      1288
+    ],
+    "ferramenta": "image_gen.imagegen integrada",
+    "modo_ferramenta": "geração nova, fundo transparente",
+    "qa_visual": "frasco inteiro, sem texto, eixo reto, estilo aprovado para diagramação"
+  },
+  {
+    "id": "EQ-169",
+    "arquivo": "artes/pocoes/EQ-169_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-e48cb30b-498d-46d4-a2ba-70a2b9f7b05c.png",
+    "sha256": "d32b2c96b256614c27aadfa7c3d76f4bcaa46c6a31c5d8c3ec02147feb88a745",
+    "tamanho_px": [
+      1223,
+      1286
+    ],
+    "modo": "RGBA",
+    "bbox_alpha_64": [
+      163,
+      78,
+      1115,
+      1201
+    ],
+    "ferramenta": "image_gen.imagegen integrada",
+    "modo_ferramenta": "geração nova, fundo transparente",
+    "qa_visual": "frasco inteiro, sem texto, eixo reto, estilo aprovado para diagramação"
+  },
+  {
+    "id": "EQ-170",
+    "arquivo": "artes/pocoes/EQ-170_v01.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-1673d5fb-1c63-46dd-95bc-90a06b653a5e.png",
+    "sha256": "73b1b7d3ea5f1a914f3fce191dbfffc7e9e461979bc411869b335f7cdefd114d",
+    "tamanho_px": [
+      1145,
+      1374
+    ],
+    "modo": "RGBA",
+    "bbox_alpha_64": [
+      158,
+      78,
+      1001,
+      1281
+    ],
+    "ferramenta": "image_gen.imagegen integrada",
+    "modo_ferramenta": "geração nova, fundo transparente",
+    "qa_visual": "frasco inteiro, sem texto, eixo reto, estilo aprovado para diagramação"
+  }
+]

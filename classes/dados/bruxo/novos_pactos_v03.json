@@ -1,0 +1,617 @@
+{
+  "titulo": "Dez patronos do Bruxo, incluindo a Fênix",
+  "versao": 3,
+  "data": "2026-10-27",
+  "estado": "revisao_autorizada_aplicada_sem_playtest",
+  "referencia_regras": "classes/dados/bruxo/regras_propostas_lote_v03.json",
+  "patronos": [
+    {
+      "id": "BR-P00",
+      "nome": "Pacto da Fênix",
+      "patrono": "A Fênix",
+      "tags": [
+        "Fogo",
+        "Fênix"
+      ],
+      "estado": "nucleo_confirmado_com_pendencias",
+      "rotulo_estado": "Núcleo confirmado pelo autor; cobrança e detalhes indicados abaixo ainda em aberto. O benefício menor é uma proposta.",
+      "fonte_confirmada": "classes/dados/bruxo/pacto_fenix_v01.json",
+      "papel": "Fogo em área e recuperação",
+      "identidade": "Consumir os inimigos em chamas e transformar esse fogo em recuperação, sustentando o poder com a morte de monstros.",
+      "ciclo": "Queimar → contribuir para a morte de monstros → ganhar Pacto → escolher entre explosão e recuperação.",
+      "pacto": {
+        "beneficio": "Ganhe 1 ficha de Pacto ao presenciar a morte de um monstro pela qual você tenha sido responsável. Não é necessário dar o golpe final. Não foi definido alcance numérico para presenciar a morte.",
+        "cobranca": "Matar monstros. A obrigação precisa ter importância real para o Bruxo; prazo e quantidade ainda serão definidos.",
+        "quebra": "Consequência em aberto. O autor considerou perder acesso à habilidade ou sofrer dano, sem escolher uma opção.",
+        "reparacao": "Ainda não definida. A suspensão usada como proposta nos outros patronos não foi aplicada automaticamente à Fênix.",
+        "habilidade_inicial": "Ave Fênix / Absorver as Chamas"
+      },
+      "heroi": {
+        "limite_fadiga": null,
+        "passiva": "Carta do Pacto da Fênix.",
+        "ativada": "Gaste X fichas de Pacto: cure 3X de um alvo em alcance curto. A cura segue a regra normal de cura e exílio.",
+        "desencadeada": "Cada ficha de Fogo causa 2 de dano em vez de 1, independentemente de quem a colocou. Inclui Fogo de outras fontes e Fogo hostil; o escopo espacial ainda não foi delimitado.",
+        "critico": "Ganhe fichas de Pacto iguais ao nível do pacto."
+      },
+      "habilidade": {
+        "tipo": "Magia Arcana",
+        "requer": [
+          "Pacto",
+          "Fogo",
+          "Fênix"
+        ],
+        "lados": [
+          {
+            "lado": "A",
+            "nome": "Ave Fênix",
+            "custo_fadiga": 1,
+            "limite_fadiga": 2,
+            "acao": "Padrão",
+            "texto": "1 de Fadiga, Ação Padrão: faça um ataque mágico com seu foco contra um alvo em alcance curto, somando Espírito ao dano. Se acertar, coloque 1 ficha de Fogo no alvo e em cada inimigo adjacente a ele. Os adjacentes recebem as fichas automaticamente, sem defesa adicional.\nAo usar esta magia, você pode gastar X fichas de Pacto, com X igual ou maior que 1. Se acertar, aumente o dano no alvo principal em 2X e cause 1 + 2X de dano direto em cada inimigo adjacente a ele, sem defesa adicional. Esse bônus não aumenta o dano periódico das fichas de Fogo."
+          },
+          {
+            "lado": "B",
+            "nome": "Absorver as Chamas",
+            "custo_fadiga": 2,
+            "limite_fadiga": 4,
+            "acao": "Padrão",
+            "texto": "2 de Fadiga, Ação Padrão: remova todas as fichas de Fogo em alcance curto. Você cura 1 para cada ficha removida. Você pode gastar X fichas de Pacto para aumentar essa cura em 2 para cada ficha de Pacto gasta. A cura é F + 2X: F é o número de fichas de Fogo removidas e X o de fichas de Pacto gastas. X pode ser zero. Siga a regra normal de cura e exílio."
+          }
+        ]
+      },
+      "menor": "Uma vez no seu turno, 1 Pacto da reserva menor da Fênix: depois de acertar uma magia concedida pelo pacto pleno, cause +1 de dano de Fogo em um único alvo atingido. Não coloca ficha de Fogo nem afeta outros alvos.",
+      "cobranca_menor": "A cobrança menor da Fênix também depende de definição futura; sua obrigação plena continua em aberto.",
+      "pendencias": [
+        "Prazo, quantidade de monstros, consequência e reparação da cobrança plena e menor.",
+        "Escopo espacial do aumento do dano de Fogo. A inclusão de outras fontes permanece confirmada.",
+        "Limite de Fadiga da carta de herói e a indicação explícita da ação de sua ativada ainda não foram definidos separadamente."
+      ],
+      "teste": "Avaliar o dano total da área: sem Pacto, os adjacentes recebem somente Fogo; com X Pactos, recebem 1 + 2X de dano direto, além do Fogo. Em Absorver as Chamas, a cura é F + 2X e mantém o exílio normal. Nenhuma cobrança nova foi fechada nesta inclusão."
+    },
+    {
+      "id": "BR-P01",
+      "nome": "Pacto do Abismo",
+      "patrono": "Malgor, o Credor do Último Fôlego",
+      "tags": [
+        "Infernal",
+        "Abismo"
+      ],
+      "papel": "Dano concentrado e risco",
+      "identidade": "Pagar com a própria reserva vital para comprar potência; ao estourar, negociar o resultado e aceitar a conta.",
+      "ciclo": "Exilar voluntariamente → ganhar Pacto e potência → arriscar o 21 → pagar a cobrança do estouro.",
+      "pacto": {
+        "beneficio": "Uma vez no seu turno, depois de resolver uma habilidade em cujo custo você exilou voluntariamente uma ou mais cartas comuns, ganhe 1 Pacto. Exílio obrigatório por cura, transbordo de Fadiga, cobrança ou reparação não conta.",
+        "cobranca": "Depois de um estouro, a carta final que determinou seu resultado vai para o exílio ao terminar o teste, em vez do descarte.",
+        "quebra": "Recusar essa cobrança suspende o pacto. O resultado do teste já resolvido permanece.",
+        "reparacao": "Exile 2 cartas do topo do seu baralho. Esse pagamento não gera Pacto.",
+        "habilidade_inicial": "Sangrar o Véu / Última Oferta"
+      },
+      "heroi": {
+        "limite_fadiga": 4,
+        "passiva": "Carta do Pacto do Abismo.",
+        "ativada": "2 Pactos: após estourar e antes de comprar a carta final, olhe as 3 cartas do topo do seu baralho. Escolha uma como carta final e exile as demais. A carta escolhida também fica sujeita à cobrança depois do teste. Apenas uma intervenção deste pacto na carta final por teste.",
+        "desencadeada": "Uma vez no seu turno, depois de resolver uma magia concedida por este pacto em cujo custo você exilou cartas do baralho, retire 1 de Fadiga da carta em que a Fadiga daquela conjuração foi efetivamente paga. Se foi distribuída, escolha uma das cartas que a receberam. Pague normalmente antes de conjurar; a recuperação posterior não reduz esse custo.",
+        "critico": "Ganhe fichas de Pacto iguais ao nível deste pacto."
+      },
+      "habilidade": {
+        "tipo": "Magia Arcana",
+        "requer": [
+          "Pacto",
+          "Infernal",
+          "Abismo"
+        ],
+        "lados": [
+          {
+            "lado": "A",
+            "nome": "Sangrar o Véu",
+            "custo_fadiga": 1,
+            "limite_fadiga": 2,
+            "acao": "Padrão",
+            "texto": "1 de Fadiga, Ação Padrão: faça um ataque mágico com foco em alcance curto, causando dano Necrótico. Como custo adicional, antes de comprar as cartas do ataque, você pode exilar até Espírito cartas do topo do seu baralho. Se acertar, cause +2 de dano por carta assim exilada.",
+            "conjuracao": false,
+            "rapida": false
+          },
+          {
+            "lado": "B",
+            "nome": "Última Oferta",
+            "custo_fadiga": 2,
+            "limite_fadiga": 3,
+            "acao": "Reação",
+            "texto": "2 de Fadiga, Reação: depois de estourar uma defesa e comprar sua carta final, exile essa carta e compre uma substituta. Use o novo valor. Apenas uma intervenção deste pacto na carta final por teste; a substituta também fica sujeita à cobrança depois do teste.",
+            "conjuracao": false,
+            "rapida": true
+          }
+        ]
+      },
+      "menor": "Uma vez por cena, 1 Pacto da reserva menor: depois de estourar e comprar a carta final, pague este custo, exile-a e compre outra para determinar o resultado. Apenas uma substituição por teste. A cobrança menor aplica-se somente ao teste em que você usou este favor.",
+      "teste": "O exílio é o preço real da eficiência. A recuperação posterior de Fadiga não reduz o custo de conjuração a zero. A carta final não pode ser trocada repetidamente pelas duas intervenções.",
+      "cobranca_menor": "Somente no teste em que usar o favor menor, a carta final substituta vai ao exílio ao terminar o teste. Recusar essa entrega suspende o vínculo menor; repare exilando 2 cartas do topo do baralho, sem gerar Pacto. Os demais estouros não geram esta cobrança menor.",
+      "rotulo_estado": "Revisão aplicada conforme autorização do autor; equilíbrio numérico em playtest."
+    },
+    {
+      "id": "BR-P02",
+      "nome": "Pacto da Última Porta",
+      "patrono": "A Sentinela que Nunca Recuou",
+      "tags": [
+        "Luz",
+        "Juramento"
+      ],
+      "papel": "Proteção e retaliação",
+      "identidade": "Escolher uma pessoa e fazer da sobrevivência dela a condição do próprio poder.",
+      "ciclo": "Jurar proteção → assumir dano real → ganhar Pacto → escolher entre nova proteção e retaliação.",
+      "pacto": {
+        "escolha": "No começo da cena, escolha um aliado como protegido e anote o nome na carta. Trocar de protegido exige uma ação Padrão e descarta a reserva atual deste pacto. O protegido inconsciente continua sob sua guarda. Se morrer ou sair definitivamente da cena, escolha outro aliado até o fim de seu próximo turno, pagando a ação e descartando a reserva como numa troca normal. Até essa escolha, não use efeitos que exijam protegido nem ganhe Pacto por protegê-lo. Se não houver outro aliado na cena, a escolha fica pendente até haver um; não há cobrança de distância contra um protegido ausente.",
+        "beneficio": "Uma vez por rodada, quando um ataque inimigo destinado ao protegido causar dano a você por ter assumido o ataque, ganhe 1 Pacto. Dano efetivamente recebido por seu baralho, armadura ou escudo conta; dano totalmente prevenido não conta.",
+        "cobranca": "Não termine voluntariamente seu turno com o protegido fora de alcance curto. Deslocamento imposto pelo inimigo e impossibilidade real de aproximar-se não são quebra voluntária. Uma impossibilidade que você criou voluntariamente para abandonar o protegido não concede essa exceção. Se a substituição necessária for possível e você a recusar no prazo, suspenda o pacto; repare escolhendo o novo protegido, ficando adjacente e renovando o juramento com a ação Padrão da reparação.",
+        "quebra": "Abandonar voluntariamente essa posição suspende o pacto.",
+        "reparacao": "Fique adjacente ao protegido e gaste uma ação Padrão renovando o juramento.",
+        "habilidade_inicial": "Vigília da Porta / Punho da Sentinela"
+      },
+      "heroi": {
+        "limite_fadiga": 4,
+        "passiva": "Carta do Pacto da Última Porta.",
+        "ativada": "X Pactos, Reação: quando um ataque inimigo fosse causar dano ao protegido em alcance curto, depois das resistências e antes da distribuição entre armadura, escudo e baralho, pague o custo e reduza esse dano em 3X, até o mínimo de zero. Uma ativação por ataque.",
+        "desencadeada": "Uma vez por rodada, depois de receber dano de um ataque no lugar do protegido, se estiver adjacente a ele, vocês podem mover-se 1 quadrado cada, ignorando impedimento e sem provocar ataques de oportunidade, terminando adjacentes. Outros impedimentos físicos continuam valendo.",
+        "critico": "Ganhe fichas de Pacto iguais ao nível deste pacto."
+      },
+      "habilidade": {
+        "tipo": "Magia Arcana",
+        "requer": [
+          "Pacto",
+          "Luz",
+          "Juramento"
+        ],
+        "lados": [
+          {
+            "lado": "A",
+            "nome": "Vigília da Porta",
+            "custo_fadiga": 1,
+            "limite_fadiga": 2,
+            "acao": "Padrão",
+            "texto": "1 de Fadiga, Ação Padrão: se você ainda não tiver Guarda, coloque 1 ficha de Guarda em sua carta de herói. Se o protegido estiver em alcance curto e ainda não tiver Bloqueio, coloque 1 ficha de Bloqueio em uma carta dele. Esta magia não acumula essas fichas em quem já as possui.",
+            "conjuracao": false,
+            "rapida": false
+          },
+          {
+            "lado": "B",
+            "nome": "Punho da Sentinela",
+            "custo_fadiga": 2,
+            "limite_fadiga": 3,
+            "acao": "Padrão",
+            "texto": "2 de Fadiga, Ação Padrão: faça um ataque mágico com foco, causando dano Radiante, contra um inimigo em alcance curto que tenha atacado o protegido desde o fim de seu último turno. Se acertar, some novamente seu Espírito ao dano. No seu primeiro turno da cena, considere os ataques desde o começo da cena.",
+            "conjuracao": false,
+            "rapida": false
+          }
+        ]
+      },
+      "menor": "1 Pacto, Reação: reduza em 2 o dano de um ataque contra um aliado adjacente a você, antes da distribuição do dano. Uma ativação por ataque.",
+      "teste": "Bloquear totalmente não deve conceder Pacto por assumir dano. Verificar a sobrevivência da armadura e o custo de manter o protegido próximo.",
+      "cobranca_menor": "Depois de usar o benefício menor, até o fim de seu próximo turno você não pode terminar voluntariamente fora de alcance curto do aliado que protegeu. Se quebrar, suspenda esta reserva; repare ficando adjacente a esse aliado e gastando uma ação Padrão.",
+      "rotulo_estado": "Revisão aplicada conforme autorização do autor; equilíbrio numérico em playtest."
+    },
+    {
+      "id": "BR-P03",
+      "nome": "Pacto do Olho Descoberto",
+      "patrono": "A Testemunha Sem Rosto",
+      "tags": [
+        "Luz",
+        "Revelação"
+      ],
+      "papel": "Informação e disputa do 21",
+      "identidade": "O patrono empresta o olhar que revela o adversário e exige que o Bruxo pague com a própria honestidade.",
+      "ciclo": "Marcar → enxergar a aposta inimiga → inverter a ordem de decisão → colher o erro do adversário.",
+      "pacto": {
+        "beneficio": "Uma vez por rodada, quando um inimigo Marcado estourar um ataque ou defesa contra você, ganhe 1 Pacto.",
+        "cobranca": "Não minta deliberadamente enquanto este for seu pacto pleno. Omissão usada conscientemente para afirmar uma falsidade também viola a cobrança; esconder cartas normalmente no teste não é uma mentira narrativa.",
+        "quebra": "Mentir deliberadamente suspende o pacto.",
+        "reparacao": "Entregue a um adversário uma informação verdadeira que lhe conceda vantagem real na situação, reconhecida pelo mestre.",
+        "habilidade_inicial": "Olhar que Despe / Veredito Antecipado"
+      },
+      "heroi": {
+        "limite_fadiga": 4,
+        "passiva": "Carta do Pacto do Olho Descoberto.",
+        "ativada": "1 Pacto, Reação: quando um inimigo em alcance curto colocar a carta Fechada num teste de que você participa, pague o custo e revele-a a todos até a resolução desse teste. Não exige Marcação; também permite aos aliados conhecerem a carta.",
+        "desencadeada": "Uma vez por rodada, depois de vencer um ataque ou defesa contra um inimigo cuja carta Fechada você tenha conhecido naquele teste, por Marcação, por um efeito de olhar ou por revelação pública, ganhe 1 ficha de Foco. Apenas saber que existe uma carta Fechada não conta.",
+        "critico": "Ganhe fichas de Pacto iguais ao nível deste pacto."
+      },
+      "habilidade": {
+        "tipo": "Magia Arcana",
+        "requer": [
+          "Pacto",
+          "Luz",
+          "Revelação"
+        ],
+        "lados": [
+          {
+            "lado": "A",
+            "nome": "Olhar que Despe",
+            "custo_fadiga": 1,
+            "limite_fadiga": 2,
+            "acao": "Movimento",
+            "texto": "1 de Fadiga, Ação de Movimento: escolha uma criatura em alcance curto. Faça um teste contestado de Espírito contra Mentira do alvo. Se vencer, coloque 1 ficha de Marcação nele.",
+            "conjuracao": false,
+            "rapida": false
+          },
+          {
+            "lado": "B",
+            "nome": "Veredito Antecipado",
+            "custo_fadiga": 1,
+            "limite_fadiga": 3,
+            "acao": "Padrão",
+            "texto": "1 de Fadiga, Ação Padrão: faça um ataque mágico com foco, causando dano Radiante, contra um inimigo Marcado em alcance curto. Depois de ambos comprarem as duas cartas iniciais, o defensor conclui o teste antes de você decidir se puxa mais cartas. Você ainda pode estourar normalmente.",
+            "conjuracao": false,
+            "rapida": false
+          }
+        ]
+      },
+      "menor": "1 Pacto, Reação: durante um ataque que você esteja fazendo contra um inimigo em alcance curto, olhe a carta Fechada dele. Você não a revela aos demais participantes. Uma ativação por teste.",
+      "teste": "Testar a frequência do ganho por estouro inimigo. Olhar informa apenas quem olha; revelar torna a carta pública. Marcação permite ao Bruxo conhecer a Fechada e satisfaz sua desencadeada; a ativada também funciona sem marcar. Veredito continua permitindo perder ou estourar.",
+      "cobranca_menor": "Não minta deliberadamente enquanto este vínculo estiver associado à carta de Pacto Menor, em qualquer lado. Se quebrar, suspenda esta reserva; repare entregando a um adversário uma informação verdadeira que lhe dê vantagem real, reconhecida pelo mestre.",
+      "rotulo_estado": "Revisão aplicada conforme autorização do autor; equilíbrio numérico em playtest."
+    },
+    {
+      "id": "BR-P04",
+      "nome": "Pacto dos Caminhos Roubados",
+      "patrono": "A Serpente Entre as Portas",
+      "tags": [
+        "Ar",
+        "Limiar"
+      ],
+      "papel": "Posição e abertura de caminhos",
+      "identidade": "Empurrar o conflito para onde o grupo deseja, pagando o favor com a recusa de permanecer no mesmo lugar.",
+      "ciclo": "Deslocar um inimigo para o alcance de um aliado → ganhar Pacto → trocar posições e abrir rotas.",
+      "pacto": {
+        "beneficio": "Uma vez no seu turno, depois de deslocar um inimigo para um quadrado adjacente a um aliado que antes não estava adjacente a ele, ganhe 1 Pacto. Deslocar aliados voluntariamente não gera esse ganho.",
+        "cobranca": "Depois de usar uma magia deste pacto, termine o turno em um quadrado diferente daquele em que o começou, se houver deslocamento legal disponível.",
+        "quebra": "Optar por permanecer suspende o pacto. Estar efetivamente impossibilitado de mover não constitui escolha de descumprir.",
+        "reparacao": "Termine um turno em um quadrado diferente do inicial após usar deslocamento normal, em vez de teleporte deste pacto.",
+        "habilidade_inicial": "Mão Além do Limiar / Passagem Indevida"
+      },
+      "heroi": {
+        "limite_fadiga": 4,
+        "passiva": "Carta do Pacto dos Caminhos Roubados.",
+        "ativada": "1 Pacto, Reação: quando um aliado em alcance curto for escolhido como alvo de um ataque, antes de começar os testes desse ataque, pague o custo; ele pode mover-se 1 quadrado ignorando impedimento e sem provocar ataques de oportunidade. Respeite obstáculos e estados que impeçam movimento. Se continuar válido, o ataque mantém esse alvo. Se deixar de ser válido, o atacante pode escolher outro alvo válido para o mesmo ataque, conservando modo, custos e aprimoramentos já escolhidos; se não houver, o ataque termina sem efeito e a ação e os custos já pagos permanecem gastos. Uma ativação por ataque.",
+        "desencadeada": "Uma vez por turno, depois que você deslocar um inimigo, você pode mover-se 1 quadrado, ignorando impedimento e sem provocar ataques de oportunidade. Não atravessa obstáculos nem permite mover se outro estado o proibir.",
+        "critico": "Ganhe fichas de Pacto iguais ao nível deste pacto."
+      },
+      "habilidade": {
+        "tipo": "Magia Arcana",
+        "requer": [
+          "Pacto",
+          "Ar",
+          "Limiar"
+        ],
+        "lados": [
+          {
+            "lado": "A",
+            "nome": "Mão Além do Limiar",
+            "custo_fadiga": 1,
+            "limite_fadiga": 2,
+            "acao": "Padrão",
+            "texto": "1 de Fadiga, Ação Padrão: faça um ataque mágico com foco em alcance curto, causando dano de Concussão. Se acertar, desloque o alvo 2 quadrados em linha reta em sua direção ou para longe de você. Pode gastar X Pactos para aumentar esse deslocamento em X quadrados. Respeite o espaço disponível, sem atravessar obstáculos. Este deslocamento não provoca ataques de oportunidade.",
+            "conjuracao": false,
+            "rapida": false
+          },
+          {
+            "lado": "B",
+            "nome": "Passagem Indevida",
+            "custo_fadiga": 1,
+            "limite_fadiga": 3,
+            "acao": "Movimento",
+            "texto": "1 de Fadiga e 1 Pacto, Ação de Movimento: troque de lugar com um aliado que você possa ver em alcance curto. Para escolher um inimigo em vez de aliado, o custo total é 1 de Fadiga e 2 Pactos: faça um teste contestado de Espírito contra Espírito dele; se vencer, troquem de lugar. Ambos precisam caber nos destinos. A troca ignora impedimento e não provoca ataques de oportunidade; não atravessa paredes que bloqueiem a linha de visão.",
+            "conjuracao": false,
+            "rapida": false
+          }
+        ]
+      },
+      "menor": "1 Pacto, Ação de Movimento: mova-se 1 quadrado ignorando impedimento e sem provocar ataques de oportunidade. Respeite obstáculos e outros estados que impeçam seu movimento.",
+      "teste": "A movimentação de um alvo não anula automaticamente o ataque: isso depende de continuar ou não válido. Colisão, altura, espaço de destino e perda de visão devem ser resolvidos claramente.",
+      "cobranca_menor": "Depois de usar o benefício menor, não retorne voluntariamente ao quadrado em que começou o turno antes do fim dele. Quebrar suspende esta reserva; repare terminando um turno em outro quadrado depois de usar deslocamento normal.",
+      "rotulo_estado": "Revisão aplicada conforme autorização do autor; equilíbrio numérico em playtest."
+    },
+    {
+      "id": "BR-P05",
+      "nome": "Pacto dos Grilhões Vivos",
+      "patrono": "O Carcereiro Sem Chave",
+      "tags": [
+        "Trevas",
+        "Prisão"
+      ],
+      "papel": "Restrição e captura",
+      "identidade": "Obrigar o adversário a escolher entre suportar a prisão ou gastar suas ações para libertar-se.",
+      "ciclo": "Prender → converter a prisão em pressão → ganhar Pacto quando o inimigo paga para escapar → punir a libertação.",
+      "pacto": {
+        "beneficio": "Uma vez por rodada, quando um inimigo gastar uma ação para remover Imobilizar ou Atordoamento colocado por você, ganhe 1 Pacto. Remoção gratuita, automática ou de fim de cena não conta.",
+        "cobranca": "Aceite rendições oferecidas de boa-fé e não execute nem autorize a execução de quem esteja sob sua guarda.",
+        "quebra": "Violar essa obrigação suspende o pacto.",
+        "reparacao": "Liberte ou proteja um prisioneiro cuja sobrevivência imponha um custo real a você, reconhecido pelo mestre. O mestre define antes da escolha se a oferta de rendição é de boa-fé.",
+        "habilidade_inicial": "Grilhão de Sombra / Peso da Sentença"
+      },
+      "heroi": {
+        "limite_fadiga": 4,
+        "passiva": "Carta do Pacto dos Grilhões Vivos.",
+        "ativada": "1 Pacto, Reação: depois que um inimigo em alcance curto virar uma carta para remover Imobilizar ou Atordoamento colocado por você, coloque 1 ficha de Penalidade nessa mesma carta. Uma ativação por virada.",
+        "desencadeada": "Uma vez por rodada, quando um inimigo gastar uma ação para remover Imobilizar ou Atordoamento colocado por você, ganhe 1 ficha de Foco.",
+        "critico": "Ganhe fichas de Pacto iguais ao nível deste pacto."
+      },
+      "habilidade": {
+        "tipo": "Magia Arcana",
+        "requer": [
+          "Pacto",
+          "Trevas",
+          "Prisão"
+        ],
+        "lados": [
+          {
+            "lado": "A",
+            "nome": "Grilhão de Sombra",
+            "custo_fadiga": 1,
+            "limite_fadiga": 2,
+            "acao": "Padrão",
+            "texto": "1 de Fadiga, Ação Padrão: faça um ataque mágico com foco em alcance curto, causando dano Necrótico. Se causar dano, o defensor recebe 1 ficha de Imobilizar. Você pode gastar 1 Pacto para colocar também 1 ficha de Atormentado na mesma carta que recebeu Imobilizar.",
+            "conjuracao": false,
+            "rapida": false
+          },
+          {
+            "lado": "B",
+            "nome": "Peso da Sentença",
+            "custo_fadiga": 2,
+            "limite_fadiga": 3,
+            "acao": "Padrão",
+            "texto": "2 de Fadiga e 1 Pacto, Ação Padrão: escolha um inimigo em alcance curto que tenha Imobilizar colocado por você e não tenha Atordoamento deste efeito colocado por você. Faça um teste contestado de Espírito contra Espírito dele. Se vencer, mantenha Imobilizar e coloque 1 ficha de Atordoamento na mesma carta. Esse Atordoamento é descartado no fim do próximo turno do alvo, se não tiver sido removido antes. Você só pode manter 1 Atordoamento desta magia por alvo; novas utilizações não acumulam nem renovam sua duração enquanto a ficha estiver presente.",
+            "conjuracao": false,
+            "rapida": false
+          }
+        ]
+      },
+      "menor": "1 Pacto, Reação: depois que um aliado acertar um ataque contra um inimigo adjacente a você, coloque 1 ficha de Penalidade no defensor. Uma ativação por ataque.",
+      "teste": "Peso da Sentença mantém a prisão e acrescenta um único Atordoamento temporário por alvo. Testar contra chefes e criaturas com uma só carta; preservar opções reais de remover estados. A regra geral de qual ação Atordoamento retira deve constar do livro, sem criar uma definição diferente só para este pacto.",
+      "cobranca_menor": "Aceite rendições de boa-fé e não execute nem autorize executar quem esteja sob sua guarda. Quebrar suspende esta reserva; repare protegendo ou libertando um prisioneiro com custo real para você, reconhecido pelo mestre.",
+      "rotulo_estado": "Revisão aplicada conforme autorização do autor; equilíbrio numérico em playtest."
+    },
+    {
+      "id": "BR-P06",
+      "nome": "Pacto da Mesa Vazia",
+      "patrono": "Vorga, a Boca sob o Lago",
+      "tags": [
+        "Fome",
+        "Dreno"
+      ],
+      "papel": "Desgaste e consumo de esforço",
+      "identidade": "Cultivar o esforço de um inimigo e devorá-lo antes que ele consiga se libertar; sustenta o próprio canal por meio da Fadiga alheia.",
+      "ciclo": "Atormentar → deixar a Fadiga inimiga crescer → devorar o esforço acumulado → sustentar novas conjurações.",
+      "pacto": {
+        "beneficio": "Uma vez por rodada, depois de uma magia concedida por este pacto remover pelo menos 2 fichas de Fadiga de um inimigo, ganhe 1 Pacto. Fadiga de aliados e consumo combinado fora de um conflito real não contam.",
+        "cobranca": "Quando remover Fadiga de um inimigo com uma magia deste pacto, até o fim de seu próximo turno somente a recuperação normal de fim de turno e a desencadeada deste patrono podem remover sua Fadiga voluntariamente. Isso inclui remoções de outras habilidades suas, de aliados e por virar cartas que tenham Fadiga. Você pode optar por recebê-las ou por virar, mas isso quebra o compromisso. Remoção imposta por um inimigo não é quebra voluntária. Transferir Fadiga sem apagar fichas não é removê-la.",
+        "quebra": "Remover voluntariamente sua Fadiga por outra fonte no prazo suspende o pacto depois que essa remoção for resolvida.",
+        "reparacao": "Gaste uma ação Padrão e descarte 2 cartas da mão. Se não tiver duas cartas na mão, não pode pagar esta reparação. Esse pagamento não gera Pacto.",
+        "habilidade_inicial": "Fermento da Fome / Devorar o Esforço"
+      },
+      "heroi": {
+        "limite_fadiga": 4,
+        "passiva": "Carta do Pacto da Mesa Vazia.",
+        "ativada": "X Pactos: antes de comprar as cartas de um ataque mágico concedido por este pacto contra alvo com Atormentado, ou antes do teste contestado de Devorar o Esforço contra alvo com Atormentado, pague o custo para aumentar em 2X o dano dessa magia se ela causar dano. Depois de aplicar as resistências, se o alvo sofrer dano, você pode curar X seguindo o exílio normal da cura. Em Devorar, é necessário vencer e remover pelo menos 1 Fadiga para haver dano a aprimorar; seu dano básico continua 2 por ficha removida, sem acrescentar foco ou Espírito novamente. Uma ativação por conjuração.",
+        "desencadeada": "Uma vez por rodada, depois de uma magia deste pacto remover Fadiga de um inimigo, retire 1 de Fadiga de uma de suas outras cartas. Essa recuperação não conta como redução do custo da magia nem como um novo banquete.",
+        "critico": "Ganhe fichas de Pacto iguais ao nível deste pacto."
+      },
+      "habilidade": {
+        "tipo": "Magia Arcana",
+        "requer": [
+          "Pacto",
+          "Fome",
+          "Dreno"
+        ],
+        "lados": [
+          {
+            "lado": "A",
+            "nome": "Fermento da Fome",
+            "custo_fadiga": 1,
+            "limite_fadiga": 2,
+            "acao": "Padrão",
+            "texto": "1 de Fadiga, Ação Padrão: faça um ataque mágico com foco em alcance curto, causando dano de Dreno. Se acertar, coloque 1 ficha de Atormentado em uma carta do defensor, escolhida por ele. Virar essa carta remove Atormentado normalmente.",
+            "conjuracao": false,
+            "rapida": false
+          },
+          {
+            "lado": "B",
+            "nome": "Devorar o Esforço",
+            "custo_fadiga": 1,
+            "limite_fadiga": 4,
+            "acao": "Padrão",
+            "texto": "1 de Fadiga, Ação Padrão: escolha um inimigo em alcance curto que tenha Fadiga. Faça um teste contestado de Espírito contra Espírito dele. Se vencer, remova até Espírito fichas de Fadiga das cartas do alvo e cause 2 de dano de Dreno por ficha efetivamente removida. Resistências se aplicam normalmente. Remover Fadiga pode liberar a capacidade das habilidades do inimigo; não remove outras fichas.",
+            "conjuracao": false,
+            "rapida": false
+          }
+        ]
+      },
+      "menor": "Uma vez por turno, 1 Pacto: depois de acertar um ataque mágico, se o defensor tiver Fadiga, remova 1 dessas fichas e retire 1 de Fadiga de uma de suas outras cartas. Não causa dano adicional nem concede Pacto por cumprimento.",
+      "teste": "O motor depende de inimigos que realmente acumulam Fadiga. Atormentado não gera fichas de Fadiga além do limite: seu transbordo normal não alimenta o banquete. Contra inimigo sem Fadiga, o Bruxo ainda tem o ataque normal de Fermento, mas perde a alimentação. Verificar se liberar a habilidade inimiga compensa o dano por ficha removida. A cura da ativada exige exilar antes de devolver cartas.",
+      "cobranca_menor": "Depois de usar o favor menor, até o fim de seu próximo turno somente a recuperação normal e a recuperação concedida pelo próprio favor menor podem remover sua Fadiga voluntariamente. Outras remoções, inclusive virar cartas com Fadiga, suspendem o vínculo após a resolução; remoções impostas pelo inimigo não contam. Repare com uma ação Padrão e descarte de 2 cartas da mão.",
+      "rotulo_estado": "Revisão aplicada conforme autorização do autor; equilíbrio numérico em playtest."
+    },
+    {
+      "id": "BR-P07",
+      "nome": "Pacto do Trovão Cativo",
+      "patrono": "A Serpente de Cobre que Circunda a Tormenta",
+      "tags": [
+        "Raio",
+        "Tempestade"
+      ],
+      "papel": "Acumulação de Fadiga e descargas",
+      "identidade": "Manter o canal sobrecarregado e escolher o momento de liberar o esforço acumulado como dano; a reserva de Fadiga também é sua munição.",
+      "ciclo": "Conjurar → encher uma carta → ganhar Pacto e reação → consumir a Fadiga em uma descarga.",
+      "pacto": {
+        "beneficio": "Uma vez no seu turno, quando pagar a Fadiga de uma magia concedida por este pacto fizer uma carta sua passar de abaixo do limite para exatamente seu limite de Fadiga, ganhe 1 Pacto depois de resolver a magia. Uma carta já cheia, transbordo, simples transferência de Fadiga e reparação não geram esse ganho.",
+        "cobranca": "Se conjurou uma magia deste pacto no turno, preserve ao menos 1 ficha de Fadiga entre sua carta de herói e a habilidade inicial ao encerrar o turno, depois da recuperação normal. Você pode abrir mão da recuperação normal de 1 de Fadiga para preservar essa última ficha. Se recuperar de outra carta, mantenha a carga exigida. Não pode remover voluntariamente a última ficha dessas duas cartas e terminar o turno sem repô-la. Remoção imposta pelo inimigo não constitui quebra voluntária.",
+        "quebra": "Optar por terminar o turno sem essa carga suspende o pacto.",
+        "reparacao": "1 de Fadiga, Ação de Movimento: coloque essa Fadiga em sua carta de herói ou habilidade inicial, desde que exista espaço livre. Esse pagamento não gera Pacto nem Reação e não admite transbordo.",
+        "habilidade_inicial": "Fagulha Cativa / Descarregar a Tormenta"
+      },
+      "heroi": {
+        "limite_fadiga": 4,
+        "passiva": "Carta do Pacto do Trovão Cativo.",
+        "ativada": "X Pactos, Reação: depois de uma magia de Raio concedida por este pacto acertar um inimigo, cause 2X de dano de Raio a um segundo inimigo adjacente a ele, sem novo teste. A descarga depende do acerto original, respeita resistências e só pode acontecer uma vez por conjuração. Pague os Pactos e a Reação no acerto, antes de terminar a conjuração; uma ficha de Reação que só será recebida depois dela ainda não está disponível.",
+        "desencadeada": "Uma vez por rodada, quando pagar a Fadiga de uma magia deste pacto fizer uma carta sua passar de abaixo do limite para exatamente seu limite, se você não tiver nenhuma ficha de Reação, ganhe 1 ficha de Reação depois de resolver a magia. Não é disparada por carta já cheia, transbordo, transferência ou reparação. A ficha só fica disponível ao terminar a resolução completa da magia e de seus efeitos adicionais; não paga a ativada durante o acerto dessa mesma magia.",
+        "critico": "Ganhe fichas de Pacto iguais ao nível deste pacto."
+      },
+      "habilidade": {
+        "tipo": "Magia Arcana",
+        "requer": [
+          "Pacto",
+          "Raio",
+          "Tempestade"
+        ],
+        "lados": [
+          {
+            "lado": "A",
+            "nome": "Fagulha Cativa",
+            "custo_fadiga": 1,
+            "limite_fadiga": 2,
+            "acao": "Padrão",
+            "texto": "1 de Fadiga, Ação Padrão: faça um ataque mágico com foco em alcance médio, causando dano de Raio. Esta magia tem Conjuração: você pode pagar sua Fadiga em outra carta sua com capacidade livre, conforme a regra normal.",
+            "conjuracao": true,
+            "rapida": false
+          },
+          {
+            "lado": "B",
+            "nome": "Descarregar a Tormenta",
+            "custo_fadiga": 1,
+            "limite_fadiga": 4,
+            "acao": "Reação",
+            "texto": "1 de Fadiga, Reação: depois que um inimigo em alcance curto concluir um ataque contra você, faça um ataque mágico de resposta contra ele com foco, causando dano de Raio. Como custo adicional, antes de comprar as cartas, remova de suas outras cartas até Espírito fichas de Fadiga, sem incluir a Fadiga paga por esta conjuração. Se acertar, cause +2 de dano por ficha assim removida. As fichas são removidas mesmo se errar. O inimigo faz sua defesa normalmente. Uma utilização desta magia por ataque inimigo, salvo a única repetição expressamente autorizada por Intercessão do Patrono.",
+            "conjuracao": false,
+            "rapida": true
+          }
+        ]
+      },
+      "menor": "Uma vez por turno, 1 Pacto: depois de resolver uma magia que cause dano de Raio, mova 1 ficha de Fadiga da carta usada para outra carta sua que tenha espaço livre. Não remove a ficha, não permite transbordo e não dispara ganhos por atingir o limite.",
+      "teste": "A Fadiga precisa ser paga antes da recuperação ou descarga: o mínimo de 1 da magia permanece. A descarga consome fichas de outras cartas, separando a própria Fadiga paga, e compete com a ativada do herói pela Reação. Sua magia de resposta exige o ataque inimigo concluído, inclusive com Manifestação Dupla. A geração de Pacto e Reação tem limites explícitos e depende de pagamento real, não de mover fichas para frente e para trás. Verificar a combinação de alcance médio, reação extra e descarga, além do custo de renunciar à recuperação para conservar a última carga.",
+      "cobranca_menor": "Após usar o benefício menor, conserve ao menos 1 ficha de Fadiga em uma de suas cartas até o fim de seu próximo turno. Se deliberadamente eliminar toda sua Fadiga antes disso, suspenda esta reserva menor. Repare com 1 de Fadiga e ação de Movimento, colocando a ficha em uma carta com espaço livre, sem transbordo; isso não concede Pacto nem Reação. Você pode abrir mão da recuperação normal de 1 de Fadiga para conservar a última ficha exigida. Verifique essa conservação depois de resolver as recuperações do fim do turno.",
+      "rotulo_estado": "Revisão aplicada conforme autorização do autor; equilíbrio numérico em playtest."
+    },
+    {
+      "id": "BR-P08",
+      "nome": "Pacto dos Sonhos Roubados",
+      "patrono": "Niméria, a Dama dos Sonhos Inacabados",
+      "tags": [
+        "Trevas",
+        "Sonho"
+      ],
+      "papel": "Pressão sobre Fadiga, mão e desorientação",
+      "identidade": "Semear pesadelos que o inimigo precisa suportar ou dissipar; colher os sonhos que ele abandona para preparar os próprios testes.",
+      "ciclo": "Atormentar → esperar o inimigo acumular Fadiga ou virar a carta → colher Pacto ou Foco → consumir o pesadelo para formar uma mão melhor.",
+      "pacto": {
+        "beneficio": "Uma vez por rodada, quando um inimigo receber Fadiga de uma ficha de Atormentado colocada por você, ganhe 1 Pacto. Transbordo que substitua essa Fadiga por outro pagamento não conta como receber Fadiga para este benefício.",
+        "cobranca": "Uma vez por cena, depois de comprar a mão inicial e antes de usar benefícios deste pacto, escolha 1 carta dessa mão e exile-a como sonho entregue à patrona. Esse exílio obrigatório não gera Pacto. Entregar uma vez satisfaz a cobrança dessa cena; virar cartas ou usar outros benefícios não exige nova entrega.",
+        "quebra": "Recusar a entrega suspende o pacto; as magias básicas continuam acessíveis conforme as regras de trabalho do lote.",
+        "reparacao": "Ação Padrão: exile 1 carta de sua mão e entregue o sonho atrasado. Esse pagamento não gera Pacto.",
+        "habilidade_inicial": "Semeadura do Pesadelo / Colher o Sonho"
+      },
+      "heroi": {
+        "limite_fadiga": 4,
+        "passiva": "Carta do Pacto dos Sonhos Roubados.",
+        "ativada": "2 Pactos, Reação: quando um inimigo em alcance curto que tenha Atormentado colocado por você escolher o alvo de um ataque, faça um teste contestado de Espírito contra Espírito dele. Se vencer, coloque 1 Confusão na mesma carta que contém Atormentado antes de resolver a escolha de alvo. Resolva o ataque usando a escolha aleatória de alvos válidos da regra de Confusão. Uma intervenção deste herói por ataque.",
+        "desencadeada": "Uma vez por rodada, depois que um inimigo virar uma carta e remover dela Atormentado colocado por você, ganhe 1 Foco.",
+        "critico": "Ganhe fichas de Pacto iguais ao nível deste pacto."
+      },
+      "habilidade": {
+        "tipo": "Magia Arcana",
+        "requer": [
+          "Pacto",
+          "Trevas",
+          "Sonho"
+        ],
+        "lados": [
+          {
+            "lado": "A",
+            "nome": "Semeadura do Pesadelo",
+            "custo_fadiga": 1,
+            "limite_fadiga": 2,
+            "acao": "Padrão",
+            "texto": "1 de Fadiga, Ação Padrão: faça um ataque mágico com foco em alcance curto, causando dano Psíquico. Se causar dano, coloque 1 Atormentado em uma carta do defensor que possa receber Fadiga. Esta magia não coloca outro Atormentado se o defensor já tiver um colocado por você.",
+            "conjuracao": false,
+            "rapida": false
+          },
+          {
+            "lado": "B",
+            "nome": "Colher o Sonho",
+            "custo_fadiga": 2,
+            "limite_fadiga": 3,
+            "acao": "Padrão",
+            "texto": "2 de Fadiga, Ação Padrão: escolha um inimigo em alcance curto que tenha Atormentado colocado por você e remova 1 dessas fichas. Olhe as 3 cartas do topo de seu baralho, coloque 2 delas em sua mão e as demais no fundo do baralho na ordem que quiser. Antes de olhar, você pode gastar X Pactos para olhar X cartas adicionais; continua colocando apenas 2 na mão. Se houver menos cartas no baralho, use as disponíveis. A remoção por esta magia não gera o Foco da desencadeada do herói.",
+            "conjuracao": false,
+            "rapida": false
+          }
+        ]
+      },
+      "menor": "1 Pacto, Reação: quando um inimigo em alcance curto que tenha Atormentado escolher você como alvo de um ataque, faça um teste contestado de Espírito contra Espírito dele. Se vencer, ele recebe 1 Confusão antes de resolver a escolha de alvo. Use os alvos válidos da regra de Confusão. Uma intervenção deste benefício por ataque.",
+      "teste": "Atormentado é pressão de Fadiga, não Medo nem Sono. Inimigos precisam ter uma carta que receba Fadiga; não dar Pacto por colocar pressão em inimigo incapaz de suportá-la. Colher não é cura e compra do próprio baralho, sem devolver descarte ou exílio. Observar o ganho de mão (2 cartas por ação), a duração de Confusão e a combinação com intervenção de outros pactos; o mesmo ataque só recebe uma intervenção deste benefício.",
+      "cobranca_menor": "Uma vez por cena, depois da mão inicial e antes de usar o favor menor, exile 1 carta da mão como sonho entregue. Recusar suspende o vínculo; reparar exige uma ação Padrão e exilar 1 carta da mão. A reparação satisfaz a entrega pendente dessa cena. Virar a carta não apaga o pagamento nem cria nova cobrança; o exílio obrigatório não gera Pacto.",
+      "rotulo_estado": "Revisão aplicada conforme autorização do autor; equilíbrio numérico em playtest."
+    },
+    {
+      "id": "BR-P09",
+      "nome": "Pacto do Inverno Imóvel",
+      "patrono": "A Rainha da Última Geada",
+      "tags": [
+        "Gelo",
+        "Conservação"
+      ],
+      "papel": "Concentração de Fadiga e controle do ritmo de aproximação",
+      "identidade": "Conservar o frio dentro das próprias cartas, abrir espaço em outros poderes e obrigar o inimigo a atravessar a distância lentamente.",
+      "ciclo": "Conservar Fadiga → ganhar Pacto → concentrar a Fadiga num disparo → sustentar a posição ou quebrar a camada virando a carta.",
+      "pacto": {
+        "beneficio": "Uma vez por seu turno numa cena de conflito real, se tiver pelo menos 1 Fadiga numa carta e abrir mão da remoção normal de 1 Fadiga do fim do turno, ganhe 1 Pacto depois de encerrar o turno. Não recebe Pacto se não havia Fadiga que pudesse remover nem por deixar de usar recuperações adicionais opcionais.",
+        "cobranca": "Em qualquer turno, seu ou de outra criatura, se gastar fichas deste pacto, não pode ter se deslocado voluntariamente naquele turno nem se deslocar voluntariamente pelo restante dele. Deslocamento imposto por outra criatura não quebra o compromisso. Se escolher mover e gastar no mesmo turno, suspenda o pacto depois da ação que provocar a quebra. Um gasto em turno alheio não prolonga por si só essa obrigação até seu próximo turno.",
+        "quebra": "Escolher mover-se e gastar Pacto no mesmo turno suspende ganhos e gastos da reserva.",
+        "reparacao": "Encerre um turno de conflito real sem se mover voluntariamente, tendo pelo menos 1 Fadiga na habilidade inicial deste pacto e abrindo mão da recuperação normal de fim de turno. A reparação não gera Pacto.",
+        "habilidade_inicial": "Sopro da Geada / Coração do Inverno"
+      },
+      "heroi": {
+        "limite_fadiga": 4,
+        "passiva": "Carta do Pacto do Inverno Imóvel.",
+        "ativada": "1 Pacto: transfira 1 Fadiga de outra carta sua para esta carta de herói, apenas se houver espaço. Uma vez no seu turno. A transferência não altera o total de Fadiga nem conta como pagar Fadiga de uma magia.",
+        "desencadeada": "Uma vez no seu turno, se a habilidade inicial deste pacto estava abaixo do limite imediatamente antes de conjurar e atingiu exatamente o limite durante o pagamento ou as transferências daquela magia, depois de resolver a magia, se você não tiver Bloqueio, coloque 1 Bloqueio em sua carta de herói. A carta precisa continuar no limite nesse momento. Uma carta já cheia, transbordo ou transferência alheia a essa conjuração não dispara o efeito.",
+        "critico": "Ganhe fichas de Pacto iguais ao nível deste pacto."
+      },
+      "habilidade": {
+        "tipo": "Magia Arcana",
+        "requer": [
+          "Pacto",
+          "Gelo",
+          "Conservação"
+        ],
+        "lados": [
+          {
+            "lado": "A",
+            "nome": "Sopro da Geada",
+            "custo_fadiga": 1,
+            "limite_fadiga": 2,
+            "acao": "Padrão",
+            "texto": "1 de Fadiga, Ação Padrão: faça um ataque mágico com foco em alcance curto, causando dano de Gelo. Se causar dano, a próxima ação de Movimento que o defensor usar até o início do seu próximo turno rende apenas 1 quadrado, em vez do deslocamento normal. A ação ainda é gasta e não impede outras ações do alvo. Aplicações desta magia não se acumulam: não afetam várias ações nem prolongam a duração. Deslocamentos explicitamente dados por outras habilidades continuam seguindo seus próprios textos.",
+            "conjuracao": false,
+            "rapida": false
+          },
+          {
+            "lado": "B",
+            "nome": "Coração do Inverno",
+            "custo_fadiga": 2,
+            "limite_fadiga": 4,
+            "acao": "Padrão",
+            "texto": "2 de Fadiga, Ação Padrão: depois de pagar a Fadiga desta magia e antes de comprar as cartas do ataque, você pode transferir até 2 Fadigas de uma outra carta sua para esta carta, sem ultrapassar seu limite. Faça um ataque mágico com foco em alcance curto, causando dano de Gelo. Se acertar, cause +2 de dano por Fadiga transferida. O custo da conjuração é pago normalmente; transferir Fadiga não paga esse custo nem conta como receber recuperação. A quantidade transferida não pode superar o menor entre 2, a Fadiga disponível na carta de origem e o espaço livre nesta carta depois de pagar a conjuração.",
+            "conjuracao": false,
+            "rapida": false
+          }
+        ]
+      },
+      "menor": "1 Pacto, Reação: depois que um inimigo em alcance curto causar dano a você com um ataque, a próxima ação de Movimento que ele usar até o início do seu próximo turno rende apenas 1 quadrado. Não se acumula com outra redução desta mesma origem; uma ativação por ataque. Não impede ações nem deslocamentos dados explicitamente por outras habilidades.",
+      "teste": "Coração transfere Fadiga sem apagá-la, até o espaço livre após o pagamento. Atingir o limite durante a magia pode conceder Bloqueio uma vez no próprio turno; uma carta já cheia não repete o gatilho. Testar se a potência compensa permanecer na posição nos turnos de gasto. Virar cartas continua permitido, respeitando eventuais cobranças de outros vínculos.",
+      "cobranca_menor": "Depois de usar o benefício menor, no fim do seu próximo turno abra mão da recuperação normal de 1 Fadiga se tiver alguma Fadiga que pudesse remover. Se não tiver Fadiga, o preço foi cumprido. Se optar por recuperar normalmente, suspenda esta reserva menor; para reparar, abra mão de uma recuperação normal de Fadiga que poderia realizar em um turno de conflito real, sem gerar Pacto.",
+      "rotulo_estado": "Revisão aplicada conforme autorização do autor; equilíbrio numérico em playtest."
+    }
+  ],
+  "alteracoes_v02": [
+    "Inclusão da Fênix com as três cartas e pendências preservadas.",
+    "Quatro patronos novos, totalizando dez opções de pacto pleno."
+  ]
+}

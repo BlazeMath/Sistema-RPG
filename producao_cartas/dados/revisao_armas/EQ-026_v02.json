@@ -1,0 +1,19 @@
+{
+  "id": "EQ-026",
+  "nome": "Machado da Sepultura",
+  "arquivo": "artes/revisadas/EQ-026_v02.png",
+  "origem": "C:/Users/Gamer/.codex/generated_images/01a1784a-39da-75d3-87c4-56dc835caa37/exec-7d621127-dce1-4196-a1be-2021192d50df.png",
+  "substitui": "artes/lote/EQ-026_v01.png",
+  "dimensoes": [
+    1059,
+    1485
+  ],
+  "modo": "RGBA",
+  "alpha": [
+    0,
+    255
+  ],
+  "sha256": "026dd582b8efafaa7a3e89b7558de72eaf380b7fb505983f98d41a8f417ba39c",
+  "status": "conferida_visual",
+  "rotacao_diagramacao_graus": 0
+}

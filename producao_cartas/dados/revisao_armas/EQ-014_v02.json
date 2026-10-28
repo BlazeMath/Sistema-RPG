@@ -1,0 +1,18 @@
+{
+  "id": "EQ-014",
+  "nome": "Espada do Mestre-Ferreiro",
+  "arquivo": "artes/revisadas/EQ-014_v02.png",
+  "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-4db37cc0-cfbe-4d63-9835-515a2521b79c.png",
+  "substitui": "C:/Users/Gamer/Documents/ChatGPT/SISTEMA DE RPG/producao_cartas/artes/lote/EQ-014_v01.png",
+  "dimensoes": [
+    1060,
+    1484
+  ],
+  "modo": "RGBA",
+  "alpha": [
+    0,
+    255
+  ],
+  "sha256": "7181d9088bf030290c2c4e55e6fcb38318d21abf5a63f3848e1a4112160eaa96",
+  "status": "revisao_visual_pendente"
+}

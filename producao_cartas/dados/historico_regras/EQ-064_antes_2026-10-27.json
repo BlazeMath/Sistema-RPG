@@ -1,0 +1,15 @@
+{
+  "id": "EQ-064",
+  "nome": "Ração de Viagem",
+  "categoria": "CONSUMÍVEL · COMUM",
+  "campos": {},
+  "tags": [
+    "Consumível"
+  ],
+  "habilidade": "Durante um descanso curto, você pode consumir esta ração para remover até 3 fichas de Fadiga das suas cartas.",
+  "revisao": "PDF não repete que a ração é necessária no descanso longo, como fazia a planilha. Essa exigência depende da regra de descanso no livro. Proposta remove marcador Ação deslocado para antes de um uso durante descanso.",
+  "fonte": "PDF: EQ-064, p. 8 | Apoio: Itens!A74:C75",
+  "piloto": false,
+  "imagem": "artes/lote/EQ-064_v01.png",
+  "diagramacao": "frente_unica"
+}

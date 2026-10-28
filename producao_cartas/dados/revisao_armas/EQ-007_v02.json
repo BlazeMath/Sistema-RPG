@@ -1,0 +1,19 @@
+{
+  "id": "EQ-007",
+  "nome": "Maça",
+  "arquivo": "artes/revisadas/EQ-007_v02.png",
+  "origem": "C:/Users/Gamer/.codex/generated_images/01a1784a-39da-75d3-87c4-56dc835caa37/exec-8b42977f-fd69-4741-9afa-d030d30a9ea4.png",
+  "substitui": "artes/lote/EQ-007_v01.png",
+  "dimensoes": [
+    1060,
+    1484
+  ],
+  "modo": "RGBA",
+  "alpha": [
+    0,
+    255
+  ],
+  "sha256": "835f0464c95ad61495f4f77c3d68ea530b382f12116a3de655d804e8df8a3e03",
+  "status": "conferida_visual",
+  "rotacao_diagramacao_graus": 30
+}

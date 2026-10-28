@@ -1,0 +1,31 @@
+{
+  "versao": "v03",
+  "base_comparacao": "v02",
+  "revisadas_nesta_versao": [
+    "EQ-025"
+  ],
+  "total_revisadas_acumulado": 11,
+  "campos_mecanicos_preservados": true,
+  "paginas_com_texto_identico": 348,
+  "paginas_renderizadas": 348,
+  "frentes_individuais_alteradas": 1,
+  "paginas_A4_alteradas": [
+    5
+  ],
+  "todos_versos_visualmente_identicos": true,
+  "gladio_visualmente_identico": true,
+  "corrente_preservada_e_presente": true,
+  "corrente_paginas_A4": [
+    35,
+    36
+  ],
+  "alteracoes_renderizadas": {
+    "colecao": [
+      "a4-05.png"
+    ],
+    "individuais": [
+      "carta-049.png"
+    ]
+  },
+  "inspecao_visual_final": "Conferida folha A4 5, frente individual EQ-025 e frente EQ-156 na renderizacao final; sem cortes ou sobreposicao. Cabeca, cabo e pomo do Quebra-Elmos alinhados."
+}

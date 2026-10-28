@@ -1,0 +1,64 @@
+{
+  "data": "2026-10-26",
+  "respiracao_flamejante_resistencia_gelo": 2,
+  "ficha_gelo": "Uma ficha de Gelo reduz o movimento em 1. A regra estará no manual.",
+  "scutum_flanqueamento": "Manter a proteção contra flanqueamento. A regra de flanqueamento estará no manual.",
+  "origem": "Respostas explícitas do autor nesta conversa.",
+  "cartas_com_muito_texto": "Usar frente com arte e dados; verso com habilidades completas. Substitui a carta de apoio.",
+  "criterio_diagramacao": "Modelo inicial: transferir habilidades para o verso quando o texto deixar menos de 28 mm de altura para a arte, preservando corpo mínimo de 8 pt.",
+  "dados_nas_duas_faces": "Nas cartas com arte na frente e habilidades no verso, repetir no verso o dano, o alcance quando houver e as tags. Repetir também o requisito, a categoria e o limite de Fadiga para consulta.",
+  "arco_da_mare_area_quadrados": [
+    3,
+    3
+  ],
+  "lanca_trovejante_v05": {
+    "alcance": "Longo",
+    "afetados": "O alvo e todas as criaturas adjacentes a ele, incluindo aliados.",
+    "teste": "Um unico teste de ataque; cada criatura faz sua defesa.",
+    "retorno_raio": 3,
+    "gatilho_retorno": "Apenas depois de resolver a habilidade, mesmo se nenhum alvo for atingido."
+  },
+  "arco_das_sombras_v05": {
+    "aprovado": true,
+    "condicao_dano": "Oculto no inicio do ataque",
+    "sombra": "Gasta antes de atacar; recebe depois de resolver o ataque."
+  },
+  "atualizacao_pdfs_v05": "Autorizada pelo autor apos fechar a Lanca Trovejante e o Arco das Sombras.",
+  "runa_de_luz_segundo_efeito": {
+    "data": "2026-10-27",
+    "texto": "2. Descarte todas as fichas de Sombra em alcance curto.",
+    "pdf": "Incorporado na coleção v06 com autorização do autor em 27/10/2026."
+  },
+  "amuleto_de_kanil_texto": {
+    "data": "2026-10-27",
+    "texto": "Uma vez por cena, quando um dano esgotaria seu baralho, deixe 1 carta nele em vez de retirar a última.\n2 de Fadiga, Ação Padrão: escolha um aliado que você possa ver. Ele cura 3 e remove 1 ficha de Sangramento, Veneno ou Ferimento.",
+    "pdf": "Incorporado na coleção v06 com autorização do autor em 27/10/2026."
+  },
+  "racao_de_viagem_preparo": {
+    "data": "2026-10-27",
+    "texto": "Durante um descanso curto, consuma esta ração. No início da próxima cena, compre 1 carta adicional para formar sua mão inicial. Consumir mais de uma ração não aumenta esse bônus.",
+    "origem": "Pedido do autor para implementar as ultimas mudancas."
+  },
+  "expansao_pocoes_2026_10_27": {
+    "solicitacao_autor": "Pesquisar as pocoes de The Witcher 3, comparar equivalentes e acrescentar as funcoes ausentes.",
+    "novos_ids": [
+      "EQ-157",
+      "EQ-158",
+      "EQ-159",
+      "EQ-160",
+      "EQ-161",
+      "EQ-162",
+      "EQ-163",
+      "EQ-164",
+      "EQ-165",
+      "EQ-166",
+      "EQ-167",
+      "EQ-168",
+      "EQ-169",
+      "EQ-170"
+    ],
+    "valores": "Adaptacoes iniciais criadas para o Sistema 21, sujeitas a playtest.",
+    "pdfs": "Artes geradas e incorporadas à coleção v06: 170 itens, 38 páginas A4 e 340 faces individuais."
+  },
+  "atualizacao_pdfs_v06": "Autor autorizou as novas artes, a expansão de poções e todas as alterações pendentes; produção e verificação concluídas."
+}

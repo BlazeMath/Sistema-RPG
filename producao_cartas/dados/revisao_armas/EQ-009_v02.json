@@ -1,0 +1,18 @@
+{
+  "id": "EQ-009",
+  "nome": "Montante",
+  "arquivo": "artes/revisadas/EQ-009_v02.png",
+  "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-b4b4a4b8-28c9-4772-807f-b279aa3fb0ff.png",
+  "substitui": "C:/Users/Gamer/Documents/ChatGPT/SISTEMA DE RPG/producao_cartas/artes/lote/EQ-009_v01.png",
+  "dimensoes": [
+    1063,
+    1479
+  ],
+  "modo": "RGBA",
+  "alpha": [
+    0,
+    255
+  ],
+  "sha256": "a0c4f7332c6b5aeb5a5bf69ad3897df771a8a20399e06a38ac04ec6470ced0f5",
+  "status": "revisao_visual_pendente"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "EQ-131",
+  "nome": "Runa de Luz",
+  "categoria": "RUNA CONSUMÍVEL",
+  "campos": {},
+  "tags": [
+    "Consumível"
+  ],
+  "habilidade": "Ação Padrão — escolha um efeito:\n1. Por 5 minutos, a runa ilumina ao alcance médio. \n2. Fique invisível até o final do turno. \n3. Coloque 1 ficha de Cegueira em um alvo ao alcance curto.",
+  "revisao": "Invisível não é estado definido nem equivale automaticamente a Oculto. Cegueira também carece de efeito detalhado; decidir oposição. O efeito de luz continua após o consumo físico da runa por sua duração.",
+  "fonte": "PDF: EQ-131, p. 15 | Apoio: Itens Mágicos!A67:C71",
+  "piloto": false,
+  "imagem": "artes/lote/EQ-131_v01.png",
+  "diagramacao": "frente_unica"
+}

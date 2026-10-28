@@ -1,0 +1,65 @@
+[
+  {
+    "id": "EQ-001",
+    "nome": "Faca",
+    "prompt": "Use case: stylized-concept. Asset type: standalone collectible RPG equipment illustration. Ilustração de fantasia medieval sombria, pintada digitalmente com acabamento semirrealista e pinceladas discretas. Materiais fisicamente críveis, silhueta clara, detalhes seletivos para leitura em carta pequena. Um único equipamento isolado, sem pessoa, mão ou cenário. Luz principal quente suave pela esquerda e recorte frio sutil; cores naturais pouco saturadas. Objeto inteiro visível, centralizado, com margem livre em todos os lados. Fundo realmente transparente. Sem letras, números, marcas, molduras, interface ou texto.\nObjeto: Uma faca utilitária medieval comum, lâmina curta de aço fosco de um só gume e ponta levemente curva, cabo gasto de madeira e couro marrom. Design simples, funcional, com sinais discretos de uso. Faca diagonal inteira, sem bainha, sem ornamento mágico.",
+    "transparent_background": true,
+    "status": "a gerar"
+  },
+  {
+    "id": "EQ-010",
+    "nome": "Estilete",
+    "prompt": "Use case: stylized-concept. Asset type: standalone collectible RPG equipment illustration. Ilustração de fantasia medieval sombria, pintada digitalmente com acabamento semirrealista e pinceladas discretas. Materiais fisicamente críveis, silhueta clara, detalhes seletivos para leitura em carta pequena. Um único equipamento isolado, sem pessoa, mão ou cenário. Luz principal quente suave pela esquerda e recorte frio sutil; cores naturais pouco saturadas. Objeto inteiro visível, centralizado, com margem livre em todos os lados. Fundo realmente transparente. Sem letras, números, marcas, molduras, interface ou texto.\nObjeto: Um estilete medieval incomum: adaga perfurante de lâmina muito fina, rígida, longa e pontiaguda, seção triangular, pequena guarda de aço e cabo escuro bem acabado. Elegância sóbria e precisão; sem efeito mágico e sem segunda arma.",
+    "transparent_background": true,
+    "status": "a gerar"
+  },
+  {
+    "id": "EQ-156",
+    "nome": "Corrente de Caça",
+    "prompt": "Use case: stylized-concept. Asset type: standalone collectible RPG equipment illustration. Ilustração de fantasia medieval sombria, pintada digitalmente com acabamento semirrealista e pinceladas discretas. Materiais fisicamente críveis, silhueta clara, detalhes seletivos para leitura em carta pequena. Um único equipamento isolado, sem pessoa, mão ou cenário. Luz principal quente suave pela esquerda e recorte frio sutil; cores naturais pouco saturadas. Objeto inteiro visível, centralizado, com margem livre em todos os lados. Fundo realmente transparente. Sem letras, números, marcas, molduras, interface ou texto.\nObjeto: Uma corrente de caça de combate medieval, grossos elos ovais de ferro escurecido realmente conectados, uma extremidade reforçada para empunhar e a outra com um pequeno peso de aço. Corrente parcialmente enrolada em uma espiral aberta para mostrar seu comprimento e flexibilidade. Equipamento funcional, sem lâmina, sem fogo, sem arma adicional.",
+    "transparent_background": true,
+    "status": "a gerar"
+  },
+  {
+    "id": "EQ-046",
+    "nome": "Couro do Batedor",
+    "prompt": "Use case: stylized-concept. Asset type: standalone collectible RPG equipment illustration. Ilustração de fantasia medieval sombria, pintada digitalmente com acabamento semirrealista e pinceladas discretas. Materiais fisicamente críveis, silhueta clara, detalhes seletivos para leitura em carta pequena. Um único equipamento isolado, sem pessoa, mão ou cenário. Luz principal quente suave pela esquerda e recorte frio sutil; cores naturais pouco saturadas. Objeto inteiro visível, centralizado, com margem livre em todos os lados. Fundo realmente transparente. Sem letras, números, marcas, molduras, interface ou texto.\nObjeto: Um gibão de armadura leve de couro marrom curtido e usado, vazio, sem corpo nem manequim visível. Dobras práticas, costuras reforçadas e uma discreta costura de bolso oculto no forro; proteção flexível de batedor. Vista de três quartos, peça inteira, sem armadura metálica pesada.",
+    "transparent_background": true,
+    "status": "a gerar"
+  },
+  {
+    "id": "EQ-060",
+    "nome": "Scutum da Legião",
+    "prompt": "Use case: stylized-concept. Asset type: standalone collectible RPG equipment illustration. Ilustração de fantasia medieval sombria, pintada digitalmente com acabamento semirrealista e pinceladas discretas. Materiais fisicamente críveis, silhueta clara, detalhes seletivos para leitura em carta pequena. Um único equipamento isolado, sem pessoa, mão ou cenário. Luz principal quente suave pela esquerda e recorte frio sutil; cores naturais pouco saturadas. Objeto inteiro visível, centralizado, com margem livre em todos os lados. Fundo realmente transparente. Sem letras, números, marcas, molduras, interface ou texto.\nObjeto: Um grande scutum retangular de legião de fantasia medieval, corpo de madeira curvo revestido de couro vermelho escuro gasto, borda de metal escurecido, boss central de bronze e discretas linhas geométricas douradas sem letras. Equipamento raro de formação, sólido e largo. Escudo inteiro em três quartos; sem pessoa nem outro escudo.",
+    "transparent_background": true,
+    "status": "a gerar"
+  },
+  {
+    "id": "EQ-061",
+    "nome": "Poção de Cura Pequena",
+    "prompt": "Use case: stylized-concept. Asset type: standalone collectible RPG equipment illustration. Ilustração de fantasia medieval sombria, pintada digitalmente com acabamento semirrealista e pinceladas discretas. Materiais fisicamente críveis, silhueta clara, detalhes seletivos para leitura em carta pequena. Um único equipamento isolado, sem pessoa, mão ou cenário. Luz principal quente suave pela esquerda e recorte frio sutil; cores naturais pouco saturadas. Objeto inteiro visível, centralizado, com margem livre em todos os lados. Fundo realmente transparente. Sem letras, números, marcas, molduras, interface ou texto.\nObjeto: Uma pequena poção de cura medieval: frasco compacto de vidro espesso com líquido rubi translúcido, tampa de cortiça e um cordão simples de couro. Design comum e prático, vidro artesanal irregular muito legível, sem rótulo, sem palavras e sem objetos ao redor.",
+    "transparent_background": true,
+    "status": "a gerar"
+  },
+  {
+    "id": "EQ-116",
+    "nome": "Varinha de Cristal",
+    "prompt": "Use case: stylized-concept. Asset type: standalone collectible RPG equipment illustration. Ilustração de fantasia medieval sombria, pintada digitalmente com acabamento semirrealista e pinceladas discretas. Materiais fisicamente críveis, silhueta clara, detalhes seletivos para leitura em carta pequena. Um único equipamento isolado, sem pessoa, mão ou cenário. Luz principal quente suave pela esquerda e recorte frio sutil; cores naturais pouco saturadas. Objeto inteiro visível, centralizado, com margem livre em todos os lados. Fundo realmente transparente. Sem letras, números, marcas, molduras, interface ou texto.\nObjeto: Uma varinha arcana medieval de madeira escura, com um único cristal de quartzo facetado claro preso à ponta por uma montagem discreta de prata envelhecida. Brilho mágico muito sutil no cristal, sem associar a um elemento específico. Varinha inteira em diagonal, sem mão e sem outros objetos.",
+    "transparent_background": true,
+    "status": "a gerar"
+  },
+  {
+    "id": "EQ-127",
+    "nome": "Runa de Fogo",
+    "prompt": "Use case: stylized-concept. Asset type: standalone collectible RPG equipment illustration. Ilustração de fantasia medieval sombria, pintada digitalmente com acabamento semirrealista e pinceladas discretas. Materiais fisicamente críveis, silhueta clara, detalhes seletivos para leitura em carta pequena. Um único equipamento isolado, sem pessoa, mão ou cenário. Luz principal quente suave pela esquerda e recorte frio sutil; cores naturais pouco saturadas. Objeto inteiro visível, centralizado, com margem livre em todos os lados. Fundo realmente transparente. Sem letras, números, marcas, molduras, interface ou texto.\nObjeto: Uma única pedra de runa de fogo consumível, pequena peça de basalto escuro com sulcos gravados formando um símbolo abstrato de chama, sem qualquer alfabeto ou escrita. Um brilho âmbar suave sai dos sulcos; bordas de pedra gastas e textura legível. Pedra inteira isolada.",
+    "transparent_background": true,
+    "status": "a gerar"
+  },
+  {
+    "id": "EQ-139",
+    "nome": "Grimório do Fogo",
+    "prompt": "Use case: stylized-concept. Asset type: standalone collectible RPG equipment illustration. Ilustração de fantasia medieval sombria, pintada digitalmente com acabamento semirrealista e pinceladas discretas. Materiais fisicamente críveis, silhueta clara, detalhes seletivos para leitura em carta pequena. Um único equipamento isolado, sem pessoa, mão ou cenário. Luz principal quente suave pela esquerda e recorte frio sutil; cores naturais pouco saturadas. Objeto inteiro visível, centralizado, com margem livre em todos os lados. Fundo realmente transparente. Sem letras, números, marcas, molduras, interface ou texto.\nObjeto: Um grimório elemental de fogo medieval fechado, livro grosso de couro castanho muito escuro, cantos de cobre envelhecido, fecho de metal e um símbolo abstrato de chama na capa, sem letras. Pequenos sinais de calor no couro e luz âmbar discretíssima no símbolo. Livro inteiro em três quartos, sem fogo espalhado nem cenário.",
+    "transparent_background": true,
+    "status": "a gerar"
+  }
+]

@@ -1,0 +1,324 @@
+{
+  "data": "2026-10-27",
+  "fonte_original": "classes/fontes/Habilidades_Cartas_original_2026-10-27.pdf",
+  "fonte_sha256": "c1246a5ebab756d1f01dba4f4054a58723e1bd85ff32b93427757c5e87be96cf",
+  "pdf": "output/pdf/Habilidades_Cartas_Atualizadas_v01.pdf",
+  "pdf_sha256": "828802069bb45066e045b8f0803aa54395d16d6e05749c83bfcb35a42ded6fcf",
+  "paginas": 20,
+  "faces_revisadas": 17,
+  "registros": [
+    {
+      "nome": "Ombro de Ferro",
+      "id": "GRMMR02",
+      "lado": "A",
+      "pagina": 1,
+      "corpo_pt": 13.0,
+      "altura_texto_pt": 81.25,
+      "altura_disponivel_pt": 164.36566162109375,
+      "corpo_rect": [
+        404.5,
+        107.63433837890625,
+        569.25,
+        274.0
+      ],
+      "texto": "1 de Fadiga, Ação Padrão: mova-se 1 quadrado e faça um ataque corpo a corpo. Se causar dano, o alvo recebe 1 ficha de Imobilizar.",
+      "custos_simbolizados": [
+        1
+      ]
+    },
+    {
+      "nome": "Avalanche",
+      "id": "GRMMR02",
+      "lado": "B",
+      "pagina": 1,
+      "corpo_pt": 13.0,
+      "altura_texto_pt": 97.5,
+      "altura_disponivel_pt": 163.61566162109375,
+      "corpo_rect": [
+        25.0,
+        368.63433837890625,
+        189.0,
+        534.25
+      ],
+      "texto": "2 de Fadiga, Ação Padrão: faça um ataque corpo a corpo. Some o dobro da resistência da sua armadura ao dano. Você recebe 1 ficha de Imobilizar.",
+      "custos_simbolizados": [
+        2
+      ]
+    },
+    {
+      "nome": "Ombro de Aço",
+      "id": "GRMMR05",
+      "lado": "B",
+      "pagina": 2,
+      "corpo_pt": 13.0,
+      "altura_texto_pt": 48.75,
+      "altura_disponivel_pt": 164.36566162109375,
+      "corpo_rect": [
+        25.0,
+        81.38433837890625,
+        189.0,
+        247.75
+      ],
+      "texto": "O limite dos testes de defesa dos seus aliados adjacentes têm +1.",
+      "custos_simbolizados": []
+    },
+    {
+      "nome": "Hino de Coragem",
+      "id": "CLMMR-O1",
+      "lado": "B",
+      "pagina": 6,
+      "corpo_pt": 13.0,
+      "altura_texto_pt": 97.5,
+      "altura_disponivel_pt": 146.36566162109375,
+      "corpo_rect": [
+        214.74998474121094,
+        613.1343383789062,
+        378.75,
+        761.5
+      ],
+      "texto": "1 de Fadiga, Ação Padrão: até o início do seu próximo turno, aliados ao alcance 2 não podem ter fichas de Medo e Confusão colocadas por efeitos de inimigos.",
+      "custos_simbolizados": [
+        1
+      ]
+    },
+    {
+      "nome": "Teologia",
+      "id": "CLMMR-M1",
+      "lado": "único",
+      "pagina": 7,
+      "corpo_pt": 11.6,
+      "altura_texto_pt": 159.5,
+      "altura_disponivel_pt": 163.61566162109375,
+      "corpo_rect": [
+        25.0,
+        334.88433837890625,
+        189.0,
+        500.5
+      ],
+      "texto": "1 de Fadiga: aumente seu limite em +1 para testes de Religião.\n1 de Fadiga, Ação Padrão: desenhe o símbolo de sua divindade em uma arma ou armadura. Até o próximo amanhecer, ela não pode ser amaldiçoada nem ser quebrada diretamente por efeitos de inimigos. Se a vida do item chegar a 0, ele quebra normalmente. Limitado a um item por vez.",
+      "custos_simbolizados": [
+        1,
+        1
+      ]
+    },
+    {
+      "nome": "Ressurgir",
+      "id": "CLMMR-X1",
+      "lado": "A",
+      "pagina": 8,
+      "corpo_pt": 13.0,
+      "altura_texto_pt": 130.0,
+      "altura_disponivel_pt": 142.61566162109375,
+      "corpo_rect": [
+        25.0,
+        95.63433837890625,
+        189.0,
+        240.25
+      ],
+      "texto": "2 de Fadiga, Ação Padrão: exile metade das cartas do descarte do aliado alvo, arredondando para cima. Se o alvo estiver sem cartas no baralho, ele cura um valor igual à sua Sabedoria e recobra a consciência no local onde seu corpo está.",
+      "custos_simbolizados": [
+        2
+      ]
+    },
+    {
+      "nome": "Preparar o Tiro",
+      "id": "CDMMR-01",
+      "lado": "A",
+      "pagina": 9,
+      "corpo_pt": 13.0,
+      "altura_texto_pt": 97.5,
+      "altura_disponivel_pt": 146.36566162109375,
+      "corpo_rect": [
+        25.0,
+        145.13433837890625,
+        189.0,
+        293.5
+      ],
+      "texto": "Ação Padrão: ganhe 2 fichas de Mira. Se você não se moveu neste turno, ganhe 3 em vez de 2. Depois de usar esta habilidade, você não pode se mover até o fim do turno.",
+      "custos_simbolizados": []
+    },
+    {
+      "nome": "Flecha de Rede",
+      "id": "CDMMR-06",
+      "lado": "B",
+      "pagina": 10,
+      "corpo_pt": 13.0,
+      "altura_texto_pt": 113.75,
+      "altura_disponivel_pt": 146.36566162109375,
+      "corpo_rect": [
+        404.5,
+        352.13433837890625,
+        569.25,
+        500.5
+      ],
+      "texto": "2 de Fadiga, Ação Padrão: faça um ataque à distância causando metade do dano. Se acertar, o alvo recebe 2 fichas de Imobilizar e não pode usar reações até o próximo turno dele.",
+      "custos_simbolizados": [
+        2
+      ]
+    },
+    {
+      "nome": "Flecha Pesada",
+      "id": "CDMMR-09",
+      "lado": "A",
+      "pagina": 11,
+      "corpo_pt": 13.0,
+      "altura_texto_pt": 97.5,
+      "altura_disponivel_pt": 147.11566162109375,
+      "corpo_rect": [
+        214.74998474121094,
+        91.13433837890625,
+        378.75,
+        240.25
+      ],
+      "texto": "2 de Fadiga: durante seu ataque, se o defensor tiver ao menos 1 ficha de Ferimento ou de Imobilizar, o dano da sua arma é triplicado e ignora resistência.",
+      "custos_simbolizados": [
+        2
+      ]
+    },
+    {
+      "nome": "Predador Absoluto",
+      "id": "CDMMR-X2",
+      "lado": "A",
+      "pagina": 12,
+      "corpo_pt": 8.7,
+      "altura_texto_pt": 163.125,
+      "altura_disponivel_pt": 163.83538818359375,
+      "corpo_rect": [
+        404.5,
+        74.41461181640625,
+        569.25,
+        240.25
+      ],
+      "texto": "No início da cena com este lado revelado, ou ao revelá-lo pela primeira vez na cena, escolha um inimigo visível como alvo da caça.\nAté o fim da cena, coloque o dobro das fichas que seus efeitos colocariam no alvo. Nos efeitos sobre ele calculados pela quantidade de fichas gastas, calcule como se gastasse o dobro, pagando o custo normal. Duplique cada efeito apenas uma vez por esta habilidade.\nNo fim do seu turno, se causou dano ao alvo neste turno, ganhe 1 ficha de Preparo.\nQuando ele morrer, escolha outro inimigo visível.",
+      "custos_simbolizados": []
+    },
+    {
+      "nome": "Conjuração Perfeita",
+      "id": "MGMMR-X1",
+      "lado": "A",
+      "pagina": 14,
+      "corpo_pt": 13.0,
+      "altura_texto_pt": 81.25,
+      "altura_disponivel_pt": 164.36566162109375,
+      "corpo_rect": [
+        25.0,
+        595.1343383789062,
+        189.0,
+        761.5
+      ],
+      "texto": "Uma vez por turno, você pode conjurar uma magia pagando apenas 1 de Fadiga. Os outros custos da magia continuam valendo.",
+      "custos_simbolizados": []
+    },
+    {
+      "nome": "Mana Densa",
+      "id": "MGMMR-X2",
+      "lado": "B",
+      "pagina": 15,
+      "corpo_pt": 13.0,
+      "altura_texto_pt": 113.75,
+      "altura_disponivel_pt": 162.74160766601562,
+      "corpo_rect": [
+        25.0,
+        75.50839233398438,
+        189.0,
+        240.25
+      ],
+      "texto": "Descarte 1 carta: quando uma magia tiver você como um dos alvos, faça um teste contestado do seu Raciocínio contra a Sabedoria do conjurador. Se vencer, anule a magia.",
+      "custos_simbolizados": []
+    },
+    {
+      "nome": "Servo Sombrio",
+      "id": "MGMMR-S",
+      "lado": "B",
+      "pagina": 16,
+      "corpo_pt": 13.0,
+      "altura_texto_pt": 146.25,
+      "altura_disponivel_pt": 159.11566162109375,
+      "corpo_rect": [
+        404.5,
+        339.38433837890625,
+        569.25,
+        500.5
+      ],
+      "texto": "3 de Fadiga, Ação Padrão: escolha um alvo que tenha uma ficha de Medo. Faça um teste contestado do seu Raciocínio contra o Espírito do alvo. Se vencer, o alvo move-se 2 quadrados e ataca um segundo alvo, ao seu comando.",
+      "custos_simbolizados": [
+        3
+      ]
+    },
+    {
+      "nome": "Adaga Fantasma",
+      "id": "LDMMR-09",
+      "lado": "B",
+      "pagina": 19,
+      "corpo_pt": 13.0,
+      "altura_texto_pt": 97.5,
+      "altura_disponivel_pt": 164.36566162109375,
+      "corpo_rect": [
+        404.5,
+        73.88433837890625,
+        569.25,
+        240.25
+      ],
+      "texto": "Como parte de seu ataque, você pode colocar 1 ficha de Atormentado nesta carta. Se fizer isso, ao acertar esse ataque, o defensor recebe 1 ficha de Ferimento.",
+      "custos_simbolizados": []
+    },
+    {
+      "nome": "Torcer a Lâmina",
+      "id": "LDMMR-M5",
+      "lado": "único",
+      "pagina": 19,
+      "corpo_pt": 13.0,
+      "altura_texto_pt": 65.0,
+      "altura_disponivel_pt": 164.36566162109375,
+      "corpo_rect": [
+        214.74998474121094,
+        595.1343383789062,
+        378.75,
+        761.5
+      ],
+      "texto": "1 de Fadiga: seu próximo ataque corpo a corpo neste turno aplica 1 ficha de Sangramento no defensor se acertar.",
+      "custos_simbolizados": [
+        1
+      ]
+    },
+    {
+      "nome": "Bote Fatal",
+      "id": "LDMMR-X1",
+      "lado": "B",
+      "pagina": 20,
+      "corpo_pt": 13.0,
+      "altura_texto_pt": 81.25,
+      "altura_disponivel_pt": 164.36566162109375,
+      "corpo_rect": [
+        214.74998474121094,
+        73.88433837890625,
+        378.75,
+        240.25
+      ],
+      "texto": "Sempre que você acertar um ataque corpo a corpo, o defensor recebe 1 ficha de Ferimento para cada ficha de Sombra que você tem.",
+      "custos_simbolizados": []
+    },
+    {
+      "nome": "Roubo Arcano",
+      "id": "LDMMR-X3",
+      "lado": "B",
+      "pagina": 20,
+      "corpo_pt": 11.5,
+      "altura_texto_pt": 158.125,
+      "altura_disponivel_pt": 163.61566162109375,
+      "corpo_rect": [
+        404.5,
+        334.88433837890625,
+        569.25,
+        500.5
+      ],
+      "texto": "Descarte 1 ficha de Reação: quando um inimigo conjurar uma magia, faça um teste do seu Raciocínio contra a Sabedoria do conjurador. Em caso de sucesso, escolha novos alvos válidos para a magia, respeitando sua quantidade de alvos, seu alcance e suas restrições; resolva a magia contra esses alvos e, depois, coloque 1 ficha de Atordoamento nesta carta.",
+      "custos_simbolizados": []
+    }
+  ],
+  "diferencas_fora_das_areas_editadas": [],
+  "texto_integral_das_17_faces_conferido": true,
+  "inspecao_visual": "Conferidas as 20 páginas em folhas de contato e as 17 faces alteradas em recortes de leitura; sem sobreposição, texto cortado ou símbolos ausentes nas correções.",
+  "arquivo_principal_atualizado": "Habilidades_Cartas.pdf",
+  "total_faces_colecao": 150
+}

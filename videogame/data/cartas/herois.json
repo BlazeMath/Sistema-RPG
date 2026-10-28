@@ -1,0 +1,607 @@
+[
+ {
+  "id": "classe.guerreiro.heroi.foco-mortal",
+  "fonte": "classe",
+  "entidade": "Guerreiro",
+  "nome": "Foco Mortal",
+  "descricao": "O guerreiro agressivo que transforma a defesa do inimigo em combustível: quanto mais o blindam, mais fundo ele fura.",
+  "passiva": "Suas habilidades de arma custam 1 de fadiga a menos.",
+  "ativada": "Descarte uma ficha de Foco: seu próximo ataque ignora qualquer redução de dano.",
+  "desencadeada": "Toda vez que o dano de um ataque seu for reduzido por algum efeito, ganhe uma ficha de Foco.",
+  "critico": "Coloque uma ficha de Foco em cada carta de habilidade e arma sua.",
+  "custo_ativada": {
+   "fadiga": 0,
+   "acao": null,
+   "outros": [
+    "Descarte uma ficha de Foco"
+   ],
+   "permanente": "",
+   "efeito": "seu próximo ataque ignora qualquer redução de dano."
+  },
+  "limite_fadiga": 4,
+  "impressao": "eb9e13149b42"
+ },
+ {
+  "id": "classe.guerreiro.heroi.a-muralha",
+  "fonte": "classe",
+  "entidade": "Guerreiro",
+  "nome": "A Muralha",
+  "descricao": "O guerreiro cuja armadura é uma fortaleza viva: ele mantém o equipamento impecável, recebe no aço o que viria para os aliados, e fica mais firme a cada golpe absorvido.",
+  "passiva": "Seu escudo e sua armadura concedem +1 de resistência mesmo após serem quebrados.",
+  "ativada": "2 de fadiga, Reação: Se um aliado seu sofreria dano, redirecione todo o dano para a sua armadura e/ou escudo e, se houver excedente, para você. Não aplique qualquer resistência ao redirecionar.",
+  "desencadeada": "Toda vez que sua armadura ou escudo sofrerem dano, ganhe 1 ficha de Guarda.",
+  "critico": "Sua armadura e seu escudo são completamente reparados.",
+  "custo_ativada": {
+   "fadiga": 2,
+   "acao": "reacao",
+   "outros": [],
+   "permanente": "",
+   "efeito": "Se um aliado seu sofreria dano, redirecione todo o dano para a sua armadura e/ou escudo e, se houver excedente, para você. Não aplique qualquer resistência ao redirecionar."
+  },
+  "limite_fadiga": 4,
+  "impressao": "36f97bd48792"
+ },
+ {
+  "id": "classe.ladino.heroi.larapio",
+  "fonte": "classe",
+  "entidade": "Ladino",
+  "nome": "Larápio",
+  "descricao": "O ladino ágil que lucra com cada abate e escorrega por entre o perigo — furtividade e ladinagem afiadas pela Sombra.",
+  "passiva": "Você tem +1 em testes de Furtividade e Ladinagem para CADA ficha de Sombra em suas cartas.",
+  "ativada": "2 de fadiga: sofra metade do dano do próximo ataque em ÁREA que o atingir.",
+  "desencadeada": "Ao derrotar um inimigo, você pode pegar a Recompensa dele como ação livre.",
+  "critico": "Você pode fazer uma ação de movimento adicional até o final do turno.",
+  "custo_ativada": {
+   "fadiga": 2,
+   "acao": null,
+   "outros": [],
+   "permanente": "",
+   "efeito": "sofra metade do dano do próximo ataque em ÁREA que o atingir."
+  },
+  "limite_fadiga": 4,
+  "impressao": "d2dd60fab613"
+ },
+ {
+  "id": "classe.ladino.heroi.impostor",
+  "fonte": "classe",
+  "entidade": "Ladino",
+  "nome": "Impostor",
+  "descricao": "O ladino que mente melhor que qualquer um e forja a própria verdade — mestre do blefe, dos contatos e da trapaça.",
+  "passiva": "Seu limite para testes de Mentira é 23.",
+  "ativada": "Você pode gastar meio dia conhecendo a vila ou cidade onde está. Caso o faça, combine com o mestre um contato aliado que você conheceu ali.",
+  "desencadeada": "Uma vez por cena, ao falhar em um teste de Mentira, você pode descartar uma carta da mão e criar um item que ajude a sustentar a mentira contada (com autorização do mestre). Então refaça o teste de Mentira e fique com o segundo resultado.",
+  "critico": "Embaralhe o Ás usado no crítico de volta no baralho, em vez de colocá-lo no descarte.",
+  "custo_ativada": {
+   "fadiga": 0,
+   "acao": null,
+   "outros": [],
+   "permanente": "",
+   "efeito": "Você pode gastar meio dia conhecendo a vila ou cidade onde está. Caso o faça, combine com o mestre um contato aliado que você conheceu ali."
+  },
+  "limite_fadiga": 4,
+  "impressao": "eef3e77d604a"
+ },
+ {
+  "id": "classe.clerigo.heroi.estrela-do-amanhecer",
+  "fonte": "classe",
+  "entidade": "Clérigo",
+  "nome": "Estrela Do Amanhecer",
+  "descricao": "O clérigo que renova o fôlego dos seus, sara as feridas do corpo e empresta a própria sabedoria ao grupo.",
+  "passiva": "No início do seu turno, um aliado ao alcance 3 recupera 1 de fadiga.",
+  "ativada": "2 de fadiga: O aliado alvo adjacente cura igual sua Sabedoria.",
+  "desencadeada": "Toda vez que um aliado receber uma ficha de Ferimento, Veneno ou Fogo, você pode pagar 1 de fadiga. Se o fizer, ele não recebe a ficha.",
+  "critico": "Cada jogador pode retirar qualquer quantidade de fichas não de Fadiga de suas cartas.",
+  "custo_ativada": {
+   "fadiga": 2,
+   "acao": null,
+   "outros": [],
+   "permanente": "",
+   "efeito": "O aliado alvo adjacente cura igual sua Sabedoria."
+  },
+  "limite_fadiga": 4,
+  "impressao": "0d1f77c0eab9"
+ },
+ {
+  "id": "classe.clerigo.heroi.o-martelo-da-luz",
+  "fonte": "classe",
+  "entidade": "Clérigo",
+  "nome": "O Martelo Da Luz",
+  "descricao": "O clérigo como arma viva da própria fé: abençoa o aço com energia divina e faz arder quem ousa corrompê-lo.",
+  "passiva": "Você causa +3 de dano contra criaturas que o mestre considerar inimigas da sua devoção.",
+  "ativada": "3 de fadiga (ação): até o fim da cena, suas armas são abençoadas com energia divina, ganhando o tipo de dano da sua devoção. Coloque uma ficha de Vantagem na sua arma.",
+  "desencadeada": "Toda vez que um efeito inimigo colocar uma ou mais fichas nas suas cartas, cause dano igual à sua Sabedoria no responsável.",
+  "critico": "Compre duas cartas; depois coloque uma carta da sua mão no fundo do baralho.",
+  "custo_ativada": {
+   "fadiga": 3,
+   "acao": "padrao",
+   "outros": [],
+   "permanente": "",
+   "efeito": "até o fim da cena, suas armas são abençoadas com energia divina, ganhando o tipo de dano da sua devoção. Coloque uma ficha de Vantagem na sua arma."
+  },
+  "limite_fadiga": 4,
+  "impressao": "5bcc96d01f37"
+ },
+ {
+  "id": "classe.cacador.heroi.folha-de-carvalho",
+  "fonte": "classe",
+  "entidade": "Caçador",
+  "nome": "Folha De Carvalho",
+  "descricao": "O caçador que prende a presa e a fura sem defesa: imobiliza o alvo e atravessa a resistência e a guarda de quem não pode mais fugir.",
+  "passiva": "Você ignora as resistências de inimigos imobilizados, e seus ataques não podem ter o dano reduzido por fichas de Bloqueio.",
+  "ativada": "1 de fadiga: após causar o dano, imobilize o alvo (de tamanho médio ou menor).\n1 de fadiga: após causar o dano, coloque uma ficha de Ferimento no alvo do ataque.",
+  "desencadeada": "Quando você acerta um ataque à distância, ganhe 1 ficha de Mira.",
+  "critico": "Compre uma carta e ganhe uma ficha de Mira.",
+  "custo_ativada": {
+   "fadiga": 1,
+   "acao": null,
+   "outros": [],
+   "permanente": "",
+   "efeito": "após causar o dano, imobilize o alvo (de tamanho médio ou menor).\n1 de fadiga: após causar o dano, coloque uma ficha de Ferimento no alvo do ataque."
+  },
+  "limite_fadiga": 4,
+  "impressao": "c403d317d3a5"
+ },
+ {
+  "id": "classe.cacador.heroi.predador-da-selva",
+  "fonte": "classe",
+  "entidade": "Caçador",
+  "nome": "Predador Da Selva",
+  "descricao": "O caçador que vira parte da mata: imóvel, torna-se invisível, e arma o terreno para prender quem se aproxima.",
+  "passiva": "Enquanto estiver parado há mais de 1 minuto no mesmo lugar na floresta, você tem 21 automático como valor para testes de Furtividade.",
+  "ativada": "2 de fadiga: posicione uma armadilha de imobilização em um espaço adjacente a você.",
+  "desencadeada": "No início do seu turno, você e aliados a alcance curto ganham uma ficha de Preparo, caso não tenham nenhuma ficha de Preparo.",
+  "critico": "Ao critar (21 natural), você ou um aliado alvo pode realizar uma ação de interação gratuitamente.",
+  "custo_ativada": {
+   "fadiga": 2,
+   "acao": null,
+   "outros": [],
+   "permanente": "",
+   "efeito": "posicione uma armadilha de imobilização em um espaço adjacente a você."
+  },
+  "limite_fadiga": 4,
+  "impressao": "7793aa929177"
+ },
+ {
+  "id": "classe.mago.heroi.controlador-do-arcano",
+  "fonte": "classe",
+  "entidade": "Mago",
+  "nome": "Controlador Do Arcano",
+  "descricao": "O mago de fôlego inesgotável: aguenta mais conjurações que qualquer um e canaliza seu poder nas armas dos aliados.",
+  "passiva": "Todas as suas cartas têm +1 no limite de fadiga — você aguenta mais conjurações antes de se cansar.",
+  "ativada": "2 de fadiga (ação): a arma de um aliado a alcance curto torna-se encantada, causando dano arcano além dos outros tipos e somando o seu valor de Raciocínio ou Sabedoria.",
+  "desencadeada": "Toda vez que uma carta sua encher de fadiga, você ganha uma ficha de Foco.",
+  "critico": "Ao tirar um 21 natural em qualquer teste, remova toda a fadiga de uma das suas cartas.",
+  "custo_ativada": {
+   "fadiga": 2,
+   "acao": "padrao",
+   "outros": [],
+   "permanente": "",
+   "efeito": "a arma de um aliado a alcance curto torna-se encantada, causando dano arcano além dos outros tipos e somando o seu valor de Raciocínio ou Sabedoria."
+  },
+  "limite_fadiga": 4,
+  "impressao": "ef847cc42ffb"
+ },
+ {
+  "id": "classe.mago.heroi.devorador-de-grimorios",
+  "fonte": "classe",
+  "entidade": "Mago",
+  "nome": "Devorador De Grimórios",
+  "descricao": "O mago que engole todo saber arcano: domina um caminho extra de graça e alterna grimórios e varinhas num piscar de olhos.",
+  "passiva": "Ao criar o personagem, escolha um repertório básico. O repertório escolhido custa 0 de experiência para ser selecionado.",
+  "ativada": "Uma vez por rodada, você pode realizar a ação de trocar de arma/item gratuitamente (ação livre) — para soltar um grimório e empunhar outro item (cajado, varinha, etc.).",
+  "desencadeada": "No início da cena, compre uma carta a mais.",
+  "critico": "Ao critar (21 natural), devolva até uma carta do seu exílio para a sua mão.",
+  "custo_ativada": {
+   "fadiga": 0,
+   "acao": null,
+   "outros": [],
+   "permanente": "",
+   "efeito": "Uma vez por rodada, você pode realizar a ação de trocar de arma/item gratuitamente (ação livre) — para soltar um grimório e empunhar outro item (cajado, varinha, etc.)."
+  },
+  "limite_fadiga": 4,
+  "impressao": "6b63cdd8dd8c"
+ },
+ {
+  "id": "raca.humano.heroi.incansavel",
+  "fonte": "raca",
+  "entidade": "Humano",
+  "nome": "Incansável",
+  "descricao": "O humano que aguenta o que for e se adapta a qualquer lugar: resiste, persiste e entra em cada cena pronto para seguir onde outros desistem.",
+  "passiva": "Se possível, penalidades de ambiente causam metade do efeito em você.",
+  "ativada": "2 de fadiga (ação): recupere o fôlego (regenere vida pela sua Constituição) e remova de você uma ficha de Ferimento, Sangramento, Atordoamento ou Imobilizar.",
+  "desencadeada": "No início de cada cena, ganhe uma ficha de Preparo.",
+  "critico": "Ao tirar um 21 natural em qualquer teste, recupere o fôlego e remova 1 de fadiga de cada uma das suas cartas.",
+  "custo_ativada": {
+   "fadiga": 2,
+   "acao": "padrao",
+   "outros": [],
+   "permanente": "",
+   "efeito": "recupere o fôlego (regenere vida pela sua Constituição) e remova de você uma ficha de Ferimento, Sangramento, Atordoamento ou Imobilizar."
+  },
+  "limite_fadiga": 4,
+  "impressao": "478980f4daff"
+ },
+ {
+  "id": "raca.humano.heroi.mil-oficios",
+  "fonte": "raca",
+  "entidade": "Humano",
+  "nome": "Mil Ofícios",
+  "descricao": "O humano que aprende qualquer ofício num piscar, resolve na criatividade e conquista na conversa: mestre da adaptação social e intelectual.",
+  "passiva": "Você é treinado em duas perícias adicionais à sua escolha e tem +1 em um atributo mental ou social. Escolha na criação do personagem.",
+  "ativada": "2 de fadiga: faça um teste de Espírito (dificuldade 19) e gaste meia hora em um ambiente não hostil. Em caso de sucesso, um NPC de atitude neutra passa a ter atitude positiva em relação a você.",
+  "desencadeada": "Toda vez que você atingir 5 pontos em alguma perícia, você pode colocar 1 ponto em uma perícia de valor 3 ou menos.",
+  "critico": "Use scry 4 (veja as 4 primeiras cartas do seu baralho e reorganize-as).",
+  "custo_ativada": {
+   "fadiga": 2,
+   "acao": null,
+   "outros": [],
+   "permanente": "",
+   "efeito": "faça um teste de Espírito (dificuldade 19) e gaste meia hora em um ambiente não hostil. Em caso de sucesso, um NPC de atitude neutra passa a ter atitude positiva em relação a você."
+  },
+  "limite_fadiga": 4,
+  "impressao": "d27efd6f22b5"
+ },
+ {
+  "id": "raca.elfo.heroi.o-atemporal",
+  "fonte": "raca",
+  "entidade": "Elfo",
+  "nome": "O Atemporal",
+  "descricao": "O elfo não vive o instante como os mortais: ele lê o fluxo do tempo, guarda o momento certo e age quando quer — não quando a vez manda.",
+  "passiva": "Sua vidência vale o dobro — sempre que um efeito seu vê X cartas do topo do baralho (scry), você vê o dobro.",
+  "ativada": "2 de fadiga: ganhe uma ficha de Reação.",
+  "desencadeada": "Ao gastar uma ficha de Reação, mova-se até 1 quadrado.",
+  "critico": "Você ganha uma ação adicional, para ser usada imediatamente. Depois, vire esta carta.",
+  "custo_ativada": {
+   "fadiga": 2,
+   "acao": null,
+   "outros": [],
+   "permanente": "",
+   "efeito": "ganhe uma ficha de Reação."
+  },
+  "limite_fadiga": 2,
+  "impressao": "948bfea731d7"
+ },
+ {
+  "id": "raca.elfo.heroi.o-feerico",
+  "fonte": "raca",
+  "entidade": "Elfo",
+  "nome": "O Feérico",
+  "descricao": "Há algo no elfo que não é deste plano: ele desliza pela paisagem sem tocá-la, e a magia inimiga escorrega dele de volta a quem a lançou.",
+  "passiva": "Você ignora terreno difícil e não deixa rastros para ser seguido.",
+  "ativada": "2 de fadiga (reação): quando você se tornar alvo de um ataque, mova-se até 2 quadrados. Se isso fizer de você um alvo inválido, o ataque erra você.",
+  "desencadeada": "Toda vez que você for alvo de uma magia inimiga, o conjurador dela sofre Confusão.",
+  "critico": "Escolha uma carta com efeito do seu cemitério e exile-a: você adiciona o efeito dela ao seu teste.",
+  "custo_ativada": {
+   "fadiga": 2,
+   "acao": "reacao",
+   "outros": [],
+   "permanente": "",
+   "efeito": "quando você se tornar alvo de um ataque, mova-se até 2 quadrados. Se isso fizer de você um alvo inválido, o ataque erra você."
+  },
+  "limite_fadiga": 2,
+  "impressao": "767c8d3cc00f"
+ },
+ {
+  "id": "raca.anao.heroi.o-inabalavel",
+  "fonte": "raca",
+  "entidade": "Anão",
+  "nome": "O Inabalável",
+  "descricao": "O anão é um ponto fixo: o que jogam contra ele escorrega, o esforço não o vence, e cada adversidade que ele resiste só o deixa mais firme.",
+  "passiva": "Se um efeito de um inimigo fosse colocar uma ou mais fichas em você, em vez disso coloca apenas uma das fichas, à sua escolha.",
+  "ativada": "1 de fadiga: retire 1 de fadiga de uma carta sua.",
+  "desencadeada": "Toda vez que você fizer um teste para resistir a um efeito, cure 1.",
+  "critico": "Receba uma quantidade de fichas de Bloqueio igual ao seu Espírito.",
+  "custo_ativada": {
+   "fadiga": 1,
+   "acao": null,
+   "outros": [],
+   "permanente": "",
+   "efeito": "retire 1 de fadiga de uma carta sua."
+  },
+  "limite_fadiga": 3,
+  "impressao": "d22f4f4149bf"
+ },
+ {
+  "id": "raca.anao.heroi.palavra-de-aco",
+  "fonte": "raca",
+  "entidade": "Anão",
+  "nome": "Palavra De Aço",
+  "descricao": "A palavra do anão é aço. Quando ele jura por alguém — para proteger ou para caçar — aquele alvo vira sua sina, e nada o impede de estar ao lado dele.",
+  "passiva": "Você ignora fichas de Imobilização e qualquer efeito de redução de movimento, desde que seu movimento seja em direção ao alvo do seu Juramento.",
+  "ativada": "1 de fadiga: jure por um personagem (aliado, inimigo ou NPC) até o fim da cena. Você só pode ter um alvo de Juramento por vez.",
+  "desencadeada": "Toda vez que você se mover e terminar adjacente ao alvo do seu Juramento, ganhe uma ficha de Foco.",
+  "critico": "Se o teste do seu crítico estiver relacionado ao alvo do seu Juramento, compre 3 cartas.",
+  "custo_ativada": {
+   "fadiga": 1,
+   "acao": null,
+   "outros": [],
+   "permanente": "",
+   "efeito": "jure por um personagem (aliado, inimigo ou NPC) até o fim da cena. Você só pode ter um alvo de Juramento por vez."
+  },
+  "limite_fadiga": 5,
+  "impressao": "66a91af69dc6"
+ },
+ {
+  "id": "raca.halfling.heroi.a-boa-estrela",
+  "fonte": "raca",
+  "entidade": "Halfling",
+  "nome": "A Boa Estrela",
+  "descricao": "O halfling nasceu sob uma boa estrela: nunca erra feio numa luta, o azar respinga nos inimigos, e ele sempre acha o que precisa na hora certa.",
+  "passiva": "Se você iria estourar em um teste de luta, em vez disso o resultado do seu teste é 5.",
+  "ativada": "1 de fadiga: coloque uma ficha de Penalidade em até dois inimigos a alcance longo.",
+  "desencadeada": "Toda vez que uma ou mais fichas de Penalidade seriam colocadas em um inimigo por um efeito seu, coloque uma ficha a mais.",
+  "critico": "Recupere um item de consumo único.",
+  "custo_ativada": {
+   "fadiga": 1,
+   "acao": null,
+   "outros": [],
+   "permanente": "",
+   "efeito": "coloque uma ficha de Penalidade em até dois inimigos a alcance longo."
+  },
+  "limite_fadiga": 2,
+  "impressao": "df673aca4b9d"
+ },
+ {
+  "id": "raca.halfling.heroi.matador-de-gigante",
+  "fonte": "raca",
+  "entidade": "Halfling",
+  "nome": "Matador De Gigante",
+  "descricao": "O halfling não conhece o próprio tamanho: ele encara e derruba gigantes, e cada façanha impossível levanta o grupo inteiro.",
+  "passiva": "Você ataca com Vantagem inimigos grandes ou maiores.",
+  "ativada": "2 de fadiga (ação): faça um teste de Espírito vs Força contra um inimigo grande ou maior. Se você vencer, empurre-o até 3 quadrados e derrube-o.",
+  "desencadeada": "Toda vez que você derrotar um inimigo maior que você, seus aliados na cena ganham uma ficha de Foco e uma de Preparo.",
+  "critico": "Até o fim da cena, você e seus aliados curam 2 de fadiga em vez de 1 no fim do turno.",
+  "custo_ativada": {
+   "fadiga": 2,
+   "acao": "padrao",
+   "outros": [],
+   "permanente": "",
+   "efeito": "faça um teste de Espírito vs Força contra um inimigo grande ou maior. Se você vencer, empurre-o até 3 quadrados e derrube-o."
+  },
+  "limite_fadiga": 2,
+  "impressao": "5f51cc5c445a"
+ },
+ {
+  "id": "raca.orc.heroi.furia-crescente",
+  "fonte": "raca",
+  "entidade": "Orc",
+  "nome": "Fúria Crescente",
+  "descricao": "A fúria do orc não explode e some — ela cresce. Cada golpe dado ou recebido a alimenta, até ele virar uma tempestade que ninguém segura.",
+  "passiva": "Enquanto houver 5 ou mais fichas de Fúria nesta carta, você está em frenesi: +1 de deslocamento e seus ataques não podem ser respondidos por reação.",
+  "ativada": "2 de fadiga: ao atacar, descarte qualquer quantidade de fichas de Fúria desta carta — cada uma dá +2 de dano ao ataque.",
+  "desencadeada": "Coloque uma ficha de Fúria nesta carta toda vez que você causa ou sofre dano. Elas não somem ao virar a carta. (Fúria: contador próprio desta carta, assinatura do orc — pendente de virar ficha formal.)",
+  "critico": "Ao tirar um 21 natural em qualquer teste, a fúria transborda: ganhe 3 fichas de Fúria.",
+  "custo_ativada": {
+   "fadiga": 2,
+   "acao": null,
+   "outros": [],
+   "permanente": "",
+   "efeito": "ao atacar, descarte qualquer quantidade de fichas de Fúria desta carta — cada uma dá +2 de dano ao ataque."
+  },
+  "limite_fadiga": 3,
+  "impressao": "2bf10fb12f70"
+ },
+ {
+  "id": "raca.orc.heroi.brado-da-horda",
+  "fonte": "raca",
+  "entidade": "Orc",
+  "nome": "Brado Da Horda",
+  "descricao": "O orc não caça sozinho: seu brado enche a horda de sede de sangue, e juntos eles despedaçam o que cercam.",
+  "passiva": "Você e cada aliado a alcance curto causam +1 de dano contra qualquer inimigo que esteja adjacente a dois ou mais de vocês — a horda despedaça quem ela cerca.",
+  "ativada": "3 de fadiga (ação): solte um brado de guerra — cada aliado a alcance curto pode imediatamente se mover em direção a um inimigo e, se terminar adjacente a ele, fazer um ataque de graça.",
+  "desencadeada": "Toda vez que um inimigo morre, você cura 3 e descarta 3 fichas de fadiga.",
+  "critico": "Cada aliado descarta uma quantidade de fichas de fadiga igual ao seu Espírito ou à sua Força (à escolha dele).",
+  "custo_ativada": {
+   "fadiga": 3,
+   "acao": "padrao",
+   "outros": [],
+   "permanente": "",
+   "efeito": "solte um brado de guerra — cada aliado a alcance curto pode imediatamente se mover em direção a um inimigo e, se terminar adjacente a ele, fazer um ataque de graça."
+  },
+  "limite_fadiga": 3,
+  "impressao": "183436f7feef"
+ },
+ {
+  "id": "background.soldado.heroi.ombro-a-ombro",
+  "fonte": "background",
+  "entidade": "Soldado",
+  "nome": "Ombro a Ombro",
+  "descricao": null,
+  "passiva": "Adjacente a pelo menos um aliado: +1 de resistência e você não pode ser flanqueado nem derrubado.",
+  "ativada": "1 de fadiga: em vez de um aliado adjacente receber uma ficha de um efeito inimigo, você a recebe.",
+  "desencadeada": "Quando um aliado a alcance curto sofre dano de um ataque, você pode se mover 2 quadrados na direção dele (uma vez por turno).",
+  "critico": "Em qualquer teste: você e cada aliado adjacente ganham 1 ficha de Guarda.",
+  "custo_ativada": {
+   "fadiga": 1,
+   "acao": null,
+   "outros": [],
+   "permanente": "",
+   "efeito": "em vez de um aliado adjacente receber uma ficha de um efeito inimigo, você a recebe."
+  },
+  "limite_fadiga": 3,
+  "impressao": "4b10ef093bdc"
+ },
+ {
+  "id": "background.soldado.heroi.tomar-a-posicao",
+  "fonte": "background",
+  "entidade": "Soldado",
+  "nome": "Tomar a Posição",
+  "descricao": null,
+  "passiva": "Ao se mover em direção a um inimigo, você não provoca ataques de oportunidade.",
+  "ativada": "2 de fadiga (ação): mova-se 3 e realize um ataque.",
+  "desencadeada": "Quando um aliado adjacente usa uma habilidade de arma, você pode pagar 3 de fadiga para duplicar o efeito da habilidade, se possível.",
+  "critico": "Vire até uma carta; depois coloque 1 ficha de Preparo e 1 de Foco nela.",
+  "custo_ativada": {
+   "fadiga": 2,
+   "acao": "padrao",
+   "outros": [],
+   "permanente": "",
+   "efeito": "mova-se 3 e realize um ataque."
+  },
+  "limite_fadiga": 3,
+  "impressao": "f8858283eefb"
+ },
+ {
+  "id": "background.bandido.heroi.o-oportunista",
+  "fonte": "background",
+  "entidade": "Bandido",
+  "nome": "O Oportunista",
+  "descricao": null,
+  "passiva": "Seus ataques causam +2 de dano contra inimigos com qualquer ficha de Penalidade, Confusão, Cegueira ou Medo.",
+  "ativada": "1 de fadiga: um inimigo a alcance curto recebe 1 ficha de Penalidade.",
+  "desencadeada": "Quando um aliado ataca um inimigo de tamanho médio ou menor, uma vez por rodada você pode descartar uma ficha de Vantagem para colocar uma ficha de Desarmado ou Imobilizado no alvo do ataque.",
+  "critico": "Para cada inimigo com ficha de Penalidade, você ganha uma ficha de Vantagem.",
+  "custo_ativada": {
+   "fadiga": 1,
+   "acao": null,
+   "outros": [],
+   "permanente": "",
+   "efeito": "um inimigo a alcance curto recebe 1 ficha de Penalidade."
+  },
+  "limite_fadiga": 2,
+  "impressao": "bbf48a21889b"
+ },
+ {
+  "id": "background.bandido.heroi.sempre-uma-saida",
+  "fonte": "background",
+  "entidade": "Bandido",
+  "nome": "Sempre uma Saída",
+  "descricao": null,
+  "passiva": "Você é imune a fichas de Imobilização e Desarme.",
+  "ativada": "Ação: faça um teste de Acrobacia com dificuldade 18. Se passar, mova-se 3 sem sofrer ataques de oportunidade, podendo saltar por cima de inimigos.",
+  "desencadeada": "Toda vez que você descartar uma ficha de Sombra, ganhe uma ficha de Preparo.",
+  "critico": "Ganhe uma quantidade de fichas de Sombra igual à sua Destreza.",
+  "custo_ativada": {
+   "fadiga": 0,
+   "acao": "padrao",
+   "outros": [],
+   "permanente": "",
+   "efeito": "faça um teste de Acrobacia com dificuldade 18. Se passar, mova-se 3 sem sofrer ataques de oportunidade, podendo saltar por cima de inimigos."
+  },
+  "limite_fadiga": 2,
+  "impressao": "a668506e600a"
+ },
+ {
+  "id": "background.escravo.heroi.o-sobrevivente",
+  "fonte": "background",
+  "entidade": "Escravo",
+  "nome": "O Sobrevivente",
+  "descricao": null,
+  "passiva": "Você cura 1 a mais ao ser curado.",
+  "ativada": "2 de fadiga: transforme uma ficha de Ferimento em uma ficha de Foco.",
+  "desencadeada": "Se um inimigo colocaria uma ficha em você, você pode escolher colocar uma ficha de Ferimento em vez disso.",
+  "critico": "Vire até duas cartas.",
+  "custo_ativada": {
+   "fadiga": 2,
+   "acao": null,
+   "outros": [],
+   "permanente": "",
+   "efeito": "transforme uma ficha de Ferimento em uma ficha de Foco."
+  },
+  "limite_fadiga": 5,
+  "impressao": "0f564d253abd"
+ },
+ {
+  "id": "background.escravo.heroi.trabalhador",
+  "fonte": "background",
+  "entidade": "Escravo",
+  "nome": "Trabalhador",
+  "descricao": null,
+  "passiva": "Você tem resistência a Concussão.",
+  "ativada": "2 de fadiga: você não sofre penalidade para usar arma ou armadura pesada até o final do turno.",
+  "desencadeada": "Toda vez que você jogar uma ou mais cartas da mão para realizar um teste que não seja de luta e for bem-sucedido, compre uma carta.",
+  "critico": "Embaralhe seu exílio no seu descarte.",
+  "custo_ativada": {
+   "fadiga": 2,
+   "acao": null,
+   "outros": [],
+   "permanente": "",
+   "efeito": "você não sofre penalidade para usar arma ou armadura pesada até o final do turno."
+  },
+  "limite_fadiga": 5,
+  "impressao": "2251532ff48c"
+ },
+ {
+  "id": "background.explorador.heroi.conhecedor-do-terreno",
+  "fonte": "background",
+  "entidade": "Explorador",
+  "nome": "Conhecedor do Terreno",
+  "descricao": null,
+  "passiva": "Você e seus aliados a alcance curto têm Vantagem em testes para escalar, nadar ou se locomover em ambientes difíceis.",
+  "ativada": "2 de fadiga (ação): interaja, depois interaja.",
+  "desencadeada": "Toda vez que você interagir, ganhe uma ficha de Foco após o teste.",
+  "critico": "Você pode substituir cada ficha de Foco por uma ficha de Preparo.",
+  "custo_ativada": {
+   "fadiga": 2,
+   "acao": "padrao",
+   "outros": [],
+   "permanente": "",
+   "efeito": "interaja, depois interaja."
+  },
+  "limite_fadiga": 3,
+  "impressao": "30c14f368c53"
+ },
+ {
+  "id": "background.explorador.heroi.mestre-das-cavernas",
+  "fonte": "background",
+  "entidade": "Explorador",
+  "nome": "Mestre das Cavernas",
+  "descricao": null,
+  "passiva": "Você enxerga normalmente na penumbra.",
+  "ativada": "3 de fadiga: gaste meia hora para criar quinze metros de corda, uma tocha e uma faca improvisada. Uma vez por descanso longo.",
+  "desencadeada": "Ao consumir um item, ganhe uma ficha de Preparo.",
+  "critico": "Recupere um item consumível.",
+  "custo_ativada": {
+   "fadiga": 3,
+   "acao": null,
+   "outros": [],
+   "permanente": "",
+   "efeito": "gaste meia hora para criar quinze metros de corda, uma tocha e uma faca improvisada. Uma vez por descanso longo."
+  },
+  "limite_fadiga": 2,
+  "impressao": "e050a54df145"
+ },
+ {
+  "id": "background.fervoroso.heroi.seguidor-da-chama",
+  "fonte": "background",
+  "entidade": "Fervoroso",
+  "nome": "Seguidor da Chama",
+  "descricao": null,
+  "passiva": "Fichas de Fogo não se propagam de ou para você.",
+  "ativada": "2 de fadiga: retire todas as fichas de Fogo do aliado alvo.",
+  "desencadeada": "Quando um inimigo usar a reação contra você, você ganha uma ficha de Reação.",
+  "critico": "Coloque uma ficha de Fogo no inimigo alvo ou cure 1.",
+  "custo_ativada": {
+   "fadiga": 2,
+   "acao": null,
+   "outros": [],
+   "permanente": "",
+   "efeito": "retire todas as fichas de Fogo do aliado alvo."
+  },
+  "limite_fadiga": 2,
+  "impressao": "c4dd48b022a6"
+ },
+ {
+  "id": "background.fervoroso.heroi.seguidor-da-noite",
+  "fonte": "background",
+  "entidade": "Fervoroso",
+  "nome": "Seguidor da Noite",
+  "descricao": null,
+  "passiva": "Inimigos não podem gastar fichas de Sombra para evitar seus ataques.",
+  "ativada": "3 de fadiga (ação, ao fazer um descanso longo): faça um teste de Espírito com dificuldade 18. Se passar, crie uma área média de vigilância onde você faz o descanso longo. Se qualquer ameaça entrar na área, você e seus aliados são alertados e ganham uma ficha de Preparo cada.",
+  "desencadeada": "No início do seu turno, se um aliado usou uma ficha de Sombra desde o seu último turno, você tem +2 em todos os testes até o final do seu turno.",
+  "critico": "Até o início do seu próximo turno, inimigos não desencadeiam reações.",
+  "custo_ativada": {
+   "fadiga": 0,
+   "acao": null,
+   "outros": [
+    "3 de fadiga (ação",
+    "ao fazer um descanso longo)"
+   ],
+   "permanente": "",
+   "efeito": "faça um teste de Espírito com dificuldade 18. Se passar, crie uma área média de vigilância onde você faz o descanso longo. Se qualquer ameaça entrar na área, você e seus aliados são alertados e ganham uma ficha de Preparo cada."
+  },
+  "limite_fadiga": 3,
+  "impressao": "7abdf1a7c8c8"
+ }
+]

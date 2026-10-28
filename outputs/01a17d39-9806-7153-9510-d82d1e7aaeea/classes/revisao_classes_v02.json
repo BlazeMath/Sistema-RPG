@@ -1,0 +1,79 @@
+{
+  "data": "2026-10-27",
+  "estado": "correcoes_aprovadas_implementadas_nos_dados",
+  "dados": "classes/dados/ajustes_cartas_v01.json",
+  "relatorio": "outputs/01a17d39-9806-7153-9510-d82d1e7aaeea/classes/Correcoes_Aprovadas_Classes_v02.html",
+  "propostas_pendentes": [
+    "Predador Absoluto: redação editorial"
+  ],
+  "historico_anterior": "outputs/01a17d39-9806-7153-9510-d82d1e7aaeea/classes/revisao_classes_v01.json",
+  "avaliacoes_superadas": [
+    "Limite zero impede virar",
+    "Água Benta com Cajado do Condutor geraria repetição gratuita",
+    "Ataque Furtivo requer outra condição além de Sombra",
+    "Requisitos específicos de background devem ser removidos",
+    "Benção dos Salmos precisa ser mais eficiente que Toque Restaurador na modalidade de cura"
+  ],
+  "rodada": [
+    {
+      "tema": "Virar cartas",
+      "estado": "aprovado",
+      "texto": "Normalmente virar uma carta custa uma ação. Quando a habilidade manda virar, a virada faz parte de sua resolução e não custa uma ação adicional. Limite de Fadiga zero não impede a virada."
+    },
+    {
+      "tema": "Magia versus habilidade",
+      "estado": "aprovado",
+      "texto": "Cajado do Condutor reduz somente custos de magias. Água Benta é uma habilidade, não uma magia; não recebe essa redução. O cenário de repetição ilimitada da revisão v01 não se aplica a essa combinação."
+    },
+    {
+      "tema": "Sinergias específicas",
+      "estado": "manter_conforme_autor",
+      "texto": "Habilidades podem ter relação específica com backgrounds, itens e outras partes do jogo. Manter os requisitos de Soldado."
+    },
+    {
+      "tema": "Sombra e Ataque Furtivo",
+      "estado": "manter_conforme_autor",
+      "texto": "Sombra simula furtividade e pode ser trocada por dano; manter Ataque Furtivo sem adicionar outra exigência de vantagem ou estado Oculto."
+    },
+    {
+      "tema": "Lâmina na Manga / Nunca Visto / Bote Fatal",
+      "estado": "manter_conforme_autor",
+      "texto": "Manter o crescimento por Sombra e a geração de Nunca Visto. Bote Fatal recebe apenas a correção de aplicação no acerto. Observação documental: Lâmina na Manga está marcada como 1 XP no PDF, e Nunca Visto/Bote Fatal como 2 XP; nenhum custo de XP foi alterado."
+    },
+    {
+      "tema": "Assalto do Gatuno",
+      "estado": "manter_conforme_autor",
+      "texto": "Resolver a habilidade em sequência: conceder Foco quando sua condição for satisfeita, depois realizar o teste de Ladinagem contra Percepção. Roubo/desarme exige o sucesso desse teste. Não acrescentar um requisito de Oculto/Caído ao teste."
+    },
+    {
+      "tema": "Ficha de Reação",
+      "estado": "aprovado",
+      "texto": "Roubo Arcano requer deliberadamente uma ficha de Reação fornecida por outra classe ou carta de herói. Não substituir pelo uso da reação normal."
+    },
+    {
+      "tema": "Remover uma ficha",
+      "estado": "aprovado",
+      "texto": "Quando um efeito permite remover uma ficha sem especificar tipo, ele abrange qualquer tipo, inclusive Fadiga e persistentes. Manter as condições de alvo e quantidade da própria habilidade."
+    },
+    {
+      "tema": "Zona da Penitência / Terra do Louvor",
+      "estado": "manter_conforme_autor",
+      "texto": "O dano da divindade será especificado na carta da divindade. Manter os dois lados como estão; não reformular Terra do Louvor por ser bônus genérico."
+    },
+    {
+      "tema": "Benção dos Salmos",
+      "estado": "manter_conforme_autor",
+      "texto": "Manter números e custo de XP. A carta é menos focada que Toque Restaurador e justifica a escolha pela versatilidade das três modalidades."
+    },
+    {
+      "tema": "Foco Mortal / Folha de Carvalho",
+      "estado": "esclarecimento_de_fonte",
+      "texto": "São metades de herói, não faces do arquivo de habilidades. Foco Mortal está na página 1 e Folha de Carvalho na página 2 de Herois_Cartas.pdf. Sem alterações solicitadas nesses heróis."
+    },
+    {
+      "tema": "Mago e demais sugestões",
+      "estado": "nao_decidido_nesta_rodada",
+      "texto": "Não aplicar outras sugestões da revisão v01 sem pedido. Não interpretar o silêncio sobre a revisão do Mago como aprovação."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "itens": 156,
+  "frentes": 156,
+  "versos": 156,
+  "paginas_cartas": 312,
+  "paginas_A4": 36,
+  "texto_integral_validado": 156,
+  "dados_repetidos": true,
+  "custos_e_limites_conferidos_por_gotas_vetoriais": true,
+  "menor_fonte_corpo_pt": 8,
+  "versos_compactos": [
+    "EQ-140",
+    "EQ-142",
+    "EQ-145",
+    "EQ-154",
+    "EQ-155"
+  ],
+  "imposicao_duplex": "validada para virar pela borda longa",
+  "arquivos": [
+    {
+      "arquivo": "C:\\Users\\Gamer\\Documents\\ChatGPT\\SISTEMA DE RPG\\producao_cartas\\pdf\\Sistema21_Equipamentos_156_Cartas_v04.pdf",
+      "bytes": 336743681
+    },
+    {
+      "arquivo": "C:\\Users\\Gamer\\Documents\\ChatGPT\\SISTEMA DE RPG\\producao_cartas\\pdf\\Sistema21_Equipamentos_156_A4_v04.pdf",
+      "bytes": 337367967
+    }
+  ],
+  "paginas_renderizadas": 348,
+  "artes_revisadas": [
+    "EQ-002",
+    "EQ-004",
+    "EQ-005",
+    "EQ-007",
+    "EQ-008",
+    "EQ-009",
+    "EQ-011",
+    "EQ-013",
+    "EQ-014",
+    "EQ-016",
+    "EQ-017",
+    "EQ-018",
+    "EQ-020",
+    "EQ-022",
+    "EQ-025",
+    "EQ-026",
+    "EQ-027",
+    "EQ-029",
+    "EQ-041",
+    "EQ-118"
+  ],
+  "texto_identico_base": "v03",
+  "corrente_paginas_A4": [
+    35,
+    36
+  ],
+  "inspecao_visual_final": "Conferidas todas as nove frentes alteradas apos renderizacao final, mais folhas A4 1 e 27. Encaixes alinhados; sem corte, deformacao ou halo no PDF."
+}

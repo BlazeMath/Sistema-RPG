@@ -1,0 +1,38 @@
+{
+  "especialidade": "programacao",
+  "atualizado_em": "2026-10-27",
+  "titulo": "Programação do Jogo",
+  "thread_id": "01a17d41-089a-75c2-897e-6338b8ad3e44",
+  "escopo": [
+    "Godot 4.4 e GDScript, implementação, UI, IA, salvamentos e integração de dados",
+    "Bugs, testes, builds e empacotamento",
+    "Mapear divergências entre regra de mesa, decisão digital e implementação"
+  ],
+  "fontes": [
+    "Sistema21_projeto_v0.23.zip",
+    "organizacao/fontes/videogame_documentos.json",
+    "organizacao/contexto_compartilhado.json"
+  ],
+  "pontos_de_atencao": [
+    "Regras em core e apresentação em ui. RNG com semente. Preload em vez de class_name.",
+    "CLAUDE.md pede testes para novas regras; não editar JSON exportado manualmente.",
+    "Ler DECISOES_0.23.md e versões anteriores; README está atrasado em 0.21.",
+    "A inicialização deste chat é estudo e preparação; não extrair ou implementar funcionalidades novas sem necessidade de um pedido concreto.",
+    "Referências externas mencionadas no ZIP não precisam de consulta online para esta organização."
+  ],
+  "decisoes_novas": [
+    {
+      "data": "2026-10-28",
+      "origem": "Pedido do usuario neste chat: subir todo o Sistema de RPG; repositorio informado pelo usuario e publicacao publica de todo o conteudo confirmada.",
+      "estado": "aprovado",
+      "decisao": "Publicar o acervo completo em BlazeMath/Sistema-RPG, incluindo artes, documentos, versoes anteriores e videogame v0.23. Usar Git LFS para binarios e manter o ZIP original junto da copia extraida em videogame/.",
+      "impacto": "Publicacao do acervo de todas as areas; nao altera regras ou aprova propostas presentes nos documentos. Caches, dependencias reinstalaveis e credenciais ficam fora do Git."
+    }
+  ],
+  "repositorio": {
+    "url": "https://github.com/BlazeMath/Sistema-RPG",
+    "conta": "BlazeMath",
+    "branch_principal": "main",
+    "visibilidade_autorizada": "publico"
+  }
+}

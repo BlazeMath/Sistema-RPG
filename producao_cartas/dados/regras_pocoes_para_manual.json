@@ -1,0 +1,19 @@
+{
+  "status": "Implementadas como referência para as novas poções; incorporar ao manual na próxima revisão.",
+  "data": "2026-10-27",
+  "tag": "Poção",
+  "definicao_tag": "Consumível ingerível. A carta informa a ação e o alvo do consumo; na ausência de outro alvo expresso, o efeito é de quem bebe.",
+  "regras": [
+    "Uma dose é consumida uma única vez. Não há recarga automática por meditação ou descanso.",
+    "Uma criatura só pode ter um efeito ativo de cada poção. Uma nova dose da mesma poção não soma seus valores: substitui a anterior, aplicando antes quaisquer consequências do término do efeito anterior.",
+    "Quando a carta indicar efeitos em turnos futuros, mantenha-a junto ao personagem para acompanhar a duração. Os turnos futuros não incluem o turno de consumo; os benefícios e restrições contínuos começam imediatamente e terminam no final do terceiro próximo turno, quando essa for a duração indicada.",
+    "Uma cura repetida segue as regras normais de cura em cada ocorrência. A poção não dispensa o custo de cura do sistema.",
+    "Fichas recebidas obedecem às regras gerais de colocação e quantidade de fichas por carta.",
+    "Ganhos disparados por acertar ou derrotar inimigos são limitados conforme o texto. Um ataque contra vários alvos não contorna o limite de uma vez por turno.",
+    "Quando uma poção terminar ou for encerrada por outra, resolva suas consequências de término. Encerrar um efeito não desfaz dano, cura, fichas já recebidas ou ações já resolvidas.",
+    "A Poção de Purificação não remove efeitos de amuletos, runas, habilidades ou magias; apenas os efeitos de poções.",
+    "A reserva da Poção de Vigor Lunar usa a vida indicada na própria carta, e não modifica o número de cartas do baralho. As regras que impedem direcionar certos danos à armadura também impedem direcioná-los a essa reserva.",
+    "Durante pausas fora de iniciativa, o mestre acompanha durações em turnos pelo tempo de jogo correspondente. Efeitos em turnos não permanecem guardados indefinidamente até começar o próximo combate."
+  ],
+  "observacao": "Durações e números são adaptações do Sistema 21 e precisam de playtest. Nenhum subsistema de Toxicidade foi importado."
+}

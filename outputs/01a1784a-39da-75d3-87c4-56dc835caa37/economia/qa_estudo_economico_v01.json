@@ -1,0 +1,49 @@
+{
+  "data": "2026-10-27",
+  "status": "Estudo v01 concluído; preços propostos, sem incorporação às cartas",
+  "itens": 170,
+  "pocoes": 21,
+  "raridades": {
+    "COMUM": 50,
+    "INCOMUM": 47,
+    "RARA": 39,
+    "Não informada": 34
+  },
+  "fontes_externas": 8,
+  "fontes_do_projeto": 2,
+  "medidas_comparadas": 25,
+  "precos_e_faixas_exportados_conferidos": 170,
+  "revenda_abaixo_da_faixa_minima": true,
+  "unidades_de_compra_explicitas": true,
+  "recalculo": "Artifact Tool, com alteração e restauração de mercado e orçamento sem receita; caches XLSX reabertos e conferidos",
+  "excel_nativo_executado": false,
+  "filtros_navegador": {
+    "todos": 170,
+    "pocao_sem_acento": 21,
+    "raridade_rara": 39,
+    "maior_preco_primeiro": "EQ-115, 120 PO",
+    "consulta_id": "EQ-156, 60 PP, equivalente a 0,6 PO",
+    "detalhes_material_regra": "conferidos"
+  },
+  "abas_planilha": [
+    "Preços",
+    "Economia",
+    "Referências"
+  ],
+  "painel_congelado": "C8 em Preços; A7 em Referências",
+  "inspecao_visual": "Três abas renderizadas; tabela e detalhes do relatório conferidos no navegador. Sem corte de números e com cabeçalhos legíveis nas vistas inspecionadas.",
+  "catalogo_original_preservado": true,
+  "pdfs_modificados": false,
+  "arquivos": [
+    {
+      "nome": "Estudo_Economia_e_Precos_v01.html",
+      "bytes": 218638,
+      "sha256": "bab0b34f933a14b7cf2f0656eb8993bb65eea2252da39949affe0c44ada1d6bc"
+    },
+    {
+      "nome": "Tabela_Precos_170_Itens_Estudo_v01.xlsx",
+      "bytes": 54953,
+      "sha256": "e8b5abdf7ba55259ac6509c5fb4bb837c22d6da1b29c4c67af5df4c28eee9751"
+    }
+  ]
+}

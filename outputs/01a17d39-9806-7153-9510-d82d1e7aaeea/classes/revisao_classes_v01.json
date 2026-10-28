@@ -1,0 +1,609 @@
+{
+  "data": "2026-10-27",
+  "estado": "diagnostico_e_propostas_nao_aprovadas",
+  "escopo": "Revisão de design das cinco classes de mesa: 150 faces de habilidades nos PDFs e 10 metades de herói de classe. Sem alteração das cartas ou regras.",
+  "metodo": [
+    "Comparação com filosofia e regras atuais do resumo do projeto.",
+    "Leitura das 20 páginas de habilidades e das 3 páginas de heróis com classes, incluindo inspeção visual dos símbolos de custo.",
+    "Exportação JSON do protótipo consultada como fonte auxiliar, sem assumir que suas divergências valham para a mesa.",
+    "Falha textual é distinguida de hipótese de desequilíbrio. Não houve playtest ou simulação de combate."
+  ],
+  "fontes": [
+    {
+      "arquivo": "SISTEMA_21_Estado_do_Projeto.md",
+      "secoes": [
+        "2",
+        "3",
+        "5",
+        "6",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14"
+      ]
+    },
+    {
+      "arquivo": "Habilidades_Cartas.pdf",
+      "paginas": "1–20"
+    },
+    {
+      "arquivo": "Herois_Cartas.pdf",
+      "paginas": "1–3"
+    },
+    {
+      "arquivo": "producao_cartas/dados/catalogo_cartas.json",
+      "uso": "Interações de descontos de Fadiga; Cajado do Condutor."
+    },
+    {
+      "arquivo": "Sistema21_projeto_v0.23.zip",
+      "membros": [
+        "data/cartas/habilidades.json",
+        "data/cartas/herois.json",
+        "CLAUDE.md"
+      ],
+      "uso": "Auxiliar e divergências digitais."
+    }
+  ],
+  "conclusao": "As cinco classes têm identidades reconhecíveis; Guerreiro é a mais coesa. Ladino precisa recuperar combate condicional, Caçador manter preparação relevante, Clérigo explicitar o motor da devoção e Mago preservar a gestão de risco e Fadiga. Nenhuma exige reconstrução completa.",
+  "classes": [
+    {
+      "classe": "Guerreiro",
+      "identidade": "Presença na linha de frente, formação, proteção e resposta ao inimigo.",
+      "avaliacao": "Mais coesa com a filosofia; ajustes locais e melhor ligação entre cartas e heróis.",
+      "preservar": [
+        "Provocar / Castigo: dilema para o inimigo.",
+        "Postura do Leão / Cascavel e Tartaruga: especialização com concessões.",
+        "Lança em Riste e Parede de Escudos: posicionamento e cooperação.",
+        "Avalanche: agressão com exposição, desde que Imobilizado esteja bem definido.",
+        "Sangue Fervente: troca de movimento, Fadiga e uma carta exilada por ação."
+      ],
+      "achados": [
+        {
+          "cartas": [
+            "Ombro de Ferro",
+            "Avalanche"
+          ],
+          "prioridade": "alta",
+          "tipo": "regra_incompleta",
+          "fonte": "Habilidades, p. 1",
+          "problema": "Aplicam o estado Imobilizado sem especificar ficha/carta/duração. A regra nova remove o estado ao virar a carta que contém Imobilizar.",
+          "direcao": "Aplicar a ficha de Imobilizar de forma explícita, indicando como se escolhe sua carta e como sair do efeito. Não reduzir a penalidade de Avalanche antes de testar."
+        },
+        {
+          "cartas": [
+            "Ombro de Aço"
+          ],
+          "prioridade": "media",
+          "tipo": "escopo_e_identidade",
+          "fonte": "Habilidades, p. 2",
+          "problema": "Bônus de defesa para todos os aliados sem alcance ou formação. Pode funcionar longe da linha de frente e recompensa pouco posicionamento.",
+          "direcao": "Ligar o apoio à formação, presença ou alcance definidos."
+        },
+        {
+          "cartas": [
+            "Avanço Combinado",
+            "Aguentem, Recrutas!",
+            "Instruir Armamento",
+            "Movimento Guiado"
+          ],
+          "prioridade": "media",
+          "tipo": "identidade_e_acesso",
+          "fonte": "Habilidades, pp. 2 e 4",
+          "problema": "O requisito Soldado torna várias peças de estratégia indisponíveis a guerreiros de outras origens; os efeitos também invadem parcialmente o espaço de comando reservado ao Senhor da Guerra.",
+          "direcao": "Decidir o que é formação de guerreiro e o que é comando; manter sinergia com Soldado sem tornar essa origem obrigatória para o núcleo do Hoplita. Checar compatibilidade explícita de lança e escudo no equipamento."
+        },
+        {
+          "cartas": [
+            "Foco Mortal"
+          ],
+          "prioridade": "media",
+          "tipo": "coerencia_do_heroi",
+          "fonte": "Heróis, p. 1",
+          "problema": "Ativada, desencadeada e crítico giram Foco e perfuração da defesa, mas a passiva reduz custo de habilidades de arma. Nem toda arma tem habilidade ativada; a ligação com o motor fica irregular.",
+          "direcao": "Conectar a passiva ao mesmo ciclo de enfrentar resistência e converter Foco, ou justificar explicitamente o papel das habilidades da arma."
+        },
+        {
+          "cartas": [
+            "A Muralha"
+          ],
+          "prioridade": "media",
+          "tipo": "teste_de_cadencia",
+          "fonte": "Heróis, p. 1",
+          "problema": "Reparação total de armadura e escudo no crítico pode recuperar grande reserva de vida; o valor varia com a proteção usada e o ritmo de críticos.",
+          "direcao": "Testar vida efetivamente restaurada por cena antes de alterar. A identidade está alinhada; não há prova de desequilíbrio apenas pelo texto."
+        },
+        {
+          "cartas": [
+            "Firmar os Pés",
+            "Postura da Cascavel",
+            "Lança em Riste",
+            "Perfurar e Recuar",
+            "Golpe de Oportunidade"
+          ],
+          "prioridade": "editorial",
+          "tipo": "redacao",
+          "fonte": "Habilidades, pp. 1–3",
+          "problema": "Firmar os Pés mistura bônus no resultado e limite; algumas cartas dizem apenas ataque ou dano da arma. Cascavel não exige explicitamente que a defesa tenha sido contra corpo a corpo.",
+          "direcao": "Esclarecer resultado versus limite, tipo de ataque, composição do dano e alcance válido do revide."
+        }
+      ]
+    },
+    {
+      "classe": "Ladino",
+      "identidade": "Conquistar informação e acesso, criar uma oportunidade, explorar e escapar; Sombra como recurso central.",
+      "avaliacao": "Identidade forte, mas dano e crescimento passivo não respeitam consistentemente a condição de vantagem prevista na filosofia.",
+      "preservar": [
+        "Bomba de Fumaça / Ataque Furtivo como preparação e gasto.",
+        "Finta: troca recurso por vantagem e tem consequência na falha.",
+        "Mas Veja Bem: interação e virada com custo de oportunidade.",
+        "Fechadura Fantasma, Truques de Salão e Gancho Fantasma: magia de utilidade.",
+        "Passo de Sombra e Escapulir: evasão com recurso."
+      ],
+      "achados": [
+        {
+          "cartas": [
+            "Ataque Furtivo"
+          ],
+          "prioridade": "alta",
+          "tipo": "filosofia_e_redacao",
+          "fonte": "Habilidades, p. 17",
+          "problema": "Exige Arma Leve e gasto de Sombra, mas não exige vantagem, estar Oculto nem outra abertura. Permite o pico de dano em combate frontal comum.",
+          "direcao": "Exigir uma abertura tática e definir se a repetição inclui só dano-base ou também atributo. Gasto de Sombra já é custo real; preservar o pico quando preparado."
+        },
+        {
+          "cartas": [
+            "Lâmina na Manga",
+            "Nunca Visto",
+            "Bote Fatal"
+          ],
+          "prioridade": "alta",
+          "tipo": "crescimento_e_gatilho",
+          "fonte": "Habilidades, pp. 18 e 20",
+          "problema": "Bônus proporcionais à Sombra guardada premiam acumular sem gastar. Bote Fatal também não exige explicitamente acerto. Os dois lados de Nunca Visto/Bote Fatal não ficam ativos ao mesmo tempo; o risco surge na preparação ao longo do tempo e com outras fontes, não por simultaneidade dessas faces.",
+          "direcao": "Preservar guardar para defesa versus gastar para dano. Condicionar o benefício ofensivo à abertura/acerto ou gasto; testar o conjunto, sem impor teto arbitrário antes de definir o motor."
+        },
+        {
+          "cartas": [
+            "Assalto do Gatuno"
+          ],
+          "prioridade": "alta",
+          "tipo": "condicao_ambigua",
+          "fonte": "Habilidades, p. 17",
+          "problema": "Oculto ou alvo Caído condiciona somente as duas fichas de Foco na redação. O teste de roubar ou desarmar vem depois e pode ser lido como incondicional.",
+          "direcao": "Determinar se a abertura habilita todo o assalto; se sim, incorporá-la ao requisito da ativação."
+        },
+        {
+          "cartas": [
+            "Bote Fatal",
+            "Adaga Fantasma",
+            "Torcer a Lâmina"
+          ],
+          "prioridade": "alta",
+          "tipo": "gatilho_de_acerto",
+          "fonte": "Habilidades, pp. 19–20",
+          "problema": "Aplicam Ferimento ou Sangramento ao alvo do ataque sem dizer que precisa acertar. Isso pode recompensar ataques fracassados.",
+          "direcao": "Definir o momento de pagamento e aplicar a ficha no acerto, salvo exceção deliberadamente aprovada."
+        },
+        {
+          "cartas": [
+            "Roubo Arcano"
+          ],
+          "prioridade": "media",
+          "tipo": "identidade_e_integracao",
+          "fonte": "Habilidades, p. 20",
+          "problema": "O efeito só anula, aproximando-se da Contramagia. Pede uma ficha de Reação, que não equivale à reação normal do turno e não é gerada diretamente pelo conjunto da classe. Coloca Atordoamento numa face de limite 0, em conflito com a regra genérica de não virar essas faces.",
+          "direcao": "Dar um resultado de roubo/trapaça limitado e clarificar o acesso à ficha e a remoção do Atordoamento, sem apenas copiar a especialidade arcana."
+        },
+        {
+          "cartas": [
+            "Sempre um Plano",
+            "Rede de Contatos",
+            "Impostor"
+          ],
+          "prioridade": "media",
+          "tipo": "escopo_de_utilidade",
+          "fonte": "Habilidades, pp. 18 e 20; Heróis, p. 3",
+          "problema": "Recuperar qualquer consumível e criar item comum ou objeto que corrobore uma mentira podem alcançar poções de redefinição de personagem, valores econômicos ou objetos narrativamente decisivos.",
+          "direcao": "Definir quais objetos/consumíveis existem, elegibilidade e duração. Preservar a flexibilidade criativa com premissas concretas, sem lista excessiva de exceções."
+        },
+        {
+          "cartas": [
+            "Larápio"
+          ],
+          "prioridade": "media",
+          "tipo": "coerencia_do_heroi",
+          "fonte": "Heróis, p. 3",
+          "problema": "Passiva usa Sombra; o gatilho de receber qualquer ficha de inimigo morto pode conceder efeitos negativos e não define bem a transferência. A defesa ativada é genérica.",
+          "direcao": "Conectar as quatro partes ao ciclo furtar oportunidade, reposicionar e escapar. Delimitar fichas transferíveis."
+        },
+        {
+          "cartas": [
+            "Por um Triz",
+            "Olha Lá!",
+            "Finta",
+            "Truques de Salão",
+            "Mancha Sombria",
+            "Névoa Ilusória",
+            "Faro Aguçado"
+          ],
+          "prioridade": "editorial",
+          "tipo": "dependencia_de_regras",
+          "fonte": "Habilidades, pp. 17–19 e p. 11 para Faro Aguçado",
+          "problema": "Confusão e Cegueira dependem de definição estável; invisibilidade, Sombra e Oculto não podem ser usados como equivalentes. Finta precisa indicar a troca da vantagem na defesa/ataque.",
+          "direcao": "Uniformizar o glossário sem substituir a identidade das cartas. Faro Aguçado é do Caçador e consta aqui apenas como interação com furtividade."
+        }
+      ]
+    },
+    {
+      "classe": "Caçador",
+      "identidade": "Estudar o alvo, preparar terreno e tiro e explorar posição e vulnerabilidade; Mira é o motor.",
+      "avaliacao": "Motor mais explícito junto ao Ladino, mas parte da preparação pode ser trivializada e os grandes multiplicadores estão pouco delimitados.",
+      "preservar": [
+        "Preparar o Tiro / Tiro Certeiro como ciclo de preparação e gasto.",
+        "Armadilha de Caça / Óleos e Iscas: planejamento e ferramentas.",
+        "Cabra da Montanha / Ponto de Vantagem: terreno e posição.",
+        "Flecha Envenenada / Flecha de Rede: escolher dano ou controle.",
+        "Tiro Perfeito: resultado fixo pago com três Miras e virada. 21 não garante acerto contra qualquer defesa; não eliminar só por evitar uma compra."
+      ],
+      "achados": [
+        {
+          "cartas": [
+            "Preparar o Tiro"
+          ],
+          "prioridade": "alta",
+          "tipo": "contrapartida_falha",
+          "fonte": "Habilidades, p. 9",
+          "problema": "Se ainda não se moveu no turno, ganha três Miras e depois pode se mover normalmente. Basta mudar a ordem das ações para obter o bônus de imobilidade.",
+          "direcao": "Vincular as três Miras ao compromisso real de permanecer na posição ou a outra preparação efetiva."
+        },
+        {
+          "cartas": [
+            "Predador Absoluto"
+          ],
+          "prioridade": "alta",
+          "tipo": "multiplicador_indefinido",
+          "fonte": "Habilidades, p. 12",
+          "problema": "Dobra todos os efeitos aplicados no alvo, sem delimitar dano, fichas, movimento, duração e outros multiplicadores. O alvo da caça também é escolhido de novo após a morte apesar do trecho inicial dizer até a morte.",
+          "direcao": "Nomear exatamente o que dobra, o limite de aplicação e a transferência da caça. Precisa de regra clara antes de avaliar potência."
+        },
+        {
+          "cartas": [
+            "Flecha Pesada",
+            "Quebrar a Fenda"
+          ],
+          "prioridade": "alta",
+          "tipo": "condicao_e_empilhamento",
+          "fonte": "Habilidades, p. 11",
+          "problema": "Dano da arma triplicado e resistência ignorada para alvo imobilizado ou ferido; ferido pode significar qualquer dano ou ficha Ferimento. Aplicar a condição durante o próprio ataque pode dispensar preparação. Falta ordem de aplicação com Mira e Predador.",
+          "direcao": "Exigir e identificar a condição no momento correto e definir a parcela multiplicada. Medir dano por ação incluindo preparação antes de ajustar números."
+        },
+        {
+          "cartas": [
+            "Folha de Carvalho"
+          ],
+          "prioridade": "alta",
+          "tipo": "economia_de_recurso",
+          "fonte": "Heróis, p. 2",
+          "problema": "Gera Mira toda vez que causa dano à distância. Ataques com vários alvos podem gerar várias Miras, e o ataque que gasta Mira pode devolver recurso imediatamente. Isso pode substituir o trabalho de preparar.",
+          "direcao": "Definir geração por ataque versus por alvo e testar se o ciclo conserva preparação relevante. Não chamar de infinito: ação, teste e Fadiga ainda têm custos."
+        },
+        {
+          "cartas": [
+            "Rastrear",
+            "Estudar a Presa",
+            "Faro Aguçado"
+          ],
+          "prioridade": "media",
+          "tipo": "informacao_e_identidade",
+          "fonte": "Habilidades, pp. 10–11",
+          "problema": "Há sobreposição em ignorar ocultação. Estudar a Presa pode criar fraqueza arbitrária por um teste, em vez de descobrir e explorar uma vulnerabilidade ficcional.",
+          "direcao": "Separar descobrir, identificar e aproveitar. Limitar a modificação de resistência à fraqueza que o estudo realmente revela ou prepara."
+        },
+        {
+          "cartas": [
+            "Flecha de Rede",
+            "Pedra Atordoante",
+            "Quebrar a Fenda"
+          ],
+          "prioridade": "alta",
+          "tipo": "regras_e_gatilho",
+          "fonte": "Habilidades, pp. 10–11",
+          "problema": "Flecha de Rede custa duas Fadigas numa face com limite 1. A regra de transbordo a torna utilizável com custo extra, mas o digital registra correção para 2. Com o Imobilizado novo, o significado de duas fichas precisa ser explícito. Pedra Atordoante e Quebrar a Fenda precisam dizer se exigem acerto.",
+          "direcao": "Confirmar a correção da mesa e a aplicação/removal de múltiplas fichas; padronizar gatilhos."
+        },
+        {
+          "cartas": [
+            "Predador da Selva"
+          ],
+          "prioridade": "media",
+          "tipo": "garantia_e_coerencia_do_heroi",
+          "fonte": "Heróis, p. 2",
+          "problema": "Escolher 21 em furtividade na floresta sem ter atacado desde o último turno pode ser repetível sem gasto; não é sucesso absoluto contra toda dificuldade, mas elimina risco de estouro. Armadilha e Preparo conectam parcialmente as quatro partes.",
+          "direcao": "Preservar o domínio do terreno com condição verificável e contrajogo; não confundir 21 fixo com crítico ou garantia universal."
+        },
+        {
+          "cartas": [
+            "Óleos e Iscas",
+            "Armadilha de Caça",
+            "Covil do Arqueiro",
+            "Nada Escapa"
+          ],
+          "prioridade": "editorial",
+          "tipo": "resolucao",
+          "fonte": "Habilidades, pp. 10 e 12",
+          "problema": "Isca não informa teste/dificuldade; armadilha não explicita alcance, quantidade ativa ou duração; Covil precisa dizer se remove somente penalidade por faixa ou amplia alcance máximo; Nada Escapa precisa delimitar o instante anterior à perda de visão e alcance.",
+          "direcao": "Completar a resolução sem remover os dilemas de posicionamento."
+        }
+      ]
+    },
+    {
+      "classe": "Clérigo",
+      "identidade": "Sustentar o grupo, enfrentar o profano e consagrar posições e ações; devoção deveria distinguir como cada clérigo age.",
+      "avaliacao": "Função de suporte clara; identidade da devoção e conexões entre faces menos completas que a cura.",
+      "preservar": [
+        "Toque Restaurador / Benção Persistente: cura com desgaste do descarte pelo exílio.",
+        "Voz do Exorcista: especialização contra inimigo reconhecível e teste com risco.",
+        "Condenar / Juízo: preparar e depois explorar Marcação.",
+        "Estrela do Amanhecer: cura, prevenção e Fadiga alinhadas ao suporte."
+      ],
+      "achados": [
+        {
+          "cartas": [
+            "Teologia"
+          ],
+          "prioridade": "alta",
+          "tipo": "linha_de_derrota",
+          "fonte": "Habilidades, p. 7",
+          "problema": "Impede quebra de uma arma ou armadura até o amanhecer por uma ação e uma Fadiga numa meia carta. Não explica o que ocorre com a vida do item em zero. Interpretada como absorção sempre disponível, elimina o desgaste que deveria limitar a proteção.",
+          "direcao": "Definir zero de vida e efeito da bênção; proteção limitada a um evento ou forma específica de quebra preserva uma reserva finita. Não afirmar vida infinita sem resolver a interpretação."
+        },
+        {
+          "cartas": [
+            "Água Benta",
+            "Primeiros Socorros",
+            "Benção dos Salmos"
+          ],
+          "prioridade": "alta",
+          "tipo": "limpeza_e_custo",
+          "fonte": "Habilidades, pp. 6–8",
+          "problema": "Remover uma ficha sem delimitar seu tipo pode incluir Fadiga e efeitos com remoção própria. Água Benta também tem dano sem ação e precisa de regra de repetição quando descontos zeram sua Fadiga.",
+          "direcao": "Definir escopo de limpeza e fechar ativações sem ação e sem recurso. Preservar especialização de Veneno/Sangramento e o custo de escolhas."
+        },
+        {
+          "cartas": [
+            "Hino de Coragem"
+          ],
+          "prioridade": "media",
+          "tipo": "protecao_absoluta",
+          "fonte": "Habilidades, p. 6",
+          "problema": "Imunidade a qualquer ficha de efeito inimigo para todos os aliados ao alcance 2 por um turno pode anular justamente as mecânicas de um chefe, dependendo da cadência e de descontos.",
+          "direcao": "Trocar cobertura universal por proteção escolhida, consumida ou ligada à devoção; testar a composição de grupo. O custo de ação e duas Fadigas existe e deve entrar na avaliação."
+        },
+        {
+          "cartas": [
+            "Zona da Penitência",
+            "Terra do Louvor"
+          ],
+          "prioridade": "alta",
+          "tipo": "escopo_e_identidade",
+          "fonte": "Habilidades, p. 7",
+          "problema": "Dobrar dano da sua divindade não diz se vale só para o clérigo, todo aliado ou inclusive inimigos, nem se considera tipo ou fonte. O verso vira bônus numérico genérico de perícia e explora pouco a mesma consagração.",
+          "direcao": "Delimitar dano/fonte e ligar as duas faces à mesma regra de devoção ou território consagrado."
+        },
+        {
+          "cartas": [
+            "Benção dos Salmos"
+          ],
+          "prioridade": "media",
+          "tipo": "valor_de_xp",
+          "fonte": "Habilidades, p. 8",
+          "problema": "Sua opção cura 3 por duas Fadigas e ação; Toque Restaurador cura 3 + Sabedoria por uma Fadiga e ação, com adjacência explícita. A versatilidade e o limite 3 podem compensar parte do preço, mas falta alcance claro da cura e motivo convincente para 2 XP.",
+          "direcao": "Clarificar alcance e encontrar utilidade distinta antes de apenas elevar números; comparar a carta inteira e o verso, não só uma modalidade."
+        },
+        {
+          "cartas": [
+            "Ressurgir",
+            "Primeiros Socorros"
+          ],
+          "prioridade": "alta",
+          "tipo": "procedimento_incompleto",
+          "fonte": "Habilidades, pp. 7–8",
+          "problema": "Ressurgir não informa alcance, ação ou arredondamento ao exilar metade. Primeiros Socorros estabiliza por testes de morte ainda não formalizados para a mesa.",
+          "direcao": "Compatibilizar com o procedimento de inconsciência/morte da mesa; não importar o procedimento digital de Medicina automaticamente."
+        },
+        {
+          "cartas": [
+            "Arma do Panteão"
+          ],
+          "prioridade": "media",
+          "tipo": "coerencia_do_heroi",
+          "fonte": "Heróis, p. 1",
+          "problema": "Mistura dano contra inimigos da fé por decisão do mestre, bênção de arma, retaliação a fichas e crítico genérico. A devoção não organiza os quatro efeitos com a mesma clareza do Guerreiro.",
+          "direcao": "Definir quem é inimigo da devoção e articular consagrar, proteger e punir como um mesmo ciclo."
+        },
+        {
+          "cartas": [
+            "Halo do Conduíte",
+            "Halo da Justiça",
+            "Rito de Purificação",
+            "Círculo de Proteção"
+          ],
+          "prioridade": "editorial",
+          "tipo": "duracao_e_area",
+          "fonte": "Habilidades, pp. 6 e 8",
+          "problema": "Halos não especificam duração/manutenção; Círculo de Proteção não delimita alcance dos aliados; Rito precisa esclarecer início ou fim do turno versus os dois e o momento de sustentar.",
+          "direcao": "Padronizar criação, área, duração, manutenção e desaparecimento ao virar a face."
+        }
+      ]
+    },
+    {
+      "classe": "Mago",
+      "identidade": "Conhecimento e escolha de ferramentas, manipulação do baralho e conversão de Fadiga em poder; seis elementos como filosofias.",
+      "avaliacao": "Arquitetura de Aprendizes é forte, mas descontos universais e benefícios genéricos podem apagar a gestão de recursos e a diferença entre elementos.",
+      "preservar": [
+        "Aprendizes concedem tags nos dois lados e abrem repertórios.",
+        "Improviso do Erudito tem escolha, risco e punição ligados à Fadiga acumulada.",
+        "Labareda Voraz oferece gasto de carta para propagar Fogo.",
+        "Contramagia paga Fadiga, reação e teste.",
+        "Arma Pétrea e Muro mudam os meios de resolver a cena."
+      ],
+      "achados": [
+        {
+          "cartas": [
+            "Conjuração Econômica",
+            "Conjuração Perfeita",
+            "Reflexo Arcano"
+          ],
+          "prioridade": "alta",
+          "tipo": "descontos_e_cadencia",
+          "fonte": "Habilidades, pp. 13–14",
+          "problema": "Faltam regras compartilhadas para redução até zero, empilhamento, custo variável e alcance sobre magia de outras classes. Uma ativação sem ação que também fique sem Fadiga pode tornar-se ilimitada; descontos por turno já são limitados e não devem ser confundidos com repetição ilimitada isoladamente.",
+          "direcao": "Definir quais custos são modificados e quando; manter as economias intencionais, fechando os efeitos que acabam sem nenhum recurso ou limite de uso."
+        },
+        {
+          "cartas": [
+            "Mente Bélica",
+            "Sobrecarga Arcana",
+            "Poder de Combate"
+          ],
+          "prioridade": "alta",
+          "tipo": "empilhamento_e_dano",
+          "fonte": "Habilidades, pp. 13–15",
+          "problema": "Falta dizer o que duplica, a ordem de somar bônus, se Mente Bélica pode ser paga várias vezes e se bônus de dano em Mísseis são distribuídos ou concedidos a cada alvo. O descarte é um custo real e finito.",
+          "direcao": "Estabelecer a composição do dano e limite de aplicações de um modificador à mesma magia, sem remover a troca de cartas por explosão de poder."
+        },
+        {
+          "cartas": [
+            "Mana Densa"
+          ],
+          "prioridade": "alta",
+          "tipo": "escopo_de_anulacao",
+          "fonte": "Habilidades, p. 15",
+          "problema": "Uma carta da mão pode anular sem teste ou reação toda a magia que inclua o mago como um dos alvos, inclusive área com vários aliados. Pode superar muito Contramagia e apagar uma ação central do chefe.",
+          "direcao": "Definir se protege o mago ou anula toda a magia e que risco/custo justifica a anulação coletiva; comparar pelo custo total da carta de 2 XP."
+        },
+        {
+          "cartas": [
+            "Mente Afiada",
+            "De Volta ao Básico"
+          ],
+          "prioridade": "media",
+          "tipo": "beneficio_generico",
+          "fonte": "Habilidades, pp. 13 e 15",
+          "problema": "Foco automático para todo o grupo, sem alcance ou escolha, e vantagem ampla nos três atributos mentais dão valor universal com pouca expressão da preparação do erudito.",
+          "direcao": "Conectar a observação, informação obtida, distribuição escolhida ou posicionamento; manter a função de suporte sem tornar a carta compra obrigatória em multiclasse."
+        },
+        {
+          "cartas": [
+            "Improviso do Erudito"
+          ],
+          "prioridade": "media",
+          "tipo": "procedimento_e_penalidade",
+          "fonte": "Habilidades, p. 13",
+          "problema": "Não explicita como a ação de improvisar interage com a ação da magia copiada, se dispensa a tag elemental e onde colocar as duas Fadigas da falha numa face de limite 1. O dano escala com todas as cartas fatigadas.",
+          "direcao": "Escrever a sequência completa, distinguir custo da magia e de improvisação e avaliar a punição pelo estado do personagem. Preservar o conceito de arriscar conhecimento alheio."
+        },
+        {
+          "cartas": [
+            "Aprendiz de Água",
+            "Onda",
+            "Míssil de Rocha",
+            "Aprendiz de Sombra",
+            "Servo Sombrio"
+          ],
+          "prioridade": "media",
+          "tipo": "identidade_elemental",
+          "fonte": "Habilidades, pp. 15–16",
+          "problema": "Água, Ar e Terra compartilham empurrar e dano. Água expressa pouco adaptação, uso de água existente ou persistência; Terra pouco compromisso com a posição; Sombra usa mais Medo/controle que o ciclo ocultar-agir-ocultar descrito na filosofia.",
+          "direcao": "Dar restrições e interações próprias a cada elemento, preservando Fogo/consumo, Água/adaptação, Terra/constância, Ar/reposicionamento, Luz/informação e Sombra/oportunidade. Não tornar todos os feitiços de um elemento idênticos."
+        },
+        {
+          "cartas": [
+            "Passo Leve",
+            "Servo Sombrio"
+          ],
+          "prioridade": "alta",
+          "tipo": "garantia_e_controle",
+          "fonte": "Habilidades, p. 16",
+          "problema": "Passo Leve ignora terreno difícil e toda queda até fim da cena por uma Fadiga e movimento, oferecendo domínio muito cedo. Servo Sombrio transforma uma ficha de Medo em movimento e ataque compulsórios sem consumir a ficha nem explicitar resistência, duração do controle ou custos da criatura.",
+          "direcao": "Delimitar a proteção de deslocamento e preservar perigos importantes; dar ao controle um custo/condição que se renove, de forma compatível com o tamanho e papel do alvo."
+        },
+        {
+          "cartas": [
+            "Controlador do Arcano",
+            "Devorador de Grimórios"
+          ],
+          "prioridade": "media",
+          "tipo": "coerencia_do_heroi",
+          "fonte": "Heróis, p. 2",
+          "problema": "Controlador tem três partes ligadas à Fadiga, mas sua ativada é bônus persistente na arma de aliado. Devorador combina Aprendiz grátis, virada de arma, compra e recuperação do exílio sem explorar muito ler/consumir grimórios. Controlador também precisa dizer se passivas de limite 0 recebem +1.",
+          "direcao": "Reunir as quatro partes de cada metade em um motor distinto e excluir expressamente limite 0 do aumento de capacidade, se a intenção é manter passivas sem depósito."
+        },
+        {
+          "cartas": [
+            "Ventos Cortantes",
+            "Ciclone",
+            "Mão Mágica",
+            "Tecer com Maestria"
+          ],
+          "prioridade": "editorial",
+          "tipo": "resolucao",
+          "fonte": "Habilidades, pp. 13–16",
+          "problema": "Ventos Cortantes custa 3 numa face de limite 2, o que tem transbordo oneroso pelas regras atuais; Ciclone usa Escalada para resistir a vento; Mão Mágica não define ação para comandar após criada; alcance de Tecer precisa de regra para valores numéricos e magia pessoal.",
+          "direcao": "Confirmar custos intencionais, oposições e ações, sem corrigir automaticamente 3/2 como se fosse uma habilidade impossível."
+        }
+      ]
+    }
+  ],
+  "questoes_transversais": [
+    {
+      "prioridade": "alta",
+      "tema": "Limite de Fadiga zero e virada",
+      "evidencia": "Resumo §5 diz que face de limite 0 não vira, mas Dedos de Seda manda virar e Tiro Perfeito custa recurso e vira, enquanto várias faces 0 têm outro lado jogável.",
+      "direcao": "Separar capacidade de receber Fadiga, natureza passiva/ativada e permissão para virar. A regra genérica é que precisa ser corrigida ou receber exceções formais."
+    },
+    {
+      "prioridade": "alta",
+      "tema": "Custo zero e ativação sem ação",
+      "evidencia": "Água Benta custa uma Fadiga e não pede ação para causar dano a morto-vivo/demônio adjacente. Cajado do Condutor reduz o custo das magias em uma Fadiga enquanto tem três ou mais. Se custo mínimo não existir, o efeito pode ser repetido sem consumir ação ou recurso.",
+      "direcao": "Resolver mínimo/empilhamento ou repetição de efeito na regra comum. O exemplo é condicional à interpretação das reduções; não afirmar que foi testado em jogo."
+    },
+    {
+      "prioridade": "media",
+      "tema": "Ficha assinatura",
+      "evidencia": "Ladino/Sombra e Caçador/Mira são explícitos; Guerreiro distribui Guarda, Foco e Bloqueio; Mago usa Fadiga/Foco; Clérigo se apoia em devoção, cura e Marcação sem um ciclo único tão claro.",
+      "direcao": "Definir um motor distintivo para os três restantes usando recursos existentes antes de criar fichas novas."
+    },
+    {
+      "prioridade": "alta",
+      "tema": "Persistência ao virar",
+      "evidencia": "Zonas e efeitos até o fim da cena convivem com faces que viram; retirar fichas voláteis não define sozinho se um efeito independente continua.",
+      "direcao": "Indicar que efeito exige face revelada, o que continua ao virar e como sustentar."
+    },
+    {
+      "prioridade": "media",
+      "tema": "Informação de coleção incompleta",
+      "evidencia": "Os PDFs têm 30 faces por classe e duas metades de herói. Resumo e exportação citam Saltério de Cura e Grimório da Chama Sagrada extras do Clérigo; na exportação consultada estão sem texto.",
+      "direcao": "Auditar disponibilidade dessas cartas antes de declará-las prontas ou compará-las. Não inventar efeitos."
+    },
+    {
+      "prioridade": "media",
+      "tema": "Testes seguintes",
+      "direcao": "Comparar dano por ação com preparação incluída, proteção por cena, Fadiga acumulada e escoada, cartas exiladas e oportunidades de resposta do inimigo. Não decidir equilíbrio só por um golpe máximo."
+    }
+  ],
+  "ordem_sugerida": [
+    "Fechar limite 0/virada, acerto, custo zero e multiplicadores.",
+    "Ladino: abertura e ciclo de Sombra.",
+    "Caçador: preparação, Predador e geração de Mira.",
+    "Clérigo: quebra de item, limpeza, proteção e devoção.",
+    "Mago: descontos, anulação, identidade elemental e heróis.",
+    "Guerreiro: formação, estados e ajuste fino de heróis."
+  ],
+  "limitacoes": [
+    "Avaliação de design fundamentada em texto e inspeção visual; não substitui playtest.",
+    "Interações ambíguas foram registradas como condicionais.",
+    "Não foram aprovadas novas regras, alterados PDFs, dados de habilidades nem código do videogame."
+  ]
+}

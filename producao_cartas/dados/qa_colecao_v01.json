@@ -1,0 +1,33 @@
+{
+  "itens": 156,
+  "frentes": 156,
+  "versos": 156,
+  "paginas_cartas": 312,
+  "paginas_A4": 36,
+  "texto_integral_validado": 156,
+  "dados_repetidos": true,
+  "custos_e_limites_conferidos_por_gotas_vetoriais": true,
+  "menor_fonte_corpo_pt": 8,
+  "versos_compactos": [
+    "EQ-140",
+    "EQ-142",
+    "EQ-145",
+    "EQ-154",
+    "EQ-155"
+  ],
+  "imposicao_duplex": "validada para virar pela borda longa",
+  "arquivos": [
+    {
+      "arquivo": "C:\\Users\\Gamer\\Documents\\ChatGPT\\SISTEMA DE RPG\\producao_cartas\\pdf\\Sistema21_Equipamentos_156_Cartas_v01.pdf",
+      "bytes": 338656067
+    },
+    {
+      "arquivo": "C:\\Users\\Gamer\\Documents\\ChatGPT\\SISTEMA DE RPG\\producao_cartas\\pdf\\Sistema21_Equipamentos_156_A4_v01.pdf",
+      "bytes": 339280072
+    }
+  ],
+  "paginas_renderizadas": 348,
+  "artes_conferidas_em_provas_e_catalogo": 156,
+  "revisao_visual": "Artes inteiras, tipografia e versos mais longos inspecionados. Sem corte ou sobreposição nas páginas verificadas.",
+  "comparacao_ultimo_ajuste": "Apenas a face EQ-147 verso e a página A4 correspondente mudaram; ambas reinspecionadas."
+}

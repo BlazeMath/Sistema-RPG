@@ -1,0 +1,237 @@
+{
+  "etapa": "colecao_v06_concluida",
+  "total_itens": 170,
+  "artes_geradas": 170,
+  "artes_restantes": 0,
+  "cartas_piloto": [
+    "EQ-001",
+    "EQ-010",
+    "EQ-156",
+    "EQ-046",
+    "EQ-060",
+    "EQ-061",
+    "EQ-116",
+    "EQ-127",
+    "EQ-139"
+  ],
+  "texto_corpo_pt": 8,
+  "dimensoes_mm": [
+    63,
+    88
+  ],
+  "versao_piloto": "03",
+  "duplex_piloto": [
+    "EQ-156",
+    "EQ-060",
+    "EQ-139"
+  ],
+  "classificacao_catalogo": {
+    "habilidades_somente_no_verso": 35,
+    "texto_curto_na_frente_ou_sem_habilidade": 135,
+    "versos_com_dados_previstos": 170
+  },
+  "impressao": "A4, 100%, virar pela borda longa; versos com colunas invertidas",
+  "texto_corpo_minimo_pt": 8,
+  "simbolos": "Gotas vetoriais nos custos e limites. Conjuração nos 17 grimórios e textos sagrados. Referências narrativas a Fadiga permanecem por extenso.",
+  "pdf_piloto": "pdf/Cartas_Equipamentos_Piloto_v03_Simbolos.pdf",
+  "foco_atual": "Coleção v06 concluída: 170 itens ilustrados, expansão de 14 poções e alterações anteriores incorporadas; PDFs verificados.",
+  "modelo_corrente": {
+    "estado": "aprovado_pelo_autor_para_producao_em_lote",
+    "arte": "artes/piloto/EQ-156_v02.png",
+    "carta": "pdf/Corrente_de_Caca_v02_Frente_Verso.pdf",
+    "impressao": "pdf/Corrente_de_Caca_v02_A4_Impressao.pdf",
+    "medidas_mm": [
+      63,
+      88
+    ],
+    "versao": "02",
+    "dados_nas_duas_faces": true
+  },
+  "padrao_verso": "Repetir dados de combate, requisitos, tags e limite de Fadiga antes das habilidades; conferir espaço de cada item antes dos lotes.",
+  "todos_itens_com_verso_de_consulta": true,
+  "novas_artes_neste_lote": 14,
+  "artes_reutilizadas": 156,
+  "pdfs_colecao": [
+    "pdf/Sistema21_Equipamentos_170_A4_v06.pdf",
+    "pdf/Sistema21_Equipamentos_170_Cartas_v06.pdf"
+  ],
+  "paginas_A4": 38,
+  "paginas_individuais": 340,
+  "versao_colecao": "v06",
+  "artes_revisadas": [
+    "EQ-020",
+    "EQ-018",
+    "EQ-002",
+    "EQ-004",
+    "EQ-005",
+    "EQ-009",
+    "EQ-011",
+    "EQ-014",
+    "EQ-022",
+    "EQ-027",
+    "EQ-025",
+    "EQ-007",
+    "EQ-008",
+    "EQ-013",
+    "EQ-016",
+    "EQ-017",
+    "EQ-026",
+    "EQ-029",
+    "EQ-041",
+    "EQ-118"
+  ],
+  "gladio_inquietante": "Arte anterior mantida por decisão explícita do autor.",
+  "corrente_localizacao": {
+    "A4": [
+      35,
+      36
+    ],
+    "individuais": [
+      311,
+      312
+    ]
+  },
+  "auditoria_alinhamento": "dados/auditoria_alinhamento_armas_v04.json",
+  "pdfs_em_espera": false,
+  "instrucao_autor_pdfs": "Autor autorizou gerar as 14 artes, incorporar as alteracoes anteriores e atualizar a colecao completa.",
+  "novos_itens_pendentes_arte": [],
+  "referencia_pocoes": "dados/comparacao_pocoes_witcher3_2026-10-27.json",
+  "total_itens_nos_pdfs_atuais": 170,
+  "regras_pendentes_manual": [
+    "Tag Pocao e regras de doses, duracao, nao acumulacao e encerramento."
+  ],
+  "pocoes_no_catalogo": 21,
+  "paginas_previstas_nova_colecao": {
+    "individuais": 340,
+    "A4": 38
+  },
+  "qa_expansao_pocoes": "dados/qa_expansao_pocoes_2026-10-27.json",
+  "relatorio_expansao_pocoes": "C:\\Users\\Gamer\\Documents\\ChatGPT\\SISTEMA DE RPG\\outputs\\expansao_pocoes_2026-10-27\\Comparacao_e_Novas_Pocoes.html",
+  "ajustes_incorporados_v06": [
+    {
+      "id": "EQ-131",
+      "alteracao": "2. Descarte todas as fichas de Sombra em alcance curto.",
+      "data": "2026-10-27"
+    },
+    {
+      "id": "EQ-137",
+      "alteracao": "Texto dos dois efeitos esclarecido; manter a ultima carta contra dano e curar um aliado a vista.",
+      "data": "2026-10-27"
+    },
+    {
+      "id": "EQ-064",
+      "alteracao": "Racao concede 1 carta adicional na mao inicial da proxima cena; nao cumulativo.",
+      "data": "2026-10-27"
+    },
+    {
+      "id": "EQ-157",
+      "alteracao": "Nova pocao; arte e diagramacao pendentes.",
+      "data": "2026-10-27"
+    },
+    {
+      "id": "EQ-158",
+      "alteracao": "Nova pocao; arte e diagramacao pendentes.",
+      "data": "2026-10-27"
+    },
+    {
+      "id": "EQ-159",
+      "alteracao": "Nova pocao; arte e diagramacao pendentes.",
+      "data": "2026-10-27"
+    },
+    {
+      "id": "EQ-160",
+      "alteracao": "Nova pocao; arte e diagramacao pendentes.",
+      "data": "2026-10-27"
+    },
+    {
+      "id": "EQ-161",
+      "alteracao": "Nova pocao; arte e diagramacao pendentes.",
+      "data": "2026-10-27"
+    },
+    {
+      "id": "EQ-162",
+      "alteracao": "Nova pocao; arte e diagramacao pendentes.",
+      "data": "2026-10-27"
+    },
+    {
+      "id": "EQ-163",
+      "alteracao": "Nova pocao; arte e diagramacao pendentes.",
+      "data": "2026-10-27"
+    },
+    {
+      "id": "EQ-164",
+      "alteracao": "Nova pocao; arte e diagramacao pendentes.",
+      "data": "2026-10-27"
+    },
+    {
+      "id": "EQ-165",
+      "alteracao": "Nova pocao; arte e diagramacao pendentes.",
+      "data": "2026-10-27"
+    },
+    {
+      "id": "EQ-166",
+      "alteracao": "Nova pocao; arte e diagramacao pendentes.",
+      "data": "2026-10-27"
+    },
+    {
+      "id": "EQ-167",
+      "alteracao": "Nova pocao; arte e diagramacao pendentes.",
+      "data": "2026-10-27"
+    },
+    {
+      "id": "EQ-168",
+      "alteracao": "Nova pocao; arte e diagramacao pendentes.",
+      "data": "2026-10-27"
+    },
+    {
+      "id": "EQ-169",
+      "alteracao": "Nova pocao; arte e diagramacao pendentes.",
+      "data": "2026-10-27"
+    },
+    {
+      "id": "EQ-170",
+      "alteracao": "Nova pocao; arte e diagramacao pendentes.",
+      "data": "2026-10-27"
+    },
+    {
+      "id": "EQ-061",
+      "alteracao": "Identificacao da tag Pocao para efeitos que interagem com pocoes.",
+      "data": "2026-10-27"
+    },
+    {
+      "id": "EQ-063",
+      "alteracao": "Identificacao da tag Pocao para efeitos que interagem com pocoes.",
+      "data": "2026-10-27"
+    },
+    {
+      "id": "EQ-068",
+      "alteracao": "Identificacao da tag Pocao para efeitos que interagem com pocoes.",
+      "data": "2026-10-27"
+    },
+    {
+      "id": "EQ-071",
+      "alteracao": "Identificacao da tag Pocao para efeitos que interagem com pocoes.",
+      "data": "2026-10-27"
+    },
+    {
+      "id": "EQ-072",
+      "alteracao": "Identificacao da tag Pocao para efeitos que interagem com pocoes.",
+      "data": "2026-10-27"
+    },
+    {
+      "id": "EQ-075",
+      "alteracao": "Identificacao da tag Pocao para efeitos que interagem com pocoes.",
+      "data": "2026-10-27"
+    },
+    {
+      "id": "EQ-076",
+      "alteracao": "Identificacao da tag Pocao para efeitos que interagem com pocoes.",
+      "data": "2026-10-27"
+    }
+  ],
+  "ajustes_pendentes_pdf": [],
+  "qa_final": "dados/qa_expansao_final_v06.json",
+  "qa_colecao": "dados/qa_colecao_v06.json",
+  "registro_artes_pocoes": "dados/artes_pocoes_v06.json",
+  "pacote_colecao": "Sistema21_170_Artes_e_Dados_v06.zip"
+}

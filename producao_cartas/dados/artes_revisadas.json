@@ -1,0 +1,381 @@
+[
+  {
+    "id": "EQ-020",
+    "nome": "Florete do Contragolpe",
+    "arquivo": "artes/revisadas/EQ-020_v02.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-e15ff41c-8cd9-4247-863f-8d19a00ed981.png",
+    "substitui": "C:/Users/Gamer/Documents/ChatGPT/SISTEMA DE RPG/producao_cartas/artes/lote/EQ-020_v01.png",
+    "dimensoes": [
+      1061,
+      1482
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "0da9586566cf4f7e54a4b8ec4df806194468827235050e5ad642146fdcf84ec9",
+    "status": "conferida_visual"
+  },
+  {
+    "id": "EQ-018",
+    "nome": "Montante de Batalha",
+    "arquivo": "artes/revisadas/EQ-018_v02.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-ffb90714-f33b-463e-ad29-73592c3c26c0.png",
+    "substitui": "C:/Users/Gamer/Documents/ChatGPT/SISTEMA DE RPG/producao_cartas/artes/lote/EQ-018_v01.png",
+    "dimensoes": [
+      1061,
+      1483
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "55fc56f23aff25a1862d699000aaed95649fc77d2c5d2bee09214f09060b1d83",
+    "status": "conferida_visual"
+  },
+  {
+    "id": "EQ-002",
+    "nome": "Florete",
+    "arquivo": "artes/revisadas/EQ-002_v02.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-49a325c7-d276-4581-95c9-ed647fb6742d.png",
+    "substitui": "C:/Users/Gamer/Documents/ChatGPT/SISTEMA DE RPG/producao_cartas/artes/lote/EQ-002_v01.png",
+    "dimensoes": [
+      1061,
+      1482
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "d9ec20b73d88b6bdd6f49b30876921161b18f2418469b76855c9ff30e079ee2d",
+    "status": "conferida_visual",
+    "rotacao_diagramacao_graus": 30,
+    "ajuste_diagramacao": "Rotação rígida de 30 graus na composição do PDF; enquadramento medido pelos pixels com alfa >= 64. PNG original e transparência preservados."
+  },
+  {
+    "id": "EQ-004",
+    "nome": "Espada Curta",
+    "arquivo": "artes/revisadas/EQ-004_v02.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-74915465-b3f1-412b-b94f-4cdcc91e45e9.png",
+    "substitui": "C:/Users/Gamer/Documents/ChatGPT/SISTEMA DE RPG/producao_cartas/artes/lote/EQ-004_v01.png",
+    "dimensoes": [
+      1061,
+      1483
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "ad6bc9ae2bff9dde8d949e536c6af94c96f74342dabfa7f34013b6121c85818e",
+    "status": "conferida_visual"
+  },
+  {
+    "id": "EQ-005",
+    "nome": "Espada Longa",
+    "arquivo": "artes/revisadas/EQ-005_v02.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-eec8b275-d09f-4340-bf15-c78727c2f437.png",
+    "substitui": "C:/Users/Gamer/Documents/ChatGPT/SISTEMA DE RPG/producao_cartas/artes/lote/EQ-005_v01.png",
+    "dimensoes": [
+      1061,
+      1483
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "c3fdd57d6c7df8f9a5e7a3606ea8b5e69f258e41cd51a73ca5b53117b9ca0a72",
+    "status": "conferida_visual",
+    "rotacao_diagramacao_graus": 30,
+    "ajuste_diagramacao": "Rotação rígida de 30 graus na composição do PDF; enquadramento medido pelos pixels com alfa >= 64. PNG original e transparência preservados."
+  },
+  {
+    "id": "EQ-009",
+    "nome": "Montante",
+    "arquivo": "artes/revisadas/EQ-009_v02.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-b4b4a4b8-28c9-4772-807f-b279aa3fb0ff.png",
+    "substitui": "C:/Users/Gamer/Documents/ChatGPT/SISTEMA DE RPG/producao_cartas/artes/lote/EQ-009_v01.png",
+    "dimensoes": [
+      1063,
+      1479
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "a0c4f7332c6b5aeb5a5bf69ad3897df771a8a20399e06a38ac04ec6470ced0f5",
+    "status": "conferida_visual"
+  },
+  {
+    "id": "EQ-011",
+    "nome": "Florete de Duelista",
+    "arquivo": "artes/revisadas/EQ-011_v02.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-a34146ae-6f0c-4227-9cc4-f0204444ef3e.png",
+    "substitui": "C:/Users/Gamer/Documents/ChatGPT/SISTEMA DE RPG/producao_cartas/artes/lote/EQ-011_v01.png",
+    "dimensoes": [
+      1061,
+      1483
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "40eb625d1856a7e880f26b3b345975074cdf70df69c92d5809a3c33c851342b5",
+    "status": "conferida_visual"
+  },
+  {
+    "id": "EQ-014",
+    "nome": "Espada do Mestre-Ferreiro",
+    "arquivo": "artes/revisadas/EQ-014_v02.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-4db37cc0-cfbe-4d63-9835-515a2521b79c.png",
+    "substitui": "C:/Users/Gamer/Documents/ChatGPT/SISTEMA DE RPG/producao_cartas/artes/lote/EQ-014_v01.png",
+    "dimensoes": [
+      1060,
+      1484
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "7181d9088bf030290c2c4e55e6fcb38318d21abf5a63f3848e1a4112160eaa96",
+    "status": "conferida_visual",
+    "rotacao_diagramacao_graus": 30,
+    "ajuste_diagramacao": "Rotação rígida de 30 graus na composição do PDF; enquadramento medido pelos pixels com alfa >= 64. PNG original e transparência preservados."
+  },
+  {
+    "id": "EQ-022",
+    "nome": "Lâmina do Vento",
+    "arquivo": "artes/revisadas/EQ-022_v02.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-d970b120-0907-420b-8cf9-9b999d45d343.png",
+    "substitui": "C:/Users/Gamer/Documents/ChatGPT/SISTEMA DE RPG/producao_cartas/artes/lote/EQ-022_v01.png",
+    "dimensoes": [
+      1060,
+      1484
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "226db2745d8f7a5c17ccf9838a93cd788b398989e515feec5b1ace27c579a174",
+    "status": "conferida_visual",
+    "rotacao_diagramacao_graus": 30,
+    "ajuste_diagramacao": "Rotação rígida de 30 graus na composição do PDF; enquadramento medido pelos pixels com alfa >= 64. PNG original e transparência preservados."
+  },
+  {
+    "id": "EQ-027",
+    "nome": "Montante do Frenesi",
+    "arquivo": "artes/revisadas/EQ-027_v02.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-38e0e8f4-544a-47b9-95da-6b6b14d75852.png",
+    "substitui": "C:/Users/Gamer/Documents/ChatGPT/SISTEMA DE RPG/producao_cartas/artes/lote/EQ-027_v01.png",
+    "dimensoes": [
+      1060,
+      1484
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "893f3a7d60dbc7613517191e96cfcc1bf720e6fa82bdd0563b70168d26e88e4f",
+    "status": "conferida_visual"
+  },
+  {
+    "id": "EQ-025",
+    "nome": "Quebra-Elmos",
+    "arquivo": "artes/revisadas/EQ-025_v02.png",
+    "origem": "C:\\Users\\Gamer\\.codex\\generated_images\\01a1784a-39da-75d3-87c4-56dc835caa37\\exec-01d8698e-377f-45af-968e-0dada45e083a.png",
+    "substitui": "artes/lote/EQ-025_v01.png",
+    "dimensoes": [
+      1060,
+      1484
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "fe027d14e9dd4d321c5bd7a35a443bcb4e4f76920c17287c9f856e189f7fc123",
+    "status": "conferida_visual",
+    "rotacao_diagramacao_graus": 30,
+    "ajuste_diagramacao": "Rotacao rigida de 30 graus somente na composicao do PDF; PNG preservado."
+  },
+  {
+    "id": "EQ-007",
+    "nome": "Maça",
+    "arquivo": "artes/revisadas/EQ-007_v02.png",
+    "origem": "C:/Users/Gamer/.codex/generated_images/01a1784a-39da-75d3-87c4-56dc835caa37/exec-8b42977f-fd69-4741-9afa-d030d30a9ea4.png",
+    "substitui": "artes/lote/EQ-007_v01.png",
+    "dimensoes": [
+      1060,
+      1484
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "835f0464c95ad61495f4f77c3d68ea530b382f12116a3de655d804e8df8a3e03",
+    "status": "conferida_visual",
+    "rotacao_diagramacao_graus": 30
+  },
+  {
+    "id": "EQ-008",
+    "nome": "Machado de Guerra",
+    "arquivo": "artes/revisadas/EQ-008_v02.png",
+    "origem": "C:/Users/Gamer/.codex/generated_images/01a1784a-39da-75d3-87c4-56dc835caa37/exec-cd7b6b9b-5716-4ede-ace6-964d784e6435.png",
+    "substitui": "artes/lote/EQ-008_v01.png",
+    "dimensoes": [
+      1061,
+      1482
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "8feadca30419b466f2b8a479bc91211064bb4493b893f28615f940a1416a4286",
+    "status": "conferida_visual",
+    "rotacao_diagramacao_graus": 0
+  },
+  {
+    "id": "EQ-013",
+    "nome": "Francisca",
+    "arquivo": "artes/revisadas/EQ-013_v02.png",
+    "origem": "C:/Users/Gamer/.codex/generated_images/01a1784a-39da-75d3-87c4-56dc835caa37/exec-2952c244-c4ff-4fce-b590-8a30e31284ab.png",
+    "substitui": "artes/lote/EQ-013_v01.png",
+    "dimensoes": [
+      1083,
+      1452
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "1140dd1eacda89a97c2fa9c87300690c5072d27e66c2dd3f738a4fa2003baf90",
+    "status": "conferida_visual",
+    "rotacao_diagramacao_graus": 0
+  },
+  {
+    "id": "EQ-016",
+    "nome": "Maça-Estrela",
+    "arquivo": "artes/revisadas/EQ-016_v02.png",
+    "origem": "C:/Users/Gamer/.codex/generated_images/01a1784a-39da-75d3-87c4-56dc835caa37/exec-503a8225-4c79-48ac-9b47-edbbe7f7cf8e.png",
+    "substitui": "artes/lote/EQ-016_v01.png",
+    "dimensoes": [
+      1061,
+      1483
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "aadd63d32f57cc87c483c3de24fb74c72038121c1da67942cda2df0f8e319cc4",
+    "status": "conferida_visual",
+    "rotacao_diagramacao_graus": 30
+  },
+  {
+    "id": "EQ-017",
+    "nome": "Machado Barbado",
+    "arquivo": "artes/revisadas/EQ-017_v02.png",
+    "origem": "C:/Users/Gamer/.codex/generated_images/01a1784a-39da-75d3-87c4-56dc835caa37/exec-f5f1ddad-a62e-49e0-924e-497e67651f7e.png",
+    "substitui": "artes/lote/EQ-017_v01.png",
+    "dimensoes": [
+      1061,
+      1483
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "d4b57d685ef27c63832f60bb0bcca63ac0a6b36ce40714961556cf9e7a97e057",
+    "status": "conferida_visual",
+    "rotacao_diagramacao_graus": 0
+  },
+  {
+    "id": "EQ-026",
+    "nome": "Machado da Sepultura",
+    "arquivo": "artes/revisadas/EQ-026_v02.png",
+    "origem": "C:/Users/Gamer/.codex/generated_images/01a1784a-39da-75d3-87c4-56dc835caa37/exec-7d621127-dce1-4196-a1be-2021192d50df.png",
+    "substitui": "artes/lote/EQ-026_v01.png",
+    "dimensoes": [
+      1059,
+      1485
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "026dd582b8efafaa7a3e89b7558de72eaf380b7fb505983f98d41a8f417ba39c",
+    "status": "conferida_visual",
+    "rotacao_diagramacao_graus": 0
+  },
+  {
+    "id": "EQ-029",
+    "nome": "Machado de Arremesso",
+    "arquivo": "artes/revisadas/EQ-029_v02.png",
+    "origem": "C:/Users/Gamer/.codex/generated_images/01a1784a-39da-75d3-87c4-56dc835caa37/exec-0ee15154-e74d-4cc1-866d-4d43aea2d70f.png",
+    "substitui": "artes/lote/EQ-029_v01.png",
+    "dimensoes": [
+      1060,
+      1484
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "adcc2b53c45f9ea54f3cf2b8151b527056d9a6da355bb273a6ef623f1784ab85",
+    "status": "conferida_visual",
+    "rotacao_diagramacao_graus": 0
+  },
+  {
+    "id": "EQ-041",
+    "nome": "Machado Sedento",
+    "arquivo": "artes/revisadas/EQ-041_v02.png",
+    "origem": "C:/Users/Gamer/.codex/generated_images/01a1784a-39da-75d3-87c4-56dc835caa37/exec-74c3148f-e039-4821-b1f2-e21f5f11ae7a.png",
+    "substitui": "artes/lote/EQ-041_v01.png",
+    "dimensoes": [
+      1060,
+      1484
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "sha256": "75412c3449ae2797f5c3ab64ee4e77f15625e19f95a5874d93cd37f9dfff2db1",
+    "status": "conferida_visual",
+    "rotacao_diagramacao_graus": 0
+  },
+  {
+    "id": "EQ-118",
+    "nome": "Cajado de Batalha",
+    "arquivo": "artes/revisadas/EQ-118_v02.png",
+    "origem": "C:/Users/Gamer/.codex/generated_images/01a1784a-39da-75d3-87c4-56dc835caa37/exec-d13afbec-339d-492e-b02a-be209b8706c8.png",
+    "substitui": "artes/lote/EQ-118_v01.png",
+    "dimensoes": [
+      1024,
+      1536
+    ],
+    "modo": "RGBA",
+    "alpha": [
+      0,
+      254
+    ],
+    "sha256": "14d8d62287811850594a3d499ef5830b1199fa45d660438e851d60f0e5fdba1e",
+    "status": "conferida_visual",
+    "rotacao_diagramacao_graus": 30
+  }
+]
