@@ -22,6 +22,7 @@ var _mercado: VBoxContainer
 var _estalagem: VBoxContainer
 var _missoes: VBoxContainer
 var _ferreiro: VBoxContainer
+var _dossie_aberto := false
 ## 0.23: aberta por dentro da vila andável. "missoes", "mercado", "ferreiro" ou "estalagem":
 ## mostra só aquele lugar, com um botão de voltar para a rua.
 var aba := ""
@@ -66,6 +67,15 @@ func _ready() -> void:
 	colunas.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	raiz.add_child(colunas)
 	_missoes = _coluna(colunas, "Quadro de missões", 420)
+	var coluna_missoes := _missoes.get_parent()
+	var painel_missoes: Control = coluna_missoes.get_parent()
+	var rolagem_missoes := ScrollContainer.new()
+	rolagem_missoes.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	rolagem_missoes.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
+	coluna_missoes.remove_child(_missoes)
+	coluna_missoes.add_child(rolagem_missoes)
+	_missoes.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	rolagem_missoes.add_child(_missoes)
 	_mercado = _coluna(colunas, "Mercado", 400)
 	_ferreiro = _coluna(colunas, "Forja do Bruno", 400)
 	_estalagem = _coluna(colunas, "Estalagem do Corvo", 380)
@@ -79,10 +89,11 @@ func _ready() -> void:
 	if aba != "":
 		# Dentro de um prédio da vila andável: só aquele lugar e o botão de voltar.
 		titulo.text = {"missoes": "MURAL DA GUILDA", "mercado": "MERCADO DA DOROTEIA", "ferreiro": "FORJA DO BRUNO", "estalagem": "ESTALAGEM DO CORVO"}.get(aba, "VILA")
-		for par in [[_missoes, "missoes"], [_mercado, "mercado"], [_ferreiro, "ferreiro"], [_estalagem, "estalagem"]]:
-			par[0].get_parent().get_parent().visible = par[1] == aba
+		for par in [[painel_missoes, "missoes"], [_mercado.get_parent().get_parent(), "mercado"],
+				[_ferreiro.get_parent().get_parent(), "ferreiro"], [_estalagem.get_parent().get_parent(), "estalagem"]]:
+			par[0].visible = par[1] == aba
 			if par[1] == aba:
-				par[0].get_parent().get_parent().size_flags_horizontal = Control.SIZE_EXPAND_FILL
+				par[0].size_flags_horizontal = Control.SIZE_EXPAND_FILL
 		baixo.add_child(_botao("Voltar para a rua (Esc)", func(): queue_free()))
 		_montar()
 		return
@@ -155,22 +166,99 @@ func _montar() -> void:
 func _montar_missoes() -> void:
 	_limpar(_missoes)
 	var feitas: Array = Campanha.carregar()["concluidas"]
-	# Ciclos da campanha (0.19): três missões por ciclo; cada uma abre a seguinte.
+	var catalogo := Campanha.missoes()
+	var por_id := {}
+	for m in catalogo:
+		por_id[m["id"]] = m
+	var oficiais := {}
+	var arco_rubro: Array = []
 	for c in Campanha.CICLOS:
-		var cab := _label("Ciclo %d · %s%s" % [int(c["numero"]), c["nome"], "  ✔" if Campanha.ciclo_completo(int(c["numero"])) else ""], 15, COR_OURO, true)
-		_missoes.add_child(cab)
-		# 0.27: fases do editor marcadas com este ciclo entram aqui (não contam para subir de nível).
-		var do_editor := Campanha.missoes().filter(func(m): return str(m["id"]).begins_with("fase:") and int(m.get("ciclo", 0)) == int(c["numero"]))
-		if c["missoes"].is_empty() and do_editor.is_empty():
-			_missoes.add_child(_label("Ainda não há missões neste ciclo.", 12, COR_SECUNDARIO))
 		for id in c["missoes"]:
-			_cartao_missao(Campanha.missao(id), feitas)
-		for m in do_editor:
-			_cartao_missao(m, feitas)
+			oficiais[id] = true
+		if int(c["numero"]) == 2:
+			arco_rubro = c["missoes"]
+	_montar_dossie(por_id, arco_rubro, feitas)
+	var exibidas := {}
+	for c in Campanha.CICLOS:
+		var numero := int(c["numero"])
+		var cab := _label("Ciclo %d · %s%s" % [numero, c["nome"], "  ✔" if Campanha.ciclo_completo(numero) else ""], 15, COR_OURO, true)
+		_missoes.add_child(cab)
+		var ids: Array = c["missoes"].filter(func(id): return por_id.has(id))
+		# Fases extras podem aparecer no ciclo pelo editor. Os contratos oficiais seguem a ordem da campanha.
+		for m in catalogo:
+			if int(m.get("ciclo", 0)) == numero and not oficiais.has(m["id"]):
+				ids.append(m["id"])
+		if ids.is_empty():
+			_missoes.add_child(_label("Ainda não há missões neste ciclo.", 12, COR_SECUNDARIO))
+		for id in ids:
+			if not exibidas.has(id):
+				exibidas[id] = true
+				_cartao_missao(por_id[id], feitas)
 	_missoes.add_child(_label("Outros contratos", 15, COR_OURO, true))
-	for m in Campanha.missoes():
-		if not m.has("ciclo"):
+	for m in catalogo:
+		if not exibidas.has(m["id"]):
+			exibidas[m["id"]] = true
 			_cartao_missao(m, feitas)
+
+
+func _montar_dossie(por_id: Dictionary, arco: Array, feitas: Array) -> void:
+	var provas := Campanha.dossie()
+	var painel := _painel()
+	var corpo := VBoxContainer.new()
+	corpo.add_theme_constant_override("separation", 6)
+	painel.add_child(corpo)
+	_missoes.add_child(painel)
+	var cab := HBoxContainer.new()
+	corpo.add_child(cab)
+	var contagem := "1 registro" if provas.size() == 1 else "%d registros" % provas.size()
+	var titulo := _label("Dossiê da guilda · " + contagem, 15, COR_OURO, true)
+	titulo.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	cab.add_child(titulo)
+	var alternar := CheckButton.new()
+	alternar.text = "Mostrar registros"
+	alternar.add_theme_font_size_override("font_size", 12)
+	alternar.button_pressed = _dossie_aberto
+	cab.add_child(alternar)
+	for id in arco:
+		if id not in feitas and por_id.has(id) and Campanha.motivo_trancada(id) == "":
+			var dica := _label("Próximo contrato a investigar · %s" % por_id[id]["nome"], 12, COR_SECUNDARIO)
+			dica.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+			corpo.add_child(dica)
+			break
+	var detalhes := VBoxContainer.new()
+	detalhes.add_theme_constant_override("separation", 6)
+	detalhes.visible = _dossie_aberto
+	corpo.add_child(detalhes)
+	alternar.toggled.connect(func(aberto: bool):
+		_dossie_aberto = aberto
+		detalhes.visible = aberto)
+	if provas.is_empty():
+		var vazio := _label("As provas e deduções dos contratos do Círculo Rubro aparecem aqui.", 13, COR_SECUNDARIO)
+		vazio.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+		detalhes.add_child(vazio)
+		return
+	var origens := {}
+	var ordem := arco.duplicate()
+	for prova in provas.values():
+		var id := str(prova["missao"])
+		if not origens.has(id):
+			origens[id] = []
+		if id not in ordem:
+			ordem.append(id)
+		origens[id].append(prova)
+	for id in ordem:
+		if not origens.has(id):
+			continue
+		var origem := _label(str(por_id.get(id, {}).get("nome", id)), 12, COR_OURO, true)
+		origem.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+		detalhes.add_child(origem)
+		for prova in origens[id]:
+			var titulo_prova := _label(str(prova["titulo"]), 13, COR_TEXTO, true)
+			titulo_prova.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+			detalhes.add_child(titulo_prova)
+			var texto := _label(str(prova["texto"]), 13, COR_TEXTO)
+			texto.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+			detalhes.add_child(texto)
 
 
 func _cartao_missao(m: Dictionary, feitas: Array) -> void:

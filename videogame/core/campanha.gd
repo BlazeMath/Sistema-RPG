@@ -14,6 +14,7 @@ extends RefCounted
 
 const Personagem := preload("res://core/personagem.gd")
 const Itens := preload("res://core/itens.gd")
+const DossieGuilda := preload("res://core/dossie_guilda.gd")
 
 const ARQUIVO := "user://campanha.json"
 const COBRE_POR_PRATA := 10
@@ -43,10 +44,10 @@ const MISSOES := [
 		"texto": "Um combate simples contra goblins, para testar o grupo. Não paga nada."},
 ]
 
-## Ciclos da campanha. Os ciclos 2 a 4 são propostas de trama (sem missões prontas ainda).
+## Ciclos da campanha. Os ciclos 3 e 4 ainda estão em preparação.
 const CICLOS := [
 	{"numero": 1, "nome": "A Sombra de Pedravelha", "missoes": ["fazenda", "masmorra", "pantano"]},
-	{"numero": 2, "nome": "O Pão Podre (em preparação)", "missoes": []},
+	{"numero": 2, "nome": "O Círculo Rubro", "missoes": ["fase:investigacao_vau_cinzento", "fase:bandidos_cao_vermelho", "fase:baile_mascaras_prata"]},
 	{"numero": 3, "nome": "Os Sinos de Ferro (em preparação)", "missoes": []},
 	{"numero": 4, "nome": "O Coração que Não Dorme (em preparação)", "missoes": []},
 ]
@@ -78,7 +79,7 @@ static func carregar() -> Dictionary:
 
 
 static func _novos_dados() -> Dictionary:
-	return {"cobre": DINHEIRO_INICIAL, "feridas": {}, "concluidas": [], "nivel": 1, "desbloqueadas": [], "encomendas": []}
+	return {"cobre": DINHEIRO_INICIAL, "feridas": {}, "concluidas": [], "nivel": 1, "desbloqueadas": [], "encomendas": [], "dossie": {}}
 
 
 ## Campanhas de antes da 0.25 guardavam "ouro" na escala de uma prata (poção = 12).
@@ -88,11 +89,24 @@ static func _migrar(d: Dictionary) -> void:
 	d.erase("ouro")
 	if not d.has("encomendas"):
 		d["encomendas"] = []
+	# As fases do segundo ciclo já podiam ser vencidas como contratos do mural.
+	# A campanha do convidado recebe nível e fichas já atualizados do anfitrião.
+	var nivel_migrado := false
+	if not memoria and not d.get("ciclo_rubro_migrado", false):
+		d["ciclo_rubro_migrado"] = true
+		nivel_migrado = _atualizar_nivel_de_ciclos(d) != ""
+	DossieGuilda.atualizar(d)
+	if nivel_migrado and is_same(d, dados):
+		salvar()
 
 
 ## Dinheiro do grupo em cobre.
 static func dinheiro() -> int:
 	return int(carregar()["cobre"])
+
+
+static func dossie() -> Dictionary:
+	return carregar()["dossie"].duplicate(true)
 
 
 ## Mantido para o código antigo: dinheiro em cobre.
@@ -181,8 +195,13 @@ static func motivo_trancada(id: String) -> String:
 	var m := missao(id)
 	if m.is_empty():
 		return "missão desconhecida"
-	var feitas: Array = carregar()["concluidas"]
-	if id in carregar().get("desbloqueadas", []):
+	var estado := carregar()
+	var feitas: Array = estado["concluidas"]
+	if id in CICLOS[1]["missoes"]:
+		for r in CICLOS[0]["missoes"]:
+			if not r in feitas:
+				return "Termine antes: %s" % missao(r).get("nome", r)
+	elif id in estado.get("desbloqueadas", []):
 		return ""
 	for r in m.get("requer", []):
 		if not r in feitas:
@@ -191,33 +210,40 @@ static func motivo_trancada(id: String) -> String:
 
 
 static func ciclo_completo(numero: int) -> bool:
+	var feitas: Array = carregar()["concluidas"]
 	for c in CICLOS:
 		if int(c["numero"]) == numero:
-			if c["missoes"].is_empty():
-				return false
-			for id in c["missoes"]:
-				if not id in carregar()["concluidas"]:
-					return false
-			return true
+			return _missoes_completas(c["missoes"], feitas)
 	return false
+
+
+static func _missoes_completas(ids: Array, feitas: Array) -> bool:
+	return not ids.is_empty() and ids.all(func(id): return id in feitas)
 
 
 ## Sobe o nível do grupo quando um ciclo fecha. Devolve o texto (vazio se não subiu).
 static func _verificar_nivel() -> String:
+	return _atualizar_nivel_de_ciclos(dados if not dados.is_empty() else carregar())
+
+
+static func _atualizar_nivel_de_ciclos(estado: Dictionary) -> String:
 	var n := 1
+	var feitas: Array = estado.get("concluidas", [])
 	for c in CICLOS:
-		if ciclo_completo(int(c["numero"])):
-			n += 1
+		if not _missoes_completas(c["missoes"], feitas):
+			break
+		n += 1
 	n = mini(n, NIVEL_MAXIMO)
-	if n <= nivel():
+	if n <= int(estado.get("nivel", 1)):
 		return ""
-	dados["nivel"] = n
+	estado["nivel"] = n
 	var xp := int(XP_POR_NIVEL.get(n, 2 * n))
-	var fichas := Personagem.carregar_todos()
-	for f in fichas:
-		f["xp"] = maxi(int(f.get("xp", 2)), xp)
-		f["nivel_pacto"] = maxi(int(f.get("nivel_pacto", 1)), n)   # Bruxo: o pacto acompanha o nível do grupo
-	Personagem.salvar_todos(fichas)
+	if not memoria or Personagem.memoria is Array:
+		var fichas := Personagem.carregar_todos()
+		for f in fichas:
+			f["xp"] = maxi(int(f.get("xp", 2)), xp)
+			f["nivel_pacto"] = maxi(int(f.get("nivel_pacto", 1)), n)   # Bruxo: o pacto acompanha o nível do grupo
+		Personagem.salvar_todos(fichas)
 	return "O GRUPO SOBE PARA O NÍVEL %d! Cada herói agora tem %d de XP para cartas de habilidade: escolha as novas em \"Heróis e grupo\"." % [n, xp]
 
 
@@ -264,6 +290,10 @@ static func registrar_fim(b, modo: String, vitoria: bool) -> String:
 		linhas.append(_entregar_encomendas())
 	if vitoria and not modo in dados["concluidas"]:
 		dados["concluidas"].append(modo)
+	if vitoria:
+		var arquivadas := DossieGuilda.registrar_vitoria(dados, b, modo)
+		if arquivadas > 0:
+			linhas.append("Dossiê da guilda: %d novo(s) registro(s)." % arquivadas)
 	var fichas := Personagem.carregar_todos()
 	for u in b.herois():
 		var perdidas := {"exilio": u.baralho.exilio.size(), "descarte": 0}

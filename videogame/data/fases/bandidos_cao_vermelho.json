@@ -10,7 +10,7 @@
 	"luz_ambiente": 0,
 	"abertura": {
 		"titulo": "O Cão Vermelho",
-		"texto": "O bando do Cão Vermelho tomou o bairro dos curtumes: cobra pedágio, sequestra comerciantes e tem besteiros nos telhados. O conselho da cidade quer o capitão Ferrabrás, vivo ou morto. Os telhados são altos: quem está lá em cima vê tudo. Procurem outros caminhos."
+		"texto": "O livro de Orsk aponta que o curtume do capitão Ferrabrás enviava beladona a Vau-Cinzento. O bando do Cão Vermelho controla o bairro, cobra pedágio e mantém comerciantes reféns. Encontrem Ferrabrás e descubram quem pagava pelas remessas. Os besteiros vigiam dos telhados, então procurem outros caminhos."
 	},
 	"chao": {
 		"10,4": "madeira",
@@ -2456,7 +2456,7 @@
 							"efeitos": []
 						},
 						"sucesso": {
-							"texto": "Pratas, joias roubadas e uma carta do Círculo Rubro pedindo o bairro \"limpo até a lua nova\".",
+							"texto": "Pratas, joias roubadas e uma carta do Círculo Rubro. Além dos pagamentos a Ferrabrás, ela reserva uma remessa ao Barão Corvin para a noite do baile.",
 							"efeitos": [
 								{
 									"tipo": "ouro",
@@ -2579,15 +2579,15 @@
 		"tipo": "derrotar_alvos",
 		"texto": "Derrote o capitão Ferrabrás, no curtume.",
 		"rodadas": 8,
-		"mensagem_vitoria": "Ferrabrás cai entre os tonéis do curtume. Os bandidos que sobram largam as armas. O bairro vai demorar a esquecer o cheiro de couro e medo, mas hoje à noite as janelas vão abrir."
+		"mensagem_vitoria": "Ferrabrás cai entre os tonéis do curtume. A carta do capitão registra pagamentos do Círculo Rubro e indica uma nova remessa reservada ao Barão Corvin para o baile da Duquesa Lisandra."
 	},
 	"campanha": {
 		"no_mural": true,
-		"texto": "Invasão (nível sugerido 2–3). O bando do Cão Vermelho domina o bairro dos curtumes. Besteiros nos telhados, reféns no depósito e um capitão que não foge de briga.",
+		"texto": "Invasão (nível sugerido 2). Os carregamentos de Orsk vieram do curtume de Ferrabrás. Entrem no bairro do Cão Vermelho e descubram quem paga o bando.",
 		"recompensa": 220,
 		"requer": [
 			"fase:investigacao_vau_cinzento"
 		],
-		"ciclo": 0
+		"ciclo": 2
 	}
 }

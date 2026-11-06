@@ -2,7 +2,7 @@
 ## Esquerda: modos de jogo. Direita: o grupo (até 4 heróis salvos), com os heróis prontos.
 extends Control
 
-const VERSAO := "0.31"
+const VERSAO := "0.32"
 const Sessao := preload("res://core/sessao.gd")
 const Personagem := preload("res://core/personagem.gd")
 const Prontos := preload("res://core/herois_prontos.gd")

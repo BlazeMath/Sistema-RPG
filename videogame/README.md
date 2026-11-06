@@ -2,14 +2,16 @@
 
 RPG tático de grupo, em turnos e visão isométrica, baseado no Sistema 21: o vinte-e-um substitui os dados e o baralho do personagem é a sua vida.
 
-**Versão de teste 0.31.** O Invocador pode comandar criaturas e enfrentar as invocações da Torre de Vaelor. Veja [as regras desta versão](DECISOES_0.31.md).
+**Versão de teste 0.32.** O segundo ciclo da campanha liga Vau-Cinzento, Cão Vermelho e o Baile. O mural da guilda guarda os registros da investigação. Veja [as regras desta versão](DECISOES_0.32.md).
 
 ## Como jogar
 
-1. Extraia o `Sistema21_Windows_v0.31.zip` e abra o `Sistema21.exe`.
+1. Extraia o `Sistema21_Windows_v0.32.zip` e abra o `Sistema21.exe`.
 2. Na primeira vez, o Windows pode mostrar "O Windows protegeu o computador" (o jogo ainda não tem assinatura digital). Clique em **Mais informações → Executar assim mesmo**.
 3. No menu, abra **Criar e escolher heróis**: monte os heróis (as perícias ficam no botão **Escolher perícias**) e salve cada um. Marque até 4 na lista **Grupo**.
 4. Volte ao menu e escolha **Missão**, **Exploração**, **X1** ou **Arena**. Cada herói do grupo joga no seu turno.
+
+Para jogar o **Círculo Rubro** como campanha, entre na Vila de Pedravelha e aceite os contratos no **Mural da Guilda**. Depois de fechar o primeiro ciclo, o mural libera Vau-Cinzento. O **Dossiê da guilda** guarda os registros dos contratos vencidos.
 
 Para experimentar a investigação, use **Adicionar heróis prontos**, selecione **Elisa (pronta)** no grupo e abra **Vau-Cinzento: o poço envenenado** no menu. As opções do Investigador aparecem junto às interações da missão. O botão **Registro (L)** guarda as evidências e deduções. **Usar Pistas**, no menu Ações, troca fichas pessoais por cartas na mão.
 

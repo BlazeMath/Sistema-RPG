@@ -10,7 +10,7 @@
 	"luz_ambiente": 0,
 	"abertura": {
 		"titulo": "Vau-Cinzento",
-		"texto": "Três moradores morreram depois de beber do poço da praça. A guarda diz que foi febre do rio, mas o prefeito não acredita e pagou a guilda em segredo. Converse com as pessoas, examine o que for estranho e junte pelo menos três pistas antes de acusar alguém. Ninguém aqui sabe quem vocês são."
+		"texto": "Três moradores morreram depois de beber do poço da praça. A guarda culpa uma febre do rio, mas o prefeito chamou a guilda em segredo. Investiguem o que chegou à água e quem lucra com as famílias deixando o vau. Conversem com os moradores e juntem pelo menos três pistas antes de acusar alguém."
 	},
 	"chao": {
 		"29,0": "agua",
@@ -2970,15 +2970,17 @@
 		"tipo": "derrotar_alvos",
 		"texto": "Descubra quem envenenou o poço (3 pistas) e detenha o culpado.",
 		"rodadas": 8,
-		"mensagem_vitoria": "O capitão Orsk cai. No armazém, caixas de beladona e um livro com o selo do Círculo Rubro: a cidade estava sendo esvaziada para o culto comprar as terras do vau."
+		"mensagem_vitoria": "O capitão Orsk cai. Seu livro de contas registra pagamentos do Círculo Rubro para esvaziar o vau e comprar suas terras. As caixas de beladona no armazém vieram do curtume do capitão Ferrabrás, no Bairro do Cão Vermelho."
 	},
 	"campanha": {
 		"no_mural": true,
-		"texto": "Investigação (nível sugerido 1–2). Três mortos em Vau-Cinzento depois de beber do poço. O prefeito suspeita de alguém de dentro. Muita conversa, pouca luta até a hora certa.",
+		"texto": "Investigação (nível sugerido 2). Três mortos em Vau-Cinzento depois de beber do poço. O prefeito pede à guilda que descubra quem está por trás do envenenamento.",
 		"recompensa": 150,
 		"requer": [
-			"fazenda"
+			"fazenda",
+			"masmorra",
+			"pantano"
 		],
-		"ciclo": 0
+		"ciclo": 2
 	}
 }

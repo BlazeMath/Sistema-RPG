@@ -10,7 +10,7 @@
 	"luz_ambiente": 1,
 	"abertura": {
 		"titulo": "O Baile das Máscaras de Prata",
-		"texto": "A Duquesa Lisandra dá o baile do equinócio. A guilda recebeu um bilhete sem assinatura: \"Ela não vai ver o amanhecer. O brinde é à meia-noite.\" Vocês entraram como convidados, de máscara. Ninguém pode saber quem vocês são até a hora certa. Conversem, observem e juntem três pistas antes de acusar alguém diante da Duquesa. Uma acusação errada ofende a casa."
+		"texto": "Os registros de Ferrabrás ligam uma remessa ao Barão Corvin, convidado do baile do equinócio. A guilda também recebeu um bilhete sem assinatura: \"Ela não vai ver o amanhecer. O brinde é à meia-noite.\" Vocês entraram de máscara. Conversem e juntem três pistas no baile antes de acusar alguém diante da Duquesa Lisandra."
 	},
 	"chao": {
 		"1,17": "grama",
@@ -2358,15 +2358,15 @@
 		"tipo": "derrotar_alvos",
 		"texto": "Descubra o envenenador (3 pistas), desmascare-o no brinde e detenha-o.",
 		"rodadas": 8,
-		"mensagem_vitoria": "O Barão Corvin cai sobre o próprio frasco de veneno, que se quebra no mármore. A Duquesa tira a máscara, olha para vocês e ergue a taça vazia: \"À guilda. Que tenha sempre gente melhor do que os meus convidados.\""
+		"mensagem_vitoria": "O Barão Corvin cai e seu frasco de veneno se quebra no mármore. A carta que ele trazia promete devolver suas terras em troca da morte da Duquesa e traz o selo do Círculo Rubro. Lisandra ergue a taça vazia e brinda à guilda."
 	},
 	"campanha": {
 		"no_mural": true,
-		"texto": "Social (nível sugerido 3). Um bilhete anônimo avisa que a Duquesa Lisandra vai morrer no brinde do baile de máscaras. Vão como convidados. Conversa vale mais que espada, até a meia-noite.",
+		"texto": "Social (nível sugerido 2). As remessas de Ferrabrás apontam para um convidado do baile. Um bilhete avisa que a Duquesa Lisandra corre perigo no brinde da meia-noite.",
 		"recompensa": 250,
 		"requer": [
 			"fase:bandidos_cao_vermelho"
 		],
-		"ciclo": 0
+		"ciclo": 2
 	}
 }

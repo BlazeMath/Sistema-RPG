@@ -173,11 +173,11 @@ def descanso_em(f, id, nome, x, y, texto, tipo=None):
 def investigacao():
     f = Fase("investigacao_vau_cinzento", "Vau-Cinzento: o poço envenenado", 34, 24, "pedra",
              "Investigação numa cidadezinha: três mortos depois de beber do poço da praça. Converse, procure pistas e descubra quem envenenou a água.")
-    f.f["abertura"] = {"titulo": "Vau-Cinzento", "texto": "Três moradores morreram depois de beber do poço da praça. A guarda diz que foi febre do rio, mas o prefeito não acredita e pagou a guilda em segredo. Converse com as pessoas, examine o que for estranho e junte pelo menos três pistas antes de acusar alguém. Ninguém aqui sabe quem vocês são."}
+    f.f["abertura"] = {"titulo": "Vau-Cinzento", "texto": "Três moradores morreram depois de beber do poço da praça. A guarda culpa uma febre do rio, mas o prefeito chamou a guilda em segredo. Investiguem o que chegou à água e quem lucra com as famílias deixando o vau. Conversem com os moradores e juntem pelo menos três pistas antes de acusar alguém."}
     f.f["objetivo"] = {"tipo": "derrotar_alvos", "texto": "Descubra quem envenenou o poço (3 pistas) e detenha o culpado.", "rodadas": 8,
-                       "mensagem_vitoria": "O capitão Orsk cai. No armazém, caixas de beladona e um livro com o selo do Círculo Rubro: a cidade estava sendo esvaziada para o culto comprar as terras do vau."}
-    f.f["campanha"].update({"texto": "Investigação (nível sugerido 1–2). Três mortos em Vau-Cinzento depois de beber do poço. O prefeito suspeita de alguém de dentro. Muita conversa, pouca luta até a hora certa.",
-                            "recompensa": 150, "requer": ["fazenda"]})
+                       "mensagem_vitoria": "O capitão Orsk cai. Seu livro de contas registra pagamentos do Círculo Rubro para esvaziar o vau e comprar suas terras. As caixas de beladona no armazém vieram do curtume do capitão Ferrabrás, no Bairro do Cão Vermelho."}
+    f.f["campanha"].update({"texto": "Investigação (nível sugerido 2). Três mortos em Vau-Cinzento depois de beber do poço. O prefeito pede à guilda que descubra quem está por trás do envenenamento.",
+                            "recompensa": 150, "requer": ["fazenda", "masmorra", "pantano"], "ciclo": 2})
     # ruas de pedra; o rio a leste
     f.ret_chao(29, 0, 33, 23, "agua")
     f.ret_chao(26, 0, 28, 23, "madeira")   # cais
@@ -400,11 +400,11 @@ def zumbis():
 def bandidos():
     f = Fase("bandidos_cao_vermelho", "O Bairro do Cão Vermelho", 38, 26, "pedra",
              "Invadam um bairro tomado por bandidos: becos, telhados com besteiros e o curtume onde o capitão se esconde. Dá para entrar lutando, pelos esgotos ou comprando um informante.")
-    f.f["abertura"] = {"titulo": "O Cão Vermelho", "texto": "O bando do Cão Vermelho tomou o bairro dos curtumes: cobra pedágio, sequestra comerciantes e tem besteiros nos telhados. O conselho da cidade quer o capitão Ferrabrás, vivo ou morto. Os telhados são altos: quem está lá em cima vê tudo. Procurem outros caminhos."}
+    f.f["abertura"] = {"titulo": "O Cão Vermelho", "texto": "O livro de Orsk aponta que o curtume do capitão Ferrabrás enviava beladona a Vau-Cinzento. O bando do Cão Vermelho controla o bairro, cobra pedágio e mantém comerciantes reféns. Encontrem Ferrabrás e descubram quem pagava pelas remessas. Os besteiros vigiam dos telhados, então procurem outros caminhos."}
     f.f["objetivo"] = {"tipo": "derrotar_alvos", "texto": "Derrote o capitão Ferrabrás, no curtume.", "rodadas": 8,
-                       "mensagem_vitoria": "Ferrabrás cai entre os tonéis do curtume. Os bandidos que sobram largam as armas. O bairro vai demorar a esquecer o cheiro de couro e medo, mas hoje à noite as janelas vão abrir."}
-    f.f["campanha"].update({"texto": "Invasão (nível sugerido 2–3). O bando do Cão Vermelho domina o bairro dos curtumes. Besteiros nos telhados, reféns no depósito e um capitão que não foge de briga.",
-                            "recompensa": 220, "requer": ["fase:investigacao_vau_cinzento"]})
+                       "mensagem_vitoria": "Ferrabrás cai entre os tonéis do curtume. A carta do capitão registra pagamentos do Círculo Rubro e indica uma nova remessa reservada ao Barão Corvin para o baile da Duquesa Lisandra."}
+    f.f["campanha"].update({"texto": "Invasão (nível sugerido 2). Os carregamentos de Orsk vieram do curtume de Ferrabrás. Entrem no bairro do Cão Vermelho e descubram quem paga o bando.",
+                            "recompensa": 220, "requer": ["fase:investigacao_vau_cinzento"], "ciclo": 2})
     # blocos e telhados (nível 1 = telhado andável)
     for (x0, y0, x1, y1) in [(0, 0, 8, 3), (0, 22, 9, 25), (13, 22, 20, 25), (24, 0, 29, 3)]:
         f.bloco(x0, y0, x1, y1)
@@ -493,7 +493,7 @@ def bandidos():
             feito=("Quatro comerciantes saem tremendo. O mais velho aperta a mão de vocês: \"O curtume tem uma porta pelo esgoto. E o Ferrabrás tem medo de fogo.\" Eles juntam o que tinham para pagar.", [abrir([(23, 6)]), ouro(30), lore("Os reféns contam que o curtume tem entrada pelo esgoto.")]))])
     f.interacao("bau_curtume", "Baú do capitão", 35, 10, "O baú do bando, com cadeado de bronze.", [
         opc("abrir", "Abrir (Ladinagem + Destreza)", teste=["Ladinagem", "destreza"],
-            sucesso=("Pratas, joias roubadas e uma carta do Círculo Rubro pedindo o bairro \"limpo até a lua nova\".", [ouro(45), item("mascara_do_impostor"), lore("O Círculo Rubro também pagava Ferrabrás.")]),
+            sucesso=("Pratas, joias roubadas e uma carta do Círculo Rubro. Além dos pagamentos a Ferrabrás, ela reserva uma remessa ao Barão Corvin para a noite do baile.", [ouro(45), item("mascara_do_impostor"), lore("O Círculo Rubro também pagava Ferrabrás.")]),
             falha=("A fechadura é boa demais.",), uma_vez=False)])
     f.interacao("tonel", "Tonéis de óleo de curtume", 29, 10, "Tonéis de óleo para amaciar couro. Inflamáveis.", [
         opc("derrubar", "Derrubar e incendiar (Atletismo + Força)", teste=["Atletismo", "forca"],
@@ -511,11 +511,11 @@ def baile():
              "Missão social: infiltrados num baile de máscaras, converse com os convidados, use perícias sociais e descubra quem quer envenenar a Duquesa no brinde da meia-noite.")
     f.f["escuro"] = True
     f.f["luz_ambiente"] = 1
-    f.f["abertura"] = {"titulo": "O Baile das Máscaras de Prata", "texto": "A Duquesa Lisandra dá o baile do equinócio. A guilda recebeu um bilhete sem assinatura: \"Ela não vai ver o amanhecer. O brinde é à meia-noite.\" Vocês entraram como convidados, de máscara. Ninguém pode saber quem vocês são até a hora certa. Conversem, observem e juntem três pistas antes de acusar alguém diante da Duquesa. Uma acusação errada ofende a casa."}
+    f.f["abertura"] = {"titulo": "O Baile das Máscaras de Prata", "texto": "Os registros de Ferrabrás ligam uma remessa ao Barão Corvin, convidado do baile do equinócio. A guilda também recebeu um bilhete sem assinatura: \"Ela não vai ver o amanhecer. O brinde é à meia-noite.\" Vocês entraram de máscara. Conversem e juntem três pistas no baile antes de acusar alguém diante da Duquesa Lisandra."}
     f.f["objetivo"] = {"tipo": "derrotar_alvos", "texto": "Descubra o envenenador (3 pistas), desmascare-o no brinde e detenha-o.", "rodadas": 8,
-                       "mensagem_vitoria": "O Barão Corvin cai sobre o próprio frasco de veneno, que se quebra no mármore. A Duquesa tira a máscara, olha para vocês e ergue a taça vazia: \"À guilda. Que tenha sempre gente melhor do que os meus convidados.\""}
-    f.f["campanha"].update({"texto": "Social (nível sugerido 3). Um bilhete anônimo avisa que a Duquesa Lisandra vai morrer no brinde do baile de máscaras. Vão como convidados. Conversa vale mais que espada, até a meia-noite.",
-                            "recompensa": 250, "requer": ["fase:bandidos_cao_vermelho"]})
+                       "mensagem_vitoria": "O Barão Corvin cai e seu frasco de veneno se quebra no mármore. A carta que ele trazia promete devolver suas terras em troca da morte da Duquesa e traz o selo do Círculo Rubro. Lisandra ergue a taça vazia e brinda à guilda."}
+    f.f["campanha"].update({"texto": "Social (nível sugerido 2). As remessas de Ferrabrás apontam para um convidado do baile. Um bilhete avisa que a Duquesa Lisandra corre perigo no brinde da meia-noite.",
+                            "recompensa": 250, "requer": ["fase:bandidos_cao_vermelho"], "ciclo": 2})
     # salão (piso de pedra polida = padrão), jardins, adega, corredor de serviço e varanda
     f.paredes(0, 0, 31, 23)
     f.ret_chao(1, 17, 30, 22, "grama")      # jardim ao sul
