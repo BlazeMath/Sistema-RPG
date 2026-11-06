@@ -23,10 +23,11 @@ static func _carregar() -> void:
 		_habilidades.append_array(bruxo.get("habilidades", []))
 		_herois.append_array(bruxo.get("herois", []))
 		_pactos = bruxo.get("pactos", {})
-	var investigador = JSON.parse_string(FileAccess.get_file_as_string("res://data/cartas/investigador.json"))
-	if investigador is Dictionary:
-		_habilidades.append_array(investigador.get("habilidades", []))
-		_herois.append_array(investigador.get("herois", []))
+	for nome in ["investigador", "invocador"]:
+		var classe = JSON.parse_string(FileAccess.get_file_as_string("res://data/cartas/%s.json" % nome))
+		if classe is Dictionary:
+			_habilidades.append_array(classe.get("habilidades", []))
+			_herois.append_array(classe.get("herois", []))
 	for c in _habilidades:
 		for l in c.get("lados", []):
 			if l != null and CORRECOES.has(l.get("nome", "")):
@@ -60,6 +61,18 @@ static func heroi(id: String) -> Dictionary:
 		if c["id"] == id:
 			return c
 	return {}
+
+
+## O perfil da face A é estruturado no catálogo e visível junto às regras da carta.
+static func texto_lado(lado: Dictionary) -> Variant:
+	var texto = lado["texto"]
+	if not lado.has("criatura"):
+		return texto
+	var perfil: Dictionary = lado["criatura"]
+	var ataque: Dictionary = perfil["ataque"]
+	return "%s\n\nVida %d · Velocidade %d · Resistência %d\nAtaque: %s (%s). %s\nHabilidade própria: %s" % [
+		texto, perfil["vida"], perfil["velocidade"], perfil["resistencia"], ataque["tipo"], ataque["formula"],
+		ataque["efeito_adicional"], perfil["habilidade"]]
 
 
 static func slug(texto: String) -> String:

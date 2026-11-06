@@ -1,0 +1,2 @@
+# Preserva o conteúdo e os checksums dos JSONs de origem.
+*.json -text whitespace=cr-at-eol

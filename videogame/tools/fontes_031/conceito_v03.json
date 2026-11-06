@@ -1,0 +1,198 @@
+{
+  "classe": "Invocador",
+  "heroi": "Adestrador Arcano",
+  "versao": 3,
+  "data": "2026-11-01",
+  "estado": "modelo_basico_de_criaturas_esclarecido_pelo_autor",
+  "conceito_confirmado": {
+    "descricao": "Um mestre em invocar criaturas e controlá-las.",
+    "subplano": "Suas invocações podem ser armazenadas em um subplano e chamadas dele.",
+    "limite_fadiga_heroi": 3,
+    "ativada_original_sem_custo_fadiga_escrito": true,
+    "ativada_original_sem_virada_escrita": true
+  },
+  "carta_original_do_autor": {
+    "nome": "Adestrador Arcano",
+    "passiva": "As suas invocações podem ser armazenados em um subplano e você pode invocalos",
+    "ativada": "Ação: A sua invocação move 2 quadrados e faz um ataque.",
+    "desencadeada": "Quando invocar, a criatura chamada pode se mover igual a velocidade dele.",
+    "critico": "Todos as suas invocações recuperam toda a vida",
+    "limite_fadiga": 3
+  },
+  "redacao_editorial_do_heroi": {
+    "estado": "redacao_com_acoes_de_chamada_confirmadas",
+    "nome": "Adestrador Arcano",
+    "limite_fadiga": 3,
+    "passiva": {
+      "nome_sugerido": "Refúgio Extraplanar",
+      "texto": "Você pode manter suas invocações em um subplano. Ação Padrão: chame uma criatura disponível desse subplano para o campo ou recolha uma invocação sua de volta a ele.",
+      "acao_para_chamar": "Padrão",
+      "acao_para_recolher": "Padrão",
+      "custo_fadiga_para_chamar": 0,
+      "estado_custos": "acao_confirmada_sem_custo_de_fadiga_adicional_escrito",
+      "observacao": "Os custos e condições próprios das cartas de criatura ainda serão desenvolvidos; não foi inventado um custo adicional universal."
+    },
+    "ativada": {
+      "nome_sugerido": "Ordem de Assalto",
+      "acao_editorial": "Padrão",
+      "custo_fadiga_editorial": 0,
+      "vira_carta": false,
+      "texto": "Ação Padrão: escolha uma de suas invocações em campo. Ela pode se mover até 2 quadrados e depois fazer um ataque.",
+      "alcance_do_comando": null,
+      "observacoes": [
+        "A redação interpreta Ação como Padrão, seguindo a categoria normal do sistema.",
+        "O autor não escreveu custo de Fadiga ou virada: não foram acrescentados.",
+        "O movimento é normal, não Ajustar; não ganha imunidade a ataques de oportunidade por esta redação.",
+        "A ativada concede um ataque à criatura escolhida, não uma ação Padrão genérica nem ataque a todas as invocações.",
+        "O limite 3 é capacidade e não foi convertido em custo de uso.",
+        "A criatura usa a ação concedida pelo comando, não um turno autônomo. Movimento e ataque partem dela, com seus alvos válidos."
+      ]
+    },
+    "desencadeada": {
+      "nome_sugerido": "Entrada em Movimento",
+      "texto": "Quando você chamar uma invocação para o campo, essa criatura pode se mover até sua própria Velocidade.",
+      "observacao": "Recolher uma criatura não é chamá-la. O efeito concede movimento, não ataque ou turno completo."
+    },
+    "critico": {
+      "nome_sugerido": "Renovar os Vínculos",
+      "texto": "Todas as suas invocações recuperam toda a Vida.",
+      "alcance": null,
+      "inclui_invocacoes_guardadas": null,
+      "recupera_invocacoes_derrotadas": null,
+      "regra_de_cura_ou_exilio": null,
+      "observacoes": [
+        "O texto original foi preservado sem restringir alcance ou número de invocações.",
+        "Recuperar Vida não foi interpretado automaticamente como remover condições ou ressuscitar.",
+        "O modelo de Vida das criaturas e a relação de sua cura com o exílio do core precisam ser definidos; não foi copiada a regra de reparo de objetos do Escultor.",
+        "A morte e a recuperação de uma carta pelo lado B foram confirmadas separadamente. O texto do crítico ainda não autoriza expressamente virar cartas derrotadas de volta ao A."
+      ]
+    }
+  },
+  "direcao_de_design_proposta": {
+    "estado": "propostas_para_desenvolvimento_nao_aprovadas",
+    "identidade": "Vínculo com criaturas persistentes, escolha de quem entra em campo e coordenação de ataques e posições.",
+    "modelo_de_acoes_recomendado": "O autor confirmou usar as ações do Invocador. Falta detalhar comandos de movimento, ataques especiais e Reações nas cartas das criaturas.",
+    "modelo_de_resolucao_recomendado": "O autor confirmou golpes pelo baralho do Invocador. A Vida é numérica na carta da criatura; o dano confirmado usa diferença + bônus, sem atributo adicional.",
+    "continuidade_recomendada": "Subplano narrativo; A é criatura, B é recuperação. O verso básico proíbe virada normal e Preparo e permite Medicina pela raridade ou poção de cura da mesma raridade. Especiais podem ter outro verso.",
+    "diferenca_do_escultor": "Ambos podem ter cartas que viram por perda da criação. O Invocador se distingue por criaturas chamadas de um subplano, com movimentação e perfis próprios, coordenadas por suas ações; o Escultor cria e opera obras de Esquemáticas.",
+    "diferenca_do_capitao": "O Capitão coordena aliados e seus recursos. O Invocador coordena criaturas vinculadas e administra quem permanece em campo.",
+    "caminhos_possiveis": [
+      {
+        "nome": "Mestre de Feras",
+        "foco": "Aprofundar um companheiro, suas funções e operações."
+      },
+      {
+        "nome": "Comandante de Horda",
+        "foco": "Coordenar várias criaturas e dividir comandos entre elas."
+      },
+      {
+        "nome": "Vínculos Planares",
+        "foco": "Chamar, recolher, trocar criaturas e preparar suas entradas."
+      }
+    ],
+    "acesso_inicial": "O catálogo propõe aprender as cartas de criatura por XP, como habilidades da classe. Não acrescenta um ganho grátis de criatura à passiva do herói.",
+    "recursos": "Não foi inventada uma ficha de Comando, Essência ou Domínio. Ações, posicionamento, Vida e cartas vinculadas podem sustentar o motor."
+  },
+  "perguntas_ja_enviadas": [
+    {
+      "tema": "Ações das criaturas",
+      "pergunta": "As invocações terão turnos e ações próprios ou agirão usando as ações do Invocador?",
+      "opcoes": [
+        "Usam as ações do Invocador",
+        "Têm turnos próprios"
+      ],
+      "resposta": "Usam as ações do Invocador"
+    },
+    {
+      "tema": "Chamar e recolher",
+      "pergunta": "Como você imagina o custo para chamar ou recolher uma criatura do subplano?",
+      "opcoes": [
+        "Uma ação de Movimento",
+        "Uma Ação Padrão",
+        "Definido pela carta de cada criatura"
+      ],
+      "resposta": "Uma Ação Padrão"
+    },
+    {
+      "tema": "Continuidade de Vida e condições",
+      "pergunta": "Ao recolher e chamar novamente, a criatura mantém a Vida e as condições que tinha?",
+      "opcoes": [
+        "Mantém Vida e condições",
+        "Recupera a Vida ao ser chamada",
+        "Recupera a Vida no subplano com o tempo"
+      ],
+      "resposta": "As criaturas vão ser habilidades, quando uma morre, a carta vira, e do outro lado precisa fazer ações como descansar ou fazer teste de cura para virar a carta de volta para o lado da criatura, nesse lado ela pode ser invocada novamente",
+      "observacao": "Define o ciclo de morte e recuperação; não confirma separadamente se recolher uma criatura viva restaura Vida ou condições."
+    }
+  ],
+  "pontos_para_etapas_seguintes": [
+    "Definir tabela de dificuldade de Medicina; as seis criaturas atuais têm raridade comum confirmada.",
+    "Reavaliar Reatar a Centelha e Resgatar Vínculos diante do verso básico confirmado.",
+    "Revisar os cinco ajustes pontuais da revisão v01, ainda não aplicados.",
+    "Definir quais efeitos são Magias, sem tratar toda habilidade arcana como Magia automaticamente."
+  ],
+  "fontes_locais_consultadas": [
+    "SISTEMA_21_Estado_do_Projeto.md",
+    "classes/dados/capitao/conceito_v01.json",
+    "regras/decisoes_capitao_para_manual_2026-10-29.json",
+    "classes/dados/artifice/regras_esculturas_propostas_v02.json"
+  ],
+  "confirmacoes_posteriores_do_autor": {
+    "data": "2026-10-31",
+    "acoes": "As invocações usam as ações do Invocador.",
+    "resposta_literal_acoes": "Usam as ações do Invocador",
+    "chamar_e_recolher": "Chamar ou recolher uma criatura custa uma Ação Padrão.",
+    "resposta_literal_chamada": "Uma Ação Padrão",
+    "cartas_de_criatura": "As criaturas são habilidades. Quando uma morre, sua carta vira. O outro lado pede ações, como descanso ou teste de cura, que permitem voltar ao lado da criatura e invocá-la novamente.",
+    "resposta_literal_cartas": "As criaturas vão ser habilidades, quando uma morre, a carta vira, e do outro lado precisa fazer ações como descansar ou fazer teste de cura para virar a carta de volta para o lado da criatura, nesse lado ela pode ser invocada novamente"
+  },
+  "modelo_cartas_de_criatura": {
+    "confirmado": {
+      "tipo": "Habilidades em cartas A/B.",
+      "lado_criatura": "Disponível para ser invocada.",
+      "morte": "Quando a criatura morre, a carta vira.",
+      "lado_recuperacao": "Possui ações como descansar ou fazer teste de cura que permitem voltar ao lado da criatura.",
+      "retorno": "Depois de voltar ao lado da criatura, ela pode ser invocada novamente.",
+      "acoes": "Usa as ações do Invocador.",
+      "cartas_individuais": "Uma criatura e sua recuperação por carta; Lobo e Ave não são faces opostas.",
+      "vida": "A Vida é numérica e está na carta da criatura.",
+      "dano": "Diferença + bônus, sem atributo adicional.",
+      "golpes_usam_baralho_do_invocador": true,
+      "subplano": "Recurso narrativo; não criar subsistema próprio de pausa temporal, cura ou condições.",
+      "lado_A": "Criatura",
+      "lado_B": "Recuperação",
+      "virada_normal_permitida": false,
+      "preparo_permitido": false,
+      "recuperacao_basica": [
+        "Passar em teste de Medicina com dificuldade definida pela raridade da criatura.",
+        "Usar uma poção de cura da mesma raridade da criatura."
+      ],
+      "recuperacao_especial": "Uma criatura especial pode ter outro procedimento de recuperação no verso.",
+      "raridade_das_seis_criaturas_atuais": "Comum"
+    },
+    "redacoes_e_interpretacoes_propostas": [
+      "O subplano é narrativo e não cria um subsistema de pausa de condições ou cura.",
+      "Medicina e o uso da poção conservam as ações normais desses procedimentos.",
+      "As seis criaturas atuais usam o verso básico; uma criatura designada especial poderá ter outro verso."
+    ],
+    "ainda_nao_decidido": [
+      "Dificuldade de Medicina para cada raridade; as seis criaturas atuais são comuns.",
+      "Adaptação de Imobilizar e Atordoamento aos comandos, se necessária.",
+      "Quais habilidades específicas podem excepcionar o procedimento básico de recuperação."
+    ]
+  },
+  "exemplos_do_autor": "classes/dados/invocador/exemplos_criaturas_autor_v01.json",
+  "catalogo_proposto": "classes/dados/invocador/habilidades_v03.json",
+  "confirmacoes_exemplos": {
+    "cartas_separadas": "Lobo e Ave são duas cartas, cada uma com verso de recuperação.",
+    "vida": "As criaturas têm Vida própria numérica, como os exemplos 25 e 14.",
+    "formula_dano": "Diferença dos testes + bônus indicado; não soma atributo.",
+    "habilidade_lobo": "A ficha adicional de Ferimento é só durante um ataque do próprio Lobo.",
+    "nao_informado_pelo_autor": [
+      "XP das criaturas",
+      "Limites de Fadiga das cartas de criatura",
+      "Dificuldades de Medicina por raridade"
+    ]
+  },
+  "decisoes_criaturas_basicas": "classes/dados/invocador/decisoes_criaturas_basicas_2026-11-01.json"
+}

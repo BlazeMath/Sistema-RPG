@@ -415,10 +415,16 @@ func _montar_cartas() -> void:
 	for ent in [ficha["classe"], ficha["raca"], ficha["background"]]:
 		_cartas_caixa.add_child(_label("Cartas de habilidade · " + ent, 13, COR_OURO, true))
 		var grupo_atual := ""
-		for c in Catalogo.habilidades_de(ent):
+		var cartas := Catalogo.habilidades_de(ent)
+		if ent == "Invocador":
+			cartas = cartas.filter(func(c): return c.get("tipo") != "criatura") + cartas.filter(func(c): return c.get("tipo") == "criatura")
+		for c in cartas:
 			if c["lados"][0] != null and c["lados"][1] == null and (c["lados"][0].get("texto") == null or str(c["lados"][0]["texto"]).strip_edges() == ""):
 				continue   # cartas sem texto (Saltério de Cura, Grimório da Chama Sagrada): não existem na lista final
 			var grupo: String = c["grupo"].split("(")[0].strip_edges()
+			var criatura: bool = c.get("tipo") == "criatura"
+			if criatura:
+				grupo = "Criaturas vinculadas"
 			if grupo != grupo_atual and ent == ficha["classe"]:
 				grupo_atual = grupo
 				_cartas_caixa.add_child(_label("  " + grupo, 12, COR_SECUNDARIO))
@@ -428,12 +434,14 @@ func _montar_cartas() -> void:
 			var b = c["lados"][1]
 			if c["meia_carta"]:
 				cb.text = "%s  (meia carta)" % a["nome"]
+			elif criatura:
+				cb.text = "%s · %s  (%d XP)" % [a["nome"], c["raridade"], c["xp"]]
 			else:
 				cb.text = "%s ↔ %s  (%d XP)" % [a["nome"], b["nome"] if b != null else "—", c["xp"]]
 			if not prog:
 				cb.text += "  (não programada)"
 			var nota := Efeitos.nota_carta(c)
-			cb.tooltip_text = "Lado A · %s (fadiga %s)\n%s%s%s" % [a["nome"], str(a["limite_fadiga"]), a["texto"],
+			cb.tooltip_text = "Lado A · %s (fadiga %s)\n%s%s%s" % [a["nome"], str(a["limite_fadiga"]), Catalogo.texto_lado(a),
 				("\n\nLado B · %s (fadiga %s)\n%s" % [b["nome"], str(b["limite_fadiga"]), b["texto"]]) if b != null and not c["meia_carta"] else
 				"\n\nMeia carta: escolha duas; juntas formam uma carta de 1 XP com um lado de cada.",
 				("\n\nObs.: " + nota) if nota != "" else ""]

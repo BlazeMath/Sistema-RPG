@@ -1,0 +1,1135 @@
+{
+ "fonte": "classes/dados/invocador/habilidades_v04.json",
+ "fonte_sha256": "852921c12d788b59b925fc2dad5480cc07423fb0e20631f71a3046b3d35db1da",
+ "fonte_heroi": "classes/dados/invocador/conceito_v03.json",
+ "fonte_heroi_sha256": "753f3fa4b9999db42055be7d49d40c8b0495d0282dccae3c030a21ca4868a062",
+ "versao": 4,
+ "estado": "cinco_ajustes_aprovados_aplicados",
+ "playtest_realizado": false,
+ "herois": [
+  {
+   "id": "classe.invocador.heroi.adestrador-arcano",
+   "fonte": "classe",
+   "entidade": "Invocador",
+   "nome": "Adestrador Arcano",
+   "descricao": "Invoca criaturas vinculadas e coordena seu movimento e seus ataques.",
+   "passiva": "Você pode manter suas invocações em um subplano. Ação Padrão: chame uma criatura disponível desse subplano para o campo ou recolha uma invocação sua de volta a ele.",
+   "ativada": "Ação Padrão: escolha uma de suas invocações em campo. Ela pode se mover até 2 quadrados e depois fazer um ataque.",
+   "desencadeada": "Quando você chamar uma invocação para o campo, essa criatura pode se mover até sua própria Velocidade.",
+   "critico": "Todas as suas invocações recuperam toda a Vida.",
+   "custo_ativada": {
+    "fadiga": 0,
+    "acao": "padrao",
+    "foco": 0,
+    "outros": [],
+    "permanente": "",
+    "efeito": "escolha uma de suas invocações em campo. Ela pode se mover até 2 quadrados e depois fazer um ataque."
+   },
+   "limite_fadiga": 3
+  }
+ ],
+ "habilidades": [
+  {
+   "id": "classe.invocador.lobo-atroz",
+   "id_fonte": "IN-G01",
+   "fonte": "classe",
+   "entidade": "Invocador",
+   "grupo": "Mestre de Feras",
+   "tipo": "criatura",
+   "xp": 1,
+   "meia_carta": false,
+   "lados": [
+    {
+     "nome": "Lobo Atroz",
+     "texto": "3 de Fadiga nesta carta, Ação Padrão: chame Lobo Atroz do subplano para um espaço livre e conhecido em alcance curto. Use o ataque e a habilidade desta criatura, pagando as ações e os custos indicados. Se morrer, retire a criatura do campo e vire esta carta para a recuperação. A carta representa uma única criatura. Esta carta não pode ser virada pela ação normal de virar cartas ou por Preparo.",
+     "tags": [],
+     "limite_fadiga": 4,
+     "natureza": "Criatura",
+     "acao_fonte": "Padrão para chamar",
+     "custo": {
+      "fadiga": 3,
+      "acao": "padrao",
+      "foco": 0,
+      "outros": [],
+      "permanente": "",
+      "efeito": "chame Lobo Atroz do subplano para um espaço livre e conhecido em alcance curto. Use o ataque e a habilidade desta criatura, pagando as ações e os custos indicados. Se morrer, retire a criatura do campo e vire esta carta para a recuperação. A carta representa uma única criatura. Esta carta não pode ser virada pela ação normal de virar cartas ou por Preparo."
+     },
+     "criatura": {
+      "nome": "Lobo Atroz",
+      "vida": 25,
+      "velocidade": 4,
+      "resistencia": 0,
+      "fadiga_criar": 3,
+      "ataque": {
+       "tipo": "Corpo a corpo",
+       "bonus_dano": 3,
+       "formula": "diferença dos testes +3",
+       "efeito_adicional": "Se acertar, coloque 1 ficha de Sangramento no defensor."
+      },
+      "habilidade": "Antes de iniciar o teste de um ataque do próprio Lobo, você pode pagar 2 de Fadiga nesta carta para colocar 1 ficha de Ferimento no defensor. Não exige acerto e não concede outro ataque.",
+      "origem": "autor"
+     }
+    },
+    {
+     "nome": "Recuperar o Vínculo",
+     "texto": "Esta carta não pode ser virada pela ação normal de virar cartas ou por Preparo. Faça um teste de Medicina com a dificuldade de uma criatura comum, ainda a definir; se passar, vire esta carta para o lado A. Como alternativa, use uma poção de cura comum e vire esta carta para o lado A. Depois de voltar ao lado A, a criatura pode ser invocada novamente.",
+     "tags": [],
+     "limite_fadiga": 4,
+     "natureza": "Recuperação",
+     "acao_fonte": "Procedimento de Medicina ou ação indicada na poção",
+     "custo": {
+      "fadiga": 0,
+      "acao": null,
+      "foco": 0,
+      "outros": [],
+      "permanente": "",
+      "efeito": "Esta carta não pode ser virada pela ação normal de virar cartas ou por Preparo. Faça um teste de Medicina com a dificuldade de uma criatura comum, ainda a definir; se passar, vire esta carta para o lado A. Como alternativa, use uma poção de cura comum e vire esta carta para o lado A. Depois de voltar ao lado A, a criatura pode ser invocada novamente."
+     },
+     "dificuldade_medicina": null,
+     "dificuldade_medicina_referencia": "raridade_da_criatura",
+     "pocao_exigida": "Poção de cura comum"
+    }
+   ],
+   "raridade": "Comum",
+   "virada_normal_permitida": false,
+   "preparo_permitido": false,
+   "modelo_recuperacao": "basico_confirmado_pelo_autor"
+  },
+  {
+   "id": "classe.invocador.guardiao-quelonio",
+   "id_fonte": "IN-G02",
+   "fonte": "classe",
+   "entidade": "Invocador",
+   "grupo": "Mestre de Feras",
+   "tipo": "criatura",
+   "xp": 1,
+   "meia_carta": false,
+   "lados": [
+    {
+     "nome": "Guardião Quelônio",
+     "texto": "3 de Fadiga nesta carta, Ação Padrão: chame Guardião Quelônio do subplano para um espaço livre e conhecido em alcance curto. Use o ataque e a habilidade desta criatura, pagando as ações e os custos indicados. Se morrer, retire a criatura do campo e vire esta carta para a recuperação. A carta representa uma única criatura. Esta carta não pode ser virada pela ação normal de virar cartas ou por Preparo.",
+     "tags": [],
+     "limite_fadiga": 4,
+     "natureza": "Criatura",
+     "acao_fonte": "Padrão para chamar",
+     "custo": {
+      "fadiga": 3,
+      "acao": "padrao",
+      "foco": 0,
+      "outros": [],
+      "permanente": "",
+      "efeito": "chame Guardião Quelônio do subplano para um espaço livre e conhecido em alcance curto. Use o ataque e a habilidade desta criatura, pagando as ações e os custos indicados. Se morrer, retire a criatura do campo e vire esta carta para a recuperação. A carta representa uma única criatura. Esta carta não pode ser virada pela ação normal de virar cartas ou por Preparo."
+     },
+     "criatura": {
+      "nome": "Guardião Quelônio",
+      "vida": 28,
+      "velocidade": 2,
+      "resistencia": 2,
+      "fadiga_criar": 3,
+      "ataque": {
+       "tipo": "Corpo a corpo",
+       "bonus_dano": 2,
+       "formula": "diferença dos testes +2",
+       "efeito_adicional": ""
+      },
+      "habilidade": "1 de Fadiga nesta carta e sua Reação: quando você, ou um aliado que esteja adjacente ao Guardião, for sofrer dano de um ataque, com o Guardião em alcance médio de você, depois das reduções e antes da perda de Vida, transfira até 4 desse dano para ele, sem ultrapassar sua Vida atual. Não aplique a Resistência do Guardião novamente à transferência. O restante fica no alvo original.",
+      "origem": "proposta_nova"
+     }
+    },
+    {
+     "nome": "Recuperar o Vínculo",
+     "texto": "Esta carta não pode ser virada pela ação normal de virar cartas ou por Preparo. Faça um teste de Medicina com a dificuldade de uma criatura comum, ainda a definir; se passar, vire esta carta para o lado A. Como alternativa, use uma poção de cura comum e vire esta carta para o lado A. Depois de voltar ao lado A, a criatura pode ser invocada novamente.",
+     "tags": [],
+     "limite_fadiga": 4,
+     "natureza": "Recuperação",
+     "acao_fonte": "Procedimento de Medicina ou ação indicada na poção",
+     "custo": {
+      "fadiga": 0,
+      "acao": null,
+      "foco": 0,
+      "outros": [],
+      "permanente": "",
+      "efeito": "Esta carta não pode ser virada pela ação normal de virar cartas ou por Preparo. Faça um teste de Medicina com a dificuldade de uma criatura comum, ainda a definir; se passar, vire esta carta para o lado A. Como alternativa, use uma poção de cura comum e vire esta carta para o lado A. Depois de voltar ao lado A, a criatura pode ser invocada novamente."
+     },
+     "dificuldade_medicina": null,
+     "dificuldade_medicina_referencia": "raridade_da_criatura",
+     "pocao_exigida": "Poção de cura comum"
+    }
+   ],
+   "raridade": "Comum",
+   "virada_normal_permitida": false,
+   "preparo_permitido": false,
+   "modelo_recuperacao": "basico_confirmado_pelo_autor"
+  },
+  {
+   "id": "classe.invocador.ataque-guiado",
+   "id_fonte": "IN-G03",
+   "fonte": "classe",
+   "entidade": "Invocador",
+   "grupo": "Mestre de Feras",
+   "tipo": "geral",
+   "xp": 1,
+   "meia_carta": false,
+   "lados": [
+    {
+     "nome": "Ataque Guiado",
+     "texto": "1 de Fadiga, Ação Padrão: escolha uma invocação sua em campo em alcance médio. Ela pode mover até 2 quadrados e fazer um ataque. Se esse ataque já causar dano, acrescente 2 a ele no acerto. Pague os custos de habilidades da criatura usadas nesse ataque. O bônus não transforma um ataque sem dano em um ataque de dano.",
+     "tags": [],
+     "limite_fadiga": 3,
+     "natureza": "Ativada",
+     "acao_fonte": "Padrão",
+     "custo": {
+      "fadiga": 1,
+      "acao": "padrao",
+      "foco": 0,
+      "outros": [],
+      "permanente": "",
+      "efeito": "escolha uma invocação sua em campo em alcance médio. Ela pode mover até 2 quadrados e fazer um ataque. Se esse ataque já causar dano, acrescente 2 a ele no acerto. Pague os custos de habilidades da criatura usadas nesse ataque. O bônus não transforma um ataque sem dano em um ataque de dano."
+     }
+    },
+    {
+     "nome": "Vínculo Restaurador",
+     "texto": "1 de Fadiga, exile 1 carta do seu descarte e Ação Padrão: uma invocação sua em campo em alcance curto recupera até 6 de Vida, sem exceder a máxima. A criatura precisa estar viva. Não remove condições, não recupera uma carta derrotada e não devolve cartas ao baralho do Invocador.",
+     "tags": [],
+     "limite_fadiga": 3,
+     "natureza": "Ativada",
+     "acao_fonte": "Padrão",
+     "custo": {
+      "fadiga": 1,
+      "acao": "padrao",
+      "foco": 0,
+      "outros": [],
+      "permanente": "",
+      "efeito": "uma invocação sua em campo em alcance curto recupera até 6 de Vida, sem exceder a máxima. A criatura precisa estar viva. Não remove condições, não recupera uma carta derrotada e não devolve cartas ao baralho do Invocador."
+     }
+    }
+   ]
+  },
+  {
+   "id": "classe.invocador.aranha-de-ambar",
+   "id_fonte": "IN-G04",
+   "fonte": "classe",
+   "entidade": "Invocador",
+   "grupo": "Comandante de Horda",
+   "tipo": "criatura",
+   "xp": 1,
+   "meia_carta": false,
+   "lados": [
+    {
+     "nome": "Aranha de Âmbar",
+     "texto": "2 de Fadiga nesta carta, Ação Padrão: chame Aranha de Âmbar do subplano para um espaço livre e conhecido em alcance curto. Use o ataque e a habilidade desta criatura, pagando as ações e os custos indicados. Se morrer, retire a criatura do campo e vire esta carta para a recuperação. A carta representa uma única criatura. Esta carta não pode ser virada pela ação normal de virar cartas ou por Preparo.",
+     "tags": [],
+     "limite_fadiga": 3,
+     "natureza": "Criatura",
+     "acao_fonte": "Padrão para chamar",
+     "custo": {
+      "fadiga": 2,
+      "acao": "padrao",
+      "foco": 0,
+      "outros": [],
+      "permanente": "",
+      "efeito": "chame Aranha de Âmbar do subplano para um espaço livre e conhecido em alcance curto. Use o ataque e a habilidade desta criatura, pagando as ações e os custos indicados. Se morrer, retire a criatura do campo e vire esta carta para a recuperação. A carta representa uma única criatura. Esta carta não pode ser virada pela ação normal de virar cartas ou por Preparo."
+     },
+     "criatura": {
+      "nome": "Aranha de Âmbar",
+      "vida": 16,
+      "velocidade": 4,
+      "resistencia": 0,
+      "fadiga_criar": 2,
+      "ataque": {
+       "tipo": "Corpo a corpo",
+       "bonus_dano": 1,
+       "formula": "diferença dos testes +1",
+       "efeito_adicional": ""
+      },
+      "habilidade": "1 de Fadiga nesta carta: ao realizar um ataque, a Aranha pode usar uma teia em alcance curto no lugar do ataque corpo a corpo. Faça o teste de ataque e a defesa normais. No acerto, coloque 1 ficha de Imobilizar no alvo, sem causar dano. É um ataque especial, não um ataque adicional.",
+      "origem": "proposta_nova"
+     }
+    },
+    {
+     "nome": "Recuperar o Vínculo",
+     "texto": "Esta carta não pode ser virada pela ação normal de virar cartas ou por Preparo. Faça um teste de Medicina com a dificuldade de uma criatura comum, ainda a definir; se passar, vire esta carta para o lado A. Como alternativa, use uma poção de cura comum e vire esta carta para o lado A. Depois de voltar ao lado A, a criatura pode ser invocada novamente.",
+     "tags": [],
+     "limite_fadiga": 3,
+     "natureza": "Recuperação",
+     "acao_fonte": "Procedimento de Medicina ou ação indicada na poção",
+     "custo": {
+      "fadiga": 0,
+      "acao": null,
+      "foco": 0,
+      "outros": [],
+      "permanente": "",
+      "efeito": "Esta carta não pode ser virada pela ação normal de virar cartas ou por Preparo. Faça um teste de Medicina com a dificuldade de uma criatura comum, ainda a definir; se passar, vire esta carta para o lado A. Como alternativa, use uma poção de cura comum e vire esta carta para o lado A. Depois de voltar ao lado A, a criatura pode ser invocada novamente."
+     },
+     "dificuldade_medicina": null,
+     "dificuldade_medicina_referencia": "raridade_da_criatura",
+     "pocao_exigida": "Poção de cura comum"
+    }
+   ],
+   "raridade": "Comum",
+   "virada_normal_permitida": false,
+   "preparo_permitido": false,
+   "modelo_recuperacao": "basico_confirmado_pelo_autor"
+  },
+  {
+   "id": "classe.invocador.salamandra-de-cinzas",
+   "id_fonte": "IN-G05",
+   "fonte": "classe",
+   "entidade": "Invocador",
+   "grupo": "Comandante de Horda",
+   "tipo": "criatura",
+   "xp": 1,
+   "meia_carta": false,
+   "lados": [
+    {
+     "nome": "Salamandra de Cinzas",
+     "texto": "3 de Fadiga nesta carta, Ação Padrão: chame Salamandra de Cinzas do subplano para um espaço livre e conhecido em alcance curto. Use o ataque e a habilidade desta criatura, pagando as ações e os custos indicados. Se morrer, retire a criatura do campo e vire esta carta para a recuperação. A carta representa uma única criatura. Esta carta não pode ser virada pela ação normal de virar cartas ou por Preparo.",
+     "tags": [],
+     "limite_fadiga": 4,
+     "natureza": "Criatura",
+     "acao_fonte": "Padrão para chamar",
+     "custo": {
+      "fadiga": 3,
+      "acao": "padrao",
+      "foco": 0,
+      "outros": [],
+      "permanente": "",
+      "efeito": "chame Salamandra de Cinzas do subplano para um espaço livre e conhecido em alcance curto. Use o ataque e a habilidade desta criatura, pagando as ações e os custos indicados. Se morrer, retire a criatura do campo e vire esta carta para a recuperação. A carta representa uma única criatura. Esta carta não pode ser virada pela ação normal de virar cartas ou por Preparo."
+     },
+     "criatura": {
+      "nome": "Salamandra de Cinzas",
+      "vida": 18,
+      "velocidade": 3,
+      "resistencia": 1,
+      "fadiga_criar": 3,
+      "ataque": {
+       "tipo": "Corpo a corpo",
+       "bonus_dano": 2,
+       "formula": "diferença dos testes +2",
+       "efeito_adicional": ""
+      },
+      "habilidade": "2 de Fadiga nesta carta: ao realizar um ataque, a Salamandra pode projetar chamas numa área de 2×2 em alcance curto, em vez do golpe corpo a corpo. Faça um único teste de ataque contra a defesa de cada criatura na área, incluindo aliados. Em cada acerto, cause dano de Fogo igual à diferença +1 e coloque 1 ficha de Fogo. O ataque de chamas usa +1, não o +2 do ataque básico, e não é um ataque adicional.",
+      "origem": "proposta_nova"
+     }
+    },
+    {
+     "nome": "Recuperar o Vínculo",
+     "texto": "Esta carta não pode ser virada pela ação normal de virar cartas ou por Preparo. Faça um teste de Medicina com a dificuldade de uma criatura comum, ainda a definir; se passar, vire esta carta para o lado A. Como alternativa, use uma poção de cura comum e vire esta carta para o lado A. Depois de voltar ao lado A, a criatura pode ser invocada novamente.",
+     "tags": [],
+     "limite_fadiga": 4,
+     "natureza": "Recuperação",
+     "acao_fonte": "Procedimento de Medicina ou ação indicada na poção",
+     "custo": {
+      "fadiga": 0,
+      "acao": null,
+      "foco": 0,
+      "outros": [],
+      "permanente": "",
+      "efeito": "Esta carta não pode ser virada pela ação normal de virar cartas ou por Preparo. Faça um teste de Medicina com a dificuldade de uma criatura comum, ainda a definir; se passar, vire esta carta para o lado A. Como alternativa, use uma poção de cura comum e vire esta carta para o lado A. Depois de voltar ao lado A, a criatura pode ser invocada novamente."
+     },
+     "dificuldade_medicina": null,
+     "dificuldade_medicina_referencia": "raridade_da_criatura",
+     "pocao_exigida": "Poção de cura comum"
+    }
+   ],
+   "raridade": "Comum",
+   "virada_normal_permitida": false,
+   "preparo_permitido": false,
+   "modelo_recuperacao": "basico_confirmado_pelo_autor"
+  },
+  {
+   "id": "classe.invocador.cerco-coordenado",
+   "id_fonte": "IN-G06",
+   "fonte": "classe",
+   "entidade": "Invocador",
+   "grupo": "Comandante de Horda",
+   "tipo": "geral",
+   "xp": 1,
+   "meia_carta": false,
+   "lados": [
+    {
+     "nome": "Cerco Coordenado",
+     "texto": "2 de Fadiga, Ação Padrão: escolha duas invocações suas diferentes em campo em alcance médio. Cada uma pode mover até 1 quadrado e fazer um ataque contra o mesmo inimigo, se for um alvo válido a partir de sua posição. Resolva uma criatura por vez e revalide o alvo antes da seguinte. Pague os custos próprios dos ataques. Se o alvo deixar de ser válido, a segunda não troca para outro alvo por esta ordem. Não concede dois ataques à mesma criatura.",
+     "tags": [],
+     "limite_fadiga": 3,
+     "natureza": "Ativada",
+     "acao_fonte": "Padrão",
+     "custo": {
+      "fadiga": 2,
+      "acao": "padrao",
+      "foco": 0,
+      "outros": [],
+      "permanente": "",
+      "efeito": "escolha duas invocações suas diferentes em campo em alcance médio. Cada uma pode mover até 1 quadrado e fazer um ataque contra o mesmo inimigo, se for um alvo válido a partir de sua posição. Resolva uma criatura por vez e revalide o alvo antes da seguinte. Pague os custos próprios dos ataques. Se o alvo deixar de ser válido, a segunda não troca para outro alvo por esta ordem. Não concede dois ataques à mesma criatura."
+     }
+    },
+    {
+     "nome": "Cobertura da Matilha",
+     "texto": "1 de Fadiga, Reação: quando um inimigo declarar um ataque de alvo único contra você ou um aliado em alcance médio, antes dos testes, escolha uma invocação sua em campo adjacente ao alvo original. Ela passa a ser o alvo se também for um alvo válido para esse ataque, respeitando origem, alcance e visão. Resolva uma única defesa da criatura. Não move a invocação, não reduz o dano e não interfere em ataques de área.",
+     "tags": [],
+     "limite_fadiga": 3,
+     "natureza": "Ativada",
+     "acao_fonte": "Reação",
+     "custo": {
+      "fadiga": 1,
+      "acao": "reacao",
+      "foco": 0,
+      "outros": [],
+      "permanente": "",
+      "efeito": "quando um inimigo declarar um ataque de alvo único contra você ou um aliado em alcance médio, antes dos testes, escolha uma invocação sua em campo adjacente ao alvo original. Ela passa a ser o alvo se também for um alvo válido para esse ataque, respeitando origem, alcance e visão. Resolva uma única defesa da criatura. Não move a invocação, não reduz o dano e não interfere em ataques de área."
+     }
+    }
+   ]
+  },
+  {
+   "id": "classe.invocador.ave-de-rapina",
+   "id_fonte": "IN-G07",
+   "fonte": "classe",
+   "entidade": "Invocador",
+   "grupo": "Vínculos Planares",
+   "tipo": "criatura",
+   "xp": 1,
+   "meia_carta": false,
+   "lados": [
+    {
+     "nome": "Ave de Rapina",
+     "texto": "2 de Fadiga nesta carta, Ação Padrão: chame Ave de Rapina do subplano para um espaço livre e conhecido em alcance curto. Use o ataque e a habilidade desta criatura, pagando as ações e os custos indicados. Se morrer, retire a criatura do campo e vire esta carta para a recuperação. A carta representa uma única criatura. Esta carta não pode ser virada pela ação normal de virar cartas ou por Preparo.",
+     "tags": [],
+     "limite_fadiga": 3,
+     "natureza": "Criatura",
+     "acao_fonte": "Padrão para chamar",
+     "custo": {
+      "fadiga": 2,
+      "acao": "padrao",
+      "foco": 0,
+      "outros": [],
+      "permanente": "",
+      "efeito": "chame Ave de Rapina do subplano para um espaço livre e conhecido em alcance curto. Use o ataque e a habilidade desta criatura, pagando as ações e os custos indicados. Se morrer, retire a criatura do campo e vire esta carta para a recuperação. A carta representa uma única criatura. Esta carta não pode ser virada pela ação normal de virar cartas ou por Preparo."
+     },
+     "criatura": {
+      "nome": "Ave de Rapina",
+      "vida": 14,
+      "velocidade": 6,
+      "resistencia": 2,
+      "fadiga_criar": 2,
+      "ataque": {
+       "tipo": "Corpo a corpo",
+       "bonus_dano": 2,
+       "formula": "diferença dos testes +2",
+       "efeito_adicional": ""
+      },
+      "habilidade": "A ave ignora impedimento, obstáculos e terreno difícil.",
+      "origem": "autor"
+     }
+    },
+    {
+     "nome": "Recuperar o Vínculo",
+     "texto": "Esta carta não pode ser virada pela ação normal de virar cartas ou por Preparo. Faça um teste de Medicina com a dificuldade de uma criatura comum, ainda a definir; se passar, vire esta carta para o lado A. Como alternativa, use uma poção de cura comum e vire esta carta para o lado A. Depois de voltar ao lado A, a criatura pode ser invocada novamente.",
+     "tags": [],
+     "limite_fadiga": 3,
+     "natureza": "Recuperação",
+     "acao_fonte": "Procedimento de Medicina ou ação indicada na poção",
+     "custo": {
+      "fadiga": 0,
+      "acao": null,
+      "foco": 0,
+      "outros": [],
+      "permanente": "",
+      "efeito": "Esta carta não pode ser virada pela ação normal de virar cartas ou por Preparo. Faça um teste de Medicina com a dificuldade de uma criatura comum, ainda a definir; se passar, vire esta carta para o lado A. Como alternativa, use uma poção de cura comum e vire esta carta para o lado A. Depois de voltar ao lado A, a criatura pode ser invocada novamente."
+     },
+     "dificuldade_medicina": null,
+     "dificuldade_medicina_referencia": "raridade_da_criatura",
+     "pocao_exigida": "Poção de cura comum"
+    }
+   ],
+   "raridade": "Comum",
+   "virada_normal_permitida": false,
+   "preparo_permitido": false,
+   "modelo_recuperacao": "basico_confirmado_pelo_autor"
+  },
+  {
+   "id": "classe.invocador.espirito-lanterneiro",
+   "id_fonte": "IN-G08",
+   "fonte": "classe",
+   "entidade": "Invocador",
+   "grupo": "Vínculos Planares",
+   "tipo": "criatura",
+   "xp": 1,
+   "meia_carta": false,
+   "lados": [
+    {
+     "nome": "Espírito Lanterneiro",
+     "texto": "2 de Fadiga nesta carta, Ação Padrão: chame Espírito Lanterneiro do subplano para um espaço livre e conhecido em alcance curto. Use o ataque e a habilidade desta criatura, pagando as ações e os custos indicados. Se morrer, retire a criatura do campo e vire esta carta para a recuperação. A carta representa uma única criatura. Esta carta não pode ser virada pela ação normal de virar cartas ou por Preparo.",
+     "tags": [],
+     "limite_fadiga": 3,
+     "natureza": "Criatura",
+     "acao_fonte": "Padrão para chamar",
+     "custo": {
+      "fadiga": 2,
+      "acao": "padrao",
+      "foco": 0,
+      "outros": [],
+      "permanente": "",
+      "efeito": "chame Espírito Lanterneiro do subplano para um espaço livre e conhecido em alcance curto. Use o ataque e a habilidade desta criatura, pagando as ações e os custos indicados. Se morrer, retire a criatura do campo e vire esta carta para a recuperação. A carta representa uma única criatura. Esta carta não pode ser virada pela ação normal de virar cartas ou por Preparo."
+     },
+     "criatura": {
+      "nome": "Espírito Lanterneiro",
+      "vida": 12,
+      "velocidade": 4,
+      "resistencia": 1,
+      "fadiga_criar": 2,
+      "ataque": {
+       "tipo": "À distância, alcance curto",
+       "bonus_dano": 1,
+       "formula": "diferença dos testes +1",
+       "efeito_adicional": "O dano deste ataque é Radiante."
+      },
+      "habilidade": "1 de Fadiga nesta carta e sua Reação: antes das cartas iniciais de um teste de defesa seu ou de um aliado em alcance curto do Espírito, o defensor tem +1 no limite desse teste. O Espírito precisa estar em campo em alcance médio de você. Não soma ao resultado da defesa e não concede uma Reação à criatura.",
+      "origem": "proposta_nova"
+     }
+    },
+    {
+     "nome": "Recuperar o Vínculo",
+     "texto": "Esta carta não pode ser virada pela ação normal de virar cartas ou por Preparo. Faça um teste de Medicina com a dificuldade de uma criatura comum, ainda a definir; se passar, vire esta carta para o lado A. Como alternativa, use uma poção de cura comum e vire esta carta para o lado A. Depois de voltar ao lado A, a criatura pode ser invocada novamente.",
+     "tags": [],
+     "limite_fadiga": 3,
+     "natureza": "Recuperação",
+     "acao_fonte": "Procedimento de Medicina ou ação indicada na poção",
+     "custo": {
+      "fadiga": 0,
+      "acao": null,
+      "foco": 0,
+      "outros": [],
+      "permanente": "",
+      "efeito": "Esta carta não pode ser virada pela ação normal de virar cartas ou por Preparo. Faça um teste de Medicina com a dificuldade de uma criatura comum, ainda a definir; se passar, vire esta carta para o lado A. Como alternativa, use uma poção de cura comum e vire esta carta para o lado A. Depois de voltar ao lado A, a criatura pode ser invocada novamente."
+     },
+     "dificuldade_medicina": null,
+     "dificuldade_medicina_referencia": "raridade_da_criatura",
+     "pocao_exigida": "Poção de cura comum"
+    }
+   ],
+   "raridade": "Comum",
+   "virada_normal_permitida": false,
+   "preparo_permitido": false,
+   "modelo_recuperacao": "basico_confirmado_pelo_autor"
+  },
+  {
+   "id": "classe.invocador.troca-de-invocacoes",
+   "id_fonte": "IN-G09",
+   "fonte": "classe",
+   "entidade": "Invocador",
+   "grupo": "Vínculos Planares",
+   "tipo": "geral",
+   "xp": 1,
+   "meia_carta": false,
+   "lados": [
+    {
+     "nome": "Troca de Invocações",
+     "texto": "1 de Fadiga, Ação Padrão: recolha uma invocação sua em campo em alcance médio e chame outra criatura disponível de uma carta diferente para um espaço livre conhecido em alcance curto. Pague a Fadiga de criação na carta da criatura chamada e seus demais custos, dispensando apenas as duas ações individuais de recolher e chamar. Não restaura Vida, condições ou custos da recolhida. A entrada é uma chamada normal para os gatilhos do herói.",
+     "tags": [],
+     "limite_fadiga": 3,
+     "natureza": "Ativada",
+     "acao_fonte": "Padrão",
+     "custo": {
+      "fadiga": 1,
+      "acao": "padrao",
+      "foco": 0,
+      "outros": [],
+      "permanente": "",
+      "efeito": "recolha uma invocação sua em campo em alcance médio e chame outra criatura disponível de uma carta diferente para um espaço livre conhecido em alcance curto. Pague a Fadiga de criação na carta da criatura chamada e seus demais custos, dispensando apenas as duas ações individuais de recolher e chamar. Não restaura Vida, condições ou custos da recolhida. A entrada é uma chamada normal para os gatilhos do herói."
+     }
+    },
+    {
+     "nome": "Passagem do Vínculo",
+     "texto": "2 de Fadiga, Ação Padrão: troque sua posição com a de uma invocação sua visível em alcance médio. Ambos precisam poder ser deslocados e caber no destino, com apoio adequado. Essa troca não provoca ataques de oportunidade. Não conta como recolher ou chamar, não cura e não concede ataque ou movimento de entrada.",
+     "tags": [],
+     "limite_fadiga": 3,
+     "natureza": "Ativada",
+     "acao_fonte": "Padrão",
+     "custo": {
+      "fadiga": 2,
+      "acao": "padrao",
+      "foco": 0,
+      "outros": [],
+      "permanente": "",
+      "efeito": "troque sua posição com a de uma invocação sua visível em alcance médio. Ambos precisam poder ser deslocados e caber no destino, com apoio adequado. Essa troca não provoca ataques de oportunidade. Não conta como recolher ou chamar, não cura e não concede ataque ou movimento de entrada."
+     }
+    }
+   ]
+  },
+  {
+   "id": "classe.invocador.comando-de-precisao",
+   "id_fonte": "IN-M01",
+   "fonte": "classe",
+   "entidade": "Invocador",
+   "grupo": "Práticas básicas",
+   "tipo": "geral",
+   "xp": 0.5,
+   "meia_carta": true,
+   "lados": [
+    {
+     "nome": "Comando de Precisão",
+     "texto": "1 de Fadiga, Reação: antes das cartas iniciais de um ataque de uma invocação sua em campo em alcance médio, ela recebe +1 no limite desse teste. O bônus não soma ao resultado nem aumenta seu dano. Não concede o ataque.",
+     "tags": [],
+     "limite_fadiga": 2,
+     "natureza": "Ativada",
+     "acao_fonte": "Reação",
+     "custo": {
+      "fadiga": 1,
+      "acao": "reacao",
+      "foco": 0,
+      "outros": [],
+      "permanente": "",
+      "efeito": "antes das cartas iniciais de um ataque de uma invocação sua em campo em alcance médio, ela recebe +1 no limite desse teste. O bônus não soma ao resultado nem aumenta seu dano. Não concede o ataque."
+     }
+    },
+    null
+   ]
+  },
+  {
+   "id": "classe.invocador.passo-do-vinculo",
+   "id_fonte": "IN-M02",
+   "fonte": "classe",
+   "entidade": "Invocador",
+   "grupo": "Práticas básicas",
+   "tipo": "geral",
+   "xp": 0.5,
+   "meia_carta": true,
+   "lados": [
+    {
+     "nome": "Passo do Vínculo",
+     "texto": "1 de Fadiga, Ação de Movimento: uma invocação sua em campo em alcance médio pode Ajustar 2. Respeite obstáculos e condições que impeçam deslocamento. Não concede ataque nem permite ignorar essas condições.",
+     "tags": [],
+     "limite_fadiga": 2,
+     "natureza": "Ativada",
+     "acao_fonte": "Movimento",
+     "custo": {
+      "fadiga": 1,
+      "acao": "movimento",
+      "foco": 0,
+      "outros": [],
+      "permanente": "",
+      "efeito": "uma invocação sua em campo em alcance médio pode Ajustar 2. Respeite obstáculos e condições que impeçam deslocamento. Não concede ataque nem permite ignorar essas condições."
+     }
+    },
+    null
+   ]
+  },
+  {
+   "id": "classe.invocador.sentidos-compartilhados",
+   "id_fonte": "IN-M03",
+   "fonte": "classe",
+   "entidade": "Invocador",
+   "grupo": "Práticas básicas",
+   "tipo": "geral",
+   "xp": 0.5,
+   "meia_carta": true,
+   "lados": [
+    {
+     "nome": "Sentidos Compartilhados",
+     "texto": "1 de Fadiga, Ação Padrão: escolha uma invocação sua em campo em alcance médio. Até o início de seu próximo turno, você vê e ouve a partir dela em vez de seu corpo, usando sua Percepção e os sentidos descritos para a criatura. Respeite obstáculos e ocultação. Seus próprios ataques e habilidades continuam partindo de seu corpo, salvo texto específico.",
+     "tags": [],
+     "limite_fadiga": 2,
+     "natureza": "Ativada",
+     "acao_fonte": "Padrão",
+     "custo": {
+      "fadiga": 1,
+      "acao": "padrao",
+      "foco": 0,
+      "outros": [],
+      "permanente": "",
+      "efeito": "escolha uma invocação sua em campo em alcance médio. Até o início de seu próximo turno, você vê e ouve a partir dela em vez de seu corpo, usando sua Percepção e os sentidos descritos para a criatura. Respeite obstáculos e ocultação. Seus próprios ataques e habilidades continuam partindo de seu corpo, salvo texto específico."
+     }
+    },
+    null
+   ]
+  },
+  {
+   "id": "classe.invocador.abrigar-companheiro",
+   "id_fonte": "IN-M04",
+   "fonte": "classe",
+   "entidade": "Invocador",
+   "grupo": "Práticas básicas",
+   "tipo": "geral",
+   "xp": 0.5,
+   "meia_carta": true,
+   "lados": [
+    {
+     "nome": "Abrigar Companheiro",
+     "texto": "1 de Fadiga, Reação: depois que um inimigo terminar de resolver um ataque contra uma invocação sua em alcance médio, se ela ainda estiver viva, recolha-a ao subplano sem gastar a Padrão normal. Não altera o ataque resolvido, não limpa condições, não restaura Vida e não recupera uma carta que já virou pela morte.",
+     "tags": [],
+     "limite_fadiga": 2,
+     "natureza": "Ativada",
+     "acao_fonte": "Reação",
+     "custo": {
+      "fadiga": 1,
+      "acao": "reacao",
+      "foco": 0,
+      "outros": [],
+      "permanente": "",
+      "efeito": "depois que um inimigo terminar de resolver um ataque contra uma invocação sua em alcance médio, se ela ainda estiver viva, recolha-a ao subplano sem gastar a Padrão normal. Não altera o ataque resolvido, não limpa condições, não restaura Vida e não recupera uma carta que já virou pela morte."
+     }
+    },
+    null
+   ]
+  },
+  {
+   "id": "classe.invocador.estudo-do-vinculo",
+   "id_fonte": "IN-M05",
+   "fonte": "classe",
+   "entidade": "Invocador",
+   "grupo": "Práticas básicas",
+   "tipo": "geral",
+   "xp": 0.5,
+   "meia_carta": true,
+   "lados": [
+    {
+     "nome": "Estudo do Vínculo",
+     "texto": "Passiva: uma vez por rodada, depois de chamar uma invocação pagando seus custos, faça scry 1 no seu baralho. Não compra nem descarta a carta e não gera teste ou crítico por causa da chamada.",
+     "tags": [],
+     "limite_fadiga": 0,
+     "natureza": "Passiva",
+     "acao_fonte": null,
+     "custo": {
+      "fadiga": 0,
+      "acao": null,
+      "foco": 0,
+      "outros": [],
+      "permanente": "",
+      "efeito": "Passiva: uma vez por rodada, depois de chamar uma invocação pagando seus custos, faça scry 1 no seu baralho. Não compra nem descarta a carta e não gera teste ou crítico por causa da chamada."
+     }
+    },
+    null
+   ]
+  },
+  {
+   "id": "classe.invocador.reatar-a-centelha",
+   "id_fonte": "IN-M06",
+   "fonte": "classe",
+   "entidade": "Invocador",
+   "grupo": "Práticas básicas",
+   "tipo": "geral",
+   "xp": 0.5,
+   "meia_carta": true,
+   "lados": [
+    {
+     "nome": "Reatar a Centelha",
+     "texto": "1 de Fadiga, 1 Foco seu e Ação de Movimento: vire uma carta sua de criatura do lado de recuperação para o lado da criatura. Dispense o procedimento do verso, sem receber seus benefícios adicionais. Isso deixa a criatura disponível; chamar continua exigindo sua ação e a Fadiga de criação.",
+     "tags": [],
+     "limite_fadiga": 2,
+     "natureza": "Ativada",
+     "acao_fonte": "Movimento",
+     "custo": {
+      "fadiga": 1,
+      "acao": "movimento",
+      "foco": 1,
+      "outros": [
+       "1 Foco"
+      ],
+      "permanente": "",
+      "efeito": "vire uma carta sua de criatura do lado de recuperação para o lado da criatura. Dispense o procedimento do verso, sem receber seus benefícios adicionais. Isso deixa a criatura disponível; chamar continua exigindo sua ação e a Fadiga de criação."
+     }
+    },
+    null
+   ]
+  },
+  {
+   "id": "classe.invocador.forma-exaltada",
+   "id_fonte": "IN-X01",
+   "fonte": "classe",
+   "entidade": "Invocador",
+   "grupo": "Maestrias",
+   "tipo": "geral",
+   "xp": 2,
+   "meia_carta": false,
+   "lados": [
+    {
+     "nome": "Forma Exaltada",
+     "texto": "2 de Fadiga, Ação Padrão: uma invocação sua em campo em alcance médio ganha +4 no dano de ataques que já causem dano e +2 de Resistência contra ataques até o fim da cena. Esta habilidade mantém uma beneficiária por vez; escolher outra encerra o benefício anterior. Reaplicar na mesma criatura substitui o efeito anterior, sem acumular os bônus. Não aumenta a Vida máxima nem transforma ataques sem dano em dano.",
+     "tags": [],
+     "limite_fadiga": 4,
+     "natureza": "Ativada",
+     "acao_fonte": "Padrão",
+     "custo": {
+      "fadiga": 2,
+      "acao": "padrao",
+      "foco": 0,
+      "outros": [],
+      "permanente": "",
+      "efeito": "uma invocação sua em campo em alcance médio ganha +4 no dano de ataques que já causem dano e +2 de Resistência contra ataques até o fim da cena. Esta habilidade mantém uma beneficiária por vez; escolher outra encerra o benefício anterior. Reaplicar na mesma criatura substitui o efeito anterior, sem acumular os bônus. Não aumenta a Vida máxima nem transforma ataques sem dano em dano."
+     }
+    },
+    {
+     "nome": "Instinto de Sobrevivência",
+     "texto": "2 de Fadiga, Reação: quando dano for reduzir a Vida de uma invocação sua em alcance médio a 0, depois das reduções e antes da perda de Vida, limite a perda para deixá-la com 1. Ela não morre por esse dano e sua carta não vira por esse evento. Depois de resolver o dano, você pode recolhê-la ao subplano sem outra ação. Não impede sacrifício, consumo, destruição sem dano ou Vida paga como custo.",
+     "tags": [],
+     "limite_fadiga": 4,
+     "natureza": "Ativada",
+     "acao_fonte": "Reação",
+     "custo": {
+      "fadiga": 2,
+      "acao": "reacao",
+      "foco": 0,
+      "outros": [],
+      "permanente": "",
+      "efeito": "quando dano for reduzir a Vida de uma invocação sua em alcance médio a 0, depois das reduções e antes da perda de Vida, limite a perda para deixá-la com 1. Ela não morre por esse dano e sua carta não vira por esse evento. Depois de resolver o dano, você pode recolhê-la ao subplano sem outra ação. Não impede sacrifício, consumo, destruição sem dano ou Vida paga como custo."
+     }
+    }
+   ]
+  },
+  {
+   "id": "classe.invocador.ordem-de-bando",
+   "id_fonte": "IN-X02",
+   "fonte": "classe",
+   "entidade": "Invocador",
+   "grupo": "Maestrias",
+   "tipo": "geral",
+   "xp": 2,
+   "meia_carta": false,
+   "lados": [
+    {
+     "nome": "Ordem de Bando",
+     "texto": "3 de Fadiga, Ação Padrão: escolha até 3 invocações suas diferentes em campo em alcance médio. Cada uma pode mover até 2 quadrados e fazer um ataque. Resolva uma por vez, com testes e alvos válidos próprios, pagando os custos de suas habilidades. Revalide a próxima depois da anterior. Não concede uma ação Padrão genérica nem permite escolher a mesma criatura mais de uma vez.",
+     "tags": [],
+     "limite_fadiga": 4,
+     "natureza": "Ativada",
+     "acao_fonte": "Padrão",
+     "custo": {
+      "fadiga": 3,
+      "acao": "padrao",
+      "foco": 0,
+      "outros": [],
+      "permanente": "",
+      "efeito": "escolha até 3 invocações suas diferentes em campo em alcance médio. Cada uma pode mover até 2 quadrados e fazer um ataque. Resolva uma por vez, com testes e alvos válidos próprios, pagando os custos de suas habilidades. Revalide a próxima depois da anterior. Não concede uma ação Padrão genérica nem permite escolher a mesma criatura mais de uma vez."
+     }
+    },
+    {
+     "nome": "Baluarte de Criaturas",
+     "texto": "2 de Fadiga, Ação Padrão: até 3 invocações suas diferentes em campo em alcance médio ganham 1 ficha de Guarda e 1 de Bloqueio cada, colocadas em suas próprias cartas. Essas fichas pertencem às criaturas beneficiadas: elas assumem o ataque e reduzem o dano, conforme o core. Não são fichas para proteger o corpo do Invocador sem que a criatura efetivamente intervenha. Elas não ganham turnos ou Reações próprios.",
+     "tags": [],
+     "limite_fadiga": 4,
+     "natureza": "Ativada",
+     "acao_fonte": "Padrão",
+     "custo": {
+      "fadiga": 2,
+      "acao": "padrao",
+      "foco": 0,
+      "outros": [],
+      "permanente": "",
+      "efeito": "até 3 invocações suas diferentes em campo em alcance médio ganham 1 ficha de Guarda e 1 de Bloqueio cada, colocadas em suas próprias cartas. Essas fichas pertencem às criaturas beneficiadas: elas assumem o ataque e reduzem o dano, conforme o core. Não são fichas para proteger o corpo do Invocador sem que a criatura efetivamente intervenha. Elas não ganham turnos ou Reações próprios."
+     }
+    }
+   ]
+  },
+  {
+   "id": "classe.invocador.convergencia-planar",
+   "id_fonte": "IN-X03",
+   "fonte": "classe",
+   "entidade": "Invocador",
+   "grupo": "Maestrias",
+   "tipo": "geral",
+   "xp": 2,
+   "meia_carta": false,
+   "lados": [
+    {
+     "nome": "Convergência Planar",
+     "texto": "2 de Fadiga, Ação Padrão: você pode recolher até 2 invocações suas em alcance médio e chamar até 2 criaturas disponíveis de cartas diferentes para espaços livres conhecidos em alcance curto. Pague integralmente a Fadiga de criação e demais custos de cada chamada nas cartas normais; dispense apenas as ações individuais. Cada entrada conta como chamada para seus gatilhos. Recolher não cura, limpa condições ou devolve custos.",
+     "tags": [],
+     "limite_fadiga": 4,
+     "natureza": "Ativada",
+     "acao_fonte": "Padrão",
+     "custo": {
+      "fadiga": 2,
+      "acao": "padrao",
+      "foco": 0,
+      "outros": [],
+      "permanente": "",
+      "efeito": "você pode recolher até 2 invocações suas em alcance médio e chamar até 2 criaturas disponíveis de cartas diferentes para espaços livres conhecidos em alcance curto. Pague integralmente a Fadiga de criação e demais custos de cada chamada nas cartas normais; dispense apenas as ações individuais. Cada entrada conta como chamada para seus gatilhos. Recolher não cura, limpa condições ou devolve custos."
+     }
+    },
+    {
+     "nome": "Resgatar Vínculos",
+     "texto": "2 de Fadiga, 1 Foco seu e Ação Padrão: vire até 3 cartas suas de criaturas diferentes do lado de recuperação para o lado da criatura, dispensando os procedimentos específicos de seus versos e seus benefícios adicionais. Elas ficam disponíveis no subplano; não entram em campo automaticamente. As chamadas seguintes pagam suas ações e custos de criação normais.",
+     "tags": [],
+     "limite_fadiga": 4,
+     "natureza": "Ativada",
+     "acao_fonte": "Padrão",
+     "custo": {
+      "fadiga": 2,
+      "acao": "padrao",
+      "foco": 1,
+      "outros": [
+       "1 Foco"
+      ],
+      "permanente": "",
+      "efeito": "vire até 3 cartas suas de criaturas diferentes do lado de recuperação para o lado da criatura, dispensando os procedimentos específicos de seus versos e seus benefícios adicionais. Elas ficam disponíveis no subplano; não entram em campo automaticamente. As chamadas seguintes pagam suas ações e custos de criação normais."
+     }
+    }
+   ]
+  },
+  {
+   "id": "classe.invocador.armas-do-vinculo",
+   "id_fonte": "IN-G10",
+   "fonte": "classe",
+   "entidade": "Invocador",
+   "grupo": "Domínio do Vínculo",
+   "tipo": "geral",
+   "xp": 1,
+   "meia_carta": false,
+   "lados": [
+    {
+     "nome": "Armas do Vínculo",
+     "texto": "1 de Fadiga, Ação Padrão: escolha uma carta sua de criatura com o lado da criatura ativo, em campo ou disponível no subplano. Faça um ataque básico dela a partir do seu corpo, usando o alcance, o bônus de dano e os efeitos de acerto escritos nesse ataque. O dano é a diferença dos testes + o bônus indicado, sem acrescentar atributo ou dano de arma. Você faz o ataque com seu baralho. Não chama a criatura nem copia sua habilidade especial; efeitos exclusivos de um ataque da própria criatura não são ativados.",
+     "tags": [],
+     "limite_fadiga": 3,
+     "natureza": "Ativada",
+     "acao_fonte": "Padrão",
+     "custo": {
+      "fadiga": 1,
+      "acao": "padrao",
+      "foco": 0,
+      "outros": [],
+      "permanente": "",
+      "efeito": "escolha uma carta sua de criatura com o lado da criatura ativo, em campo ou disponível no subplano. Faça um ataque básico dela a partir do seu corpo, usando o alcance, o bônus de dano e os efeitos de acerto escritos nesse ataque. O dano é a diferença dos testes + o bônus indicado, sem acrescentar atributo ou dano de arma. Você faz o ataque com seu baralho. Não chama a criatura nem copia sua habilidade especial; efeitos exclusivos de um ataque da própria criatura não são ativados."
+     }
+    },
+    {
+     "nome": "Canalizar Presença",
+     "texto": "1 de Fadiga, Ação de Movimento: escolha uma invocação sua em campo em alcance médio. A próxima habilidade de Invocador que você usar até o fim deste turno para escolher outro alvo ou uma área pode partir da posição dela, usando seus sentidos para verificar alcance e visão. Pague a ação e todos os custos dessa habilidade e use seus próprios testes e atributos. A criatura precisa continuar em campo em alcance médio no momento do uso. Isso não muda quem executa a habilidade, não concede ação à criatura e não se aplica a chamar, recolher, transportar objetos, trocar posições ou deslocar o seu próprio corpo.",
+     "tags": [],
+     "limite_fadiga": 3,
+     "natureza": "Ativada",
+     "acao_fonte": "Movimento",
+     "custo": {
+      "fadiga": 1,
+      "acao": "movimento",
+      "foco": 0,
+      "outros": [],
+      "permanente": "",
+      "efeito": "escolha uma invocação sua em campo em alcance médio. A próxima habilidade de Invocador que você usar até o fim deste turno para escolher outro alvo ou uma área pode partir da posição dela, usando seus sentidos para verificar alcance e visão. Pague a ação e todos os custos dessa habilidade e use seus próprios testes e atributos. A criatura precisa continuar em campo em alcance médio no momento do uso. Isso não muda quem executa a habilidade, não concede ação à criatura e não se aplica a chamar, recolher, transportar objetos, trocar posições ou deslocar o seu próprio corpo."
+     }
+    }
+   ]
+  },
+  {
+   "id": "classe.invocador.correntes-do-limiar",
+   "id_fonte": "IN-G11",
+   "fonte": "classe",
+   "entidade": "Invocador",
+   "grupo": "Selos do Limiar",
+   "tipo": "geral",
+   "xp": 1,
+   "meia_carta": false,
+   "lados": [
+    {
+     "nome": "Correntes do Limiar",
+     "texto": "1 de Fadiga, Ação Padrão: faça um ataque mágico contra um inimigo em alcance curto. Resolva ataque e defesa normalmente, usando apenas cartas. Se acertar, coloque 1 ficha de Imobilizar no defensor, sem causar dano.",
+     "tags": [],
+     "limite_fadiga": 3,
+     "natureza": "Ativada",
+     "acao_fonte": "Padrão",
+     "custo": {
+      "fadiga": 1,
+      "acao": "padrao",
+      "foco": 0,
+      "outros": [],
+      "permanente": "",
+      "efeito": "faça um ataque mágico contra um inimigo em alcance curto. Resolva ataque e defesa normalmente, usando apenas cartas. Se acertar, coloque 1 ficha de Imobilizar no defensor, sem causar dano."
+     }
+    },
+    {
+     "nome": "Recolher as Correntes",
+     "texto": "1 de Fadiga, Ação Padrão: escolha um inimigo em alcance curto com uma ficha de Imobilizar e retire 1 dessas fichas antes do teste. Faça um ataque mágico contra ele. Se acertar, cause dano igual à diferença dos testes + seu Espírito e puxe-o até 2 quadrados em sua direção, por espaços livres e com apoio, sem atravessar obstáculos. Esse deslocamento não provoca ataques de oportunidade e respeita efeitos que impeçam deslocamento forçado. Se errar, a ficha retirada não volta. A ficha pode ter vindo de qualquer fonte.",
+     "tags": [],
+     "limite_fadiga": 3,
+     "natureza": "Ativada",
+     "acao_fonte": "Padrão",
+     "custo": {
+      "fadiga": 1,
+      "acao": "padrao",
+      "foco": 0,
+      "outros": [],
+      "permanente": "",
+      "efeito": "escolha um inimigo em alcance curto com uma ficha de Imobilizar e retire 1 dessas fichas antes do teste. Faça um ataque mágico contra ele. Se acertar, cause dano igual à diferença dos testes + seu Espírito e puxe-o até 2 quadrados em sua direção, por espaços livres e com apoio, sem atravessar obstáculos. Esse deslocamento não provoca ataques de oportunidade e respeita efeitos que impeçam deslocamento forçado. Se errar, a ficha retirada não volta. A ficha pode ter vindo de qualquer fonte."
+     }
+    }
+   ]
+  },
+  {
+   "id": "classe.invocador.circulo-de-ancoragem",
+   "id_fonte": "IN-G12",
+   "fonte": "classe",
+   "entidade": "Invocador",
+   "grupo": "Selos do Limiar",
+   "tipo": "geral",
+   "xp": 1,
+   "meia_carta": false,
+   "lados": [
+    {
+     "nome": "Círculo de Ancoragem",
+     "texto": "2 de Fadiga, Ação Padrão: crie uma área de 2×2 num local conhecido em alcance curto. Até o início do seu próximo turno, uma criatura dentro dela não pode sair por teleporte, recolhimento ou passagem para outro plano. Isso vale para inimigos, aliados e suas invocações. A área permite movimento normal pelo mapa e não impede a morte. Esta carta mantém um único círculo; criar outro ou virar a carta encerra o anterior.",
+     "tags": [],
+     "limite_fadiga": 3,
+     "natureza": "Ativada",
+     "acao_fonte": "Padrão",
+     "custo": {
+      "fadiga": 2,
+      "acao": "padrao",
+      "foco": 0,
+      "outros": [],
+      "permanente": "",
+      "efeito": "crie uma área de 2×2 num local conhecido em alcance curto. Até o início do seu próximo turno, uma criatura dentro dela não pode sair por teleporte, recolhimento ou passagem para outro plano. Isso vale para inimigos, aliados e suas invocações. A área permite movimento normal pelo mapa e não impede a morte. Esta carta mantém um único círculo; criar outro ou virar a carta encerra o anterior."
+     }
+    },
+    {
+     "nome": "Banimento Temporário",
+     "texto": "2 de Fadiga, Ação Padrão: escolha em alcance curto uma invocação em campo controlada por um inimigo. Faça um teste contestado de Espírito + Arcanismo contra Espírito + Arcanismo do controlador. Se vencer, a invocação fica fora do campo até o início do seu próximo turno, sem poder agir ou ser alvo. Durante esse período, não fica disponível na reserva e não pode ser chamada ou recolhida antecipadamente. Ela retorna antes das suas ações, no espaço anterior ou, se ocupado ou inválido, no espaço livre válido mais próximo, escolhido pelo controlador em caso de empate. Conserve Vida, condições e custos; não é morte, não vira a carta nem reinicia limites de uso. Não afeta criaturas que não sejam invocações e respeita efeitos que impeçam saída do plano.",
+     "tags": [],
+     "limite_fadiga": 3,
+     "natureza": "Ativada",
+     "acao_fonte": "Padrão",
+     "custo": {
+      "fadiga": 2,
+      "acao": "padrao",
+      "foco": 0,
+      "outros": [],
+      "permanente": "",
+      "efeito": "escolha em alcance curto uma invocação em campo controlada por um inimigo. Faça um teste contestado de Espírito + Arcanismo contra Espírito + Arcanismo do controlador. Se vencer, a invocação fica fora do campo até o início do seu próximo turno, sem poder agir ou ser alvo. Durante esse período, não fica disponível na reserva e não pode ser chamada ou recolhida antecipadamente. Ela retorna antes das suas ações, no espaço anterior ou, se ocupado ou inválido, no espaço livre válido mais próximo, escolhido pelo controlador em caso de empate. Conserve Vida, condições e custos; não é morte, não vira a carta nem reinicia limites de uso. Não afeta criaturas que não sejam invocações e respeita efeitos que impeçam saída do plano."
+     }
+    }
+   ]
+  },
+  {
+   "id": "classe.invocador.dobra-do-limiar",
+   "id_fonte": "IN-G13",
+   "fonte": "classe",
+   "entidade": "Invocador",
+   "grupo": "Passagens Planares",
+   "tipo": "geral",
+   "xp": 1,
+   "meia_carta": false,
+   "lados": [
+    {
+     "nome": "Dobra do Limiar",
+     "texto": "2 de Fadiga, Ação de Movimento: teleporte seu corpo para um espaço livre visível a até 3 quadrados, onde você caiba e tenha apoio. A travessia não provoca ataques de oportunidade e pode ser usada enquanto você estiver impedido. Não concede uma ação de Movimento perdida por Imobilizado e respeita efeitos que proíbam teleporte.",
+     "tags": [],
+     "limite_fadiga": 3,
+     "natureza": "Ativada",
+     "acao_fonte": "Movimento",
+     "custo": {
+      "fadiga": 2,
+      "acao": "movimento",
+      "foco": 0,
+      "outros": [],
+      "permanente": "",
+      "efeito": "teleporte seu corpo para um espaço livre visível a até 3 quadrados, onde você caiba e tenha apoio. A travessia não provoca ataques de oportunidade e pode ser usada enquanto você estiver impedido. Não concede uma ação de Movimento perdida por Imobilizado e respeita efeitos que proíbam teleporte."
+     }
+    },
+    {
+     "nome": "Fenda de Passagem",
+     "texto": "2 de Fadiga, Ação Padrão: ligue dois espaços livres visíveis em alcance curto por aberturas de 1 quadrado, com apoio em ambos os destinos. Até o início do seu próximo turno, qualquer criatura que caiba nelas pode gastar 1 quadrado de um movimento para atravessar de uma abertura à outra, uma vez por turno. A travessia entre aberturas não provoca ataques de oportunidade; chegar até elas segue o movimento normal. Inimigos também podem usar a fenda. Ela transporta apenas criaturas que a atravessem com movimento, com o que estiverem carregando; não transmite visão, ataques ou projéteis entre as aberturas. Ela não dá ações, ataques ou chamadas de invocação e respeita proibições de teleporte. Esta carta mantém um par de aberturas; criar outro ou virar a carta fecha o anterior.",
+     "tags": [],
+     "limite_fadiga": 3,
+     "natureza": "Ativada",
+     "acao_fonte": "Padrão",
+     "custo": {
+      "fadiga": 2,
+      "acao": "padrao",
+      "foco": 0,
+      "outros": [],
+      "permanente": "",
+      "efeito": "ligue dois espaços livres visíveis em alcance curto por aberturas de 1 quadrado, com apoio em ambos os destinos. Até o início do seu próximo turno, qualquer criatura que caiba nelas pode gastar 1 quadrado de um movimento para atravessar de uma abertura à outra, uma vez por turno. A travessia entre aberturas não provoca ataques de oportunidade; chegar até elas segue o movimento normal. Inimigos também podem usar a fenda. Ela transporta apenas criaturas que a atravessem com movimento, com o que estiverem carregando; não transmite visão, ataques ou projéteis entre as aberturas. Ela não dá ações, ataques ou chamadas de invocação e respeita proibições de teleporte. Esta carta mantém um par de aberturas; criar outro ou virar a carta fecha o anterior."
+     }
+    }
+   ]
+  },
+  {
+   "id": "classe.invocador.mao-alem-do-veu",
+   "id_fonte": "IN-G14",
+   "fonte": "classe",
+   "entidade": "Invocador",
+   "grupo": "Passagens Planares",
+   "tipo": "geral",
+   "xp": 1,
+   "meia_carta": false,
+   "lados": [
+    {
+     "nome": "Mão Além do Véu",
+     "texto": "1 de Fadiga, Ação Padrão: faça uma manipulação simples num objeto visível e desocupado em alcance curto, como puxar uma alavanca, abrir uma porta destrancada ou trazer à sua mão um objeto solto que você poderia carregar com uma mão. A projeção precisa de um caminho livre até o objeto; ela não atravessa obstáculos sólidos. Use seus atributos e perícias se a tarefa exigir teste. Não realiza ataques, desarmes, abertura de fechaduras ou outras tarefas complexas de Ladinagem.",
+     "tags": [],
+     "limite_fadiga": 3,
+     "natureza": "Ativada",
+     "acao_fonte": "Padrão",
+     "custo": {
+      "fadiga": 1,
+      "acao": "padrao",
+      "foco": 0,
+      "outros": [],
+      "permanente": "",
+      "efeito": "faça uma manipulação simples num objeto visível e desocupado em alcance curto, como puxar uma alavanca, abrir uma porta destrancada ou trazer à sua mão um objeto solto que você poderia carregar com uma mão. A projeção precisa de um caminho livre até o objeto; ela não atravessa obstáculos sólidos. Use seus atributos e perícias se a tarefa exigir teste. Não realiza ataques, desarmes, abertura de fechaduras ou outras tarefas complexas de Ladinagem."
+     }
+    },
+    {
+     "nome": "Cofre Vinculado",
+     "texto": "Ação Padrão: guarde no seu subplano um objeto que esteja segurando ou retire para sua mão um objeto guardado por esta carta. Guardar custa 1 de Fadiga nesta carta; retirar não custa Fadiga. Ela comporta até 3 objetos, cada um pequeno o bastante para ser carregado com uma mão. Não armazena criaturas ou partes presas a um ser vivo. Os objetos continuam sujeitos à passagem normal do tempo. Virar a carta não perde nem libera os objetos; para retirar ou guardar, este lado precisa estar ativo.",
+     "tags": [],
+     "limite_fadiga": 3,
+     "natureza": "Ativada",
+     "acao_fonte": "Padrão",
+     "custo": {
+      "fadiga": 1,
+      "acao": "padrao",
+      "foco": 0,
+      "outros": [],
+      "permanente": "",
+      "efeito": "guarde no seu subplano um objeto que esteja segurando ou retire para sua mão um objeto guardado por esta carta. Guardar custa 1 de Fadiga nesta carta; retirar não custa Fadiga. Ela comporta até 3 objetos, cada um pequeno o bastante para ser carregado com uma mão. Não armazena criaturas ou partes presas a um ser vivo. Os objetos continuam sujeitos à passagem normal do tempo. Virar a carta não perde nem libera os objetos; para retirar ou guardar, este lado precisa estar ativo."
+     }
+    }
+   ]
+  },
+  {
+   "id": "classe.invocador.veu-de-desvio",
+   "id_fonte": "IN-G15",
+   "fonte": "classe",
+   "entidade": "Invocador",
+   "grupo": "Selos do Limiar",
+   "tipo": "geral",
+   "xp": 1,
+   "meia_carta": false,
+   "lados": [
+    {
+     "nome": "Véu de Desvio",
+     "texto": "2 de Fadiga, Reação: quando um inimigo declarar um ataque de alvo único contra você ou uma invocação sua em alcance curto, antes dos testes, o alvo pode Ajustar 2. Respeite obstáculos e condições que impeçam deslocamento. Depois, verifique novamente alcance e visão do ataque a partir da origem original: se o alvo continuar válido, resolva normalmente; caso contrário, o ataque é gasto sem atingir e não escolhe outro alvo. Não afeta ataques de área.",
+     "tags": [],
+     "limite_fadiga": 3,
+     "natureza": "Ativada",
+     "acao_fonte": "Reação",
+     "custo": {
+      "fadiga": 2,
+      "acao": "reacao",
+      "foco": 0,
+      "outros": [],
+      "permanente": "",
+      "efeito": "quando um inimigo declarar um ataque de alvo único contra você ou uma invocação sua em alcance curto, antes dos testes, o alvo pode Ajustar 2. Respeite obstáculos e condições que impeçam deslocamento. Depois, verifique novamente alcance e visão do ataque a partir da origem original: se o alvo continuar válido, resolva normalmente; caso contrário, o ataque é gasto sem atingir e não escolhe outro alvo. Não afeta ataques de área."
+     }
+    },
+    {
+     "nome": "Fechar a Passagem",
+     "texto": "1 de Fadiga, Reação: quando um efeito de um inimigo for teleportar, recolher ou enviar para outro plano uma criatura em alcance curto de você, antes do deslocamento, faça um teste contestado de Espírito + Arcanismo contra Espírito + Arcanismo do responsável pelo efeito. Se vencer, impeça apenas essa travessia dessa criatura. Se perder, ela acontece normalmente. Os outros efeitos e alvos continuam sendo resolvidos; o custo e a ação do efeito original não são devolvidos. Não interfere em movimento normal pelo mapa.",
+     "tags": [],
+     "limite_fadiga": 3,
+     "natureza": "Ativada",
+     "acao_fonte": "Reação",
+     "custo": {
+      "fadiga": 1,
+      "acao": "reacao",
+      "foco": 0,
+      "outros": [],
+      "permanente": "",
+      "efeito": "quando um efeito de um inimigo for teleportar, recolher ou enviar para outro plano uma criatura em alcance curto de você, antes do deslocamento, faça um teste contestado de Espírito + Arcanismo contra Espírito + Arcanismo do responsável pelo efeito. Se vencer, impeça apenas essa travessia dessa criatura. Se perder, ela acontece normalmente. Os outros efeitos e alvos continuam sendo resolvidos; o custo e a ação do efeito original não são devolvidos. Não interfere em movimento normal pelo mapa."
+     }
+    }
+   ]
+  }
+ ]
+}

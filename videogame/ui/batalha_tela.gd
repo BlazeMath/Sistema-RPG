@@ -9,6 +9,7 @@ extends Node3D
 const Modelos := preload("res://ui/modelos.gd")
 const Instantaneo := preload("res://core/instantaneo.gd")
 const Batalha := preload("res://core/batalha.gd")
+const Unidade := preload("res://core/unidade.gd")
 const Dados := preload("res://core/dados_batalha.gd")
 const Exploracao := preload("res://core/dados_exploracao.gd")
 const Fazenda := preload("res://core/dados_fazenda.gd")
@@ -43,6 +44,7 @@ const COR_SECUNDARIO := Color("9a95a3")
 const COR_OURO := Color("c9a45c")
 const COR_VIDA_HEROI := Color("6f9e6a")
 const COR_VIDA_INIMIGO := Color("b5483f")
+const COR_INVOCACAO := Color("83ddc6")
 const TAM_CARTA_MESA := Vector2(46, 66)
 const TAM_CARTA_MAO := Vector2(56, 80)
 const TAM_CARTA_MAO_LEQUE := Vector2(66, 94)
@@ -110,6 +112,8 @@ var _escolha_fadiga_bts: VBoxContainer
 var _planejar_titulo: Label
 var _planejar_bts: HBoxContainer
 var _modo_carta := -1    # carta escolhida esperando o clique no alvo
+var _chamar_invocacao := -1
+var _foco_invocacao := ""
 var _misseis: Array = []  # Mísseis Mágicos: quem leva cada míssil (cliques)
 var _modo_area := -1      # carta de área esperando o clique (prévia no mapa)
 var _item_area := ""      # item de área esperando o clique
@@ -263,6 +267,8 @@ func nova_batalha(semente := -1, retrato := "", abertura := false) -> void:
 	_titulo.text = "SISTEMA 21 · " + cen["nome"]
 	_objetivo.text = ""
 	_modo_carta = -1
+	_chamar_invocacao = -1
+	_foco_invocacao = ""
 	_modo_area = -1
 	_item_area = ""
 	_zonas_no = null
@@ -628,6 +634,8 @@ func _aplicar_comando(cmd: Dictionary) -> void:
 	else:
 		# Jogada de outro: as escolhas pela metade deste jogador perdem o sentido.
 		_modo_carta = -1
+		_chamar_invocacao = -1
+		_foco_invocacao = ""
 		_modo_area = -1
 		_item_area = ""
 		_modo_aliado = ""
@@ -763,6 +771,9 @@ func _acao(nome: String, carta: Variant = -1) -> void:
 	if _ocupado or _bloqueado():
 		return
 	var b := batalha
+	if b.vez_do_heroi():
+		_chamar_invocacao = -1
+		_foco_invocacao = ""
 	if nome != "mao" and nome != "puxar":
 		_planejar.visible = false
 	match nome:
@@ -823,6 +834,8 @@ func _acao_carta(indice: int, virar: bool, opcao := "") -> void:
 		return
 	var b := batalha
 	_planejar.visible = false
+	_chamar_invocacao = -1
+	_foco_invocacao = ""
 	if virar:
 		_c("heroi_virar", [indice])
 		_processar()
@@ -849,7 +862,7 @@ func _acao_carta(indice: int, virar: bool, opcao := "") -> void:
 		_atualizar()
 		return
 	if str(info.get("alvo", "nenhum")).begins_with("inimigo") or str(info.get("alvo", "nenhum")).begins_with("aliado") \
-			or str(info.get("alvo", "")).begins_with("qualquer"):
+			or str(info.get("alvo", "")).begins_with("qualquer") or info.get("alvo", "") == "invocacao_propria":
 		_modo_carta = indice
 		_misseis = []
 		_atualizar()
@@ -978,6 +991,51 @@ func _acao_no_aliado(modo: String, h) -> void:
 				_c("heroi_manobra", [modo.substr(8), h])
 
 
+func _criatura_em_comando() -> Unidade:
+	if _foco_invocacao == "" or not batalha.vez_do_heroi():
+		return null
+	var criatura := batalha.unidade(_foco_invocacao)
+	if criatura != null and criatura.viva() and criatura.dono_invocacao == batalha.ativa().id:
+		return criatura
+	return null
+
+
+func _selecionar_invocacao(criatura: Unidade) -> void:
+	_foco_invocacao = "" if _foco_invocacao == criatura.id else criatura.id
+	_atualizar()
+
+
+func _acao_invocacao_carta(indice: int, acao: String) -> void:
+	var b := batalha
+	if _ocupado or not b.vez_do_heroi() or _bloqueado():
+		return
+	_modo_carta = -1
+	_modo_area = -1
+	_item_area = ""
+	_modo_aliado = ""
+	_casa_escolha = {}
+	_chamar_invocacao = -1
+	if acao == "comandar":
+		var u := b.ativa()
+		var criatura := b.invocacao_da_carta(u, u.cartas[indice])
+		if criatura != null and criatura.viva() and criatura in b.unidades:
+			_selecionar_invocacao(criatura)
+		return
+	if b.motivo_sem_invocacao(indice, acao) != "":
+		return
+	_foco_invocacao = ""
+	match acao:
+		"chamar":
+			_chamar_invocacao = indice
+			_atualizar()
+		"recolher":
+			_c("heroi_recolher_invocacao", [indice])
+			_processar()
+		"recuperar":
+			_c("heroi_recuperar_invocacao", [indice])
+			_processar()
+
+
 func _clique_no_mapa(celula: Vector2i) -> void:
 	if not _ocupado and batalha.fase == Batalha.Fase.RESOLVIDO and batalha.resultado.get("passo", "") != "":
 		if _c("heroi_passo_de_defesa", [celula]):
@@ -990,7 +1048,14 @@ func _clique_no_mapa(celula: Vector2i) -> void:
 	var u := b.ativa()
 	var alvo := b.na_posicao(celula)
 	var it := b.interacao_em(celula)
-	if _modo_carta < 0 and _modo_area < 0 and _item_area == "" and not it.is_empty() and (b.ao_alcance(u, it) or not b.alcance_movimento(u)["mapa"].has(celula)):
+	if _chamar_invocacao >= 0:
+		if celula in b.casas_chamada_invocacao(_chamar_invocacao) and _c("heroi_chamar_invocacao", [_chamar_invocacao, celula]):
+			_chamar_invocacao = -1
+			_processar()
+		return
+	if _modo_carta < 0 and _modo_area < 0 and _item_area == "" and _foco_invocacao == "" \
+			and (alvo == null or alvo.dono_invocacao == "") and not it.is_empty() \
+			and (b.ao_alcance(u, it) or not b.alcance_movimento(u)["mapa"].has(celula)):
 		if b.ao_alcance(u, it):
 			_abrir_dialogo(it["id"])
 		return
@@ -1054,8 +1119,23 @@ func _clique_no_mapa(celula: Vector2i) -> void:
 		else:
 			_atualizar()
 		return
-	var alvo_da_confusao: bool = alvo != null and alvo.eh_heroi() and u.efeitos.get("confuso", {}).get("alvo", "") == alvo.id
-	if alvo != null and (not alvo.eh_heroi() or alvo_da_confusao):
+	if alvo != null and alvo.dono_invocacao == u.id and alvo.viva():
+		_selecionar_invocacao(alvo)
+		return
+	var criatura := _criatura_em_comando()
+	if criatura != null:
+		if alvo == u:
+			_foco_invocacao = ""
+			_atualizar()
+		elif alvo != null and alvo in b.alvos_invocacao(criatura):
+			_c("heroi_atacar_invocacao", [criatura, alvo])
+			_processar()
+		elif b.alcance_invocacao(criatura)["mapa"].has(celula):
+			_c("heroi_mover_invocacao", [criatura, celula])
+			_processar()
+		return
+	var alvo_da_confusao: bool = alvo != null and u.efeitos.get("confuso", {}).get("alvo", "") == alvo.id
+	if alvo != null and (not alvo.eh_aliado() or alvo_da_confusao):
 		if _c("heroi_atacar", [alvo]):
 			_planejar.visible = false
 			_processar()
@@ -1112,6 +1192,11 @@ func _unhandled_input(evento: InputEvent) -> void:
 					nova_batalha()
 			KEY_ESCAPE:
 				_modo_aliado = ""
+				if _chamar_invocacao >= 0:
+					_chamar_invocacao = -1
+					_atualizar()
+					get_viewport().set_input_as_handled()
+					return
 				if _modo_area >= 0 or _item_area != "":
 					_modo_area = -1
 					_item_area = ""
@@ -1129,6 +1214,9 @@ func _unhandled_input(evento: InputEvent) -> void:
 					_escolha_fadiga.visible = false
 					_inventario.visible = false
 					_fechar_dialogo()
+					_atualizar()
+				elif _foco_invocacao != "":
+					_foco_invocacao = ""
 					_atualizar()
 				else:
 					_abrir_pausa()
@@ -1149,13 +1237,14 @@ func _unhandled_input(evento: InputEvent) -> void:
 		return
 	if clique != null and clique.pressed and clique.button_index == MOUSE_BUTTON_LEFT:
 		_clique_no_mapa(_celula_do_mouse(clique.position))
-	elif clique != null and clique.pressed and clique.button_index == MOUSE_BUTTON_RIGHT and (_modo_carta >= 0 or _modo_aliado != "" or _modo_area >= 0 or _item_area != "" or not _casa_escolha.is_empty()):
+	elif clique != null and clique.pressed and clique.button_index == MOUSE_BUTTON_RIGHT and (_modo_carta >= 0 or _modo_aliado != "" or _modo_area >= 0 or _item_area != "" or _chamar_invocacao >= 0 or not _casa_escolha.is_empty()):
 		_casa_escolha = {}
 		_modo_carta = -1
 		_misseis = []
 		batalha.fadiga_escolhida = {}
 		_modo_aliado = ""
 		_modo_area = -1
+		_chamar_invocacao = -1
 		_item_area = ""
 		_atualizar()
 	elif clique != null and clique.pressed and clique.button_index == MOUSE_BUTTON_RIGHT:
@@ -1165,6 +1254,8 @@ func _unhandled_input(evento: InputEvent) -> void:
 		if quem != null and (quem.eh_heroi() or batalha.unidade_visivel(quem)):
 			if quem.eh_heroi():
 				_abrir_ficha_do_heroi(quem)
+			elif quem.dono_invocacao != "":
+				_abrir_ficha_da_invocacao(quem)
 			else:
 				_abrir_ficha_do_monstro(quem)
 
@@ -1235,6 +1326,8 @@ func _tocar_eventos() -> void:
 				_efeito_cura(e["id"])
 				_som("cura")
 			"morte":
+				if not _pecas.has(e["id"]):
+					continue
 				var peca: Node3D = _pecas[e["id"]]
 				if _modelos.has(e["id"]):
 					_modelos[e["id"]].set_meta("caido", true)
@@ -1243,6 +1336,11 @@ func _tocar_eventos() -> void:
 					var tw := create_tween()
 					tw.tween_property(peca, "rotation_degrees", Vector3(80, 0, 0), 0.3)
 				_rotulos[e["id"]].visible = false
+				if peca.get_meta("invocacao", false):
+					_esquecer_peca(e["id"])
+					var retirada := peca.create_tween()
+					retirada.tween_interval(0.6)
+					retirada.tween_callback(peca.queue_free)
 			"espiar":
 				if _eu_decido():
 					_mostrar_espiar(e["titulo"], e["cartas"], e.get("fundo", false))
@@ -1313,6 +1411,15 @@ func _tocar_eventos() -> void:
 					var tw_s := peca_s.create_tween()
 					tw_s.tween_property(peca_s, "scale", Vector3(0.01, 0.01, 0.01), 0.4)
 					_rotulos[e["id"]].visible = false
+					_esquecer_peca(e["id"])
+					tw_s.tween_callback(peca_s.queue_free)
+
+
+func _esquecer_peca(id: String) -> void:
+	# Uma invocação recolhida ou banida pode voltar com o mesmo ID.
+	_pecas.erase(id)
+	_rotulos.erase(id)
+	_modelos.erase(id)
 
 
 func _flutuar(id: String, texto: String, cor: Color) -> void:
@@ -1411,6 +1518,8 @@ func _heroi_foco():
 
 func _atualizar() -> void:
 	var b := batalha
+	if b.vez_do_heroi() and _criatura_em_comando() == null:
+		_foco_invocacao = ""
 	_atualizar_vez()
 	var heroi = _heroi_foco()
 	_atualizar_grupo()
@@ -1482,6 +1591,9 @@ func _atualizar() -> void:
 		_acoes.text = "Movimento %d · Padrão %d · Reação %d   ·   Deslocamento %d%s" % [
 			heroi.acoes_mov, heroi.acoes_padrao, heroi.acoes_reacao, heroi.deslocamento,
 			"   ·   IMPEDIDO" if b.impedido(heroi) else ""]
+		var criatura := _criatura_em_comando()
+		if criatura != null:
+			_acoes.text += "   ·   Comandando %s" % criatura.nome
 	elif b.vantagem_pendente():
 		_acoes.text = "Vantagem: clique numa carta da mão para trocar, ou confirme (Enter)."
 	elif b.teste_do_heroi() != null:
@@ -1654,7 +1766,7 @@ func _atualizar_mesa() -> void:
 	if not _mesa.visible:
 		_contagem = {"inimigo": 0, "heroi": 0}
 		return
-	var heroi_ataca := b.atacante.eh_heroi()
+	var heroi_ataca := b.atacante.eh_aliado()
 	var inimigo = b.defensor if heroi_ataca else b.atacante
 	var heroi = b.atacante if heroi_ataca else b.defensor
 	var t_ini: Teste21 = b.teste_defesa if heroi_ataca else b.teste_ataque
@@ -1670,7 +1782,7 @@ func _atualizar_mesa() -> void:
 	_mesa_ini_total.text = _texto_total(t_ini, esconder)
 	_mesa_her_total.text = _texto_total(t_her, false)
 	var pode_puxar := not _ocupado and b.teste_do_heroi() != null and b.teste_do_heroi().pode_puxar()
-	_mesa_her_monte.configurar(heroi.baralho.baralho.size(), pode_puxar)
+	_mesa_her_monte.configurar(t_her.baralho.baralho.size(), pode_puxar)
 	_mesa_ini_monte.configurar(b.baralho_inimigos.baralho.size(), false)
 	_bt_puxar.disabled = not pode_puxar
 	_bt_parar.disabled = not (not _ocupado and b.teste_do_heroi() != null)
@@ -1737,8 +1849,8 @@ func _texto_resultado() -> String:
 	var r := batalha.resultado
 	if r.is_empty():
 		return ""
-	var a := batalha.unidade(r["atacante"])
-	var d := batalha.unidade(r["defensor"])
+	var a := batalha.atacante
+	var d := batalha.defensor
 	var conta := PackedStringArray()
 	for parte in r["partes"]:
 		conta.append("%s %+d" % [parte[0], parte[1]] if conta.size() > 0 else "%s %d" % [parte[0], parte[1]])
@@ -1811,7 +1923,11 @@ func _atualizar_dica() -> void:
 	var alvo := b.na_posicao(_hover) if b.grade.dentro(_hover) else null
 	if alvo != null and not b.unidade_visivel(alvo):
 		alvo = null
-	if not _spec_area_atual().is_empty():
+	var criatura := _criatura_em_comando()
+	if _chamar_invocacao >= 0 and b.vez_do_heroi():
+		var carta = b.ativa().cartas[_chamar_invocacao]
+		texto = "Chamar %s: escolha uma casa marcada em verde. Botão direito ou Esc cancela." % carta.nome()
+	elif not _spec_area_atual().is_empty():
 		var spec := _spec_area_atual()
 		var nome: String = b.ativa().cartas[_modo_area].nome() if _modo_area >= 0 else Itens.CONSUMIVEIS[_item_area]["nome"]
 		var motivo: String = b.motivo_area(b.ativa(), spec, _hover) if b.grade.dentro(_hover) else ""
@@ -1832,13 +1948,21 @@ func _atualizar_dica() -> void:
 				c.nome(), _misseis.size(), (" (" + ", ".join(_misseis.map(func(i): return b.unidade(i).nome)) + ")") if not _misseis.is_empty() else ""]
 		else:
 			texto = "%s: clique num alvo marcado (vermelho = inimigo, verde = aliado). Botão direito ou Esc cancela." % c.nome()
+	elif alvo != null and alvo.dono_invocacao != "":
+		var dono := b.unidade(alvo.dono_invocacao)
+		texto = "%s · Invocação aliada%s · Vida %s · Resistência %d · Velocidade %d" % [
+			alvo.nome, " de " + dono.nome if dono != null else "", alvo.vida_texto(), alvo.resistencia, alvo.velocidade]
+		if b.vez_do_heroi() and b.ativa() == dono:
+			texto += "\nClique para voltar ao invocador." if criatura == alvo else "\nClique para comandar."
+	elif criatura != null:
+		texto = "%s em comando. Casas azuis para andar, alvos vermelhos para atacar. Clique no invocador ou pressione Esc para voltar." % criatura.nome
 	elif not b.interacao_em(_hover).is_empty() and b.vez_do_heroi():
 		var it := b.interacao_em(_hover)
 		texto = "%s: %s\n%s" % [it["nome"], it["texto"], "Clique para interagir." if b.ao_alcance(b.ativa(), it)
 			else "Chegue mais perto para interagir (até %d quadrado(s))." % int(it.get("alcance", 1))]
-	elif alvo != null and not alvo.eh_heroi() and not alvo.alerta:
+	elif alvo != null and not alvo.eh_aliado() and not alvo.alerta:
 		texto = "%s · desatento: percebe heróis a até %d quadrados com linha de visão (área marcada). Atacado de surpresa, defende só com 2 cartas." % [alvo.nome, alvo.vigia]
-	elif alvo != null and not alvo.eh_heroi():
+	elif alvo != null and not alvo.eh_aliado():
 		texto = "%s · Vida %d/%d · Dano %d + Força %d · Resistência %d · IA %s (risco %d%%, para em %d atacando)%s%s" % [
 			alvo.nome, alvo.vida, alvo.vida_max, alvo.dano, alvo.atributo_dano, alvo.resistencia, alvo.perfil,
 			int(alvo.risco * 100), alvo.parada_ataque, " · arco: ideal curto e médio" if alvo.a_distancia else "",
@@ -2475,11 +2599,15 @@ func _criar_peca(u) -> void:
 	var peca := Node3D.new()
 	add_child(peca)
 	peca.position = _mundo_unidade(u.pos)
+	var invocacao: bool = u.dono_invocacao != ""
+	if invocacao:
+		peca.set_meta("invocacao", true)
 	var base := CylinderMesh.new()
 	base.top_radius = 0.36
 	base.bottom_radius = 0.38
 	base.height = 0.06
-	_malha(base, Color("4f7fb3") if u.eh_heroi() else Color("9b3b33"), Vector3(0, 0.03, 0), peca)
+	var cor_base := Color("328b78") if invocacao else (Color("4f7fb3") if u.eh_heroi() else Color("9b3b33"))
+	_malha(base, cor_base, Vector3(0, 0.03, 0), peca)
 	var altura := 1.0
 	var modelo := Modelos.criar(u.tipo)
 	if modelo != null:
@@ -2581,7 +2709,7 @@ func _criar_peca(u) -> void:
 					var ol := _malha(olho, Color("d8f0a0"), Vector3(lx, 0.95, 0.2), peca)
 					ol.material_override = _material(Color("d8f0a0"), true)
 				altura = 1.2
-			"fantasma":
+			"fantasma", "espirito-lanterneiro", "ave-de-rapina":
 				var corpo := CylinderMesh.new()
 				corpo.top_radius = 0.2
 				corpo.bottom_radius = 0.02
@@ -2670,10 +2798,11 @@ func _criar_peca(u) -> void:
 					var e := _malha(escudo, Color("4a4038"), Vector3(-0.4, 0.8, 0.05), peca)
 					e.rotation_degrees = Vector3(0, 0, 90)
 				altura = 1.3 * k
-			"lobo", "lobo_atroz", "rato":
+			"lobo", "lobo_atroz", "lobo-atroz", "rato", "salamandra-de-cinzas":
 				# 0.28: feras de quatro patas feitas de formas simples.
-				var k: float = {"lobo": 1.0, "lobo_atroz": 1.35, "rato": 0.62}[u.tipo]
-				var cor_f: Color = {"lobo": Color("6f6a66"), "lobo_atroz": Color("3d3a3f"), "rato": Color("6b5747")}[u.tipo]
+				var k: float = {"lobo": 1.0, "lobo_atroz": 1.35, "lobo-atroz": 1.35, "rato": 0.62, "salamandra-de-cinzas": 0.77}[u.tipo]
+				var cor_f: Color = {"lobo": Color("6f6a66"), "lobo_atroz": Color("3d3a3f"), "lobo-atroz": Color("4b4b5b"),
+					"rato": Color("6b5747"), "salamandra-de-cinzas": Color("9e5036")}[u.tipo]
 				var corpo := CapsuleMesh.new()
 				corpo.radius = 0.2 * k
 				corpo.height = 0.85 * k
@@ -2704,9 +2833,9 @@ func _criar_peca(u) -> void:
 				var ca := _malha(cauda, cor_f, Vector3(-0.5 * k, 0.5 * k, 0), peca)
 				ca.rotation_degrees = Vector3(0, 0, 60)
 				altura = 0.9 * k
-			"aranha", "escorpiao":
-				var aranha: bool = u.tipo == "aranha"
-				var cor_a := Color("2b2630") if aranha else Color("8a6a3a")
+			"aranha", "aranha-de-ambar", "escorpiao":
+				var aranha: bool = u.tipo != "escorpiao"
+				var cor_a := Color("ae7434") if u.tipo == "aranha-de-ambar" else (Color("2b2630") if aranha else Color("8a6a3a"))
 				var corpo := SphereMesh.new()
 				corpo.radius = 0.36
 				corpo.height = 0.5
@@ -2758,7 +2887,7 @@ func _criar_peca(u) -> void:
 				var bo := _malha(boca, Color("5a2020"), Vector3(0.15, 2.3, 0.45), peca)
 				bo.rotation_degrees = Vector3(70, 0, 0)
 				altura = 2.5
-			"toupeira":
+			"toupeira", "guardiao-quelonio":
 				var corpo := SphereMesh.new()
 				corpo.radius = 0.62
 				corpo.height = 0.95
@@ -2794,6 +2923,11 @@ func _criar_peca(u) -> void:
 					var a := _malha(arco, Color("8a6a3c"), Vector3(0.28, 0.5, 0), peca)
 					a.rotation_degrees = Vector3(90, 0, 0)
 				altura = 1.0
+	if u.tipo == "espirito-lanterneiro":
+		var lanterna := Modelos.criar_objeto("lanterna_chao", u.pos, "pedra")
+		if lanterna != null:
+			peca.add_child(lanterna)
+			lanterna.position = Vector3(0.34, 0.25, 0.1)
 	var r := Label3D.new()
 	r.font = _fonte_negrito
 	r.font_size = 34
@@ -2814,6 +2948,8 @@ func _criar_peca(u) -> void:
 func _atualizar_pecas() -> void:
 	var b := batalha
 	for u in b.unidades:
+		if not _rotulos.has(u.id):
+			continue
 		var r: Label3D = _rotulos[u.id]
 		var extra := ""
 		if not u.eh_heroi() and u.viva() and not u.fichas.is_empty():
@@ -2836,8 +2972,8 @@ func _atualizar_pecas() -> void:
 		if u.viva() and u.efeitos.has("confuso"):
 			extra += "\n(confuso)"
 		r.text = "%s\n%s%s%s" % [u.nome, u.vida_texto(), extra,
-			("\n(dormindo)" if u.dormindo else "\n(desatento)") if u.viva() and not u.eh_heroi() and not u.alerta else ""]
-		r.modulate = Color("cfe1ff") if u.eh_heroi() else Color("ffd2c8")
+			("\n(dormindo)" if u.dormindo else "\n(desatento)") if u.viva() and not u.eh_aliado() and not u.alerta else ""]
+		r.modulate = COR_INVOCACAO if u.dono_invocacao != "" else (Color("cfe1ff") if u.eh_heroi() else Color("ffd2c8"))
 		if u.eh_heroi() and _pecas.has(u.id):
 			_barra_de_vida(u, r)
 		if not u.eh_heroi() and _pecas.has(u.id) and u.viva():
@@ -2853,8 +2989,9 @@ func _atualizar_pecas() -> void:
 					Modelos.tocar(m, "Death_A" if caido else "Lie_StandUp", not caido)
 			else:
 				_pecas[u.id].rotation_degrees = Vector3(80, 0, 0) if caido else Vector3.ZERO
-	var ativa := b.ativa()
-	_anel.visible = ativa != null and ativa.viva()
+	var criatura := _criatura_em_comando()
+	var ativa := criatura if criatura != null else b.ativa()
+	_anel.visible = ativa != null and ativa.viva() and _pecas.has(ativa.id)
 	if _anel.visible and not _ocupado:
 		_anel.position = _pecas[ativa.id].position + Vector3(0, 0.08, 0)
 	elif _anel.visible:
@@ -2867,6 +3004,7 @@ func _atualizar_marcas() -> void:
 	for filho in _marcas.get_children():
 		filho.queue_free()
 	var b := batalha
+	var criatura := _criatura_em_comando()
 	var plano := PlaneMesh.new()
 	plano.size = Vector2(0.9, 0.9)
 	if not _ocupado and b.fase == Batalha.Fase.RESOLVIDO and b.resultado.get("passo", "") != "":
@@ -2875,6 +3013,9 @@ func _atualizar_marcas() -> void:
 			var p: Vector2i = quem.pos + d
 			if b.grade.dentro(p) and not b.grade.bloqueado(p) and b.na_posicao(p) == null:
 				_marca(plano, p, Color(0.35, 0.6, 1.0, 0.45))
+	elif not _ocupado and b.vez_do_heroi() and _chamar_invocacao >= 0:
+		for p in b.casas_chamada_invocacao(_chamar_invocacao):
+			_marca(plano, p, Color(0.3, 0.86, 0.65, 0.55))
 	elif not _ocupado and not _spec_area_atual().is_empty():
 		var spec := _spec_area_atual()
 		var u := b.ativa()
@@ -2898,7 +3039,13 @@ func _atualizar_marcas() -> void:
 	elif b.vez_do_heroi() and not _ocupado and _modo_carta >= 0:
 		var u := b.ativa()
 		for o in b.alvos_de_habilidade(u, u.cartas[_modo_carta]):
-			_marca(plano, o.pos, Color(0.95, 0.25, 0.2, 0.65) if not o.eh_heroi() else Color(0.3, 0.95, 0.45, 0.6))
+			_marca(plano, o.pos, Color(0.3, 0.95, 0.45, 0.6) if o.eh_aliado() else Color(0.95, 0.25, 0.2, 0.65))
+	elif not _ocupado and criatura != null:
+		var info := b.alcance_invocacao(criatura)
+		for p in info["mapa"]:
+			_marca(plano, p, Color(0.35, 0.6, 1.0, 0.45))
+		for o in b.alvos_invocacao(criatura):
+			_marca(plano, o.pos, Color(0.95, 0.25, 0.2, 0.55))
 	elif b.vez_do_heroi() and not _ocupado:
 		var u := b.ativa()
 		var info := b.alcance_movimento(u)
@@ -2919,13 +3066,13 @@ func _atualizar_marcas() -> void:
 				var ideal: bool = not u.a_distancia or b.faixa_entre(u, o) in u.faixas_ideais
 				_marca(plano, o.pos, Color(0.95, 0.25, 0.2, 0.55) if ideal else Color(1.0, 0.6, 0.1, 0.6))
 	var vigia = b.na_posicao(_hover) if b.grade.dentro(_hover) else null
-	if vigia != null and not vigia.eh_heroi() and not vigia.alerta:
+	if vigia != null and not vigia.eh_aliado() and not vigia.alerta:
 		for x in range(-vigia.vigia, vigia.vigia + 1):
 			for y in range(-vigia.vigia, vigia.vigia + 1):
 				var p: Vector2i = vigia.pos + Vector2i(x, y)
 				if p != vigia.pos and b.grade.dentro(p) and b.grade.linha_de_visao(vigia.pos, p):
 					_marca(plano, p, Color(1.0, 0.45, 0.2, 0.22), 0.009)
-	if b.vez_do_heroi() and not _ocupado and _modo_carta < 0:
+	if b.vez_do_heroi() and not _ocupado and _modo_carta < 0 and _chamar_invocacao < 0 and criatura == null:
 		for it in b.interacoes_ativas():
 			if b.ao_alcance(b.ativa(), it):
 				_marca(plano, it["pos"], Color(1.0, 0.8, 0.3, 0.5), 0.01)
@@ -3764,7 +3911,7 @@ func _atualizar_menus_flutuantes() -> void:
 		if _fixado == m[2] or sobre_bt or (sobre_painel and _menu_aberto == m[2]):
 			abertos[painel] = m[2]
 	# o painel das cartas também fica aberto enquanto se escolhe o alvo de uma carta
-	if _modo_carta >= 0 or not _casa_escolha.is_empty() or _modo_area >= 0:
+	if _modo_carta >= 0 or not _casa_escolha.is_empty() or _modo_area >= 0 or _chamar_invocacao >= 0:
 		abertos[_painel_dir] = abertos.get(_painel_dir, "cartas")
 	for m in _menus_flutuantes:
 		var painel2: Control = m[1]
@@ -3787,7 +3934,7 @@ func _atualizar_menus_flutuantes() -> void:
 ## Cor de cada origem (faixa do topo da carta), como nos PDFs: Clérigo dourado, Mago azul...
 const CORES_ORIGEM := {"arma": Color("6a5440"), "guerreiro": Color("8a3b2e"), "ladino": Color("3b3456"), "clerigo": Color("8a6a2a"),
 	"cacador": Color("3d5a32"), "mago": Color("2d4a7a"), "bruxo": Color("5a2d4f"), "pacto": Color("6a2a3a"),
-	"raca": Color("5a4a3a"), "background": Color("4a4a52"), "item": Color("44505a")}
+	"invocador": Color("236358"), "raca": Color("5a4a3a"), "background": Color("4a4a52"), "item": Color("44505a")}
 
 
 func _cor_da_carta(c) -> Color:
@@ -3805,7 +3952,7 @@ func _cor_da_carta(c) -> Color:
 func _carta_ui(op: Dictionary, b) -> Control:
 	var c = op["carta"]
 	var cor := _cor_da_carta(c)
-	var escolhida: bool = op["indice"] == _modo_carta or op["indice"] == _modo_area
+	var escolhida: bool = op["indice"] == _modo_carta or op["indice"] == _modo_area or op["indice"] == _chamar_invocacao
 	var p := PanelContainer.new()
 	var sb := StyleBoxFlat.new()
 	sb.bg_color = Color("17161d")
@@ -3926,6 +4073,9 @@ func _carta_ui(op: Dictionary, b) -> Control:
 	var h := HBoxContainer.new()
 	h.add_theme_constant_override("separation", 4)
 	vc.add_child(h)
+	if c.tipo == "criatura":
+		_botoes_da_invocacao(vc, h, c, dono_c, int(op["indice"]))
+		return p
 	if op.has("opcoes"):
 		pass
 	elif op["uso"] == "ativada":
@@ -3976,6 +4126,31 @@ func _carta_ui(op: Dictionary, b) -> Control:
 			bp.pressed.connect(func(): _acao_virar(j, "preparo"))
 			h.add_child(bp)
 	return p
+
+
+func _botoes_da_invocacao(corpo: VBoxContainer, linha: HBoxContainer, carta, dono: Unidade, indice: int) -> void:
+	var b := batalha
+	var invocacao := b.invocacao_da_carta(dono, carta) if dono != null else null
+	var em_campo: bool = invocacao != null and invocacao.viva() and invocacao in b.unidades
+	var estado := "Aguardando recuperação" if carta.lado != 0 else ("Em campo" if em_campo else "No subplano")
+	if invocacao != null and carta.lado == 0:
+		estado += " · Vida %s" % invocacao.vida_texto()
+	var rotulo := _label(estado, 11, COR_INVOCACAO, true)
+	corpo.add_child(rotulo)
+	corpo.move_child(rotulo, linha.get_index())
+	var acoes := ["comandar", "recolher"] if em_campo else (["chamar"] if carta.lado == 0 else ["recuperar"])
+	for acao in acoes:
+		var bt := _botao_topo("Recuperar com poção" if acao == "recuperar" else acao.capitalize())
+		var vez := b.vez_do_heroi() and b.ativa() == dono
+		var motivo := "Aguarde o turno do invocador."
+		if vez:
+			motivo = b.motivo_sem_invocacao(indice, acao) if acao != "comandar" else ""
+		bt.disabled = _ocupado or not _eu_decido() or motivo != ""
+		bt.tooltip_text = motivo
+		if acao == "comandar" and _foco_invocacao == invocacao.id:
+			bt.text = "Voltar ao invocador"
+		bt.pressed.connect(func(): _acao_invocacao_carta(indice, acao))
+		linha.add_child(bt)
 
 
 func _acao_virar(indice: int, modo: String) -> void:
@@ -5305,6 +5480,35 @@ func _mostrar_intencoes(linhas: Array) -> void:
 	_tween_intencoes.tween_interval(4.5)
 	_tween_intencoes.tween_property(_painel_intencoes, "modulate:a", 0.0, 0.8)
 	_tween_intencoes.tween_callback(func(): _painel_intencoes.visible = false)
+
+
+func _abrir_ficha_da_invocacao(o: Unidade) -> void:
+	var cols := _ficha_base(o.nome + " · Invocação aliada")
+	var dono := batalha.unidade(o.dono_invocacao)
+	cols[0].add_child(_label("Vida %s" % o.vida_texto(), 15, COR_INVOCACAO, true))
+	if dono != null:
+		cols[0].add_child(_label("Vínculo com %s" % dono.nome, 13, COR_TEXTO))
+	cols[0].add_child(_label("Velocidade %d · Resistência %d" % [o.velocidade, o.resistencia], 13, COR_TEXTO))
+	cols[1].add_child(_label("Ataque", 14, COR_OURO, true))
+	cols[1].add_child(_label("%s · Diferença dos testes +%d" % ["À distância" if o.a_distancia else "Corpo a corpo", o.dano], 13, COR_TEXTO))
+	if dono != null:
+		for carta in dono.cartas:
+			if carta.id != o.carta_invocacao:
+				continue
+			var habilidade := str(carta.lados[0].get("criatura", {}).get("habilidade", ""))
+			if habilidade != "":
+				cols[1].add_child(_label("Habilidade da criatura", 14, COR_OURO, true))
+				var descricao := _label(habilidade, 12, COR_TEXTO)
+				descricao.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+				descricao.custom_minimum_size = Vector2(300, 0)
+				cols[1].add_child(descricao)
+			break
+	cols[2].add_child(_label("Fichas", 14, COR_OURO, true))
+	if o.fichas.is_empty():
+		cols[2].add_child(_label("Nenhuma.", 12, COR_SECUNDARIO))
+	for f in o.fichas:
+		cols[2].add_child(_label("%s ×%d" % [f, int(o.fichas[f])], 12, COR_INVOCACAO))
+	_ficha_painel.visible = true
 
 
 func _abrir_ficha_do_monstro(o) -> void:

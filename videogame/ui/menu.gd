@@ -2,7 +2,7 @@
 ## Esquerda: modos de jogo. Direita: o grupo (até 4 heróis salvos), com os heróis prontos.
 extends Control
 
-const VERSAO := "0.30"
+const VERSAO := "0.31"
 const Sessao := preload("res://core/sessao.gd")
 const Personagem := preload("res://core/personagem.gd")
 const Prontos := preload("res://core/herois_prontos.gd")
@@ -57,6 +57,7 @@ func _ready() -> void:
 	v.add_child(_botao("Missão: a cripta de Pedravelha (escura)", "res://ui/batalha.tscn", "masmorra"))
 	v.add_child(_botao("Missão: o Pântano dos Afogados (noite)", "res://ui/batalha.tscn", "pantano"))
 	v.add_child(_botao("Vau-Cinzento: o poço envenenado", "res://ui/batalha.tscn", "fase:investigacao_vau_cinzento"))
+	v.add_child(_botao("A Torre de Vaelor", "res://ui/batalha.tscn", "fase:torre_vaelor"))
 	v.add_child(_botao("Missão longa: as Catacumbas de Vel-Dorath", "res://ui/batalha.tscn", "catacumbas"))
 	v.add_child(_botao("Exploração: a trilha do riacho", "res://ui/batalha.tscn", "trilha"))
 	v.add_child(_botao("Arena: combate simples", "res://ui/batalha.tscn", "arena"))

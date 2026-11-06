@@ -45,7 +45,7 @@ const ARQUIVO := "user://herois.json"
 static var arquivo := ARQUIVO
 static var memoria = null
 
-const CLASSES := ["Guerreiro", "Ladino", "Clérigo", "Caçador", "Mago", "Bruxo", "Investigador"]
+const CLASSES := ["Guerreiro", "Ladino", "Clérigo", "Caçador", "Mago", "Bruxo", "Investigador", "Invocador"]
 const RACAS := ["Humano", "Elfo", "Anão", "Halfling", "Orc"]
 const BACKGROUNDS := ["Soldado", "Bandido", "Escravo", "Explorador", "Fervoroso"]
 const DISPONIVEIS := CLASSES + RACAS + BACKGROUNDS   # versão 0.9: tudo liberado
@@ -76,7 +76,7 @@ const PERICIAS := {
 }
 const DISTRIBUICAO_PERICIAS := {3: 4, 2: 6, 1: 8}
 const TIPOS_CLASSE := {"Guerreiro": "guerreiro", "Ladino": "ladino", "Clérigo": "clerigo", "Caçador": "cacador", "Mago": "mago",
-	"Bruxo": "bruxo", "Investigador": "investigador"}
+	"Bruxo": "bruxo", "Investigador": "investigador", "Invocador": "invocador"}
 
 
 static func nova() -> Dictionary:
@@ -311,7 +311,12 @@ static func cartas_em_jogo_cfg(ficha: Dictionary) -> Array:
 		for l in c["lados"]:
 			if l != null:
 				lados.append(_lado(l))
-		lista.append({"id": cid, "tipo": "habilidade", "lados": lados})
+		var cfg := {"id": cid, "tipo": "habilidade", "lados": lados}
+		if c.get("tipo") == "criatura":
+			cfg["tipo"] = "criatura"
+			for campo in ["id_fonte", "raridade", "virada_normal_permitida", "preparo_permitido", "modelo_recuperacao"]:
+				cfg[campo] = c[campo]
+		lista.append(cfg)
 	var i := 0
 	while i + 1 < ficha["meias"].size():
 		var a := Catalogo.habilidade(ficha["meias"][i])
@@ -346,8 +351,12 @@ static func cartas_em_jogo_cfg(ficha: Dictionary) -> Array:
 
 
 static func _lado(l: Dictionary) -> Dictionary:
-	return {"nome": l["nome"], "slug": Catalogo.slug(l["nome"]), "texto": l["texto"], "limite_fadiga": l["limite_fadiga"],
+	var cfg := {"nome": l["nome"], "slug": Catalogo.slug(l["nome"]), "texto": Catalogo.texto_lado(l), "limite_fadiga": l["limite_fadiga"],
 		"custo": l["custo"], "tags": l["tags"]}
+	for campo in ["criatura", "dificuldade_medicina", "dificuldade_medicina_referencia", "pocao_exigida"]:
+		if l.has(campo):
+			cfg[campo] = l[campo]
+	return cfg
 
 
 static func carregar_todos() -> Array:

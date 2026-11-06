@@ -31,6 +31,9 @@ const MODELOS := {
 	"Investigador": {"nome": "Elisa (pronta)", "atributos": {"raciocinio": 3, "percepcao": 3, "destreza": 2, "constituicao": 2, "forca": 1, "sabedoria": 1, "diplomacia": 1, "espirito": 0, "mentira": 0},
 		"arma": "faca", "arma2": "nenhuma", "armadura": "couro_do_batedor", "escudo": "nenhum", "foco": "nenhum",
 		"cartas": ["classe.investigador.coleta-metodica", "classe.investigador.hipotese-de-trabalho"], "topo": ["Investigação", "Intuição", "História", "Negociação"]},
+	"Invocador": {"nome": "Gael (pronto)", "atributos": {"espirito": 3, "sabedoria": 3, "constituicao": 2, "raciocinio": 2, "percepcao": 1, "destreza": 1, "forca": 1, "mentira": 0, "diplomacia": 0},
+		"arma": "faca", "arma2": "nenhuma", "armadura": "couro_do_batedor", "escudo": "nenhum", "foco": "nenhum",
+		"cartas": ["classe.invocador.lobo-atroz", "classe.invocador.ave-de-rapina"], "topo": ["Arcanismo", "Adestramento", "Monstros", "Sobrevivência"]},
 }
 
 

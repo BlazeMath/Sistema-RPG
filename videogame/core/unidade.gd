@@ -11,6 +11,9 @@ var lado := "inimigo"          # "heroi" ou "inimigo"
 var tipo := ""                 # aparência: "guerreiro", "goblin", "goblin_atirador", "goblin_chefe"
 var pos := Vector2i.ZERO
 var classe := ""               # heróis: "Guerreiro", "Ladino"...
+var dono_invocacao := ""       # id do herói que controla esta criatura
+var carta_invocacao := ""      # id da carta que representa o vínculo
+var invocacoes_aliadas := {}   # no dono: id da carta -> Unidade, inclusive no subplano
 var raca := ""
 var background := ""
 var tamanho := "medio"         # "pequeno", "medio", "grande"
@@ -142,7 +145,13 @@ func eh_heroi() -> bool:
 	return lado == "heroi"
 
 
+func eh_aliado() -> bool:
+	return eh_heroi() or dono_invocacao != ""
+
+
 func viva() -> bool:
+	if efeitos.has("inv_banida"):
+		return false
 	if eh_heroi():
 		return baralho.estado == Baralho.Estado.ATIVO
 	return vida > 0

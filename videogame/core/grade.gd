@@ -91,6 +91,7 @@ func vizinhos(p: Vector2i, nada := false, escalar := false) -> Array[Vector2i]:
 func alcance(origem: Vector2i, passos: int, ocupadas: Dictionary, perigos: Dictionary, modo := {}) -> Dictionary:
 	var nada: bool = modo.get("nada", false)
 	var sem_terreno: bool = modo.get("sem_terreno", false)
+	var voa: bool = modo.get("voa", false)
 	_anda_no_tronco = modo.get("tronco", false)
 	# Lucas (0.20): heróis atravessam aliados (sem parar na casa deles): "passa" no mapa.
 	var aliados: Dictionary = modo.get("aliados", {})
@@ -109,14 +110,20 @@ func alcance(origem: Vector2i, passos: int, ocupadas: Dictionary, perigos: Dicti
 			continue
 		if custo >= passos:
 			continue
-		for n in vizinhos(p, nada, modo.get("escalar", false)):
+		var passos_validos := vizinhos(p, nada, modo.get("escalar", false))
+		if voa:
+			passos_validos.clear()
+			for dir in DIRECOES:
+				if dentro(p + dir):
+					passos_validos.append(p + dir)
+		for n in passos_validos:
 			if ocupadas.has(n) and not aliados.has(n):
 				continue
 			var c2: int = custo + 1 + (0 if sem_terreno else int(custo_extra.get(n, 0)))
 			if c2 > passos or (mapa.has(n) and mapa[n]["custo"] <= c2):
 				continue
 			mapa[n] = {"custo": c2, "anterior": p}
-			if aliados.has(n):
+			if aliados.has(n) or (voa and bloqueado(n)):
 				mapa[n]["passa"] = true
 			abertos.append(n)
 	_anda_no_tronco = false

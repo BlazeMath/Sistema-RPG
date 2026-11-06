@@ -23,6 +23,7 @@ const TIPOS := {
 	"mago": {"arq": "Mage", "manter": ["2H_Staff"], "ataque": "Spellcast_Shoot"},
 	# Bruxo (0.25): o mago de capuz escuro, com varinha e livro.
 	"bruxo": {"arq": "Mage", "manter": ["1H_Wand", "Spellbook"], "cor": Color(0.62, 0.5, 0.58), "ataque": "Spellcast_Shoot"},
+	"invocador": {"arq": "Mage", "manter": ["Spellbook"], "cor": Color(0.6, 0.76, 0.65), "ataque": "1H_Melee_Attack_Stab"},
 	"goblin": {"arq": "Barbarian", "manter": ["1H_Axe"], "esconder": ["Barbarian_Hat"],
 		"cor": Color(0.62, 0.9, 0.45), "escala": 0.78, "ataque": "1H_Melee_Attack_Chop"},
 	"goblin_atirador": {"arq": "Rogue", "manter": ["1H_Crossbow"], "cor": Color(0.62, 0.9, 0.45),
@@ -68,6 +69,13 @@ const TIPOS := {
 	"elemental_terra": {"arq": "Skeleton_Warrior", "cor": Color(0.55, 0.42, 0.3), "escala": 1.4, "ataque": "Unarmed_Melee_Attack_Punch_A"},
 	"diabrete": {"arq": "Skeleton_Rogue", "cor": Color(0.9, 0.3, 0.25), "escala": 0.7, "ataque": "Spellcast_Shoot", "flutua": true},
 	"mago_vaelor": {"arq": "Mage", "manter": ["2H_Staff"], "cor": Color(0.55, 0.5, 0.95), "escala": 1.12, "ataque": "Spellcast_Shoot"},
+	# Invocações aliadas: reaproveitam a silhueta do defensor, da criatura aérea e do espírito.
+	"guardiao-quelonio": {"arq": "Knight", "manter": ["Round_Shield"], "cor": Color(0.56, 0.73, 0.43),
+		"escala": 0.95, "ataque": "Unarmed_Melee_Attack_Punch_A"},
+	"ave-de-rapina": {"arq": "Skeleton_Rogue", "cor": Color(0.82, 0.65, 0.4), "escala": 0.58,
+		"ataque": "Unarmed_Melee_Attack_Punch_A", "flutua": true},
+	"espirito-lanterneiro": {"arq": "Skeleton_Mage", "cor": Color(0.9, 0.85, 0.42, 0.68), "escala": 0.8,
+		"ataque": "Spellcast_Shoot", "flutua": true},
 }
 
 static var _cenas := {}
