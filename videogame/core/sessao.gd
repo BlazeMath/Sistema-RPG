@@ -13,6 +13,9 @@ static var distribuir_sugestao := false   # "sempre usar a sugestão" na distrib
 static var campanha := false       # missão saída da vila: ouro, feridas e consumíveis ficam (core/campanha.gd)
 static var estado_salvo := ""
 static var vila_pos := Vector2i(-1, -1)   # 0.23: onde o herói estava na vila andável      # retrato de uma batalha salva no meio da missão (core/instantaneo.gd)
+static var online := false         # 0.26: partida em rede (ui/rede.gd); as fichas vêm do anfitrião
+static var fichas_online: Array = []
+static var fase_teste := ""        # 0.27: id da fase aberta no editor quando se clica em Testar
 static var solo := false           # "Testar este herói" na criação: joga só com ele
 
 
@@ -48,6 +51,8 @@ static func definir_grupo(nomes: Array) -> void:
 
 ## As fichas do grupo (só as válidas). Sem grupo, só o herói atual.
 static func fichas_do_grupo() -> Array:
+	if online and not fichas_online.is_empty():
+		return fichas_online.duplicate(true)
 	if solo:
 		return [ficha_atual()]
 	var salvos := Personagem.carregar_todos()

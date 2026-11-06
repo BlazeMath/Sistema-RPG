@@ -25,6 +25,9 @@ const MODELOS := {
 	"Mago": {"nome": "Aldo (pronto)", "atributos": {"raciocinio": 3, "sabedoria": 3, "destreza": 2, "constituicao": 2, "percepcao": 1, "espirito": 1, "forca": 1, "mentira": 0, "diplomacia": 0},
 		"arma": "faca", "arma2": "nenhuma", "armadura": "nenhuma", "escudo": "nenhum", "foco": "varinha_eletrizante",
 		"cartas": ["classe.mago.aprendiz-de-fogo", "classe.mago.aprendiz-de-terra"], "topo": ["Arcanismo", "História", "Investigação", "Medicina"]},
+	"Bruxo": {"nome": "Vesna (pronta)", "atributos": {"espirito": 3, "constituicao": 3, "destreza": 2, "sabedoria": 2, "percepcao": 1, "raciocinio": 1, "forca": 1, "mentira": 0, "diplomacia": 0},
+		"arma": "faca", "arma2": "nenhuma", "armadura": "couro_do_batedor", "escudo": "nenhum", "foco": "varinha_eletrizante",
+		"cartas": ["classe.bruxo.oferenda-selada", "classe.bruxo.concentrar-a-manifestacao"], "topo": ["Arcanismo", "Intimidação", "Intuição", "Religião"]},
 }
 
 
@@ -39,6 +42,10 @@ static func ficha(classe: String) -> Dictionary:
 	f["meias"] = []
 	f["herois"] = [Catalogo.herois_de(classe)[0]["id"], "raca.humano.heroi.incansavel"]
 	f["consumiveis"] = ["pocao_de_cura_pequena", "tocha", "tocha"]
+	# 0.25: inventário por espaços (mochila inicial e o item da classe no espaço dele).
+	f["acessorios"] = []
+	f["mochila"] = preload("res://core/itens.gd").MOCHILA_INICIAL.duplicate()
+	Personagem.trocar_item_de_classe(f, "")
 	var ordem: Array = m["topo"].duplicate()
 	for p in PERICIAS_GERAIS:
 		if not p in ordem:

@@ -1,0 +1,1590 @@
+{
+ "fonte": "Bruxo_Pactos_e_Habilidades_Proposta_v02 (27/10/2026)",
+ "herois": [
+  {
+   "id": "classe.bruxo.heroi.a-fenix",
+   "fonte": "classe",
+   "entidade": "Bruxo",
+   "nome": "A Fênix",
+   "descricao": "Pacto da Fênix · Fogo · Fênix. Queimar → contribuir para a morte de monstros → ganhar Pacto → escolher entre explosão e recuperação.",
+   "passiva": "Carta do Pacto da Fênix. Concede a tag Pacto (e as tags Fogo e Fênix).",
+   "ativada": "Gaste X fichas de Pacto: cure 3X de um alvo em alcance curto. A cura segue a regra normal de cura e exílio.",
+   "desencadeada": "Cada ficha de Fogo causa 2 de dano em vez de 1, independentemente de quem a colocou (inclui Fogo de outras fontes e Fogo hostil).",
+   "critico": "Ganhe fichas de Pacto iguais ao nível deste pacto.",
+   "custo_ativada": {
+    "fadiga": 0,
+    "acao": null,
+    "outros": [],
+    "permanente": "",
+    "efeito": "cure 3X de um alvo em alcance curto. A cura segue a regra normal de cura e exílio."
+   },
+   "limite_fadiga": 4,
+   "pacto": "fenix",
+   "impressao": "bruxo-v02"
+  },
+  {
+   "id": "classe.bruxo.heroi.malgor-o-credor-do-ultimo-folego",
+   "fonte": "classe",
+   "entidade": "Bruxo",
+   "nome": "Malgor, o Credor do Último Fôlego",
+   "descricao": "Pacto do Abismo · Infernal · Abismo. Exilar voluntariamente → ganhar Pacto e potência → arriscar o 21 → pagar a cobrança do estouro.",
+   "passiva": "Carta do Pacto do Abismo. Concede a tag Pacto (e as tags Infernal e Abismo).",
+   "ativada": "2 Pactos: após estourar e antes de comprar a carta final, olhe as 3 cartas do topo do seu baralho. Escolha uma como carta final e exile as demais. Apenas uma intervenção deste pacto na carta final por teste.",
+   "desencadeada": "Uma vez no seu turno, depois de resolver uma magia concedida por este pacto em cujo custo você exilou cartas do baralho, retire 1 de Fadiga daquela magia.",
+   "critico": "Ganhe fichas de Pacto iguais ao nível deste pacto.",
+   "custo_ativada": {
+    "fadiga": 0,
+    "acao": null,
+    "outros": [
+     "2 Pacto(s)"
+    ],
+    "permanente": "",
+    "efeito": "após estourar e antes de comprar a carta final, olhe as 3 cartas do topo do seu baralho. Escolha uma como carta final e exile as demais. Apenas uma intervenção deste pacto na carta final por teste."
+   },
+   "limite_fadiga": 4,
+   "pacto": "abismo",
+   "impressao": "bruxo-v02"
+  },
+  {
+   "id": "classe.bruxo.heroi.a-sentinela-que-nunca-recuou",
+   "fonte": "classe",
+   "entidade": "Bruxo",
+   "nome": "A Sentinela que Nunca Recuou",
+   "descricao": "Pacto da Última Porta · Luz · Juramento. Jurar proteção → assumir dano real → ganhar Pacto → escolher entre nova proteção e retaliação.",
+   "passiva": "Carta do Pacto da Última Porta. Concede a tag Pacto (e as tags Luz e Juramento).",
+   "ativada": "X Pactos, Reação: quando um ataque inimigo causar dano ao protegido em alcance curto, reduza esse dano em 3X antes de distribuí-lo entre armadura, escudo e baralho.",
+   "desencadeada": "Uma vez por rodada, depois de receber dano de um ataque no lugar do protegido, se estiver adjacente a ele, vocês podem mover-se 1 quadrado cada, sem provocar ataques de oportunidade, terminando adjacentes.",
+   "critico": "Ganhe fichas de Pacto iguais ao nível deste pacto.",
+   "custo_ativada": {
+    "fadiga": 0,
+    "acao": "reacao",
+    "outros": [
+     "X Pacto(s)"
+    ],
+    "permanente": "",
+    "efeito": "quando um ataque inimigo causar dano ao protegido em alcance curto, reduza esse dano em 3X antes de distribuí-lo entre armadura, escudo e baralho."
+   },
+   "limite_fadiga": 4,
+   "pacto": "ultima-porta",
+   "impressao": "bruxo-v02"
+  },
+  {
+   "id": "classe.bruxo.heroi.a-testemunha-sem-rosto",
+   "fonte": "classe",
+   "entidade": "Bruxo",
+   "nome": "A Testemunha Sem Rosto",
+   "descricao": "Pacto do Olho Descoberto · Luz · Revelação. Marcar → enxergar a aposta inimiga → inverter a ordem de decisão → colher o erro do adversário.",
+   "passiva": "Carta do Pacto do Olho Descoberto. Concede a tag Pacto (e as tags Luz e Revelação).",
+   "ativada": "1 Pacto, Reação: quando um inimigo em alcance curto colocar a carta Fechada num teste de que você participa, revele-a.",
+   "desencadeada": "Uma vez por rodada, depois de vencer um ataque ou defesa contra um inimigo cuja carta Fechada esteja revelada, ganhe 1 ficha de Foco.",
+   "critico": "Ganhe fichas de Pacto iguais ao nível deste pacto.",
+   "custo_ativada": {
+    "fadiga": 0,
+    "acao": "reacao",
+    "outros": [
+     "1 Pacto(s)"
+    ],
+    "permanente": "",
+    "efeito": "quando um inimigo em alcance curto colocar a carta Fechada num teste de que você participa, revele-a."
+   },
+   "limite_fadiga": 4,
+   "pacto": "olho-descoberto",
+   "impressao": "bruxo-v02"
+  },
+  {
+   "id": "classe.bruxo.heroi.a-serpente-entre-as-portas",
+   "fonte": "classe",
+   "entidade": "Bruxo",
+   "nome": "A Serpente Entre as Portas",
+   "descricao": "Pacto dos Caminhos Roubados · Ar · Limiar. Deslocar um inimigo para o alcance de um aliado → ganhar Pacto → trocar posições e abrir rotas.",
+   "passiva": "Carta do Pacto dos Caminhos Roubados. Concede a tag Pacto (e as tags Ar e Limiar).",
+   "ativada": "1 Pacto, Reação: quando um aliado em alcance curto for escolhido como alvo de um ataque, ele pode mover-se 1 quadrado, ignorando impedimento e sem provocar ataques de oportunidade.",
+   "desencadeada": "Uma vez por turno, depois que você deslocar um inimigo, você pode mover-se 1 quadrado, ignorando impedimento e sem provocar ataques de oportunidade.",
+   "critico": "Ganhe fichas de Pacto iguais ao nível deste pacto.",
+   "custo_ativada": {
+    "fadiga": 0,
+    "acao": "reacao",
+    "outros": [
+     "1 Pacto(s)"
+    ],
+    "permanente": "",
+    "efeito": "quando um aliado em alcance curto for escolhido como alvo de um ataque, ele pode mover-se 1 quadrado, ignorando impedimento e sem provocar ataques de oportunidade."
+   },
+   "limite_fadiga": 4,
+   "pacto": "caminhos-roubados",
+   "impressao": "bruxo-v02"
+  },
+  {
+   "id": "classe.bruxo.heroi.o-carcereiro-sem-chave",
+   "fonte": "classe",
+   "entidade": "Bruxo",
+   "nome": "O Carcereiro Sem Chave",
+   "descricao": "Pacto dos Grilhões Vivos · Trevas · Prisão. Prender → converter a prisão em pressão → ganhar Pacto quando o inimigo paga para escapar → punir a libertação.",
+   "passiva": "Carta do Pacto dos Grilhões Vivos. Concede a tag Pacto (e as tags Trevas e Prisão).",
+   "ativada": "1 Pacto, Reação: depois que um inimigo em alcance curto remover Imobilizar ou Atordoamento colocado por você, coloque 1 ficha de Penalidade nele.",
+   "desencadeada": "Uma vez por rodada, quando um inimigo gastar uma ação para remover Imobilizar ou Atordoamento colocado por você, ganhe 1 ficha de Foco.",
+   "critico": "Ganhe fichas de Pacto iguais ao nível deste pacto.",
+   "custo_ativada": {
+    "fadiga": 0,
+    "acao": "reacao",
+    "outros": [
+     "1 Pacto(s)"
+    ],
+    "permanente": "",
+    "efeito": "depois que um inimigo em alcance curto remover Imobilizar ou Atordoamento colocado por você, coloque 1 ficha de Penalidade nele."
+   },
+   "limite_fadiga": 4,
+   "pacto": "grilhoes-vivos",
+   "impressao": "bruxo-v02"
+  },
+  {
+   "id": "classe.bruxo.heroi.vorga-a-boca-sob-o-lago",
+   "fonte": "classe",
+   "entidade": "Bruxo",
+   "nome": "Vorga, a Boca sob o Lago",
+   "descricao": "Pacto da Mesa Vazia · Fome · Dreno. Atormentar → deixar a Fadiga inimiga crescer → devorar o esforço acumulado → sustentar novas conjurações.",
+   "passiva": "Carta do Pacto da Mesa Vazia. Concede a tag Pacto (e as tags Fome e Dreno).",
+   "ativada": "X Pactos: antes de comprar as cartas de um ataque mágico concedido por este pacto contra um alvo com Atormentado, aumente em 2X o dano no acerto. Se o ataque causar dano, você pode curar X.",
+   "desencadeada": "Uma vez por rodada, depois de uma magia deste pacto remover Fadiga de um inimigo, retire 1 de Fadiga de uma de suas outras cartas.",
+   "critico": "Ganhe fichas de Pacto iguais ao nível deste pacto.",
+   "custo_ativada": {
+    "fadiga": 0,
+    "acao": null,
+    "outros": [
+     "X Pacto(s)"
+    ],
+    "permanente": "",
+    "efeito": "antes de comprar as cartas de um ataque mágico concedido por este pacto contra um alvo com Atormentado, aumente em 2X o dano no acerto. Se o ataque causar dano, você pode curar X."
+   },
+   "limite_fadiga": 4,
+   "pacto": "mesa-vazia",
+   "impressao": "bruxo-v02"
+  },
+  {
+   "id": "classe.bruxo.heroi.a-serpente-de-cobre-que-circunda-a-tormenta",
+   "fonte": "classe",
+   "entidade": "Bruxo",
+   "nome": "A Serpente de Cobre que Circunda a Tormenta",
+   "descricao": "Pacto do Trovão Cativo · Raio · Tempestade. Conjurar → encher uma carta → ganhar Pacto e reação → consumir a Fadiga em uma descarga.",
+   "passiva": "Carta do Pacto do Trovão Cativo. Concede a tag Pacto (e as tags Raio e Tempestade).",
+   "ativada": "X Pactos, Reação: depois de uma magia de Raio concedida por este pacto acertar um inimigo, cause 2X de dano de Raio a um segundo inimigo adjacente a ele, sem novo teste.",
+   "desencadeada": "Uma vez por rodada, quando pagar a Fadiga de uma magia deste pacto fizer uma carta sua chegar exatamente ao limite, se você não tiver nenhuma ficha de Reação, ganhe 1 ficha de Reação.",
+   "critico": "Ganhe fichas de Pacto iguais ao nível deste pacto.",
+   "custo_ativada": {
+    "fadiga": 0,
+    "acao": "reacao",
+    "outros": [
+     "X Pacto(s)"
+    ],
+    "permanente": "",
+    "efeito": "depois de uma magia de Raio concedida por este pacto acertar um inimigo, cause 2X de dano de Raio a um segundo inimigo adjacente a ele, sem novo teste."
+   },
+   "limite_fadiga": 4,
+   "pacto": "trovao-cativo",
+   "impressao": "bruxo-v02"
+  },
+  {
+   "id": "classe.bruxo.heroi.nimeria-a-dama-dos-sonhos-inacabados",
+   "fonte": "classe",
+   "entidade": "Bruxo",
+   "nome": "Niméria, a Dama dos Sonhos Inacabados",
+   "descricao": "Pacto dos Sonhos Roubados · Trevas · Sonho. Atormentar → esperar o inimigo acumular Fadiga ou virar a carta → colher Pacto ou Foco → consumir o pesadelo para formar uma mão melhor.",
+   "passiva": "Carta do Pacto dos Sonhos Roubados. Concede a tag Pacto (e as tags Trevas e Sonho).",
+   "ativada": "2 Pactos, Reação: quando um inimigo em alcance curto que tenha Atormentado colocado por você escolher o alvo de um ataque, faça um teste contestado de Espírito contra Espírito dele. Se vencer, coloque 1 Confusão nele antes de resolver a escolha de alvo.",
+   "desencadeada": "Uma vez por rodada, depois que um inimigo remover Atormentado colocado por você, ganhe 1 Foco.",
+   "critico": "Ganhe fichas de Pacto iguais ao nível deste pacto.",
+   "custo_ativada": {
+    "fadiga": 0,
+    "acao": "reacao",
+    "outros": [
+     "2 Pacto(s)"
+    ],
+    "permanente": "",
+    "efeito": "quando um inimigo em alcance curto que tenha Atormentado colocado por você escolher o alvo de um ataque, faça um teste contestado de Espírito contra Espírito dele. Se vencer, coloque 1 Confusão nele antes de resolver a escolha de alvo."
+   },
+   "limite_fadiga": 4,
+   "pacto": "sonhos-roubados",
+   "impressao": "bruxo-v02"
+  },
+  {
+   "id": "classe.bruxo.heroi.a-rainha-da-ultima-geada",
+   "fonte": "classe",
+   "entidade": "Bruxo",
+   "nome": "A Rainha da Última Geada",
+   "descricao": "Pacto do Inverno Imóvel · Gelo · Conservação. Conservar Fadiga → ganhar Pacto → concentrar a Fadiga num disparo → sustentar a posição ou quebrar a camada virando a carta.",
+   "passiva": "Carta do Pacto do Inverno Imóvel. Concede a tag Pacto (e as tags Gelo e Conservação).",
+   "ativada": "1 Pacto: transfira 1 Fadiga de outra carta sua para esta carta de herói, apenas se houver espaço. Uma vez no seu turno.",
+   "desencadeada": "Uma vez no seu turno, quando a habilidade inicial deste pacto atingir seu limite de Fadiga após a resolução da magia, se você não tiver Bloqueio, coloque 1 Bloqueio em sua carta de herói.",
+   "critico": "Ganhe fichas de Pacto iguais ao nível deste pacto.",
+   "custo_ativada": {
+    "fadiga": 0,
+    "acao": null,
+    "outros": [
+     "1 Pacto(s)"
+    ],
+    "permanente": "",
+    "efeito": "transfira 1 Fadiga de outra carta sua para esta carta de herói, apenas se houver espaço. Uma vez no seu turno."
+   },
+   "limite_fadiga": 4,
+   "pacto": "inverno-imovel",
+   "impressao": "bruxo-v02"
+  }
+ ],
+ "habilidades": [
+  {
+   "id": "pacto.fenix.inicial",
+   "fonte": "pacto",
+   "entidade": "Bruxo (pacto)",
+   "grupo": "Pacto da Fênix",
+   "xp": 0,
+   "meia_carta": false,
+   "lados": [
+    {
+     "nome": "Ave Fênix",
+     "tags": [
+      "Magia",
+      "Pacto",
+      "Fogo",
+      "Fênix"
+     ],
+     "texto": "1 de Fadiga, Ação Padrão: faça um ataque mágico com seu foco contra um alvo em alcance curto, somando Espírito ao dano. Se acertar, coloque 1 ficha de Fogo no alvo e em cada inimigo adjacente a ele. Ao usar esta magia, você pode gastar X fichas de Pacto: se acertar, +2X de dano no alvo principal e 1 + 2X de dano direto em cada inimigo adjacente a ele.",
+     "limite_fadiga": 2,
+     "custo": {
+      "fadiga": 1,
+      "acao": "padrao",
+      "outros": [],
+      "permanente": "",
+      "efeito": "faça um ataque mágico com seu foco contra um alvo em alcance curto, somando Espírito ao dano. Se acertar, coloque 1 ficha de Fogo no alvo e em cada inimigo adjacente a ele. Ao usar esta magia, você pode gastar X fichas de Pacto: se acertar, +2X de dano no alvo principal e 1 + 2X de dano direto em cada inimigo adjacente a ele."
+     }
+    },
+    {
+     "nome": "Absorver as Chamas",
+     "tags": [
+      "Magia",
+      "Pacto",
+      "Fogo",
+      "Fênix"
+     ],
+     "texto": "2 de Fadiga, Ação Padrão: remova todas as fichas de Fogo em alcance curto. Você cura F + 2X: F é o número de fichas de Fogo removidas e X o de fichas de Pacto gastas (X pode ser zero). Siga a regra normal de cura e exílio.",
+     "limite_fadiga": 4,
+     "custo": {
+      "fadiga": 2,
+      "acao": "padrao",
+      "outros": [],
+      "permanente": "",
+      "efeito": "remova todas as fichas de Fogo em alcance curto. Você cura F + 2X: F é o número de fichas de Fogo removidas e X o de fichas de Pacto gastas (X pode ser zero). Siga a regra normal de cura e exílio."
+     }
+    }
+   ],
+   "pacto": "fenix",
+   "impressao": "bruxo-v02"
+  },
+  {
+   "id": "pacto.abismo.inicial",
+   "fonte": "pacto",
+   "entidade": "Bruxo (pacto)",
+   "grupo": "Pacto do Abismo",
+   "xp": 0,
+   "meia_carta": false,
+   "lados": [
+    {
+     "nome": "Sangrar o Véu",
+     "tags": [
+      "Magia",
+      "Pacto",
+      "Infernal",
+      "Abismo"
+     ],
+     "texto": "1 de Fadiga, Ação Padrão: faça um ataque mágico com foco em alcance curto, causando dano Necrótico. Como custo adicional, antes de comprar as cartas do ataque, você pode exilar até Espírito cartas do topo do seu baralho. Se acertar, cause +2 de dano por carta assim exilada.",
+     "limite_fadiga": 2,
+     "custo": {
+      "fadiga": 1,
+      "acao": "padrao",
+      "outros": [],
+      "permanente": "",
+      "efeito": "faça um ataque mágico com foco em alcance curto, causando dano Necrótico. Como custo adicional, antes de comprar as cartas do ataque, você pode exilar até Espírito cartas do topo do seu baralho. Se acertar, cause +2 de dano por carta assim exilada."
+     }
+    },
+    {
+     "nome": "Última Oferta",
+     "tags": [
+      "Magia",
+      "Pacto",
+      "Infernal",
+      "Abismo"
+     ],
+     "texto": "2 de Fadiga, Reação: depois de estourar uma defesa e comprar sua carta final, exile essa carta e compre uma substituta. Use o novo valor. Apenas uma intervenção deste pacto na carta final por teste.",
+     "limite_fadiga": 3,
+     "custo": {
+      "fadiga": 2,
+      "acao": "reacao",
+      "outros": [],
+      "permanente": "",
+      "efeito": "depois de estourar uma defesa e comprar sua carta final, exile essa carta e compre uma substituta. Use o novo valor. Apenas uma intervenção deste pacto na carta final por teste."
+     }
+    }
+   ],
+   "pacto": "abismo",
+   "impressao": "bruxo-v02"
+  },
+  {
+   "id": "pacto.ultima-porta.inicial",
+   "fonte": "pacto",
+   "entidade": "Bruxo (pacto)",
+   "grupo": "Pacto da Última Porta",
+   "xp": 0,
+   "meia_carta": false,
+   "lados": [
+    {
+     "nome": "Vigília da Porta",
+     "tags": [
+      "Magia",
+      "Pacto",
+      "Luz",
+      "Juramento"
+     ],
+     "texto": "1 de Fadiga, Ação Padrão: se você ainda não tiver Guarda, coloque 1 ficha de Guarda em sua carta de herói. Se o protegido estiver em alcance curto e ainda não tiver Bloqueio, coloque 1 ficha de Bloqueio em uma carta dele.",
+     "limite_fadiga": 2,
+     "custo": {
+      "fadiga": 1,
+      "acao": "padrao",
+      "outros": [],
+      "permanente": "",
+      "efeito": "se você ainda não tiver Guarda, coloque 1 ficha de Guarda em sua carta de herói. Se o protegido estiver em alcance curto e ainda não tiver Bloqueio, coloque 1 ficha de Bloqueio em uma carta dele."
+     }
+    },
+    {
+     "nome": "Punho da Sentinela",
+     "tags": [
+      "Magia",
+      "Pacto",
+      "Luz",
+      "Juramento"
+     ],
+     "texto": "2 de Fadiga, Ação Padrão: faça um ataque mágico com foco, causando dano Radiante, contra um inimigo em alcance curto que tenha atacado o protegido desde o fim de seu último turno. Se acertar, some novamente seu Espírito ao dano.",
+     "limite_fadiga": 3,
+     "custo": {
+      "fadiga": 2,
+      "acao": "padrao",
+      "outros": [],
+      "permanente": "",
+      "efeito": "faça um ataque mágico com foco, causando dano Radiante, contra um inimigo em alcance curto que tenha atacado o protegido desde o fim de seu último turno. Se acertar, some novamente seu Espírito ao dano."
+     }
+    }
+   ],
+   "pacto": "ultima-porta",
+   "impressao": "bruxo-v02"
+  },
+  {
+   "id": "pacto.olho-descoberto.inicial",
+   "fonte": "pacto",
+   "entidade": "Bruxo (pacto)",
+   "grupo": "Pacto do Olho Descoberto",
+   "xp": 0,
+   "meia_carta": false,
+   "lados": [
+    {
+     "nome": "Olhar que Despe",
+     "tags": [
+      "Magia",
+      "Pacto",
+      "Luz",
+      "Revelação"
+     ],
+     "texto": "1 de Fadiga, Ação de Movimento: escolha uma criatura em alcance curto. Faça um teste contestado de Espírito contra Mentira do alvo. Se vencer, coloque 1 ficha de Marcação nele.",
+     "limite_fadiga": 2,
+     "custo": {
+      "fadiga": 1,
+      "acao": "movimento",
+      "outros": [],
+      "permanente": "",
+      "efeito": "escolha uma criatura em alcance curto. Faça um teste contestado de Espírito contra Mentira do alvo. Se vencer, coloque 1 ficha de Marcação nele."
+     }
+    },
+    {
+     "nome": "Veredito Antecipado",
+     "tags": [
+      "Magia",
+      "Pacto",
+      "Luz",
+      "Revelação"
+     ],
+     "texto": "1 de Fadiga, Ação Padrão: faça um ataque mágico com foco, causando dano Radiante, contra um inimigo Marcado em alcance curto. O defensor conclui o teste antes de você decidir se puxa mais cartas. Você ainda pode estourar normalmente.",
+     "limite_fadiga": 3,
+     "custo": {
+      "fadiga": 1,
+      "acao": "padrao",
+      "outros": [],
+      "permanente": "",
+      "efeito": "faça um ataque mágico com foco, causando dano Radiante, contra um inimigo Marcado em alcance curto. O defensor conclui o teste antes de você decidir se puxa mais cartas. Você ainda pode estourar normalmente."
+     }
+    }
+   ],
+   "pacto": "olho-descoberto",
+   "impressao": "bruxo-v02"
+  },
+  {
+   "id": "pacto.caminhos-roubados.inicial",
+   "fonte": "pacto",
+   "entidade": "Bruxo (pacto)",
+   "grupo": "Pacto dos Caminhos Roubados",
+   "xp": 0,
+   "meia_carta": false,
+   "lados": [
+    {
+     "nome": "Mão Além do Limiar",
+     "tags": [
+      "Magia",
+      "Pacto",
+      "Ar",
+      "Limiar"
+     ],
+     "texto": "1 de Fadiga, Ação Padrão: faça um ataque mágico com foco em alcance curto, causando dano de Concussão. Se acertar, desloque o alvo 2 quadrados em linha reta em sua direção ou para longe de você. Pode gastar X Pactos para aumentar esse deslocamento em X quadrados.",
+     "limite_fadiga": 2,
+     "custo": {
+      "fadiga": 1,
+      "acao": "padrao",
+      "outros": [],
+      "permanente": "",
+      "efeito": "faça um ataque mágico com foco em alcance curto, causando dano de Concussão. Se acertar, desloque o alvo 2 quadrados em linha reta em sua direção ou para longe de você. Pode gastar X Pactos para aumentar esse deslocamento em X quadrados."
+     }
+    },
+    {
+     "nome": "Passagem Indevida",
+     "tags": [
+      "Magia",
+      "Pacto",
+      "Ar",
+      "Limiar"
+     ],
+     "texto": "1 de Fadiga e 1 Pacto, Ação de Movimento: troque de lugar com um aliado que você possa ver em alcance curto. Em vez de aliado, pode escolher um inimigo e pagar 2 Pactos: faça um teste contestado de Espírito contra Espírito dele; se vencer, troquem de lugar.",
+     "limite_fadiga": 3,
+     "custo": {
+      "fadiga": 1,
+      "acao": "movimento",
+      "outros": [
+       "1 Pacto(s)"
+      ],
+      "permanente": "",
+      "efeito": "troque de lugar com um aliado que você possa ver em alcance curto. Em vez de aliado, pode escolher um inimigo e pagar 2 Pactos: faça um teste contestado de Espírito contra Espírito dele; se vencer, troquem de lugar."
+     }
+    }
+   ],
+   "pacto": "caminhos-roubados",
+   "impressao": "bruxo-v02"
+  },
+  {
+   "id": "pacto.grilhoes-vivos.inicial",
+   "fonte": "pacto",
+   "entidade": "Bruxo (pacto)",
+   "grupo": "Pacto dos Grilhões Vivos",
+   "xp": 0,
+   "meia_carta": false,
+   "lados": [
+    {
+     "nome": "Grilhão de Sombra",
+     "tags": [
+      "Magia",
+      "Pacto",
+      "Trevas",
+      "Prisão"
+     ],
+     "texto": "1 de Fadiga, Ação Padrão: faça um ataque mágico com foco em alcance curto, causando dano Necrótico. Se causar dano, o defensor recebe 1 ficha de Imobilizar. Você pode gastar 1 Pacto para colocar também 1 ficha de Atormentado.",
+     "limite_fadiga": 2,
+     "custo": {
+      "fadiga": 1,
+      "acao": "padrao",
+      "outros": [],
+      "permanente": "",
+      "efeito": "faça um ataque mágico com foco em alcance curto, causando dano Necrótico. Se causar dano, o defensor recebe 1 ficha de Imobilizar. Você pode gastar 1 Pacto para colocar também 1 ficha de Atormentado."
+     }
+    },
+    {
+     "nome": "Peso da Sentença",
+     "tags": [
+      "Magia",
+      "Pacto",
+      "Trevas",
+      "Prisão"
+     ],
+     "texto": "2 de Fadiga e 1 Pacto, Ação Padrão: escolha um inimigo em alcance curto que tenha Imobilizar colocado por você. Faça um teste contestado de Espírito contra Espírito dele. Se vencer, remova 1 dessas fichas de Imobilizar e coloque 1 ficha de Atordoamento.",
+     "limite_fadiga": 3,
+     "custo": {
+      "fadiga": 2,
+      "acao": "padrao",
+      "outros": [
+       "1 Pacto(s)"
+      ],
+      "permanente": "",
+      "efeito": "escolha um inimigo em alcance curto que tenha Imobilizar colocado por você. Faça um teste contestado de Espírito contra Espírito dele. Se vencer, remova 1 dessas fichas de Imobilizar e coloque 1 ficha de Atordoamento."
+     }
+    }
+   ],
+   "pacto": "grilhoes-vivos",
+   "impressao": "bruxo-v02"
+  },
+  {
+   "id": "pacto.mesa-vazia.inicial",
+   "fonte": "pacto",
+   "entidade": "Bruxo (pacto)",
+   "grupo": "Pacto da Mesa Vazia",
+   "xp": 0,
+   "meia_carta": false,
+   "lados": [
+    {
+     "nome": "Fermento da Fome",
+     "tags": [
+      "Magia",
+      "Pacto",
+      "Fome",
+      "Dreno"
+     ],
+     "texto": "1 de Fadiga, Ação Padrão: faça um ataque mágico com foco em alcance curto, causando dano de Dreno. Se acertar, coloque 1 ficha de Atormentado no defensor.",
+     "limite_fadiga": 2,
+     "custo": {
+      "fadiga": 1,
+      "acao": "padrao",
+      "outros": [],
+      "permanente": "",
+      "efeito": "faça um ataque mágico com foco em alcance curto, causando dano de Dreno. Se acertar, coloque 1 ficha de Atormentado no defensor."
+     }
+    },
+    {
+     "nome": "Devorar o Esforço",
+     "tags": [
+      "Magia",
+      "Pacto",
+      "Fome",
+      "Dreno"
+     ],
+     "texto": "1 de Fadiga, Ação Padrão: escolha um inimigo em alcance curto que tenha Fadiga. Faça um teste contestado de Espírito contra Espírito dele. Se vencer, remova até Espírito fichas de Fadiga do alvo e cause 2 de dano de Dreno por ficha removida.",
+     "limite_fadiga": 4,
+     "custo": {
+      "fadiga": 1,
+      "acao": "padrao",
+      "outros": [],
+      "permanente": "",
+      "efeito": "escolha um inimigo em alcance curto que tenha Fadiga. Faça um teste contestado de Espírito contra Espírito dele. Se vencer, remova até Espírito fichas de Fadiga do alvo e cause 2 de dano de Dreno por ficha removida."
+     }
+    }
+   ],
+   "pacto": "mesa-vazia",
+   "impressao": "bruxo-v02"
+  },
+  {
+   "id": "pacto.trovao-cativo.inicial",
+   "fonte": "pacto",
+   "entidade": "Bruxo (pacto)",
+   "grupo": "Pacto do Trovão Cativo",
+   "xp": 0,
+   "meia_carta": false,
+   "lados": [
+    {
+     "nome": "Fagulha Cativa",
+     "tags": [
+      "Magia",
+      "Pacto",
+      "Raio",
+      "Tempestade",
+      "Conjuração"
+     ],
+     "texto": "1 de Fadiga, Ação Padrão: faça um ataque mágico com foco em alcance médio, causando dano de Raio. Esta magia tem Conjuração: você pode pagar sua Fadiga em outra carta sua com capacidade livre.",
+     "limite_fadiga": 2,
+     "custo": {
+      "fadiga": 1,
+      "acao": "padrao",
+      "outros": [],
+      "permanente": "",
+      "efeito": "faça um ataque mágico com foco em alcance médio, causando dano de Raio. Esta magia tem Conjuração: você pode pagar sua Fadiga em outra carta sua com capacidade livre."
+     }
+    },
+    {
+     "nome": "Descarregar a Tormenta",
+     "tags": [
+      "Magia",
+      "Pacto",
+      "Raio",
+      "Tempestade"
+     ],
+     "texto": "1 de Fadiga, Reação: depois que um inimigo em alcance curto concluir um ataque contra você, faça um ataque mágico de resposta contra ele com foco, causando dano de Raio. Como custo adicional, remova de suas outras cartas até Espírito fichas de Fadiga. Se acertar, cause +2 de dano por ficha assim removida.",
+     "limite_fadiga": 4,
+     "custo": {
+      "fadiga": 1,
+      "acao": "reacao",
+      "outros": [],
+      "permanente": "",
+      "efeito": "depois que um inimigo em alcance curto concluir um ataque contra você, faça um ataque mágico de resposta contra ele com foco, causando dano de Raio. Como custo adicional, remova de suas outras cartas até Espírito fichas de Fadiga. Se acertar, cause +2 de dano por ficha assim removida."
+     }
+    }
+   ],
+   "pacto": "trovao-cativo",
+   "impressao": "bruxo-v02"
+  },
+  {
+   "id": "pacto.sonhos-roubados.inicial",
+   "fonte": "pacto",
+   "entidade": "Bruxo (pacto)",
+   "grupo": "Pacto dos Sonhos Roubados",
+   "xp": 0,
+   "meia_carta": false,
+   "lados": [
+    {
+     "nome": "Semeadura do Pesadelo",
+     "tags": [
+      "Magia",
+      "Pacto",
+      "Trevas",
+      "Sonho"
+     ],
+     "texto": "1 de Fadiga, Ação Padrão: faça um ataque mágico com foco em alcance curto, causando dano Psíquico. Se causar dano, coloque 1 Atormentado no defensor. Esta magia não coloca outro Atormentado se o defensor já tiver um colocado por você.",
+     "limite_fadiga": 2,
+     "custo": {
+      "fadiga": 1,
+      "acao": "padrao",
+      "outros": [],
+      "permanente": "",
+      "efeito": "faça um ataque mágico com foco em alcance curto, causando dano Psíquico. Se causar dano, coloque 1 Atormentado no defensor. Esta magia não coloca outro Atormentado se o defensor já tiver um colocado por você."
+     }
+    },
+    {
+     "nome": "Colher o Sonho",
+     "tags": [
+      "Magia",
+      "Pacto",
+      "Trevas",
+      "Sonho"
+     ],
+     "texto": "2 de Fadiga, Ação Padrão: escolha um inimigo em alcance curto que tenha Atormentado colocado por você e remova 1 dessas fichas. Olhe as 3 cartas do topo de seu baralho, coloque 2 delas em sua mão e as demais no fundo do baralho. Antes de olhar, você pode gastar X Pactos para olhar X cartas adicionais.",
+     "limite_fadiga": 3,
+     "custo": {
+      "fadiga": 2,
+      "acao": "padrao",
+      "outros": [],
+      "permanente": "",
+      "efeito": "escolha um inimigo em alcance curto que tenha Atormentado colocado por você e remova 1 dessas fichas. Olhe as 3 cartas do topo de seu baralho, coloque 2 delas em sua mão e as demais no fundo do baralho. Antes de olhar, você pode gastar X Pactos para olhar X cartas adicionais."
+     }
+    }
+   ],
+   "pacto": "sonhos-roubados",
+   "impressao": "bruxo-v02"
+  },
+  {
+   "id": "pacto.inverno-imovel.inicial",
+   "fonte": "pacto",
+   "entidade": "Bruxo (pacto)",
+   "grupo": "Pacto do Inverno Imóvel",
+   "xp": 0,
+   "meia_carta": false,
+   "lados": [
+    {
+     "nome": "Sopro da Geada",
+     "tags": [
+      "Magia",
+      "Pacto",
+      "Gelo",
+      "Conservação"
+     ],
+     "texto": "1 de Fadiga, Ação Padrão: faça um ataque mágico com foco em alcance curto, causando dano de Gelo. Se causar dano, a próxima ação de Movimento que o defensor usar até o início do seu próximo turno rende apenas 1 quadrado.",
+     "limite_fadiga": 2,
+     "custo": {
+      "fadiga": 1,
+      "acao": "padrao",
+      "outros": [],
+      "permanente": "",
+      "efeito": "faça um ataque mágico com foco em alcance curto, causando dano de Gelo. Se causar dano, a próxima ação de Movimento que o defensor usar até o início do seu próximo turno rende apenas 1 quadrado."
+     }
+    },
+    {
+     "nome": "Coração do Inverno",
+     "tags": [
+      "Magia",
+      "Pacto",
+      "Gelo",
+      "Conservação"
+     ],
+     "texto": "2 de Fadiga, Ação Padrão: depois de pagar a Fadiga desta magia, você pode transferir até 2 Fadigas de uma outra carta sua para esta carta, sem ultrapassar seu limite. Faça um ataque mágico com foco em alcance curto, causando dano de Gelo. Se acertar, cause +2 de dano por Fadiga transferida.",
+     "limite_fadiga": 4,
+     "custo": {
+      "fadiga": 2,
+      "acao": "padrao",
+      "outros": [],
+      "permanente": "",
+      "efeito": "depois de pagar a Fadiga desta magia, você pode transferir até 2 Fadigas de uma outra carta sua para esta carta, sem ultrapassar seu limite. Faça um ataque mágico com foco em alcance curto, causando dano de Gelo. Se acertar, cause +2 de dano por Fadiga transferida."
+     }
+    }
+   ],
+   "pacto": "inverno-imovel",
+   "impressao": "bruxo-v02"
+  },
+  {
+   "id": "classe.bruxo.pacto-menor",
+   "fonte": "classe",
+   "entidade": "Bruxo",
+   "grupo": "ESTRATÉGIA · VÍNCULOS",
+   "xp": 1,
+   "meia_carta": false,
+   "lados": [
+    {
+     "nome": "Pacto Menor",
+     "tags": [
+      "Pacto"
+     ],
+     "texto": "Ao escolher esta carta, associe um patrono secundário. Suas tags, a reserva menor e a cobrança menor desse patrono permanecem nos dois lados. No começo da cena, a reserva menor recebe N Pactos. Enquanto este lado estiver revelado, você pode usar somente o benefício menor dele. Não recebe a habilidade inicial A/B nem os efeitos de herói.",
+     "limite_fadiga": 2,
+     "custo": {
+      "fadiga": 0,
+      "acao": null,
+      "outros": [],
+      "permanente": "",
+      "efeito": "Ao escolher esta carta, associe um patrono secundário. Suas tags, a reserva menor e a cobrança menor desse patrono permanecem nos dois lados. No começo da cena, a reserva menor recebe N Pactos. Enquanto este lado estiver revelado, você pode usar somente o benefício menor dele. Não recebe a habilidade inicial A/B nem os efeitos de herói."
+     }
+    },
+    {
+     "nome": "Procuração",
+     "tags": [
+      "Pacto"
+     ],
+     "texto": "2 Pactos da reserva menor, Ação de Movimento: retire 1 de Fadiga da habilidade inicial de seu pacto pleno. Uma vez por turno. O benefício menor fica inativo neste lado.",
+     "limite_fadiga": 2,
+     "custo": {
+      "fadiga": 0,
+      "acao": "movimento",
+      "outros": [
+       "2 Pacto(s)"
+      ],
+      "permanente": "",
+      "efeito": "retire 1 de Fadiga da habilidade inicial de seu pacto pleno. Uma vez por turno. O benefício menor fica inativo neste lado."
+     }
+    }
+   ],
+   "impressao": "bruxo-v02"
+  },
+  {
+   "id": "classe.bruxo.manter-o-canal",
+   "fonte": "classe",
+   "entidade": "Bruxo",
+   "grupo": "ESTRATÉGIA · VÍNCULOS",
+   "xp": 1,
+   "meia_carta": false,
+   "lados": [
+    {
+     "nome": "Manter o Canal",
+     "tags": [
+      "Pacto"
+     ],
+     "texto": "1 de Fadiga, 1 Pacto e Reação: quando um efeito inimigo faria você virar a habilidade inicial desse pacto, mantenha a face atual e coloque 1 ficha de Atormentado nela.",
+     "limite_fadiga": 2,
+     "custo": {
+      "fadiga": 1,
+      "acao": "reacao",
+      "outros": [
+       "1 Pacto(s)"
+      ],
+      "permanente": "",
+      "efeito": "quando um efeito inimigo faria você virar a habilidade inicial desse pacto, mantenha a face atual e coloque 1 ficha de Atormentado nela."
+     }
+    },
+    {
+     "nome": "Desatar o Nó",
+     "tags": [
+      "Pacto"
+     ],
+     "texto": "1 de Fadiga, 1 Pacto e Ação de Movimento: vire a habilidade inicial desse pacto e mova-se 1 quadrado ignorando impedimento e sem provocar ataques de oportunidade.",
+     "limite_fadiga": 2,
+     "custo": {
+      "fadiga": 1,
+      "acao": "movimento",
+      "outros": [
+       "1 Pacto(s)"
+      ],
+      "permanente": "",
+      "efeito": "vire a habilidade inicial desse pacto e mova-se 1 quadrado ignorando impedimento e sem provocar ataques de oportunidade."
+     }
+    }
+   ],
+   "impressao": "bruxo-v02"
+  },
+  {
+   "id": "classe.bruxo.patrono-presente",
+   "fonte": "classe",
+   "entidade": "Bruxo",
+   "grupo": "ESTRATÉGIA · VÍNCULOS",
+   "xp": 1,
+   "meia_carta": false,
+   "lados": [
+    {
+     "nome": "Patrono Presente",
+     "tags": [
+      "Pacto"
+     ],
+     "texto": "1 de Fadiga, 1 Pacto e Reação: quando um efeito de uma criatura que você possa ver em alcance curto anularia uma magia concedida por esse pacto, faça um teste contestado de Espírito contra Espírito dessa criatura. Se vencer, sua magia continua sua resolução normal.",
+     "limite_fadiga": 2,
+     "custo": {
+      "fadiga": 1,
+      "acao": "reacao",
+      "outros": [
+       "1 Pacto(s)"
+      ],
+      "permanente": "",
+      "efeito": "quando um efeito de uma criatura que você possa ver em alcance curto anularia uma magia concedida por esse pacto, faça um teste contestado de Espírito contra Espírito dessa criatura. Se vencer, sua magia continua sua resolução normal."
+     }
+    },
+    {
+     "nome": "Canal sem Ruído",
+     "tags": [
+      "Pacto"
+     ],
+     "texto": "1 de Fadiga e 1 Pacto: remova 1 ficha de Penalidade ou de Atormentado da habilidade inicial desse pacto, sem virá-la. Uma vez por turno.",
+     "limite_fadiga": 2,
+     "custo": {
+      "fadiga": 1,
+      "acao": null,
+      "outros": [
+       "1 Pacto(s)"
+      ],
+      "permanente": "",
+      "efeito": "remova 1 ficha de Penalidade ou de Atormentado da habilidade inicial desse pacto, sem virá-la. Uma vez por turno."
+     }
+    }
+   ],
+   "impressao": "bruxo-v02"
+  },
+  {
+   "id": "classe.bruxo.oferenda-selada",
+   "fonte": "classe",
+   "entidade": "Bruxo",
+   "grupo": "ESTRATÉGIA · PREÇO E PODER",
+   "xp": 1,
+   "meia_carta": false,
+   "lados": [
+    {
+     "nome": "Oferenda Selada",
+     "tags": [
+      "Pacto"
+     ],
+     "texto": "Exile 2 cartas comuns do seu descarte, Ação de Movimento: ganhe 2 Pactos em uma reserva sua que não esteja suspensa. Uma vez por cena.",
+     "limite_fadiga": 2,
+     "custo": {
+      "fadiga": 0,
+      "acao": "movimento",
+      "outros": [],
+      "permanente": "",
+      "efeito": "ganhe 2 Pactos em uma reserva sua que não esteja suspensa. Uma vez por cena."
+     }
+    },
+    {
+     "nome": "Resgatar o Penhor",
+     "tags": [
+      "Pacto"
+     ],
+     "texto": "2 Pactos de uma reserva sua, Ação Padrão: devolva 1 carta comum do seu exílio para o descarte.",
+     "limite_fadiga": 2,
+     "custo": {
+      "fadiga": 0,
+      "acao": "padrao",
+      "outros": [
+       "2 Pacto(s)"
+      ],
+      "permanente": "",
+      "efeito": "devolva 1 carta comum do seu exílio para o descarte."
+     }
+    }
+   ],
+   "impressao": "bruxo-v02"
+  },
+  {
+   "id": "classe.bruxo.testemunho-do-feito",
+   "fonte": "classe",
+   "entidade": "Bruxo",
+   "grupo": "ESTRATÉGIA · PREÇO E PODER",
+   "xp": 1,
+   "meia_carta": false,
+   "lados": [
+    {
+     "nome": "Testemunho do Feito",
+     "tags": [
+      "Pacto"
+     ],
+     "texto": "Uma vez por turno, depois de receber Pacto pelo gatilho de cumprimento de seu patrono, você pode descartar 1 carta da mão para ganhar 1 Pacto adicional naquela reserva.",
+     "limite_fadiga": 2,
+     "custo": {
+      "fadiga": 0,
+      "acao": null,
+      "outros": [],
+      "permanente": "",
+      "efeito": "Uma vez por turno, depois de receber Pacto pelo gatilho de cumprimento de seu patrono, você pode descartar 1 carta da mão para ganhar 1 Pacto adicional naquela reserva."
+     }
+    },
+    {
+     "nome": "O Patrono Lembra",
+     "tags": [
+      "Pacto"
+     ],
+     "texto": "1 de Fadiga e 1 Pacto: depois de resolver um ataque mágico estourado concedido por esse pacto, devolva à mão 1 carta usada naquele teste que esteja no seu descarte. Uma vez por teste.",
+     "limite_fadiga": 2,
+     "custo": {
+      "fadiga": 1,
+      "acao": null,
+      "outros": [
+       "1 Pacto(s)"
+      ],
+      "permanente": "",
+      "efeito": "depois de resolver um ataque mágico estourado concedido por esse pacto, devolva à mão 1 carta usada naquele teste que esteja no seu descarte. Uma vez por teste."
+     }
+    }
+   ],
+   "impressao": "bruxo-v02"
+  },
+  {
+   "id": "classe.bruxo.emprestar-a-vontade",
+   "fonte": "classe",
+   "entidade": "Bruxo",
+   "grupo": "ESTRATÉGIA · PREÇO E PODER",
+   "xp": 1,
+   "meia_carta": false,
+   "lados": [
+    {
+     "nome": "Emprestar a Vontade",
+     "tags": [
+      "Pacto"
+     ],
+     "texto": "1 de Fadiga: antes de realizar um teste de perícia cuja tarefa avance diretamente o cumprimento da cobrança de seu pacto pleno, use Espírito no lugar do atributo pedido. O mestre confirma a relação com a cobrança. Uma vez por cena.",
+     "limite_fadiga": 2,
+     "custo": {
+      "fadiga": 1,
+      "acao": null,
+      "outros": [],
+      "permanente": "",
+      "efeito": "antes de realizar um teste de perícia cuja tarefa avance diretamente o cumprimento da cobrança de seu pacto pleno, use Espírito no lugar do atributo pedido. O mestre confirma a relação com a cobrança. Uma vez por cena."
+     }
+    },
+    {
+     "nome": "Ouvir a Reprimenda",
+     "tags": [
+      "Pacto"
+     ],
+     "texto": "1 de Fadiga e 1 Pacto da reserva plena: depois de falhar em um teste de perícia cuja tarefa avance diretamente o cumprimento da cobrança desse pacto, compre 2 cartas para a mão. Uma vez por cena.",
+     "limite_fadiga": 2,
+     "custo": {
+      "fadiga": 1,
+      "acao": null,
+      "outros": [
+       "1 Pacto(s)"
+      ],
+      "permanente": "",
+      "efeito": "depois de falhar em um teste de perícia cuja tarefa avance diretamente o cumprimento da cobrança desse pacto, compre 2 cartas para a mão. Uma vez por cena."
+     }
+    }
+   ],
+   "impressao": "bruxo-v02"
+  },
+  {
+   "id": "classe.bruxo.concentrar-a-manifestacao",
+   "fonte": "classe",
+   "entidade": "Bruxo",
+   "grupo": "ESTRATÉGIA · POTÊNCIA ESPECIALIZADA",
+   "xp": 1,
+   "meia_carta": false,
+   "lados": [
+    {
+     "nome": "Concentrar a Manifestação",
+     "tags": [
+      "Pacto"
+     ],
+     "texto": "1 de Fadiga e 1 Pacto: antes de conjurar uma magia concedida por esse pacto que afetaria dois ou mais inimigos, escolha somente um deles. Ignore os efeitos nos demais e some novamente seu Espírito ao dano direto da magia contra o escolhido.",
+     "limite_fadiga": 2,
+     "custo": {
+      "fadiga": 1,
+      "acao": null,
+      "outros": [
+       "1 Pacto(s)"
+      ],
+      "permanente": "",
+      "efeito": "antes de conjurar uma magia concedida por esse pacto que afetaria dois ou mais inimigos, escolha somente um deles. Ignore os efeitos nos demais e some novamente seu Espírito ao dano direto da magia contra o escolhido."
+     }
+    },
+    {
+     "nome": "Estender o Sinal",
+     "tags": [
+      "Pacto"
+     ],
+     "texto": "2 de Fadiga e 1 Pacto: depois de sua magia desse pacto acertar e colocar fichas no alvo principal, faça um novo teste de ataque mágico contra outro inimigo adjacente a ele. Se acertar, coloque 1 ficha de um dos tipos que a magia colocou no primeiro alvo.",
+     "limite_fadiga": 2,
+     "custo": {
+      "fadiga": 2,
+      "acao": null,
+      "outros": [
+       "1 Pacto(s)"
+      ],
+      "permanente": "",
+      "efeito": "depois de sua magia desse pacto acertar e colocar fichas no alvo principal, faça um novo teste de ataque mágico contra outro inimigo adjacente a ele. Se acertar, coloque 1 ficha de um dos tipos que a magia colocou no primeiro alvo."
+     }
+    }
+   ],
+   "impressao": "bruxo-v02"
+  },
+  {
+   "id": "classe.bruxo.pressagio-do-patrono",
+   "fonte": "classe",
+   "entidade": "Bruxo",
+   "grupo": "ESTRATÉGIA · POTÊNCIA ESPECIALIZADA",
+   "xp": 1,
+   "meia_carta": false,
+   "lados": [
+    {
+     "nome": "Presságio do Patrono",
+     "tags": [
+      "Pacto"
+     ],
+     "texto": "1 de Fadiga, Ação de Movimento: imediatamente antes de começar um ataque mágico concedido por seu pacto pleno, faça scry 3.",
+     "limite_fadiga": 1,
+     "custo": {
+      "fadiga": 1,
+      "acao": "movimento",
+      "outros": [],
+      "permanente": "",
+      "efeito": "imediatamente antes de começar um ataque mágico concedido por seu pacto pleno, faça scry 3."
+     }
+    },
+    {
+     "nome": "Ler o Destino",
+     "tags": [
+      "Pacto"
+     ],
+     "texto": "1 de Fadiga: depois de revelar as duas cartas iniciais de um ataque mágico concedido por seu pacto pleno, coloque a carta Aberta no fundo do baralho e revele uma substituta. Uma vez por teste.",
+     "limite_fadiga": 1,
+     "custo": {
+      "fadiga": 1,
+      "acao": null,
+      "outros": [],
+      "permanente": "",
+      "efeito": "depois de revelar as duas cartas iniciais de um ataque mágico concedido por seu pacto pleno, coloque a carta Aberta no fundo do baralho e revele uma substituta. Uma vez por teste."
+     }
+    }
+   ],
+   "impressao": "bruxo-v02"
+  },
+  {
+   "id": "classe.bruxo.nominar-o-devedor",
+   "fonte": "classe",
+   "entidade": "Bruxo",
+   "grupo": "ESTRATÉGIA · POTÊNCIA ESPECIALIZADA",
+   "xp": 1,
+   "meia_carta": false,
+   "lados": [
+    {
+     "nome": "Nominar o Devedor",
+     "tags": [
+      "Pacto"
+     ],
+     "texto": "1 de Fadiga, Ação de Movimento: escolha um inimigo em alcance curto. Faça um teste contestado de Espírito contra Espírito dele. Se vencer, coloque 1 ficha de Marcação no alvo.",
+     "limite_fadiga": 2,
+     "custo": {
+      "fadiga": 1,
+      "acao": "movimento",
+      "outros": [],
+      "permanente": "",
+      "efeito": "escolha um inimigo em alcance curto. Faça um teste contestado de Espírito contra Espírito dele. Se vencer, coloque 1 ficha de Marcação no alvo."
+     }
+    },
+    {
+     "nome": "Executar a Cláusula",
+     "tags": [
+      "Pacto"
+     ],
+     "texto": "1 de Fadiga e 1 Pacto: num ataque mágico concedido por esse pacto contra um inimigo Marcado, depois das duas cartas iniciais do defensor, coloque uma delas que esteja revelada no fundo do baralho dele e revele uma substituta. Uma vez por teste.",
+     "limite_fadiga": 2,
+     "custo": {
+      "fadiga": 1,
+      "acao": null,
+      "outros": [
+       "1 Pacto(s)"
+      ],
+      "permanente": "",
+      "efeito": "num ataque mágico concedido por esse pacto contra um inimigo Marcado, depois das duas cartas iniciais do defensor, coloque uma delas que esteja revelada no fundo do baralho dele e revele uma substituta. Uma vez por teste."
+     }
+    }
+   ],
+   "impressao": "bruxo-v02"
+  },
+  {
+   "id": "classe.bruxo.ouvir-o-chamado",
+   "fonte": "classe",
+   "entidade": "Bruxo",
+   "grupo": "MEIAS CARTAS",
+   "xp": 1,
+   "meia_carta": true,
+   "lados": [
+    {
+     "nome": "Ouvir o Chamado",
+     "tags": [
+      "Pacto",
+      "Meia Carta"
+     ],
+     "texto": "1 de Fadiga: faça scry 1 imediatamente antes de comprar as cartas de um ataque mágico concedido por seu pacto pleno. Uma vez por teste.",
+     "limite_fadiga": 1,
+     "custo": {
+      "fadiga": 1,
+      "acao": null,
+      "outros": [],
+      "permanente": "",
+      "efeito": "faça scry 1 imediatamente antes de comprar as cartas de um ataque mágico concedido por seu pacto pleno. Uma vez por teste."
+     }
+    },
+    null
+   ],
+   "impressao": "bruxo-v02"
+  },
+  {
+   "id": "classe.bruxo.selo-de-continuidade",
+   "fonte": "classe",
+   "entidade": "Bruxo",
+   "grupo": "MEIAS CARTAS",
+   "xp": 1,
+   "meia_carta": true,
+   "lados": [
+    {
+     "nome": "Selo de Continuidade",
+     "tags": [
+      "Pacto",
+      "Meia Carta"
+     ],
+     "texto": "1 Pacto: no fim do seu turno, retire 1 de Fadiga adicional da habilidade inicial daquele pacto. Uma vez por turno.",
+     "limite_fadiga": 1,
+     "custo": {
+      "fadiga": 0,
+      "acao": null,
+      "outros": [
+       "1 Pacto(s)"
+      ],
+      "permanente": "",
+      "efeito": "no fim do seu turno, retire 1 de Fadiga adicional da habilidade inicial daquele pacto. Uma vez por turno."
+     }
+    },
+    null
+   ],
+   "impressao": "bruxo-v02"
+  },
+  {
+   "id": "classe.bruxo.segredo-entre-as-cartas",
+   "fonte": "classe",
+   "entidade": "Bruxo",
+   "grupo": "MEIAS CARTAS",
+   "xp": 1,
+   "meia_carta": true,
+   "lados": [
+    {
+     "nome": "Segredo Entre as Cartas",
+     "tags": [
+      "Pacto",
+      "Meia Carta"
+     ],
+     "texto": "1 Pacto: antes de comprar as duas cartas iniciais de um ataque mágico concedido por aquele pacto, compre ambas ocultas, olhe-as e escolha qual revelar como carta Aberta. Uma vez por teste.",
+     "limite_fadiga": 1,
+     "custo": {
+      "fadiga": 0,
+      "acao": null,
+      "outros": [
+       "1 Pacto(s)"
+      ],
+      "permanente": "",
+      "efeito": "antes de comprar as duas cartas iniciais de um ataque mágico concedido por aquele pacto, compre ambas ocultas, olhe-as e escolha qual revelar como carta Aberta. Uma vez por teste."
+     }
+    },
+    null
+   ],
+   "impressao": "bruxo-v02"
+  },
+  {
+   "id": "classe.bruxo.favor-de-ultima-hora",
+   "fonte": "classe",
+   "entidade": "Bruxo",
+   "grupo": "MEIAS CARTAS",
+   "xp": 1,
+   "meia_carta": true,
+   "lados": [
+    {
+     "nome": "Favor de Última Hora",
+     "tags": [
+      "Pacto",
+      "Meia Carta"
+     ],
+     "texto": "Exile 1 carta do topo do seu baralho: ganhe 1 Pacto na reserva de seu pacto pleno, se ele não estiver suspenso. Uma vez por cena.",
+     "limite_fadiga": 1,
+     "custo": {
+      "fadiga": 0,
+      "acao": null,
+      "outros": [],
+      "permanente": "",
+      "efeito": "ganhe 1 Pacto na reserva de seu pacto pleno, se ele não estiver suspenso. Uma vez por cena."
+     }
+    },
+    null
+   ],
+   "impressao": "bruxo-v02"
+  },
+  {
+   "id": "classe.bruxo.passo-do-emissario",
+   "fonte": "classe",
+   "entidade": "Bruxo",
+   "grupo": "MEIAS CARTAS",
+   "xp": 1,
+   "meia_carta": true,
+   "lados": [
+    {
+     "nome": "Passo do Emissário",
+     "tags": [
+      "Pacto",
+      "Meia Carta"
+     ],
+     "texto": "1 Pacto: após resolver uma magia concedida por aquele pacto, mova-se 1 quadrado ignorando impedimento e sem provocar ataques de oportunidade. Uma vez por conjuração.",
+     "limite_fadiga": 1,
+     "custo": {
+      "fadiga": 0,
+      "acao": null,
+      "outros": [
+       "1 Pacto(s)"
+      ],
+      "permanente": "",
+      "efeito": "após resolver uma magia concedida por aquele pacto, mova-se 1 quadrado ignorando impedimento e sem provocar ataques de oportunidade. Uma vez por conjuração."
+     }
+    },
+    null
+   ],
+   "impressao": "bruxo-v02"
+  },
+  {
+   "id": "classe.bruxo.o-patrono-nao-desperdica",
+   "fonte": "classe",
+   "entidade": "Bruxo",
+   "grupo": "MEIAS CARTAS",
+   "xp": 1,
+   "meia_carta": true,
+   "lados": [
+    {
+     "nome": "O Patrono Não Desperdiça",
+     "tags": [
+      "Pacto",
+      "Meia Carta"
+     ],
+     "texto": "1 Pacto: ao errar um ataque mágico concedido por aquele pacto, devolva ao fundo do baralho 1 carta usada nesse teste que esteja no seu descarte. Uma vez por ataque.",
+     "limite_fadiga": 1,
+     "custo": {
+      "fadiga": 0,
+      "acao": null,
+      "outros": [
+       "1 Pacto(s)"
+      ],
+      "permanente": "",
+      "efeito": "ao errar um ataque mágico concedido por aquele pacto, devolva ao fundo do baralho 1 carta usada nesse teste que esteja no seu descarte. Uma vez por ataque."
+     }
+    },
+    null
+   ],
+   "impressao": "bruxo-v02"
+  },
+  {
+   "id": "classe.bruxo.manifestacao-dupla",
+   "fonte": "classe",
+   "entidade": "Bruxo",
+   "grupo": "CARTAS DE 2 XP",
+   "xp": 2,
+   "meia_carta": false,
+   "lados": [
+    {
+     "nome": "Manifestação Dupla",
+     "tags": [
+      "Pacto"
+     ],
+     "texto": "2 de Fadiga, 3 Pactos e Ação Padrão: conjure a face revelada da habilidade inicial desse pacto, pagando seus recursos normalmente, sem gastar sua ação. Depois, vire aquela carta. Até o início de seu próximo turno, você pode conjurar uma vez a outra face, pagando os recursos sem gastar sua ação.",
+     "limite_fadiga": 4,
+     "custo": {
+      "fadiga": 2,
+      "acao": "padrao",
+      "outros": [
+       "3 Pacto(s)"
+      ],
+      "permanente": "",
+      "efeito": "conjure a face revelada da habilidade inicial desse pacto, pagando seus recursos normalmente, sem gastar sua ação. Depois, vire aquela carta. Até o início de seu próximo turno, você pode conjurar uma vez a outra face, pagando os recursos sem gastar sua ação."
+     }
+    },
+    {
+     "nome": "Descanso da Voz",
+     "tags": [
+      "Pacto"
+     ],
+     "texto": "Ao virar para este lado, você pode exilar 1 carta do seu descarte para retirar até 2 de Fadiga da habilidade inicial do pacto.",
+     "limite_fadiga": 2,
+     "custo": {
+      "fadiga": 0,
+      "acao": null,
+      "outros": [],
+      "permanente": "",
+      "efeito": "Ao virar para este lado, você pode exilar 1 carta do seu descarte para retirar até 2 de Fadiga da habilidade inicial do pacto."
+     }
+    }
+   ],
+   "impressao": "bruxo-v02"
+  },
+  {
+   "id": "classe.bruxo.assinatura-vital",
+   "fonte": "classe",
+   "entidade": "Bruxo",
+   "grupo": "CARTAS DE 2 XP",
+   "xp": 2,
+   "meia_carta": false,
+   "lados": [
+    {
+     "nome": "Assinatura Vital",
+     "tags": [
+      "Pacto"
+     ],
+     "texto": "Uma vez por turno, ao pagar um custo de Pacto de uma magia concedida por aquele pacto, você pode substituir uma das fichas por exilar 1 carta do topo do baralho. Pelo menos 1 ficha de Pacto precisa ser realmente gasta.",
+     "limite_fadiga": 4,
+     "custo": {
+      "fadiga": 0,
+      "acao": null,
+      "outros": [],
+      "permanente": "",
+      "efeito": "Uma vez por turno, ao pagar um custo de Pacto de uma magia concedida por aquele pacto, você pode substituir uma das fichas por exilar 1 carta do topo do baralho. Pelo menos 1 ficha de Pacto precisa ser realmente gasta."
+     }
+    },
+    {
+     "nome": "Quitar a Dívida",
+     "tags": [
+      "Pacto"
+     ],
+     "texto": "3 Pactos e Ação Padrão: retire até 3 de Fadiga de uma única outra carta que conceda uma magia daquele pacto. Depois, vire esta carta.",
+     "limite_fadiga": 4,
+     "custo": {
+      "fadiga": 0,
+      "acao": "padrao",
+      "outros": [
+       "3 Pacto(s)"
+      ],
+      "permanente": "",
+      "efeito": "retire até 3 de Fadiga de uma única outra carta que conceda uma magia daquele pacto. Depois, vire esta carta."
+     }
+    }
+   ],
+   "impressao": "bruxo-v02"
+  },
+  {
+   "id": "classe.bruxo.intercessao-do-patrono",
+   "fonte": "classe",
+   "entidade": "Bruxo",
+   "grupo": "CARTAS DE 2 XP",
+   "xp": 2,
+   "meia_carta": false,
+   "lados": [
+    {
+     "nome": "Intercessão do Patrono",
+     "tags": [
+      "Pacto"
+     ],
+     "texto": "2 Pactos, exile esta carta: depois de falhar em um ataque da habilidade inicial daquele pacto, você pode fazer uma nova conjuração da mesma face, pagando novamente seus custos, sem gastar outra ação. A carta fica indisponível pelo resto da cena.",
+     "limite_fadiga": 0,
+     "custo": {
+      "fadiga": 0,
+      "acao": null,
+      "outros": [
+       "2 Pacto(s)"
+      ],
+      "permanente": "",
+      "efeito": "depois de falhar em um ataque da habilidade inicial daquele pacto, você pode fazer uma nova conjuração da mesma face, pagando novamente seus custos, sem gastar outra ação. A carta fica indisponível pelo resto da cena."
+     }
+    },
+    {
+     "nome": "Retirar o Nome",
+     "tags": [
+      "Pacto"
+     ],
+     "texto": "2 Pactos, exile esta carta e Reação: depois de aplicar as resistências a um ataque que causou dano a você, mas antes de distribuí-lo, converta em Fadiga a parte que conseguir acomodar nos espaços livres de suas outras cartas. A carta fica indisponível pelo resto da cena.",
+     "limite_fadiga": 0,
+     "custo": {
+      "fadiga": 0,
+      "acao": "reacao",
+      "outros": [
+       "2 Pacto(s)"
+      ],
+      "permanente": "",
+      "efeito": "depois de aplicar as resistências a um ataque que causou dano a você, mas antes de distribuí-lo, converta em Fadiga a parte que conseguir acomodar nos espaços livres de suas outras cartas. A carta fica indisponível pelo resto da cena."
+     }
+    }
+   ],
+   "impressao": "bruxo-v02"
+  }
+ ],
+ "pactos": {
+  "fenix": {
+   "nome": "Pacto da Fênix",
+   "patrono": "A Fênix",
+   "tags": [
+    "Fogo",
+    "Fênix"
+   ],
+   "heroi": "classe.bruxo.heroi.a-fenix",
+   "inicial": "pacto.fenix.inicial",
+   "ciclo": "Queimar → contribuir para a morte de monstros → ganhar Pacto → escolher entre explosão e recuperação.",
+   "cumprimento": "Ganhe 1 ficha de Pacto ao presenciar a morte de um monstro pela qual você tenha sido responsável. Não é necessário dar o golpe final.",
+   "cobranca": "Matar monstros. Prazo e quantidade ainda serão definidos.",
+   "descumprimento": "Em aberto.",
+   "reparacao": "Ainda não definida.",
+   "menor": "Uma vez no seu turno, 1 Pacto da reserva menor da Fênix: depois de acertar uma magia concedida pelo pacto pleno, cause +1 de dano de Fogo em um único alvo atingido.",
+   "cobranca_menor": "Depende de definição futura."
+  },
+  "abismo": {
+   "nome": "Pacto do Abismo",
+   "patrono": "Malgor, o Credor do Último Fôlego",
+   "tags": [
+    "Infernal",
+    "Abismo"
+   ],
+   "heroi": "classe.bruxo.heroi.malgor-o-credor-do-ultimo-folego",
+   "inicial": "pacto.abismo.inicial",
+   "ciclo": "Exilar voluntariamente → ganhar Pacto e potência → arriscar o 21 → pagar a cobrança do estouro.",
+   "cumprimento": "Uma vez no seu turno, depois de resolver uma habilidade em cujo custo você exilou voluntariamente uma ou mais cartas comuns, ganhe 1 Pacto.",
+   "cobranca": "Depois de um estouro, a carta final que determinou seu resultado vai para o exílio ao terminar o teste, em vez do descarte.",
+   "descumprimento": "Recusar essa cobrança suspende o pacto.",
+   "reparacao": "Exile 2 cartas do topo do seu baralho (não gera Pacto).",
+   "menor": "Uma vez por cena, 1 Pacto: depois de estourar e comprar a carta final, exile-a e compre outra para determinar o resultado.",
+   "cobranca_menor": "Depois de estourar, a carta final do teste vai ao exílio ao terminar o teste."
+  },
+  "ultima-porta": {
+   "nome": "Pacto da Última Porta",
+   "patrono": "A Sentinela que Nunca Recuou",
+   "tags": [
+    "Luz",
+    "Juramento"
+   ],
+   "heroi": "classe.bruxo.heroi.a-sentinela-que-nunca-recuou",
+   "inicial": "pacto.ultima-porta.inicial",
+   "ciclo": "Jurar proteção → assumir dano real → ganhar Pacto → escolher entre nova proteção e retaliação.",
+   "cumprimento": "Uma vez por rodada, quando um ataque inimigo destinado ao protegido causar dano a você por ter assumido o ataque, ganhe 1 Pacto.",
+   "cobranca": "Não termine voluntariamente seu turno com o protegido fora de alcance curto.",
+   "descumprimento": "Abandonar voluntariamente essa posição suspende o pacto.",
+   "reparacao": "Fique adjacente ao protegido e gaste uma ação Padrão renovando o juramento.",
+   "menor": "1 Pacto, Reação: reduza em 2 o dano de um ataque contra um aliado adjacente a você, antes da distribuição do dano.",
+   "cobranca_menor": "Depois de usar o benefício menor, até o fim de seu próximo turno, não termine voluntariamente fora de alcance curto do aliado que protegeu."
+  },
+  "olho-descoberto": {
+   "nome": "Pacto do Olho Descoberto",
+   "patrono": "A Testemunha Sem Rosto",
+   "tags": [
+    "Luz",
+    "Revelação"
+   ],
+   "heroi": "classe.bruxo.heroi.a-testemunha-sem-rosto",
+   "inicial": "pacto.olho-descoberto.inicial",
+   "ciclo": "Marcar → enxergar a aposta inimiga → inverter a ordem de decisão → colher o erro do adversário.",
+   "cumprimento": "Uma vez por rodada, quando um inimigo Marcado estourar um ataque ou defesa contra você, ganhe 1 Pacto.",
+   "cobranca": "Não minta deliberadamente enquanto este for seu pacto pleno.",
+   "descumprimento": "Mentir deliberadamente suspende o pacto.",
+   "reparacao": "Entregue a um adversário uma informação verdadeira que lhe conceda vantagem real, reconhecida pelo mestre.",
+   "menor": "1 Pacto, Reação: durante um ataque que você esteja fazendo contra um inimigo em alcance curto, olhe a carta Fechada dele.",
+   "cobranca_menor": "Não minta deliberadamente enquanto este vínculo estiver associado à carta de Pacto Menor."
+  },
+  "caminhos-roubados": {
+   "nome": "Pacto dos Caminhos Roubados",
+   "patrono": "A Serpente Entre as Portas",
+   "tags": [
+    "Ar",
+    "Limiar"
+   ],
+   "heroi": "classe.bruxo.heroi.a-serpente-entre-as-portas",
+   "inicial": "pacto.caminhos-roubados.inicial",
+   "ciclo": "Deslocar um inimigo para o alcance de um aliado → ganhar Pacto → trocar posições e abrir rotas.",
+   "cumprimento": "Uma vez no seu turno, depois de deslocar um inimigo para um quadrado adjacente a um aliado que antes não estava adjacente a ele, ganhe 1 Pacto.",
+   "cobranca": "Depois de usar uma magia deste pacto, termine o turno em um quadrado diferente daquele em que o começou, se houver deslocamento legal disponível.",
+   "descumprimento": "Optar por permanecer suspende o pacto.",
+   "reparacao": "Termine um turno em um quadrado diferente do inicial após usar deslocamento normal.",
+   "menor": "1 Pacto, Ação de Movimento: mova-se 1 quadrado ignorando impedimento e sem provocar ataques de oportunidade.",
+   "cobranca_menor": "Depois de usar o benefício menor, não retorne voluntariamente ao quadrado em que começou o turno antes do fim dele."
+  },
+  "grilhoes-vivos": {
+   "nome": "Pacto dos Grilhões Vivos",
+   "patrono": "O Carcereiro Sem Chave",
+   "tags": [
+    "Trevas",
+    "Prisão"
+   ],
+   "heroi": "classe.bruxo.heroi.o-carcereiro-sem-chave",
+   "inicial": "pacto.grilhoes-vivos.inicial",
+   "ciclo": "Prender → converter a prisão em pressão → ganhar Pacto quando o inimigo paga para escapar → punir a libertação.",
+   "cumprimento": "Uma vez por rodada, quando um inimigo gastar uma ação para remover Imobilizar ou Atordoamento colocado por você, ganhe 1 Pacto.",
+   "cobranca": "Aceite rendições oferecidas de boa-fé e não execute nem autorize a execução de quem esteja sob sua guarda.",
+   "descumprimento": "Violar essa obrigação suspende o pacto.",
+   "reparacao": "Liberte ou proteja um prisioneiro cuja sobrevivência imponha um custo real a você, reconhecido pelo mestre.",
+   "menor": "1 Pacto, Reação: depois que um aliado acertar um ataque contra um inimigo adjacente a você, coloque 1 ficha de Penalidade no defensor.",
+   "cobranca_menor": "Aceite rendições de boa-fé e não execute quem esteja sob sua guarda."
+  },
+  "mesa-vazia": {
+   "nome": "Pacto da Mesa Vazia",
+   "patrono": "Vorga, a Boca sob o Lago",
+   "tags": [
+    "Fome",
+    "Dreno"
+   ],
+   "heroi": "classe.bruxo.heroi.vorga-a-boca-sob-o-lago",
+   "inicial": "pacto.mesa-vazia.inicial",
+   "ciclo": "Atormentar → deixar a Fadiga inimiga crescer → devorar o esforço acumulado → sustentar novas conjurações.",
+   "cumprimento": "Uma vez por rodada, depois de uma magia concedida por este pacto remover pelo menos 2 fichas de Fadiga de um inimigo, ganhe 1 Pacto.",
+   "cobranca": "Quando remover Fadiga de um inimigo com uma magia deste pacto, até o fim de seu próximo turno você não pode receber voluntariamente um efeito de outro personagem que remova sua Fadiga.",
+   "descumprimento": "Aceitar voluntariamente essa remoção externa suspende o pacto.",
+   "reparacao": "Gaste uma ação Padrão e descarte 2 cartas da mão.",
+   "menor": "Uma vez por turno, 1 Pacto: depois de acertar um ataque mágico, se o defensor tiver Fadiga, remova 1 dessas fichas e retire 1 de Fadiga de uma de suas outras cartas.",
+   "cobranca_menor": "Depois de usar o benefício menor, até o fim de seu próximo turno não aceite voluntariamente remoção de Fadiga causada por outro personagem."
+  },
+  "trovao-cativo": {
+   "nome": "Pacto do Trovão Cativo",
+   "patrono": "A Serpente de Cobre que Circunda a Tormenta",
+   "tags": [
+    "Raio",
+    "Tempestade"
+   ],
+   "heroi": "classe.bruxo.heroi.a-serpente-de-cobre-que-circunda-a-tormenta",
+   "inicial": "pacto.trovao-cativo.inicial",
+   "ciclo": "Conjurar → encher uma carta → ganhar Pacto e reação → consumir a Fadiga em uma descarga.",
+   "cumprimento": "Uma vez no seu turno, quando pagar a Fadiga de uma magia concedida por este pacto fizer uma carta sua chegar exatamente ao limite, ganhe 1 Pacto.",
+   "cobranca": "Se conjurou uma magia deste pacto no turno, preserve ao menos 1 ficha de Fadiga entre sua carta de herói e a habilidade inicial ao encerrar o turno.",
+   "descumprimento": "Optar por terminar o turno sem essa carga suspende o pacto.",
+   "reparacao": "1 de Fadiga, Ação de Movimento: coloque essa Fadiga em sua carta de herói ou habilidade inicial.",
+   "menor": "Uma vez por turno, 1 Pacto: depois de resolver uma magia que cause dano de Raio, mova 1 ficha de Fadiga da carta usada para outra carta sua que tenha espaço livre.",
+   "cobranca_menor": "Após usar o benefício menor, conserve ao menos 1 ficha de Fadiga em uma de suas cartas até o fim de seu próximo turno."
+  },
+  "sonhos-roubados": {
+   "nome": "Pacto dos Sonhos Roubados",
+   "patrono": "Niméria, a Dama dos Sonhos Inacabados",
+   "tags": [
+    "Trevas",
+    "Sonho"
+   ],
+   "heroi": "classe.bruxo.heroi.nimeria-a-dama-dos-sonhos-inacabados",
+   "inicial": "pacto.sonhos-roubados.inicial",
+   "ciclo": "Atormentar → esperar o inimigo acumular Fadiga ou virar a carta → colher Pacto ou Foco → consumir o pesadelo para formar uma mão melhor.",
+   "cumprimento": "Uma vez por rodada, quando um inimigo receber Fadiga de uma ficha de Atormentado colocada por você, ganhe 1 Pacto.",
+   "cobranca": "Depois de comprar sua mão inicial da cena e antes de usar benefícios deste pacto, escolha 1 carta dessa mão e exile-a como o sonho entregue à patrona.",
+   "descumprimento": "Recusar a entrega suspende o pacto.",
+   "reparacao": "Ação Padrão: exile 1 carta de sua mão e entregue o sonho atrasado.",
+   "menor": "1 Pacto, Reação: quando um inimigo em alcance curto que tenha Atormentado escolher você como alvo de um ataque, faça um teste contestado de Espírito contra Espírito dele. Se vencer, ele recebe 1 Confusão.",
+   "cobranca_menor": "Depois da mão inicial, antes de usar este benefício menor, exile 1 carta da mão como sonho entregue."
+  },
+  "inverno-imovel": {
+   "nome": "Pacto do Inverno Imóvel",
+   "patrono": "A Rainha da Última Geada",
+   "tags": [
+    "Gelo",
+    "Conservação"
+   ],
+   "heroi": "classe.bruxo.heroi.a-rainha-da-ultima-geada",
+   "inicial": "pacto.inverno-imovel.inicial",
+   "ciclo": "Conservar Fadiga → ganhar Pacto → concentrar a Fadiga num disparo → sustentar a posição ou quebrar a camada virando a carta.",
+   "cumprimento": "Uma vez por seu turno numa cena de conflito real, se tiver pelo menos 1 Fadiga numa carta e abrir mão da remoção normal de 1 Fadiga do fim do turno, ganhe 1 Pacto.",
+   "cobranca": "Em um turno em que gastar fichas deste pacto, não pode ter se deslocado voluntariamente nem voltar a se deslocar voluntariamente antes de encerrar esse turno.",
+   "descumprimento": "Escolher mover-se e gastar Pacto no mesmo turno suspende ganhos e gastos da reserva.",
+   "reparacao": "Encerre um turno sem se mover, com pelo menos 1 Fadiga na habilidade inicial, abrindo mão da recuperação normal de fim de turno.",
+   "menor": "1 Pacto, Reação: depois que um inimigo em alcance curto causar dano a você com um ataque, a próxima ação de Movimento que ele usar até o início do seu próximo turno rende apenas 1 quadrado.",
+   "cobranca_menor": "Depois de usar o benefício menor, no fim do seu próximo turno abra mão da recuperação normal de 1 Fadiga se tiver alguma Fadiga que pudesse remover."
+  }
+ }
+}

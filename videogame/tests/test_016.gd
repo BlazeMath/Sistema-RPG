@@ -82,13 +82,16 @@ func test_trocar_arma(t) -> void:
 	t.igual(u.arma_reserva["nome"], "Espada Longa", "a espada vai para a reserva")
 	t.igual(u.acoes_padrao, pad, "Guerreiro com a Bandoleira: a troca não custa ação")
 	t.igual(b.custo_troca(u), 1, "Bandoleira: só uma troca grátis por turno")
+	var mov := u.acoes_mov
 	t.ok(b.heroi_trocar_arma(), "troca de volta")
-	t.igual(u.acoes_padrao, pad - 1, "segunda troca no turno custa 1 ação Padrão")
+	t.igual(u.acoes_mov, mov - 1, "0.25: segunda troca no turno custa 1 Movimento (armas pequena e média)")
+	t.igual(u.acoes_padrao, pad, "e não gasta ação Padrão")
 	u.equipamentos.erase("bandoleira_de_armas")
 	t.ok(b.heroi_trocar_arma(), "troca de novo")
-	t.igual(u.acoes_padrao, pad - 2, "sem a Bandoleira, 1 ação Padrão")
-	t.igual(b.maos_de(u), ["Maça", "Escudo leve"], "mãos")
-	t.ok(not b.heroi_trocar_arma(), "sem ação Padrão, não troca")
+	t.igual(u.acoes_padrao, pad - 1, "sem Movimento, a troca usa uma ação Padrão no lugar")
+	t.igual(b.maos_de(u), ["Maça", "Escudo Leve"], "mãos")
+	u.acoes_padrao = 0
+	t.ok(not b.heroi_trocar_arma(), "sem ação nenhuma, não troca")
 	u.arma_reserva = Itens.ARMAS["montante"].duplicate(true) if Itens.ARMAS.has("montante") else u.arma_reserva
 	if u.arma_reserva.get("tamanho", "") == "grande":
 		t.igual(b.custo_troca(u), 2, "arma grande: 2 ações Padrão")
@@ -108,9 +111,9 @@ func test_salvar_e_carregar(t) -> void:
 	const Prontos := preload("res://core/herois_prontos.gd")
 	var nomes := Prontos.salvar_prontos()
 	Sessao.definir_grupo(nomes.slice(0, 2))
-	Campanha.dados = {"ouro": 77, "feridas": {nomes[0]: {"exilio": 4, "descarte": 0}}, "concluidas": ["fazenda"]}
+	Campanha.dados = {"cobre": 77, "feridas": {nomes[0]: {"exilio": 4, "descarte": 0}}, "concluidas": ["fazenda"]}
 	Salvamento.salvar(3, "teste")
-	Campanha.dados = {"ouro": 1, "feridas": {}, "concluidas": []}
+	Campanha.dados = {"cobre": 1, "feridas": {}, "concluidas": []}
 	Sessao.definir_grupo([nomes[4]])
 	Salvamento.carregar(3)
 	t.igual(Campanha.ouro(), 77, "ouro volta")

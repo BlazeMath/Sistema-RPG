@@ -18,8 +18,10 @@ const Tutorial := preload("res://core/dados_tutorial.gd")
 const Vila := preload("res://core/dados_vila.gd")
 const Catacumbas := preload("res://core/dados_catacumbas.gd")
 const Sessao := preload("res://core/sessao.gd")
+const Fase := preload("res://core/fase.gd")
 const Campanha := preload("res://core/campanha.gd")
 const Itens := preload("res://core/itens.gd")
+const ItensB := preload("res://core/itens_batalha.gd")
 const Personagem := preload("res://core/personagem.gd")
 const Grade := preload("res://core/grade.gd")
 const Areas := preload("res://core/areas.gd")
@@ -98,7 +100,7 @@ var _fim: PanelContainer
 var _fim_titulo: Label
 var _titulo: Label
 var _her_stats: Label
-var _itens: HBoxContainer
+var _itens: VBoxContainer
 var _cartas_lista: VBoxContainer
 var _mesa_extras: HBoxContainer
 var _escolha_fadiga: PanelContainer
@@ -134,6 +136,8 @@ var _painel_ini: PanelContainer
 var _painel_dir: PanelContainer
 var _painel_acoes: PanelContainer
 var _bt_correr: Button
+var _bt_itens: Button
+var _painel_itens: PanelContainer
 var _bt_procurar: Button
 var _bt_levantar_aliado: Button
 var _bt_saltar: Button
@@ -194,15 +198,27 @@ var _camera_segue := false
 func _ready() -> void:
 	_fonte = load("res://assets/fontes/DejaVuSans.ttf")
 	_fonte_negrito = load("res://assets/fontes/DejaVuSans-Bold.ttf")
+	_rede = get_node_or_null("/root/Rede")
+	if _rede != null and _online():
+		_rede.registrar_tela(self)
+		_rede.todos_prontos.connect(_ao_todos_prontos)
+		_rede.mensagem.connect(_avisar_rede)
 	_montar_hud()
 	nova_batalha()
 
 
-func nova_batalha(semente := -1) -> void:
+## retrato: estado vindo do anfitrião (jogo em rede, 0.26); abertura: mostra o texto de abertura.
+func nova_batalha(semente := -1, retrato := "", abertura := false) -> void:
 	if semente < 0:
 		semente = randi() % 100000
+	_semente = semente
 	_geracao += 1
 	_ocupado = false
+	_aguardando = false
+	_esperando_req = 0
+	_opcao_pendente = []
+	var esperando_anfitriao: bool = _convidado() and retrato == ""
+	var anfitriao_rede: bool = _online() and _rede.anfitriao
 	for filho in get_children():
 		if not (filho is CanvasLayer) or filho.name.begins_with("vila_aberta"):
 			remove_child(filho)
@@ -222,17 +238,24 @@ func nova_batalha(semente := -1) -> void:
 		"tutorial": cen = Tutorial.missao(fichas)
 		"catacumbas": cen = Catacumbas.missao(fichas)
 		"vila":
-			cen = Vila.cenario(fichas)
+			cen = Vila.cenario(fichas, Sessao.online)
 			Sessao.campanha = true
 			if Sessao.vila_pos != Vector2i(-1, -1):
 				cen["unidades"][0]["pos"] = Sessao.vila_pos
-		_: cen = Dados.arena(fichas)
+		_:
+			if Sessao.modo.begins_with(Fase.PREFIXO):
+				var fase := Fase.carregar(Sessao.modo.trim_prefix(Fase.PREFIXO))
+				cen = Fase.para_cenario(fase, fichas) if not fase.is_empty() else Dados.arena(fichas)
+			else:
+				cen = Dados.arena(fichas)
 	_heroi_visto = "heroi"
 	_ultimo_ativo = ""
 	batalha = Batalha.new(cen, semente)
 	# Jogo salvo no meio da missão (0.19): o retrato substitui o estado novo.
 	var restaurada := false
-	if Sessao.estado_salvo != "":
+	if retrato != "":
+		restaurada = Instantaneo.aplicar_texto(batalha, retrato)
+	elif Sessao.estado_salvo != "":
 		restaurada = Instantaneo.aplicar_texto(batalha, Sessao.estado_salvo)
 		Sessao.estado_salvo = ""
 	_titulo.text = "SISTEMA 21 · " + cen["nome"]
@@ -251,23 +274,35 @@ func nova_batalha(semente := -1) -> void:
 	_distribuir.visible = false
 	_inventario.visible = false
 	_marcadores.clear()
+	_molduras.clear()
 	_simbolos.clear()
 	_terreno = null
-	batalha.defesa_automatica = _auto.button_pressed
-	batalha.distribuicao_automatica = Sessao.distribuir_sugestao
-	batalha.perguntar_sombra = true
-	batalha.perguntar_escolhas = true
-	batalha.sustentar_automatico = false
-	batalha.acoes_longas_automaticas = false
+	if retrato == "":
+		batalha.defesa_automatica = _auto.button_pressed
+		batalha.distribuicao_automatica = Sessao.distribuir_sugestao
+		batalha.perguntar_sombra = true
+		batalha.perguntar_escolhas = true
+		batalha.sustentar_automatico = false
+		batalha.acoes_longas_automaticas = false
 	_linhas_mostradas = 0
 	_registro.clear()
 	_fim.visible = false
 	_planejar.visible = false
 	_campanha_registrada = false
-	if Sessao.campanha and not restaurada:
+	if Sessao.campanha and not restaurada and not esperando_anfitriao:
 		Campanha.aplicar(batalha)
+	if anfitriao_rede and not restaurada:
+		# Em rede, o anfitrião também passa pelo retrato: os dois lados ficam com o mesmo
+		# estado byte a byte (inclusive a ordem das chaves dos dicionários).
+		batalha.iniciar()
+		batalha.eventos.clear()
+		var texto := Instantaneo.para_texto(batalha)
+		batalha = Batalha.new(cen, semente)
+		Instantaneo.aplicar_texto(batalha, texto)
+		restaurada = true
+		abertura = true
 	_montar_mundo()
-	if not restaurada:
+	if not restaurada and not esperando_anfitriao:
 		batalha.iniciar()
 	else:
 		_desenhar_zonas()
@@ -275,30 +310,67 @@ func nova_batalha(semente := -1) -> void:
 	if _painel_narrativa != null and is_instance_valid(_painel_narrativa):
 		_painel_narrativa.visible = false
 		_texto_narrativa.text = ""
-	if not restaurada and not batalha.abertura.is_empty():
+	if (not restaurada or abertura) and not esperando_anfitriao and not batalha.abertura.is_empty():
 		_mostrar_narrativa(str(batalha.abertura.get("titulo", "")), str(batalha.abertura.get("texto", "")))
 	_oferecer_salvar = false
-	_processar()
+	if esperando_anfitriao:
+		_aguardando = true
+		_mostrar_espera("Esperando o anfitrião mandar a partida…")
+		_rede.pedir_estado()
+		return
+	if anfitriao_rede:
+		_seq_rede = 0
+		_aguardando = true
+		_mostrar_espera("Esperando os outros jogadores carregarem…")
+		var g := _geracao
+		get_tree().create_timer(30.0).timeout.connect(func():
+			if g == _geracao and _aguardando:
+				_ao_todos_prontos())
+		_rede.batalha_montada()
+	if not _aguardando:
+		_mostrar_espera("")
+		_processar()
 
 
 # --- Fluxo ------------------------------------------------------------------
 
 func _processar() -> void:
-	if _ocupado:
+	if _ocupado or _aguardando:
 		return
 	var geracao := _geracao
 	_ocupado = true
-	batalha.avancar_tutorial()
+	if not _online():
+		batalha.avancar_tutorial()
 	await _tocar_eventos()
 	if geracao != _geracao:
 		return
 	_atualizar()
-	while batalha.fase_automatica():
-		var pausa := PAUSA_IA * (0.6 if batalha.fase == Batalha.Fase.IA_TURNO else 1.0)
-		await get_tree().create_timer(pausa).timeout
-		if geracao != _geracao:
-			return
-		batalha.passo_automatico()
+	while true:
+		if _convidado():
+			# Convidado: aplica, na ordem, os comandos que o anfitrião mandou.
+			if _fila_rede.is_empty() or _aguardando:
+				break
+			var cmd: Dictionary = _fila_rede.pop_front()
+			if int(cmd["seq"]) <= _seq_rede:
+				continue
+			if int(cmd["seq"]) != _seq_rede + 1:
+				_pedir_retrato()
+				break
+			_seq_rede = int(cmd["seq"])
+			_aplicar_comando(cmd)
+		elif _online() and not _pedidos_rede.is_empty():
+			_aplicar_pedido(_pedidos_rede.pop_front())
+		elif batalha.fase_automatica():
+			var pausa := PAUSA_IA * (0.6 if batalha.fase == Batalha.Fase.IA_TURNO else 1.0)
+			await get_tree().create_timer(pausa).timeout
+			if geracao != _geracao:
+				return
+			if _online():
+				_difundir_aplicado([["passo_automatico", []]], 1)
+			else:
+				batalha.passo_automatico()
+		else:
+			break
 		await _tocar_eventos()
 		if geracao != _geracao:
 			return
@@ -307,35 +379,413 @@ func _processar() -> void:
 	_atualizar()
 
 
+# --- Jogo em rede (0.26) ---------------------------------------------------------
+# Toda mudança no estado da batalha que sai da tela passa por _c/_cmd. Sozinho, aplica na
+# hora. Em rede: o anfitrião aplica e repassa; o convidado pede e espera o anfitrião.
+
+const METODOS_REDE := ["puxar", "parar", "continuar", "jogar_da_mao", "encerrar_turno", "mover_ficha",
+	"foco_marcial_olhar", "foco_marcial_fundo", "tutorial_proximo", "passo_automatico", "_definir", "_opcao"]
+const DO_DONO_DO_ARGUMENTO := ["mover_ficha", "foco_marcial_olhar", "foco_marcial_fundo"]
+const OPCOES_SO_DO_ANFITRIAO := ["defesa_automatica", "distribuicao_automatica"]
+const OPCOES_DO_JOGADOR := ["fadiga_escolhida", "foco_marcial_visto"]
+
+var _rede = null
+var _semente := 0
+var _aguardando := false      # esperando o retrato (convidado) ou os jogadores (anfitrião)
+var _fila_rede: Array = []    # convidado: comandos recebidos
+var _pedidos_rede: Array = [] # anfitrião: pedidos dos convidados
+var _seq_rede := 0
+var _req_rede := 0
+var _esperando_req := 0       # convidado: pedido mandado, ainda sem resposta
+var _depois_rede := {}
+var _opcao_pendente: Array = []
+var _espera: PanelContainer
+var _espera_texto: Label
+var _rotulo_vez: Label
+var _toast: Label
+var _tween_toast: Tween
+
+
+func _online() -> bool:
+	return Sessao.online and _rede != null and _rede.ativo
+
+
+func _convidado() -> bool:
+	return _online() and not _rede.anfitriao
+
+
+## O jogador deste computador decide o momento atual?
+func _eu_decido() -> bool:
+	return not _online() or batalha == null or _rede.e_meu(batalha.quem_decide())
+
+
+## Em rede, um clique de quem não decide agora só mostra de quem é a vez.
+func _bloqueado() -> bool:
+	if _eu_decido():
+		return false
+	_avisar_rede(_motivo_recusa(_rede.meu_id(), [["heroi_concentrar", []]]))
+	return true
+
+
+func _sou_dono(id: String) -> bool:
+	return not _online() or _rede.e_meu(id)
+
+
+func _c(metodo: String, args: Array = [], depois := Callable()) -> Variant:
+	return _cmd([[metodo, args]], depois)
+
+
+func _cmd(passos: Array, depois := Callable()) -> Variant:
+	if not _online():
+		var r0 = _executar_passos(passos)
+		if depois.is_valid():
+			depois.call(r0)
+		return r0
+	if _aguardando:
+		return false
+	if not batalha.fadiga_escolhida.is_empty() and passos[-1][0] != "_definir":
+		passos.push_front(["_definir", ["fadiga_escolhida", batalha.fadiga_escolhida.duplicate(true)]])
+	if not _opcao_pendente.is_empty():
+		passos.push_front(["_opcao", _opcao_pendente.duplicate()])
+		_opcao_pendente = []
+	var motivo := _motivo_recusa(_rede.meu_id(), passos)
+	if motivo != "":
+		_avisar_rede(motivo)
+		return false
+	if _rede.anfitriao:
+		var r = _difundir_aplicado(passos, 1)
+		if depois.is_valid():
+			depois.call(r)
+		return r
+	if _esperando_req != 0:
+		return false
+	_req_rede += 1
+	_esperando_req = _req_rede
+	if depois.is_valid():
+		_depois_rede[_req_rede] = depois
+	_rede.enviar_pedido({"passos": _codificar(passos), "req": _req_rede, "partida": _rede.partida})
+	var req := _req_rede
+	get_tree().create_timer(6.0).timeout.connect(func():
+		if _esperando_req == req:
+			_esperando_req = 0)
+	return true
+
+
+## Anfitrião: aplica e repassa (com a assinatura do estado depois do comando).
+func _difundir_aplicado(passos: Array, de: int, req := 0) -> Variant:
+	var cod = _codificar(passos)
+	var r = _executar_passos(passos)
+	var cmd := {"passos": cod, "de": de, "ass": _assinatura()}
+	if req != 0:
+		cmd["req"] = req
+	_rede.difundir(cmd)
+	_seq_rede = _rede.seq
+	return r
+
+
+func _executar_passos(passos: Array) -> Variant:
+	var r = null
+	for p in passos:
+		var m: String = p[0]
+		var a: Array = _decodificar(p[1])
+		match m:
+			"_definir":
+				batalha.set(str(a[0]), a[1])
+			"_opcao":
+				var u = batalha.unidade(str(a[0]))
+				if u != null and int(a[1]) < u.cartas.size():
+					u.cartas[int(a[1])].opcao = str(a[2])
+			_:
+				r = batalha.callv(m, a)
+	return r
+
+
+func _motivo_recusa(peer: int, passos: Array) -> String:
+	if batalha == null:
+		return "A partida ainda não começou."
+	for p in passos:
+		var m: String = str(p[0])
+		if not (m.begins_with("heroi_") or m in METODOS_REDE):
+			return "Comando desconhecido."
+		if m == "_definir" and str(p[1][0]) in OPCOES_SO_DO_ANFITRIAO and peer != 1:
+			return "Só o anfitrião muda essa opção."
+		if m == "_definir" and not str(p[1][0]) in OPCOES_SO_DO_ANFITRIAO + OPCOES_DO_JOGADOR:
+			return "Opção desconhecida."
+		if m == "passo_automatico" and peer != 1:
+			return "Só o anfitrião move os monstros."
+	var ultimo: Array = passos[-1]
+	var metodo: String = ultimo[0]
+	if metodo == "_definir" and str(ultimo[1][0]) in OPCOES_SO_DO_ANFITRIAO:
+		return ""
+	if metodo == "passo_automatico":
+		return "" if batalha.fase_automatica() else "Não é a vez dos monstros."
+	var args: Array = ultimo[1]
+	if metodo in DO_DONO_DO_ARGUMENTO and not args.is_empty():
+		var u = args[0]
+		var uid: String = str(u["__u"]) if u is Dictionary and u.has("__u") else (u.id if u is Object else "")
+		if uid != "" and _rede.dono_de(uid) == peer:
+			return ""
+	var decide := batalha.quem_decide()
+	if decide == "" and peer == 1:
+		return ""
+	if decide != "" and _rede.dono_de(decide) == peer:
+		return ""
+	# Reação de outro herói contra uma magia (Contramagia, Roubo Arcano, Mana Densa).
+	if metodo == "heroi_responder" and batalha.fase == Batalha.Fase.PERGUNTA and str(args[0]).contains(":"):
+		var hid := str(args[0]).get_slice(":", 1)
+		if _rede.dono_de(hid) == peer:
+			return ""
+	if decide == "":
+		return "Agora é a vez dos monstros."
+	var h = batalha.unidade(decide)
+	return "Agora quem decide é %s (%s)." % [h.nome if h != null else "outro herói", _rede.nome_do_jogador(_rede.dono_de(decide))]
+
+
+## Opções de uma pergunta de reação que este jogador pode escolher mesmo sem ser quem decide.
+func _opcoes_de_reacao_minhas() -> Array:
+	var lista := []
+	if batalha.fase != Batalha.Fase.PERGUNTA:
+		return lista
+	for o in batalha.pergunta.get("opcoes", []):
+		var oid := str(o[0])
+		if oid.contains(":") and _sou_dono(oid.get_slice(":", 1)):
+			lista.append(o)
+	return lista
+
+
+func _codificar(v: Variant) -> Variant:
+	if v is Object:
+		if v != null and "id" in v and v.has_method("eh_heroi"):
+			return {"__u": v.id}
+		return null
+	if v is Array:
+		return v.map(func(x): return _codificar(x))
+	if v is Dictionary:
+		var d := {}
+		for k in v:
+			d[k] = _codificar(v[k])
+		return d
+	return v
+
+
+func _decodificar(v: Variant) -> Variant:
+	if v is Dictionary:
+		if v.size() == 1 and v.has("__u"):
+			return batalha.unidade(str(v["__u"]))
+		var d := {}
+		for k in v:
+			d[k] = _decodificar(v[k])
+		return d
+	if v is Array:
+		return v.map(func(x): return _decodificar(x))
+	return v
+
+
+## Assinatura curta do estado: se o convidado chegar a outra, pede o retrato de novo.
+func _assinatura() -> int:
+	var partes := [batalha.rng.state, int(batalha.fase), batalha.rodada]
+	for u in batalha.unidades:
+		var bar = u.baralho
+		partes.append([u.id, u.pos, u.vida, u.vida_armadura, u.vida_escudo,
+			bar.baralho.size() if bar != null else -1, bar.descarte.size() if bar != null else -1])
+	return str(partes).hash()
+
+
+## Anfitrião: pedido de um convidado (entra na fila e roda na vez dele).
+func pedido_remoto(cmd: Dictionary) -> void:
+	_pedidos_rede.append(cmd)
+	_processar()
+
+
+func _aplicar_pedido(cmd: Dictionary) -> void:
+	var de := int(cmd["de"])
+	var passos: Array = cmd["passos"]
+	var motivo := _motivo_recusa(de, passos)
+	if motivo != "":
+		_rede.recusar(de, int(cmd.get("req", 0)), motivo)
+		return
+	_difundir_aplicado(_decodificar(passos), de, int(cmd.get("req", 0)))
+
+
+## Convidado: comando do anfitrião.
+func comando_remoto(cmd: Dictionary) -> void:
+	_fila_rede.append(cmd)
+	_processar()
+
+
+func _aplicar_comando(cmd: Dictionary) -> void:
+	var r = _executar_passos(cmd["passos"])
+	var req := int(cmd.get("req", 0))
+	if int(cmd.get("de", 0)) == _rede.meu_id() and req != 0:
+		if _esperando_req == req:
+			_esperando_req = 0
+		var f: Callable = _depois_rede.get(req, Callable())
+		_depois_rede.erase(req)
+		if f.is_valid():
+			f.call(r)
+	else:
+		# Jogada de outro: as escolhas pela metade deste jogador perdem o sentido.
+		_modo_carta = -1
+		_modo_area = -1
+		_item_area = ""
+		_modo_aliado = ""
+		_casa_escolha = {}
+		_misseis = []
+	if cmd.has("ass") and int(cmd["ass"]) != _assinatura():
+		push_warning("Rede: estado diferente do anfitrião no comando %d; pedindo o retrato." % int(cmd["seq"]))
+		_pedir_retrato()
+
+
+func recusa(req: int, motivo: String) -> void:
+	if _esperando_req == req:
+		_esperando_req = 0
+	_depois_rede.erase(req)
+	_avisar_rede(motivo)
+	_atualizar()
+
+
+func _pedir_retrato() -> void:
+	if _aguardando:
+		return
+	_aguardando = true
+	_mostrar_espera("Sincronizando com o anfitrião…")
+	_rede.pedir_estado()
+
+
+## Convidado: o retrato chegou (começo da partida, volta depois de cair, ou divergência).
+func receber_estado(d: Dictionary) -> void:
+	var bytes: PackedByteArray = d["texto"]
+	var texto := bytes.decompress(int(d["tam"]), FileAccess.COMPRESSION_ZSTD).get_string_from_utf8()
+	_seq_rede = int(d["seq"])
+	var seq0 := _seq_rede
+	var fila := _fila_rede.filter(func(c): return int(c["seq"]) > seq0)
+	if not d.get("resumo", "").is_empty():
+		_resumo_campanha = str(d["resumo"])
+	nova_batalha(int(d["semente"]), texto, bool(d.get("abertura", false)))
+	_fila_rede = fila
+	_seq_rede = seq0
+	_processar()
+
+
+func pronta_para_rede() -> bool:
+	return batalha != null
+
+
+func retrato_para_rede() -> Dictionary:
+	var bytes := Instantaneo.para_texto(batalha).to_utf8_buffer()
+	return {"partida": _rede.partida, "seq": _rede.seq, "semente": _semente, "tam": bytes.size(),
+		"texto": bytes.compress(FileAccess.COMPRESSION_ZSTD), "abertura": _rede.seq == 0, "resumo": _resumo_campanha}
+
+
+func _ao_todos_prontos() -> void:
+	if not _aguardando or not _online() or not _rede.anfitriao:
+		return
+	_aguardando = false
+	_mostrar_espera("")
+	_processar()
+
+
+## Alguém caiu ou voltou.
+func rede_mudou() -> void:
+	if batalha != null:
+		_atualizar()
+
+
+func receber_resumo(texto: String) -> void:
+	_resumo_campanha = texto
+	_atualizar()
+
+
+func _mostrar_espera(texto: String) -> void:
+	if _espera == null:
+		_espera = _painel(Color(0.05, 0.05, 0.07, 0.95), COR_OURO, 24)
+		_espera.position = Vector2(390, 300)
+		_espera.custom_minimum_size = Vector2(500, 0)
+		_espera_texto = _label("", 18, COR_TEXTO, true)
+		_espera_texto.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+		_espera_texto.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+		_espera.add_child(_espera_texto)
+		_hud.add_child(_espera)
+	_espera_texto.text = texto
+	_espera.visible = texto != ""
+
+
+func _avisar_rede(texto: String) -> void:
+	if _hud == null:
+		return
+	if _toast == null:
+		_toast = _label("", 15, Color("ffe1a8"), true)
+		_toast.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+		_toast.position = Vector2(240, 92)
+		_toast.custom_minimum_size = Vector2(800, 0)
+		_toast.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+		_toast.add_theme_color_override("font_outline_color", Color.BLACK)
+		_toast.add_theme_constant_override("outline_size", 6)
+		_toast.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		_hud.add_child(_toast)
+	_toast.text = texto
+	_toast.modulate.a = 1.0
+	_toast.visible = true
+	if _tween_toast != null and _tween_toast.is_valid():
+		_tween_toast.kill()
+	_tween_toast = _toast.create_tween()
+	_tween_toast.tween_interval(3.5)
+	_tween_toast.tween_property(_toast, "modulate:a", 0.0, 0.6)
+
+
+## Faixa no alto: de quem é a vez (só em rede).
+func _atualizar_vez() -> void:
+	if not _online():
+		return
+	if _rotulo_vez == null:
+		_rotulo_vez = _label("", 14, COR_OURO, true)
+		_rotulo_vez.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+		_rotulo_vez.position = Vector2(480, 18)
+		_rotulo_vez.custom_minimum_size = Vector2(580, 0)
+		_rotulo_vez.add_theme_color_override("font_outline_color", Color.BLACK)
+		_rotulo_vez.add_theme_constant_override("outline_size", 6)
+		_rotulo_vez.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		_hud.add_child(_rotulo_vez)
+	var decide := batalha.quem_decide()
+	if batalha.fase in [Batalha.Fase.VITORIA, Batalha.Fase.DERROTA]:
+		_rotulo_vez.text = ""
+	elif decide == "":
+		_rotulo_vez.text = "Vez dos monstros"
+	elif _rede.e_meu(decide):
+		_rotulo_vez.text = "Sua vez: %s" % batalha.unidade(decide).nome
+	else:
+		_rotulo_vez.text = "Vez de %s (%s)" % [batalha.unidade(decide).nome, _rede.nome_do_jogador(_rede.dono_de(decide))]
+
+
 func _acao(nome: String, carta: Variant = -1) -> void:
-	if _ocupado:
+	if _ocupado or _bloqueado():
 		return
 	var b := batalha
 	if nome != "mao" and nome != "puxar":
 		_planejar.visible = false
 	match nome:
-		"puxar": b.puxar()
-		"parar": b.parar()
-		"continuar": b.continuar()
+		"puxar": _c("puxar")
+		"parar": _c("parar")
+		"continuar": _c("continuar")
 		"encerrar":
 			if b.vez_do_heroi() and b.fim_de_turno_tem_escolha(b.ativa()):
 				_mostrar_fim_de_turno()
 				return
-			b.encerrar_turno()
-		"concentrar": b.heroi_concentrar()
-		"folego": b.heroi_recuperar_folego()
-		"planejar": b.heroi_planejar()
-		"procurar": b.heroi_procurar()
+			_c("encerrar_turno")
+		"concentrar": _c("heroi_concentrar")
+		"folego": _c("heroi_recuperar_folego")
+		"planejar": _c("heroi_planejar")
+		"procurar": _c("heroi_procurar")
 		"levantar_aliado":
 			var caidos: Array = b.alvos_de_levantar(b.ativa())
 			if caidos.size() == 1:
-				b.heroi_levantar_aliado(caidos[0])
+				_c("heroi_levantar_aliado", [caidos[0]])
 			elif caidos.size() > 1:
 				_modo_aliado = "levantar"
 				_atualizar()
 				return
-		"correr": b.heroi_correr()
-		"saltar": b.heroi_saltar()
+		"correr": _c("heroi_correr")
+		"saltar": _c("heroi_saltar")
 		"tratar", "comandar", "orientar", "manobra:derrubar", "manobra:empurrar", "manobra:atrapalhar", "manobra:desarmar", "manobra:agarrar":
 			var alvos := _alvos_aliado(nome)
 			if alvos.size() == 1:
@@ -344,40 +794,41 @@ func _acao(nome: String, carta: Variant = -1) -> void:
 				_modo_aliado = nome
 				_atualizar()
 				return
-		"mulligan": b.heroi_mulligan()
-		"pegar_arma": b.heroi_pegar_arma()
-		"recarregar": b.heroi_recarregar()
-		"tocha": b.heroi_luz("tocha")
-		"trocar_arma": b.heroi_trocar_arma()
-		"foco": b.heroi_usar_foco()
-		"lanterna": b.heroi_luz("lanterna")
-		"refazer": b.heroi_refazer(carta)
-		"levantar": b.heroi_levantar()
+		"mulligan": _c("heroi_mulligan")
+		"pegar_arma": _c("heroi_pegar_arma")
+		"recarregar": _c("heroi_recarregar")
+		"tocha": _c("heroi_luz", ["tocha"])
+		"trocar_arma": _c("heroi_trocar_arma")
+		"foco": _c("heroi_usar_foco")
+		"lanterna": _c("heroi_luz", ["lanterna"])
+		"refazer": _c("heroi_refazer", [carta])
+		"levantar": _c("heroi_levantar")
 		"mao":
 			if b.vez_do_heroi() and b.ativa().efeitos.has("topo_da_mao") and b.teste_do_heroi() == null:
-				b.heroi_por_no_topo(carta)
+				_c("heroi_por_no_topo", [carta])
 			elif b.vantagem_pendente():
-				b.heroi_vantagem_trocar(carta)
+				_c("heroi_vantagem_trocar", [carta])
 			else:
-				b.jogar_da_mao(carta)
-		"reagir": b.heroi_reagir()
-		"confirmar_vantagem": b.heroi_vantagem_confirmar()
+				_c("jogar_da_mao", [carta])
+		"reagir": _c("heroi_reagir")
+		"confirmar_vantagem": _c("heroi_vantagem_confirmar")
 	_processar()
 
 
 func _acao_carta(indice: int, virar: bool, opcao := "") -> void:
-	if _ocupado:
+	if _ocupado or _bloqueado():
 		return
 	var b := batalha
 	_planejar.visible = false
 	if virar:
-		b.heroi_virar(indice)
+		_c("heroi_virar", [indice])
 		_processar()
 		return
 	var u := b.ativa()
 	var c = u.cartas[indice]
 	if opcao != "":
 		c.opcao = opcao
+		_opcao_pendente = [u.id, indice, opcao]
 	var info := b._info_lado(c)
 	# Conjuração (0.16): a fadiga que não cabe na carta — o jogador escolhe onde vai.
 	if _fadiga_confirmada == indice:
@@ -400,7 +851,7 @@ func _acao_carta(indice: int, virar: bool, opcao := "") -> void:
 		_misseis = []
 		_atualizar()
 		return
-	b.heroi_usar_carta(indice)
+	_c("heroi_usar_carta", [indice])
 	_processar()
 
 
@@ -444,7 +895,7 @@ func _mostrar_fim_de_turno() -> void:
 	bt.custom_minimum_size = Vector2(360, 38)
 	bt.pressed.connect(func():
 		_escolha_fadiga.visible = false
-		batalha.encerrar_turno(esc)
+		_c("encerrar_turno", [esc])
 		_processar())
 	_escolha_fadiga_bts.add_child(bt)
 	_escolha_fadiga.visible = true
@@ -465,8 +916,8 @@ func _seletor(rotulo: String, itens: Array, ao_mudar: Callable) -> HBoxContainer
 	return h
 
 
-func _usar_item(item: String) -> void:
-	if _ocupado:
+func _usar_item(item: String, alvo_id := "") -> void:
+	if _ocupado or _bloqueado():
 		return
 	if Itens.CONSUMIVEIS.get(item, {}).has("area"):
 		_item_area = item
@@ -474,7 +925,7 @@ func _usar_item(item: String) -> void:
 		_inventario.visible = false
 		_atualizar()
 		return
-	batalha.heroi_usar_item(item)
+	_c("heroi_usar_item", [item, alvo_id])
 	_processar()
 
 
@@ -494,10 +945,10 @@ func _foco_marcial() -> void:
 	var u := batalha.heroi_dono_do_teste()
 	if u == null:
 		u = batalha.ativa()
-	var c := batalha.foco_marcial_olhar(u)
-	if c >= 0:
-		_mostrar_espiar("Foco Marcial:\ntopo do baralho", [c], batalha.teste_do_heroi() != null)
-	_atualizar()
+	_c("foco_marcial_olhar", [u], func(c):
+		if int(c) >= 0:
+			_mostrar_espiar("Foco Marcial:\ntopo do baralho", [int(c)], batalha.teste_do_heroi() != null)
+		_atualizar())
 
 
 func _alvos_aliado(modo: String) -> Array:
@@ -515,22 +966,22 @@ func _alvos_aliado(modo: String) -> Array:
 
 func _acao_no_aliado(modo: String, h) -> void:
 	match modo:
-		"tratar": batalha.heroi_tratar(h)
-		"comandar": batalha.heroi_comandar(h)
-		"orientar": batalha.heroi_orientar(h)
-		"levantar": batalha.heroi_levantar_aliado(h)
+		"tratar": _c("heroi_tratar", [h])
+		"comandar": _c("heroi_comandar", [h])
+		"orientar": _c("heroi_orientar", [h])
+		"levantar": _c("heroi_levantar_aliado", [h])
 		_:
 			if modo.begins_with("manobra:"):
-				batalha.heroi_manobra(modo.substr(8), h)
+				_c("heroi_manobra", [modo.substr(8), h])
 
 
 func _clique_no_mapa(celula: Vector2i) -> void:
 	if not _ocupado and batalha.fase == Batalha.Fase.RESOLVIDO and batalha.resultado.get("passo", "") != "":
-		if batalha.heroi_passo_de_defesa(celula):
+		if _c("heroi_passo_de_defesa", [celula]):
 			_atualizar_pecas()
 			_atualizar()
 		return
-	if _ocupado or not batalha.vez_do_heroi():
+	if _ocupado or not batalha.vez_do_heroi() or _bloqueado():
 		return
 	var b := batalha
 	var u := b.ativa()
@@ -541,7 +992,7 @@ func _clique_no_mapa(celula: Vector2i) -> void:
 			_abrir_dialogo(it["id"])
 		return
 	if _modo_area >= 0 or _item_area != "":
-		var ok := b.heroi_usar_area(_modo_area, celula, _rot_area) if _modo_area >= 0 else b.heroi_usar_item_area(_item_area, celula)
+		var ok = _c("heroi_usar_area", [_modo_area, celula, _rot_area]) if _modo_area >= 0 else _c("heroi_usar_item_area", [_item_area, celula])
 		if ok:
 			_modo_area = -1
 			_item_area = ""
@@ -561,7 +1012,7 @@ func _clique_no_mapa(celula: Vector2i) -> void:
 		var ce := _casa_escolha
 		_casa_escolha = {}
 		if celula in ce["casas"]:
-			b.heroi_usar_carta(int(ce["indice"]), b.unidade(ce["alvo"]), "", celula)
+			_c("heroi_usar_carta", [int(ce["indice"]), b.unidade(ce["alvo"]), "", celula])
 			_processar()
 		else:
 			_atualizar()
@@ -575,7 +1026,7 @@ func _clique_no_mapa(celula: Vector2i) -> void:
 				_modo_carta = -1
 				var ids := _misseis.duplicate()
 				_misseis = []
-				b.heroi_usar_misseis(ind, ids)
+				_c("heroi_usar_misseis", [ind, ids])
 				_processar()
 				return
 		_atualizar()
@@ -595,27 +1046,40 @@ func _clique_no_mapa(celula: Vector2i) -> void:
 				_casa_escolha = {"indice": indice, "alvo": alvo.id, "casas": casas}
 				_atualizar()
 				return
-			b.heroi_usar_carta(indice, alvo)
+			_c("heroi_usar_carta", [indice, alvo])
 			_processar()
 		else:
 			_atualizar()
 		return
 	var alvo_da_confusao: bool = alvo != null and alvo.eh_heroi() and u.efeitos.get("confuso", {}).get("alvo", "") == alvo.id
 	if alvo != null and (not alvo.eh_heroi() or alvo_da_confusao):
-		if b.heroi_atacar(alvo):
+		if _c("heroi_atacar", [alvo]):
 			_planejar.visible = false
 			_processar()
 		return
 	if b.alcance_movimento(u)["mapa"].has(celula):
 		_planejar.visible = false
-		b.heroi_mover(celula)
+		_c("heroi_mover", [celula])
 		_processar()
 
 
 func _unhandled_input(evento: InputEvent) -> void:
 	if _pausa != null and _pausa.visible:
 		return
+	if _aguardando and not (evento is InputEventKey and evento.keycode == KEY_ESCAPE):
+		return
 	var tecla := evento as InputEventKey
+	if tecla != null and tecla.pressed and not tecla.echo and _caixa_aberta():
+		# 0.24: com uma caixa aberta, só Esc (fecha) e Enter (continua) funcionam.
+		if tecla.keycode == KEY_ESCAPE:
+			if _painel_narrativa != null and is_instance_valid(_painel_narrativa) and _painel_narrativa.visible:
+				_painel_narrativa.visible = false
+			else:
+				_fechar_pelo_x()
+			get_viewport().set_input_as_handled()
+		elif tecla.keycode in [KEY_ENTER, KEY_KP_ENTER] and batalha.fase == Batalha.Fase.INTERACAO_RESOLVIDA:
+			_fechar_pelo_x()
+		return
 	if tecla != null and tecla.pressed and not tecla.echo:
 		match tecla.keycode:
 			KEY_SPACE: _acao("puxar")
@@ -641,7 +1105,7 @@ func _unhandled_input(evento: InputEvent) -> void:
 					_abrir_ficha_do_heroi()
 			KEY_L: _fixar("registro")
 			KEY_N:
-				if not Sessao.campanha:
+				if not Sessao.campanha and not _online():
 					nova_batalha()
 			KEY_ESCAPE:
 				_modo_aliado = ""
@@ -777,7 +1241,8 @@ func _tocar_eventos() -> void:
 					tw.tween_property(peca, "rotation_degrees", Vector3(80, 0, 0), 0.3)
 				_rotulos[e["id"]].visible = false
 			"espiar":
-				_mostrar_espiar(e["titulo"], e["cartas"], e.get("fundo", false))
+				if _eu_decido():
+					_mostrar_espiar(e["titulo"], e["cartas"], e.get("fundo", false))
 			"alerta":
 				_flutuar(e["id"], "!", Color("ff6b4a"))
 			"brilho":
@@ -816,7 +1281,10 @@ func _tocar_eventos() -> void:
 					_efeito_cura(e["id"])
 					_atualizar_marcas()
 			"abrir_vila":
-				_abrir_vila(str(e["aba"]))
+				if _eu_decido():
+					_abrir_vila(str(e["aba"]))
+				elif batalha.ativa() != null:
+					_avisar_rede("%s entrou: %s." % [batalha.ativa().nome, {"missoes": "mural da guilda", "mercado": "mercado", "ferreiro": "forja", "estalagem": "estalagem"}.get(str(e["aba"]), "um prédio")])
 			"reacao_monstro":
 				if _pecas.has(e["id"]) and batalha.unidade_visivel(batalha.unidade(e["id"])):
 					_flutuar(e["id"], "✦ " + str(e["nome"]), Color("ff9d5c"))
@@ -887,7 +1355,7 @@ func _mostrar_espiar(titulo: String, cartas: Array, opcao_fundo: bool) -> void:
 				var tmp = nova[ii - 1]
 				nova[ii - 1] = nova[ii]
 				nova[ii] = tmp
-				if batalha.heroi_reordenar_topo(nova):
+				if _c("heroi_reordenar_topo", [nova]):
 					_mostrar_espiar(titulo, nova, false))
 			caixa.add_child(bt_sobe)
 			_planejar_cartas.add_child(caixa)
@@ -901,9 +1369,9 @@ func _mostrar_espiar(titulo: String, cartas: Array, opcao_fundo: bool) -> void:
 		bt_fundo.focus_mode = Control.FOCUS_NONE
 		bt_fundo.pressed.connect(func():
 			if batalha.scry_de != "":
-				batalha.heroi_scry(true)
+				_c("heroi_scry", [true])
 			else:
-				batalha.foco_marcial_fundo(batalha.heroi_dono_do_teste())
+				_c("foco_marcial_fundo", [batalha.heroi_dono_do_teste()])
 			_planejar.visible = false
 			_atualizar())
 		_planejar_bts.add_child(bt_fundo)
@@ -912,8 +1380,9 @@ func _mostrar_espiar(titulo: String, cartas: Array, opcao_fundo: bool) -> void:
 	bt_ok.focus_mode = Control.FOCUS_NONE
 	bt_ok.pressed.connect(func():
 		if batalha.scry_de != "":
-			batalha.heroi_scry(false)
-		batalha.foco_marcial_visto = -1
+			_c("heroi_scry", [false])
+		if batalha.foco_marcial_visto >= 0:
+			_c("_definir", ["foco_marcial_visto", -1])
 		_planejar.visible = false)
 	_planejar_bts.add_child(bt_ok)
 	_planejar.visible = true
@@ -939,6 +1408,7 @@ func _heroi_foco():
 
 func _atualizar() -> void:
 	var b := batalha
+	_atualizar_vez()
 	var heroi = _heroi_foco()
 	_atualizar_grupo()
 	_seguir_camera()
@@ -1046,7 +1516,7 @@ func _atualizar() -> void:
 		var ct: int = b.custo_troca(heroi)
 		_bt_trocar.text = "Trocar por %s" % heroi.arma_reserva["nome"]
 		_bt_trocar.tooltip_text = "Guarda %s e pega %s. Custo: %s." % [heroi.arma.get("nome", ""), heroi.arma_reserva["nome"],
-			"nenhum (Bandoleira de Armas)" if ct == 0 else ("1 ação (movimento ou Padrão)" if ct == 1 else "2 ações (arma grande)")]
+			"nenhum (Bandoleira de Armas)" if ct == 0 else ("1 Movimento (ou uma ação Padrão, se o Movimento já foi)" if b.troca_com_movimento(heroi) else "2 ações Padrão (arma grande)")]
 	_bt_trocar.disabled = not livre or b.motivo_troca(heroi) != ""
 	_bt_foco.visible = vez and heroi.fichas_total("Foco") > 0
 	_bt_foco.disabled = not livre or heroi.baralho.baralho.is_empty()
@@ -1070,7 +1540,8 @@ func _atualizar() -> void:
 	var bt_inv := Button.new()
 	bt_inv.text = "Inventário (I)"
 	bt_inv.focus_mode = Control.FOCUS_NONE
-	bt_inv.add_theme_font_size_override("font_size", 12)
+	bt_inv.add_theme_font_size_override("font_size", 13)
+	bt_inv.custom_minimum_size = Vector2(220, 30)
 	bt_inv.pressed.connect(_alternar_inventario)
 	_itens.add_child(bt_inv)
 	var vistos := []
@@ -1079,15 +1550,23 @@ func _atualizar() -> void:
 		if item in vistos or not dados.get("acao", false):
 			continue
 		vistos.append(item)
-		var bt := Button.new()
 		var qtd: int = heroi.quantidade(item)
-		bt.text = dados.get("nome", item) + ((" ×%d" % qtd) if qtd > 1 else "")
-		bt.tooltip_text = dados.get("texto", "")
-		bt.focus_mode = Control.FOCUS_NONE
-		bt.add_theme_font_size_override("font_size", 12)
-		bt.disabled = not _item_usavel(heroi, item)
-		bt.pressed.connect(func(): _usar_item(item))
-		_itens.add_child(bt)
+		# 0.25: itens de "você ou um aliado adjacente" ganham um botão por quem pode receber.
+		var alvos: Array = [null]
+		if dados.get("alvo", "") == "aliado":
+			alvos = ItensB.alvos_do_item(b, heroi, item)
+		for quem in alvos:
+			var bt := Button.new()
+			bt.text = dados.get("nome", item) + ((" ×%d" % qtd) if qtd > 1 else "") + ("" if quem == null or quem == heroi else " → " + quem.nome)
+			var motivo_i: String = b.motivo_item(heroi, item) if not dados.has("area") else ""
+			bt.tooltip_text = dados.get("texto", "") + (("\n(" + motivo_i + ")") if motivo_i != "" else "")
+			bt.focus_mode = Control.FOCUS_NONE
+			bt.add_theme_font_size_override("font_size", 13)
+			bt.custom_minimum_size = Vector2(220, 30)
+			bt.disabled = not _item_usavel(heroi, item)
+			var quem_id: String = "" if quem == null else quem.id
+			bt.pressed.connect(func(): _usar_item(item, quem_id))
+			_itens.add_child(bt)
 	_atualizar_cartas(heroi)
 
 	# Mão
@@ -1136,12 +1615,21 @@ func _atualizar() -> void:
 		_fim_titulo.add_theme_color_override("font_color", COR_OURO if b.fase == Batalha.Fase.VITORIA else COR_VIDA_INIMIGO)
 		_fim_texto.text = b.mensagem_fim
 		if Sessao.campanha:
-			if not _campanha_registrada:
+			if not _campanha_registrada and not _convidado():
 				_campanha_registrada = true
 				_resumo_campanha = Campanha.registrar_fim(b, Sessao.modo, b.fase == Batalha.Fase.VITORIA)
+				if _online():
+					_rede.difundir_campanha()
+					_rede.difundir_resumo(_resumo_campanha)
 			_fim_texto.text = b.mensagem_fim + "\n\n" + _resumo_campanha
 		_bt_de_novo.visible = not Sessao.campanha
-		_bt_volta.text = "Voltar à vila" if Sessao.campanha else "Voltar ao menu"
+		_bt_volta.text = "Voltar à vila" if Sessao.campanha else ("Voltar ao editor" if Sessao.fase_teste != "" else "Voltar ao menu")
+		if _online():
+			_bt_volta.text = "Voltar à vila" if Sessao.campanha else "Voltar para a sala"
+			_bt_de_novo.visible = not Sessao.campanha and not _convidado()
+			_bt_volta.visible = not _convidado()
+			if _convidado():
+				_fim_texto.text += "\n\nO anfitrião escolhe o que vem agora."
 		_fim.visible = true
 
 
@@ -1190,7 +1678,7 @@ func _atualizar_mesa() -> void:
 			bt.tooltip_text = "Soma %+d no teste (conta para estourar)." % a["valor"]
 			bt.focus_mode = Control.FOCUS_NONE
 			bt.pressed.connect(func():
-				batalha.heroi_ajuste(a["nome"])
+				_c("heroi_ajuste", [a["nome"]])
 				_processar())
 			_mesa_extras.add_child(bt)
 		var dono := b.heroi_dono_do_teste()
@@ -1207,7 +1695,7 @@ func _atualizar_mesa() -> void:
 			var sl: String = o["slug"]
 			var op: String = o["opcao"]
 			bt_c.pressed.connect(func():
-				batalha.heroi_durante_ataque(sl, op)
+				_c("heroi_durante_ataque", [sl, op])
 				_processar())
 			_mesa_extras.add_child(bt_c)
 		_botoes_carta_fechada()
@@ -1516,12 +2004,16 @@ func _montar_terreno() -> void:
 		for y in g.altura:
 			var p := Vector2i(x, y)
 			var tipo: String = g.obstaculos.get(p, "")
-			if tipo == "parede":
-				continue   # paredes: desenhadas em bloco (abaixo)
+			if tipo == "parede" or tipo == "vazio":
+				continue   # paredes: desenhadas em bloco (abaixo); vazio (0.27): a casa não existe
 			var e_agua: bool = tipo.begins_with("agua") or tipo in ["ponte_quebrada", "tronco"]
 			var cor: Color
 			if e_agua:
 				cor = Color("2f5f86") if (x + y) % 2 == 0 else Color("336791")
+			elif batalha.chao.has(p):
+				# Fases do editor (0.27): chão escolhido casa a casa.
+				cor = Color(Fase.CHAOS.get(batalha.chao[p], {"cor": "466639"})["cor"])
+				cor = cor.darkened(0.06) if (x + y) % 2 == 0 else cor
 			elif batalha.piso == "pedra":
 				cor = Color("4a4750") if (x + y) % 2 == 0 else Color("524f58")
 			elif batalha.piso == "lodo":
@@ -1551,9 +2043,11 @@ func _montar_terreno() -> void:
 		mmi.multimesh = mm
 		mmi.material_override = _material(gr["cor"])
 		_terreno.add_child(mmi)
-	var borda := BoxMesh.new()
-	borda.size = Vector3(g.largura + 0.4, 0.3, g.altura + 0.4)
-	_malha(borda, Color("4a3a2a"), Vector3(centro.x, -0.3, centro.z), _terreno)
+	# A base de madeira sob o mapa; fases do editor com casas vazias (0.27) ficam sem ela.
+	if not g.obstaculos.values().has("vazio"):
+		var borda := BoxMesh.new()
+		borda.size = Vector3(g.largura + 0.4, 0.3, g.altura + 0.4)
+		_malha(borda, Color("4a3a2a"), Vector3(centro.x, -0.3, centro.z), _terreno)
 	var tabua := BoxMesh.new()
 	tabua.size = Vector3(0.95, 0.06, 0.22)
 	for p in batalha.decoracao:
@@ -1574,6 +2068,8 @@ func _montar_terreno() -> void:
 	for p in g.obstaculos:
 		if g.obstaculos[p] == "parede":
 			paredes.append(p)
+		elif g.obstaculos[p] == "vazio":
+			continue
 		elif not feitos.has(p):
 			_criar_obstaculo(p, g.obstaculos[p])
 	if not paredes.is_empty():
@@ -1867,6 +2363,9 @@ func _criar_obstaculo(p: Vector2i, tipo: String) -> void:
 				r.rotation_degrees = Vector3(90, 0, 0)
 
 
+var _molduras := {}
+
+
 ## Marcadores "!" nos pontos de interação: dourado quando dá para interagir.
 func _atualizar_marcadores() -> void:
 	var b := batalha
@@ -1892,6 +2391,19 @@ func _atualizar_marcadores() -> void:
 			_marcadores[id] = n
 		var no: Node3D = _marcadores[id]
 		no.visible = it.get("ativa", true) and (not b.nevoa_de_guerra or b.explorado.has(it["pos"]))
+		# 0.24: contorno dourado na casa da interação (o "!" sozinho deixava dúvida).
+		if not _molduras.has(id):
+			var mold := Node3D.new()
+			add_child(mold)
+			mold.position = _mundo(it["pos"]) + Vector3(0, 0.03, 0)
+			for lado in [[Vector3(0, 0, -0.47), Vector3(0.98, 0.05, 0.06)], [Vector3(0, 0, 0.47), Vector3(0.98, 0.05, 0.06)],
+					[Vector3(-0.47, 0, 0), Vector3(0.06, 0.05, 0.98)], [Vector3(0.47, 0, 0), Vector3(0.06, 0.05, 0.98)]]:
+				var bm := BoxMesh.new()
+				bm.size = lado[1]
+				var mi := _malha(bm, Color("e8c060"), lado[0], mold)
+				mi.material_override = _material(Color("e8c060"), true)
+			_molduras[id] = mold
+		_molduras[id].visible = no.visible
 		if it.get("descanso", false):
 			_simbolo_de_descanso(it)
 		var perto := b.vez_do_heroi() and b.ao_alcance(b.ativa(), it)
@@ -2024,7 +2536,7 @@ func _criar_peca(u) -> void:
 				var a := _malha(arco, Color("8a6a3c"), Vector3(0.3, 0.65, 0), peca)
 				a.rotation_degrees = Vector3(90, 0, 0)
 				altura = 1.3
-			"mago":
+			"mago", "bruxo":
 				var corpo := CylinderMesh.new()
 				corpo.top_radius = 0.16
 				corpo.bottom_radius = 0.3
@@ -2151,6 +2663,94 @@ func _criar_peca(u) -> void:
 					var e := _malha(escudo, Color("4a4038"), Vector3(-0.4, 0.8, 0.05), peca)
 					e.rotation_degrees = Vector3(0, 0, 90)
 				altura = 1.3 * k
+			"lobo", "lobo_atroz", "rato":
+				# 0.28: feras de quatro patas feitas de formas simples.
+				var k: float = {"lobo": 1.0, "lobo_atroz": 1.35, "rato": 0.62}[u.tipo]
+				var cor_f: Color = {"lobo": Color("6f6a66"), "lobo_atroz": Color("3d3a3f"), "rato": Color("6b5747")}[u.tipo]
+				var corpo := CapsuleMesh.new()
+				corpo.radius = 0.2 * k
+				corpo.height = 0.85 * k
+				var c := _malha(corpo, cor_f, Vector3(0, 0.42 * k, 0), peca)
+				c.rotation_degrees = Vector3(0, 0, 90)
+				var cabeca := SphereMesh.new()
+				cabeca.radius = 0.17 * k
+				cabeca.height = 0.3 * k
+				_malha(cabeca, cor_f.lightened(0.05), Vector3(0.45 * k, 0.55 * k, 0), peca)
+				var focinho := PrismMesh.new()
+				focinho.size = Vector3(0.14, 0.16, 0.14) * k
+				var fo := _malha(focinho, cor_f.darkened(0.2), Vector3(0.62 * k, 0.5 * k, 0), peca)
+				fo.rotation_degrees = Vector3(0, 0, -90)
+				for lado in [-1, 1]:
+					var orelha := PrismMesh.new()
+					orelha.size = Vector3(0.08, 0.14, 0.05) * k
+					_malha(orelha, cor_f.darkened(0.1), Vector3(0.42 * k, 0.72 * k, 0.08 * k * lado), peca)
+					for frente in [-1, 1]:
+						var pata := CylinderMesh.new()
+						pata.top_radius = 0.05 * k
+						pata.bottom_radius = 0.045 * k
+						pata.height = 0.32 * k
+						_malha(pata, cor_f.darkened(0.15), Vector3(0.22 * k * frente, 0.16 * k, 0.12 * k * lado), peca)
+				var cauda := CylinderMesh.new()
+				cauda.top_radius = 0.02 * k
+				cauda.bottom_radius = 0.05 * k
+				cauda.height = 0.4 * k
+				var ca := _malha(cauda, cor_f, Vector3(-0.5 * k, 0.5 * k, 0), peca)
+				ca.rotation_degrees = Vector3(0, 0, 60)
+				altura = 0.9 * k
+			"aranha", "escorpiao":
+				var aranha: bool = u.tipo == "aranha"
+				var cor_a := Color("2b2630") if aranha else Color("8a6a3a")
+				var corpo := SphereMesh.new()
+				corpo.radius = 0.36
+				corpo.height = 0.5
+				_malha(corpo, cor_a, Vector3(-0.1, 0.4, 0), peca)
+				var frente2 := SphereMesh.new()
+				frente2.radius = 0.2
+				frente2.height = 0.3
+				_malha(frente2, cor_a.lightened(0.1), Vector3(0.3, 0.35, 0), peca)
+				for lado in [-1, 1]:
+					for i in (4 if aranha else 3):
+						var perna := CylinderMesh.new()
+						perna.top_radius = 0.025
+						perna.bottom_radius = 0.025
+						perna.height = 0.55
+						var pe := _malha(perna, cor_a.darkened(0.2), Vector3(0.15 - 0.15 * i, 0.25, 0.32 * lado), peca)
+						pe.rotation_degrees = Vector3(55 * lado, 0, 0)
+				if aranha:
+					for i in 2:
+						var olho := SphereMesh.new()
+						olho.radius = 0.04
+						olho.height = 0.08
+						_malha(olho, Color("ff3030"), Vector3(0.47, 0.42, -0.06 + 0.12 * i), peca)
+				else:
+					for lado in [-1, 1]:
+						var pinca := PrismMesh.new()
+						pinca.size = Vector3(0.12, 0.25, 0.12)
+						var pi := _malha(pinca, cor_a.darkened(0.1), Vector3(0.6, 0.35, 0.2 * lado), peca)
+						pi.rotation_degrees = Vector3(0, 0, -90)
+					var cauda := CylinderMesh.new()
+					cauda.top_radius = 0.04
+					cauda.bottom_radius = 0.09
+					cauda.height = 0.8
+					var ca := _malha(cauda, cor_a, Vector3(-0.45, 0.8, 0), peca)
+					ca.rotation_degrees = Vector3(0, 0, -35)
+					var ferrao := PrismMesh.new()
+					ferrao.size = Vector3(0.1, 0.16, 0.1)
+					_malha(ferrao, Color("2a1d10"), Vector3(-0.2, 1.2, 0), peca)
+				altura = 1.0 if aranha else 1.3
+			"verme":
+				var cor_v := Color("b89a6a")
+				for i in 5:
+					var seg := SphereMesh.new()
+					seg.radius = 0.5 - i * 0.05
+					seg.height = (0.5 - i * 0.05) * 1.6
+					_malha(seg, cor_v.darkened(0.04 * i), Vector3(0.12 * sin(i * 0.9), 0.35 + i * 0.42, 0.1 * i), peca)
+				var boca := TorusMesh.new()
+				boca.inner_radius = 0.16
+				boca.outer_radius = 0.3
+				var bo := _malha(boca, Color("5a2020"), Vector3(0.15, 2.3, 0.45), peca)
+				bo.rotation_degrees = Vector3(70, 0, 0)
+				altura = 2.5
 			"toupeira":
 				var corpo := SphereMesh.new()
 				corpo.radius = 0.62
@@ -2298,9 +2898,19 @@ func _atualizar_marcas() -> void:
 		var cor := Color(0.35, 0.6, 1.0, 0.45) if not info["precisa_acao"] else Color(0.35, 0.6, 1.0, 0.32)
 		for p in info["mapa"]:
 			_marca(plano, p, cor)
+		# 0.24: arma de tiro: as casas na distância ideal ficam com um verde leve; inimigo fora
+		# da distância ideal fica laranja (dá para atirar, mas com menos cartas).
+		if u.a_distancia:
+			for x in range(-12, 13):
+				for y in range(-12, 13):
+					var q: Vector2i = u.pos + Vector2i(x, y)
+					var d := Grade.distancia(q, u.pos)
+					if d >= 1 and b.grade.dentro(q) and not b.grade.bloqueado(q) and Combate.faixa(d) in u.faixas_ideais and b.explorado.has(q):
+						_marca(plano, q, Color(0.3, 0.95, 0.4, 0.13), 0.004)
 		for o in b.inimigos_vivos():
 			if b.motivo_sem_ataque(u, o) == "":
-				_marca(plano, o.pos, Color(0.95, 0.25, 0.2, 0.55))
+				var ideal: bool = not u.a_distancia or b.faixa_entre(u, o) in u.faixas_ideais
+				_marca(plano, o.pos, Color(0.95, 0.25, 0.2, 0.55) if ideal else Color(1.0, 0.6, 0.1, 0.6))
 	var vigia = b.na_posicao(_hover) if b.grade.dentro(_hover) else null
 	if vigia != null and not vigia.eh_heroi() and not vigia.alerta:
 		for x in range(-vigia.vigia, vigia.vigia + 1):
@@ -2825,18 +3435,29 @@ func _montar_hud() -> void:
 	_bt_hab.pressed.connect(func(): _fixar("cartas"))
 	_bt_ac = _botao_menu("Ações ▴")
 	_bt_ac.pressed.connect(func(): _fixar("acoes"))
-	_bt_ficha = _botao_menu("Ficha (C)")
+	_bt_itens = _botao_menu("Itens ▴")
+	_bt_itens.pressed.connect(func(): _fixar("itens"))
+	_bt_ficha = _botao_menu("Ficha")
+	_bt_ficha.tooltip_text = "Ficha do herói (C)"
 	_bt_ficha.pressed.connect(_abrir_ficha_do_heroi)
-	for bt in [_bt_hab, _bt_ac, _bt_ficha]:
+	for bt in [_bt_hab, _bt_ac, _bt_itens, _bt_ficha]:
+		bt.custom_minimum_size.x = 0
+		bt.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+		bt.add_theme_font_size_override("font_size", 12)
 		h_menus.add_child(bt)
 	v_bt.add_child(h_menus)
 	_bt_encerrar = _botao("Encerrar turno (E)", "encerrar", 300)
-	_bt_encerrar.custom_minimum_size = Vector2(300, 42)
+	_bt_encerrar.custom_minimum_size = Vector2(360, 42)
 	_bt_encerrar.add_theme_font_size_override("font_size", 15)
 	v_bt.add_child(_bt_encerrar)
-	_itens = HBoxContainer.new()   # botões rápidos: inventário e itens de ação
+	# 0.24: os itens ficam num menu como Habilidades e Ações (antes, uma fileira que alargava o Encerrar).
+	_painel_itens = _painel(Color(0.07, 0.07, 0.09, 0.96), COR_OURO.darkened(0.35), 10)
+	_painel_itens.custom_minimum_size = Vector2(240, 0)
+	_hud.add_child(_painel_itens)
+	_itens = VBoxContainer.new()
 	_itens.add_theme_constant_override("separation", 6)
-	v_bt.add_child(_itens)
+	_painel_itens.add_child(_itens)
+	_painel_itens.visible = false
 	h_baixo.add_child(v_bt)
 
 	# Menu de ações (abre ao passar o mouse em "Ações")
@@ -2897,7 +3518,7 @@ func _montar_hud() -> void:
 		bt.clip_text = true
 		grade.add_child(bt)
 	_painel_acoes.visible = false
-	_menus_flutuantes = [[_bt_hab, _painel_dir, "cartas"], [_bt_reg, _painel_dir, "registro"], [_bt_ac, _painel_acoes, "acoes"]]
+	_menus_flutuantes = [[_bt_hab, _painel_dir, "cartas"], [_bt_reg, _painel_dir, "registro"], [_bt_ac, _painel_acoes, "acoes"], [_bt_itens, _painel_itens, "itens"]]
 
 	# Treino (0.22): a etapa do tutorial, à esquerda, embaixo da iniciativa.
 	_painel_tut = _painel(Color(0.08, 0.1, 0.07, 0.94), Color("7fae5a"), 10)
@@ -2931,7 +3552,7 @@ func _montar_hud() -> void:
 	_tut_proximo.text = "Próximo"
 	_tut_proximo.focus_mode = Control.FOCUS_NONE
 	_tut_proximo.pressed.connect(func():
-		if batalha.tutorial_proximo():
+		if _c("tutorial_proximo"):
 			_processar())
 	vt.add_child(_tut_proximo)
 	_painel_tut.visible = false
@@ -2943,10 +3564,10 @@ func _montar_hud() -> void:
 	_auto_dist.button_pressed = Sessao.distribuir_sugestao
 	_auto_dist.toggled.connect(func(on):
 		Sessao.distribuir_sugestao = on
-		batalha.distribuicao_automatica = on
+		_c("_definir", ["distribuicao_automatica", on])
 		if on and batalha.fase == Batalha.Fase.DISTRIBUINDO_DANO:
 			var sug := batalha.sugestao_distribuicao()
-			batalha.heroi_distribuir_dano(sug["escudo"], sug["armadura"])
+			_c("heroi_distribuir_dano", [sug["escudo"], sug["armadura"]])
 		_processar())
 
 	# Planejar (cartas do topo)
@@ -2967,8 +3588,9 @@ func _montar_hud() -> void:
 
 	# Mesa de 21 (0.21: mais baixa e compacta, no lugar da barra de baixo, para ver o mapa)
 	_mesa = _painel(Color(COR_MESA.r, COR_MESA.g, COR_MESA.b, 0.93), COR_BORDA_MESA, 6)
-	_mesa.position = Vector2(250, 720 - 158 - 222)
-	_mesa.custom_minimum_size = Vector2(780, 0)
+	# 0.24: mesa menor e à direita; os personagens ficam à esquerda (a câmera enquadra lá).
+	_mesa.position = Vector2(1280 - 12 - 590, 720 - 158 - 212)
+	_mesa.custom_minimum_size = Vector2(590, 0)
 	_hud.add_child(_mesa)
 	var v_mesa := VBoxContainer.new()
 	v_mesa.add_theme_constant_override("separation", 2)
@@ -3031,14 +3653,26 @@ func _montar_hud() -> void:
 	_bt_de_novo.text = "Jogar de novo (N)"
 	_bt_de_novo.custom_minimum_size = Vector2(0, 40)
 	_bt_de_novo.focus_mode = Control.FOCUS_NONE
-	_bt_de_novo.pressed.connect(func(): nova_batalha())
+	_bt_de_novo.pressed.connect(func():
+		if _online():
+			_rede.ir_para(Sessao.modo)
+		else:
+			nova_batalha())
 	v_fim.add_child(_bt_de_novo)
 	_bt_volta = Button.new()
 	_bt_volta.text = "Voltar ao menu"
 	_bt_volta.custom_minimum_size = Vector2(0, 40)
 	_bt_volta.focus_mode = Control.FOCUS_NONE
 	_bt_volta.pressed.connect(func():
-		if Sessao.campanha:
+		if _online():
+			if Sessao.campanha:
+				_rede.ir_para("vila")
+			else:
+				_rede.voltar_para_sala()
+			return
+		if Sessao.fase_teste != "":
+			get_tree().change_scene_to_file("res://ui/editor_fases.tscn")
+		elif Sessao.campanha:
 			Sessao.modo = "vila"
 			get_tree().change_scene_to_file("res://ui/batalha.tscn")
 		else:
@@ -3132,7 +3766,7 @@ func _atualizar_menus_flutuantes() -> void:
 			if painel2 == _painel_dir:
 				_abas.current_tab = 1 if m[2] == "registro" else 0
 			if painel2.visible:
-				if painel2 == _painel_acoes:
+				if painel2 == _painel_acoes or painel2 == _painel_itens:
 					painel2.reset_size()
 				var r: Rect2 = (m[0] as Control).get_global_rect()
 				var x := clampf(r.end.x - painel2.size.x, 4.0, 1276.0 - painel2.size.x)
@@ -3143,7 +3777,8 @@ func _atualizar_menus_flutuantes() -> void:
 
 ## Cor de cada origem (faixa do topo da carta), como nos PDFs: Clérigo dourado, Mago azul...
 const CORES_ORIGEM := {"arma": Color("6a5440"), "guerreiro": Color("8a3b2e"), "ladino": Color("3b3456"), "clerigo": Color("8a6a2a"),
-	"cacador": Color("3d5a32"), "mago": Color("2d4a7a"), "raca": Color("5a4a3a"), "background": Color("4a4a52"), "item": Color("44505a")}
+	"cacador": Color("3d5a32"), "mago": Color("2d4a7a"), "bruxo": Color("5a2d4f"), "pacto": Color("6a2a3a"),
+	"raca": Color("5a4a3a"), "background": Color("4a4a52"), "item": Color("44505a")}
 
 
 func _cor_da_carta(c) -> Color:
@@ -3304,7 +3939,7 @@ func _carta_ui(op: Dictionary, b) -> Control:
 		var u_a = _heroi_da_carta(c)
 		var bt_t := Button.new()
 		var custo_t: int = b.custo_troca(u_a) if u_a != null else 1
-		bt_t.text = "Trocar para %s (%s)" % [c.lados[1 - c.lado]["nome"], "livre" if custo_t == 0 else "%d Padrão" % custo_t]
+		bt_t.text = "Trocar para %s (%s)" % [c.lados[1 - c.lado]["nome"], "livre" if custo_t == 0 else ("1 Movimento" if u_a != null and b.troca_com_movimento(u_a) else "%d Padrão" % custo_t)]
 		bt_t.focus_mode = Control.FOCUS_NONE
 		bt_t.add_theme_font_size_override("font_size", 12)
 		bt_t.disabled = _ocupado or not op["pode_virar"]
@@ -3338,7 +3973,7 @@ func _acao_virar(indice: int, modo: String) -> void:
 	if _ocupado:
 		return
 	_planejar.visible = false
-	batalha.heroi_virar(indice, modo)
+	_c("heroi_virar", [indice, modo])
 	_processar()
 
 
@@ -3354,7 +3989,9 @@ func _atualizar_cartas(heroi) -> void:
 
 
 func _ao_mudar_defesa(ligado: bool) -> void:
-	batalha.defesa_automatica = ligado
+	if batalha == null:
+		return
+	_c("_definir", ["defesa_automatica", ligado])
 	_processar()
 
 
@@ -3362,6 +3999,13 @@ func _ao_mudar_defesa(ligado: bool) -> void:
 
 func _montar_dialogos() -> void:
 	# Diálogo de interação: opções e resultado.
+	# Véu (0.24): com uma caixa de diálogo aberta, o resto da tela não responde.
+	_veu = ColorRect.new()
+	_veu.color = Color(0, 0, 0, 0.35)
+	_veu.set_anchors_preset(Control.PRESET_FULL_RECT)
+	_veu.mouse_filter = Control.MOUSE_FILTER_STOP
+	_veu.visible = false
+	_hud.add_child(_veu)
 	_dialogo = _painel(Color(0.07, 0.07, 0.09, 0.97), COR_OURO, 18)
 	_dialogo.position = Vector2(150, 70)
 	_dialogo.custom_minimum_size = Vector2(660, 0)
@@ -3369,8 +4013,15 @@ func _montar_dialogos() -> void:
 	var v := VBoxContainer.new()
 	v.add_theme_constant_override("separation", 10)
 	_dialogo.add_child(v)
+	var h_titulo := HBoxContainer.new()
 	_dialogo_titulo = _label("", 17, COR_OURO, true)
-	v.add_child(_dialogo_titulo)
+	_dialogo_titulo.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	_dialogo_titulo.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	h_titulo.add_child(_dialogo_titulo)
+	_bt_x = _botao_x(_fechar_pelo_x)
+	h_titulo.add_child(_bt_x)
+	v.add_child(h_titulo)
+	_dialogo.visibility_changed.connect(func(): _ao_mudar_caixa(_dialogo))
 	_dialogo_texto = _label("", 14)
 	_dialogo_texto.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	_dialogo_texto.custom_minimum_size = Vector2(620, 0)
@@ -3429,24 +4080,39 @@ func _montar_dialogos() -> void:
 
 func _atualizar_dialogos() -> void:
 	var b := batalha
+	# Em rede (0.26), as perguntas só aparecem para quem decide (Reações de outros heróis
+	# contra magia aparecem para os donos deles, só com as opções deles).
+	if _online() and not _ocupado and b.fase in [Batalha.Fase.SOMBRA_ESCOLHA, Batalha.Fase.PERGUNTA, Batalha.Fase.ACAO_LONGA,
+			Batalha.Fase.INTERACAO_RESOLVIDA] and not _eu_decido():
+		var minhas := _opcoes_de_reacao_minhas()
+		if not minhas.is_empty():
+			var bts := []
+			for o in minhas:
+				var oid: String = o[0]
+				bts.append([o[1], func(): _c("heroi_responder", [oid])])
+			_mostrar_pergunta("Reação", b.pergunta.get("texto", ""), bts)
+		else:
+			_dialogo.visible = false
+			_dialogo_interacao = ""
+		return
 	# Perguntas da batalha (Sombra contra o alvo, ação de vários turnos)
 	if b.fase == Batalha.Fase.SOMBRA_ESCOLHA and not _ocupado:
 		_dialogo_interacao = ""
 		_mostrar_pergunta("Ficha de Sombra", b.texto_sombra(), [
-			["Gastar 1 Sombra", func(): b.heroi_sombra(true)],
-			["Não gastar", func(): b.heroi_sombra(false)]])
+			["Gastar 1 Sombra", func(): _c("heroi_sombra", [true])],
+			["Não gastar", func(): _c("heroi_sombra", [false])]])
 	elif b.fase == Batalha.Fase.PERGUNTA and not _ocupado:
 		_dialogo_interacao = ""
 		var botoes := []
 		for o in b.pergunta.get("opcoes", []):
 			var id: String = o[0]
-			botoes.append([o[1], func(): b.heroi_responder(id)])
+			botoes.append([o[1], func(): _c("heroi_responder", [id])])
 		_mostrar_pergunta("Decisão", b.pergunta.get("texto", ""), botoes)
 	elif b.fase == Batalha.Fase.ACAO_LONGA and not _ocupado:
 		_dialogo_interacao = ""
 		_mostrar_pergunta("Ação demorada", b.texto_acao_longa(), [
-			["Continuar a ação", func(): b.heroi_acao_longa(true)],
-			["Parar e fazer outra coisa", func(): b.heroi_acao_longa(false)]])
+			["Continuar a ação", func(): _c("heroi_acao_longa", [true])],
+			["Parar e fazer outra coisa", func(): _c("heroi_acao_longa", [false])]])
 	# Resultado de interação
 	elif b.fase == Batalha.Fase.INTERACAO_RESOLVIDA and not _ocupado:
 		_dialogo_interacao = ""
@@ -3462,11 +4128,11 @@ func _atualizar_dialogos() -> void:
 		_dialogo.visible = false
 	if not _ocupado and b.fase == Batalha.Fase.HEROI_ESCOLHE and not _dialogo.visible:
 		_perguntar_ficha_pendente()
-	if _oferecer_salvar and not _ocupado and b.fase == Batalha.Fase.HEROI_ESCOLHE and b.motivo_salvar() == "":
+	if _oferecer_salvar and not _ocupado and b.fase == Batalha.Fase.HEROI_ESCOLHE and b.motivo_salvar() == "" and not _online():
 		_oferecer_salvar = false
 		_abrir_saves_da_missao()
 	# Distribuição
-	var distribuindo := b.fase == Batalha.Fase.DISTRIBUINDO_DANO and not _ocupado
+	var distribuindo := b.fase == Batalha.Fase.DISTRIBUINDO_DANO and not _ocupado and _eu_decido()
 	if distribuindo and not _dist_mostrando:
 		var sug := b.sugestao_distribuicao()
 		_dist = {"escudo": sug["escudo"], "armadura": sug["armadura"]}
@@ -3599,6 +4265,69 @@ func _mostrar_pergunta(titulo: String, texto: String, botoes: Array) -> void:
 	_dialogo.reset_size()
 
 
+var _veu: ColorRect
+var _bt_x: Button
+
+
+## Botão de fechar vermelho (0.24).
+func _botao_x(acao: Callable) -> Button:
+	var bt := Button.new()
+	bt.text = "✕"
+	bt.focus_mode = Control.FOCUS_NONE
+	bt.custom_minimum_size = Vector2(34, 34)
+	bt.tooltip_text = "Fechar (Esc)"
+	var sb := StyleBoxFlat.new()
+	sb.bg_color = Color("a8322a")
+	sb.set_corner_radius_all(6)
+	bt.add_theme_stylebox_override("normal", sb)
+	var sb2 := sb.duplicate()
+	sb2.bg_color = Color("d0453a")
+	bt.add_theme_stylebox_override("hover", sb2)
+	bt.add_theme_color_override("font_color", Color.WHITE)
+	bt.add_theme_font_size_override("font_size", 18)
+	bt.pressed.connect(acao)
+	return bt
+
+
+## Caixa abrindo: animação curta e véu atrás; o X some quando a resposta é obrigatória.
+func _ao_mudar_caixa(caixa: Control) -> void:
+	_atualizar_veu()
+	if not caixa.visible:
+		return
+	if caixa == _dialogo and _bt_x != null:
+		_bt_x.visible = batalha == null or batalha.fase != Batalha.Fase.PERGUNTA
+	caixa.pivot_offset = caixa.size / 2.0
+	caixa.scale = Vector2(0.9, 0.9)
+	caixa.modulate.a = 0.0
+	var tw := caixa.create_tween().set_parallel(true)
+	tw.tween_property(caixa, "scale", Vector2.ONE, 0.18).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
+	tw.tween_property(caixa, "modulate:a", 1.0, 0.15)
+
+
+func _caixa_aberta() -> bool:
+	return (_dialogo != null and _dialogo.visible) or (_painel_narrativa != null and is_instance_valid(_painel_narrativa) and _painel_narrativa.visible)
+
+
+func _atualizar_veu() -> void:
+	if _veu == null:
+		return
+	_veu.visible = _caixa_aberta()
+	if _veu.visible:
+		var abaixo: Control = _dialogo if _dialogo.visible else _painel_narrativa
+		_hud.move_child(_veu, maxi(abaixo.get_index() - 1, 0))
+
+
+func _fechar_pelo_x() -> void:
+	if batalha.fase == Batalha.Fase.PERGUNTA:
+		return
+	if batalha.fase == Batalha.Fase.INTERACAO_RESOLVIDA:
+		_dialogo.visible = false
+		_acao("continuar")
+		return
+	_fechar_dialogo()
+	_atualizar()
+
+
 func _fechar_dialogo() -> void:
 	_dialogo_interacao = ""
 	_dialogo.visible = false
@@ -3608,7 +4337,7 @@ func _escolher_opcao(id: String, opcao: String, abordagem := "") -> void:
 	if _ocupado:
 		return
 	_fechar_dialogo()
-	batalha.heroi_interagir(id, opcao, abordagem)
+	_c("heroi_interagir", [id, opcao, abordagem])
 	_processar()
 
 
@@ -3642,11 +4371,11 @@ func _mostrar_resultado_interacao() -> void:
 		var u := batalha.ativa()
 		var op := batalha.opcao_de_amortecer(n)
 		var bt_tenta := Button.new()
-		bt_tenta.text = "Tentar amortecer: %s (precisa de %d ou mais)" % [batalha.descricao_do_teste(u, op), op["dificuldade"]]
+		bt_tenta.text = "Tentar amortecer: %s" % batalha.descricao_do_teste(u, op)
 		bt_tenta.focus_mode = Control.FOCUS_NONE
 		bt_tenta.custom_minimum_size = Vector2(620, 36)
 		bt_tenta.pressed.connect(func():
-			batalha.heroi_amortecer_queda(true)
+			_c("heroi_amortecer_queda", [true])
 			_processar())
 		_dialogo_corpo.add_child(bt_tenta)
 		var bt_cai := Button.new()
@@ -3690,16 +4419,17 @@ func _atualizar_mesa_pericia() -> void:
 	if t.estourou:
 		_mesa_her_total.text = "ESTOUROU!\núltima carta + %d (%s) = %d\n→ %s" % [t.modificador, nome_at, t.resultado(), _rotulo_faixa(op, t.resultado())]
 	else:
-		_mesa_her_total.text = "Cartas %d / %d\n+ %d (%s) = %d\n→ %s" % [t.soma_cartas(), t.limite, t.modificador, nome_at, t.resultado(), _rotulo_faixa(op, t.resultado())]
+		# Lucas (0.24): o resultado (passou ou não) só aparece depois de parar.
+		_mesa_her_total.text = "Cartas %d / %d\n+ %d (%s) = %d" % [t.soma_cartas(), t.limite, t.modificador, nome_at, t.resultado()]
 	var pode_puxar := not _ocupado and t.pode_puxar()
 	_mesa_her_monte.configurar(u.baralho.baralho.size(), pode_puxar)
 	_bt_puxar.disabled = not pode_puxar
 	_bt_parar.disabled = _ocupado or t.encerrado
 	_bt_continuar.disabled = true
-	var instr := "Puxe (Espaço ou clique no baralho), jogue da mão ou pare (Enter). Perícia e atributo não contam para estourar."
+	var instr := "Puxe, jogue da mão ou pare (Enter)."
 	if b.vantagem_pendente():
 		instr = "Vantagem: clique numa carta da mão para trocar pela carta usada que mais ajuda, ou confirme (Enter)."
-	var alvo_txt := ("Dificuldade %d (atingir já basta)" % int(op["dificuldade"])) if op.has("dificuldade") else "Faixas: " + b.descricao_das_faixas(op)
+	var alvo_txt := ("Dificuldade: " + b.nome_da_dificuldade(op)) if op.has("dificuldade") else "Faixas: " + b.descricao_das_faixas(op)
 	_mesa_faixa.text = "%s · %s\n%s" % [op.get("texto", ""), alvo_txt, instr]
 	for filho in _mesa_extras.get_children():
 		filho.queue_free()
@@ -3723,14 +4453,14 @@ func _botoes_carta_fechada() -> void:
 		bt_f.text = "Usar Foco: ver a próxima carta antes da fechada (scry 1)"
 		bt_f.focus_mode = Control.FOCUS_NONE
 		bt_f.pressed.connect(func():
-			batalha.heroi_foco_no_teste()
+			_c("heroi_foco_no_teste")
 			_processar())
 		_mesa_extras.add_child(bt_f)
 	var bt_r := Button.new()
 	bt_r.text = "Receber a carta fechada"
 	bt_r.focus_mode = Control.FOCUS_NONE
 	bt_r.pressed.connect(func():
-		batalha.heroi_receber_fechada()
+		_c("heroi_receber_fechada")
 		_processar())
 	_mesa_extras.add_child(bt_r)
 
@@ -3845,7 +4575,7 @@ func _botao_distribuicao(acao: String) -> void:
 func _confirmar_distribuicao() -> void:
 	if _ocupado or batalha.fase != Batalha.Fase.DISTRIBUINDO_DANO:
 		return
-	if batalha.heroi_distribuir_dano(_dist["escudo"], _dist["armadura"]):
+	if _c("heroi_distribuir_dano", [_dist["escudo"], _dist["armadura"]]):
 		_dist_mostrando = false
 		_distribuir.visible = false
 		_processar()
@@ -3864,9 +4594,9 @@ func _item_usavel(u, item: String) -> bool:
 	var dados: Dictionary = Itens.CONSUMIVEIS.get(item, {})
 	if _ocupado or not batalha.vez_do_heroi() or batalha.ativa() != u or u.acoes_padrao <= 0 or not dados.get("acao", false):
 		return false
-	if item == "pocao_de_cura_pequena" and u.baralho.descarte.is_empty():
-		return false
-	return true
+	if dados.has("area"):
+		return true
+	return batalha.motivo_item(u, item) == ""
 
 
 func _montar_inventario() -> void:
@@ -3896,7 +4626,7 @@ func _montar_inventario() -> void:
 	if not u.arma_reserva.is_empty():
 		var bt_t := Button.new()
 		var ct: int = batalha.custo_troca(u)
-		bt_t.text = "Trocar para %s (%s)" % [u.arma_reserva["nome"], "livre" if ct == 0 else "%d Padrão" % ct]
+		bt_t.text = "Trocar para %s (%s)" % [u.arma_reserva["nome"], "livre" if ct == 0 else ("1 Movimento" if batalha.troca_com_movimento(u) else "%d Padrão" % ct)]
 		bt_t.focus_mode = Control.FOCUS_NONE
 		bt_t.disabled = _ocupado or not batalha.vez_do_heroi() or batalha.ativa() != u or batalha.motivo_troca(u) != ""
 		bt_t.pressed.connect(func():
@@ -4061,8 +4791,9 @@ func _enquadrar_combate() -> void:
 	if not b.atacante.eh_heroi() and not b.unidade_visivel(b.atacante):
 		return
 	var meio := (_mundo(b.atacante.pos) + _mundo(b.defensor.pos)) / 2.0
-	var d := 175.0 * _camera.size / 720.0 / 0.577
-	_focar_camera(meio + Vector3(1, 0, 1).normalized() * d)
+	var d := 110.0 * _camera.size / 720.0 / 0.577
+	var dx := 260.0 * _camera.size / 720.0
+	_focar_camera(meio + Vector3(1, 0, 1).normalized() * d + Vector3(1, 0, -1).normalized() * dx)
 
 
 func _focar_camera(ponto: Vector3) -> void:
@@ -4215,8 +4946,16 @@ func _abrir_pausa() -> void:
 		{"texto": "Defesa automática (para em 17)", "valor": _auto.button_pressed, "ao_mudar": func(on): _auto.button_pressed = on},
 		{"texto": "Dano: sempre usar a sugestão", "valor": _auto_dist.button_pressed, "ao_mudar": func(on): _auto_dist.button_pressed = on},
 	]
-	_pausa.botoes_extras = [] if Sessao.campanha else [{"texto": "Recomeçar a missão (N)", "acao": func(): nova_batalha()}]
+	_pausa.botoes_extras = [] if Sessao.campanha or _online() else [{"texto": "Recomeçar a missão (N)", "acao": func(): nova_batalha()}]
+	if Sessao.fase_teste != "" and not _online():
+		_pausa.botoes_extras.append({"texto": "Voltar ao editor de fases", "acao": func(): get_tree().change_scene_to_file("res://ui/editor_fases.tscn")})
+	if _online() and _rede.anfitriao:
+		_pausa.botoes_extras = [{"texto": "Levar todos de volta para a sala", "acao": func(): _rede.voltar_para_sala()}]
+		if Sessao.campanha and Sessao.modo != "vila":
+			_pausa.botoes_extras.append({"texto": "Desistir da missão e voltar à vila", "acao": func(): _rede.ir_para("vila")})
 	var motivo := batalha.motivo_salvar()
+	if _online():
+		motivo = "Em rede não há espaços de salvamento: a party se salva sozinha no computador do anfitrião a cada compra e no fim de cada missão."
 	_pausa.ao_salvar = Callable()
 	_pausa.motivo_sem_salvar = motivo
 	if motivo == "":
@@ -4246,14 +4985,21 @@ func _perguntar_ficha_pendente() -> void:
 			if atual >= h.cartas.size() or not h.cartas[atual].tem_ficha(ficha):
 				continue
 			var opcoes: Array = b.cartas_para_ficha(h, ficha, atual)
-			if opcoes.size() < 2:
+			if opcoes.size() < 2 or not _sou_dono(h.id):
 				continue
 			var botoes := []
 			for i in opcoes:
 				var idx: int = i
-				botoes.append(["%s%s" % [h.cartas[idx].nome(), "  (onde está)" if idx == atual else ""], func(): b.mover_ficha(h, ficha, atual, idx)])
+				botoes.append(["%s%s" % [h.cartas[idx].nome(), "  (onde está)" if idx == atual else ""], func(): _c("mover_ficha", [h, ficha, atual, idx])])
+			var origem := ""
+			for k in range(b.registro.size() - 1, maxi(b.registro.size() - 15, -1), -1):
+				var linha: String = b.registro[k]
+				if ficha in linha and (h.nome in linha or ficha + ":" in linha):
+					origem = linha
+					break
 			_mostrar_pergunta("Ficha de %s · %s" % [ficha, h.nome],
-				"%s recebeu 1 ficha de %s. Em qual carta ela fica? (Cada carta tem no máximo uma de cada tipo.)" % [h.nome, ficha], botoes)
+				"%s recebeu 1 ficha de %s.%s\nEm qual carta ela fica? (Cada carta tem no máximo uma de cada tipo.)" % [h.nome, ficha,
+					("\nDe onde veio: " + origem) if origem != "" else ""], botoes)
 			return
 
 
@@ -4461,20 +5207,28 @@ func _mostrar_narrativa(titulo: String, texto: String) -> void:
 		_painel_narrativa.position = Vector2(300, 60)
 		_painel_narrativa.custom_minimum_size = Vector2(680, 0)
 		_painel_narrativa.mouse_filter = Control.MOUSE_FILTER_STOP
+		var vn := VBoxContainer.new()
+		_painel_narrativa.add_child(vn)
+		var hn := HBoxContainer.new()
+		var esp := Control.new()
+		esp.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+		hn.add_child(esp)
+		hn.add_child(_botao_x(func(): _painel_narrativa.visible = false))
+		vn.add_child(hn)
 		_texto_narrativa = _label("", 15, COR_TEXTO)
 		_texto_narrativa.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 		_texto_narrativa.custom_minimum_size = Vector2(650, 0)
 		_texto_narrativa.mouse_filter = Control.MOUSE_FILTER_IGNORE
-		_painel_narrativa.add_child(_texto_narrativa)
+		vn.add_child(_texto_narrativa)
 		_hud.add_child(_painel_narrativa)
+		_painel_narrativa.visibility_changed.connect(func(): _ao_mudar_caixa(_painel_narrativa))
 		_painel_narrativa.gui_input.connect(func(ev):
 			if ev is InputEventMouseButton and ev.pressed:
 				_painel_narrativa.visible = false)
 	var antes := _texto_narrativa.text if _painel_narrativa.visible else ""
 	if texto in antes:
 		return
-	_texto_narrativa.text = (antes + "\n\n" if antes != "" else "") + ("%s\n" % titulo.to_upper() if titulo != "" else "") + texto + "\n(clique para fechar)"
-	_texto_narrativa.text = _texto_narrativa.text.replace("\n(clique para fechar)\n\n", "\n\n")
+	_texto_narrativa.text = (antes + "\n\n" if antes != "" else "") + ("%s\n" % titulo.to_upper() if titulo != "" else "") + texto
 	_painel_narrativa.reset_size()
 	_painel_narrativa.visible = true
 

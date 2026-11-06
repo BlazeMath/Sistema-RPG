@@ -1,0 +1,2372 @@
+{
+	"versao": 1,
+	"id": "baile_mascaras_prata",
+	"nome": "O Baile das Máscaras de Prata",
+	"descricao": "Missão social: infiltrados num baile de máscaras, converse com os convidados, use perícias sociais e descubra quem quer envenenar a Duquesa no brinde da meia-noite.",
+	"largura": 32,
+	"altura": 24,
+	"piso": "pedra",
+	"escuro": true,
+	"luz_ambiente": 1,
+	"abertura": {
+		"titulo": "O Baile das Máscaras de Prata",
+		"texto": "A Duquesa Lisandra dá o baile do equinócio. A guilda recebeu um bilhete sem assinatura: \"Ela não vai ver o amanhecer. O brinde é à meia-noite.\" Vocês entraram como convidados, de máscara. Ninguém pode saber quem vocês são até a hora certa. Conversem, observem e juntem três pistas antes de acusar alguém diante da Duquesa. Uma acusação errada ofende a casa."
+	},
+	"chao": {
+		"1,17": "grama",
+		"1,18": "grama",
+		"1,19": "grama",
+		"1,20": "grama",
+		"1,21": "grama",
+		"1,22": "grama",
+		"2,17": "grama",
+		"2,18": "grama",
+		"2,19": "grama",
+		"2,20": "grama",
+		"2,21": "grama",
+		"2,22": "grama",
+		"3,17": "grama",
+		"3,18": "grama",
+		"3,19": "grama",
+		"3,20": "grama",
+		"3,21": "grama",
+		"3,22": "grama",
+		"4,17": "grama",
+		"4,18": "grama",
+		"4,19": "grama",
+		"4,20": "grama",
+		"4,21": "grama",
+		"4,22": "grama",
+		"5,17": "grama",
+		"5,18": "grama",
+		"5,19": "grama",
+		"5,20": "grama",
+		"5,21": "grama",
+		"5,22": "grama",
+		"6,17": "grama",
+		"6,18": "grama",
+		"6,19": "grama",
+		"6,20": "grama",
+		"6,21": "grama",
+		"6,22": "grama",
+		"7,17": "grama",
+		"7,18": "grama",
+		"7,19": "grama",
+		"7,20": "grama",
+		"7,21": "grama",
+		"7,22": "grama",
+		"8,17": "grama",
+		"8,18": "grama",
+		"8,19": "grama",
+		"8,20": "grama",
+		"8,21": "grama",
+		"8,22": "grama",
+		"9,17": "grama",
+		"9,18": "grama",
+		"9,19": "grama",
+		"9,20": "grama",
+		"9,21": "grama",
+		"9,22": "grama",
+		"10,17": "grama",
+		"10,18": "grama",
+		"10,19": "grama",
+		"10,20": "grama",
+		"10,21": "grama",
+		"10,22": "grama",
+		"11,17": "grama",
+		"11,18": "grama",
+		"11,19": "grama",
+		"11,20": "grama",
+		"11,21": "grama",
+		"11,22": "grama",
+		"12,17": "grama",
+		"12,18": "grama",
+		"12,19": "grama",
+		"12,20": "grama",
+		"12,21": "grama",
+		"12,22": "grama",
+		"13,17": "grama",
+		"13,18": "grama",
+		"13,19": "grama",
+		"13,20": "grama",
+		"13,21": "grama",
+		"13,22": "grama",
+		"14,17": "grama",
+		"14,18": "grama",
+		"14,19": "grama",
+		"14,20": "grama",
+		"14,21": "grama",
+		"14,22": "grama",
+		"15,17": "grama",
+		"15,18": "grama",
+		"15,19": "grama",
+		"15,20": "grama",
+		"15,21": "grama",
+		"15,22": "grama",
+		"16,17": "grama",
+		"16,18": "grama",
+		"16,19": "grama",
+		"16,20": "grama",
+		"16,21": "grama",
+		"16,22": "grama",
+		"17,17": "grama",
+		"17,18": "grama",
+		"17,19": "grama",
+		"17,20": "grama",
+		"17,21": "grama",
+		"17,22": "grama",
+		"18,17": "grama",
+		"18,18": "grama",
+		"18,19": "grama",
+		"18,20": "grama",
+		"18,21": "grama",
+		"18,22": "grama",
+		"19,17": "grama",
+		"19,18": "grama",
+		"19,19": "grama",
+		"19,20": "grama",
+		"19,21": "grama",
+		"19,22": "grama",
+		"20,17": "grama",
+		"20,18": "grama",
+		"20,19": "grama",
+		"20,20": "grama",
+		"20,21": "grama",
+		"20,22": "grama",
+		"21,17": "grama",
+		"21,18": "grama",
+		"21,19": "grama",
+		"21,20": "grama",
+		"21,21": "grama",
+		"21,22": "grama",
+		"22,17": "grama",
+		"22,18": "grama",
+		"22,19": "grama",
+		"22,20": "grama",
+		"22,21": "grama",
+		"22,22": "grama",
+		"23,17": "grama",
+		"23,18": "grama",
+		"23,19": "grama",
+		"23,20": "grama",
+		"23,21": "grama",
+		"23,22": "grama",
+		"24,17": "grama",
+		"24,18": "grama",
+		"24,19": "grama",
+		"24,20": "grama",
+		"24,21": "grama",
+		"24,22": "grama",
+		"25,17": "grama",
+		"25,18": "grama",
+		"25,19": "grama",
+		"25,20": "grama",
+		"25,21": "grama",
+		"25,22": "grama",
+		"26,17": "grama",
+		"26,18": "grama",
+		"26,19": "grama",
+		"26,20": "grama",
+		"26,21": "grama",
+		"26,22": "grama",
+		"27,17": "grama",
+		"27,18": "grama",
+		"27,19": "grama",
+		"27,20": "grama",
+		"27,21": "grama",
+		"27,22": "grama",
+		"28,17": "grama",
+		"28,18": "grama",
+		"28,19": "grama",
+		"28,20": "grama",
+		"28,21": "grama",
+		"28,22": "grama",
+		"29,17": "grama",
+		"29,18": "grama",
+		"29,19": "grama",
+		"29,20": "grama",
+		"29,21": "grama",
+		"29,22": "grama",
+		"30,17": "grama",
+		"30,18": "grama",
+		"30,19": "grama",
+		"30,20": "grama",
+		"30,21": "grama",
+		"30,22": "grama",
+		"27,6": "madeira",
+		"27,7": "madeira",
+		"27,8": "madeira",
+		"27,9": "madeira",
+		"28,6": "madeira",
+		"28,7": "madeira",
+		"28,8": "madeira",
+		"28,9": "madeira",
+		"29,6": "madeira",
+		"29,7": "madeira",
+		"29,8": "madeira",
+		"29,9": "madeira",
+		"30,6": "madeira",
+		"30,7": "madeira",
+		"30,8": "madeira",
+		"30,9": "madeira",
+		"1,6": "madeira",
+		"1,7": "madeira",
+		"1,8": "madeira",
+		"1,9": "madeira",
+		"2,6": "madeira",
+		"2,7": "madeira",
+		"2,8": "madeira",
+		"2,9": "madeira",
+		"3,6": "madeira",
+		"3,7": "madeira",
+		"3,8": "madeira",
+		"3,9": "madeira",
+		"20,12": "terra",
+		"20,13": "terra",
+		"20,14": "terra",
+		"21,12": "terra",
+		"21,13": "terra",
+		"21,14": "terra",
+		"22,12": "terra",
+		"22,13": "terra",
+		"22,14": "terra",
+		"23,12": "terra",
+		"23,13": "terra",
+		"23,14": "terra"
+	},
+	"niveis": {},
+	"escadas": [],
+	"objetos": [
+		{
+			"pos": "0,0",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "0,1",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "0,2",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "0,3",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "0,4",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "0,11",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "0,12",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "0,13",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "0,14",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "0,15",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "0,16",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "0,17",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "0,18",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "0,19",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "0,20",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "0,21",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "0,22",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "0,23",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "1,0",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "1,23",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "2,0",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "2,23",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "3,0",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "3,23",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "4,0",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "4,23",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "5,0",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "5,23",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "6,0",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "6,23",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "7,0",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "7,23",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "8,0",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "8,23",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "9,0",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "9,23",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "10,0",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "10,23",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "11,0",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "11,23",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "12,0",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "12,23",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "13,0",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "13,23",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "14,0",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "14,23",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "15,0",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "15,23",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "16,0",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "16,23",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "17,0",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "17,23",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "18,0",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "18,23",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "19,0",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "19,23",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "20,0",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "20,23",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "21,0",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "21,23",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "22,0",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "22,23",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "23,0",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "23,23",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "24,0",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "24,23",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "25,0",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "25,23",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "26,0",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "26,23",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "27,0",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "27,23",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "28,0",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "28,23",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "29,0",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "29,23",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "30,0",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "30,23",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "31,0",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "31,1",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "31,2",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "31,3",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "31,4",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "31,11",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "31,12",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "31,13",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "31,14",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "31,15",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "31,16",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "31,17",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "31,18",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "31,19",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "31,20",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "31,21",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "31,22",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "31,23",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "1,16",
+			"tipo": "cerca",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "2,16",
+			"tipo": "cerca",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "3,16",
+			"tipo": "cerca",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "4,16",
+			"tipo": "cerca",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "5,16",
+			"tipo": "cerca",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "6,16",
+			"tipo": "cerca",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "7,16",
+			"tipo": "cerca",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "8,16",
+			"tipo": "cerca",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "9,16",
+			"tipo": "cerca",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "10,16",
+			"tipo": "cerca",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "11,16",
+			"tipo": "cerca",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "12,16",
+			"tipo": "cerca",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "13,16",
+			"tipo": "cerca",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "17,16",
+			"tipo": "cerca",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "18,16",
+			"tipo": "cerca",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "19,16",
+			"tipo": "cerca",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "20,16",
+			"tipo": "cerca",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "21,16",
+			"tipo": "cerca",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "22,16",
+			"tipo": "cerca",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "23,16",
+			"tipo": "cerca",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "24,16",
+			"tipo": "cerca",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "25,16",
+			"tipo": "cerca",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "26,16",
+			"tipo": "cerca",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "27,16",
+			"tipo": "cerca",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "28,16",
+			"tipo": "cerca",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "29,16",
+			"tipo": "cerca",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "30,16",
+			"tipo": "cerca",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "3,19",
+			"tipo": "arvore",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "8,20",
+			"tipo": "arvore",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "22,19",
+			"tipo": "arvore",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "27,20",
+			"tipo": "arvore",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "15,20",
+			"tipo": "fonte",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "6,4",
+			"tipo": "pilar",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "6,11",
+			"tipo": "pilar",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "25,4",
+			"tipo": "pilar",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "25,11",
+			"tipo": "pilar",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "10,3",
+			"tipo": "mesa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "12,3",
+			"tipo": "mesa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "19,3",
+			"tipo": "mesa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "21,3",
+			"tipo": "mesa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "15,2",
+			"tipo": "mesa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "3,2",
+			"tipo": "velas",
+			"colisao": false,
+			"visao": "padrao"
+		},
+		{
+			"pos": "28,2",
+			"tipo": "velas",
+			"colisao": false,
+			"visao": "padrao"
+		},
+		{
+			"pos": "3,13",
+			"tipo": "velas",
+			"colisao": false,
+			"visao": "padrao"
+		},
+		{
+			"pos": "28,13",
+			"tipo": "velas",
+			"colisao": false,
+			"visao": "padrao"
+		},
+		{
+			"pos": "26,5",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "26,6",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "26,7",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "26,9",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "26,10",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "27,5",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "27,10",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "28,5",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "28,10",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "29,5",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "29,10",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "30,5",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "30,10",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "31,5",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "31,6",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "31,7",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "31,8",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "31,9",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "31,10",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "26,8",
+			"tipo": "porta",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "0,5",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "0,6",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "0,7",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "0,8",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "0,9",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "0,10",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "1,5",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "1,10",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "2,5",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "2,10",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "3,5",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "3,10",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "4,5",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "4,6",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "4,7",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "4,9",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "4,10",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "4,8",
+			"tipo": "porta",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "19,11",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "19,12",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "19,13",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "19,14",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "19,15",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "20,11",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "20,15",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "21,15",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "22,11",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "22,15",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "23,11",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "23,15",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "24,11",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "24,12",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "24,14",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "24,15",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "20,14",
+			"tipo": "barril",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "23,12",
+			"tipo": "barril",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "22,14",
+			"tipo": "estante",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "15,4",
+			"tipo": "npc",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "15,3",
+			"tipo": "npc",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "9,8",
+			"tipo": "npc",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "22,7",
+			"tipo": "npc",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "8,3",
+			"tipo": "npc",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "24,13",
+			"tipo": "npc",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "15,14",
+			"tipo": "npc",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "11,6",
+			"tipo": "npc",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "18,6",
+			"tipo": "npc",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "12,10",
+			"tipo": "npc",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "20,10",
+			"tipo": "npc",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "17,12",
+			"tipo": "npc",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "10,13",
+			"tipo": "npc",
+			"colisao": true,
+			"visao": "padrao"
+		}
+	],
+	"luzes": [
+		{
+			"pos": "3,2",
+			"claro": 2,
+			"penumbra": 5,
+			"nome": "candelabro"
+		},
+		{
+			"pos": "28,2",
+			"claro": 2,
+			"penumbra": 5,
+			"nome": "candelabro"
+		},
+		{
+			"pos": "3,13",
+			"claro": 2,
+			"penumbra": 5,
+			"nome": "candelabro"
+		},
+		{
+			"pos": "28,13",
+			"claro": 2,
+			"penumbra": 5,
+			"nome": "candelabro"
+		},
+		{
+			"pos": "15,8",
+			"claro": 3,
+			"penumbra": 6,
+			"nome": "lustre"
+		}
+	],
+	"inicio": [
+		"14,21",
+		"16,21",
+		"13,20",
+		"17,20"
+	],
+	"inimigos": [
+		{
+			"id": "corvin",
+			"preset": "duelista",
+			"pos": "2,7",
+			"grupo": "conspiracao",
+			"alerta": false,
+			"vigia": 12,
+			"dormindo": false,
+			"alvo": true,
+			"saque": [
+				{
+					"tipo": "ouro",
+					"valor": 50
+				},
+				{
+					"tipo": "item",
+					"item": "mascara_do_impostor",
+					"qtd": 1
+				},
+				{
+					"tipo": "lore",
+					"texto": "No colete do Barão: o frasco e uma carta do Círculo Rubro prometendo devolver as terras dele."
+				}
+			],
+			"proprios": {
+				"ativo": false
+			},
+			"nome": "Barão Corvin"
+		},
+		{
+			"id": "assassino1",
+			"preset": "assassino",
+			"pos": "28,7",
+			"grupo": "conspiracao",
+			"alerta": false,
+			"vigia": 12,
+			"dormindo": false,
+			"alvo": false,
+			"saque": [],
+			"proprios": {
+				"ativo": false
+			}
+		},
+		{
+			"id": "assassino2",
+			"preset": "assassino",
+			"pos": "29,9",
+			"grupo": "conspiracao",
+			"alerta": false,
+			"vigia": 12,
+			"dormindo": false,
+			"alvo": false,
+			"saque": [],
+			"proprios": {
+				"ativo": false
+			}
+		},
+		{
+			"id": "assassino3",
+			"preset": "assassino",
+			"pos": "1,9",
+			"grupo": "conspiracao",
+			"alerta": false,
+			"vigia": 12,
+			"dormindo": false,
+			"alvo": false,
+			"saque": [],
+			"proprios": {
+				"ativo": false
+			}
+		}
+	],
+	"grupos": {
+		"conspiracao": {
+			"titulo": "A conspiração",
+			"texto": "Os convidados gritam e fogem para o jardim. A música para no meio da nota.",
+			"alerta": true
+		}
+	},
+	"areas": [
+		{
+			"id": "entrada",
+			"nome": "Escadaria do jardim",
+			"tipo": "fala",
+			"celulas": [
+				"14,17",
+				"15,17",
+				"16,17"
+			],
+			"titulo": "O salão",
+			"texto": "Música de cordas, perfume e sussurros. Cinquenta máscaras de prata giram sob o lustre. Na mesa do brinde, uma taça de cristal azul separada das outras: a da Duquesa. Faltam duas horas para a meia-noite.",
+			"parar": true,
+			"procurar": false,
+			"efeitos": [],
+			"teste": {
+				"somar": [
+					"percepcao"
+				],
+				"nivel": "medio"
+			},
+			"resultados": {
+				"sucesso": {
+					"texto": "",
+					"efeitos": []
+				},
+				"falha": {
+					"texto": "",
+					"efeitos": []
+				}
+			},
+			"armadilha": {
+				"dano": 4,
+				"ficha": "",
+				"achar": "medio",
+				"evitar": "medio",
+				"desarmar": "medio",
+				"texto_disparo": "O mecanismo dispara!"
+			}
+		}
+	],
+	"interacoes": [
+		{
+			"id": "duquesa",
+			"nome": "Duquesa Lisandra",
+			"pos": "15,4",
+			"alcance": 1,
+			"texto": "Máscara de cisne, voz cansada de quem cumprimenta gente há três horas.",
+			"oculta": false,
+			"opcoes": [
+				{
+					"id": "cumprimentar",
+					"texto": "Cumprimentar com toda a etiqueta (Nobreza + Diplomacia)",
+					"custo": "padrao",
+					"uma_vez": false,
+					"sem_inimigos": false,
+					"requer_item": "",
+					"requer_classe": [],
+					"requer_pistas": 0,
+					"teste": {
+						"ativo": true,
+						"somar": [
+							"Nobreza",
+							"diplomacia"
+						],
+						"nivel": "facil"
+					},
+					"resultados": {
+						"feito": {
+							"texto": "",
+							"efeitos": []
+						},
+						"sucesso": {
+							"texto": "Ela gosta de vocês. \"Venham ao brinde perto de mim. Brindo com a taça azul, a da minha mãe. Ninguém mais toca nela, só o mordomo.\"",
+							"efeitos": [
+								{
+									"tipo": "pista",
+									"nome": "A taça azul",
+									"texto": "Só a Duquesa bebe da taça azul, servida pelo mordomo."
+								}
+							]
+						},
+						"falha": {
+							"texto": "Vocês tropeçam no cumprimento. Ela sorri com educação e vira para outro convidado.",
+							"efeitos": []
+						}
+					}
+				},
+				{
+					"id": "avisar",
+					"texto": "Avisar do bilhete agora",
+					"custo": "nenhum",
+					"uma_vez": true,
+					"sem_inimigos": false,
+					"requer_item": "",
+					"requer_classe": [],
+					"requer_pistas": 0,
+					"teste": {
+						"ativo": false,
+						"somar": [
+							"percepcao"
+						],
+						"nivel": "medio"
+					},
+					"resultados": {
+						"feito": {
+							"texto": "\"Recebo bilhetes assim toda semana.\" Ela não muda nada. Vão precisar de provas.",
+							"efeitos": [
+								{
+									"tipo": "lore",
+									"texto": "A Duquesa não leva avisos a sério sem provas."
+								}
+							]
+						},
+						"sucesso": {
+							"texto": "",
+							"efeitos": []
+						},
+						"falha": {
+							"texto": "",
+							"efeitos": []
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "mordomo",
+			"nome": "Mordomo Alaric",
+			"pos": "15,3",
+			"alcance": 1,
+			"texto": "Luvas brancas, guarda a mesa do brinde como um cão de guarda.",
+			"oculta": false,
+			"opcoes": [
+				{
+					"id": "ler",
+					"texto": "Perceber se ele é sincero (Intuição + Percepção)",
+					"custo": "padrao",
+					"uma_vez": false,
+					"sem_inimigos": false,
+					"requer_item": "",
+					"requer_classe": [],
+					"requer_pistas": 0,
+					"teste": {
+						"ativo": true,
+						"somar": [
+							"Intuição",
+							"percepcao"
+						],
+						"nivel": "medio"
+					},
+					"resultados": {
+						"feito": {
+							"texto": "",
+							"efeitos": []
+						},
+						"sucesso": {
+							"texto": "Ele é leal até o osso. Baixinho: \"O Barão Corvin insistiu em servir o vinho do brinde ele mesmo. Disse que é costume da terra dele. Não gostei.\"",
+							"efeitos": [
+								{
+									"tipo": "pista",
+									"nome": "O Barão quer servir o vinho",
+									"texto": "O Barão Corvin pediu para servir o vinho do brinde."
+								}
+							]
+						},
+						"falha": {
+							"texto": "\"Tudo está em ordem, senhor.\" Ele não diz mais nada.",
+							"efeitos": []
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "barao",
+			"nome": "Convidado de máscara de corvo",
+			"pos": "9,8",
+			"alcance": 1,
+			"texto": "Máscara de corvo, luvas pretas, um perfume forte demais. Ele não dança.",
+			"oculta": false,
+			"opcoes": [
+				{
+					"id": "atuar",
+					"texto": "Fingir ser um admirador da corte dele (Atuação + Mentira)",
+					"custo": "padrao",
+					"uma_vez": true,
+					"sem_inimigos": false,
+					"requer_item": "",
+					"requer_classe": [],
+					"requer_pistas": 0,
+					"teste": {
+						"ativo": true,
+						"somar": [
+							"Atuação",
+							"mentira"
+						],
+						"nivel": "medio"
+					},
+					"resultados": {
+						"feito": {
+							"texto": "",
+							"efeitos": []
+						},
+						"sucesso": {
+							"texto": "O Barão Corvin se abre: reclama que a Duquesa tomou as terras dele no tribunal, \"mas a justiça vem, às vezes num copo\". O colete dele tem um volume de frasco.",
+							"efeitos": [
+								{
+									"tipo": "pista",
+									"nome": "O frasco no colete",
+									"texto": "O Barão Corvin carrega um frasco escondido e odeia a Duquesa."
+								}
+							]
+						},
+						"falha": {
+							"texto": "Ele estreita os olhos atrás da máscara. \"Já nos vimos antes?\" e se afasta.",
+							"efeitos": []
+						}
+					}
+				},
+				{
+					"id": "irritar",
+					"texto": "Provocar para ele perder a calma (Irritar + Raciocínio)",
+					"custo": "padrao",
+					"uma_vez": true,
+					"sem_inimigos": false,
+					"requer_item": "",
+					"requer_classe": [],
+					"requer_pistas": 0,
+					"teste": {
+						"ativo": true,
+						"somar": [
+							"Irritar",
+							"raciocinio"
+						],
+						"nivel": "dificil"
+					},
+					"resultados": {
+						"feito": {
+							"texto": "",
+							"efeitos": []
+						},
+						"sucesso": {
+							"texto": "Ele explode: \"Aquela mulher vai pagar!\" e logo se recompõe. Metade do salão ouviu.",
+							"efeitos": [
+								{
+									"tipo": "pista",
+									"nome": "Ameaça em público",
+									"texto": "O Barão ameaçou a Duquesa em público."
+								}
+							]
+						},
+						"falha": {
+							"texto": "Ele ri de você e oferece um copo. Você não aceita.",
+							"efeitos": []
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "poeta",
+			"nome": "Poeta bêbado",
+			"pos": "22,7",
+			"alcance": 1,
+			"texto": "Um poeta de máscara torta declama para uma coluna.",
+			"oculta": false,
+			"opcoes": [
+				{
+					"id": "versos",
+					"texto": "Responder em versos (Arte + Raciocínio)",
+					"custo": "padrao",
+					"uma_vez": true,
+					"sem_inimigos": false,
+					"requer_item": "",
+					"requer_classe": [],
+					"requer_pistas": 0,
+					"teste": {
+						"ativo": true,
+						"somar": [
+							"Arte",
+							"raciocinio"
+						],
+						"nivel": "facil"
+					},
+					"resultados": {
+						"feito": {
+							"texto": "",
+							"efeitos": []
+						},
+						"sucesso": {
+							"texto": "Ele aplaude e fala alto demais: \"O corvo perdeu o ninho no tribunal! Corvin, o falido! Vendeu até a prata da mãe!\"",
+							"efeitos": [
+								{
+									"tipo": "pista",
+									"nome": "O Barão falido",
+									"texto": "O Barão Corvin perdeu tudo para a Duquesa e está falido."
+								},
+								{
+									"tipo": "lore",
+									"texto": "O poeta chama o Barão de \"corvo sem ninho\"."
+								}
+							]
+						},
+						"falha": {
+							"texto": "Ele chora no seu ombro e esquece o que ia dizer.",
+							"efeitos": []
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "dama",
+			"nome": "Dama de vermelho",
+			"pos": "8,3",
+			"alcance": 1,
+			"texto": "Uma mulher de máscara vermelha joga cartas sozinha, e ganha.",
+			"oculta": false,
+			"opcoes": [
+				{
+					"id": "cartas",
+					"texto": "Jogar cartas com ela (Jogatina + Raciocínio)",
+					"custo": "padrao",
+					"uma_vez": false,
+					"sem_inimigos": false,
+					"requer_item": "",
+					"requer_classe": [],
+					"requer_pistas": 0,
+					"teste": {
+						"ativo": true,
+						"somar": [
+							"Jogatina",
+							"raciocinio"
+						],
+						"nivel": "medio"
+					},
+					"resultados": {
+						"feito": {
+							"texto": "",
+							"efeitos": []
+						},
+						"sucesso": {
+							"texto": "Você perde de propósito na hora certa. Ela, satisfeita: \"Espiã? Não, querido, só observadora. O Barão trouxe dois 'criados' que ninguém contratou. Estão no corredor de serviço.\"",
+							"efeitos": [
+								{
+									"tipo": "pista",
+									"nome": "Criados que ninguém contratou",
+									"texto": "O Barão escondeu dois homens armados no corredor de serviço."
+								},
+								{
+									"tipo": "ouro",
+									"valor": 10
+								}
+							]
+						},
+						"falha": {
+							"texto": "Ela leva 10 pratas suas com um sorriso.",
+							"efeitos": [
+								{
+									"tipo": "ouro",
+									"valor": -10
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "capitao_guarda",
+			"nome": "Capitão da guarda da casa",
+			"pos": "24,13",
+			"alcance": 1,
+			"texto": "Armadura de gala e cara de quem preferia estar dormindo.",
+			"oculta": false,
+			"opcoes": [
+				{
+					"id": "liderar",
+					"texto": "Convencer a ficar atento (Liderança + Diplomacia)",
+					"custo": "padrao",
+					"uma_vez": true,
+					"sem_inimigos": false,
+					"requer_item": "",
+					"requer_classe": [],
+					"requer_pistas": 0,
+					"teste": {
+						"ativo": true,
+						"somar": [
+							"Liderança",
+							"diplomacia"
+						],
+						"nivel": "medio"
+					},
+					"resultados": {
+						"feito": {
+							"texto": "",
+							"efeitos": []
+						},
+						"sucesso": {
+							"texto": "Ele concorda em ficar perto da Duquesa na meia-noite e deixa vocês descerem à adega \"para ver o vinho\".",
+							"efeitos": [
+								{
+									"tipo": "lore",
+									"texto": "A guarda da casa vai ajudar na hora do brinde."
+								}
+							]
+						},
+						"falha": {
+							"texto": "\"Convidados não dão ordens à guarda.\"",
+							"efeitos": []
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "musicos",
+			"nome": "Quarteto de cordas",
+			"pos": "15,14",
+			"alcance": 1,
+			"texto": "Quatro músicos tocam sem parar desde o pôr do sol.",
+			"oculta": false,
+			"opcoes": [
+				{
+					"id": "tocar",
+					"texto": "Pedir uma valsa para o grupo (Arte + Diplomacia)",
+					"custo": "padrao",
+					"uma_vez": true,
+					"sem_inimigos": false,
+					"requer_item": "",
+					"requer_classe": [],
+					"requer_pistas": 0,
+					"teste": {
+						"ativo": true,
+						"somar": [
+							"Arte",
+							"diplomacia"
+						],
+						"nivel": "facil"
+					},
+					"resultados": {
+						"feito": {
+							"texto": "",
+							"efeitos": []
+						},
+						"sucesso": {
+							"texto": "Eles tocam a valsa do equinócio. Vocês dançam, ouvem conversas e ficam mais atentos.",
+							"efeitos": [
+								{
+									"tipo": "fichas_grupo",
+									"ficha": "Foco"
+								}
+							]
+						},
+						"falha": {
+							"texto": "Eles tocam outra coisa, mas tocam bem.",
+							"efeitos": []
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "adega",
+			"nome": "Estante da adega",
+			"pos": "22,14",
+			"alcance": 1,
+			"texto": "Garrafas empoeiradas e uma vazia, nova, sem pó.",
+			"oculta": false,
+			"opcoes": [
+				{
+					"id": "examinar",
+					"texto": "Examinar a garrafa nova (Investigação + Percepção)",
+					"custo": "padrao",
+					"uma_vez": false,
+					"sem_inimigos": false,
+					"requer_item": "",
+					"requer_classe": [],
+					"requer_pistas": 0,
+					"teste": {
+						"ativo": true,
+						"somar": [
+							"Investigação",
+							"percepcao"
+						],
+						"nivel": "facil"
+					},
+					"resultados": {
+						"feito": {
+							"texto": "",
+							"efeitos": []
+						},
+						"sucesso": {
+							"texto": "Dentro, gotas de um líquido negro que cheira a amêndoa amarga. No vidro, o brasão de um corvo.",
+							"efeitos": [
+								{
+									"tipo": "pista",
+									"nome": "Garrafa com o corvo",
+									"texto": "Uma garrafa de veneno com o brasão do corvo na adega."
+								}
+							]
+						},
+						"falha": {
+							"texto": "Só garrafas velhas e teias.",
+							"efeitos": []
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "brinde",
+			"nome": "Mesa do brinde",
+			"pos": "15,2",
+			"alcance": 1,
+			"texto": "A taça azul brilha. Os sinos da meia-noite vão tocar logo.",
+			"oculta": false,
+			"opcoes": [
+				{
+					"id": "acusar_barao",
+					"texto": "Interromper o brinde e desmascarar o Barão Corvin (precisa de 3 pistas)",
+					"custo": "padrao",
+					"uma_vez": true,
+					"sem_inimigos": false,
+					"requer_item": "",
+					"requer_classe": [],
+					"requer_pistas": 3,
+					"teste": {
+						"ativo": false,
+						"somar": [
+							"percepcao"
+						],
+						"nivel": "medio"
+					},
+					"resultados": {
+						"feito": {
+							"texto": "Vocês contam tudo diante do salão. A Duquesa derruba a taça azul: o vinho chia no mármore. O Barão arranca a máscara de corvo, salta a janela para a varanda e grita: \"Agora!\" A porta de serviço explode e os 'criados' entram de lâmina na mão.",
+							"efeitos": [
+								{
+									"tipo": "abrir_caminho",
+									"celulas": [
+										"9,8",
+										"4,8",
+										"26,8"
+									],
+									"texto": ""
+								},
+								{
+									"tipo": "alertar",
+									"grupo": "conspiracao",
+									"texto": "Os assassinos atacam!"
+								}
+							]
+						},
+						"sucesso": {
+							"texto": "",
+							"efeitos": []
+						},
+						"falha": {
+							"texto": "",
+							"efeitos": []
+						}
+					}
+				},
+				{
+					"id": "acusar_mordomo",
+					"texto": "Acusar o mordomo",
+					"custo": "padrao",
+					"uma_vez": true,
+					"sem_inimigos": false,
+					"requer_item": "",
+					"requer_classe": [],
+					"requer_pistas": 0,
+					"teste": {
+						"ativo": false,
+						"somar": [
+							"percepcao"
+						],
+						"nivel": "medio"
+					},
+					"resultados": {
+						"feito": {
+							"texto": "O salão fica em silêncio. A Duquesa, gelada: \"Alaric me serve há trinta anos.\" Ninguém mais conversa com vocês com boa vontade. Melhor encontrar provas de verdade.",
+							"efeitos": [
+								{
+									"tipo": "ficha",
+									"ficha": "Penalidade"
+								}
+							]
+						},
+						"sucesso": {
+							"texto": "",
+							"efeitos": []
+						},
+						"falha": {
+							"texto": "",
+							"efeitos": []
+						}
+					}
+				},
+				{
+					"id": "acusar_dama",
+					"texto": "Acusar a dama de vermelho",
+					"custo": "padrao",
+					"uma_vez": true,
+					"sem_inimigos": false,
+					"requer_item": "",
+					"requer_classe": [],
+					"requer_pistas": 0,
+					"teste": {
+						"ativo": false,
+						"somar": [
+							"percepcao"
+						],
+						"nivel": "medio"
+					},
+					"resultados": {
+						"feito": {
+							"texto": "A dama ri tanto que a máscara cai. A Duquesa não acha graça nenhuma.",
+							"efeitos": [
+								{
+									"tipo": "ficha",
+									"ficha": "Penalidade"
+								}
+							]
+						},
+						"sucesso": {
+							"texto": "",
+							"efeitos": []
+						},
+						"falha": {
+							"texto": "",
+							"efeitos": []
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "convidados",
+			"nome": "Roda de convidados",
+			"pos": "18,6",
+			"alcance": 1,
+			"texto": "Fofocas sobre todo mundo.",
+			"oculta": false,
+			"opcoes": [
+				{
+					"id": "fofoca",
+					"texto": "Ouvir as fofocas (Política + Raciocínio)",
+					"custo": "padrao",
+					"uma_vez": true,
+					"sem_inimigos": false,
+					"requer_item": "",
+					"requer_classe": [],
+					"requer_pistas": 0,
+					"teste": {
+						"ativo": true,
+						"somar": [
+							"Política",
+							"raciocinio"
+						],
+						"nivel": "facil"
+					},
+					"resultados": {
+						"feito": {
+							"texto": "",
+							"efeitos": []
+						},
+						"sucesso": {
+							"texto": "\"O Barão Corvin perdeu o processo das terras para a Duquesa no inverno.\" \"E veio ao baile mesmo assim? Que coragem... ou que outra coisa.\"",
+							"efeitos": [
+								{
+									"tipo": "lore",
+									"texto": "O Barão Corvin perdeu as terras para a Duquesa num processo."
+								}
+							]
+						},
+						"falha": {
+							"texto": "Falam de vestidos a noite inteira.",
+							"efeitos": []
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "jardim",
+			"nome": "Banco do jardim",
+			"pos": "15,19",
+			"alcance": 1,
+			"texto": "Um banco perto da fonte, longe da música.",
+			"oculta": false,
+			"opcoes": [
+				{
+					"id": "descansar",
+					"texto": "Descanso curto do grupo (o turno inteiro)",
+					"custo": "turno",
+					"uma_vez": true,
+					"sem_inimigos": true,
+					"requer_item": "",
+					"requer_classe": [],
+					"requer_pistas": 0,
+					"teste": {
+						"ativo": false,
+						"somar": [
+							"percepcao"
+						],
+						"nivel": "medio"
+					},
+					"resultados": {
+						"feito": {
+							"texto": "O grupo recupera o fôlego. É um bom lugar para salvar o jogo.",
+							"efeitos": [
+								{
+									"tipo": "descanso_curto"
+								}
+							]
+						},
+						"sucesso": {
+							"texto": "",
+							"efeitos": []
+						},
+						"falha": {
+							"texto": "",
+							"efeitos": []
+						}
+					}
+				}
+			]
+		}
+	],
+	"objetivo": {
+		"tipo": "derrotar_alvos",
+		"texto": "Descubra o envenenador (3 pistas), desmascare-o no brinde e detenha-o.",
+		"rodadas": 8,
+		"mensagem_vitoria": "O Barão Corvin cai sobre o próprio frasco de veneno, que se quebra no mármore. A Duquesa tira a máscara, olha para vocês e ergue a taça vazia: \"À guilda. Que tenha sempre gente melhor do que os meus convidados.\""
+	},
+	"campanha": {
+		"no_mural": true,
+		"texto": "Social (nível sugerido 3). Um bilhete anônimo avisa que a Duquesa Lisandra vai morrer no brinde do baile de máscaras. Vão como convidados. Conversa vale mais que espada, até a meia-noite.",
+		"recompensa": 250,
+		"requer": [
+			"fase:bandidos_cao_vermelho"
+		],
+		"ciclo": 0
+	}
+}

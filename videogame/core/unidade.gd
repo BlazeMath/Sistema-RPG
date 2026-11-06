@@ -31,7 +31,9 @@ var pericias := {}              # nome da perícia -> valor (heróis)
 var baralho: Baralho = null
 var cartas: Array = []          # CartaEmJogo; a carta de herói (se houver) é a primeira
 var consumiveis: Array = []     # ids de itens consumíveis; repetido = mais de um
-var equipamentos: Array = []    # ids de itens não consumíveis (kit de aventura, item de classe)
+var equipamentos: Array = []    # ids de itens não consumíveis: mochila e peças vestidas (tem_item)
+var vestidos: Array = []        # 0.25: capa, elmo, botas e acessórios vestidos (só eles funcionam)
+var grimorios: Array = []       # 0.25: grimórios e textos sagrados preparados
 var arma := {}
 var arma_reserva := {}          # segunda arma, guardada (troca: Batalha.heroi_trocar_arma)
 var armadura := {}
@@ -77,6 +79,10 @@ var tipo_dano := "Corte"          # inimigos: tipo do dano do ataque
 var fraquezas := {}               # inimigos: tipo de dano -> dano a mais que sofrem
 var resiste_tipo := {}            # inimigos: tipo de dano -> dano a menos que sofrem
 var divindade := ""               # Clérigo: divindade escolhida na criação (define a devoção)
+var pacto := ""                   # Bruxo (0.25): pacto pleno (core/cartas_bruxo.gd)
+var nivel_pacto := 1
+var pacto_menor := ""             # patrono do Pacto Menor (carta geral)
+var protegido := ""               # Pacto da Última Porta: id do aliado protegido
 var visao_no_escuro := false      # enxerga no escuro como penumbra
 var luz := ""                     # luz que carrega acesa: "", "tocha", "lanterna"
 var magias: Array = []            # inimigos conjuradores (Batalha._ia_conjurar)
@@ -211,6 +217,8 @@ func dar_ficha(nome_ficha: String, qtd := 1) -> void:
 		fichas[nome_ficha] = int(fichas.get(nome_ficha, 0)) + qtd
 		return
 	if IMUNIDADES.has(nome_ficha) and ativo(IMUNIDADES[nome_ficha]):
+		return
+	if preload("res://core/itens_batalha.gd").imune(self, nome_ficha):
 		return
 	var ordem := []
 	if carta_heroi() != null:

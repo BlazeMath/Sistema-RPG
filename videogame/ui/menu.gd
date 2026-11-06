@@ -2,7 +2,7 @@
 ## Esquerda: modos de jogo. Direita: o grupo (até 4 heróis salvos), com os heróis prontos.
 extends Control
 
-const VERSAO := "0.23"
+const VERSAO := "0.28"
 const Sessao := preload("res://core/sessao.gd")
 const Personagem := preload("res://core/personagem.gd")
 const Prontos := preload("res://core/herois_prontos.gd")
@@ -12,6 +12,11 @@ var _resumo: Label
 
 
 func _ready() -> void:
+	var rede = get_node_or_null("/root/Rede")
+	if rede != null and rede.ativo:
+		rede.sair()
+	Sessao.online = false
+	Sessao.fase_teste = ""
 	Sessao.solo = false
 	Sessao.campanha = false
 	var fundo := ColorRect.new()
@@ -36,7 +41,7 @@ func _ready() -> void:
 	colunas.add_theme_constant_override("separation", 28)
 	raiz.add_child(colunas)
 	var v := VBoxContainer.new()
-	v.add_theme_constant_override("separation", 12)
+	v.add_theme_constant_override("separation", 7)
 	colunas.add_child(v)
 	v.add_child(_botao("Vila de Pedravelha (andar pela vila, guilda, lojas)", "res://ui/batalha.tscn", "vila"))
 	var saves = load("res://ui/janela_saves.gd").new()
@@ -45,6 +50,8 @@ func _ready() -> void:
 		Sessao.modo = "vila"
 		get_tree().change_scene_to_file("res://ui/batalha.tscn")
 	v.add_child(_botao_acao("Carregar jogo salvo (vai para a vila)", func(): saves.abrir("carregar")))
+	v.add_child(_botao("Jogar em rede (mesmo Wi-Fi ou Hamachi)", "res://ui/sala.tscn"))
+	v.add_child(_botao("Editor de fases e fases criadas", "res://ui/editor_fases.tscn"))
 	v.add_child(_botao("Treino: aprenda a jogar (tutorial)", "res://ui/batalha.tscn", "tutorial"))
 	v.add_child(_botao("Missão: a fazenda Vale Seco", "res://ui/batalha.tscn", "fazenda"))
 	v.add_child(_botao("Missão: a cripta de Pedravelha (escura)", "res://ui/batalha.tscn", "masmorra"))
@@ -169,7 +176,7 @@ func _botao_acao(texto: String, acao: Callable) -> Button:
 func _botao(texto: String, cena: String, modo := "") -> Button:
 	var bt := Button.new()
 	bt.text = texto
-	bt.custom_minimum_size = Vector2(440, 44)
+	bt.custom_minimum_size = Vector2(440, 32)
 	_estilo(bt)
 	bt.add_theme_font_size_override("font_size", 17)
 	if cena == "":

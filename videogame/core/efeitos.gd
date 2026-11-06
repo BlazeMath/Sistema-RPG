@@ -22,7 +22,7 @@ const LADOS := {
 	"postura-do-leao": {"uso": "passiva"},
 	"postura-da-cascavel": {"uso": "reacao"},
 	"postura-da-tartaruga": {"uso": "passiva"},
-	"ombro-de-aco": {"uso": "passiva", "nota": "afeta aliados (sem efeito sozinho)"},
+	"ombro-de-aco": {"uso": "passiva", "nota": "revisão 27/10: só aliados adjacentes ganham +1 na defesa"},
 	"marcha-militar": {"uso": "ativada", "alvo": "nenhum", "nota": "sem terreno difícil nem interação ainda: dá 2 quadrados de movimento"},
 	"romper-a-linha": {"uso": "ativada", "alvo": "nenhum"},
 	# Guerreiro · Hoplita
@@ -154,7 +154,7 @@ const LADOS := {
 		{"id": "comprar", "nome": "Comprar uma carta", "custo": {"fadiga": 2, "acao": null}, "alvo": "nenhum"}]},
 	"adaptavel": {"uso": "fora", "nota": "ainda não programado"},
 	"passo-espectral": {"uso": "fora", "nota": "ainda não programado (teleporte)"},
-	"roubo-arcano": {"uso": "fora", "nota": "inimigos ainda não conjuram"},
+	"roubo-arcano": {"uso": "reacao", "nota": "oferecida quando um inimigo conjura: Raciocínio contra Sabedoria; a magia vai para outro inimigo ao alcance (revisão 27/10)"},
 	# Clérigo
 	"toque-restaurador": {"uso": "ativada", "alvo": "aliado", "alcance": 1, "magia": true},
 	"bencao-persistente": {"uso": "fim_turno", "magia": true, "nota": "oferecida na tela de fim do turno (Lucas, 0.20)"},
@@ -185,7 +185,7 @@ const LADOS := {
 	"juizo": {"uso": "ativada", "alvo": "inimigo_magico", "alcance": 3, "magia": true, "exige_marca": true},
 	"zona-da-penitencia": {"uso": "ativada", "alvo": "area", "magia": true, "area": {"forma": "quadrado", "tamanho": 3, "alcance": 4}},
 	"terra-do-louvor": {"uso": "ativada", "alvo": "area", "magia": true, "area": {"forma": "quadrado", "tamanho": 3, "alcance": 4}},
-	"teologia": {"uso": "passiva", "nota": "+1 no limite em testes de Religião (o símbolo na arma ainda não)"},
+	"teologia": {"uso": "passiva", "nota": "+1 no limite em testes de Religião (o símbolo na arma ou armadura é com o mestre)"},
 	"primeiros-socorros": {"uso": "ativada", "alvo": "aliado", "alcance": 1, "sem_si": true, "nota": "o aliado exila 1 do descarte e devolve 1 ao baralho"},
 	"prece-rapida": {"uso": "fora", "nota": "ainda não programado"},
 	"fe-inabalavel": {"uso": "ativada", "alvo": "nenhum", "nota": "vantagem em testes de Espírito e Sabedoria até o fim do turno"},
@@ -208,7 +208,7 @@ const LADOS := {
 	"salterio-de-cura": {"uso": "fora", "nota": "carta sem texto na planilha"},
 	"grimorio-da-chama-sagrada": {"uso": "fora", "nota": "carta sem texto na planilha"},
 	# Caçador
-	"preparar-o-tiro": {"uso": "ativada", "alvo": "nenhum"},
+	"preparar-o-tiro": {"uso": "ativada", "alvo": "nenhum", "nota": "revisão 27/10: depois de usar, não se move até o fim do turno"},
 	"tiro-certeiro": {"uso": "na_mesa", "nota": "durante o seu ataque à distância: descarte Mira, uma por vez"},
 	"marca-do-cacador": {"uso": "ativada", "alvo": "inimigo_visivel"},
 	"presa-ferida": {"uso": "passiva"},
@@ -241,7 +241,7 @@ const LADOS := {
 	"preparar-emboscada": {"uso": "ativada", "alvo": "nenhum"},
 	"tiro-perfeito": {"uso": "ativada", "alvo": "inimigo_distancia", "exige_fichas": {"Mira": 3}},
 	"olho-que-tudo-ve": {"uso": "passiva"},
-	"predador-absoluto": {"uso": "fora", "nota": "ainda não programado"},
+	"predador-absoluto": {"uso": "passiva", "nota": "presa = o inimigo visível mais próximo; dobra as fichas que seus ataques põem nela e dá Preparo no fim do turno se a feriu (dobrar efeitos de fichas gastas ainda não)"},
 	"covil-do-arqueiro": {"uso": "ativada", "alvo": "area", "area": {"forma": "ao_redor", "tamanho": 3}},
 	"tiro-mortal": {"uso": "ativada", "alvo": "inimigo_distancia", "exige_marca_ou_metade": true},
 	"nada-escapa": {"uso": "fora", "nota": "ainda não programado"},
@@ -258,10 +258,10 @@ const LADOS := {
 	"armadura-arcana": {"uso": "ativada", "alvo": "aliado", "alcance": 1, "magia": true},
 	"telepatia": {"uso": "fora", "nota": "fora de combate"},
 	"detectar-magia": {"uso": "fora", "nota": "fora de combate"},
-	"conjuracao-perfeita": {"uso": "passiva"},
+	"conjuracao-perfeita": {"uso": "passiva", "nota": "revisão 27/10: uma vez por turno, a magia custa só 1 de fadiga"},
 	"reflexo-arcano": {"uso": "fora", "nota": "ainda não programado"},
 	"mente-belica": {"uso": "ativada", "alvo": "nenhum"},
-	"mana-densa": {"uso": "reacao", "nota": "oferecida quando uma magia inimiga tem você como alvo (descarta a carta de menor valor da mão)"},
+	"mana-densa": {"uso": "reacao", "nota": "oferecida quando uma magia inimiga tem você como alvo: descarta a menor carta da mão e faz Raciocínio contra a Sabedoria do conjurador (revisão 27/10)"},
 	"mente-afiada": {"uso": "passiva"},
 	"estrategia-arcana": {"uso": "passiva"},
 	# Repertório (0.14): cada opção tem custo, alvo e efeito próprios (texto da carta).
@@ -304,40 +304,49 @@ const LADOS := {
 ## de aliados ou de sistemas que ainda não existem.
 const HEROIS := {
 	"foco-mortal": {"parcial": false},
-	"a-muralha": {"parcial": true, "nota": "a ativada (redirecionar dano de aliado) precisa de aliados"},
-	"incansavel": {"parcial": true, "nota": "a passiva (penalidades de ambiente) ainda não tem uso"},
-	"tomar-a-posicao": {"parcial": true, "nota": "a desencadeada precisa de aliados"},
-	"ombro-a-ombro": {"parcial": true, "nota": "a passiva (+1 de resistência ao lado de um aliado) e o crítico funcionam"},
+	"a-muralha": {"nota": "a reação pergunta quando um aliado vai sofrer dano de ataque"},
+	"incansavel": {"nota": "a passiva (penalidades de ambiente) é para o mestre: o jogo ainda não tem clima nem ambiente hostil"},
+	"tomar-a-posicao": {"nota": "a desencadeada vale quando as armas tiverem habilidades (as comuns não têm)"},
+	"ombro-a-ombro": {"nota": "a ativada e a desencadeada são para o mestre (troca de fichas e movimento fora do turno)"},
 	"larapio": {"parcial": false},
-	"impostor": {"parcial": true, "nota": "só a passiva (limite 23 em Mentira) funciona"},
-	"estrela-do-amanhecer": {"parcial": true, "nota": "a desencadeada (fichas de inimigos) ainda não"},
-	"o-martelo-da-luz": {"parcial": true, "nota": "funcionam a ativada (ficha de Vantagem na arma), a desencadeada e o crítico; a passiva e o tipo de dano dependem de devoção, que ainda não existe"},
-	"folha-de-carvalho": {"parcial": true, "nota": "o Ferimento da ativada ainda não (só imobiliza)"},
-	"predador-da-selva": {"parcial": true, "nota": "só a desencadeada (Preparo no início do turno) funciona"},
+	"impostor": {"nota": "a ativada é de vila (contato com o mestre); a desencadeada é o refazer de Mentira"},
+	"estrela-do-amanhecer": {"nota": "a desencadeada é automática: paga 1 de fadiga e o aliado não recebe Ferimento, Veneno ou Fogo"},
+	"o-martelo-da-luz": {"nota": "a passiva usa a devoção escolhida na criação"},
+	"folha-de-carvalho": {"nota": "um botão para cada ativada (Imobilizar e Ferimento)"},
+	"predador-da-selva": {"nota": "a passiva (floresta, parado 1 minuto) é para o mestre"},
 	"controlador-do-arcano": {"parcial": false},
-	"mil-oficios": {"parcial": true, "nota": "funcionam a passiva (escolhas na criação) e o crítico (mostra as 4 cartas do topo)"},
-	"o-atemporal": {"parcial": true, "nota": "a desencadeada (andar ao gastar Reação) ainda não"},
-	"o-feerico": {"parcial": true, "nota": "quase nada funciona ainda (terreno difícil, rastros e magia de inimigos)"},
-	"o-inabalavel": {"parcial": true, "nota": "funcionam a ativada e o crítico"},
-	"palavra-de-aco": {"parcial": true, "nota": "a passiva (ignorar Imobilizar) ainda não"},
+	"mil-oficios": {"nota": "a ativada e a desencadeada são fora de combate (com o mestre)"},
+	"o-atemporal": {"nota": "andar 1 ao gastar Reação: só fora da vez dos inimigos ainda não"},
+	"o-feerico": {"nota": "ignora terreno difícil; magia inimiga contra você deixa o conjurador confuso; a reação de esquiva e o crítico ainda não"},
+	"o-inabalavel": {"nota": "só 1 ficha por efeito inimigo; resistir a um efeito cura 1"},
+	"palavra-de-aco": {"nota": "com um Juramento ativo, ignora Imobilizar"},
 	"a-boa-estrela": {"parcial": false},
 	"matador-de-gigante": {"parcial": false},
 	"furia-crescente": {"parcial": false},
-	"brado-da-horda": {"parcial": true, "nota": "a ativada (brado com ataques grátis) ainda não"},
-	"o-oportunista": {"parcial": true, "nota": "a desencadeada e o crítico ainda não"},
+	"brado-da-horda": {"nota": "a ativada move os aliados e dá um ataque de graça a quem chegar ao lado do inimigo"},
+	"o-oportunista": {"nota": "a desencadeada e o crítico usam fichas de Vantagem, que heróis ainda não acumulam"},
 	"sempre-uma-saida": {"parcial": false},
-	"o-sobrevivente": {"parcial": true, "nota": "a desencadeada ainda não"},
-	"trabalhador": {"parcial": true, "nota": "resistência a Concussão ainda não existe"},
+	"o-sobrevivente": {"nota": "a desencadeada (trocar a ficha por Ferimento) é para o mestre"},
+	"trabalhador": {"nota": "resiste a Concussão (−2)"},
 	"conhecedor-do-terreno": {"parcial": false},
-	"mestre-das-cavernas": {"parcial": true, "nota": "enxerga no escuro como penumbra; criar corda e tocha fica para a exploração"},
-	"seguidor-da-chama": {"parcial": true, "nota": "a desencadeada (reações inimigas) ainda não"},
-	"seguidor-da-noite": {"parcial": true, "nota": "a passiva e a ativada (descanso longo) ainda não"},
+	"mestre-das-cavernas": {"nota": "criar corda e tocha: uma vez por cena, na batalha"},
+	"seguidor-da-chama": {"nota": "reação de inimigo contra você dá 1 Reação"},
+	"seguidor-da-noite": {"nota": "a ativada é do descanso longo (na estalagem)"},
 	"devorador-de-grimorios": {"nota": "passiva na criação (1 repertório Aprendiz custa 0 XP); ativada = 1 troca de arma por rodada como ação livre"},
 }
 
 
 static func lado_programado(slug: String) -> bool:
-	return LADOS.has(slug)
+	return LADOS.has(slug) or preload("res://core/cartas_extras.gd").LADOS.has(slug) or preload("res://core/cartas_bruxo.gd").LADOS.has(slug)
+
+
+## Registro do lado (0.24): as cartas completadas em cartas_extras.gd valem por cima.
+static func _registro(s: String) -> Dictionary:
+	var ex: Dictionary = preload("res://core/cartas_extras.gd").LADOS
+	var br: Dictionary = preload("res://core/cartas_bruxo.gd").LADOS
+	if br.has(s):
+		return br[s]
+	return ex[s] if ex.has(s) else LADOS.get(s, {})
 
 
 static func carta_programada(carta: Dictionary) -> bool:
@@ -348,7 +357,15 @@ static func carta_programada(carta: Dictionary) -> bool:
 
 
 static func heroi_programado(heroi: Dictionary) -> bool:
-	return HEROIS.has(_slug(heroi["nome"]))
+	return HEROIS.has(_slug(heroi["nome"])) or preload("res://core/cartas_bruxo.gd").NOTAS_HEROI.has(_slug(heroi["nome"]))
+
+
+## Nota da metade de herói (para a criação).
+static func nota_heroi(heroi: Dictionary) -> String:
+	var s := _slug(heroi["nome"])
+	if HEROIS.has(s):
+		return str(HEROIS[s].get("nota", ""))
+	return str(preload("res://core/cartas_bruxo.gd").NOTAS_HEROI.get(s, ""))
 
 
 static func nota_carta(carta: Dictionary) -> String:
@@ -357,11 +374,12 @@ static func nota_carta(carta: Dictionary) -> String:
 		if l == null:
 			continue
 		var s := _slug(l["nome"])
-		if LADOS.has(s) and LADOS[s]["uso"] == "fora":
-			notas.append("%s: sem efeito na batalha (%s)" % [l["nome"], LADOS[s].get("nota", "")])
-		elif LADOS.has(s) and LADOS[s].has("nota"):
-			notas.append("%s: %s" % [l["nome"], LADOS[s]["nota"]])
-		elif not LADOS.has(s):
+		var r := _registro(s)
+		if r.get("uso", "") == "fora":
+			notas.append("%s: fora de combate (%s)" % [l["nome"], r.get("nota", "")])
+		elif r.has("nota"):
+			notas.append("%s: %s" % [l["nome"], r["nota"]])
+		elif r.is_empty():
 			notas.append("%s: ainda não programado" % l["nome"])
 	return " · ".join(notas)
 

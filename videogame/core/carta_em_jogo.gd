@@ -7,7 +7,7 @@
 ## retira 1 de fadiga de UMA carta à escolha.
 extends RefCounted
 
-const PERSISTENTES := ["Sangramento", "Veneno", "Fúria"]
+const PERSISTENTES := ["Sangramento", "Veneno", "Fúria", "Pacto"]
 
 var id := ""
 var tipo := "habilidade"     # "habilidade" ou "heroi"
@@ -60,7 +60,7 @@ func virar() -> void:
 
 ## Lucas (0.20): cada carta tem no máximo 1 ficha de cada tipo (fadiga não é ficha).
 ## Exceção: fichas que a própria carta manda acumular (Fúria Crescente: 5 ou mais).
-const EMPILHAVEIS := ["Fúria"]
+const EMPILHAVEIS := ["Fúria", "Pacto"]   # 0.25: fichas de Pacto do Bruxo (reserva)
 
 
 func dar_ficha(nome_ficha: String, qtd := 1) -> void:

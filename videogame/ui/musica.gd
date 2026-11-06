@@ -5,6 +5,33 @@ extends Node
 
 const FAIXAS := {"menu": "res://assets/musica/menu.ogg", "exploracao": "res://assets/musica/exploracao.ogg",
 	"batalha": "res://assets/musica/batalha.ogg", "cripta": "res://assets/musica/cripta.ogg"}
+## 0.24: cada faixa tem três versões (tom, andamento e melodia diferentes); ao acabar,
+## entra outra versão, para não enjoar.
+const VERSOES := ["", "_2", "_3"]
+var _versao := ""
+
+
+func _caminho(nome: String) -> String:
+	var opcoes := []
+	for v in VERSOES:
+		var c: String = FAIXAS[nome].replace(".ogg", v + ".ogg")
+		if v != _versao and ResourceLoader.exists(c):
+			opcoes.append([v, c])
+	if opcoes.is_empty():
+		return FAIXAS[nome]
+	var esc: Array = opcoes[randi() % opcoes.size()]
+	_versao = esc[0]
+	return esc[1]
+
+
+func _acabou(tocador: AudioStreamPlayer) -> void:
+	if tocador != _tocador_atual or _atual == "":
+		return
+	var s = load(_caminho(_atual))
+	if s is AudioStreamOggVorbis:
+		s.loop = false
+	tocador.stream = s
+	tocador.play()
 const ARQUIVO := "user://som.json"
 
 var _a: AudioStreamPlayer
@@ -20,6 +47,8 @@ func _ready() -> void:
 	_b = AudioStreamPlayer.new()
 	add_child(_a)
 	add_child(_b)
+	_a.finished.connect(func(): _acabou(_a))
+	_b.finished.connect(func(): _acabou(_b))
 	load("res://ui/menu_pausa.gd").aplicar_config_salva()
 	if FileAccess.file_exists(ARQUIVO):
 		var d = JSON.parse_string(FileAccess.get_file_as_string(ARQUIVO))
@@ -40,11 +69,11 @@ func tocar(nome: String) -> void:
 	if nome == _atual or not FAIXAS.has(nome):
 		return
 	_atual = nome
-	var s = load(FAIXAS[nome])
+	var s = load(_caminho(nome))
 	if s == null:
 		return
 	if s is AudioStreamOggVorbis:
-		s.loop = true
+		s.loop = false   # ao acabar, _acabou toca outra versão
 	# 0.20: só uma música por vez. A nova entra no tocador que está livre (ou no que
 	# está mais baixo); todas as outras saem, mesmo se uma troca ainda estava no meio.
 	if _troca != null and _troca.is_valid():

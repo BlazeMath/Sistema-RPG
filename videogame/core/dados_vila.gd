@@ -38,7 +38,8 @@ static func _loja(id: String, nome: String, pos: Vector2i, texto: String, aba: S
 		"opcoes": [{"id": "abrir", "texto": rotulo, "resultado": "abre", "resultados": {"abre": {"texto": "", "efeitos": [_ef("abrir_vila", {"aba": aba})]}}}]}
 
 
-static func cenario(fichas) -> Dictionary:
+## todos (0.26, jogo em rede): todo o grupo anda pela vila, cada jogador com o seu herói.
+static func cenario(fichas, todos := false) -> Dictionary:
 	var lista: Array = fichas if fichas is Array else [fichas]
 	var o := {}
 	for x in LARGURA:
@@ -91,7 +92,7 @@ static func cenario(fichas) -> Dictionary:
 		"exploracao_livre": true,
 		"largura": LARGURA, "altura": ALTURA, "obstaculos": o,
 		"abertura": {"titulo": "Pedravelha", "texto": "A vila acorda devagar. Fumaça sobe da forja, o mercador arruma a barraca na praça e, na porta da guilda, o mural está cheio de papéis pregados."},
-		"unidades": Dados.herois_cfg([lista[0]], [Vector2i(1, 11)]),
+		"unidades": Dados.herois_cfg(lista.slice(0, 4) if todos else [lista[0]], [Vector2i(1, 11), Vector2i(2, 11), Vector2i(1, 10), Vector2i(1, 12)]),
 		"interacoes": [
 			_loja("mural", "Mural da guilda", Vector2i(8, 5), "Papéis pregados uns sobre os outros: pedidos de ajuda, recompensas, avisos. O selo da guilda marca os contratos aceitos.", "missoes", "Ler os contratos"),
 			_loja("mercador", "Doroteia, a mercadora", Vector2i(13, 5), "\"Poções, cordas, tochas... e eu compro o que vocês trouxerem lá de baixo, se valer alguma coisa.\"", "mercado", "Ver as mercadorias (comprar e vender)"),

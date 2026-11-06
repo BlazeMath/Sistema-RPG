@@ -12,6 +12,9 @@ Plano completo: doc "Sistema 21 — Plano de Desenvolvimento do Videogame" (arti
 - Toda regra nova ganha teste em `tests/test_*.gd`. Rodar: `godot --headless --path . -s res://tests/run_tests.gd`.
 - Cartas vêm da planilha oficial via `tools/exportar_cartas.py`. Não editar `data/cartas/*.json` à mão.
   O relatório aponta cartas novas/mudadas pela impressão digital.
+  0.25: a revisão de 27/10 (PDF) entra por `tools/aplicar_revisao_cartas.py` até a planilha ser reexportada;
+  o Bruxo vem de `tools/gerar_bruxo.py` (data/cartas/bruxo.json); os 170 itens de `tools/gerar_equipamentos.py`
+  (data/equipamentos.json, fontes em tools/fontes_025/).
 - Regra ambígua vira pergunta para o Lucas, nunca suposição. Interpretações provisórias ficam listadas abaixo.
 - O Lucas não usa terminal nem git: entregas vão em .zip, e ele envia ao GitHub pelo navegador.
 
@@ -29,7 +32,7 @@ Plano completo: doc "Sistema 21 — Plano de Desenvolvimento do Videogame" (arti
 - Distâncias: curto até 4 quadrados, médio 5–8, longo 9–12, além disso sem ataque.
 - Iniciativa: simulada e oculta, no início da cena, com baralho à parte (não gasta vida): 2 cartas + Destreza + Iniciativa.
 - Testes sempre manuais (ataque, defesa, perícia).
-- 3 a 6 personagens; solo e local primeiro (online bem depois, pedido do Lucas). Combates montados à mão; vida e dano dos monstros sobem com o nível.
+- 3 a 6 personagens; solo e local primeiro. Rede local/Hamachi entrou na 0.26 (pedido do Lucas, 03/11/2026). Combates montados à mão; vida e dano dos monstros sobem com o nível.
 
 ## Confirmadas pelo Lucas (20/10/2026)
 
@@ -201,3 +204,52 @@ Plano completo: doc "Sistema 21 — Plano de Desenvolvimento do Videogame" (arti
   escolta → _ia_escolta); intenção narrativa por monstro no fim do turno dele (_anunciar_intencao, DICAS, evento "intencao");
   cartas que faltavam em core/cartas_extras.gd (LADOS, motivo, usar via Origens.usar, ao_virar, depois_do_ataque).
   Decisões em DECISOES_0.23.md.
+- 0.24: criação abre editando o herói atual (índice certo; antes salvava cópia), nome repetido é recusado, Salvar/Novo/
+  Excluir (com confirmação) no alto; consumíveis sem "programado"/de achado não quebram mais a tela. Foco com mãos e sem
+  segunda arma vira a "arma reserva" (Itens.foco_como_arma, "eh_foco"; ficha "comeca_com_foco", padrão Mago/Clérigo);
+  ataque mágico e carta do foco exigem o foco na mão. Cartas de herói completadas (Extras.ATIVADAS_HEROI; A Muralha
+  pergunta "muralha"; Estrela protege; Inabalável; Feérico; Palavra de Aço; Brado da Horda; Trabalhador; Seguidor da
+  Chama). Goblins atravessam troncos (Grade._anda_no_tronco, modo "tronco"; teste de Destreza 12 em _entrar_na_casa).
+  Músicas com 3 versões (tools/gerar_musica.py, Musica._caminho/_acabou). UI: menu Itens, véu + animação + X vermelho
+  nas caixas (_ao_mudar_caixa, _veu), mesa menor à direita, dificuldade só em palavras (Batalha.nome_da_dificuldade;
+  descricao_das_faixas sem números), contorno nas casas de interação (_molduras), alcance ideal de tiro em verde.
+  Decisões em DECISOES_0.24.md.
+- 0.25: os 170 equipamentos (core/itens.gd monta ARMAS/ARMADURAS/ESCUDOS/FOCOS/CONSUMIVEIS/NAO_CONSUMIVEIS/GRIMORIOS de
+  data/equipamentos.json; static var; AJUSTE_LEVES +1; "desarmado"); efeitos na batalha em core/itens_batalha.gd (ItensB:
+  ganchos bonus_de_dano, limites, resistencia, depois_do_ataque, defendeu, inicio/fim do turno, custo_de_magia, consumíveis,
+  cartas de item LADOS/CARTAS e livros com MAGIAS; Unidade.vestidos = só o que está vestido funciona); inventário por espaços
+  (Personagem.LIMITES/ocupacao/erros_de_inventario, ficha com costas/cabeca/pes/acessorios/grimorios/mochila,
+  migrar_inventario; Itens.MOCHILA_INICIAL; troca de arma = 1 Movimento, grande 2 Padrão: Batalha.troca_com_movimento);
+  economia em cobre (Campanha.dinheiro/moeda, comprar_item/encomendas/preco_venda pela revenda do mercado; contratos em
+  pratas no quadro; efeito "ouro" = pratas); classe Bruxo (core/cartas_bruxo.gd: carta "pacto" com fichas "Pacto"
+  empilháveis, habilidade inicial de graça, opções X Pactos, cumprimentos/cobranças/suspensão/reparar, Unidade.pacto/
+  nivel_pacto/pacto_menor/protegido, Fadiga nos inimigos vinda do Atormentado); ficha de Guarda = receber o golpe do
+  aliado ao lado (pergunta "guarda"); revisão das cartas de 27/10 (Ombro de Aço adjacente, Hino só Medo/Confusão,
+  Conjuração Perfeita custa 1, Mana Densa contestada, Roubo Arcano redireciona, Predador Absoluto, Preparar o Tiro
+  trava o movimento). Decisões em DECISOES_0.25.md.
+- 0.26: jogo em rede (LAN, Wi-Fi, Hamachi; ENet porta 7021). Autoload Rede (ui/rede.gd): sala (ui/sala.gd/.tscn), anfitrião
+  autoritativo. A batalha não troca estado: o anfitrião manda o retrato (Instantaneo, comprimido) e depois comandos ordenados
+  {seq, passos: [[método, args]], de, req, ass}. **Toda mudança de estado vinda da tela passa por _c/_cmd em ui/batalha_tela.gd**
+  (nunca chame batalha.heroi_* direto na tela); Unidade vira {"__u": id}; "_definir" (fadiga_escolhida, foco_marcial_visto; e
+  defesa/distribuição automáticas só do anfitrião) e "_opcao" (CartaEmJogo.opcao) vão junto. Batalha.quem_decide() diz qual herói
+  decide cada fase; Rede.dono_de/e_meu dizem de quem é (quem caiu → anfitrião). passo_automatico só roda no anfitrião e é repassado.
+  O anfitrião também recarrega do próprio retrato no começo (ordem das chaves igual nos dois lados). Assinatura curta do estado em
+  cada comando; divergiu → convidado pede o retrato. Party (core/party.gd) em user://parties/<id>/ no anfitrião; Party.abrir troca
+  Personagem.arquivo e Campanha.arquivo; convidados usam Personagem.memoria/Campanha.memoria. Ações da vila: Campanha.executar via
+  Rede.campanha. Vila em rede põe o grupo todo (Vila.cenario(fichas, todos)). Teste de rede de verdade: tools/robo_rede.gd
+  (dois processos, REDE_PAPEL/REDE_CENARIO). Decisões em DECISOES_0.26.md.
+- 0.27: editor de fases (ui/editor_fases.gd/.tscn: grade 2D desenhada em _desenhar, ferramentas, inspetor, efeitos pelo esquema
+  Fase.EFEITOS, desfazer por retratos JSON, biblioteca, Testar → Sessao.fase_teste + modo "fase:<id>"). Uma fase é JSON (core/fase.gd:
+  casas "x,y"; chao/objetos/luzes/inicio/inimigos/grupos/areas/interacoes/objetivo/campanha; normalizar completa campos);
+  Fase.para_cenario gera o cenário da Batalha (vazio = obstáculo "vazio" em Grade.BAIXOS; objeto sem colisão = decoracao; visão por
+  objeto: Grade.visao_livre e Batalha.visao_bloqueia_fixa; terreno_dificil_fixo; Batalha.chao pinta a casa; saques → _deixar_saque
+  em _inimigo_caiu; gatilho com "acao" → teste_de_acao; vitoria_na_rodada em _proximo_turno). Bestiário em core/bestiario.gd
+  (presets das missões). Biblioteca user://fases + exemplos em res://data/fases (só leitura). Campanha.missoes() = MISSOES +
+  Fase.missoes_do_mural() (id "fase:<id>"); Rede manda a fase (info["fase"]) e as do mural (estado_campanha["fases"]) para
+  Fase.memoria dos convidados; Rede.modos() lista as fases na sala. Capturas: tools/capturar_027.gd. Decisões em DECISOES_0.27.md.
+- 0.28: 27 monstros clássicos no bestiário (modelos tingidos em ui/modelos.gd; lobo/rato/aranha/escorpião/verme procedurais em
+  batalha_tela._criar_peca; reações em ReacoesMonstros.POR_NOME). Habilidades novas em Batalha._ia_habilidades: "regenerar"
+  (Fogo impede) e "invocar" (_invocar; _sumir_invocacoes em _inimigo_caiu). Efeito "pista" (Batalha.pistas) e opção
+  "requer_pistas" (motivo_sem_opcao). Seis missões prontas em data/fases/*.json, geradas por tools/gerar_missoes_028.py
+  (edite o script e rode de novo, ou edite no editor). tests/test_028.gd confere validação e alcance de tudo nas missões.
+  Capturas: tools/capturar_028.gd. Decisões em DECISOES_0.28.md.

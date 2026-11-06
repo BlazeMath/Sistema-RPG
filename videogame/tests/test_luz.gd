@@ -44,10 +44,11 @@ func test_lanterna_e_tocha(t) -> void:
 	b.heroi_luz("lanterna")
 	t.igual(u.luz, "", "apaga")
 	u.consumiveis.append("tocha")
+	var tochas := u.consumiveis.count("tocha")
 	u.escudo = {"nome": "Sem escudo", "vida": 0, "resistencia": 0}
 	t.ok(b.heroi_luz("tocha"), "acende a tocha (mão livre)")
 	t.igual(b.nivel_de_luz(u.pos + Vector2i(6, 0)), 1, "penumbra a 6 com tocha")
-	t.ok(not "tocha" in u.consumiveis, "a tocha foi gasta")
+	t.igual(u.consumiveis.count("tocha"), tochas - 1, "a tocha foi gasta")
 
 
 func test_tocha_precisa_de_mao_livre(t) -> void:

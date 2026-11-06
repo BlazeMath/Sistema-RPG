@@ -1,0 +1,3415 @@
+{
+ "fonte": "Estudo_Economia_e_Precos_v01 + Inventario_por_Espacos_v01 (27/10/2026)",
+ "moedas": {
+  "cobres_por_prata": 10,
+  "pratas_por_ouro": 100
+ },
+ "mercados": [
+  {
+   "codigo": "V",
+   "nome": "Vila",
+   "min": 0.8,
+   "max": 1.25,
+   "revenda": 0.4,
+   "acesso": "Comércio de abastecimento ou artesão local. Estoque comum, sem garantia de quantidade."
+  },
+  {
+   "codigo": "C",
+   "nome": "Cidade",
+   "min": 0.8,
+   "max": 1.3,
+   "revenda": 0.4,
+   "acesso": "Oficina, feira ou loja urbana; pode exigir encomenda simples."
+  },
+  {
+   "codigo": "E",
+   "nome": "Especialista",
+   "min": 0.7,
+   "max": 1.4,
+   "revenda": 0.35,
+   "acesso": "Alquimista, mestre de ofício ou círculo de iniciados. Nem todo povoado tem um."
+  },
+  {
+   "codigo": "O",
+   "nome": "Encomenda",
+   "min": 0.65,
+   "max": 1.5,
+   "revenda": 0.3,
+   "acesso": "Encomenda, instituição ou oficina excepcional; aquisição requer contato e prazo."
+  },
+  {
+   "codigo": "R",
+   "nome": "Relíquia",
+   "min": 0.6,
+   "max": 1.6,
+   "revenda": 0.25,
+   "acesso": "Referência de avaliação para negociação entre especialistas; não pressupõe estoque ou comprador."
+  }
+ ],
+ "itens": [
+  {
+   "eq": "EQ-001",
+   "id": "faca",
+   "nome": "Faca",
+   "categoria": "ARMA CORPO A CORPO",
+   "raridade": "COMUM",
+   "tags": [
+    "Perfuração",
+    "Peso Leve",
+    "Tamanho Pequeno"
+   ],
+   "campos": {
+    "Dano": "2 + Destreza",
+    "Alcance": "Corpo a corpo (1)"
+   },
+   "habilidade": "",
+   "preco_cobre": 40,
+   "mercado": "V",
+   "revenda": 0.4,
+   "espaco": "armamentos",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-002",
+   "id": "florete",
+   "nome": "Florete",
+   "categoria": "ARMA CORPO A CORPO",
+   "raridade": "COMUM",
+   "tags": [
+    "Perfuração",
+    "Peso Leve",
+    "Tamanho Médio"
+   ],
+   "campos": {
+    "Dano": "2 + Destreza",
+    "Alcance": "Corpo a corpo (1)"
+   },
+   "habilidade": "",
+   "preco_cobre": 350,
+   "mercado": "C",
+   "revenda": 0.4,
+   "espaco": "armamentos",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-003",
+   "id": "bastao",
+   "nome": "Bastão",
+   "categoria": "ARMA CORPO A CORPO",
+   "raridade": "COMUM",
+   "tags": [
+    "Concussão",
+    "Peso Leve",
+    "Tamanho Grande"
+   ],
+   "campos": {
+    "Dano": "2 + Destreza",
+    "Alcance": "Corpo a corpo (2)"
+   },
+   "habilidade": "",
+   "preco_cobre": 10,
+   "mercado": "V",
+   "revenda": 0.4,
+   "espaco": "armamentos",
+   "ocupa": 2
+  },
+  {
+   "eq": "EQ-004",
+   "id": "espada_curta",
+   "nome": "Espada Curta",
+   "categoria": "ARMA CORPO A CORPO",
+   "raridade": "COMUM",
+   "tags": [
+    "Corte",
+    "Peso Médio",
+    "Tamanho Pequeno"
+   ],
+   "campos": {
+    "Dano": "4 + Força",
+    "Alcance": "Corpo a corpo (1)",
+    "Requisito": "Força ≥ 1"
+   },
+   "habilidade": "",
+   "preco_cobre": 200,
+   "mercado": "C",
+   "revenda": 0.4,
+   "espaco": "armamentos",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-005",
+   "id": "espada_longa",
+   "nome": "Espada Longa",
+   "categoria": "ARMA CORPO A CORPO",
+   "raridade": "COMUM",
+   "tags": [
+    "Corte",
+    "Peso Médio",
+    "Tamanho Médio"
+   ],
+   "campos": {
+    "Dano": "4 + Força",
+    "Alcance": "Corpo a corpo (1)",
+    "Requisito": "Força ≥ 1"
+   },
+   "habilidade": "",
+   "preco_cobre": 300,
+   "mercado": "C",
+   "revenda": 0.4,
+   "espaco": "armamentos",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-006",
+   "id": "lanca",
+   "nome": "Lança",
+   "categoria": "ARMA CORPO A CORPO",
+   "raridade": "COMUM",
+   "tags": [
+    "Perfuração",
+    "Peso Médio",
+    "Tamanho Grande"
+   ],
+   "campos": {
+    "Dano": "4 + Força",
+    "Alcance": "Corpo a corpo (2)",
+    "Requisito": "Força ≥ 1"
+   },
+   "habilidade": "",
+   "preco_cobre": 60,
+   "mercado": "V",
+   "revenda": 0.4,
+   "espaco": "armamentos",
+   "ocupa": 2
+  },
+  {
+   "eq": "EQ-007",
+   "id": "maca",
+   "nome": "Maça",
+   "categoria": "ARMA CORPO A CORPO",
+   "raridade": "COMUM",
+   "tags": [
+    "Concussão",
+    "Peso Pesado",
+    "Tamanho Pequeno"
+   ],
+   "campos": {
+    "Dano": "6 + Força",
+    "Alcance": "Corpo a corpo (1)",
+    "Requisito": "Força ≥ 2"
+   },
+   "habilidade": "",
+   "preco_cobre": 100,
+   "mercado": "V",
+   "revenda": 0.4,
+   "espaco": "armamentos",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-008",
+   "id": "machado_de_guerra",
+   "nome": "Machado de Guerra",
+   "categoria": "ARMA CORPO A CORPO",
+   "raridade": "COMUM",
+   "tags": [
+    "Corte",
+    "Peso Pesado",
+    "Tamanho Médio"
+   ],
+   "campos": {
+    "Dano": "6 + Força",
+    "Alcance": "Corpo a corpo (1)",
+    "Requisito": "Força ≥ 2"
+   },
+   "habilidade": "",
+   "preco_cobre": 140,
+   "mercado": "V",
+   "revenda": 0.4,
+   "espaco": "armamentos",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-009",
+   "id": "montante",
+   "nome": "Montante",
+   "categoria": "ARMA CORPO A CORPO",
+   "raridade": "COMUM",
+   "tags": [
+    "Corte",
+    "Peso Pesado",
+    "Tamanho Grande"
+   ],
+   "campos": {
+    "Dano": "6 + Força",
+    "Alcance": "Corpo a corpo (2)",
+    "Requisito": "Força ≥ 2"
+   },
+   "habilidade": "",
+   "preco_cobre": 600,
+   "mercado": "C",
+   "revenda": 0.4,
+   "espaco": "armamentos",
+   "ocupa": 2
+  },
+  {
+   "eq": "EQ-010",
+   "id": "estilete",
+   "nome": "Estilete",
+   "categoria": "ARMA CORPO A CORPO",
+   "raridade": "INCOMUM",
+   "tags": [
+    "Perfuração",
+    "Peso Leve",
+    "Tamanho Pequeno"
+   ],
+   "campos": {
+    "Dano": "2 + Destreza",
+    "Alcance": "Corpo a corpo (1)",
+    "Requisito": "Destreza ≥ 1",
+    "Limite de Fadiga": "1"
+   },
+   "habilidade": "Ao obter um crítico natural em um ataque corpo a corpo com esta arma, ignore a resistência do defensor.",
+   "preco_cobre": 350,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "armamentos",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-011",
+   "id": "florete_de_duelista",
+   "nome": "Florete de Duelista",
+   "categoria": "ARMA CORPO A CORPO",
+   "raridade": "INCOMUM",
+   "tags": [
+    "Perfuração",
+    "Peso Leve",
+    "Tamanho Médio"
+   ],
+   "campos": {
+    "Dano": "2 + Destreza",
+    "Alcance": "Corpo a corpo (1)",
+    "Requisito": "Destreza ≥ 2",
+    "Limite de Fadiga": "1"
+   },
+   "habilidade": "1 de Fadiga, Reação: depois de se defender com sucesso, faça um ataque corpo a corpo com esta arma contra o agressor, se ele estiver ao alcance.",
+   "preco_cobre": 1200,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "armamentos",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-012",
+   "id": "chicote",
+   "nome": "Chicote",
+   "categoria": "ARMA CORPO A CORPO",
+   "raridade": "INCOMUM",
+   "tags": [
+    "Concussão",
+    "Peso Leve",
+    "Tamanho Grande"
+   ],
+   "campos": {
+    "Dano": "2 + Destreza",
+    "Alcance": "Corpo a corpo (2)",
+    "Requisito": "Destreza ≥ 1",
+    "Limite de Fadiga": "1"
+   },
+   "habilidade": "Ao acertar um ataque corpo a corpo com esta arma, escolha um efeito: puxe o alvo 1 quadrado em sua direção; ou ele não pode se afastar de você até o início do seu próximo turno.",
+   "preco_cobre": 300,
+   "mercado": "C",
+   "revenda": 0.4,
+   "espaco": "armamentos",
+   "ocupa": 2
+  },
+  {
+   "eq": "EQ-013",
+   "id": "francisca",
+   "nome": "Francisca",
+   "categoria": "ARMA CORPO A CORPO",
+   "raridade": "INCOMUM",
+   "tags": [
+    "Corte",
+    "Peso Médio",
+    "Tamanho Pequeno"
+   ],
+   "campos": {
+    "Dano": "4 + Força",
+    "Alcance": "Corpo a corpo (1)",
+    "Limite de Fadiga": "1"
+   },
+   "habilidade": "Ação Padrão: faça um ataque à distância com esta arma contra um alvo a até 3 quadrados. Depois do arremesso, você fica Desarmado. No início do seu próximo turno, a arma retorna à sua mão.",
+   "preco_cobre": 3000,
+   "mercado": "O",
+   "revenda": 0.3,
+   "espaco": "armamentos",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-014",
+   "id": "espada_do_mestre_ferreiro",
+   "nome": "Espada do Mestre-Ferreiro",
+   "categoria": "ARMA CORPO A CORPO",
+   "raridade": "INCOMUM",
+   "tags": [
+    "Corte",
+    "Peso Médio",
+    "Tamanho Médio"
+   ],
+   "campos": {
+    "Dano": "4 + Força",
+    "Alcance": "Corpo a corpo (1)",
+    "Requisito": "Força ≥ 1",
+    "Limite de Fadiga": "3"
+   },
+   "habilidade": "Seus testes de ataque com esta arma recebem +1. Uma vez por ataque, antes de o defensor escolher as cartas, você pode devolver ao baralho uma carta usada no seu teste com valor 3 ou menos e comprar outra no lugar.",
+   "preco_cobre": 2200,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "armamentos",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-015",
+   "id": "alabarda",
+   "nome": "Alabarda",
+   "categoria": "ARMA CORPO A CORPO",
+   "raridade": "INCOMUM",
+   "tags": [
+    "Perfuração",
+    "Peso Médio",
+    "Tamanho Grande"
+   ],
+   "campos": {
+    "Dano": "4 + Força",
+    "Alcance": "Corpo a corpo (2)",
+    "Requisito": "Força ≥ 1",
+    "Limite de Fadiga": "1"
+   },
+   "habilidade": "Ao acertar um ataque corpo a corpo com esta arma, empurre ou puxe o defensor 1 quadrado.",
+   "preco_cobre": 450,
+   "mercado": "C",
+   "revenda": 0.4,
+   "espaco": "armamentos",
+   "ocupa": 2
+  },
+  {
+   "eq": "EQ-016",
+   "id": "maca_estrela",
+   "nome": "Maça-Estrela",
+   "categoria": "ARMA CORPO A CORPO",
+   "raridade": "INCOMUM",
+   "tags": [
+    "Concussão",
+    "Peso Pesado",
+    "Tamanho Pequeno"
+   ],
+   "campos": {
+    "Dano": "6 + Força",
+    "Alcance": "Corpo a corpo (1)",
+    "Requisito": "Força ≥ 2",
+    "Limite de Fadiga": "2"
+   },
+   "habilidade": "Ao acertar um ataque corpo a corpo com esta arma, coloque 1 ficha de Ferimento no defensor.",
+   "preco_cobre": 650,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "armamentos",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-017",
+   "id": "machado_barbado",
+   "nome": "Machado Barbado",
+   "categoria": "ARMA CORPO A CORPO",
+   "raridade": "INCOMUM",
+   "tags": [
+    "Corte",
+    "Peso Pesado",
+    "Tamanho Médio"
+   ],
+   "campos": {
+    "Dano": "6 + Força",
+    "Alcance": "Corpo a corpo (1)",
+    "Requisito": "Força ≥ 2",
+    "Limite de Fadiga": "2"
+   },
+   "habilidade": "Ao acertar um ataque corpo a corpo com esta arma, escolha um inimigo adjacente a você. Ele sofre 2 de dano, que ignora resistência.",
+   "preco_cobre": 900,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "armamentos",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-018",
+   "id": "montante_de_batalha",
+   "nome": "Montante de Batalha",
+   "categoria": "ARMA CORPO A CORPO",
+   "raridade": "INCOMUM",
+   "tags": [
+    "Corte",
+    "Peso Pesado",
+    "Tamanho Grande"
+   ],
+   "campos": {
+    "Dano": "6 + Força",
+    "Alcance": "Corpo a corpo (2)",
+    "Requisito": "Força ≥ 3",
+    "Limite de Fadiga": "2"
+   },
+   "habilidade": "2 de Fadiga, Ação Padrão: faça um ataque corpo a corpo em área com esta arma contra todos os inimigos adjacentes a você. Até o início do seu próximo turno, revele todas as cartas dos seus testes de defesa.",
+   "preco_cobre": 1800,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "armamentos",
+   "ocupa": 2
+  },
+  {
+   "eq": "EQ-019",
+   "id": "adaga_da_mao_vazia",
+   "nome": "Adaga da Mão Vazia",
+   "categoria": "ARMA CORPO A CORPO",
+   "raridade": "RARA",
+   "tags": [
+    "Peso Leve",
+    "Tamanho Pequeno"
+   ],
+   "campos": {
+    "Dano": "2 + Destreza",
+    "Alcance": "Corpo a corpo (1)",
+    "Limite de Fadiga": "2"
+   },
+   "habilidade": "Ao acertar um ataque com esta arma, cause dano adicional igual a 5 menos o número de cartas na sua mão, com mínimo de 0. No início do seu turno, descarte 1 carta da mão, se tiver alguma.",
+   "preco_cobre": 12000,
+   "mercado": "R",
+   "revenda": 0.25,
+   "espaco": "armamentos",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-020",
+   "id": "florete_do_contragolpe",
+   "nome": "Florete do Contragolpe",
+   "categoria": "ARMA CORPO A CORPO",
+   "raridade": "RARA",
+   "tags": [
+    "Peso Leve",
+    "Tamanho Médio"
+   ],
+   "campos": {
+    "Dano": "2 + Destreza",
+    "Alcance": "Corpo a corpo (1)",
+    "Limite de Fadiga": "1"
+   },
+   "habilidade": "Quando sua defesa superar o ataque por 5 ou mais, cause ao atacante dano igual ao dano desta arma, ignorando resistência. Você não pode direcionar dano recebido para a vida da sua armadura ou do seu escudo.",
+   "preco_cobre": 18000,
+   "mercado": "R",
+   "revenda": 0.25,
+   "espaco": "armamentos",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-021",
+   "id": "cajado_do_condutor",
+   "nome": "Cajado do Condutor",
+   "categoria": "ARMA CORPO A CORPO",
+   "raridade": "RARA",
+   "tags": [
+    "Peso Leve",
+    "Tamanho Grande"
+   ],
+   "campos": {
+    "Dano": "0",
+    "Alcance": "Corpo a corpo (2)",
+    "Limite de Fadiga": "6"
+   },
+   "habilidade": "Enquanto esta arma tiver pelo menos 3 fichas de Fadiga, suas magias custam 1 de Fadiga a menos.",
+   "preco_cobre": 25000,
+   "mercado": "R",
+   "revenda": 0.25,
+   "espaco": "armamentos",
+   "ocupa": 2
+  },
+  {
+   "eq": "EQ-022",
+   "id": "lamina_do_vento",
+   "nome": "Lâmina do Vento",
+   "categoria": "ARMA CORPO A CORPO",
+   "raridade": "RARA",
+   "tags": [
+    "Peso Médio",
+    "Tamanho Pequeno"
+   ],
+   "campos": {
+    "Dano": "4 + Força",
+    "Alcance": "Corpo a corpo (1)",
+    "Limite de Fadiga": "2"
+   },
+   "habilidade": "Sua Velocidade aumenta em 1. Ao causar dano com esta arma, você pode converter uma Ação Padrão sua em uma ação de Movimento. Se fizer isso, acrescente sua Velocidade ao dano causado.",
+   "preco_cobre": 18000,
+   "mercado": "R",
+   "revenda": 0.25,
+   "espaco": "armamentos",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-023",
+   "id": "gladio_inquietante",
+   "nome": "Gládio Inquietante",
+   "categoria": "ARMA CORPO A CORPO",
+   "raridade": "RARA",
+   "tags": [
+    "Peso Médio",
+    "Tamanho Médio"
+   ],
+   "campos": {
+    "Dano": "4 + Força",
+    "Alcance": "Corpo a corpo (1)",
+    "Limite de Fadiga": "1"
+   },
+   "habilidade": "No início do seu turno, vire todas as suas cartas de habilidade que possam ser viradas.",
+   "preco_cobre": 15000,
+   "mercado": "R",
+   "revenda": 0.25,
+   "espaco": "armamentos",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-024",
+   "id": "lanca_da_muralha",
+   "nome": "Lança da Muralha",
+   "categoria": "ARMA CORPO A CORPO",
+   "raridade": "RARA",
+   "tags": [
+    "Peso Médio",
+    "Tamanho Grande"
+   ],
+   "campos": {
+    "Dano": "4 + Força",
+    "Alcance": "Corpo a corpo (2)",
+    "Limite de Fadiga": "2"
+   },
+   "habilidade": "Reação: quando um inimigo a até 2 quadrados de você se mover em direção a um aliado seu, faça um ataque de oportunidade com esta arma contra ele. Sempre que atacar com esta arma, receba 1 ficha de Imobilizar.",
+   "preco_cobre": 17000,
+   "mercado": "R",
+   "revenda": 0.25,
+   "espaco": "armamentos",
+   "ocupa": 2
+  },
+  {
+   "eq": "EQ-025",
+   "id": "quebra_elmos",
+   "nome": "Quebra-Elmos",
+   "categoria": "ARMA CORPO A CORPO",
+   "raridade": "RARA",
+   "tags": [
+    "Peso Pesado",
+    "Tamanho Pequeno"
+   ],
+   "campos": {
+    "Dano": "6 + Força",
+    "Alcance": "Corpo a corpo (1)",
+    "Limite de Fadiga": "2"
+   },
+   "habilidade": "Ao causar dano com esta arma, ignore resistência e cause +3 de dano contra armaduras e escudos. Você não tem Reação.",
+   "preco_cobre": 22000,
+   "mercado": "R",
+   "revenda": 0.25,
+   "espaco": "armamentos",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-026",
+   "id": "machado_da_sepultura",
+   "nome": "Machado da Sepultura",
+   "categoria": "ARMA CORPO A CORPO",
+   "raridade": "RARA",
+   "tags": [
+    "Peso Pesado",
+    "Tamanho Médio"
+   ],
+   "campos": {
+    "Dano": "6 + Força",
+    "Alcance": "Corpo a corpo (1)",
+    "Limite de Fadiga": "2"
+   },
+   "habilidade": "Ao atacar com esta arma, você pode exilar qualquer quantidade de figuras — Valete, Dama ou Rei — do seu descarte. Esta arma causa dano adicional igual ao número de cartas exiladas por esse efeito neste turno. Toda cura que você receber é reduzida à metade.",
+   "preco_cobre": 16000,
+   "mercado": "R",
+   "revenda": 0.25,
+   "espaco": "armamentos",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-027",
+   "id": "montante_do_frenesi",
+   "nome": "Montante do Frenesi",
+   "categoria": "ARMA CORPO A CORPO",
+   "raridade": "RARA",
+   "tags": [
+    "Peso Pesado",
+    "Tamanho Grande"
+   ],
+   "campos": {
+    "Dano": "6 + Força",
+    "Alcance": "Corpo a corpo (2)",
+    "Limite de Fadiga": "2"
+   },
+   "habilidade": "Ao atacar com esta arma, compre cartas até somar 21 ou mais e então pare. Ultrapassar 21 não causa estouro neste teste. Depois do ataque, receba um número de fichas de Fadiga igual ao resultado do ataque menos 21. Você não pode jogar cartas da mão neste teste. Seus Ases sempre valem 11.",
+   "preco_cobre": 24000,
+   "mercado": "R",
+   "revenda": 0.25,
+   "espaco": "armamentos",
+   "ocupa": 2
+  },
+  {
+   "eq": "EQ-028",
+   "id": "shuriken",
+   "nome": "Shuriken",
+   "categoria": "ARMA À DISTÂNCIA",
+   "raridade": "COMUM",
+   "tags": [
+    "Arremessável"
+   ],
+   "campos": {
+    "Dano": "2 + Des",
+    "Alcance": "Curto (3)",
+    "Limite de Fadiga": "0"
+   },
+   "habilidade": "",
+   "preco_cobre": 10,
+   "mercado": "C",
+   "revenda": 0.4,
+   "espaco": "armamentos",
+   "ocupa": 1,
+   "pacote": 3
+  },
+  {
+   "eq": "EQ-029",
+   "id": "machado_de_arremesso",
+   "nome": "Machado de Arremesso",
+   "categoria": "ARMA À DISTÂNCIA",
+   "raridade": "COMUM",
+   "tags": [
+    "Arremessável",
+    "Recuperável"
+   ],
+   "campos": {
+    "Dano": "4 + For",
+    "Alcance": "Médio (5)",
+    "Limite de Fadiga": "0"
+   },
+   "habilidade": "",
+   "preco_cobre": 80,
+   "mercado": "V",
+   "revenda": 0.4,
+   "espaco": "armamentos",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-030",
+   "id": "javelin",
+   "nome": "Javelin",
+   "categoria": "ARMA À DISTÂNCIA",
+   "raridade": "COMUM",
+   "tags": [
+    "Arremessável",
+    "Recuperável"
+   ],
+   "campos": {
+    "Dano": "6 + For",
+    "Alcance": "Longo (7)",
+    "Limite de Fadiga": "0"
+   },
+   "habilidade": "",
+   "preco_cobre": 40,
+   "mercado": "V",
+   "revenda": 0.4,
+   "espaco": "armamentos",
+   "ocupa": 2
+  },
+  {
+   "eq": "EQ-031",
+   "id": "arco_curto",
+   "nome": "Arco Curto",
+   "categoria": "ARMA À DISTÂNCIA",
+   "raridade": "COMUM",
+   "tags": [
+    "Arma de Tiro"
+   ],
+   "campos": {
+    "Dano": "3 + Des",
+    "Alcance": "Curto e Médio",
+    "Limite de Fadiga": "1"
+   },
+   "habilidade": "",
+   "preco_cobre": 200,
+   "mercado": "C",
+   "revenda": 0.4,
+   "espaco": "armamentos",
+   "ocupa": 2
+  },
+  {
+   "eq": "EQ-032",
+   "id": "arco_longo",
+   "nome": "Arco Longo",
+   "categoria": "ARMA À DISTÂNCIA",
+   "raridade": "COMUM",
+   "tags": [
+    "Arma de Tiro"
+   ],
+   "campos": {
+    "Dano": "4 + Des",
+    "Alcance": "Médio e Longo",
+    "Limite de Fadiga": "1"
+   },
+   "habilidade": "",
+   "preco_cobre": 400,
+   "mercado": "C",
+   "revenda": 0.4,
+   "espaco": "armamentos",
+   "ocupa": 2
+  },
+  {
+   "eq": "EQ-033",
+   "id": "besta_pesada",
+   "nome": "Besta Pesada",
+   "categoria": "ARMA À DISTÂNCIA",
+   "raridade": "COMUM",
+   "tags": [
+    "Arma de Tiro",
+    "Ignora Resistência",
+    "Recarga"
+   ],
+   "campos": {
+    "Dano": "6",
+    "Alcance": "Médio e Longo",
+    "Limite de Fadiga": "2"
+   },
+   "habilidade": "",
+   "preco_cobre": 1000,
+   "mercado": "C",
+   "revenda": 0.4,
+   "espaco": "armamentos",
+   "ocupa": 2
+  },
+  {
+   "eq": "EQ-034",
+   "id": "adaga_balanceada",
+   "nome": "Adaga Balanceada",
+   "categoria": "ARMA À DISTÂNCIA",
+   "raridade": "INCOMUM",
+   "tags": [
+    "Arremessável"
+   ],
+   "campos": {
+    "Dano": "2 + Des",
+    "Alcance": "Curta",
+    "Limite de Fadiga": "0"
+   },
+   "habilidade": "Se gastar pelo menos 1 ficha de Foco durante um ataque com esta arma, receba 1 ficha de Foco depois de resolver esse ataque.",
+   "preco_cobre": 400,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "armamentos",
+   "ocupa": 1,
+   "pacote": 3
+  },
+  {
+   "eq": "EQ-035",
+   "id": "machete_farpado",
+   "nome": "Machete Farpado",
+   "categoria": "ARMA À DISTÂNCIA",
+   "raridade": "INCOMUM",
+   "tags": [
+    "Arremessável",
+    "Recuperável"
+   ],
+   "campos": {
+    "Dano": "4 + For",
+    "Alcance": "Curta",
+    "Limite de Fadiga": "0"
+   },
+   "habilidade": "Ao causar dano com esta arma, coloque 1 ficha de Sangramento no defensor.",
+   "preco_cobre": 550,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "armamentos",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-036",
+   "id": "lanca_espiral",
+   "nome": "Lança Espiral",
+   "categoria": "ARMA À DISTÂNCIA",
+   "raridade": "INCOMUM",
+   "tags": [
+    "Arremessável",
+    "Recuperável"
+   ],
+   "campos": {
+    "Dano": "6 + For",
+    "Alcance": "Curta-Média",
+    "Limite de Fadiga": "3"
+   },
+   "habilidade": "Ao atacar com esta arma, você pode remover qualquer quantidade de fichas de Fadiga dela. Para cada ficha removida assim, o ataque causa +1 de dano.",
+   "preco_cobre": 1400,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "armamentos",
+   "ocupa": 2
+  },
+  {
+   "eq": "EQ-037",
+   "id": "arco_recurvo",
+   "nome": "Arco Recurvo",
+   "categoria": "ARMA À DISTÂNCIA",
+   "raridade": "INCOMUM",
+   "tags": [
+    "Arma de Tiro"
+   ],
+   "campos": {
+    "Dano": "3 + Des",
+    "Alcance": "Curta-Média",
+    "Limite de Fadiga": "1"
+   },
+   "habilidade": "1 ficha de Reação: quando um inimigo se afastar de você, faça um ataque à distância com esta arma contra ele, se ele estiver ao alcance.",
+   "preco_cobre": 1000,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "armamentos",
+   "ocupa": 2
+  },
+  {
+   "eq": "EQ-038",
+   "id": "arco_de_teixo",
+   "nome": "Arco de Teixo",
+   "categoria": "ARMA À DISTÂNCIA",
+   "raridade": "INCOMUM",
+   "tags": [
+    "Arma de Tiro"
+   ],
+   "campos": {
+    "Dano": "4 + Des",
+    "Alcance": "Média-Longa",
+    "Limite de Fadiga": "1"
+   },
+   "habilidade": "Contra um inimigo com ficha de Marcação, esta arma causa o dobro do dano da arma.",
+   "preco_cobre": 1800,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "armamentos",
+   "ocupa": 2
+  },
+  {
+   "eq": "EQ-039",
+   "id": "besta_da_seta_dupla",
+   "nome": "Besta da Seta Dupla",
+   "categoria": "ARMA À DISTÂNCIA",
+   "raridade": "INCOMUM",
+   "tags": [
+    "Arma de Tiro",
+    "Ignora Resistência",
+    "Recarga"
+   ],
+   "campos": {
+    "Dano": "6",
+    "Alcance": "Média-Longa",
+    "Limite de Fadiga": "2"
+   },
+   "habilidade": "Ao causar dano a um inimigo com esta arma, cause dano igual ao dano da arma a um inimigo adjacente ao primeiro.",
+   "preco_cobre": 3200,
+   "mercado": "O",
+   "revenda": 0.3,
+   "espaco": "armamentos",
+   "ocupa": 2
+  },
+  {
+   "eq": "EQ-040",
+   "id": "leque_de_laminas",
+   "nome": "Leque de Lâminas",
+   "categoria": "ARMA À DISTÂNCIA",
+   "raridade": "RARA",
+   "tags": [
+    "Arremessável"
+   ],
+   "campos": {
+    "Dano": "2 + Destreza",
+    "Alcance": "Curta"
+   },
+   "habilidade": "Ao arremessar, atinja quantos alvos quiser dentro do alcance. Para cada alvo além do primeiro, exile 1 carta da sua mão. Enquanto a empunha, sua mão não pode ter mais de 5 cartas. O excedente é descartado.",
+   "preco_cobre": 18000,
+   "mercado": "R",
+   "revenda": 0.25,
+   "espaco": "armamentos",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-041",
+   "id": "machado_sedento",
+   "nome": "Machado Sedento",
+   "categoria": "ARMA À DISTÂNCIA",
+   "raridade": "RARA",
+   "tags": [
+    "Arremessável"
+   ],
+   "campos": {
+    "Dano": "4 + Força",
+    "Alcance": "Curta"
+   },
+   "habilidade": "Causa +1 de dano para cada Rei, Dama ou Valete (K/Q/J) no SEU descarte - no máximo +12. Ao acertar, tritura 1 carta sua.",
+   "preco_cobre": 16000,
+   "mercado": "R",
+   "revenda": 0.25,
+   "espaco": "armamentos",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-042",
+   "id": "lanca_trovejante",
+   "nome": "Lança Trovejante",
+   "categoria": "ARMA À DISTÂNCIA",
+   "raridade": "RARA",
+   "tags": [
+    "Arremessável",
+    "Arremesso Grande",
+    "Raio"
+   ],
+   "campos": {
+    "Dano": "6 + Força",
+    "Alcance": "Longo",
+    "Limite de Fadiga": "2"
+   },
+   "habilidade": "2 de Fadiga, Ação Padrão: faça um único teste de ataque à distância contra o alvo e todas as criaturas adjacentes a ele, incluindo aliados. O alvo deve estar dentro do alcance desta arma. Cada criatura faz sua defesa. Cada criatura atingida sofre dano de Raio igual ao dano desta arma.\nRetorno da descarga: depois de resolver esta habilidade, você sofre 3 de dano de Raio, mesmo que nenhum alvo seja atingido.",
+   "preco_cobre": 25000,
+   "mercado": "R",
+   "revenda": 0.25,
+   "espaco": "armamentos",
+   "ocupa": 2
+  },
+  {
+   "eq": "EQ-043",
+   "id": "arco_das_sombras",
+   "nome": "Arco das Sombras",
+   "categoria": "ARMA À DISTÂNCIA",
+   "raridade": "RARA",
+   "tags": [
+    "Arma de Tiro"
+   ],
+   "campos": {
+    "Dano": "3 + Destreza",
+    "Alcance": "Curta-Média"
+   },
+   "habilidade": "Antes de fazer um ataque com esta arma, você pode gastar 1 ficha de Sombra. Se fizer isso, o ataque não pode ser respondido por reações e suas duas cartas iniciais ficam ocultas para o defensor.\nDepois de resolver o ataque, receba 1 ficha de Sombra.\nEsta arma só causa dano se você estiver Oculto no início do ataque.",
+   "preco_cobre": 22000,
+   "mercado": "R",
+   "revenda": 0.25,
+   "espaco": "armamentos",
+   "ocupa": 2
+  },
+  {
+   "eq": "EQ-044",
+   "id": "arco_da_mare",
+   "nome": "Arco da Maré",
+   "categoria": "ARMA À DISTÂNCIA",
+   "raridade": "RARA",
+   "tags": [
+    "Arma de Tiro"
+   ],
+   "campos": {
+    "Dano": "4 + Destreza"
+   },
+   "habilidade": "Ataque em área: atinge os inimigos em uma área de 3 × 3 quadrados. Se a área for terra/solo, ela vira TERRENO DIFÍCIL; se houver fichas de Fogo ou objetos em chamas na área, apague todos. No fim do seu turno, você NÃO retira 1 de Fadiga (a maré não recua). Seu ritmo de Fadiga fica permanentemente mais apertado.",
+   "preco_cobre": 32000,
+   "mercado": "R",
+   "revenda": 0.25,
+   "espaco": "armamentos",
+   "ocupa": 2
+  },
+  {
+   "eq": "EQ-045",
+   "id": "balestra_de_cerco",
+   "nome": "Balestra de Cerco",
+   "categoria": "ARMA À DISTÂNCIA",
+   "raridade": "RARA",
+   "tags": [
+    "Arma de Tiro",
+    "Ignora Resistência"
+   ],
+   "campos": {
+    "Dano": "6",
+    "Alcance": "Média-Longa"
+   },
+   "habilidade": "Carregar: gaste ações de recarga acumulando cargas (máx. 3). Ao disparar, o virote atravessa todos os inimigos em uma linha até distância longa, causando 4 de dano por carga. Enquanto tiver ao menos 1 carga, sua Velocidade é 0 - fincado, mirando. Se sofrer dano, perde 1 carga.",
+   "preco_cobre": 28000,
+   "mercado": "R",
+   "revenda": 0.25,
+   "espaco": "armamentos",
+   "ocupa": 2
+  },
+  {
+   "eq": "EQ-046",
+   "id": "couro_do_batedor",
+   "nome": "Couro do Batedor",
+   "categoria": "ARMADURA",
+   "raridade": "COMUM",
+   "tags": [
+    "Armadura",
+    "Leve"
+   ],
+   "campos": {
+    "Vida": "4",
+    "Resistência": "2"
+   },
+   "habilidade": "Você pode esconder itens pequenos no bolso secreto desta armadura. Eles não são identificados em testes de Percepção.",
+   "preco_cobre": 400,
+   "mercado": "C",
+   "revenda": 0.4,
+   "espaco": "armadura",
+   "ocupa": 1,
+   "reserva_mochila": 2
+  },
+  {
+   "eq": "EQ-047",
+   "id": "cota_de_malha",
+   "nome": "Cota de Malha",
+   "categoria": "ARMADURA",
+   "raridade": "COMUM",
+   "tags": [
+    "Armadura",
+    "Média"
+   ],
+   "campos": {
+    "Vida": "9",
+    "Resistência": "3"
+   },
+   "habilidade": "Uma vez por cena, quando a vida desta armadura chegar a 0, ela recupera 1 de vida. Você tem desvantagem em testes de Furtividade.",
+   "preco_cobre": 3000,
+   "mercado": "C",
+   "revenda": 0.4,
+   "espaco": "armadura",
+   "ocupa": 1,
+   "reserva_mochila": 4
+  },
+  {
+   "eq": "EQ-048",
+   "id": "arnes_de_placas",
+   "nome": "Arnês de Placas",
+   "categoria": "ARMADURA",
+   "raridade": "COMUM",
+   "tags": [
+    "Armadura",
+    "Pesada"
+   ],
+   "campos": {
+    "Vida": "16",
+    "Resistência": "3"
+   },
+   "habilidade": "Imponente: enquanto vestir esta armadura, você tem vantagem em testes de Intimidação.",
+   "preco_cobre": 12000,
+   "mercado": "O",
+   "revenda": 0.3,
+   "espaco": "armadura",
+   "ocupa": 1,
+   "reserva_mochila": 4
+  },
+  {
+   "eq": "EQ-049",
+   "id": "couro_elfico",
+   "nome": "Couro Élfico",
+   "categoria": "ARMADURA",
+   "raridade": "INCOMUM",
+   "tags": [
+    "Armadura",
+    "Leve"
+   ],
+   "campos": {
+    "Vida": "5",
+    "Resistência": "2"
+   },
+   "habilidade": "Uma vez por turno, depois de sofrer dano de um ataque, você pode se mover 1 quadrado.",
+   "preco_cobre": 3000,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "armadura",
+   "ocupa": 1,
+   "reserva_mochila": 2
+  },
+  {
+   "eq": "EQ-050",
+   "id": "brunea_de_escamas",
+   "nome": "Brunea de Escamas",
+   "categoria": "ARMADURA",
+   "raridade": "INCOMUM",
+   "tags": [
+    "Armadura",
+    "Média"
+   ],
+   "campos": {
+    "Vida": "10",
+    "Resistência": "3"
+   },
+   "habilidade": "Quando um inimigo adjacente causar dano à vida desta armadura, coloque 1 ficha de Ferimento nele.",
+   "preco_cobre": 9000,
+   "mercado": "O",
+   "revenda": 0.3,
+   "espaco": "armadura",
+   "ocupa": 1,
+   "reserva_mochila": 4
+  },
+  {
+   "eq": "EQ-051",
+   "id": "armadura_samurai_temperada",
+   "nome": "Armadura Samurai Temperada",
+   "categoria": "ARMADURA",
+   "raridade": "INCOMUM",
+   "tags": [
+    "Armadura",
+    "Pesada"
+   ],
+   "campos": {
+    "Vida": "18",
+    "Resistência": "3"
+   },
+   "habilidade": "No fim do seu turno, se você não se moveu durante ele, receba 1 ficha de Guarda.",
+   "preco_cobre": 32000,
+   "mercado": "O",
+   "revenda": 0.3,
+   "espaco": "armadura",
+   "ocupa": 1,
+   "reserva_mochila": 4
+  },
+  {
+   "eq": "EQ-052",
+   "id": "manto_do_vento",
+   "nome": "Manto do Vento",
+   "categoria": "ARMADURA",
+   "raridade": "RARA",
+   "tags": [
+    "Armadura",
+    "Leve",
+    "Planar"
+   ],
+   "campos": {
+    "Vida": "3",
+    "Resistência": "1"
+   },
+   "habilidade": "Se, no seu turno, você se moveu e não realizou nenhum ataque, o limite do 21 na sua defesa aumenta em 2 até o seu próximo turno. Se você realizou qualquer ataque no seu turno, o limite do 21 na sua defesa diminui em 2 até o seu próximo turno.",
+   "preco_cobre": 35000,
+   "mercado": "R",
+   "revenda": 0.25,
+   "espaco": "armadura",
+   "ocupa": 1,
+   "tambem_costas": true,
+   "reserva_mochila": 2
+  },
+  {
+   "eq": "EQ-053",
+   "id": "couraca_do_contra_ataque",
+   "nome": "Couraça do Contra-Ataque",
+   "categoria": "ARMADURA",
+   "raridade": "RARA",
+   "tags": [
+    "Armadura",
+    "Média"
+   ],
+   "campos": {
+    "Vida": "9",
+    "Resistência": "3"
+   },
+   "habilidade": "Toda vez que você sofre dano de um ataque, receba uma ficha de Ferimento. Seus ataques causam +2 de dano para cada ficha de Ferimento que você tiver.",
+   "preco_cobre": 45000,
+   "mercado": "R",
+   "revenda": 0.25,
+   "espaco": "armadura",
+   "ocupa": 1,
+   "reserva_mochila": 4
+  },
+  {
+   "eq": "EQ-054",
+   "id": "peitoral_de_dalpnor",
+   "nome": "Peitoral de Dalpnor",
+   "categoria": "ARMADURA",
+   "raridade": "RARA",
+   "tags": [
+    "Armadura",
+    "Pesada"
+   ],
+   "campos": {
+    "Vida": "18",
+    "Resistência": "3"
+   },
+   "habilidade": "Sacrifício: uma vez por rodada, gaste sua reação para receber no seu lugar um ataque feito contra um aliado a alcance curto; ao fazê-lo, cure 2. Luz contra o Mal: inimigos profanos ou mortos-vivos a alcance curto têm -1 de resistência. Fardo da Luz: no início de cada um dos seus turnos, você tritura 1 carta do seu baralho.",
+   "preco_cobre": 100000,
+   "mercado": "R",
+   "revenda": 0.25,
+   "espaco": "armadura",
+   "ocupa": 1,
+   "reserva_mochila": 4
+  },
+  {
+   "eq": "EQ-055",
+   "id": "escudo_leve",
+   "nome": "Escudo Leve",
+   "categoria": "ESCUDO",
+   "raridade": "COMUM",
+   "tags": [
+    "Escudo",
+    "Leve"
+   ],
+   "campos": {
+    "Vida": "5",
+    "Resistência": "1"
+   },
+   "habilidade": "",
+   "preco_cobre": 180,
+   "mercado": "V",
+   "revenda": 0.4,
+   "espaco": "armamentos",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-056",
+   "id": "escudo_pesado",
+   "nome": "Escudo Pesado",
+   "categoria": "ESCUDO",
+   "raridade": "COMUM",
+   "tags": [
+    "Escudo",
+    "Pesado"
+   ],
+   "campos": {
+    "Vida": "10",
+    "Resistência": "2"
+   },
+   "habilidade": "",
+   "preco_cobre": 500,
+   "mercado": "C",
+   "revenda": 0.4,
+   "espaco": "armamentos",
+   "ocupa": 2
+  },
+  {
+   "eq": "EQ-057",
+   "id": "broquel_agil",
+   "nome": "Broquel Ágil",
+   "categoria": "ESCUDO",
+   "raridade": "INCOMUM",
+   "tags": [
+    "Escudo",
+    "Leve"
+   ],
+   "campos": {
+    "Vida": "6",
+    "Resistência": "1"
+   },
+   "habilidade": "Anteparo: gaste uma ficha de reação para direcionar ao seu escudo o dano de um ataque sofrido por um aliado adjacente (a vida do escudo absorve no lugar dele).",
+   "preco_cobre": 900,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "armamentos",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-058",
+   "id": "escudo_de_investida",
+   "nome": "Escudo de Investida",
+   "categoria": "ESCUDO",
+   "raridade": "INCOMUM",
+   "tags": [
+    "Escudo",
+    "Pesado"
+   ],
+   "campos": {
+    "Vida": "12",
+    "Resistência": "2"
+   },
+   "habilidade": "Se você se moveu pelo menos 2 quadrados em linha reta antes de realizar um ataque corpo a corpo, o defensor é empurrado 1 quadrado após o dano.",
+   "preco_cobre": 1800,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "armamentos",
+   "ocupa": 2
+  },
+  {
+   "eq": "EQ-059",
+   "id": "placa_de_luz",
+   "nome": "Placa de Luz",
+   "categoria": "ESCUDO",
+   "raridade": "RARA",
+   "tags": [
+    "Escudo",
+    "Leve"
+   ],
+   "campos": {
+    "Vida": "8",
+    "Resistência": "3"
+   },
+   "habilidade": "Base: contra ataques à distância e magias, tem 8 de vida e resistência 3; contra ataques corpo a corpo, não oferece vida nem resistência. Fulgor: ataques à distância contra você têm o limite do 21 reduzido em 2; e inimigos furtivos ou ocultos a alcance curto são revelados e não podem gastar fichas de Sombra. A placa é luz, não aço - ela não protege de forma alguma contra ataques corpo a corpo.",
+   "preco_cobre": 32000,
+   "mercado": "R",
+   "revenda": 0.25,
+   "espaco": "armamentos",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-060",
+   "id": "scutum_da_legiao",
+   "nome": "Scutum da Legião",
+   "categoria": "ESCUDO",
+   "raridade": "RARA",
+   "tags": [
+    "Escudo",
+    "Pesado"
+   ],
+   "campos": {
+    "Vida": "14",
+    "Resistência": "2"
+   },
+   "habilidade": "Muralha da Legião: enquanto você está adjacente a pelo menos um aliado, você e cada aliado adjacente a você ganham +2 de resistência e não podem ser empurrados, derrubados nem flanqueados; e inimigos não podem passar entre você e um aliado adjacente. Sozinho na Formação: enquanto você não está adjacente a nenhum aliado, este escudo não oferece vida nem resistência, e seu deslocamento é 1.",
+   "preco_cobre": 40000,
+   "mercado": "R",
+   "revenda": 0.25,
+   "espaco": "armamentos",
+   "ocupa": 2
+  },
+  {
+   "eq": "EQ-061",
+   "id": "pocao_de_cura_pequena",
+   "nome": "Poção de Cura Pequena",
+   "categoria": "CONSUMÍVEL",
+   "raridade": "COMUM",
+   "tags": [
+    "Consumível",
+    "Poção"
+   ],
+   "campos": {},
+   "habilidade": "Ação Padrão: você ou um aliado adjacente cura 5.",
+   "preco_cobre": 120,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "consumiveis",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-062",
+   "id": "tocha",
+   "nome": "Tocha",
+   "categoria": "CONSUMÍVEL",
+   "raridade": "COMUM",
+   "tags": [
+    "Consumível"
+   ],
+   "campos": {},
+   "habilidade": "Ação Padrão: Acender. Enquanto está acesa, Tocha ilumina ao alcance curto e torna o alcance médio penumbra caso fosse escuro. O efeito dura 1 hora. Se Tocha for usada como arma improvisada, ela causa +1 de dano e coloca uma ficha de Fogo no defensor caso cause dano. Pode ser utilizada para ataques corpo a corpo ou à distância curta arremessando. Enquanto segurar Tocha acesa, você joga a defesa com as cartas reveladas.",
+   "preco_cobre": 2,
+   "mercado": "V",
+   "revenda": 0.4,
+   "espaco": "mochila",
+   "ocupa": 1,
+   "pacote": 3
+  },
+  {
+   "eq": "EQ-063",
+   "id": "antidoto",
+   "nome": "Antídoto",
+   "categoria": "CONSUMÍVEL",
+   "raridade": "COMUM",
+   "tags": [
+    "Consumível",
+    "Poção"
+   ],
+   "campos": {},
+   "habilidade": "Ação Padrão: você ou um aliado adjacente remove todas as suas fichas de Veneno e remove 1 ficha de Fadiga de uma de suas cartas.",
+   "preco_cobre": 80,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "consumiveis",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-064",
+   "id": "racao_de_viagem",
+   "nome": "Ração de Viagem",
+   "categoria": "CONSUMÍVEL",
+   "raridade": "COMUM",
+   "tags": [
+    "Consumível"
+   ],
+   "campos": {},
+   "habilidade": "Durante um descanso curto, consuma esta ração. No início da próxima cena, compre 1 carta adicional para formar sua mão inicial. Consumir mais de uma ração não aumenta esse bônus.",
+   "preco_cobre": 20,
+   "mercado": "V",
+   "revenda": 0.4,
+   "espaco": "mochila",
+   "ocupa": 1,
+   "pacote": 3
+  },
+  {
+   "eq": "EQ-065",
+   "id": "bomba_de_fumaca",
+   "nome": "Bomba de Fumaça",
+   "categoria": "CONSUMÍVEL",
+   "raridade": "COMUM",
+   "tags": [
+    "Consumível"
+   ],
+   "campos": {},
+   "habilidade": "Ação Padrão: crie uma área de fumaça de 3 × 3 × 3 quadrados a alcance Curto. Ela oferece cobertura contra ataques à distância.",
+   "preco_cobre": 150,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "consumiveis",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-066",
+   "id": "pedra_de_amolar",
+   "nome": "Pedra de Amolar",
+   "categoria": "CONSUMÍVEL",
+   "raridade": "COMUM",
+   "tags": [
+    "Consumível"
+   ],
+   "campos": {},
+   "habilidade": "Durante um descanso longo, aplique em uma arma que cause Corte ou Perfuração. Até o próximo descanso longo, essa arma causa +1 de dano.",
+   "preco_cobre": 10,
+   "mercado": "V",
+   "revenda": 0.4,
+   "espaco": "consumiveis",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-067",
+   "id": "veneno_acido",
+   "nome": "Veneno Ácido",
+   "categoria": "CONSUMÍVEL",
+   "raridade": "COMUM",
+   "tags": [
+    "Consumível"
+   ],
+   "campos": {},
+   "habilidade": "Ação Padrão: aplique em uma arma. Seu próximo ataque com ela causa +1 de dano e ignora resistência.",
+   "preco_cobre": 120,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "consumiveis",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-068",
+   "id": "pocao_de_mana_pequena",
+   "nome": "Poção de Mana Pequena",
+   "categoria": "CONSUMÍVEL",
+   "raridade": "COMUM",
+   "tags": [
+    "Consumível",
+    "Poção"
+   ],
+   "campos": {},
+   "habilidade": "Ação Padrão: remova até 3 fichas de Fadiga.",
+   "preco_cobre": 120,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "consumiveis",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-069",
+   "id": "oleo_antiespectral",
+   "nome": "Óleo Antiespectral",
+   "categoria": "CONSUMÍVEL",
+   "raridade": "COMUM",
+   "tags": [
+    "Consumível"
+   ],
+   "campos": {},
+   "habilidade": "Ação Padrão: aplique em uma arma. Até o fim da cena, ataques com ela atingem inimigos Intangíveis e causam +2 de dano contra eles.",
+   "preco_cobre": 200,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "consumiveis",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-070",
+   "id": "gazua",
+   "nome": "Gazua",
+   "categoria": "CONSUMÍVEL",
+   "raridade": "COMUM",
+   "tags": [
+    "Consumível"
+   ],
+   "campos": {},
+   "habilidade": "Ação Padrão: abra uma fechadura comum sem teste ou faça, com vantagem, um teste para abrir uma fechadura difícil.",
+   "preco_cobre": 30,
+   "mercado": "C",
+   "revenda": 0.4,
+   "espaco": "consumiveis",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-071",
+   "id": "pocao_de_pele_de_pedra",
+   "nome": "Poção de Pele de Pedra",
+   "categoria": "CONSUMÍVEL",
+   "raridade": "INCOMUM",
+   "tags": [
+    "Consumível",
+    "Poção"
+   ],
+   "campos": {},
+   "habilidade": "Ação Padrão: Ganhe 3 fichas de Guarda.",
+   "preco_cobre": 250,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "consumiveis",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-072",
+   "id": "pocao_carmim",
+   "nome": "Poção Carmim",
+   "categoria": "CONSUMÍVEL",
+   "raridade": "INCOMUM",
+   "tags": [
+    "Consumível",
+    "Poção"
+   ],
+   "campos": {},
+   "habilidade": "Ação Padrão: Ganhe duas ações; use-as apenas para atacar. Perca 5 de vida.",
+   "preco_cobre": 350,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "consumiveis",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-073",
+   "id": "incenso_de_jasmim",
+   "nome": "Incenso de Jasmim",
+   "categoria": "CONSUMÍVEL",
+   "raridade": "INCOMUM",
+   "tags": [
+    "Consumível"
+   ],
+   "campos": {},
+   "habilidade": "Ação Padrão: Acender. Até o início do seu próximo turno, magias conjuradas a alcance curto do incenso custam 1 de Fadiga a menos.",
+   "preco_cobre": 120,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "consumiveis",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-074",
+   "id": "frasco_de_piche",
+   "nome": "Frasco de Piche",
+   "categoria": "CONSUMÍVEL",
+   "raridade": "INCOMUM",
+   "tags": [
+    "Consumível"
+   ],
+   "campos": {},
+   "habilidade": "Ação Padrão: crie uma área de piche de 3 × 3 quadrados a alcance Curto. Ela é terreno difícil. Personagens que entrarem em um quadrado dela recebem 1 ficha de Imobilizar. A área é inflamável.",
+   "preco_cobre": 100,
+   "mercado": "C",
+   "revenda": 0.4,
+   "espaco": "consumiveis",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-075",
+   "id": "pocao_turquesa",
+   "nome": "Poção Turquesa",
+   "categoria": "CONSUMÍVEL",
+   "raridade": "INCOMUM",
+   "tags": [
+    "Consumível",
+    "Poção"
+   ],
+   "campos": {},
+   "habilidade": "Ação Padrão: Ganhe duas ações; use-as apenas para se movimentar. Ganhe 5 de Fadiga.",
+   "preco_cobre": 300,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "consumiveis",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-076",
+   "id": "sangue_de_batalha",
+   "nome": "Sangue de Batalha",
+   "categoria": "CONSUMÍVEL",
+   "raridade": "RARA",
+   "tags": [
+    "Consumível",
+    "Poção"
+   ],
+   "campos": {},
+   "habilidade": "Ação Padrão: Por 3 rodadas, seus ataques corpo a corpo causam +3 de dano e você é imune a fichas de Ferimento, Atordoamento e Medo. quando o efeito termina, exile 8 cartas do seu baralho.",
+   "preco_cobre": 1200,
+   "mercado": "O",
+   "revenda": 0.3,
+   "espaco": "consumiveis",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-077",
+   "id": "flocos_de_sombras",
+   "nome": "Flocos de Sombras",
+   "categoria": "CONSUMÍVEL",
+   "raridade": "RARA",
+   "tags": [
+    "Consumível"
+   ],
+   "campos": {},
+   "habilidade": "Reação (pode ser usada antes de ser atacado): teleporte para um ponto de penumbra a alcance médio. Ganhe 1 ficha de Sombra e 2 fichas de Medo.",
+   "preco_cobre": 1500,
+   "mercado": "O",
+   "revenda": 0.3,
+   "espaco": "consumiveis",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-078",
+   "id": "agua_abencoada",
+   "nome": "Água Abençoada",
+   "categoria": "CONSUMÍVEL",
+   "raridade": "RARA",
+   "tags": [
+    "Consumível"
+   ],
+   "campos": {},
+   "habilidade": "Ação Padrão: Até o fim do seu próximo turno, toda vez que você conjura uma magia divina, você e os aliados a alcance curto curam 3. Enquanto durar, suas magias custam 1 de Fadiga a mais.",
+   "preco_cobre": 1000,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "consumiveis",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-079",
+   "id": "flecha_explosiva",
+   "nome": "Flecha Explosiva",
+   "categoria": "CONSUMÍVEL",
+   "raridade": "RARA",
+   "tags": [
+    "Consumível"
+   ],
+   "campos": {},
+   "habilidade": "Ação Padrão: Seu próximo ataque acerta uma área 2 × 2 × 2. Se você sofrer dano de Fogo, esta flecha acende e explode no fim do seu próximo turno.",
+   "preco_cobre": 600,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "consumiveis",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-080",
+   "id": "pergaminho_do_desencantamento",
+   "nome": "Pergaminho do Desencantamento",
+   "categoria": "CONSUMÍVEL",
+   "raridade": "RARA",
+   "tags": [
+    "Consumível"
+   ],
+   "campos": {},
+   "habilidade": "4 de Fadiga, Ação Padrão: Desfaça uma magia contínua.",
+   "preco_cobre": 1800,
+   "mercado": "O",
+   "revenda": 0.3,
+   "espaco": "consumiveis",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-081",
+   "id": "corda",
+   "nome": "Corda (15 m)",
+   "categoria": "PERMANENTE",
+   "raridade": "COMUM",
+   "tags": [
+    "Permanente"
+   ],
+   "campos": {},
+   "habilidade": "Você tem vantagem em testes de Escalada feitos com o auxílio desta corda.",
+   "preco_cobre": 30,
+   "mercado": "V",
+   "revenda": 0.4,
+   "espaco": "mochila",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-082",
+   "id": "pe_de_cabra",
+   "nome": "Pé de Cabra",
+   "categoria": "PERMANENTE",
+   "raridade": "COMUM",
+   "tags": [
+    "Permanente"
+   ],
+   "campos": {},
+   "habilidade": "Você tem vantagem em testes de Força para forçar a abertura de passagens e quebrar mecanismos usando esta ferramenta.",
+   "preco_cobre": 50,
+   "mercado": "V",
+   "revenda": 0.4,
+   "espaco": "mochila",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-083",
+   "id": "pederneira",
+   "nome": "Pederneira",
+   "categoria": "PERMANENTE",
+   "raridade": "COMUM",
+   "tags": [
+    "Permanente"
+   ],
+   "campos": {},
+   "habilidade": "Ação Padrão: acenda uma tocha, uma fogueira ou um material inflamável.",
+   "preco_cobre": 5,
+   "mercado": "V",
+   "revenda": 0.4,
+   "espaco": "mochila",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-084",
+   "id": "kit_de_reparos",
+   "nome": "Kit de Reparos",
+   "categoria": "PERMANENTE",
+   "raridade": "COMUM",
+   "tags": [
+    "Permanente"
+   ],
+   "campos": {},
+   "habilidade": "Durante um descanso, restaure até 3 de vida de uma armadura ou escudo.",
+   "preco_cobre": 400,
+   "mercado": "C",
+   "revenda": 0.4,
+   "espaco": "mochila",
+   "ocupa": 2
+  },
+  {
+   "eq": "EQ-085",
+   "id": "kit_de_acampamento",
+   "nome": "Kit de Acampamento",
+   "categoria": "PERMANENTE",
+   "raridade": "COMUM",
+   "tags": [
+    "Permanente"
+   ],
+   "campos": {},
+   "habilidade": "Permite realizar um descanso longo ao relento sem penalidade.",
+   "preco_cobre": 150,
+   "mercado": "V",
+   "revenda": 0.4,
+   "espaco": "mochila",
+   "ocupa": 2
+  },
+  {
+   "eq": "EQ-086",
+   "id": "lanterna",
+   "nome": "Lanterna",
+   "categoria": "PERMANENTE",
+   "raridade": "COMUM",
+   "tags": [
+    "Permanente"
+   ],
+   "campos": {},
+   "habilidade": "Ilumina até o alcance Curto.",
+   "preco_cobre": 80,
+   "mercado": "C",
+   "revenda": 0.4,
+   "espaco": "mochila",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-087",
+   "id": "vara_de_3_metros",
+   "nome": "Vara de 3 Metros",
+   "categoria": "PERMANENTE",
+   "raridade": "COMUM",
+   "tags": [
+    "Permanente"
+   ],
+   "campos": {},
+   "habilidade": "Sonde o caminho à frente; testes para detectar armadilhas ou pisos falsos à sua frente têm Vantagem.",
+   "preco_cobre": 3,
+   "mercado": "V",
+   "revenda": 0.4,
+   "espaco": "mochila",
+   "ocupa": 2
+  },
+  {
+   "eq": "EQ-088",
+   "id": "espelho_de_bolso",
+   "nome": "Espelho de Bolso",
+   "categoria": "PERMANENTE",
+   "raridade": "COMUM",
+   "tags": [
+    "Permanente"
+   ],
+   "campos": {},
+   "habilidade": "Olhe por esquinas e cantos sem se expor, e sinalize à distância.",
+   "preco_cobre": 50,
+   "mercado": "C",
+   "revenda": 0.4,
+   "espaco": "mochila",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-089",
+   "id": "bandoleira_de_armas",
+   "nome": "Bandoleira de Armas",
+   "categoria": "PERMANENTE",
+   "raridade": "COMUM",
+   "tags": [
+    "Permanente"
+   ],
+   "campos": {},
+   "habilidade": "Até duas vezes por cena, você pode virar sua carta de arma.",
+   "preco_cobre": 200,
+   "mercado": "C",
+   "revenda": 0.4,
+   "espaco": "acessorios",
+   "ocupa": 1,
+   "reserva_mochila": 1
+  },
+  {
+   "eq": "EQ-090",
+   "id": "ferramentas_de_ladrao",
+   "nome": "Ferramentas de Ladrão",
+   "categoria": "PERMANENTE",
+   "raridade": "COMUM",
+   "tags": [
+    "Permanente"
+   ],
+   "campos": {},
+   "habilidade": "Você tem vantagem em testes de Ladinagem feitos com estas ferramentas.",
+   "preco_cobre": 300,
+   "mercado": "C",
+   "revenda": 0.4,
+   "espaco": "mochila",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-091",
+   "id": "simbolo_sagrado",
+   "nome": "Símbolo Sagrado",
+   "categoria": "PERMANENTE",
+   "raridade": "COMUM",
+   "tags": [
+    "Arma",
+    "Foco"
+   ],
+   "campos": {
+    "Dano": "1",
+    "Alcance": "—",
+    "Limite de Fadiga": "4"
+   },
+   "habilidade": "No início do seu turno, remova 1 ficha de Fadiga deste item.",
+   "preco_cobre": 1800,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "armamentos",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-092",
+   "id": "corda_de_arco_da_penumbra",
+   "nome": "Corda de Arco da Penumbra",
+   "categoria": "PERMANENTE",
+   "raridade": "COMUM",
+   "tags": [
+    "Permanente"
+   ],
+   "campos": {},
+   "habilidade": "Se você usou uma ficha de Sombra no último turno ou está na penumbra, use scry 1 após atacar.",
+   "preco_cobre": 800,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "acessorios",
+   "ocupa": 1,
+   "reserva_mochila": 1
+  },
+  {
+   "eq": "EQ-093",
+   "id": "varinha_eletrizante",
+   "nome": "Varinha Eletrizante",
+   "categoria": "PERMANENTE",
+   "raridade": "COMUM",
+   "tags": [
+    "Arma",
+    "Foco"
+   ],
+   "campos": {
+    "Limite de Fadiga": "3"
+   },
+   "habilidade": "3 de Fadiga, Ação Padrão: cause 3 de dano a um inimigo a alcance Médio, ignorando resistência.",
+   "preco_cobre": 2200,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "armamentos",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-094",
+   "id": "paraquedas_elfico",
+   "nome": "Paraquedas Élfico",
+   "categoria": "PERMANENTE",
+   "raridade": "INCOMUM",
+   "tags": [
+    "Permanente"
+   ],
+   "campos": {},
+   "habilidade": "Quando você cair, o paraquedas se abre automaticamente e impede o dano da queda. Depois de usá-lo, só pode ser usado novamente após um descanso curto.",
+   "preco_cobre": 2500,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "costas",
+   "ocupa": 1,
+   "reserva_mochila": 2
+  },
+  {
+   "eq": "EQ-095",
+   "id": "bussola_do_rumo",
+   "nome": "Bússola do Rumo",
+   "categoria": "PERMANENTE",
+   "raridade": "INCOMUM",
+   "tags": [
+    "Permanente"
+   ],
+   "campos": {},
+   "habilidade": "Marque uma posição; a bússola sempre aponta para o local marcado.",
+   "preco_cobre": 3500,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "mochila",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-096",
+   "id": "equipamento_de_pesca",
+   "nome": "Equipamento de Pesca",
+   "categoria": "PERMANENTE",
+   "raridade": "INCOMUM",
+   "tags": [
+    "Permanente"
+   ],
+   "campos": {},
+   "habilidade": "Gaste 30 minutos em um rio, lago ou mar: você consegue alimento para até 5 pessoas para um descanso longo.",
+   "preco_cobre": 80,
+   "mercado": "V",
+   "revenda": 0.4,
+   "espaco": "mochila",
+   "ocupa": 2
+  },
+  {
+   "eq": "EQ-097",
+   "id": "gancho_de_escalada",
+   "nome": "Gancho de Escalada",
+   "categoria": "PERMANENTE",
+   "raridade": "INCOMUM",
+   "tags": [
+    "Permanente"
+   ],
+   "campos": {},
+   "habilidade": "Ação Padrão: Lance o gancho a alcance médio em uma estrutura ou objeto. Você pode puxar o objeto ou se puxar em direção a ele (a critério do Mestre).",
+   "preco_cobre": 450,
+   "mercado": "C",
+   "revenda": 0.4,
+   "espaco": "mochila",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-098",
+   "id": "grilhao_de_ferro",
+   "nome": "Grilhão de Ferro",
+   "categoria": "PERMANENTE",
+   "raridade": "INCOMUM",
+   "tags": [
+    "Permanente"
+   ],
+   "campos": {},
+   "habilidade": "Prenda um alvo a um objeto adjacente a ele, limitando-o a se mover apenas adjacente ao objeto. Em combate, faça um teste de Destreza contra Destreza para prendê-lo.",
+   "preco_cobre": 150,
+   "mercado": "C",
+   "revenda": 0.4,
+   "espaco": "mochila",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-099",
+   "id": "manopla_de_bronze",
+   "nome": "Manopla de Bronze",
+   "categoria": "PERMANENTE",
+   "raridade": "INCOMUM",
+   "tags": [
+    "Permanente"
+   ],
+   "campos": {},
+   "habilidade": "Você não pode ser desarmado.",
+   "preco_cobre": 600,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "acessorios",
+   "ocupa": 1,
+   "reserva_mochila": 1
+  },
+  {
+   "eq": "EQ-100",
+   "id": "botas_de_lince",
+   "nome": "Botas de Lince",
+   "categoria": "PERMANENTE",
+   "raridade": "INCOMUM",
+   "tags": [
+    "Permanente"
+   ],
+   "campos": {},
+   "habilidade": "Você sofre metade do dano de queda.",
+   "preco_cobre": 1800,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "pes",
+   "ocupa": 1,
+   "reserva_mochila": 2
+  },
+  {
+   "eq": "EQ-101",
+   "id": "pergaminho_ancestral",
+   "nome": "Pergaminho Ancestral",
+   "categoria": "PERMANENTE",
+   "raridade": "INCOMUM",
+   "tags": [
+    "Permanente"
+   ],
+   "campos": {},
+   "habilidade": "Ao ser atingido por um ataque à distância, o atacante recebe 1 ficha de Penalidade.",
+   "preco_cobre": 4000,
+   "mercado": "O",
+   "revenda": 0.3,
+   "espaco": "acessorios",
+   "ocupa": 1,
+   "reserva_mochila": 1
+  },
+  {
+   "eq": "EQ-102",
+   "id": "manto_camuflado",
+   "nome": "Manto Camuflado",
+   "categoria": "PERMANENTE",
+   "raridade": "INCOMUM",
+   "tags": [
+    "Permanente"
+   ],
+   "campos": {},
+   "habilidade": "Você tem Vantagem em testes de Furtividade.",
+   "preco_cobre": 1200,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "costas",
+   "ocupa": 1,
+   "reserva_mochila": 1
+  },
+  {
+   "eq": "EQ-103",
+   "id": "anel_do_iniciado",
+   "nome": "Anel do Iniciado",
+   "categoria": "PERMANENTE",
+   "raridade": "INCOMUM",
+   "tags": [
+    "Permanente"
+   ],
+   "campos": {},
+   "habilidade": "Exile uma carta do seu descarte para retirar 1 de Fadiga. Apenas uma vez por turno e apenas no seu turno.",
+   "preco_cobre": 5000,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "acessorios",
+   "ocupa": 1,
+   "reserva_mochila": 1
+  },
+  {
+   "eq": "EQ-104",
+   "id": "elmo_de_touro",
+   "nome": "Elmo de Touro",
+   "categoria": "PERMANENTE",
+   "raridade": "INCOMUM",
+   "tags": [
+    "Permanente"
+   ],
+   "campos": {},
+   "habilidade": "Você não pode ficar Confuso nem Cego.",
+   "preco_cobre": 6000,
+   "mercado": "O",
+   "revenda": 0.3,
+   "espaco": "cabeca",
+   "ocupa": 1,
+   "reserva_mochila": 1
+  },
+  {
+   "eq": "EQ-105",
+   "id": "bainha_impetuosa",
+   "nome": "Bainha Impetuosa",
+   "categoria": "PERMANENTE",
+   "raridade": "INCOMUM",
+   "tags": [
+    "Permanente"
+   ],
+   "campos": {},
+   "habilidade": "Após virar a sua carta de arma, seu próximo ataque causa +3 de dano.",
+   "preco_cobre": 2000,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "acessorios",
+   "ocupa": 1,
+   "reserva_mochila": 1
+  },
+  {
+   "eq": "EQ-106",
+   "id": "cachecol_da_parceria",
+   "nome": "Cachecol da Parceria",
+   "categoria": "PERMANENTE",
+   "raridade": "INCOMUM",
+   "tags": [
+    "Permanente"
+   ],
+   "campos": {},
+   "habilidade": "Quando receber uma ficha, você pode pagar 1 de Fadiga para colocar uma ficha do mesmo tipo em um aliado a alcance Curto.",
+   "preco_cobre": 4500,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "acessorios",
+   "ocupa": 1,
+   "reserva_mochila": 1
+  },
+  {
+   "eq": "EQ-107",
+   "id": "cinto_estelar",
+   "nome": "Cinto Estelar",
+   "categoria": "PERMANENTE",
+   "raridade": "INCOMUM",
+   "tags": [
+    "Permanente"
+   ],
+   "campos": {},
+   "habilidade": "Você causa impedimento a até 2 quadrados de distância.",
+   "preco_cobre": 6000,
+   "mercado": "O",
+   "revenda": 0.3,
+   "espaco": "acessorios",
+   "ocupa": 1,
+   "reserva_mochila": 1
+  },
+  {
+   "eq": "EQ-108",
+   "id": "botas_seccundas",
+   "nome": "Botas Seccundas",
+   "categoria": "PERMANENTE",
+   "raridade": "INCOMUM",
+   "tags": [
+    "Permanente"
+   ],
+   "campos": {},
+   "habilidade": "Gaste uma ficha de reação: você pode realizar a ação de Salto enquanto está no ar.",
+   "preco_cobre": 3500,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "pes",
+   "ocupa": 1,
+   "reserva_mochila": 2
+  },
+  {
+   "eq": "EQ-109",
+   "id": "carta_da_sorte",
+   "nome": "Carta da Sorte",
+   "categoria": "PERMANENTE",
+   "raridade": "RARA",
+   "tags": [
+    "Permanente"
+   ],
+   "campos": {},
+   "habilidade": "Uma vez por descanso longo, uma carta de um teste que você fez se torna qualquer valor entre Ás e 10 (à sua escolha).",
+   "preco_cobre": 20000,
+   "mercado": "R",
+   "revenda": 0.25,
+   "espaco": "acessorios",
+   "ocupa": 1,
+   "reserva_mochila": 1
+  },
+  {
+   "eq": "EQ-110",
+   "id": "ampulheta_trincada",
+   "nome": "Ampulheta Trincada",
+   "categoria": "PERMANENTE",
+   "raridade": "RARA",
+   "tags": [
+    "Permanente"
+   ],
+   "campos": {},
+   "habilidade": "Uma vez por cena, jogue um turno extra. Depois de jogar o turno extra, pule o seu próximo turno.",
+   "preco_cobre": 35000,
+   "mercado": "R",
+   "revenda": 0.25,
+   "espaco": "acessorios",
+   "ocupa": 1,
+   "reserva_mochila": 1
+  },
+  {
+   "eq": "EQ-111",
+   "id": "mascara_do_impostor",
+   "nome": "Máscara do Impostor",
+   "categoria": "PERMANENTE",
+   "raridade": "RARA",
+   "tags": [
+    "Permanente"
+   ],
+   "campos": {},
+   "habilidade": "Uma vez por descanso longo, sua voz e aparência se tornam iguais às de alguém que você conhece. Você tem Vantagem em testes para se passar por essa pessoa. O efeito acaba ao sofrer dano ou ao retirar a máscara.",
+   "preco_cobre": 50000,
+   "mercado": "R",
+   "revenda": 0.25,
+   "espaco": "cabeca",
+   "ocupa": 1,
+   "reserva_mochila": 1
+  },
+  {
+   "eq": "EQ-112",
+   "id": "selo_de_sangue",
+   "nome": "Selo de Sangue",
+   "categoria": "PERMANENTE",
+   "raridade": "RARA",
+   "tags": [
+    "Permanente"
+   ],
+   "campos": {},
+   "habilidade": "Você pode exilar cartas do topo do baralho para pagar custos de Fadiga: cada carta exilada vale por 1 de Fadiga.",
+   "preco_cobre": 40000,
+   "mercado": "R",
+   "revenda": 0.25,
+   "espaco": "acessorios",
+   "ocupa": 1,
+   "reserva_mochila": 1
+  },
+  {
+   "eq": "EQ-113",
+   "id": "colar_vinculador",
+   "nome": "Colar Vinculador",
+   "categoria": "PERMANENTE",
+   "raridade": "RARA",
+   "tags": [
+    "Permanente"
+   ],
+   "campos": {},
+   "habilidade": "No início de cada cena, vincule-se a um aliado à vista. Enquanto durar o vínculo, vocês podem distribuir entre si, na proporção que escolherem, o dano e a cura que seriam aplicados a um de vocês.",
+   "preco_cobre": 45000,
+   "mercado": "R",
+   "revenda": 0.25,
+   "espaco": "acessorios",
+   "ocupa": 1,
+   "amuleto": true,
+   "reserva_mochila": 1
+  },
+  {
+   "eq": "EQ-114",
+   "id": "grevas_do_vazio",
+   "nome": "Grevas do Vazio",
+   "categoria": "PERMANENTE",
+   "raridade": "RARA",
+   "tags": [
+    "Permanente"
+   ],
+   "campos": {
+    "Limite de Fadiga": "2"
+   },
+   "habilidade": "2 de Fadiga: Teletransporte-se para um ponto visível a alcance curto. Se você surgir adjacente a um inimigo, você tem Vantagem no seu próximo ataque contra ele neste turno. Ative apenas uma vez por turno.",
+   "preco_cobre": 65000,
+   "mercado": "R",
+   "revenda": 0.25,
+   "espaco": "pes",
+   "ocupa": 1,
+   "reserva_mochila": 2
+  },
+  {
+   "eq": "EQ-115",
+   "id": "espelho_arcano",
+   "nome": "Espelho Arcano",
+   "categoria": "PERMANENTE",
+   "raridade": "RARA",
+   "tags": [
+    "Permanente"
+   ],
+   "campos": {},
+   "habilidade": "1 ficha de Reação: quando se tornar alvo de uma magia arcana, você pode refleti-la de volta ao conjurador.",
+   "preco_cobre": 120000,
+   "mercado": "R",
+   "revenda": 0.25,
+   "espaco": "acessorios",
+   "ocupa": 1,
+   "reserva_mochila": 1
+  },
+  {
+   "eq": "EQ-116",
+   "id": "varinha_de_cristal",
+   "nome": "Varinha de Cristal",
+   "categoria": "FOCO ARCANO",
+   "raridade": "Não informada",
+   "tags": [
+    "Foco Arcano"
+   ],
+   "campos": {
+    "Limite de Fadiga": "2"
+   },
+   "habilidade": "2 de Fadiga: Até o final do turno, seus ataques mágicos causam seu Raciocínio ou sua Sabedoria a mais de dano.",
+   "preco_cobre": 4000,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "armamentos",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-117",
+   "id": "cajado_do_aprendiz",
+   "nome": "Cajado do Aprendiz",
+   "categoria": "FOCO ARCANO",
+   "raridade": "Não informada",
+   "tags": [
+    "Foco Arcano"
+   ],
+   "campos": {
+    "Limite de Fadiga": "5"
+   },
+   "habilidade": "2 de Fadiga: Vire a sua carta de Aprendiz.",
+   "preco_cobre": 2500,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "armamentos",
+   "ocupa": 2
+  },
+  {
+   "eq": "EQ-118",
+   "id": "cajado_de_batalha",
+   "nome": "Cajado de Batalha",
+   "categoria": "FOCO ARCANO",
+   "raridade": "Não informada",
+   "tags": [
+    "Foco Arcano"
+   ],
+   "campos": {
+    "Limite de Fadiga": "3"
+   },
+   "habilidade": "Seus ataques mágicos têm +1 no limite do 21. 2 de Fadiga: Onda de força - empurre todos os inimigos adjacentes 2 quadrados.",
+   "preco_cobre": 12000,
+   "mercado": "O",
+   "revenda": 0.3,
+   "espaco": "armamentos",
+   "ocupa": 2
+  },
+  {
+   "eq": "EQ-119",
+   "id": "orbe_de_concentracao",
+   "nome": "Orbe de Concentração",
+   "categoria": "FOCO ARCANO",
+   "raridade": "Não informada",
+   "tags": [
+    "Foco Arcano"
+   ],
+   "campos": {
+    "Limite de Fadiga": "2"
+   },
+   "habilidade": "Ao realizar a ação Concentrar, você pode pagar 1 de Fadiga para comprar 1 carta adicional.",
+   "preco_cobre": 7000,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "armamentos",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-120",
+   "id": "orbe_de_protecao",
+   "nome": "Orbe de Proteção",
+   "categoria": "FOCO ARCANO",
+   "raridade": "Não informada",
+   "tags": [
+    "Foco Arcano"
+   ],
+   "campos": {
+    "Limite de Fadiga": "2"
+   },
+   "habilidade": "Enquanto empunha o orbe, o limite do 21 na sua defesa aumenta em 1. 2 de Fadiga: Você ou um aliado adjacente ganha resistência 2 até o seu próximo turno.",
+   "preco_cobre": 9000,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "armamentos",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-121",
+   "id": "calice_da_vida",
+   "nome": "Cálice da Vida",
+   "categoria": "FOCO SAGRADO",
+   "raridade": "Não informada",
+   "tags": [
+    "Foco Sagrado"
+   ],
+   "campos": {
+    "Limite de Fadiga": "2"
+   },
+   "habilidade": "Suas magias curam 1 a mais.",
+   "preco_cobre": 8000,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "armamentos",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-122",
+   "id": "relicario_do_guardiao",
+   "nome": "Relicário do Guardião",
+   "categoria": "FOCO SAGRADO",
+   "raridade": "Não informada",
+   "tags": [
+    "Foco Sagrado"
+   ],
+   "campos": {
+    "Limite de Fadiga": "4"
+   },
+   "habilidade": "3 de Fadiga, Ação Padrão: um aliado ganha 1 ficha de Guarda.",
+   "preco_cobre": 4500,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "armamentos",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-123",
+   "id": "marca_da_punicao",
+   "nome": "Marca da Punição",
+   "categoria": "FOCO SAGRADO",
+   "raridade": "Não informada",
+   "tags": [
+    "Foco Sagrado"
+   ],
+   "campos": {
+    "Limite de Fadiga": "4"
+   },
+   "habilidade": "Suas magias causam 2 de dano a mais e aplicam Ferimento.",
+   "preco_cobre": 24000,
+   "mercado": "O",
+   "revenda": 0.3,
+   "espaco": "armamentos",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-124",
+   "id": "turibulo_das_bencaos",
+   "nome": "Turíbulo das Bênçãos",
+   "categoria": "FOCO SAGRADO",
+   "raridade": "Não informada",
+   "tags": [
+    "Foco Sagrado"
+   ],
+   "campos": {
+    "Limite de Fadiga": "3"
+   },
+   "habilidade": "Você e aliados adjacentes a você removem 1 ficha de Fadiga adicional ao final do turno.",
+   "preco_cobre": 45000,
+   "mercado": "O",
+   "revenda": 0.3,
+   "espaco": "armamentos",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-125",
+   "id": "escrituras_de_maftone",
+   "nome": "Escrituras de Maftoné",
+   "categoria": "FOCO SAGRADO",
+   "raridade": "Não informada",
+   "tags": [
+    "Foco Sagrado"
+   ],
+   "campos": {
+    "Limite de Fadiga": "2"
+   },
+   "habilidade": "1 de Fadiga: você ou um aliado adjacente faz scry 1.\n1 de Fadiga: acrescente seu Espírito ao dano de uma magia que você conjurou.",
+   "preco_cobre": 7000,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "armamentos",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-126",
+   "id": "rosario_da_devocao",
+   "nome": "Rosário da Devoção",
+   "categoria": "FOCO SAGRADO",
+   "raridade": "Não informada",
+   "tags": [
+    "Foco Sagrado"
+   ],
+   "campos": {
+    "Limite de Fadiga": "3"
+   },
+   "habilidade": "Você tem 1 de resistência. 3 de Fadiga, Ação Padrão: substitua uma ficha de Ferimento por uma ficha de Foco.",
+   "preco_cobre": 9000,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "armamentos",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-127",
+   "id": "runa_de_fogo",
+   "nome": "Runa de Fogo",
+   "categoria": "RUNA CONSUMÍVEL",
+   "raridade": "Não informada",
+   "tags": [
+    "Consumível"
+   ],
+   "campos": {},
+   "habilidade": "Ação Padrão — escolha um efeito:\n1. Acenda um objeto inflamável. \n2. Coloque 1 ficha de Fogo em um alvo adjacente. \n3. Retire uma ficha de Gelo de você, ou passe automaticamente em um teste de Constituição para resistir ao frio.",
+   "preco_cobre": 80,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "consumiveis",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-128",
+   "id": "runa_de_agua",
+   "nome": "Runa de Água",
+   "categoria": "RUNA CONSUMÍVEL",
+   "raridade": "Não informada",
+   "tags": [
+    "Consumível"
+   ],
+   "campos": {},
+   "habilidade": "Ação Padrão — escolha um efeito:\n1. Purifique e torne potável até 5 litros de água, ou crie até 1 litro de água. \n2. Retire todas as fichas de Fogo de você ou de um alvo adjacente. \n3. Apague o fogo de um objeto de tamanho médio ou de uma área 1 × 1 × 1.",
+   "preco_cobre": 100,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "consumiveis",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-129",
+   "id": "runa_de_terra",
+   "nome": "Runa de Terra",
+   "categoria": "RUNA CONSUMÍVEL",
+   "raridade": "Não informada",
+   "tags": [
+    "Consumível"
+   ],
+   "campos": {},
+   "habilidade": "Ação Padrão — escolha um efeito:\n1. Quebre um bloco de 1 × 1 × 1 de pedra, transformando-o em cascalho. \n2. Conserte uma estrutura de pedra de até 100 kg. \n3. Coloque 1 ficha de Imobilizar em um alvo adjacente.",
+   "preco_cobre": 400,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "consumiveis",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-130",
+   "id": "runa_de_ar",
+   "nome": "Runa de Ar",
+   "categoria": "RUNA CONSUMÍVEL",
+   "raridade": "Não informada",
+   "tags": [
+    "Consumível"
+   ],
+   "campos": {},
+   "habilidade": "Ação Padrão — escolha um efeito:\n1. Você não precisa respirar por 30 segundos. \n2. Empurre um alvo médio 1 quadrado. \n3. Até o final do turno, plane.",
+   "preco_cobre": 100,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "consumiveis",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-131",
+   "id": "runa_de_luz",
+   "nome": "Runa de Luz",
+   "categoria": "RUNA CONSUMÍVEL",
+   "raridade": "Não informada",
+   "tags": [
+    "Consumível"
+   ],
+   "campos": {},
+   "habilidade": "Ação Padrão — escolha um efeito:\n1. Por 5 minutos, a runa ilumina ao alcance médio. \n2. Descarte todas as fichas de Sombra em alcance curto. \n3. Coloque 1 ficha de Cegueira em um alvo ao alcance curto.",
+   "preco_cobre": 180,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "consumiveis",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-132",
+   "id": "runa_de_sombra",
+   "nome": "Runa de Sombra",
+   "categoria": "RUNA CONSUMÍVEL",
+   "raridade": "Não informada",
+   "tags": [
+    "Consumível"
+   ],
+   "campos": {},
+   "habilidade": "Ação Padrão — escolha um efeito:\n1. Ganhe 1 ficha de Sombra. \n2. Coloque 1 ficha de Medo em um alvo adjacente. \n3. Devolva uma carta do exílio para o descarte.",
+   "preco_cobre": 300,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "consumiveis",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-133",
+   "id": "amuleto_de_pacenas",
+   "nome": "Amuleto de Pacenas",
+   "categoria": "AMULETO",
+   "raridade": "Não informada",
+   "tags": [
+    "Acessório"
+   ],
+   "campos": {
+    "Limite de Fadiga": "1"
+   },
+   "habilidade": "Você tem +1 no limite de defesa contra ataques à distância. 1 ficha de Sombra, Ação Padrão: crie uma área 2 × 2 × 2 de neblina.",
+   "preco_cobre": 10000,
+   "mercado": "O",
+   "revenda": 0.3,
+   "espaco": "acessorios",
+   "ocupa": 1,
+   "amuleto": true,
+   "reserva_mochila": 1
+  },
+  {
+   "eq": "EQ-134",
+   "id": "amuleto_de_grevha",
+   "nome": "Amuleto de Grevha",
+   "categoria": "AMULETO",
+   "raridade": "Não informada",
+   "tags": [
+    "Acessório"
+   ],
+   "campos": {
+    "Limite de Fadiga": "2"
+   },
+   "habilidade": "Enquanto nenhum aliado estiver mais próximo de um inimigo do que você (você é a vanguarda), seus ataques causam +1 de dano e você tem +1 de resistência. 2 de Fadiga, Ação Padrão: rompa a linha -mova-se 3 quadrados em linha reta, podendo atravessar inimigos, e faça um ataque ao terminar.",
+   "preco_cobre": 25000,
+   "mercado": "O",
+   "revenda": 0.3,
+   "espaco": "acessorios",
+   "ocupa": 1,
+   "amuleto": true,
+   "reserva_mochila": 1
+  },
+  {
+   "eq": "EQ-135",
+   "id": "amuleto_de_nebtor",
+   "nome": "Amuleto de Nebtor",
+   "categoria": "AMULETO",
+   "raridade": "Não informada",
+   "tags": [
+    "Acessório"
+   ],
+   "campos": {
+    "Limite de Fadiga": "1"
+   },
+   "habilidade": "Você tem +1 em Diplomacia. 1 de Fadiga, Ação Padrão: escolha uma pessoa e escreva uma mensagem; esta mensagem só é visível para a pessoa escolhida.",
+   "preco_cobre": 14000,
+   "mercado": "O",
+   "revenda": 0.3,
+   "espaco": "acessorios",
+   "ocupa": 1,
+   "amuleto": true,
+   "reserva_mochila": 1
+  },
+  {
+   "eq": "EQ-136",
+   "id": "amuleto_de_vael",
+   "nome": "Amuleto de Vael",
+   "categoria": "AMULETO",
+   "raridade": "Não informada",
+   "tags": [
+    "Acessório"
+   ],
+   "campos": {
+    "Limite de Fadiga": "2"
+   },
+   "habilidade": "Contra alvos que tenham ao menos 1 ficha de Fogo, seus ataques causam +2 de dano. 2 de Fadiga, Ação Padrão: remova todas as fichas de Fogo ao alcance curto; cada personagem que teve fichas removidas assim cura 1.",
+   "preco_cobre": 20000,
+   "mercado": "O",
+   "revenda": 0.3,
+   "espaco": "acessorios",
+   "ocupa": 1,
+   "amuleto": true,
+   "reserva_mochila": 1
+  },
+  {
+   "eq": "EQ-137",
+   "id": "amuleto_de_kanil",
+   "nome": "Amuleto de Kanil",
+   "categoria": "AMULETO",
+   "raridade": "Não informada",
+   "tags": [
+    "Acessório"
+   ],
+   "campos": {
+    "Limite de Fadiga": "2"
+   },
+   "habilidade": "Uma vez por cena, quando um dano esgotaria seu baralho, deixe 1 carta nele em vez de retirar a última.\n2 de Fadiga, Ação Padrão: escolha um aliado que você possa ver. Ele cura 3 e remove 1 ficha de Sangramento, Veneno ou Ferimento.",
+   "preco_cobre": 35000,
+   "mercado": "O",
+   "revenda": 0.3,
+   "espaco": "acessorios",
+   "ocupa": 1,
+   "amuleto": true,
+   "reserva_mochila": 1
+  },
+  {
+   "eq": "EQ-138",
+   "id": "amuleto_de_kagen",
+   "nome": "Amuleto de Kagen",
+   "categoria": "AMULETO",
+   "raridade": "Não informada",
+   "tags": [
+    "Acessório"
+   ],
+   "campos": {
+    "Limite de Fadiga": "2"
+   },
+   "habilidade": "Você percebe espíritos e passagens ocultas entre os mundos; ataques de criaturas incorpóreas contra você têm o limite do 21 reduzido em 2. 2 de Fadiga, Ação Padrão: até o final do turno, seus ataques ignoram armadura.",
+   "preco_cobre": 45000,
+   "mercado": "O",
+   "revenda": 0.3,
+   "espaco": "acessorios",
+   "ocupa": 1,
+   "amuleto": true,
+   "reserva_mochila": 1
+  },
+  {
+   "eq": "EQ-139",
+   "id": "grimorio_do_fogo",
+   "nome": "Grimório do Fogo",
+   "categoria": "GRIMÓRIO BÁSICO",
+   "raridade": "Não informada",
+   "tags": [
+    "Grimório Básico",
+    "Permanente"
+   ],
+   "campos": {
+    "Magias": "3",
+    "Requisito": "Fogo"
+   },
+   "habilidade": "Impulso Ardente: 3 de Fadiga, Ação Padrão: mova-se 3 quadrados em linha reta e coloque uma ficha de Fogo em cada personagem que ficar adjacente a você pelo caminho.\nBola de Fogo: 5 de Fadiga, Ação Padrão: faça um ataque mágico em uma área 3 × 3 × 3 ao alcance médio. Causa a diferença do teste + 4 + seu Raciocínio de dano, e aplica duas fichas de Fogo em cada personagem dentro da área que falhar no teste de defesa.\nRespiração Flamejante — 2 de Fadiga, ação de Movimento: Você ganha resistência 2 contra dano de Gelo e não precisa fazer testes para resistir ao clima frio durante o resto da cena.",
+   "preco_cobre": 4000,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "armamentos",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-140",
+   "id": "grimorio_da_agua",
+   "nome": "Grimório da Água",
+   "categoria": "GRIMÓRIO BÁSICO",
+   "raridade": "Não informada",
+   "tags": [
+    "Grimório Básico",
+    "Permanente"
+   ],
+   "campos": {
+    "Magias": "3",
+    "Requisito": "Água"
+   },
+   "habilidade": "Disparos Salinos: 3 de Fadiga, Ação Padrão: faça um ataque mágico contra um alvo ao alcance médio. Cause a diferença + 1 de dano de Concussão; cause +4 se o alvo estiver de armadura.\nRespiração Aquática — 2 de Fadiga, ação de Movimento: Até o final da cena, você pode respirar na água, mas não pode respirar fora dela. Pode desfazer o efeito a qualquer momento como ação livre.\nBolha: 3 de Fadiga, Ação Padrão: teste de Raciocínio contra Destreza do alvo. Vencendo, o alvo fica Imobilizado dentro de uma esfera de água de raio 2 metros. Dentro dela, ele deve fazer um teste de Constituição 15 + nº de turnos dentro da esfera; ao falhar, se afoga e cai. O alvo pode gastar uma ação de movimento e uma ação padrão para fazer um teste de Atletismo dif. 19 e sair da bolha.",
+   "preco_cobre": 3500,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "armamentos",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-141",
+   "id": "grimorio_da_terra",
+   "nome": "Grimório da Terra",
+   "categoria": "GRIMÓRIO BÁSICO",
+   "raridade": "Não informada",
+   "tags": [
+    "Grimório Básico",
+    "Permanente"
+   ],
+   "campos": {
+    "Magias": "3",
+    "Requisito": "Terra"
+   },
+   "habilidade": "Esferas Compactadas: 3 de Fadiga, Ação Padrão: seus próximos quatro ataques causam +3 de dano, têm o tipo Concussão e causam o dobro de dano em armaduras.\nSentido Sísmico — 2 de Fadiga, ação de Movimento: Até o final da cena, você percebe o alcance médio através das vibrações nos pés.\nDisco de Cascalho: 3 de Fadiga, Ação Padrão: faça um ataque mágico contra todos os personagens em linha reta até 8 quadrados. Cada alvo que falhar sofre a diferença + 3 de dano e é derrubado.",
+   "preco_cobre": 4500,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "armamentos",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-142",
+   "id": "grimorio_do_ar",
+   "nome": "Grimório do Ar",
+   "categoria": "GRIMÓRIO BÁSICO",
+   "raridade": "Não informada",
+   "tags": [
+    "Grimório Básico",
+    "Permanente"
+   ],
+   "campos": {
+    "Magias": "3",
+    "Requisito": "Ar"
+   },
+   "habilidade": "Vendaval: 3 de Fadiga, Ação Padrão: faça um ataque mágico contra todos os inimigos numa área 3 × 3 ao alcance curto. Cada um que falhar sofre a diferença de dano e é empurrado 3 quadrados; se colidir com algo, é derrubado.\nPassos de Vento — 2 de Fadiga, ação de Movimento: Até o final da cena, você ignora terreno difícil, não provoca ataques de oportunidade ao se mover, e não sofre dano de queda.\nForma de Vento: 3 de Fadiga, Ação Padrão: até o início do seu próximo turno, você vira vento - mova-se através de criaturas e frestas, e ataques contra você têm o limite do 21 reduzido em 3; enquanto durar, você não pode atacar nem manipular objetos.",
+   "preco_cobre": 4500,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "armamentos",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-143",
+   "id": "grimorio_da_luz",
+   "nome": "Grimório da Luz",
+   "categoria": "GRIMÓRIO BÁSICO",
+   "raridade": "Não informada",
+   "tags": [
+    "Grimório Básico",
+    "Permanente"
+   ],
+   "campos": {
+    "Magias": "3",
+    "Requisito": "Luz"
+   },
+   "habilidade": "Raio Radiante: 3 de Fadiga, Ação Padrão: faça um ataque mágico contra um alvo ao alcance médio. Cause a diferença + 2 de dano Radiante; +4 se o alvo for profano ou morto-vivo.\nAura Luminosa — 2 de Fadiga, ação de Movimento: Até o final da cena, você emana luz (ilumina o alcance médio e revela ocultos/furtivos a alcance curto); inimigos a alcance curto não podem usar Furtividade nem gastar fichas de Sombra.\nBênção Curativa: 3 de Fadiga, Ação Padrão: você e cada aliado numa área 3 × 3 ao alcance curto curam metade do seu Raciocínio (mínimo 2) e removem 1 ficha de Medo.",
+   "preco_cobre": 5000,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "armamentos",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-144",
+   "id": "grimorio_da_sombra",
+   "nome": "Grimório da Sombra",
+   "categoria": "GRIMÓRIO BÁSICO",
+   "raridade": "Não informada",
+   "tags": [
+    "Grimório Básico",
+    "Permanente"
+   ],
+   "campos": {
+    "Magias": "3",
+    "Requisito": "Sombra"
+   },
+   "habilidade": "Garra Umbral: 3 de Fadiga, Ação Padrão: faça um ataque mágico contra um alvo ao alcance médio. Cause a diferença + 2 de dano; +4 se você estava oculto ou na penumbra.\nVéu de Sombras — 2 de Fadiga, ação de Movimento: Até o final da cena, na penumbra ou no escuro você é considerado oculto enquanto não atacar, e tem Vantagem em Furtividade.\nManto do Terror: 3 de Fadiga, Ação Padrão: teste de Raciocínio contra Espírito contra cada inimigo numa área 3 × 3 ao alcance curto; cada um que perder recebe 1 ficha de Medo e 1 de Cegueira, e você remove 1 ficha de Fadiga por inimigo afetado.",
+   "preco_cobre": 4500,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "armamentos",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-145",
+   "id": "codice_das_cinzas",
+   "nome": "Códice das Cinzas",
+   "categoria": "GRIMÓRIO RARO",
+   "raridade": "RARA",
+   "tags": [
+    "Grimório Raro"
+   ],
+   "campos": {
+    "Magias": "2",
+    "Requisito": "Fogo Ar"
+   },
+   "habilidade": "Tempestade de Brasas: 6 de Fadiga, Ação Padrão: crie uma área 4 × 4 × 4 a alcance médio. faça um ataque mágico contra todos dentro da área: cause a diferença + seu Raciocínio de dano e coloque 2 fichas de Fogo. Pague 2 de Fadiga para sustentar a área.\nSopro do Inferno: 5 de Fadiga, Ação Padrão: crie um furacão de fogo 2 × 2 × 2 a alcance médio. faça um ataque mágico contra todos na área ou adjacentes a ela: cause a diferença de dano em todos dentro da área e coloque 1 ficha de Fogo. Empurre 3 quadrados em relação ao centro todos os que falharem no teste, e cause dano igual ao seu Raciocínio em cada um que colidir com um obstáculo ao ser empurrado.",
+   "preco_cobre": 35000,
+   "mercado": "R",
+   "revenda": 0.25,
+   "espaco": "armamentos",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-146",
+   "id": "sussurros_do_breu",
+   "nome": "Sussurros do Breu",
+   "categoria": "GRIMÓRIO RARO",
+   "raridade": "RARA",
+   "tags": [
+    "Grimório Raro"
+   ],
+   "campos": {
+    "Magias": "2",
+    "Requisito": "Ar Sombra"
+   },
+   "habilidade": "Vazio das Trevas: 6 de Fadiga, Ação Padrão: crie uma área 4 × 4 × 4 sem ar e coberta por trevas. Todos dentro dela não enxergam e sofrem dano sufocante igual ao seu Raciocínio; coloque 1 ficha de Medo em cada um dentro da área.\nVoz da Noite: 3 de Fadiga, Ação Padrão: coloque 1 ficha de Medo no alvo. Depois, cause dano igual ao seu Raciocínio vezes o número de fichas de Medo no alvo.",
+   "preco_cobre": 45000,
+   "mercado": "R",
+   "revenda": 0.25,
+   "espaco": "armamentos",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-147",
+   "id": "codice_da_chama_negra",
+   "nome": "Códice da Chama Negra",
+   "categoria": "GRIMÓRIO RARO",
+   "raridade": "RARA",
+   "tags": [
+    "Grimório Raro"
+   ],
+   "campos": {
+    "Magias": "2",
+    "Requisito": "Sombra Fogo"
+   },
+   "habilidade": "Chama Negra: 5 de Fadiga e 5 de vida, Ação Padrão: faça um ataque mágico contra um alvo a alcance curto. Se causar 4 ou mais de dano, destrua a armadura do alvo. Se o alvo não tiver armadura, coloque 4 fichas de Fogo nele.\nDrenar Calor: 4 de Fadiga, Ação Padrão: retire a ficha de Fogo de todos a alcance curto. Para cada ficha de Fogo retirada, cure 2.",
+   "preco_cobre": 40000,
+   "mercado": "R",
+   "revenda": 0.25,
+   "espaco": "armamentos",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-148",
+   "id": "grimorio_do_lodo",
+   "nome": "Grimório do Lodo",
+   "categoria": "GRIMÓRIO RARO",
+   "raridade": "RARA",
+   "tags": [
+    "Grimório Raro"
+   ],
+   "campos": {
+    "Magias": "2",
+    "Requisito": "Água Terra"
+   },
+   "habilidade": "Atoleiro: 6 de Fadiga, Ação Padrão: crie uma área 3 × 3 de lodo a alcance médio. A área é terreno difícil, e quem começar o turno nela afunda até o peito e fica Imobilizado.\nOnda de Lama: 5 de Fadiga, Ação Padrão: faça um ataque mágico em uma área 3 × 4 adjacente a você. Cause a diferença + seu Raciocínio de dano, empurre para fora da área e derrube todos que falharem no teste.",
+   "preco_cobre": 30000,
+   "mercado": "R",
+   "revenda": 0.25,
+   "espaco": "armamentos",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-149",
+   "id": "estudo_de_geofotons",
+   "nome": "Estudo de Geofótons",
+   "categoria": "GRIMÓRIO RARO",
+   "raridade": "RARA",
+   "tags": [
+    "Grimório Raro"
+   ],
+   "campos": {
+    "Magias": "2",
+    "Requisito": "Terra Luz"
+   },
+   "habilidade": "Cavar e Estruturar: 6 de Fadiga, Ação Padrão: abra uma área 2 × 6 em pedra ou terra, formando uma caverna artificial. A caverna dura 24 horas.\nLuz Penetrante: 2 de Fadiga, Ação Padrão: veja através de uma parede de até 20 cm de espessura (deve haver iluminação do outro lado). 1 de Fadiga para sustentar.",
+   "preco_cobre": 50000,
+   "mercado": "R",
+   "revenda": 0.25,
+   "espaco": "armamentos",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-150",
+   "id": "portfolio_do_luar_marinho",
+   "nome": "Portfólio do Luar Marinho",
+   "categoria": "GRIMÓRIO RARO",
+   "raridade": "RARA",
+   "tags": [
+    "Grimório Raro"
+   ],
+   "campos": {
+    "Magias": "2",
+    "Requisito": "Luz Água"
+   },
+   "habilidade": "Reflexo Líquido: 4 de Fadiga, Ação Padrão: uma superfície alvo de até 5 × 5 torna-se um espelho perfeito. Magias conjuradas contra o espelho são refletidas. O espelho dura 10 minutos.\nNévoa Brilhante: 3 de Fadiga, Ação Padrão: crie uma nuvem 4 × 4 × 4 a alcance médio; alvos dentro dela ficam Cegos. Você pode gastar uma ação de movimento e 2 de Fadiga para explodir a nuvem, causando dano radiante igual ao seu Raciocínio em todos dentro dela e adjacentes. A nuvem dura até o fim da cena.",
+   "preco_cobre": 42000,
+   "mercado": "R",
+   "revenda": 0.25,
+   "espaco": "armamentos",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-151",
+   "id": "a_batalha_dos_anjos",
+   "nome": "A Batalha dos Anjos",
+   "categoria": "TEXTO SAGRADO",
+   "raridade": "Não informada",
+   "tags": [
+    "Texto Sagrado"
+   ],
+   "campos": {
+    "Magias": "3",
+    "Requisito": "Conjurador divino"
+   },
+   "habilidade": "Cântico de Guerra: 3 de Fadiga, Ação Padrão: você e aliados a alcance curto ganham +2 de dano e +1 no limite do 21 em ataques até o fim do seu próximo turno.\nOração da Lâmina: 3 de Fadiga, Ação Padrão: faça um ataque mágico com uma espada de luz contra 2 alvos a alcance médio; cause a diferença + seu Espírito de dano, e +3 contra profanos ou mortos-vivos.\nOração do Guardião: 3 de Fadiga, Ação Padrão: um aliado à vista ganha resistência 2 e não pode ser derrubado até o seu próximo turno.",
+   "preco_cobre": 8000,
+   "mercado": "O",
+   "revenda": 0.3,
+   "espaco": "armamentos",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-152",
+   "id": "a_criacao_da_luz",
+   "nome": "A Criação da Luz",
+   "categoria": "TEXTO SAGRADO",
+   "raridade": "Não informada",
+   "tags": [
+    "Texto Sagrado"
+   ],
+   "campos": {
+    "Magias": "3",
+    "Requisito": "Conjurador divino"
+   },
+   "habilidade": "Cântico da Alvorada: 3 de Fadiga, Ação Padrão: uma área 10 × 10 é iluminada por energia sagrada. Retire a ficha de Sombra de todos dentro dela. Aliados na área têm +1 no limite do 21; inimigos na área têm -1. A área dura até o início do seu próximo turno; 1 de Fadiga para sustentar.\nOração do Fulgor: 3 de Fadiga, Ação Padrão: um clarão atinge um alvo a alcance médio; cause dano igual ao seu Espírito e coloque 1 ficha de Cegueira.\nCântico da Aurora: 3 de Fadiga, Ação Padrão: aliados adjacentes a você curam um valor igual ao seu Espírito.",
+   "preco_cobre": 9000,
+   "mercado": "O",
+   "revenda": 0.3,
+   "espaco": "armamentos",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-153",
+   "id": "os_ensinamentos_divinos",
+   "nome": "Os Ensinamentos Divinos",
+   "categoria": "TEXTO SAGRADO",
+   "raridade": "Não informada",
+   "tags": [
+    "Texto Sagrado"
+   ],
+   "campos": {
+    "Magias": "3",
+    "Requisito": "Conjurador divino"
+   },
+   "habilidade": "Mandamento da Justiça: 2 de Fadiga, Ação Padrão: faça um ataque mágico contra um inimigo que causou dano a você ou a um aliado desde o seu último turno. Se acertar, cause duas vezes o seu Espírito de dano radiante.\nMandamento do Ardor: 2 de Fadiga, Ação Padrão: retire todas as fichas de Veneno, Sangramento ou Ferimento de você ou de um aliado adjacente. Para cada ficha retirada, cause 1 de dano radiante em cada inimigo a alcance curto.\nMandamento da Obediência — 2 de Fadiga, Reação: Você se torna imune a fichas de Medo e a controle mental até o início do seu próximo turno.",
+   "preco_cobre": 11000,
+   "mercado": "O",
+   "revenda": 0.3,
+   "espaco": "armamentos",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-154",
+   "id": "as_leis_fundamentais",
+   "nome": "As Leis Fundamentais",
+   "categoria": "TEXTO SAGRADO",
+   "raridade": "Não informada",
+   "tags": [
+    "Texto Sagrado"
+   ],
+   "campos": {
+    "Magias": "3",
+    "Requisito": "Conjurador divino"
+   },
+   "habilidade": "Oração do Decreto: 3 de Fadiga, Ação Padrão: teste de Espírito contra Espírito contra um alvo à vista; vencendo, até o fim do próximo turno dele ele não pode se aproximar de você e deve usar seu movimento para se afastar antes de qualquer outra ação (mas ainda pode atacar).\nCântico da Ordem: 4 de Fadiga, Ação Padrão: crie uma área 3 × 3. Inimigos que começam o turno dentro dela devem escolher apenas se mover OU apenas atacar neste turno - não podem fazer as duas coisas.\nOração do Julgamento: 3 de Fadiga, Ação Padrão: coloque uma ficha de Marcação em um alvo à vista. Na próxima vez que ele atacar alguém, faça um ataque mágico contra ele: cause a diferença + seu Espírito de dano.",
+   "preco_cobre": 10000,
+   "mercado": "O",
+   "revenda": 0.3,
+   "espaco": "armamentos",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-155",
+   "id": "o_fogo_purificador",
+   "nome": "O Fogo Purificador",
+   "categoria": "TEXTO SAGRADO",
+   "raridade": "Não informada",
+   "tags": [
+    "Texto Sagrado"
+   ],
+   "campos": {
+    "Magias": "3",
+    "Requisito": "Conjurador divino"
+   },
+   "habilidade": "Oração da Chama: 3 de Fadiga, Ação Padrão: faça um ataque mágico com fogo sagrado contra um alvo a alcance médio; cause a diferença + seu Espírito de dano e 1 ficha de Fogo; contra profanos ou mortos-vivos, o dano dobra.\nMão Ardente de Deus: 3 de Fadiga, Ação Padrão: encoste em um alvo adjacente. Se for um aliado, ele cura um valor igual ao seu Espírito; se for um inimigo, ele sofre dano de Fogo igual ao seu Espírito e recebe 1 ficha de Ferimento.\nLouvar da Pira: 4 de Fadiga, Ação Padrão: crie uma pira numa área 2 × 2 a alcance curto. Enquanto você estiver adjacente à pira, você tem resistência 2 e suas magias custam 1 de Fadiga a menos. Inimigos que entrarem na área sofrem duas vezes o seu Espírito de dano. A pira dura até o fim da cena.",
+   "preco_cobre": 12000,
+   "mercado": "O",
+   "revenda": 0.3,
+   "espaco": "armamentos",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-156",
+   "id": "corrente_de_caca",
+   "nome": "Corrente de Caça",
+   "categoria": "ARMA CORPO A CORPO",
+   "raridade": "INCOMUM",
+   "tags": [
+    "Concussão",
+    "Peso Médio",
+    "Tamanho Grande"
+   ],
+   "campos": {
+    "Dano": "4 + Força",
+    "Alcance": "Corpo a corpo (2)",
+    "Requisito": "Força ≥ 1",
+    "Limite de Fadiga": "2"
+   },
+   "habilidade": "Laçar a Presa — 2 de Fadiga, Reação: quando um inimigo do seu tamanho ou menor, ao alcance desta arma, iniciar um deslocamento voluntário, faça um ataque corpo a corpo com esta arma contra ele antes que se mova. Se acertar, em vez de causar dano, encerre esse deslocamento e coloque 1 ficha de Imobilizar no alvo.",
+   "preco_cobre": 600,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "armamentos",
+   "ocupa": 2
+  },
+  {
+   "eq": "EQ-157",
+   "id": "pocao_de_regeneracao",
+   "nome": "Poção de Regeneração",
+   "categoria": "CONSUMÍVEL",
+   "raridade": "COMUM",
+   "tags": [
+    "Consumível",
+    "Poção"
+   ],
+   "campos": {},
+   "habilidade": "Ação Padrão: no início de cada um dos seus próximos 3 turnos, cure 2. Se você sofrer dano à vida enquanto o efeito durar, a próxima dessas curas não ocorre.",
+   "preco_cobre": 100,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "consumiveis",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-158",
+   "id": "pocao_de_folego_prolongado",
+   "nome": "Poção de Fôlego Prolongado",
+   "categoria": "CONSUMÍVEL",
+   "raridade": "COMUM",
+   "tags": [
+    "Consumível",
+    "Poção"
+   ],
+   "campos": {},
+   "habilidade": "Ação Padrão: no início de cada um dos seus próximos 3 turnos, remova 1 ficha de Fadiga de uma de suas cartas.",
+   "preco_cobre": 100,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "consumiveis",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-159",
+   "id": "pocao_de_visao_noturna",
+   "nome": "Poção de Visão Noturna",
+   "categoria": "CONSUMÍVEL",
+   "raridade": "COMUM",
+   "tags": [
+    "Consumível",
+    "Poção"
+   ],
+   "campos": {},
+   "habilidade": "Ação Padrão: por 10 minutos, você enxerga normalmente na penumbra e na escuridão até o alcance curto.",
+   "preco_cobre": 150,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "consumiveis",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-160",
+   "id": "pocao_de_vigor_lunar",
+   "nome": "Poção de Vigor Lunar",
+   "categoria": "CONSUMÍVEL",
+   "raridade": "INCOMUM",
+   "tags": [
+    "Consumível",
+    "Poção"
+   ],
+   "campos": {
+    "Vida": "6"
+   },
+   "habilidade": "Ação Padrão: mantenha esta carta à sua frente até o fim da cena. Você pode direcionar à vida desta carta o dano que poderia direcionar a uma armadura, mesmo sem vestir uma. A vida desta carta não pode ser curada nem reparada. Descarte esta carta quando a vida dela chegar a 0 ou quando a cena terminar.",
+   "preco_cobre": 220,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "consumiveis",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-161",
+   "id": "pocao_de_sangue_caustico",
+   "nome": "Poção de Sangue Cáustico",
+   "categoria": "CONSUMÍVEL",
+   "raridade": "INCOMUM",
+   "tags": [
+    "Consumível",
+    "Poção"
+   ],
+   "campos": {},
+   "habilidade": "Ação Padrão: durante os seus próximos 3 turnos, na primeira vez em cada turno em que um inimigo adjacente causar dano à sua vida com um ataque corpo a corpo, ele sofre 3 de dano de Ácido.",
+   "preco_cobre": 280,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "consumiveis",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-162",
+   "id": "pocao_de_reflexos_predatorios",
+   "nome": "Poção de Reflexos Predatórios",
+   "categoria": "CONSUMÍVEL",
+   "raridade": "RARA",
+   "tags": [
+    "Consumível",
+    "Poção"
+   ],
+   "campos": {},
+   "habilidade": "Ação Padrão: durante os seus próximos 3 turnos, na primeira vez em cada turno seu em que você derrotar um inimigo com um ataque, receba 1 ficha de Reação. Enquanto o efeito durar, todas as cartas usadas nas suas defesas ficam reveladas.",
+   "preco_cobre": 900,
+   "mercado": "O",
+   "revenda": 0.3,
+   "espaco": "consumiveis",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-163",
+   "id": "pocao_de_sangue_limpo",
+   "nome": "Poção de Sangue Limpo",
+   "categoria": "CONSUMÍVEL",
+   "raridade": "INCOMUM",
+   "tags": [
+    "Consumível",
+    "Poção"
+   ],
+   "campos": {},
+   "habilidade": "Ação Padrão: remova todas as suas fichas de Veneno. Durante os seus próximos 3 turnos, você não pode receber fichas de Veneno.",
+   "preco_cobre": 180,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "consumiveis",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-164",
+   "id": "pocao_de_mergulho",
+   "nome": "Poção de Mergulho",
+   "categoria": "CONSUMÍVEL",
+   "raridade": "COMUM",
+   "tags": [
+    "Consumível",
+    "Poção"
+   ],
+   "campos": {},
+   "habilidade": "Ação Padrão: por 10 minutos, você pode respirar debaixo d'água e tem Vantagem em testes de Percepção realizados enquanto estiver submerso.",
+   "preco_cobre": 200,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "consumiveis",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-165",
+   "id": "pocao_de_foco_crescente",
+   "nome": "Poção de Foco Crescente",
+   "categoria": "CONSUMÍVEL",
+   "raridade": "INCOMUM",
+   "tags": [
+    "Consumível",
+    "Poção"
+   ],
+   "campos": {},
+   "habilidade": "Ação Padrão: durante os seus próximos 3 turnos, na primeira vez em cada turno seu em que acertar um ataque, receba 1 ficha de Foco.",
+   "preco_cobre": 240,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "consumiveis",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-166",
+   "id": "pocao_de_amplificacao",
+   "nome": "Poção de Amplificação",
+   "categoria": "CONSUMÍVEL",
+   "raridade": "COMUM",
+   "tags": [
+    "Consumível",
+    "Poção"
+   ],
+   "campos": {},
+   "habilidade": "Ação Padrão: até o fim da cena, suas próximas 2 magias que aplicarem dano ou cura imediatos acrescentam 2 a um desses valores, em um único alvo afetado à sua escolha por conjuração.",
+   "preco_cobre": 160,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "consumiveis",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-167",
+   "id": "pocao_de_purificacao",
+   "nome": "Poção de Purificação",
+   "categoria": "CONSUMÍVEL",
+   "raridade": "COMUM",
+   "tags": [
+    "Consumível",
+    "Poção"
+   ],
+   "campos": {},
+   "habilidade": "Ação Padrão: remova todas as suas fichas de Veneno e encerre todos os efeitos de poções ainda ativos em você, benéficos ou prejudiciais. Encerrar um efeito desta forma também aplica suas consequências de término.",
+   "preco_cobre": 80,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "consumiveis",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-168",
+   "id": "pocao_de_superacao",
+   "nome": "Poção de Superação",
+   "categoria": "CONSUMÍVEL",
+   "raridade": "INCOMUM",
+   "tags": [
+    "Consumível",
+    "Poção"
+   ],
+   "campos": {},
+   "habilidade": "Ação Padrão: até o fim da cena, ao verificar requisitos de Força ou Destreza de equipamentos, considere seu atributo 1 ponto maior. Esse aumento não se aplica ao dano nem a testes.",
+   "preco_cobre": 180,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "consumiveis",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-169",
+   "id": "pocao_de_feromonios",
+   "nome": "Poção de Feromônios",
+   "categoria": "CONSUMÍVEL",
+   "raridade": "COMUM",
+   "tags": [
+    "Consumível",
+    "Poção"
+   ],
+   "campos": {},
+   "habilidade": "Ação Padrão: por 10 minutos, você tem Vantagem em testes de Furtividade contra criaturas que tentem localizar ou seguir você pelo cheiro.",
+   "preco_cobre": 100,
+   "mercado": "E",
+   "revenda": 0.35,
+   "espaco": "consumiveis",
+   "ocupa": 1
+  },
+  {
+   "eq": "EQ-170",
+   "id": "pocao_de_reaprendizado",
+   "nome": "Poção de Reaprendizado",
+   "categoria": "CONSUMÍVEL",
+   "raridade": "INCOMUM",
+   "tags": [
+    "Consumível",
+    "Poção"
+   ],
+   "campos": {},
+   "habilidade": "Durante um descanso longo, consuma esta poção para trocar uma carta de habilidade adquirida com XP por outra da mesma classe e do mesmo custo em XP, cujos requisitos você atenda. Você deixa de possuir a carta substituída. Esta troca não altera raça, classe, atributos ou carta de herói.",
+   "preco_cobre": 800,
+   "mercado": "O",
+   "revenda": 0.3,
+   "espaco": "consumiveis",
+   "ocupa": 1
+  }
+ ]
+}

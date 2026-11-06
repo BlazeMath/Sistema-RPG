@@ -92,8 +92,12 @@ func _montar() -> void:
 		_caixa.add_child(_botao(be["texto"], func():
 			fechar()
 			acao_be.call()))
-	_caixa.add_child(_botao("Voltar ao menu principal", func():
+	var rede = get_node_or_null("/root/Rede")
+	var em_rede: bool = rede != null and rede.ativo
+	_caixa.add_child(_botao("Sair da partida em rede" if em_rede else "Voltar ao menu principal", func():
 		visible = false
+		if em_rede:
+			rede.sair()
 		get_tree().change_scene_to_file("res://ui/main.tscn")))
 	_caixa.add_child(_botao("Sair do jogo", func(): get_tree().quit()))
 	_aviso = _texto("", 12, COR_TEXTO)

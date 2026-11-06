@@ -89,6 +89,8 @@ static func motivo_extra(b, u, c) -> String:
 	var info: Dictionary = b._info_lado(c)
 	if info.get("ataque_magico", false) and int(u.foco.get("maos", 0)) == 0:
 		return "precisa de um foco (varinha, orbe, cajado ou símbolo)"
+	if info.get("ataque_magico", false) and u.arma_reserva.get("eh_foco", false):
+		return "o foco está guardado: troque de arma para pegá-lo"
 	return preload("res://core/cartas_origens.gd").motivo_extra(b, u, c)
 
 
@@ -273,7 +275,7 @@ static func usar(b, u, c, alvo) -> void:
 			var t: int = b._tirar_fadiga(alvo, 1)
 			b._log("Mão Angelical: %s recupera %d de fadiga." % [alvo.nome, t])
 		"ressurgir":
-			var metade: int = alvo.baralho.descarte.size() / 2
+			var metade: int = ceili(alvo.baralho.descarte.size() / 2.0)   # revisão 27/10: arredonda para cima
 			for i in metade:
 				alvo.baralho.exilio.append(alvo.baralho.descarte.pop_back())
 			b._log("Ressurgir: metade do descarte de %s (%d cartas) vai para o exílio." % [alvo.nome, metade])
@@ -282,7 +284,10 @@ static func usar(b, u, c, alvo) -> void:
 		"preparar-o-tiro":
 			var n := 2 if u.moveu_no_turno else 3
 			u.dar_ficha("Mira", n)
-			b._log("Preparar o Tiro: %s ganha %d fichas de Mira." % [u.nome, n])
+			# Revisão 27/10: depois de usar, não pode se mover até o fim do turno.
+			u.efeitos["sem_mover"] = {"ate": "inicio_turno"}
+			u.deslocamento = 0
+			b._log("Preparar o Tiro: %s ganha %d fichas de Mira e fica parado até o fim do turno." % [u.nome, n])
 		"marca-do-cacador":
 			alvo.dar_ficha("Marcado")
 			b._log("%s marca %s: a carta fechada da defesa dele fica à vista." % [u.nome, alvo.nome])

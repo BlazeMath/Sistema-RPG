@@ -21,9 +21,10 @@ var escadas := {}           # 0.23: casas de escada/rampa: ligam níveis vizinho
 var custo_extra := {}       # Vector2i -> custo a mais para entrar (terreno difícil: 1, ou seja, vale 2)
 var visao_bloqueada := {}   # Vector2i -> true (objetos criados por zonas que tapam a visão)
 var bloqueio_extra := {}    # Vector2i -> true (objetos criados por zonas que fecham a passagem: Muro)
+var visao_livre := {}       # 0.27: Vector2i -> true (obstáculo que o editor deixou sem bloquear a visão)
 
 ## Obstáculos baixos: bloqueiam o caminho, mas não a linha de visão.
-const BAIXOS := ["agua", "agua_pedras", "ponte_quebrada", "tronco", "fogueira", "fogueira_apagada", "saco", "poco", "cerca",
+const BAIXOS := ["vazio", "agua", "agua_pedras", "ponte_quebrada", "tronco", "fogueira", "fogueira_apagada", "saco", "poco", "cerca",
 	"sarcofago", "mesa", "fonte", "altar"]
 
 
@@ -40,7 +41,12 @@ func nivel(p: Vector2i) -> int:
 	return int(niveis.get(p, 0))
 
 
+var _anda_no_tronco := false   # 0.24: inimigos atravessam o rio pelos troncos (com um teste ao pisar)
+
+
 func bloqueado(p: Vector2i, nada := false) -> bool:
+	if _anda_no_tronco and obstaculos.get(p, "") == "tronco" and not bloqueio_extra.has(p):
+		return false
 	if nada and obstaculos.get(p, "") in AGUA:
 		return bloqueio_extra.has(p)
 	return obstaculos.has(p) or bloqueio_extra.has(p) or not dentro(p)
@@ -85,6 +91,7 @@ func vizinhos(p: Vector2i, nada := false, escalar := false) -> Array[Vector2i]:
 func alcance(origem: Vector2i, passos: int, ocupadas: Dictionary, perigos: Dictionary, modo := {}) -> Dictionary:
 	var nada: bool = modo.get("nada", false)
 	var sem_terreno: bool = modo.get("sem_terreno", false)
+	_anda_no_tronco = modo.get("tronco", false)
 	# Lucas (0.20): heróis atravessam aliados (sem parar na casa deles): "passa" no mapa.
 	var aliados: Dictionary = modo.get("aliados", {})
 	var mapa := {origem: {"custo": 0, "anterior": origem}}
@@ -112,6 +119,7 @@ func alcance(origem: Vector2i, passos: int, ocupadas: Dictionary, perigos: Dicti
 			if aliados.has(n):
 				mapa[n]["passa"] = true
 			abertos.append(n)
+	_anda_no_tronco = false
 	return mapa
 
 
@@ -137,6 +145,7 @@ func linha_de_visao(a: Vector2i, b: Vector2i) -> bool:
 		var x := lerpf(a.x, b.x, t)
 		var y := lerpf(a.y, b.y, t)
 		var celula := Vector2i(roundi(x), roundi(y))
-		if celula != a and celula != b and ((obstaculos.has(celula) and not obstaculos[celula] in BAIXOS) or visao_bloqueada.has(celula)):
+		if celula != a and celula != b and ((obstaculos.has(celula) and not obstaculos[celula] in BAIXOS and not visao_livre.has(celula)) \
+				or visao_bloqueada.has(celula)):
 			return false
 	return true

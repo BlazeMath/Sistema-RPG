@@ -40,8 +40,12 @@ static func texto_atributo(nome: String, valor: int) -> String:
 			linhas.append("%s %d: %s%s" % ["✔" if valor >= n else "·", n, e[n], "" if valor >= n else " (ainda não)"])
 	return "\n".join(linhas)
 const ARQUIVO := "user://herois.json"
+## 0.26: no jogo em rede o anfitrião troca para os heróis da party; os convidados guardam
+## a cópia do anfitrião só na memória (memoria != null: carregar/salvar não tocam no disco).
+static var arquivo := ARQUIVO
+static var memoria = null
 
-const CLASSES := ["Guerreiro", "Ladino", "Clérigo", "Caçador", "Mago"]
+const CLASSES := ["Guerreiro", "Ladino", "Clérigo", "Caçador", "Mago", "Bruxo"]
 const RACAS := ["Humano", "Elfo", "Anão", "Halfling", "Orc"]
 const BACKGROUNDS := ["Soldado", "Bandido", "Escravo", "Explorador", "Fervoroso"]
 const DISPONIVEIS := CLASSES + RACAS + BACKGROUNDS   # versão 0.9: tudo liberado
@@ -55,6 +59,8 @@ const ESCOLHAS := {
 	"mil-oficios": {"tipo": "pericia", "qtd": 2, "bonus": 1, "texto": "Mil Ofícios: duas perícias adicionais (+1)"},
 	"mil-oficios-atributo": {"tipo": "atributo", "qtd": 1, "bonus": 1, "texto": "Mil Ofícios: um atributo mental ou social (+1)",
 		"opcoes": ["percepcao", "sabedoria", "raciocinio", "espirito", "mentira", "diplomacia"], "carta": "mil-oficios"},
+	# Bruxo (0.25): o patrono secundário da carta Pacto Menor / Procuração.
+	"pacto-menor": {"tipo": "pacto", "qtd": 1, "texto": "Pacto Menor: o patrono secundário"},
 }
 const TAMANHOS := {"Halfling": "pequeno"}
 
@@ -69,7 +75,7 @@ const PERICIAS := {
 		"Jogatina", "Liderança", "Negociação", "Nobreza", "Política"],
 }
 const DISTRIBUICAO_PERICIAS := {3: 4, 2: 6, 1: 8}
-const TIPOS_CLASSE := {"Guerreiro": "guerreiro", "Ladino": "ladino", "Clérigo": "clerigo", "Caçador": "cacador", "Mago": "mago"}
+const TIPOS_CLASSE := {"Guerreiro": "guerreiro", "Ladino": "ladino", "Clérigo": "clerigo", "Caçador": "cacador", "Mago": "mago", "Bruxo": "bruxo"}
 
 
 static func nova() -> Dictionary:
@@ -86,8 +92,12 @@ static func nova() -> Dictionary:
 		"arma2": "nenhuma",
 		"armadura": "cota_de_malha",
 		"escudo": "escudo_leve",
-		"consumiveis": ["pocao_de_cura_pequena"],
+		"consumiveis": ["pocao_de_cura_pequena", "tocha", "tocha", "tocha"],
 		"foco": "nenhum",
+		"costas": "nenhum", "cabeca": "nenhum", "pes": "nenhum",
+		"acessorios": ["bandoleira_de_armas"],
+		"grimorios": [],
+		"mochila": Itens.MOCHILA_INICIAL.duplicate(),
 		"divindade": "aurora",
 		"escolhas": {},
 		"pericias": {
@@ -159,17 +169,31 @@ static func validar(ficha: Dictionary) -> Array[String]:
 		erros.append("Meias cartas entram em pares: escolha mais uma (ou tire uma).")
 	if ficha["herois"].size() != 2:
 		erros.append("Escolha exatamente 2 metades de carta de herói.")
+	if ficha["classe"] == "Bruxo":
+		var patronos: Array = ficha["herois"].filter(func(h): return Catalogo.heroi(h).has("pacto"))
+		if patronos.size() != 1:
+			erros.append("O Bruxo põe exatamente 1 patrono (pacto pleno) na carta de herói; a outra metade é da raça ou do background.")
+		var menor: Array = ficha.get("escolhas", {}).get("pacto-menor", [])
+		if not menor.is_empty() and menor[0] == Catalogo.pacto_da_ficha(ficha):
+			erros.append("O Pacto Menor precisa de outro patrono (não o do pacto pleno).")
 	var arma: Dictionary = Itens.ARMAS[ficha["arma"]]
 	if int(ficha["atributos"]["forca"]) < arma["forca_min"]:
 		erros.append("%s exige Força %d." % [arma["nome"], arma["forca_min"]])
 	if ficha["escudo"] != "nenhum" and (arma.get("duas_maos", false) or arma["tamanho"] == "grande"):
 		erros.append("Escudo ocupa uma mão: não combina com %s." % arma["nome"])
+	if int(ficha["atributos"].get("destreza", 0)) < int(arma.get("destreza_min", 0)):
+		erros.append("%s exige Destreza %d." % [arma["nome"], int(arma["destreza_min"])])
+	erros.append_array(erros_de_inventario(ficha))
+	for gid in ficha.get("grimorios", []):
+		var motivo := motivo_grimorio(ficha, gid)
+		if motivo != "":
+			erros.append(motivo)
 	var arma2: Dictionary = Itens.ARMAS.get(ficha.get("arma2", "nenhuma"), {})
 	if not arma2.is_empty() and int(ficha["atributos"]["forca"]) < int(arma2["forca_min"]):
 		erros.append("%s (segunda arma) exige Força %d." % [arma2["nome"], arma2["forca_min"]])
 	var foco: Dictionary = Itens.FOCOS.get(ficha.get("foco", "nenhum"), Itens.FOCOS["nenhum"])
 	if foco["tipo"] != "" and Itens.TIPO_DE_FOCO.get(ficha["classe"], "") != foco["tipo"]:
-		erros.append("%s é um foco %s: só %s usa." % [foco["nome"], foco["tipo"], "o Mago" if foco["tipo"] == "arcano" else "o Clérigo"])
+		erros.append("%s é um foco %s: só %s usa." % [foco["nome"], foco["tipo"], "o Mago e o Bruxo" if foco["tipo"] == "arcano" else "o Clérigo"])
 	if int(foco["maos"]) > 0 and ficha["escudo"] != "nenhum":
 		erros.append("O foco ocupa a mão do escudo: escolha um ou outro.")
 	if int(foco["maos"]) == 2 and (arma.get("duas_maos", false) or arma["tamanho"] == "grande"):
@@ -203,17 +227,35 @@ static func escolhas_pendentes(ficha: Dictionary) -> Array:
 ## Converte a ficha na configuração de uma unidade de batalha.
 static func para_unidade(ficha: Dictionary, id: String, pos: Vector2i) -> Dictionary:
 	var at: Dictionary = ficha["atributos"]
-	var arma: Dictionary = Itens.ARMAS[ficha["arma"]]
-	var armadura: Dictionary = Itens.ARMADURAS[ficha["armadura"]]
-	var escudo: Dictionary = Itens.ESCUDOS[ficha["escudo"]]
+	var arma: Dictionary = Itens.ARMAS[ficha["arma"]].duplicate(true)
+	arma["id"] = ficha["arma"]
+	var armadura: Dictionary = Itens.ARMADURAS[ficha["armadura"]].duplicate(true)
+	armadura["id"] = ficha["armadura"]
+	var escudo: Dictionary = Itens.ESCUDOS[ficha["escudo"]].duplicate(true)
+	escudo["id"] = ficha["escudo"]
+	var reserva: Dictionary = Itens.ARMAS.get(ficha.get("arma2", "nenhuma"), {}).duplicate(true)
+	if not reserva.is_empty():
+		reserva["id"] = ficha["arma2"]
+	var at_com_itens: Dictionary = at.duplicate()
+	if "amuleto_de_nebtor" in ficha.get("acessorios", []):
+		at_com_itens["diplomacia"] = int(at_com_itens.get("diplomacia", 0)) + 1   # Amuleto de Nebtor
+	if Itens.foco_trocavel(ficha):
+		reserva = Itens.foco_como_arma(Itens.FOCOS[ficha["foco"]])
+		if ficha.get("comeca_com_foco", ficha["classe"] in ["Mago", "Clérigo", "Bruxo"]):
+			var t := arma
+			arma = reserva
+			reserva = t
 	return {
 		"id": id, "nome": ficha["nome"], "lado": "heroi", "tipo": TIPOS_CLASSE.get(ficha["classe"], "guerreiro"), "pos": pos,
 		"classe": ficha["classe"], "raca": ficha["raca"], "background": ficha["background"],
 		"divindade": ficha.get("divindade", Devocoes.PADRAO) if ficha["classe"] == "Clérigo" else "",
+		"pacto": Catalogo.pacto_da_ficha(ficha) if ficha["classe"] == "Bruxo" else "",
+		"pacto_menor": str(ficha.get("escolhas", {}).get("pacto-menor", [""])[0]) if not ficha.get("escolhas", {}).get("pacto-menor", []).is_empty() and "classe.bruxo.pacto-menor" in ficha["cartas"] else "",
+		"nivel_pacto": int(ficha.get("nivel_pacto", 1)),
 		"tamanho": TAMANHOS.get(ficha["raca"], "medio"),
 		"escolhas": ficha.get("escolhas", {}).duplicate(true),
 		"foco": Itens.FOCOS.get(ficha.get("foco", "nenhum"), Itens.FOCOS["nenhum"]).merged({"id": ficha.get("foco", "nenhum")}),
-		"atributos": at.duplicate(),
+		"atributos": at_com_itens,
 		"espirito": int(at.get("espirito", 0)),
 		"forca": int(at["forca"]), "destreza": int(at["destreza"]),
 		"iniciativa": int(ficha.get("pericias", {}).get("Iniciativa", 0)),
@@ -221,7 +263,7 @@ static func para_unidade(ficha: Dictionary, id: String, pos: Vector2i) -> Dictio
 		"sabedoria": int(at["sabedoria"]), "constituicao": int(at["constituicao"]), "raciocinio": int(at["raciocinio"]),
 		"percepcao": int(at["percepcao"]),
 		"arma": arma.duplicate(true), "armadura": armadura.duplicate(), "escudo": escudo.duplicate(),
-		"arma_reserva": Itens.ARMAS.get(ficha.get("arma2", "nenhuma"), {}).duplicate(true),
+		"arma_reserva": reserva,
 		"dano": arma["dano"],
 		"atributo_dano": int(at.get(Itens.atributo_da_arma(arma), 0)),
 		"a_distancia": arma.get("distancia", false),
@@ -230,7 +272,9 @@ static func para_unidade(ficha: Dictionary, id: String, pos: Vector2i) -> Dictio
 		"velocidade": 3 - (1 if armadura["classe"] == "pesada" else 0),
 		"cartas_cfg": cartas_em_jogo_cfg(ficha),
 		"consumiveis": ficha["consumiveis"].duplicate(),
-		"equipamentos": Itens.KIT_INICIAL + ([Itens.ITEM_DE_CLASSE[ficha["classe"]]] if Itens.ITEM_DE_CLASSE.has(ficha["classe"]) else []),
+		"equipamentos": equipamentos_de(ficha),
+		"vestidos": vestidos_de(ficha),
+		"grimorios": ficha.get("grimorios", []).duplicate(),
 		"mov_por_turno": 1, "padrao_por_turno": 2, "reacao_por_turno": 1,
 	}
 
@@ -248,6 +292,16 @@ static func cartas_em_jogo_cfg(ficha: Dictionary) -> Array:
 			"custo": h["custo_ativada"], "texto": "Ativada: " + str(h["ativada"])})
 	if not lados_heroi.is_empty():
 		lista.append({"id": "heroi", "tipo": "heroi", "lados": lados_heroi})
+	# Bruxo (0.25): a carta de pacto (reserva de Pacto) e a habilidade inicial A/B, de graça.
+	var pid := Catalogo.pacto_da_ficha(ficha) if ficha.get("classe", "") == "Bruxo" else ""
+	if pid != "":
+		var pc: Dictionary = Catalogo.pactos()[pid]
+		lista.append({"id": "pacto", "tipo": "pacto", "lados": [{"nome": pc["nome"], "slug": "pacto-" + pid, "limite_fadiga": 0, "custo": {},
+			"tags": pc["tags"] + ["Pacto"], "texto": "Nível %d · começo da cena: %d Pactos.\nCumprimento: %s\nCobrança: %s\nReparação: %s" % [
+				int(ficha.get("nivel_pacto", 1)), 2 * int(ficha.get("nivel_pacto", 1)), pc["cumprimento"], pc["cobranca"], pc["reparacao"]]}]})
+		var ini := Catalogo.habilidade(pc["inicial"])
+		if not ini.is_empty():
+			lista.append({"id": ini["id"], "tipo": "habilidade", "lados": [_lado(ini["lados"][0]), _lado(ini["lados"][1])]})
 	for cid in ficha["cartas"]:
 		var c := Catalogo.habilidade(cid)
 		if c.is_empty():
@@ -270,10 +324,16 @@ static func cartas_em_jogo_cfg(ficha: Dictionary) -> Array:
 		var lados_arma := [{"nome": arma["nome"], "slug": "arma", "limite_fadiga": int(arma.get("limite", 0)), "custo": {},
 			"texto": Itens.descricao_arma(arma), "tags": ["Arma"]}]
 		var a2: Dictionary = Itens.ARMAS.get(ficha.get("arma2", "nenhuma"), {})
+		if Itens.foco_trocavel(ficha):
+			a2 = Itens.foco_como_arma(Itens.FOCOS[ficha["foco"]])
 		if not a2.is_empty():
 			lados_arma.append({"nome": a2["nome"], "slug": "arma", "limite_fadiga": int(a2.get("limite", 0)), "custo": {},
-				"texto": Itens.descricao_arma(a2), "tags": ["Arma"]})
+				"texto": Itens.descricao_arma(a2) + ("\nSegurando o foco: dá para conjurar ataques mágicos." if a2.get("eh_foco", false) else ""), "tags": ["Arma"]})
+			if Itens.foco_trocavel(ficha) and ficha.get("comeca_com_foco", ficha["classe"] in ["Mago", "Clérigo", "Bruxo"]):
+				lados_arma.reverse()
 		lista.insert(1 if not lados_heroi.is_empty() else 0, {"id": "arma", "tipo": "arma", "lados": lados_arma})
+	# 0.25: itens com ativada (acessórios, amuletos, botas, armas especiais) e livros de repertório.
+	lista.append_array(preload("res://core/itens_batalha.gd").cartas_dos_itens(ficha))
 	# O foco vira carta(s) de item, com o limite de fadiga dele (logo depois da carta de herói).
 	var foco: Dictionary = Itens.FOCOS.get(ficha.get("foco", "nenhum"), {})
 	var pos_item := 1 if not lados_heroi.is_empty() else 0
@@ -290,9 +350,13 @@ static func _lado(l: Dictionary) -> Dictionary:
 
 
 static func carregar_todos() -> Array:
-	if not FileAccess.file_exists(ARQUIVO):
-		return []
-	var dados = JSON.parse_string(FileAccess.get_file_as_string(ARQUIVO))
+	var dados
+	if memoria is Array:
+		dados = memoria.duplicate(true)
+	else:
+		if not FileAccess.file_exists(arquivo):
+			return []
+		dados = JSON.parse_string(FileAccess.get_file_as_string(arquivo))
 	if not dados is Array:
 		return []
 	for f in dados:
@@ -306,7 +370,167 @@ static func carregar_todos() -> Array:
 			f["escolhas"] = {}
 		if f is Dictionary:
 			_migrar_pericias(f)
+			migrar_inventario(f)
 	return dados
+
+
+## Inventário por espaços (0.25). Heróis antigos ganham a mochila inicial e o item
+## da classe no espaço certo (antes vinham de graça, fora da ficha).
+static func migrar_inventario(f: Dictionary) -> void:
+	for chave in ["arma", "arma2"]:
+		if Itens.IDS_ANTIGOS.has(str(f.get(chave, ""))):
+			f[chave] = Itens.IDS_ANTIGOS[f[chave]]
+	if f.has("mochila"):
+		return
+	f["mochila"] = Itens.MOCHILA_INICIAL.duplicate()
+	f["acessorios"] = []
+	for chave in ["costas", "cabeca", "pes"]:
+		f[chave] = "nenhum"
+	f["grimorios"] = []
+	_item_de_classe(f)
+
+
+## Põe o item básico da classe no espaço dele (acessório ou mochila; os focos já são escolhidos à parte).
+static func _item_de_classe(f: Dictionary) -> void:
+	var item: String = Itens.ITEM_DE_CLASSE.get(f.get("classe", ""), "")
+	if item == "" or Itens.FOCOS.has(item):
+		return
+	var dados: Dictionary = Itens.item(item)
+	if dados.get("espaco", "") == "acessorios":
+		if not item in f["acessorios"] and f["acessorios"].size() < LIMITES["acessorios"]:
+			f["acessorios"].append(item)
+	elif not item in f["mochila"]:
+		if item == "ferramentas_de_ladrao":
+			f["mochila"].erase("pe_de_cabra")
+		f["mochila"].append(item)
+
+
+## Troca de classe na criação: tira o item da classe antiga e põe o da nova.
+static func trocar_item_de_classe(f: Dictionary, antiga: String) -> void:
+	var velho: String = Itens.ITEM_DE_CLASSE.get(antiga, "")
+	if velho != "":
+		f.get("acessorios", []).erase(velho)
+		f.get("mochila", []).erase(velho)
+		if velho == "ferramentas_de_ladrao" and not "pe_de_cabra" in f.get("mochila", []):
+			f["mochila"].append("pe_de_cabra")
+	_item_de_classe(f)
+
+
+## Limites do inventário por espaços (Lucas, 0.25).
+const LIMITES := {"armadura": 1, "costas": 1, "cabeca": 1, "pes": 1, "acessorios": 2, "amuletos": 1,
+	"armamentos": 4, "consumiveis": 6, "mochila": 6}
+const NOMES_ESPACOS := {"armadura": "Armadura", "costas": "Costas", "cabeca": "Cabeça", "pes": "Pés", "acessorios": "Acessórios",
+	"amuletos": "Amuletos ou colares", "armamentos": "Armamentos e repertórios", "consumiveis": "Consumíveis especiais", "mochila": "Mochila"}
+
+
+## Quanto de cada espaço a ficha usa: {espaço: usado}.
+static func ocupacao(f: Dictionary) -> Dictionary:
+	var o := {}
+	for k in LIMITES:
+		o[k] = 0
+	for chave in ["arma", "arma2"]:
+		var a: Dictionary = Itens.ARMAS.get(f.get(chave, "nenhuma"), {})
+		o["armamentos"] += int(a.get("ocupa", 0))
+	o["armamentos"] += int(Itens.ESCUDOS.get(f.get("escudo", "nenhum"), {}).get("ocupa", 0))
+	o["armamentos"] += int(Itens.FOCOS.get(f.get("foco", "nenhum"), {}).get("ocupa", 0))
+	for g in f.get("grimorios", []):
+		o["armamentos"] += int(Itens.GRIMORIOS.get(g, {}).get("ocupa", 1))
+	var arm: Dictionary = Itens.ARMADURAS.get(f.get("armadura", "nenhuma"), {})
+	o["armadura"] += int(arm.get("ocupa", 0))
+	if arm.get("tambem_costas", false):
+		o["costas"] += 1
+	for chave in ["costas", "cabeca", "pes"]:
+		if str(f.get(chave, "nenhum")) != "nenhum":
+			o[chave] += 1
+	for a in f.get("acessorios", []):
+		o["acessorios"] += 1
+		if Itens.eh_amuleto(a):
+			o["amuletos"] += 1
+	var contagem := {}
+	for c in f.get("consumiveis", []):
+		contagem[c] = int(contagem.get(c, 0)) + 1
+	for c in contagem:
+		var d: Dictionary = Itens.CONSUMIVEIS.get(c, {})
+		if not d.get("loja", true):
+			continue   # achados (gemas, frutas) vão na bolsa de tesouro
+		if d.get("espaco", "consumiveis") == "mochila":
+			o["mochila"] += ceili(float(contagem[c]) / maxf(1.0, float(d.get("pacote", 1)))) * int(d.get("ocupa", 1))
+		else:
+			o["consumiveis"] += int(contagem[c]) * int(d.get("ocupa", 1))
+	for m in f.get("mochila", []):
+		var d2: Dictionary = Itens.item(m)
+		# Peça de vestuário ou acessório guardado ocupa o espaço "de reserva" na mochila.
+		o["mochila"] += int(d2.get("reserva_mochila", 0)) if d2.get("espaco", "mochila") != "mochila" else int(d2.get("ocupa", 1))
+	return o
+
+
+static func erros_de_inventario(f: Dictionary) -> Array[String]:
+	var erros: Array[String] = []
+	var o := ocupacao(f)
+	for k in LIMITES:
+		if int(o[k]) > int(LIMITES[k]):
+			erros.append("Inventário cheio em %s: %d de %d." % [NOMES_ESPACOS[k], o[k], LIMITES[k]])
+	return erros
+
+
+## Texto curto da ocupação ("Armamentos 3/4 · Consumíveis 4/6 · Mochila 6/6").
+static func texto_ocupacao(f: Dictionary) -> String:
+	var o := ocupacao(f)
+	var partes := PackedStringArray()
+	for k in ["armamentos", "consumiveis", "mochila", "acessorios", "armadura", "costas", "cabeca", "pes"]:
+		partes.append("%s %d/%d" % [NOMES_ESPACOS[k].split(" ")[0], o[k], LIMITES[k]])
+	return " · ".join(partes)
+
+
+## Peças vestidas: capa, elmo, botas e acessórios (só elas dão efeito).
+static func vestidos_de(f: Dictionary) -> Array:
+	var lista := []
+	for chave in ["costas", "cabeca", "pes"]:
+		if str(f.get(chave, "nenhum")) != "nenhum":
+			lista.append(f[chave])
+	lista.append_array(f.get("acessorios", []))
+	return lista
+
+
+## Itens que o herói tem fora das mãos: mochila e peças vestidas (o que Unidade.tem_item procura).
+static func equipamentos_de(f: Dictionary) -> Array:
+	var lista: Array = f.get("mochila", []).duplicate()
+	for chave in ["costas", "cabeca", "pes"]:
+		if str(f.get(chave, "nenhum")) != "nenhum":
+			lista.append(f[chave])
+	lista.append_array(f.get("acessorios", []))
+	return lista
+
+
+## Grimório ou texto sagrado: "" se o herói pode prepará-lo, senão o motivo.
+## Requisito "Fogo" = ter a tag Fogo (cartas de Aprendiz, pactos); "Conjurador divino" = Clérigo.
+static func motivo_grimorio(f: Dictionary, gid: String) -> String:
+	var g: Dictionary = Itens.GRIMORIOS.get(gid, {})
+	if g.is_empty():
+		return "Repertório desconhecido: %s." % gid
+	if g.get("sagrado", false):
+		return "" if f.get("classe", "") == "Clérigo" else "%s: só um conjurador divino (Clérigo) usa." % g["nome"]
+	var tags := tags_da_ficha(f)
+	for t in str(g.get("requisito", "")).split(" ", false):
+		if not t in tags:
+			return "%s exige a tag %s (cartas de Aprendiz ou um pacto)." % [g["nome"], t]
+	return ""
+
+
+## Tags elementais que as cartas da ficha concedem ("Concede Fogo.").
+static func tags_da_ficha(f: Dictionary) -> Array:
+	var tags := []
+	for id in f.get("cartas", []) + f.get("meias", []):
+		for l in Catalogo.habilidade(id).get("lados", []):
+			if l == null:
+				continue
+			for t in l.get("tags", []):
+				if t in ["Fogo", "Água", "Terra", "Ar", "Luz", "Sombra"] and not t in tags:
+					tags.append(t)
+	for t in Catalogo.tags_do_pacto(f):
+		if not t in tags:
+			tags.append(t)
+	return tags
 
 
 ## Perícias cortadas pelo Lucas (0.11). O valor delas passa para a primeira
@@ -335,6 +559,9 @@ static func _migrar_pericias(f: Dictionary) -> void:
 
 
 static func salvar_todos(lista: Array) -> void:
-	var f := FileAccess.open(ARQUIVO, FileAccess.WRITE)
+	if memoria is Array:
+		memoria = lista.duplicate(true)
+		return
+	var f := FileAccess.open(arquivo, FileAccess.WRITE)
 	if f != null:
 		f.store_string(JSON.stringify(lista, "\t"))

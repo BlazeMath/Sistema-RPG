@@ -11,6 +11,11 @@ import numpy as np
 SR = 32000
 SAIDA = os.path.join(os.path.dirname(__file__), "..", "assets", "musica")
 rng = np.random.default_rng(21)
+# Variações (0.24): cada faixa sai em mais de uma versão (tom, andamento e frase da melodia).
+TRANSP = 0
+FATOR = 1.0
+GIRO = 0
+SUF = ""
 
 
 def nota(nome):
@@ -18,7 +23,7 @@ def nota(nome):
     tons = {"C": -9, "C#": -8, "Db": -8, "D": -7, "D#": -6, "Eb": -6, "E": -5, "F": -4, "F#": -3, "Gb": -3,
             "G": -2, "G#": -1, "Ab": -1, "A": 0, "A#": 1, "Bb": 1, "B": 2}
     letra, oit = nome[:-1], int(nome[-1])
-    return 440.0 * 2 ** ((tons[letra] + 12 * (oit - 4)) / 12)
+    return 440.0 * 2 ** ((tons[letra] + 12 * (oit - 4) + TRANSP) / 12)
 
 
 def env(n, a, d, s, r):
@@ -180,7 +185,7 @@ def drone(f, dur, vol=0.12):
 
 def menu():
     # 70 BPM, 8 compassos de 4 tempos = ~27,4 s; dois giros com melodia = ~55 s
-    bpm = 70
+    bpm = 70 * FATOR
     tempo = 60 / bpm
     compasso = 4 * tempo
     acordes = [["D3", "F3", "A3"], ["Bb2", "D3", "F3"], ["F2", "A2", "C3"], ["C3", "E3", "G3"],
@@ -199,17 +204,18 @@ def menu():
                 f.por(ini + i * tempo / 2, harpa(alt, vol=0.14), pan=0.35)
     mel = [("A4", 2), ("F4", 1), ("G4", 1), ("A4", 3), ("D5", 1), ("C5", 2), ("Bb4", 1), ("A4", 1), ("G4", 4),
            ("F4", 2), ("E4", 1), ("F4", 1), ("D4", 4), ("E4", 2), ("F4", 1), ("G4", 1), ("A4", 4), ("C#5", 2), ("D5", 2)]
+    mel = mel[GIRO % len(mel):] + mel[:GIRO % len(mel)]
     t0 = 8 * compasso
     for nm, dur in mel:
         f.por(t0, flauta(nota(nm), dur * tempo * 1.05), pan=0.1)
         t0 += dur * tempo
     f.reverb(0.4)
-    f.salvar("menu", 0.75)
+    f.salvar("menu" + SUF, 0.75)
 
 
 def exploracao():
     # ré dórico, mais leve, 84 BPM
-    bpm = 84
+    bpm = 84 * FATOR
     tempo = 60 / bpm
     compasso = 4 * tempo
     acordes = [["D3", "A3", "E4"], ["C3", "G3", "D4"], ["D3", "A3", "F4"], ["G2", "D3", "B3"]]
@@ -223,17 +229,18 @@ def exploracao():
             f.por(ini + i * tempo, harpa(nota(ac[i % 3]) * 2, vol=0.12), pan=-0.3)
     mel = [("D5", 1), ("E5", 1), ("F5", 2), ("E5", 1), ("D5", 1), ("C5", 2), ("D5", 3), ("A4", 1), ("B4", 2), ("C5", 2),
            ("D5", 4), ("F5", 1), ("G5", 1), ("A5", 2), ("G5", 1), ("F5", 1), ("E5", 2), ("D5", 4), ("C5", 2), ("B4", 2), ("A4", 4)]
+    mel = mel[GIRO % len(mel):] + mel[:GIRO % len(mel)]
     t0 = 4 * compasso
     for nm, dur in mel:
         f.por(t0, flauta(nota(nm), dur * tempo, vol=0.1))
         t0 += dur * tempo
     f.reverb(0.3)
-    f.salvar("exploracao", 0.72)
+    f.salvar("exploracao" + SUF, 0.72)
 
 
 def batalha():
     # 112 BPM, ostinato de cordas e tambores, ré menor
-    bpm = 112
+    bpm = 112 * FATOR
     tempo = 60 / bpm
     compasso = 4 * tempo
     baixos = ["D2", "D2", "Bb1", "Bb1", "G1", "G1", "A1", "A1"] * 2
@@ -250,12 +257,13 @@ def batalha():
             f.por(ini + 3.5 * tempo, tambor(0.4, 0.25, 80), pan=0.3)
     mel = [("D5", 1.5), ("C5", 0.5), ("D5", 1), ("F5", 1), ("E5", 2), ("D5", 2), ("Bb4", 1.5), ("A4", 0.5), ("Bb4", 1), ("D5", 1),
            ("C5", 4), ("G4", 1), ("A4", 1), ("Bb4", 1), ("D5", 1), ("C#5", 2), ("E5", 2), ("D5", 4)]
+    mel = mel[GIRO % len(mel):] + mel[:GIRO % len(mel)]
     t0 = 8 * compasso
     for nm, dur in mel:
         f.por(t0, pad(nota(nm), dur * tempo, vol=0.09, brilho=2200), pan=0.2)
         t0 += dur * tempo
     f.reverb(0.22)
-    f.salvar("batalha", 0.8)
+    f.salvar("batalha" + SUF, 0.8)
 
 
 def cripta():
@@ -271,11 +279,15 @@ def cripta():
     f.e += vento
     f.d += np.roll(vento, 4000)
     f.reverb(0.5)
-    f.salvar("cripta", 0.7)
+    f.salvar("cripta" + SUF, 0.7)
 
 
 if __name__ == "__main__":
-    menu()
-    exploracao()
-    batalha()
-    cripta()
+    import sys
+    variantes = [("", 0, 1.0, 0), ("_2", 2, 0.93, 5), ("_3", -3, 1.06, 9)]
+    for SUF, TRANSP, FATOR, GIRO in variantes:
+        rng = np.random.default_rng(21 + len(SUF) * 7 + TRANSP)
+        menu()
+        exploracao()
+        batalha()
+        cripta()

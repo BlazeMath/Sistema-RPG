@@ -59,9 +59,9 @@ func _montar(aviso: String) -> void:
 		if not r.is_empty():
 			var c: Dictionary = r.get("campanha", {})
 			var onde := "na vila" if not r.has("missao") else "em missão: %s" % r["missao"].get("nome", "")
-			txt = "Espaço %d · %s · %s\n%s · ouro %d · missões cumpridas: %d" % [e, r.get("data", ""), onde,
+			txt = "Espaço %d · %s · %s\n%s · bolsa %s · missões cumpridas: %d" % [e, r.get("data", ""), onde,
 				", ".join(PackedStringArray(r.get("herois", []).map(func(x): return "%s (%s)" % [x["nome"], x["classe"]]))),
-				int(c.get("ouro", 0)), c.get("concluidas", []).size()]
+				preload("res://core/campanha.gd").moeda(int(c.get("cobre", int(c.get("ouro", 0)) * 10))), c.get("concluidas", []).size()]
 		var l := _texto(txt, 13, COR_TEXTO if not r.is_empty() else COR_SECUNDARIO)
 		l.custom_minimum_size = Vector2(440, 0)
 		l.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART

@@ -55,14 +55,14 @@
     "tags": [
      "Investida"
     ],
-    "texto": "1 de fadiga, Ação: Mova-se 1 quadrado e faça um ataque corpo a corpo. Se causar dano, o alvo fica imobilizado.",
+    "texto": "1 de fadiga, Ação Padrão: mova-se 1 quadrado e faça um ataque corpo a corpo. Se causar dano, o alvo recebe 1 ficha de Imobilizar.",
     "limite_fadiga": 2,
     "custo": {
      "fadiga": 1,
      "acao": "padrao",
      "outros": [],
      "permanente": "",
-     "efeito": "Mova-se 1 quadrado e faça um ataque corpo a corpo. Se causar dano, o alvo fica imobilizado."
+     "efeito": "mova-se 1 quadrado e faça um ataque corpo a corpo. Se causar dano, o alvo recebe 1 ficha de Imobilizar."
     }
    },
    {
@@ -71,14 +71,14 @@
      "Investida",
      "Peso"
     ],
-    "texto": "2 de fadiga, Ação: Faça um ataque corpo a corpo. Some o dobro da resistência da sua armadura ao dano. Você fica imobilizado.",
+    "texto": "2 de fadiga, Ação Padrão: faça um ataque corpo a corpo. Some o dobro da resistência da sua armadura ao dano. Você recebe 1 ficha de Imobilizar.",
     "limite_fadiga": 2,
     "custo": {
      "fadiga": 2,
      "acao": "padrao",
      "outros": [],
      "permanente": "",
-     "efeito": "Faça um ataque corpo a corpo. Some o dobro da resistência da sua armadura ao dano. Você fica imobilizado."
+     "efeito": "faça um ataque corpo a corpo. Some o dobro da resistência da sua armadura ao dano. Você recebe 1 ficha de Imobilizar."
     }
    }
   ],
@@ -197,14 +197,14 @@
      "Postura",
      "Formação"
     ],
-    "texto": "O limite dos testes de defesa dos seus aliados têm +1.",
+    "texto": "O limite dos testes de defesa dos seus aliados adjacentes tem +1.",
     "limite_fadiga": 0,
     "custo": {
      "fadiga": 0,
      "acao": null,
      "outros": [],
      "permanente": "",
-     "efeito": "O limite dos testes de defesa dos seus aliados têm +1."
+     "efeito": "O limite dos testes de defesa dos seus aliados adjacentes tem +1."
     }
    }
   ],
@@ -952,14 +952,14 @@
     "tags": [
      "Ataque"
     ],
-    "texto": "Passiva: você causa +1 de dano para cada ficha de Sombra que possui.",
+    "texto": "Você causa +1 de dano para cada ficha de Sombra que possui.",
     "limite_fadiga": 0,
     "custo": {
      "fadiga": 0,
      "acao": null,
      "outros": [],
      "permanente": "",
-     "efeito": "Passiva: você causa +1 de dano para cada ficha de Sombra que possui."
+     "efeito": "Você causa +1 de dano para cada ficha de Sombra que possui."
     }
    }
   ],
@@ -1131,14 +1131,14 @@
      "Magia",
      "Ataque"
     ],
-    "texto": "Como parte de seu ataque, você pode colocar 1 ficha de Atormentado nesta carta. Se o fizer, o alvo do seu ataque recebe 1 ficha de Ferimento.",
+    "texto": "Como parte de seu ataque, você pode colocar 1 ficha de Atormentado nesta carta. Se fizer isso, ao acertar esse ataque, o defensor recebe 1 ficha de Ferimento.",
     "limite_fadiga": 2,
     "custo": {
      "fadiga": 0,
      "acao": null,
      "outros": [],
      "permanente": "",
-     "efeito": "Como parte de seu ataque, você pode colocar 1 ficha de Atormentado nesta carta. Se o fizer, o alvo do seu ataque recebe 1 ficha de Ferimento."
+     "efeito": "Como parte de seu ataque, você pode colocar 1 ficha de Atormentado nesta carta. Se fizer isso, ao acertar esse ataque, o defensor recebe 1 ficha de Ferimento."
     }
    }
   ],
@@ -1321,14 +1321,14 @@
     "tags": [
      "Ataque"
     ],
-    "texto": "1 de fadiga: Seu próximo ataque corpo-a-corpo neste turno aplica 1 ficha de Sangramento.",
+    "texto": "Seu próximo ataque corpo a corpo neste turno aplica 1 ficha de Sangramento no defensor se acertar.",
     "limite_fadiga": 1,
     "custo": {
      "fadiga": 1,
      "acao": null,
      "outros": [],
      "permanente": "",
-     "efeito": "Seu próximo ataque corpo-a-corpo neste turno aplica 1 ficha de Sangramento."
+     "efeito": "Seu próximo ataque corpo a corpo neste turno aplica 1 ficha de Sangramento no defensor se acertar."
     }
    },
    {
@@ -1403,14 +1403,14 @@
     "tags": [
      "Furtividade"
     ],
-    "texto": "Passiva: no início do seu turno, ganhe 1 ficha de Sombra.",
+    "texto": "No início do seu turno, ganhe 1 ficha de Sombra.",
     "limite_fadiga": 0,
     "custo": {
      "fadiga": 0,
      "acao": null,
      "outros": [],
      "permanente": "",
-     "efeito": "Passiva: no início do seu turno, ganhe 1 ficha de Sombra."
+     "efeito": "No início do seu turno, ganhe 1 ficha de Sombra."
     }
    },
    {
@@ -1419,14 +1419,14 @@
      "Ataque",
      "Furtividade"
     ],
-    "texto": "Os alvos de seus ataques corpo-a-corpo recebem 1 ficha de Ferimento para cada ficha de Sombra que você tem.",
+    "texto": "Sempre que você acertar um ataque corpo a corpo, o defensor recebe 1 ficha de Ferimento para cada ficha de Sombra que você tem.",
     "limite_fadiga": 0,
     "custo": {
      "fadiga": 0,
      "acao": null,
      "outros": [],
      "permanente": "",
-     "efeito": "Os alvos de seus ataques corpo-a-corpo recebem 1 ficha de Ferimento para cada ficha de Sombra que você tem."
+     "efeito": "Sempre que você acertar um ataque corpo a corpo, o defensor recebe 1 ficha de Ferimento para cada ficha de Sombra que você tem."
     }
    }
   ],
@@ -1506,7 +1506,7 @@
      "Magia",
      "Reação"
     ],
-    "texto": "Ficha de Reação: Quando um inimigo conjura uma magia, faça um teste do seu Raciocínio contra Sabedoria do conjurador. Em caso de sucesso, anule a magia conjurada e coloque uma ficha de Atordoamento nesta carta.",
+    "texto": "Descarte 1 ficha de Reação: quando um inimigo conjurar uma magia, faça um teste do seu Raciocínio contra a Sabedoria do conjurador. Em caso de sucesso, escolha novos alvos válidos para a magia, respeitando sua quantidade de alvos, seu alcance e suas restrições; resolva a magia contra esses alvos e, depois, coloque 1 ficha de Atordoamento nesta carta.",
     "limite_fadiga": 0,
     "custo": {
      "fadiga": 0,
@@ -1515,7 +1515,7 @@
       "Ficha de Reação"
      ],
      "permanente": "",
-     "efeito": "Quando um inimigo conjura uma magia, faça um teste do seu Raciocínio contra Sabedoria do conjurador. Em caso de sucesso, anule a magia conjurada e coloque uma ficha de Atordoamento nesta carta."
+     "efeito": "quando um inimigo conjurar uma magia, faça um teste do seu Raciocínio contra a Sabedoria do conjurador. Em caso de sucesso, escolha novos alvos válidos para a magia, respeitando sua quantidade de alvos, seu alcance e suas restrições; resolva a magia contra esses alvos e, depois, coloque 1 ficha de Atordoamento nesta carta."
     }
    }
   ],
@@ -1828,14 +1828,14 @@
      "Defesa",
      "Aura"
     ],
-    "texto": "2 de fadiga, Ação: Até o início do seu próximo turno, aliados ao alcance 2 não podem ter fichas colocadas por efeitos de inimigos.",
+    "texto": "2 de fadiga, Ação Padrão: até o início do seu próximo turno, aliados ao alcance 2 não podem ter fichas de Medo e Confusão colocadas por efeitos de inimigos.",
     "limite_fadiga": 2,
     "custo": {
      "fadiga": 2,
      "acao": "padrao",
      "outros": [],
      "permanente": "",
-     "efeito": "Até o início do seu próximo turno, aliados ao alcance 2 não podem ter fichas colocadas por efeitos de inimigos."
+     "efeito": "até o início do seu próximo turno, aliados ao alcance 2 não podem ter fichas de Medo e Confusão colocadas por efeitos de inimigos."
     }
    }
   ],
@@ -1949,14 +1949,14 @@
      "Conhecimento",
      "Religião"
     ],
-    "texto": "1 de fadiga: Aumente seu limite em +1 para testes de Religião.\n1 de fadiga, Ação: Desenhe o símbolo de sua divindade em uma arma ou armadura. Ela não pode ser amaldiçoada ou quebrada por inimigos até o próximo amanhecer. Limitado a um item por vez.",
+    "texto": "Aumente seu limite em +1 para testes de Religião. 1 de fadiga, Ação Padrão: desenhe o símbolo de sua divindade em uma arma ou armadura. Até o próximo amanhecer, ela não pode ser amaldiçoada nem ser quebrada diretamente por efeitos de inimigos. Se a vida do item chegar a 0, ele quebra normalmente. Limitado a um item por vez.",
     "limite_fadiga": 1,
     "custo": {
      "fadiga": 1,
      "acao": null,
      "outros": [],
      "permanente": "",
-     "efeito": "Aumente seu limite em +1 para testes de Religião.\n1 de fadiga, Ação: Desenhe o símbolo de sua divindade em uma arma ou armadura. Ela não pode ser amaldiçoada ou quebrada por inimigos até o próximo amanhecer. Limitado a um item por vez."
+     "efeito": "Aumente seu limite em +1 para testes de Religião. 1 de fadiga, Ação Padrão: desenhe o símbolo de sua divindade em uma arma ou armadura. Até o próximo amanhecer, ela não pode ser amaldiçoada nem ser quebrada diretamente por efeitos de inimigos. Se a vida do item chegar a 0, ele quebra normalmente. Limitado a um item por vez."
     }
    },
    {
@@ -2203,14 +2203,14 @@
      "Cura",
      "Milagre"
     ],
-    "texto": "2 de fadiga: Exile metade do descarte do aliado alvo. Se ele não havia mais cartas no baralho, cure-o igual à sua Sabedoria e ele recobra consciência.",
+    "texto": "2 de fadiga, Ação Padrão: exile metade das cartas do descarte do aliado alvo, arredondando para cima. Se o alvo estiver sem cartas no baralho, ele cura um valor igual à sua Sabedoria e recobra a consciência no local onde seu corpo está.",
     "limite_fadiga": 2,
     "custo": {
      "fadiga": 2,
      "acao": null,
      "outros": [],
      "permanente": "",
-     "efeito": "Exile metade do descarte do aliado alvo. Se ele não havia mais cartas no baralho, cure-o igual à sua Sabedoria e ele recobra consciência."
+     "efeito": "exile metade das cartas do descarte do aliado alvo, arredondando para cima. Se o alvo estiver sem cartas no baralho, ele cura um valor igual à sua Sabedoria e recobra a consciência no local onde seu corpo está."
     }
    },
    {
@@ -2391,14 +2391,14 @@
      "Mira",
      "Tiro"
     ],
-    "texto": "Ação: ganhe 2 fichas de Mira. Se você não se moveu neste turno, ganhe 3.",
+    "texto": "Ação Padrão: ganhe 2 fichas de Mira. Se você não se moveu neste turno, ganhe 3 em vez de 2. Depois de usar esta habilidade, você não pode se mover até o fim do turno.",
     "limite_fadiga": 2,
     "custo": {
      "fadiga": 0,
      "acao": "padrao",
      "outros": [],
      "permanente": "",
-     "efeito": "ganhe 2 fichas de Mira. Se você não se moveu neste turno, ganhe 3."
+     "efeito": "ganhe 2 fichas de Mira. Se você não se moveu neste turno, ganhe 3 em vez de 2. Depois de usar esta habilidade, você não pode se mover até o fim do turno."
     }
    },
    {
@@ -2622,14 +2622,14 @@
      "Tiro",
      "Controle"
     ],
-    "texto": "2 de fadiga (ação): ataque à distância causando METADE do dano; se acertar, o alvo ganha 2 Imobilizar e não pode usar reações até o próximo turno dele.",
-    "limite_fadiga": 1,
+    "texto": "2 de fadiga, Ação Padrão: faça um ataque à distância causando metade do dano. Se acertar, o alvo recebe 2 fichas de Imobilizar e não pode usar reações até o próximo turno dele.",
+    "limite_fadiga": 2,
     "custo": {
      "fadiga": 2,
      "acao": "padrao",
      "outros": [],
      "permanente": "",
-     "efeito": "ataque à distância causando METADE do dano; se acertar, o alvo ganha 2 Imobilizar e não pode usar reações até o próximo turno dele."
+     "efeito": "faça um ataque à distância causando metade do dano. Se acertar, o alvo recebe 2 fichas de Imobilizar e não pode usar reações até o próximo turno dele."
     }
    }
   ],
@@ -2735,14 +2735,14 @@
     "tags": [
      "Tiro"
     ],
-    "texto": "2 de fadiga: Durante seu ataque, se o defensor está imobilizado ou ferido, o dano da sua arma é triplicado e ignora resistência.",
+    "texto": "Durante seu ataque, se o defensor tiver ao menos 1 ficha de Ferimento ou de Imobilizar, o dano da sua arma é triplicado e ignora resistência.",
     "limite_fadiga": 3,
     "custo": {
      "fadiga": 2,
      "acao": null,
      "outros": [],
      "permanente": "",
-     "efeito": "Durante seu ataque, se o defensor está imobilizado ou ferido, o dano da sua arma é triplicado e ignora resistência."
+     "efeito": "Durante seu ataque, se o defensor tiver ao menos 1 ficha de Ferimento ou de Imobilizar, o dano da sua arma é triplicado e ignora resistência."
     }
    },
    {
@@ -3041,14 +3041,14 @@
     "tags": [
      "Mira"
     ],
-    "texto": "Passiva: no início do seu turno, ganhe 1 ficha de Mira. Você pode acumular Mira sem limite.",
+    "texto": "No início do seu turno, ganhe 1 ficha de Mira. Você pode acumular Mira sem limite.",
     "limite_fadiga": 0,
     "custo": {
      "fadiga": 0,
      "acao": null,
      "outros": [],
      "permanente": "",
-     "efeito": "Passiva: no início do seu turno, ganhe 1 ficha de Mira. Você pode acumular Mira sem limite."
+     "efeito": "No início do seu turno, ganhe 1 ficha de Mira. Você pode acumular Mira sem limite."
     }
    }
   ],
@@ -3068,14 +3068,14 @@
      "Caça",
      "Marcação"
     ],
-    "texto": "Caso este lado esteja revelado no início de uma cena ou após a primeira vez que ele for revelado durante uma cena, escolha um inimigo no seu campo de visão. Até o final da cena ou até o inimigo morrer, os efeitos que você aplica no alvo desta carta são dobrados.\nNo final do seu turno, ganhe uma ficha de Preparo se você causou dano no alvo durante seu turno.\nQuando o alvo morrer, escolha um novo alvo no seu campo de visão.",
+    "texto": "No início da cena com este lado revelado, ou ao revelá-lo pela primeira vez na cena, escolha um inimigo visível como alvo da caça. Até o fim da cena, coloque o dobro das fichas que seus efeitos colocariam no alvo. Nos efeitos sobre ele calculados pela quantidade de fichas gastas, calcule como se gastasse o dobro, pagando o custo normal. Duplique cada efeito apenas uma vez por esta habilidade. No fim do seu turno, se causou dano ao alvo neste turno, ganhe 1 ficha de Preparo. Quando ele morrer, escolha outro inimigo visível.",
     "limite_fadiga": 0,
     "custo": {
      "fadiga": 0,
      "acao": null,
      "outros": [],
      "permanente": "",
-     "efeito": "Caso este lado esteja revelado no início de uma cena ou após a primeira vez que ele for revelado durante uma cena, escolha um inimigo no seu campo de visão. Até o final da cena ou até o inimigo morrer, os efeitos que você aplica no alvo desta carta são dobrados.\nNo final do seu turno, ganhe uma ficha de Preparo se você causou dano no alvo durante seu turno.\nQuando o alvo morrer, escolha um novo alvo no seu campo de visão."
+     "efeito": "No início da cena com este lado revelado, ou ao revelá-lo pela primeira vez na cena, escolha um inimigo visível como alvo da caça. Até o fim da cena, coloque o dobro das fichas que seus efeitos colocariam no alvo. Nos efeitos sobre ele calculados pela quantidade de fichas gastas, calcule como se gastasse o dobro, pagando o custo normal. Duplique cada efeito apenas uma vez por esta habilidade. No fim do seu turno, se causou dano ao alvo neste turno, ganhe 1 ficha de Preparo. Quando ele morrer, escolha outro inimigo visível."
     }
    },
    {
@@ -3250,14 +3250,14 @@
     "tags": [
      "Conhecimento"
     ],
-    "texto": "Passiva: você faz testes mentais (Raciocínio, Percepção, Sabedoria) com vantagem.",
+    "texto": "Você faz testes mentais (Raciocínio, Percepção, Sabedoria) com vantagem.",
     "limite_fadiga": 0,
     "custo": {
      "fadiga": 0,
      "acao": null,
      "outros": [],
      "permanente": "",
-     "efeito": "Passiva: você faz testes mentais (Raciocínio, Percepção, Sabedoria) com vantagem."
+     "efeito": "Você faz testes mentais (Raciocínio, Percepção, Sabedoria) com vantagem."
     }
    }
   ],
@@ -3534,14 +3534,14 @@
     "tags": [
      "Custo 2 XP; Eficiência"
     ],
-    "texto": "Passiva: uma vez por turno, você pode conjurar uma magia sem pagar nenhum custo de fadiga.",
+    "texto": "Uma vez por turno, você pode conjurar uma magia pagando apenas 1 de Fadiga. Os outros custos da magia continuam valendo.",
     "limite_fadiga": 0,
     "custo": {
      "fadiga": 0,
      "acao": null,
      "outros": [],
      "permanente": "",
-     "efeito": "Passiva: uma vez por turno, você pode conjurar uma magia sem pagar nenhum custo de fadiga."
+     "efeito": "Uma vez por turno, você pode conjurar uma magia pagando apenas 1 de Fadiga. Os outros custos da magia continuam valendo."
     }
    },
    {
@@ -3594,7 +3594,7 @@
     "tags": [
      "Custo 2 XP; Controle"
     ],
-    "texto": "Descarte uma carta: anule a magia alvo que tenha você como um dos alvos.",
+    "texto": "Descarte 1 carta: quando uma magia tiver você como um dos alvos, faça um teste contestado do seu Raciocínio contra a Sabedoria do conjurador. Se vencer, anule a magia.",
     "limite_fadiga": 0,
     "custo": {
      "fadiga": 0,
@@ -3603,7 +3603,7 @@
       "Descarte uma carta"
      ],
      "permanente": "",
-     "efeito": "anule a magia alvo que tenha você como um dos alvos."
+     "efeito": "quando uma magia tiver você como um dos alvos, faça um teste contestado do seu Raciocínio contra a Sabedoria do conjurador. Se vencer, anule a magia."
     }
    }
   ],
@@ -3637,14 +3637,14 @@
     "tags": [
      "Custo 2 XP; Conhecimento"
     ],
-    "texto": "Passiva: no início do seu turno, compre uma carta.",
+    "texto": "No início do seu turno, compre uma carta.",
     "limite_fadiga": 1,
     "custo": {
      "fadiga": 0,
      "acao": null,
      "outros": [],
      "permanente": "",
-     "efeito": "Passiva: no início do seu turno, compre uma carta."
+     "efeito": "No início do seu turno, compre uma carta."
     }
    }
   ],

@@ -1,0 +1,2556 @@
+{
+	"versao": 1,
+	"id": "investigacao_vau_cinzento",
+	"nome": "Vau-Cinzento: o poço envenenado",
+	"descricao": "Investigação numa cidadezinha: três mortos depois de beber do poço da praça. Converse, procure pistas e descubra quem envenenou a água.",
+	"largura": 34,
+	"altura": 24,
+	"piso": "pedra",
+	"escuro": false,
+	"luz_ambiente": 0,
+	"abertura": {
+		"titulo": "Vau-Cinzento",
+		"texto": "Três moradores morreram depois de beber do poço da praça. A guarda diz que foi febre do rio, mas o prefeito não acredita e pagou a guilda em segredo. Converse com as pessoas, examine o que for estranho e junte pelo menos três pistas antes de acusar alguém. Ninguém aqui sabe quem vocês são."
+	},
+	"chao": {
+		"29,0": "agua",
+		"29,1": "agua",
+		"29,2": "agua",
+		"29,3": "agua",
+		"29,4": "agua",
+		"29,5": "agua",
+		"29,6": "agua",
+		"29,7": "agua",
+		"29,8": "agua",
+		"29,9": "agua",
+		"29,10": "agua",
+		"29,11": "agua",
+		"29,12": "agua",
+		"29,13": "agua",
+		"29,14": "agua",
+		"29,15": "agua",
+		"29,16": "agua",
+		"29,17": "agua",
+		"29,18": "agua",
+		"29,19": "agua",
+		"29,20": "agua",
+		"29,21": "agua",
+		"29,22": "agua",
+		"29,23": "agua",
+		"30,0": "agua",
+		"30,1": "agua",
+		"30,2": "agua",
+		"30,3": "agua",
+		"30,4": "agua",
+		"30,5": "agua",
+		"30,6": "agua",
+		"30,7": "agua",
+		"30,8": "agua",
+		"30,9": "agua",
+		"30,10": "agua",
+		"30,11": "agua",
+		"30,12": "agua",
+		"30,13": "agua",
+		"30,14": "agua",
+		"30,15": "agua",
+		"30,16": "agua",
+		"30,17": "agua",
+		"30,18": "agua",
+		"30,19": "agua",
+		"30,20": "agua",
+		"30,21": "agua",
+		"30,22": "agua",
+		"30,23": "agua",
+		"31,0": "agua",
+		"31,1": "agua",
+		"31,2": "agua",
+		"31,3": "agua",
+		"31,4": "agua",
+		"31,5": "agua",
+		"31,6": "agua",
+		"31,7": "agua",
+		"31,8": "agua",
+		"31,9": "agua",
+		"31,10": "agua",
+		"31,11": "agua",
+		"31,12": "agua",
+		"31,13": "agua",
+		"31,14": "agua",
+		"31,15": "agua",
+		"31,16": "agua",
+		"31,17": "agua",
+		"31,18": "agua",
+		"31,19": "agua",
+		"31,20": "agua",
+		"31,21": "agua",
+		"31,22": "agua",
+		"31,23": "agua",
+		"32,0": "agua",
+		"32,1": "agua",
+		"32,2": "agua",
+		"32,3": "agua",
+		"32,4": "agua",
+		"32,5": "agua",
+		"32,6": "agua",
+		"32,7": "agua",
+		"32,8": "agua",
+		"32,9": "agua",
+		"32,10": "agua",
+		"32,11": "agua",
+		"32,12": "agua",
+		"32,13": "agua",
+		"32,14": "agua",
+		"32,15": "agua",
+		"32,16": "agua",
+		"32,17": "agua",
+		"32,18": "agua",
+		"32,19": "agua",
+		"32,20": "agua",
+		"32,21": "agua",
+		"32,22": "agua",
+		"32,23": "agua",
+		"33,0": "agua",
+		"33,1": "agua",
+		"33,2": "agua",
+		"33,3": "agua",
+		"33,4": "agua",
+		"33,5": "agua",
+		"33,6": "agua",
+		"33,7": "agua",
+		"33,8": "agua",
+		"33,9": "agua",
+		"33,10": "agua",
+		"33,11": "agua",
+		"33,12": "agua",
+		"33,13": "agua",
+		"33,14": "agua",
+		"33,15": "agua",
+		"33,16": "agua",
+		"33,17": "agua",
+		"33,18": "agua",
+		"33,19": "agua",
+		"33,20": "agua",
+		"33,21": "agua",
+		"33,22": "agua",
+		"33,23": "agua",
+		"26,0": "madeira",
+		"26,1": "madeira",
+		"26,2": "madeira",
+		"26,3": "madeira",
+		"26,4": "madeira",
+		"26,5": "madeira",
+		"26,6": "madeira",
+		"26,7": "madeira",
+		"26,8": "madeira",
+		"26,9": "madeira",
+		"26,10": "madeira",
+		"26,11": "madeira",
+		"26,12": "madeira",
+		"26,13": "madeira",
+		"26,14": "madeira",
+		"26,15": "madeira",
+		"26,16": "madeira",
+		"26,17": "madeira",
+		"26,18": "madeira",
+		"26,19": "madeira",
+		"26,20": "madeira",
+		"26,21": "madeira",
+		"26,22": "madeira",
+		"26,23": "madeira",
+		"27,0": "madeira",
+		"27,1": "madeira",
+		"27,2": "madeira",
+		"27,3": "madeira",
+		"27,4": "madeira",
+		"27,5": "madeira",
+		"27,6": "madeira",
+		"27,7": "madeira",
+		"27,8": "madeira",
+		"27,9": "madeira",
+		"27,10": "madeira",
+		"27,11": "madeira",
+		"27,12": "madeira",
+		"27,13": "madeira",
+		"27,14": "madeira",
+		"27,15": "madeira",
+		"27,16": "madeira",
+		"27,17": "madeira",
+		"27,18": "madeira",
+		"27,19": "madeira",
+		"27,20": "madeira",
+		"27,21": "madeira",
+		"27,22": "madeira",
+		"27,23": "madeira",
+		"28,0": "madeira",
+		"28,1": "madeira",
+		"28,2": "madeira",
+		"28,3": "madeira",
+		"28,4": "madeira",
+		"28,5": "madeira",
+		"28,6": "madeira",
+		"28,7": "madeira",
+		"28,8": "madeira",
+		"28,9": "madeira",
+		"28,10": "madeira",
+		"28,11": "madeira",
+		"28,12": "madeira",
+		"28,13": "madeira",
+		"28,14": "madeira",
+		"28,15": "madeira",
+		"28,16": "madeira",
+		"28,17": "madeira",
+		"28,18": "madeira",
+		"28,19": "madeira",
+		"28,20": "madeira",
+		"28,21": "madeira",
+		"28,22": "madeira",
+		"28,23": "madeira",
+		"11,9": "terra",
+		"11,10": "terra",
+		"11,11": "terra",
+		"11,12": "terra",
+		"11,13": "terra",
+		"11,14": "terra",
+		"12,9": "terra",
+		"12,10": "terra",
+		"12,11": "terra",
+		"12,12": "terra",
+		"12,13": "terra",
+		"12,14": "terra",
+		"13,9": "terra",
+		"13,10": "terra",
+		"13,11": "terra",
+		"13,12": "terra",
+		"13,13": "terra",
+		"13,14": "terra",
+		"14,9": "terra",
+		"14,10": "terra",
+		"14,11": "terra",
+		"14,12": "terra",
+		"14,13": "terra",
+		"14,14": "terra",
+		"15,9": "terra",
+		"15,10": "terra",
+		"15,11": "terra",
+		"15,12": "terra",
+		"15,13": "terra",
+		"15,14": "terra",
+		"16,9": "terra",
+		"16,10": "terra",
+		"16,11": "terra",
+		"16,12": "terra",
+		"16,13": "terra",
+		"16,14": "terra",
+		"17,9": "terra",
+		"17,10": "terra",
+		"17,11": "terra",
+		"17,12": "terra",
+		"17,13": "terra",
+		"17,14": "terra",
+		"18,9": "terra",
+		"18,10": "terra",
+		"18,11": "terra",
+		"18,12": "terra",
+		"18,13": "terra",
+		"18,14": "terra",
+		"7,6": "madeira",
+		"7,7": "madeira",
+		"8,6": "madeira",
+		"8,7": "madeira",
+		"9,6": "madeira",
+		"9,7": "madeira",
+		"10,6": "madeira",
+		"10,7": "madeira",
+		"21,9": "madeira",
+		"21,10": "madeira",
+		"21,11": "madeira",
+		"21,12": "madeira",
+		"21,13": "madeira",
+		"22,9": "madeira",
+		"22,10": "madeira",
+		"22,11": "madeira",
+		"22,12": "madeira",
+		"22,13": "madeira",
+		"23,9": "madeira",
+		"23,10": "madeira",
+		"23,11": "madeira",
+		"23,12": "madeira",
+		"23,13": "madeira",
+		"24,9": "madeira",
+		"24,10": "madeira",
+		"24,11": "madeira",
+		"24,12": "madeira",
+		"24,13": "madeira",
+		"7,14": "madeira",
+		"7,15": "madeira",
+		"7,16": "madeira",
+		"8,14": "madeira",
+		"8,15": "madeira",
+		"8,16": "madeira",
+		"9,14": "madeira",
+		"9,15": "madeira",
+		"9,16": "madeira",
+		"10,14": "madeira",
+		"10,15": "madeira",
+		"10,16": "madeira",
+		"22,16": "madeira",
+		"22,17": "madeira",
+		"22,18": "madeira",
+		"22,19": "madeira",
+		"22,20": "madeira",
+		"22,21": "madeira",
+		"23,16": "madeira",
+		"23,17": "madeira",
+		"23,18": "madeira",
+		"23,19": "madeira",
+		"23,20": "madeira",
+		"23,21": "madeira",
+		"24,16": "madeira",
+		"24,17": "madeira",
+		"24,18": "madeira",
+		"24,19": "madeira",
+		"24,20": "madeira",
+		"24,21": "madeira",
+		"25,16": "madeira",
+		"25,17": "madeira",
+		"25,18": "madeira",
+		"25,19": "madeira",
+		"25,20": "madeira",
+		"25,21": "madeira"
+	},
+	"niveis": {},
+	"escadas": [],
+	"objetos": [
+		{
+			"pos": "1,1",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "1,2",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "1,3",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "1,4",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "2,1",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "2,2",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "2,3",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "2,4",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "3,1",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "3,2",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "3,3",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "3,4",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "4,1",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "4,2",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "4,3",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "4,4",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "5,1",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "5,2",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "5,3",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "5,4",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "8,1",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "8,2",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "8,3",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "9,1",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "9,2",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "9,3",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "10,1",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "10,2",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "10,3",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "11,1",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "11,2",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "11,3",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "12,1",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "12,2",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "12,3",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "1,8",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "1,9",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "1,10",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "1,11",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "2,8",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "2,9",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "2,10",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "2,11",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "3,8",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "3,9",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "3,10",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "3,11",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "4,8",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "4,9",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "4,10",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "4,11",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "1,15",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "1,16",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "1,17",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "1,18",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "2,15",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "2,16",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "2,17",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "2,18",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "3,15",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "3,16",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "3,17",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "3,18",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "4,15",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "4,16",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "4,17",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "4,18",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "5,15",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "5,16",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "5,17",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "5,18",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "8,19",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "8,20",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "8,21",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "8,22",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "9,19",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "9,20",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "9,21",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "9,22",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "10,19",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "10,20",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "10,21",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "10,22",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "11,19",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "11,20",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "11,21",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "11,22",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "12,19",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "12,20",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "12,21",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "12,22",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "13,19",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "13,20",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "13,21",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "13,22",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "16,1",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "16,2",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "16,3",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "17,1",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "17,2",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "17,3",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "18,1",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "18,2",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "18,3",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "19,1",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "19,2",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "19,3",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "20,1",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "20,2",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "20,3",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "15,19",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "15,20",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "15,21",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "15,22",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "16,19",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "16,20",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "16,21",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "16,22",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "17,19",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "17,20",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "17,21",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "17,22",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "18,19",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "18,20",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "18,21",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "18,22",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "19,19",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "19,20",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "19,21",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "19,22",
+			"tipo": "casa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "14,11",
+			"tipo": "poco",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "11,9",
+			"tipo": "arvore",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "18,9",
+			"tipo": "arvore",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "18,14",
+			"tipo": "arvore",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "6,5",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "6,6",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "6,7",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "6,8",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "7,5",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "7,8",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "8,5",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "9,5",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "9,8",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "10,5",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "10,8",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "11,5",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "11,6",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "11,7",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "11,8",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "7,6",
+			"tipo": "estante",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "10,6",
+			"tipo": "mesa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "20,8",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "20,9",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "20,10",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "20,12",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "20,13",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "20,14",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "21,8",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "21,14",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "22,8",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "22,14",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "23,8",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "23,14",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "24,8",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "24,14",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "25,8",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "25,9",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "25,10",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "25,11",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "25,12",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "25,13",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "25,14",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "22,9",
+			"tipo": "barril",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "23,9",
+			"tipo": "barril",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "22,12",
+			"tipo": "mesa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "24,12",
+			"tipo": "mesa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "6,13",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "6,14",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "6,15",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "6,16",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "6,17",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "7,13",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "7,17",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "8,13",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "8,17",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "9,17",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "10,13",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "10,17",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "11,13",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "11,14",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "11,15",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "11,16",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "11,17",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "7,16",
+			"tipo": "bau",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "10,14",
+			"tipo": "mesa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "21,15",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "21,16",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "21,17",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "21,19",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "21,20",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "21,21",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "21,22",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "22,15",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "22,22",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "23,15",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "23,22",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "24,15",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "24,22",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "25,15",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "25,22",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "26,15",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "26,22",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "27,15",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "27,16",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "27,17",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "27,18",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "27,19",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "27,20",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "27,21",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "27,22",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "22,16",
+			"tipo": "caixa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "23,16",
+			"tipo": "caixa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "26,16",
+			"tipo": "caixa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "26,21",
+			"tipo": "caixa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "22,21",
+			"tipo": "caixa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "24,21",
+			"tipo": "saco",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "21,18",
+			"tipo": "porta",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "8,7",
+			"tipo": "npc",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "13,13",
+			"tipo": "npc",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "23,10",
+			"tipo": "npc",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "15,7",
+			"tipo": "npc",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "19,16",
+			"tipo": "npc",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "6,20",
+			"tipo": "npc",
+			"colisao": true,
+			"visao": "padrao"
+		}
+	],
+	"luzes": [
+		{
+			"pos": "23,11",
+			"claro": 2,
+			"penumbra": 4,
+			"nome": "lareira"
+		}
+	],
+	"inicio": [
+		"1,13",
+		"2,13",
+		"1,14",
+		"2,14"
+	],
+	"inimigos": [
+		{
+			"id": "guarda_posto1",
+			"preset": "guarda_corrupto",
+			"pos": "27,4",
+			"grupo": "guarda_posto",
+			"alerta": false,
+			"vigia": 1,
+			"dormindo": false,
+			"alvo": false,
+			"saque": [],
+			"proprios": {
+				"ativo": false
+			},
+			"nome": "Guarda de Orsk"
+		},
+		{
+			"id": "guarda_posto2",
+			"preset": "guarda_corrupto",
+			"pos": "27,6",
+			"grupo": "guarda_posto",
+			"alerta": false,
+			"vigia": 1,
+			"dormindo": false,
+			"alvo": false,
+			"saque": [],
+			"proprios": {
+				"ativo": false
+			},
+			"nome": "Guarda de Orsk"
+		},
+		{
+			"id": "orsk",
+			"preset": "guarda_corrupto",
+			"pos": "25,18",
+			"grupo": "armazem",
+			"alerta": false,
+			"vigia": 4,
+			"dormindo": false,
+			"alvo": true,
+			"saque": [
+				{
+					"tipo": "ouro",
+					"valor": 40
+				},
+				{
+					"tipo": "item",
+					"item": "pocao_de_cura_pequena",
+					"qtd": 1
+				}
+			],
+			"proprios": {
+				"ativo": false
+			},
+			"patamar": "elite_escoltado",
+			"papel": "neutro",
+			"nome": "Capitão Orsk"
+		},
+		{
+			"id": "cultista1",
+			"preset": "cultista",
+			"pos": "24,17",
+			"grupo": "armazem",
+			"alerta": false,
+			"vigia": 4,
+			"dormindo": false,
+			"alvo": false,
+			"saque": [
+				{
+					"tipo": "item",
+					"item": "antidoto",
+					"qtd": 1
+				}
+			],
+			"proprios": {
+				"ativo": false
+			}
+		},
+		{
+			"id": "cultista2",
+			"preset": "cultista",
+			"pos": "24,20",
+			"grupo": "armazem",
+			"alerta": false,
+			"vigia": 4,
+			"dormindo": false,
+			"alvo": false,
+			"saque": [],
+			"proprios": {
+				"ativo": false
+			}
+		},
+		{
+			"id": "rato1",
+			"preset": "rato_gigante",
+			"pos": "23,19",
+			"grupo": "armazem",
+			"alerta": false,
+			"vigia": 4,
+			"dormindo": false,
+			"alvo": false,
+			"saque": [],
+			"proprios": {
+				"ativo": false
+			}
+		},
+		{
+			"id": "rato2",
+			"preset": "rato_gigante",
+			"pos": "26,19",
+			"grupo": "armazem",
+			"alerta": false,
+			"vigia": 4,
+			"dormindo": false,
+			"alvo": false,
+			"saque": [],
+			"proprios": {
+				"ativo": false
+			}
+		}
+	],
+	"grupos": {
+		"guarda_posto": {
+			"titulo": "Guardas de Orsk",
+			"texto": "\"Ei! Quem mexeu no posto do capitão?\"",
+			"alerta": true
+		},
+		"armazem": {
+			"titulo": "O Círculo Rubro",
+			"texto": "Velas vermelhas num círculo de giz. O capitão Orsk tira o elmo da guarda e pega uma maça.",
+			"alerta": true
+		}
+	},
+	"areas": [
+		{
+			"id": "chegada",
+			"nome": "Entrada da cidade",
+			"tipo": "fala",
+			"celulas": [
+				"1,12",
+				"2,12",
+				"3,13",
+				"3,14"
+			],
+			"titulo": "Vau-Cinzento",
+			"texto": "Janelas fechadas em pleno dia. Uma senhora tira o balde do poço, olha para a água e desiste. O cheiro do rio é forte, mas tem outra coisa: algo doce, de flor.",
+			"parar": true,
+			"procurar": false,
+			"efeitos": [],
+			"teste": {
+				"somar": [
+					"percepcao"
+				],
+				"nivel": "medio"
+			},
+			"resultados": {
+				"sucesso": {
+					"texto": "",
+					"efeitos": []
+				},
+				"falha": {
+					"texto": "",
+					"efeitos": []
+				}
+			},
+			"armadilha": {
+				"dano": 4,
+				"ficha": "",
+				"achar": "medio",
+				"evitar": "medio",
+				"desarmar": "medio",
+				"texto_disparo": "O mecanismo dispara!"
+			}
+		}
+	],
+	"interacoes": [
+		{
+			"id": "poco_praca",
+			"nome": "Poço da praça",
+			"pos": "14,11",
+			"alcance": 1,
+			"texto": "A água parece limpa. Na corda do balde, uma mancha roxa seca.",
+			"oculta": false,
+			"opcoes": [
+				{
+					"id": "examinar",
+					"texto": "Examinar a corda e a água (Investigação + Raciocínio)",
+					"custo": "padrao",
+					"uma_vez": false,
+					"sem_inimigos": false,
+					"requer_item": "",
+					"requer_classe": [],
+					"requer_pistas": 0,
+					"teste": {
+						"ativo": true,
+						"somar": [
+							"Investigação",
+							"raciocinio"
+						],
+						"nivel": "facil"
+					},
+					"resultados": {
+						"feito": {
+							"texto": "",
+							"efeitos": []
+						},
+						"sucesso": {
+							"texto": "Na corda há resto de pétalas moídas: beladona, e muita. Alguém jogou um saco inteiro aqui, de noite, puxando pela corda.",
+							"efeitos": [
+								{
+									"tipo": "pista",
+									"nome": "Beladona no poço",
+									"texto": "O poço foi envenenado de propósito com beladona moída."
+								}
+							]
+						},
+						"falha": {
+							"texto": "Só uma mancha roxa. Pode ser qualquer coisa.",
+							"efeitos": []
+						}
+					}
+				},
+				{
+					"id": "provar",
+					"texto": "Reconhecer o veneno pelo cheiro (Medicina + Sabedoria)",
+					"custo": "padrao",
+					"uma_vez": true,
+					"sem_inimigos": false,
+					"requer_item": "",
+					"requer_classe": [],
+					"requer_pistas": 0,
+					"teste": {
+						"ativo": true,
+						"somar": [
+							"Medicina",
+							"sabedoria"
+						],
+						"nivel": "medio"
+					},
+					"resultados": {
+						"feito": {
+							"texto": "",
+							"efeitos": []
+						},
+						"sucesso": {
+							"texto": "Doce e amargo ao mesmo tempo: beladona. Não é febre do rio. Foi gente.",
+							"efeitos": [
+								{
+									"tipo": "pista",
+									"nome": "Beladona no poço",
+									"texto": "O poço foi envenenado de propósito com beladona moída."
+								}
+							]
+						},
+						"falha": {
+							"texto": "O cheiro sobe à cabeça. Você se afasta tonto.",
+							"efeitos": [
+								{
+									"tipo": "ficha",
+									"ficha": "Penalidade"
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "boticario",
+			"nome": "Boticário Faro",
+			"pos": "8,7",
+			"alcance": 1,
+			"texto": "Um senhor magro que não para de arrumar frascos. Ele sua frio quando vocês entram.",
+			"oculta": false,
+			"opcoes": [
+				{
+					"id": "ler",
+					"texto": "Perceber o que ele esconde (Intuição + Percepção)",
+					"custo": "padrao",
+					"uma_vez": false,
+					"sem_inimigos": false,
+					"requer_item": "",
+					"requer_classe": [],
+					"requer_pistas": 0,
+					"teste": {
+						"ativo": true,
+						"somar": [
+							"Intuição",
+							"percepcao"
+						],
+						"nivel": "medio"
+					},
+					"resultados": {
+						"feito": {
+							"texto": "",
+							"efeitos": []
+						},
+						"sucesso": {
+							"texto": "Ele não é culpado: está com medo. \"Vendi beladona para o capitão da guarda, um saco inteiro. Disse que era para ratos. Se ele souber que eu falei...\"",
+							"efeitos": [
+								{
+									"tipo": "pista",
+									"nome": "Venda ao capitão",
+									"texto": "O boticário vendeu um saco de beladona ao capitão Orsk."
+								}
+							]
+						},
+						"falha": {
+							"texto": "Ele jura que não sabe de nada e pede que vocês saiam.",
+							"efeitos": []
+						}
+					}
+				},
+				{
+					"id": "pressionar",
+					"texto": "Pressionar com ameaças (Intimidação + Força)",
+					"custo": "padrao",
+					"uma_vez": true,
+					"sem_inimigos": false,
+					"requer_item": "",
+					"requer_classe": [],
+					"requer_pistas": 0,
+					"teste": {
+						"ativo": true,
+						"somar": [
+							"Intimidação",
+							"forca"
+						],
+						"nivel": "facil"
+					},
+					"resultados": {
+						"feito": {
+							"texto": "",
+							"efeitos": []
+						},
+						"sucesso": {
+							"texto": "\"Foi o capitão! O capitão Orsk comprou a beladona!\" Ele chora. Lá fora, alguém viu a cena.",
+							"efeitos": [
+								{
+									"tipo": "pista",
+									"nome": "Venda ao capitão",
+									"texto": "O boticário vendeu um saco de beladona ao capitão Orsk."
+								}
+							]
+						},
+						"falha": {
+							"texto": "Ele se tranca nos fundos. A notícia de que a guilda está ameaçando gente corre a praça.",
+							"efeitos": []
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "viuva",
+			"nome": "Viúva Marta",
+			"pos": "13,13",
+			"alcance": 1,
+			"texto": "Ela perdeu o marido para o poço. Está sentada na borda da praça, sem chorar.",
+			"oculta": false,
+			"opcoes": [
+				{
+					"id": "consolar",
+					"texto": "Consolar e perguntar com calma (Acalmar + Diplomacia)",
+					"custo": "padrao",
+					"uma_vez": false,
+					"sem_inimigos": false,
+					"requer_item": "",
+					"requer_classe": [],
+					"requer_pistas": 0,
+					"teste": {
+						"ativo": true,
+						"somar": [
+							"Acalmar",
+							"diplomacia"
+						],
+						"nivel": "facil"
+					},
+					"resultados": {
+						"feito": {
+							"texto": "",
+							"efeitos": []
+						},
+						"sucesso": {
+							"texto": "\"Na noite antes, eu vi um homem no poço. Capa da guarda, botas sujas de barro vermelho. Barro do cais, do lado dos armazéns.\"",
+							"efeitos": [
+								{
+									"tipo": "pista",
+									"nome": "Botas de barro vermelho",
+									"texto": "Um guarda com botas sujas do barro vermelho do cais esteve no poço à noite."
+								}
+							]
+						},
+						"falha": {
+							"texto": "Ela olha através de vocês e não diz nada.",
+							"efeitos": []
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "taverneiro",
+			"nome": "Taverneiro Bruno",
+			"pos": "23,10",
+			"alcance": 1,
+			"texto": "Um homem enorme que limpa o mesmo copo há uma hora.",
+			"oculta": false,
+			"opcoes": [
+				{
+					"id": "jogar",
+					"texto": "Apostar nos dados com ele (Jogatina + Raciocínio)",
+					"custo": "padrao",
+					"uma_vez": false,
+					"sem_inimigos": false,
+					"requer_item": "",
+					"requer_classe": [],
+					"requer_pistas": 0,
+					"teste": {
+						"ativo": true,
+						"somar": [
+							"Jogatina",
+							"raciocinio"
+						],
+						"nivel": "medio"
+					},
+					"resultados": {
+						"feito": {
+							"texto": "",
+							"efeitos": []
+						},
+						"sucesso": {
+							"texto": "Você ganha, e ele ri e fala: \"O capitão Orsk anda pagando rodada com moeda nova, do tipo que nem a prefeitura tem. Diz que é herança.\"",
+							"efeitos": [
+								{
+									"tipo": "pista",
+									"nome": "Moedas novas",
+									"texto": "O capitão Orsk anda gastando moedas novas de origem desconhecida."
+								},
+								{
+									"tipo": "ouro",
+									"valor": 5
+								}
+							]
+						},
+						"falha": {
+							"texto": "Você perde 5 pratas e a paciência dele.",
+							"efeitos": [
+								{
+									"tipo": "ouro",
+									"valor": -5
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": "comprar",
+					"texto": "Pagar uma rodada para a mesa (Negociação + Diplomacia)",
+					"custo": "padrao",
+					"uma_vez": true,
+					"sem_inimigos": false,
+					"requer_item": "",
+					"requer_classe": [],
+					"requer_pistas": 0,
+					"teste": {
+						"ativo": true,
+						"somar": [
+							"Negociação",
+							"diplomacia"
+						],
+						"nivel": "facil"
+					},
+					"resultados": {
+						"feito": {
+							"texto": "",
+							"efeitos": []
+						},
+						"sucesso": {
+							"texto": "Os bêbados falam: o capitão vive no armazém do cais, de noite. \"Coisa de contrabando\", dizem.",
+							"efeitos": [
+								{
+									"tipo": "pista",
+									"nome": "Armazém do cais",
+									"texto": "O capitão frequenta o armazém do cais à noite."
+								}
+							]
+						},
+						"falha": {
+							"texto": "Ninguém fala nada útil, mas todos bebem.",
+							"efeitos": []
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "lareira",
+			"nome": "Lareira da taverna",
+			"pos": "24,11",
+			"alcance": 1,
+			"texto": "Um canto quente e quieto.",
+			"oculta": false,
+			"opcoes": [
+				{
+					"id": "descansar",
+					"texto": "Descanso curto do grupo (o turno inteiro)",
+					"custo": "turno",
+					"uma_vez": true,
+					"sem_inimigos": true,
+					"requer_item": "",
+					"requer_classe": [],
+					"requer_pistas": 0,
+					"teste": {
+						"ativo": false,
+						"somar": [
+							"percepcao"
+						],
+						"nivel": "medio"
+					},
+					"resultados": {
+						"feito": {
+							"texto": "O grupo recupera o fôlego. É um bom lugar para salvar o jogo.",
+							"efeitos": [
+								{
+									"tipo": "descanso_curto"
+								}
+							]
+						},
+						"sucesso": {
+							"texto": "",
+							"efeitos": []
+						},
+						"falha": {
+							"texto": "",
+							"efeitos": []
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "bau_guarda",
+			"nome": "Baú do posto da guarda",
+			"pos": "7,16",
+			"alcance": 1,
+			"texto": "Um baú trancado embaixo da mesa do capitão. O posto está vazio: a guarda está no cais.",
+			"oculta": false,
+			"opcoes": [
+				{
+					"id": "abrir",
+					"texto": "Abrir a fechadura (Ladinagem + Destreza)",
+					"custo": "padrao",
+					"uma_vez": false,
+					"sem_inimigos": false,
+					"requer_item": "",
+					"requer_classe": [],
+					"requer_pistas": 0,
+					"teste": {
+						"ativo": true,
+						"somar": [
+							"Ladinagem",
+							"destreza"
+						],
+						"nivel": "medio"
+					},
+					"resultados": {
+						"feito": {
+							"texto": "",
+							"efeitos": []
+						},
+						"sucesso": {
+							"texto": "Dentro: 30 pratas novas e um recibo dobrado com o selo de um círculo vermelho: \"Pelo vau, quando estiver vazio.\"",
+							"efeitos": [
+								{
+									"tipo": "pista",
+									"nome": "Recibo do Círculo Rubro",
+									"texto": "Alguém paga o capitão para esvaziar a cidade."
+								},
+								{
+									"tipo": "ouro",
+									"valor": 30
+								},
+								{
+									"tipo": "desativar"
+								}
+							]
+						},
+						"falha": {
+							"texto": "A gazua quebra dentro da fechadura com um estalo alto.",
+							"efeitos": [
+								{
+									"tipo": "alertar",
+									"grupo": "guarda_posto",
+									"texto": "Os guardas lá fora ouvem o barulho!"
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": "forcar",
+					"texto": "Arrombar com o pé de cabra (Atletismo + Força)",
+					"custo": "padrao",
+					"uma_vez": true,
+					"sem_inimigos": false,
+					"requer_item": "pe_de_cabra",
+					"requer_classe": [],
+					"requer_pistas": 0,
+					"teste": {
+						"ativo": true,
+						"somar": [
+							"Atletismo",
+							"forca"
+						],
+						"nivel": "medio"
+					},
+					"resultados": {
+						"feito": {
+							"texto": "",
+							"efeitos": []
+						},
+						"sucesso": {
+							"texto": "A tampa salta. O recibo com o círculo vermelho está lá dentro, com as moedas.",
+							"efeitos": [
+								{
+									"tipo": "pista",
+									"nome": "Recibo do Círculo Rubro",
+									"texto": "Alguém paga o capitão para esvaziar a cidade."
+								},
+								{
+									"tipo": "ouro",
+									"valor": 30
+								},
+								{
+									"tipo": "desativar"
+								}
+							]
+						},
+						"falha": {
+							"texto": "O barulho chama os guardas!",
+							"efeitos": [
+								{
+									"tipo": "alertar",
+									"grupo": "guarda_posto",
+									"texto": "Os guardas lá fora ouvem o barulho!"
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "porta_armazem",
+			"nome": "Porta do armazém",
+			"pos": "21,18",
+			"alcance": 1,
+			"texto": "Porta grossa, trancada por dentro. Há barro vermelho na soleira e vozes lá dentro.",
+			"oculta": false,
+			"opcoes": [
+				{
+					"id": "acusar",
+					"texto": "Juntar as pistas e entrar com a guarda da cidade (precisa de 3 pistas)",
+					"custo": "padrao",
+					"uma_vez": true,
+					"sem_inimigos": false,
+					"requer_item": "",
+					"requer_classe": [],
+					"requer_pistas": 3,
+					"teste": {
+						"ativo": false,
+						"somar": [
+							"percepcao"
+						],
+						"nivel": "medio"
+					},
+					"resultados": {
+						"feito": {
+							"texto": "Com as provas, os guardas honestos derrubam a porta junto com vocês. O capitão Orsk e os cultistas do Círculo Rubro sacam as armas.",
+							"efeitos": [
+								{
+									"tipo": "abrir_caminho",
+									"celulas": [
+										"21,18"
+									],
+									"texto": ""
+								},
+								{
+									"tipo": "alertar",
+									"grupo": "armazem",
+									"texto": "\"Matem todos! O culto paga em dobro!\""
+								}
+							]
+						},
+						"sucesso": {
+							"texto": "",
+							"efeitos": []
+						},
+						"falha": {
+							"texto": "",
+							"efeitos": []
+						}
+					}
+				},
+				{
+					"id": "arrombar",
+					"texto": "Arrombar sem provas (Atletismo + Força)",
+					"custo": "padrao",
+					"uma_vez": false,
+					"sem_inimigos": false,
+					"requer_item": "",
+					"requer_classe": [],
+					"requer_pistas": 0,
+					"teste": {
+						"ativo": true,
+						"somar": [
+							"Atletismo",
+							"forca"
+						],
+						"nivel": "dificil"
+					},
+					"resultados": {
+						"feito": {
+							"texto": "",
+							"efeitos": []
+						},
+						"sucesso": {
+							"texto": "A porta cede. Lá dentro, o capitão e os cultistas pegam as armas. Sem provas, vai ser na força.",
+							"efeitos": [
+								{
+									"tipo": "abrir_caminho",
+									"celulas": [
+										"21,18"
+									],
+									"texto": ""
+								},
+								{
+									"tipo": "alertar",
+									"grupo": "armazem",
+									"texto": ""
+								}
+							]
+						},
+						"falha": {
+							"texto": "A porta aguenta, e o ombro reclama.",
+							"efeitos": [
+								{
+									"tipo": "dano",
+									"valor": 2
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "morador",
+			"nome": "Morador assustado",
+			"pos": "15,7",
+			"alcance": 1,
+			"texto": "\"Não bebam do poço! Nem da fonte! Só vinho, se tiverem.\"",
+			"oculta": false,
+			"opcoes": [
+				{
+					"id": "ouvir",
+					"texto": "Ouvir os boatos",
+					"custo": "nenhum",
+					"uma_vez": true,
+					"sem_inimigos": false,
+					"requer_item": "",
+					"requer_classe": [],
+					"requer_pistas": 0,
+					"teste": {
+						"ativo": false,
+						"somar": [
+							"percepcao"
+						],
+						"nivel": "medio"
+					},
+					"resultados": {
+						"feito": {
+							"texto": "\"Dizem que é maldição do rio. Mas o rio sempre esteve aí, e a gente nunca morreu dele.\"",
+							"efeitos": [
+								{
+									"tipo": "lore",
+									"texto": "Os moradores culpam uma maldição do rio."
+								}
+							]
+						},
+						"sucesso": {
+							"texto": "",
+							"efeitos": []
+						},
+						"falha": {
+							"texto": "",
+							"efeitos": []
+						}
+					}
+				}
+			]
+		}
+	],
+	"objetivo": {
+		"tipo": "derrotar_alvos",
+		"texto": "Descubra quem envenenou o poço (3 pistas) e detenha o culpado.",
+		"rodadas": 8,
+		"mensagem_vitoria": "O capitão Orsk cai. No armazém, caixas de beladona e um livro com o selo do Círculo Rubro: a cidade estava sendo esvaziada para o culto comprar as terras do vau."
+	},
+	"campanha": {
+		"no_mural": true,
+		"texto": "Investigação (nível sugerido 1–2). Três mortos em Vau-Cinzento depois de beber do poço. O prefeito suspeita de alguém de dentro. Muita conversa, pouca luta até a hora certa.",
+		"recompensa": 150,
+		"requer": [
+			"fazenda"
+		],
+		"ciclo": 0
+	}
+}

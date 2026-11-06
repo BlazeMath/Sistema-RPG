@@ -134,8 +134,8 @@ func test_ataque_inimigo_espera_a_distribuicao(t) -> void:
 func test_heroi_tem_kit_inicial(t) -> void:
 	var b := _trilha()
 	var u := b.unidade("heroi")
-	for item in Itens.KIT_INICIAL:
-		t.ok(item in u.equipamentos, "kit: " + item)
+	for item in Itens.MOCHILA_INICIAL:
+		t.ok(item in u.equipamentos, "mochila: " + item)
 	t.ok("bandoleira_de_armas" in u.equipamentos, "item de classe do Guerreiro")
 
 
@@ -146,7 +146,7 @@ func test_faixas_do_nado(t) -> void:
 	t.igual(b._faixa(op, 10), "volta", "9 e 10")
 	t.igual(b._faixa(op, 11), "atravessa", "11 a 15")
 	t.igual(b._faixa(op, 22), "folego", "16 ou mais")
-	t.igual(b.descricao_das_faixas(op), "2–8 a correnteza te arrasta · 9–10 não vence a correnteza · 11–15 atravessa · 16+ atravessa e ainda anda", "texto das faixas")
+	t.igual(b.descricao_das_faixas(op), "do pior ao melhor: a correnteza te arrasta · não vence a correnteza · atravessa · atravessa e ainda anda", "0.24: sem números")
 
 
 func test_travessia_e_alcance(t) -> void:
@@ -280,9 +280,10 @@ func test_descanso_curto_na_fogueira(t) -> void:
 		if b.inimigo_perto(o.pos, 0) and Grade.distancia(o.pos, b.interacoes.filter(func(i): return i.get("descanso", false))[0]["pos"]) <= b.RAIO_DESCANSO_SEGURO:
 			o.pos = Vector2i(-50, -50)
 	t.ok(b.heroi_interagir("fogueira", "descansar"), "descansa")
-	t.igual(u.baralho.baralho.size(), antes + 7, "exila 1 e devolve as outras 7")
+	var mao := u.baralho.mao.size()
+	t.igual(u.baralho.baralho.size(), antes + 7 - 1, "exila 1 e devolve as outras 7 (e a ração compra 1 para a mão)")
 	t.ok(not "racao_de_viagem" in u.consumiveis, "comeu a ração")
-	t.igual(u.cartas[0].fadiga, 0, "ração tira fadiga")
+	t.ok(mao > 0, "0.25: a ração dá 1 carta na mão")
 	t.igual(u.acoes_padrao, 0, "gastou o turno inteiro")
 
 

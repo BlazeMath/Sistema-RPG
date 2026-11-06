@@ -41,13 +41,16 @@ var _arma: OptionButton
 var _armadura: OptionButton
 var _escudo: OptionButton
 var _foco: OptionButton
+var _comeca_foco: CheckBox
 var _divindade: OptionButton
 var _arma2: OptionButton
 var _itens_info: Label
 var _escolhas_caixa: VBoxContainer
 var _escolhas_chaves := []
 var _escolhas_temp := {}   # chave -> Array com uma posição por escolha
-var _consumiveis := {}    # id -> SpinBox (quantidade; na fase de teste não há preço)
+var _ocupacao_info: Label
+var _tela_inventario: PanelContainer
+var _inv_corpo: VBoxContainer
 var _cartas_caixa: VBoxContainer
 var _erros: Label
 var _fonte_negrito: Font
@@ -63,9 +66,19 @@ func _ready() -> void:
 	_fonte_negrito = load("res://assets/fontes/DejaVuSans-Bold.ttf")
 	theme = _tema()
 	salvos = Personagem.carregar_todos()
-	ficha = Sessao.ficha_atual().duplicate(true)
 	_montar()
-	_carregar_na_tela()
+	# 0.24: abre editando o herói atual (se ele estiver salvo); senão, um herói novo.
+	# Antes abria uma cópia sem índice, e salvar criava um herói repetido.
+	var atual: Dictionary = Sessao.ficha_atual()
+	indice_salvo = -1
+	for i in salvos.size():
+		if salvos[i]["nome"] == atual.get("nome", ""):
+			indice_salvo = i
+	if indice_salvo >= 0:
+		ficha = salvos[indice_salvo].duplicate(true)
+		_carregar_na_tela()
+	else:
+		_novo()
 
 
 # --- Montagem ---------------------------------------------------------------
@@ -147,21 +160,29 @@ func _montar() -> void:
 	var margem := MarginContainer.new()
 	margem.set_anchors_preset(Control.PRESET_FULL_RECT)
 	for lado in ["left", "right", "top", "bottom"]:
-		margem.add_theme_constant_override("margin_" + lado, 12)
+		margem.add_theme_constant_override("margin_" + lado, 22)
 	add_child(margem)
 	var raiz := VBoxContainer.new()
 	raiz.add_theme_constant_override("separation", 10)
 	margem.add_child(raiz)
 
 	var topo := HBoxContainer.new()
-	var titulo := _label("SISTEMA 21 · Criação de heróis", 22, COR_OURO)
+	var titulo := _label("Criação de heróis", 20, COR_OURO)
 	titulo.add_theme_font_override("font", load("res://assets/fontes/DejaVuSerif-Bold.ttf"))
 	topo.add_child(titulo)
 	var esp := Control.new()
 	esp.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	topo.add_child(esp)
-	topo.add_child(_label("Versão 0.23: vila para explorar, masmorra longa, armadilhas, chefes novos, levantar caídos", 13, COR_SECUNDARIO))
-	topo.add_child(_botao("Voltar ao menu", func(): get_tree().change_scene_to_file("res://ui/main.tscn"), 150))
+	# 0.24: salvar, novo e excluir ficam no alto (embaixo saíam da tela).
+	_erros = _label("", 13, COR_ERRO)
+	_erros.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	_erros.custom_minimum_size = Vector2(200, 0)
+	_erros.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	topo.add_child(_erros)
+	topo.add_child(_botao("Novo herói", _novo, 120))
+	topo.add_child(_botao("Salvar herói", _salvar, 140))
+	topo.add_child(_botao("Excluir", _confirmar_exclusao, 100))
+	topo.add_child(_botao("Voltar ao menu", func(): get_tree().change_scene_to_file("res://ui/main.tscn"), 140))
 	raiz.add_child(topo)
 
 	var colunas := HBoxContainer.new()
@@ -178,13 +199,10 @@ func _montar() -> void:
 	p1.add_child(v1)
 	v1.add_child(_label("Heróis salvos", 15, COR_OURO, true))
 	_lista = ItemList.new()
-	_lista.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	_lista.custom_minimum_size = Vector2(0, 170)
+	_lista.tooltip_text = "Clique num herói para editar. Depois, Salvar herói (no alto)."
 	_lista.item_selected.connect(_ao_escolher_salvo)
 	v1.add_child(_lista)
-	var h_lista := HBoxContainer.new()
-	h_lista.add_child(_botao("Novo", _novo, 110))
-	h_lista.add_child(_botao("Excluir", _excluir, 110))
-	v1.add_child(h_lista)
 	v1.add_child(_label("Grupo (até 4 heróis)", 15, COR_OURO, true))
 	_grupo_lista = VBoxContainer.new()
 	_grupo_lista.add_theme_constant_override("separation", 2)
@@ -194,12 +212,15 @@ func _montar() -> void:
 	_grupo_info.custom_minimum_size = Vector2(220, 0)
 	v1.add_child(_grupo_info)
 	v1.add_child(_label("Testar este herói sozinho:", 13, COR_SECUNDARIO, true))
-	v1.add_child(_botao("Exploração: a trilha do riacho", func(): _jogar("trilha")))
-	v1.add_child(_botao("X1 contra o Chefe Goblin", func(): _jogar("x1")))
-	v1.add_child(_botao("Arena contra 3 goblins", func(): _jogar("arena")))
-	v1.add_child(_botao("Missão: a fazenda Vale Seco", func(): _jogar("fazenda")))
-	v1.add_child(_botao("Missão: a cripta (escura)", func(): _jogar("masmorra")))
-	v1.add_child(_botao("Missão: o pântano (noite)", func(): _jogar("pantano")))
+	var modos := [["arena", "Arena contra 3 goblins"], ["x1", "X1 contra o Chefe Goblin"], ["trilha", "A trilha do riacho"],
+		["tutorial", "Treino (tutorial)"], ["fazenda", "A fazenda Vale Seco"], ["masmorra", "A cripta (escura)"], ["pantano", "O pântano (noite)"],
+		["catacumbas", "As catacumbas (longa)"]]
+	var ob_modo := OptionButton.new()
+	for m in modos:
+		ob_modo.add_item(m[1])
+	ob_modo.focus_mode = Control.FOCUS_NONE
+	v1.add_child(ob_modo)
+	v1.add_child(_botao("Testar", func(): _jogar(modos[maxi(ob_modo.selected, 0)][0])))
 
 	# Coluna 2: ficha
 	var p2 := _painel()
@@ -285,49 +306,39 @@ func _montar() -> void:
 	v2.add_child(_pericias_info)
 	v2.add_child(_botao("Escolher perícias", _abrir_pericias, 200))
 
-	v2.add_child(_label("Itens comuns", 13, COR_OURO, true))
+	v2.add_child(_label("Equipamento (na criação: itens comuns; os comprados também aparecem)", 13, COR_OURO, true))
 	var gi := GridContainer.new()
 	gi.columns = 2
 	gi.add_theme_constant_override("h_separation", 10)
 	gi.add_child(_label("Arma"))
 	_arma = OptionButton.new()
-	for id in Itens.ARMAS:
-		var a: Dictionary = Itens.ARMAS[id]
-		_arma.add_item("%s (%d + %s)" % [a["nome"], a["dano"], "Des" if Itens.atributo_da_arma(a) == "destreza" else "For"])
-		_arma.set_item_metadata(_arma.item_count - 1, id)
 	_arma.item_selected.connect(func(i): ficha["arma"] = _arma.get_item_metadata(i); _validar())
 	gi.add_child(_arma)
 	gi.add_child(_label("Segunda arma"))
 	_arma2 = OptionButton.new()
-	_arma2.add_item("Nenhuma")
-	_arma2.set_item_metadata(0, "nenhuma")
-	for id in Itens.ARMAS:
-		var a2: Dictionary = Itens.ARMAS[id]
-		_arma2.add_item("%s (%d + %s)" % [a2["nome"], a2["dano"], "Des" if Itens.atributo_da_arma(a2) == "destreza" else "For"])
-		_arma2.set_item_metadata(_arma2.item_count - 1, id)
-	_arma2.tooltip_text = "Guardada. Na batalha, \"Trocar arma\" custa uma ação (duas se uma delas for grande)."
+	_arma2.tooltip_text = "Guardada. Na batalha, trocar uma arma pequena ou média custa 1 Movimento; com arma grande, 2 ações."
 	_arma2.item_selected.connect(func(i): ficha["arma2"] = _arma2.get_item_metadata(i); _validar())
 	gi.add_child(_arma2)
 	gi.add_child(_label("Armadura"))
 	_armadura = OptionButton.new()
-	for id in Itens.ARMADURAS:
-		_armadura.add_item(Itens.ARMADURAS[id]["nome"])
-		_armadura.set_item_metadata(_armadura.item_count - 1, id)
-		_armadura.set_item_tooltip(_armadura.item_count - 1, Itens.ARMADURAS[id]["texto"])
 	_armadura.item_selected.connect(func(i): ficha["armadura"] = _armadura.get_item_metadata(i); _validar())
 	gi.add_child(_armadura)
 	gi.add_child(_label("Escudo"))
 	_escudo = OptionButton.new()
-	for id in Itens.ESCUDOS:
-		var e: Dictionary = Itens.ESCUDOS[id]
-		_escudo.add_item(e["nome"] + ("" if e["vida"] == 0 else " (%d de vida, resistência %d)" % [e["vida"], e["resistencia"]]))
-		_escudo.set_item_metadata(_escudo.item_count - 1, id)
 	_escudo.item_selected.connect(func(i): ficha["escudo"] = _escudo.get_item_metadata(i); _validar())
 	gi.add_child(_escudo)
 	gi.add_child(_label("Foco mágico"))
 	_foco = OptionButton.new()
 	_foco.item_selected.connect(func(i): ficha["foco"] = _foco.get_item_metadata(i); _validar())
 	gi.add_child(_foco)
+	gi.add_child(_label("Na mão no começo"))
+	_comeca_foco = CheckBox.new()
+	_comeca_foco.text = "Segurando o foco (senão, a arma)"
+	_comeca_foco.tooltip_text = "Arma e foco ocupam a mesma mão: troca-se entre eles como troca de arma. Com a arma na mão, não dá para conjurar ataques mágicos."
+	_comeca_foco.toggled.connect(func(on):
+		if not _montando:
+			ficha["comeca_com_foco"] = on)
+	gi.add_child(_comeca_foco)
 	gi.add_child(_label("Divindade (Clérigo)"))
 	_divindade = OptionButton.new()
 	for id in Devocoes.DIVINDADES:
@@ -343,32 +354,15 @@ func _montar() -> void:
 	_itens_info.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	_itens_info.custom_minimum_size = Vector2(400, 0)
 	v2.add_child(_itens_info)
-	var gc := GridContainer.new()
-	gc.columns = 4
-	for id in Itens.CONSUMIVEIS:
-		var c: Dictionary = Itens.CONSUMIVEIS[id]
-		var l := _label(c["nome"] + ("" if c["programado"] else " *"), 12)
-		l.tooltip_text = c["texto"] + ("" if c["programado"] else "\n* ainda não programado: não tem efeito no jogo")
-		l.mouse_filter = Control.MOUSE_FILTER_PASS
-		var sb := SpinBox.new()
-		sb.min_value = 0
-		sb.max_value = 20
-		sb.custom_minimum_size = Vector2(64, 0)
-		sb.tooltip_text = l.tooltip_text
-		sb.value_changed.connect(func(v): _definir_consumivel(id, int(v)))
-		_consumiveis[id] = sb
-		gc.add_child(l)
-		gc.add_child(sb)
-	v2.add_child(gc)
 	_escolhas_caixa = VBoxContainer.new()
 	v2.add_child(_escolhas_caixa)
-	var kit := Label.new()
-	kit.text = "Todo herói leva o Kit Inicial de Aventura (corda, pé de cabra, pederneira, kit de reparos, kit de acampamento, lanterna, vara de 3 m, espelho) e o item básico da classe."
-	kit.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-	kit.custom_minimum_size = Vector2(300, 0)
-	kit.add_theme_font_size_override("font_size", 11)
-	kit.add_theme_color_override("font_color", Color("9a95a3"))
-	v2.add_child(kit)
+	# Inventário por espaços (0.25)
+	v2.add_child(_label("Inventário por espaços", 13, COR_OURO, true))
+	_ocupacao_info = _label("", 12, COR_SECUNDARIO)
+	_ocupacao_info.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	_ocupacao_info.custom_minimum_size = Vector2(400, 0)
+	v2.add_child(_ocupacao_info)
+	v2.add_child(_botao("Consumíveis, mochila, roupas e livros", _abrir_inventario, 320))
 
 	# Coluna 3: cartas
 	var p3 := _painel()
@@ -388,14 +382,6 @@ func _montar() -> void:
 	_cartas_caixa.add_theme_constant_override("separation", 2)
 	rolagem.add_child(_cartas_caixa)
 
-	var baixo := HBoxContainer.new()
-	baixo.add_theme_constant_override("separation", 12)
-	_erros = _label("", 13, COR_ERRO)
-	_erros.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-	_erros.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-	baixo.add_child(_erros)
-	baixo.add_child(_botao("Salvar herói", _salvar, 180))
-	raiz.add_child(baixo)
 
 
 func _montar_cartas() -> void:
@@ -407,6 +393,13 @@ func _montar_cartas() -> void:
 			var cb := CheckBox.new()
 			var prog := Efeitos.heroi_programado(h)
 			var info: Dictionary = Efeitos.HEROIS.get(Catalogo.slug(h["nome"]), {})
+			if Efeitos.nota_heroi(h) != "":
+				info = info.merged({"nota": Efeitos.nota_heroi(h)})
+			if h.has("pacto"):
+				var pc: Dictionary = Catalogo.pactos().get(h["pacto"], {})
+				info["nota"] = "%s · %s\nPACTO: %s (%s). Começo da cena: 2 × nível fichas de Pacto.\nCumprimento: %s\nCobrança: %s\nHabilidade inicial (de graça): %s\nNo jogo: %s" % [
+					pc.get("nome", ""), pc.get("patrono", ""), pc.get("nome", ""), " · ".join(PackedStringArray(pc.get("tags", []))), pc.get("cumprimento", ""),
+					pc.get("cobranca", ""), " / ".join(PackedStringArray(Catalogo.habilidade(pc.get("inicial", "")).get("lados", []).map(func(l): return l["nome"]))), info.get("nota", "")]
 			cb.text = "%s · %s%s" % [ent, h["nome"], "" if prog else "  (não programada)"]
 			if info.get("parcial", false):
 				cb.text += "  (parcial)"
@@ -475,14 +468,14 @@ func _carregar_na_tela() -> void:
 	if not ficha.has("pericias"):
 		ficha["pericias"] = {}
 	_atualizar_pericias()
+	Personagem.migrar_inventario(ficha)
+	_montar_equipamento()
 	_selecionar_meta(_arma, ficha["arma"])
 	_selecionar_meta(_arma2, ficha.get("arma2", "nenhuma"))
 	_selecionar_meta(_armadura, ficha["armadura"])
 	_selecionar_meta(_escudo, ficha["escudo"])
 	_montar_focos()
 	_escolhas_chaves = ["?"]
-	for id in _consumiveis:
-		_consumiveis[id].value = ficha["consumiveis"].count(id)
 	_montar_cartas()
 	_montando = false
 	_validar()
@@ -492,8 +485,10 @@ func _carregar_na_tela() -> void:
 func _mudar_origem(chave: String, valor: String) -> void:
 	if _montando:
 		return
+	var antiga: String = ficha.get(chave, "")
 	ficha[chave] = valor
 	if chave == "classe":
+		Personagem.trocar_item_de_classe(ficha, antiga)
 		var tipo: String = Itens.TIPO_DE_FOCO.get(valor, "")
 		if Itens.FOCOS.get(ficha.get("foco", "nenhum"), {}).get("tipo", "") != tipo:
 			ficha["foco"] = Itens.FOCO_DA_CLASSE.get(valor, "nenhum")
@@ -536,13 +531,216 @@ func _alternar_lista(chave: String, id: String, on: bool, maximo: int) -> void:
 	_validar()
 
 
-func _definir_consumivel(id: String, qtd: int) -> void:
+func _definir_quantidade(chave: String, id: String, qtd: int) -> void:
 	if _montando:
 		return
-	while ficha["consumiveis"].count(id) > qtd:
-		ficha["consumiveis"].erase(id)
-	while ficha["consumiveis"].count(id) < qtd:
-		ficha["consumiveis"].append(id)
+	var lista: Array = ficha[chave]
+	while lista.count(id) > qtd:
+		lista.erase(id)
+	while lista.count(id) < qtd:
+		lista.append(id)
+	_validar()
+
+
+# --- Equipamento e inventário (0.25) -------------------------------------------
+
+## Na criação: itens comuns, focos do tipo da classe, grimórios básicos e textos sagrados.
+## Itens comprados na vila (já na ficha) também aparecem, para a ficha não perdê-los.
+func _na_criacao(id: String, dados: Dictionary) -> bool:
+	if _tem_na_ficha(id) or id == "desarmado":
+		return true
+	if dados.get("raridade", "") == "COMUM" and dados.get("loja", true):
+		return true
+	return dados.get("categoria", "") in ["GRIMÓRIO BÁSICO", "TEXTO SAGRADO"]
+
+
+func _tem_na_ficha(id: String) -> bool:
+	for chave in ["arma", "arma2", "armadura", "escudo", "foco", "costas", "cabeca", "pes"]:
+		if str(ficha.get(chave, "")) == id:
+			return true
+	for chave in ["consumiveis", "mochila", "acessorios", "grimorios"]:
+		if id in ficha.get(chave, []):
+			return true
+	return false
+
+
+func _montar_equipamento() -> void:
+	_arma.clear()
+	_arma2.clear()
+	_arma2.add_item("Nenhuma")
+	_arma2.set_item_metadata(0, "nenhuma")
+	for id in Itens.ARMAS:
+		var a: Dictionary = Itens.ARMAS[id]
+		if not _na_criacao(id, a):
+			continue
+		var at := Itens.atributo_da_arma(a)
+		var rotulo := "%s (%d%s)" % [a["nome"], a["dano"], "" if at == "nenhum" else " + " + ("Des" if at == "destreza" else "For")]
+		for ob in [_arma, _arma2]:
+			ob.add_item(rotulo)
+			ob.set_item_metadata(ob.item_count - 1, id)
+			ob.set_item_tooltip(ob.item_count - 1, Itens.descricao_arma(a))
+	_armadura.clear()
+	for id in Itens.ARMADURAS:
+		var ar: Dictionary = Itens.ARMADURAS[id]
+		if id != "nenhuma" and not _na_criacao(id, ar):
+			continue
+		_armadura.add_item(ar["nome"] + ("" if id == "nenhuma" else " (%d de vida, res. %d)" % [ar["vida"], ar["resistencia"]]))
+		_armadura.set_item_metadata(_armadura.item_count - 1, id)
+		_armadura.set_item_tooltip(_armadura.item_count - 1, ar["texto"])
+	_escudo.clear()
+	for id in Itens.ESCUDOS:
+		var e: Dictionary = Itens.ESCUDOS[id]
+		if id != "nenhum" and not _na_criacao(id, e):
+			continue
+		_escudo.add_item(e["nome"] + ("" if e["vida"] == 0 else " (%d de vida, res. %d)" % [e["vida"], e["resistencia"]]))
+		_escudo.set_item_metadata(_escudo.item_count - 1, id)
+		_escudo.set_item_tooltip(_escudo.item_count - 1, str(e.get("texto", "")))
+
+
+var _inv_titulo: Label
+
+
+func _abrir_inventario() -> void:
+	if _tela_inventario == null:
+		_tela_inventario = PanelContainer.new()
+		_tela_inventario.add_theme_stylebox_override("panel", _caixa(Color(0.07, 0.07, 0.09, 0.98), COR_OURO, 10, 18))
+		_tela_inventario.set_anchors_preset(Control.PRESET_FULL_RECT)
+		_tela_inventario.offset_left = 40
+		_tela_inventario.offset_right = -40
+		_tela_inventario.offset_top = 30
+		_tela_inventario.offset_bottom = -30
+		add_child(_tela_inventario)
+		var v := VBoxContainer.new()
+		v.add_theme_constant_override("separation", 10)
+		_tela_inventario.add_child(v)
+		var cab := HBoxContainer.new()
+		_inv_titulo = _label("Inventário", 17, COR_OURO, true)
+		_inv_titulo.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+		_inv_titulo.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+		cab.add_child(_inv_titulo)
+		cab.add_child(_botao("Concluir", func(): _tela_inventario.visible = false; _validar(), 140))
+		v.add_child(cab)
+		var expl := _label("Limites: Armadura 1 · Costas 1 · Cabeça 1 · Pés 1 · Acessórios 2 (só 1 amuleto ou colar) · Armamentos e repertórios 4 (armas, escudo, foco e livros) · Consumíveis especiais 6 cargas · Mochila 6 (tochas e rações: 3 por espaço; kits e a vara, 2). Só o que está vestido ou empunhado funciona; livros carregados ficam preparados. Na criação aparecem os itens comuns (e os livros básicos); o resto se compra na vila.", 12, COR_SECUNDARIO)
+		expl.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+		v.add_child(expl)
+		var rol := ScrollContainer.new()
+		rol.size_flags_vertical = Control.SIZE_EXPAND_FILL
+		rol.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
+		v.add_child(rol)
+		_inv_corpo = VBoxContainer.new()
+		_inv_corpo.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+		_inv_corpo.add_theme_constant_override("separation", 6)
+		rol.add_child(_inv_corpo)
+	_montar_inventario()
+	_tela_inventario.visible = true
+	_validar()
+
+
+func _montar_inventario() -> void:
+	for f in _inv_corpo.get_children():
+		f.queue_free()
+	_montando = true
+	var colunas := HBoxContainer.new()
+	colunas.add_theme_constant_override("separation", 26)
+	_inv_corpo.add_child(colunas)
+	# Coluna A: consumíveis especiais e mochila
+	var ca := VBoxContainer.new()
+	ca.custom_minimum_size = Vector2(520, 0)
+	colunas.add_child(ca)
+	ca.add_child(_label("Consumíveis (6 cargas; tochas e rações vão na mochila)", 14, COR_OURO, true))
+	ca.add_child(_grade_quantidades("consumiveis", Itens.CONSUMIVEIS.keys()))
+	ca.add_child(_label("Mochila (6 espaços)", 14, COR_OURO, true))
+	ca.add_child(_grade_quantidades("mochila", Itens.NAO_CONSUMIVEIS.keys().filter(func(i): return Itens.NAO_CONSUMIVEIS[i].get("espaco", "") == "mochila"), 1))
+	# Coluna B: vestir, acessórios e livros
+	var cb := VBoxContainer.new()
+	cb.custom_minimum_size = Vector2(520, 0)
+	colunas.add_child(cb)
+	var gv := GridContainer.new()
+	gv.columns = 2
+	gv.add_theme_constant_override("h_separation", 10)
+	for par in [["costas", "Costas"], ["cabeca", "Cabeça"], ["pes", "Pés"]]:
+		gv.add_child(_label(par[1], 13))
+		var ob := OptionButton.new()
+		ob.focus_mode = Control.FOCUS_NONE
+		ob.add_item("Nada")
+		ob.set_item_metadata(0, "nenhum")
+		var campo: String = par[0]
+		for id in Itens.NAO_CONSUMIVEIS:
+			var d: Dictionary = Itens.NAO_CONSUMIVEIS[id]
+			if d.get("espaco", "") == campo and _na_criacao(id, d):
+				ob.add_item(d["nome"] + ("" if d.get("programado", false) else " *"))
+				ob.set_item_metadata(ob.item_count - 1, id)
+				ob.set_item_tooltip(ob.item_count - 1, str(d.get("texto", "")))
+		_selecionar_meta(ob, str(ficha.get(campo, "nenhum")))
+		ob.item_selected.connect(func(i): ficha[campo] = ob.get_item_metadata(i); _validar())
+		gv.add_child(ob)
+	cb.add_child(_label("Roupas (comuns não há: compre na vila)", 14, COR_OURO, true))
+	cb.add_child(gv)
+	cb.add_child(_label("Acessórios (2; só 1 amuleto ou colar)", 14, COR_OURO, true))
+	for id in Itens.NAO_CONSUMIVEIS:
+		var d2: Dictionary = Itens.NAO_CONSUMIVEIS[id]
+		if d2.get("espaco", "") == "acessorios" and _na_criacao(id, d2):
+			cb.add_child(_caixa_lista("acessorios", id, d2))
+	cb.add_child(_label("Grimórios e textos sagrados (ocupam Armamentos)", 14, COR_OURO, true))
+	for id in Itens.GRIMORIOS:
+		var g: Dictionary = Itens.GRIMORIOS[id]
+		if _na_criacao(id, g):
+			var caixa := _caixa_lista("grimorios", id, g)
+			var motivo := Personagem.motivo_grimorio(ficha, id)
+			if motivo != "" and not id in ficha["grimorios"]:
+				caixa.disabled = true
+				caixa.tooltip_text += "\n\n" + motivo
+			cb.add_child(caixa)
+	cb.add_child(_label("* efeito ainda não programado no jogo", 11, COR_SECUNDARIO))
+	_montando = false
+
+
+func _grade_quantidades(chave: String, ids: Array, maximo := 6) -> GridContainer:
+	var gc := GridContainer.new()
+	gc.columns = 4
+	gc.add_theme_constant_override("h_separation", 8)
+	for id in ids:
+		var d: Dictionary = Itens.item(id)
+		if not _na_criacao(id, d):
+			continue
+		var l := _label(d["nome"] + ("" if d.get("programado", false) else " *"), 12)
+		l.custom_minimum_size = Vector2(170, 0)
+		l.clip_text = true
+		l.tooltip_text = "%s\nOcupa %d (%s)%s" % [d.get("texto", ""), int(d.get("ocupa", 1)), Personagem.NOMES_ESPACOS.get(d.get("espaco", ""), ""),
+			(", até %d por espaço" % int(d["pacote"])) if int(d.get("pacote", 1)) > 1 else ""]
+		l.mouse_filter = Control.MOUSE_FILTER_PASS
+		var sb := SpinBox.new()
+		sb.min_value = 0
+		sb.max_value = maximo if int(d.get("pacote", 1)) <= 1 else 9
+		sb.custom_minimum_size = Vector2(64, 0)
+		sb.tooltip_text = l.tooltip_text
+		var lista_chave := chave
+		if chave == "mochila" or d.get("espaco", "") != "mochila":
+			sb.value = ficha[lista_chave].count(id)
+		else:
+			sb.value = ficha["consumiveis"].count(id)
+		var alvo_lista := "consumiveis" if Itens.CONSUMIVEIS.has(id) else chave
+		sb.value_changed.connect(func(v): _definir_quantidade(alvo_lista, id, int(v)))
+		gc.add_child(l)
+		gc.add_child(sb)
+	return gc
+
+
+func _caixa_lista(chave: String, id: String, d: Dictionary) -> CheckBox:
+	var cb := CheckBox.new()
+	cb.text = d["nome"] + ("" if d.get("programado", true) else " *") + ("  (amuleto)" if d.get("amuleto", false) else "")
+	cb.tooltip_text = str(d.get("texto", ""))
+	cb.focus_mode = Control.FOCUS_NONE
+	cb.button_pressed = id in ficha[chave]
+	cb.toggled.connect(func(on):
+		if _montando:
+			return
+		if on and not id in ficha[chave]:
+			ficha[chave].append(id)
+		elif not on:
+			ficha[chave].erase(id)
+		_validar())
+	return cb
 
 
 func _validar() -> bool:
@@ -564,6 +762,10 @@ func _validar() -> bool:
 		if fo.get("tipo", "") != "":
 			linhas.append("%s: dano %d, limite %d de fadiga. %s" % [fo["nome"], int(fo.get("dano", 0)), int(fo.get("limite", 0)), fo.get("texto", "")])
 		_itens_info.text = "\n".join(linhas)
+	if _ocupacao_info != null:
+		_ocupacao_info.text = Personagem.texto_ocupacao(ficha)
+		if _tela_inventario != null and _tela_inventario.visible:
+			_inv_titulo.text = "Inventário de %s · %s" % [ficha["nome"] if str(ficha["nome"]) != "" else "herói novo", Personagem.texto_ocupacao(ficha)]
 	var usado := Personagem.custo_xp(ficha)
 	_xp_info.text = "  usado pelas cartas: %d de %d" % [usado, ficha["xp"]]
 	var contagem := {0: 0, 1: 0, 2: 0, 3: 0}
@@ -578,7 +780,7 @@ func _validar() -> bool:
 	if Personagem.escolhas_pendentes(ficha) != _escolhas_chaves:
 		_montar_escolhas()
 	var erros := Personagem.validar(ficha)
-	if erros.is_empty() and ficha["classe"] in ["Mago", "Clérigo"] and ficha.get("foco", "nenhum") == "nenhum":
+	if erros.is_empty() and ficha["classe"] in ["Mago", "Clérigo", "Bruxo"] and ficha.get("foco", "nenhum") == "nenhum":
 		erros = ["Sem foco mágico o herói não faz ataques mágicos (escolha varinha, orbe, cajado ou símbolo sagrado)."]
 		_erros.text = erros[0]
 		_erros.add_theme_color_override("font_color", COR_OURO)
@@ -636,9 +838,33 @@ func _novo() -> void:
 	_carregar_na_tela()
 
 
-func _excluir() -> void:
-	if indice_salvo < 0:
+var _dialogo_excluir: ConfirmationDialog
+
+
+func _confirmar_exclusao() -> void:
+	if indice_salvo < 0 or indice_salvo >= salvos.size():
+		_erros.text = "Escolha um herói salvo na lista para excluir."
+		_erros.add_theme_color_override("font_color", COR_ERRO)
 		return
+	if _dialogo_excluir == null:
+		_dialogo_excluir = ConfirmationDialog.new()
+		_dialogo_excluir.ok_button_text = "Excluir"
+		_dialogo_excluir.cancel_button_text = "Cancelar"
+		_dialogo_excluir.confirmed.connect(_excluir)
+		add_child(_dialogo_excluir)
+	_dialogo_excluir.dialog_text = "Excluir %s? Não dá para desfazer." % salvos[indice_salvo]["nome"]
+	_dialogo_excluir.popup_centered()
+
+
+func _excluir() -> void:
+	if indice_salvo < 0 or indice_salvo >= salvos.size():
+		return
+	var nome_x: String = salvos[indice_salvo]["nome"]
+	var g: Array = Sessao.nomes_do_grupo().duplicate()
+	g.erase(nome_x)
+	Sessao.definir_grupo(g)
+	if Sessao.ficha.get("nome", "") == nome_x:
+		Sessao.ficha = {}
 	salvos.remove_at(indice_salvo)
 	Personagem.salvar_todos(salvos)
 	_novo()
@@ -647,6 +873,18 @@ func _excluir() -> void:
 func _salvar() -> void:
 	if not _validar():
 		return
+	for i in salvos.size():
+		if i != indice_salvo and salvos[i]["nome"] == ficha["nome"]:
+			_erros.text = "Já existe um herói chamado %s. Escolha outro nome (ou clique nele na lista para editar)." % ficha["nome"]
+			_erros.add_theme_color_override("font_color", COR_ERRO)
+			return
+	if indice_salvo >= 0 and salvos[indice_salvo]["nome"] != ficha["nome"]:
+		# renomeou: o grupo acompanha
+		var g: Array = Sessao.nomes_do_grupo().duplicate()
+		var k := g.find(salvos[indice_salvo]["nome"])
+		if k >= 0:
+			g[k] = ficha["nome"]
+			Sessao.definir_grupo(g)
 	if indice_salvo >= 0:
 		salvos[indice_salvo] = ficha.duplicate(true)
 	else:
@@ -839,10 +1077,14 @@ func _montar_escolhas() -> void:
 			o.add_item("—")
 			o.set_item_metadata(0, "")
 			var lista_op: Array = e.get("opcoes", pericias)
+			if e.get("tipo", "") == "pacto":
+				lista_op = Catalogo.pactos().keys().filter(func(pp): return pp != Catalogo.pacto_da_ficha(ficha))
 			if e.has("menor_que"):
 				lista_op = lista_op.filter(func(pp): return int(ficha.get("pericias", {}).get(pp, 0)) < int(e["menor_que"]) or pp in feitas)
 			for op in lista_op:
-				o.add_item(Personagem.NOMES_ATRIBUTOS.get(op, op))
+				o.add_item(Catalogo.pactos()[op]["nome"] if e.get("tipo", "") == "pacto" else Personagem.NOMES_ATRIBUTOS.get(op, op))
+				if e.get("tipo", "") == "pacto":
+					o.set_item_tooltip(o.item_count - 1, "Benefício menor: %s\nCobrança menor: %s" % [Catalogo.pactos()[op]["menor"], Catalogo.pactos()[op]["cobranca_menor"]])
 				o.set_item_metadata(o.item_count - 1, op)
 			_selecionar_meta(o, temp[k])
 			var kk := k
@@ -877,3 +1119,6 @@ func _montar_focos() -> void:
 	_selecionar_meta(_foco, ficha.get("foco", "nenhum"))
 	_divindade.disabled = ficha["classe"] != "Clérigo"
 	_selecionar_meta(_divindade, ficha.get("divindade", Devocoes.PADRAO))
+	if _comeca_foco != null:
+		_comeca_foco.disabled = not Itens.foco_trocavel(ficha)
+		_comeca_foco.button_pressed = ficha.get("comeca_com_foco", ficha["classe"] in ["Mago", "Clérigo", "Bruxo"])

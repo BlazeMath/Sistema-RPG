@@ -1,0 +1,753 @@
+{
+	"versao": 1,
+	"id": "exemplo_moinho",
+	"nome": "Exemplo: o moinho do rio",
+	"descricao": "Fase de exemplo do editor: rio com ponte, quintal com goblins e o chefe dentro do moinho.",
+	"largura": 24,
+	"altura": 16,
+	"piso": "grama",
+	"escuro": false,
+	"luz_ambiente": 0,
+	"abertura": {
+		"titulo": "O moinho do rio",
+		"texto": "O moleiro sumiu e goblins tomaram o moinho. A guilda paga para expulsar o chefe deles, Grakk. Cuidado com a ponte velha."
+	},
+	"chao": {
+		"0,0": "vazio",
+		"0,1": "vazio",
+		"0,2": "vazio",
+		"0,14": "vazio",
+		"0,15": "vazio",
+		"1,0": "vazio",
+		"1,1": "vazio",
+		"1,2": "vazio",
+		"1,14": "vazio",
+		"1,15": "vazio",
+		"2,0": "vazio",
+		"2,1": "vazio",
+		"2,2": "vazio",
+		"21,13": "vazio",
+		"21,14": "vazio",
+		"21,15": "vazio",
+		"22,13": "vazio",
+		"22,14": "vazio",
+		"22,15": "vazio",
+		"23,13": "vazio",
+		"23,14": "vazio",
+		"23,15": "vazio",
+		"8,0": "agua",
+		"9,0": "agua",
+		"8,1": "agua",
+		"9,1": "agua",
+		"8,2": "agua",
+		"9,2": "agua",
+		"8,3": "agua",
+		"9,3": "agua",
+		"8,4": "agua",
+		"9,4": "agua",
+		"8,5": "agua",
+		"9,5": "agua",
+		"8,6": "agua",
+		"9,6": "agua",
+		"8,9": "agua",
+		"9,9": "agua",
+		"8,10": "agua",
+		"9,10": "agua",
+		"8,11": "agua",
+		"9,11": "agua",
+		"8,12": "agua",
+		"9,12": "agua",
+		"8,13": "agua",
+		"9,13": "agua",
+		"8,14": "agua",
+		"9,14": "agua",
+		"8,15": "agua",
+		"9,15": "agua",
+		"8,7": "madeira",
+		"8,8": "madeira",
+		"9,7": "madeira",
+		"9,8": "madeira",
+		"13,2": "terra",
+		"13,3": "terra",
+		"13,4": "terra",
+		"13,5": "terra",
+		"13,6": "terra",
+		"13,7": "terra",
+		"13,8": "terra",
+		"13,9": "terra",
+		"13,10": "terra",
+		"13,11": "terra",
+		"14,2": "terra",
+		"14,3": "terra",
+		"14,4": "terra",
+		"14,5": "terra",
+		"14,6": "terra",
+		"14,7": "terra",
+		"14,8": "terra",
+		"14,9": "terra",
+		"14,10": "terra",
+		"14,11": "terra",
+		"15,2": "terra",
+		"15,3": "terra",
+		"15,4": "pedra",
+		"15,5": "pedra",
+		"15,6": "pedra",
+		"15,7": "pedra",
+		"15,8": "pedra",
+		"15,9": "pedra",
+		"15,10": "terra",
+		"15,11": "terra",
+		"16,2": "terra",
+		"16,3": "terra",
+		"16,4": "pedra",
+		"16,5": "pedra",
+		"16,6": "pedra",
+		"16,7": "pedra",
+		"16,8": "pedra",
+		"16,9": "pedra",
+		"16,10": "terra",
+		"16,11": "terra",
+		"17,2": "terra",
+		"17,3": "terra",
+		"17,4": "pedra",
+		"17,5": "pedra",
+		"17,6": "pedra",
+		"17,7": "pedra",
+		"17,8": "pedra",
+		"17,9": "pedra",
+		"17,10": "terra",
+		"17,11": "terra",
+		"18,2": "terra",
+		"18,3": "terra",
+		"18,4": "pedra",
+		"18,5": "pedra",
+		"18,6": "pedra",
+		"18,7": "pedra",
+		"18,8": "pedra",
+		"18,9": "pedra",
+		"18,10": "terra",
+		"18,11": "terra",
+		"19,2": "terra",
+		"19,3": "terra",
+		"19,4": "pedra",
+		"19,5": "pedra",
+		"19,6": "pedra",
+		"19,7": "pedra",
+		"19,8": "pedra",
+		"19,9": "pedra",
+		"19,10": "terra",
+		"19,11": "terra",
+		"20,2": "terra",
+		"20,3": "terra",
+		"20,4": "pedra",
+		"20,5": "pedra",
+		"20,6": "pedra",
+		"20,7": "pedra",
+		"20,8": "pedra",
+		"20,9": "pedra",
+		"20,10": "terra",
+		"20,11": "terra",
+		"21,2": "terra",
+		"21,3": "terra",
+		"21,4": "terra",
+		"21,5": "terra",
+		"21,6": "terra",
+		"21,7": "terra",
+		"21,8": "terra",
+		"21,9": "terra",
+		"21,10": "terra",
+		"21,11": "terra",
+		"11,12": "dificil",
+		"12,12": "dificil",
+		"11,13": "dificil",
+		"12,13": "dificil",
+		"13,13": "dificil"
+	},
+	"niveis": {},
+	"escadas": [],
+	"objetos": [
+		{
+			"pos": "14,3",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "14,10",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "15,3",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "15,10",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "16,3",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "16,10",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "17,3",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "17,10",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "18,3",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "18,10",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "19,3",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "19,10",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "20,3",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "20,10",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "21,3",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "21,10",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "14,4",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "21,4",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "14,5",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "21,5",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "14,6",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "21,6",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "21,7",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "14,8",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "21,8",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "14,9",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "21,9",
+			"tipo": "parede",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "14,7",
+			"tipo": "porta",
+			"colisao": false,
+			"visao": "padrao"
+		},
+		{
+			"pos": "4,4",
+			"tipo": "arvore",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "5,11",
+			"tipo": "arvore",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "3,9",
+			"tipo": "arvore",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "11,3",
+			"tipo": "arvore",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "6,2",
+			"tipo": "pedra",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "12,9",
+			"tipo": "feno",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "12,10",
+			"tipo": "feno",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "17,5",
+			"tipo": "mesa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "19,8",
+			"tipo": "barril",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "20,4",
+			"tipo": "caixa",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "16,8",
+			"tipo": "estante",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "18,6",
+			"tipo": "fogueira",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "6,7",
+			"tipo": "poco",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "10,5",
+			"tipo": "cerca",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "11,5",
+			"tipo": "cerca",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "12,5",
+			"tipo": "cerca",
+			"colisao": true,
+			"visao": "padrao"
+		},
+		{
+			"pos": "17,9",
+			"tipo": "velas",
+			"colisao": false,
+			"visao": "padrao"
+		},
+		{
+			"pos": "8,7",
+			"tipo": "ponte",
+			"colisao": false,
+			"visao": "padrao"
+		},
+		{
+			"pos": "9,7",
+			"tipo": "ponte",
+			"colisao": false,
+			"visao": "padrao"
+		},
+		{
+			"pos": "8,8",
+			"tipo": "ponte",
+			"colisao": false,
+			"visao": "padrao"
+		},
+		{
+			"pos": "9,8",
+			"tipo": "ponte",
+			"colisao": false,
+			"visao": "padrao"
+		}
+	],
+	"luzes": [],
+	"inicio": [
+		"3,6",
+		"3,7",
+		"4,6",
+		"4,7"
+	],
+	"inimigos": [
+		{
+			"id": "vigia1",
+			"preset": "goblin_atirador",
+			"nome": "Goblin Vigia",
+			"pos": "12,4",
+			"patamar": "medio",
+			"papel": "aggro",
+			"grupo": "quintal",
+			"alerta": false,
+			"vigia": 5,
+			"saque": [
+				{
+					"tipo": "ouro",
+					"valor": 5
+				}
+			]
+		},
+		{
+			"id": "desordeiro1",
+			"preset": "goblin_desordeiro",
+			"nome": "Goblin Desordeiro",
+			"pos": "13,7",
+			"patamar": "lacaio",
+			"papel": "aggro",
+			"grupo": "quintal",
+			"alerta": false,
+			"vigia": 4
+		},
+		{
+			"id": "desordeiro2",
+			"preset": "goblin_desordeiro",
+			"nome": "Goblin Desordeiro",
+			"pos": "12,8",
+			"patamar": "lacaio",
+			"papel": "aggro",
+			"grupo": "quintal",
+			"alerta": false,
+			"vigia": 4
+		},
+		{
+			"id": "brigao",
+			"preset": "goblin_brigao",
+			"nome": "Goblin Brigão",
+			"pos": "16,6",
+			"patamar": "medio",
+			"papel": "tank",
+			"grupo": "moinho",
+			"alerta": false,
+			"vigia": 4
+		},
+		{
+			"id": "chefe",
+			"preset": "chefe_goblin",
+			"nome": "Grakk, dono do moinho",
+			"pos": "19,6",
+			"patamar": "elite",
+			"papel": "neutro",
+			"grupo": "moinho",
+			"alerta": false,
+			"vigia": 4,
+			"alvo": true,
+			"saque": [
+				{
+					"tipo": "ouro",
+					"valor": 30
+				},
+				{
+					"tipo": "item",
+					"item": "pocao_de_cura_pequena",
+					"qtd": 1
+				}
+			]
+		}
+	],
+	"grupos": {
+		"quintal": {
+			"titulo": "Goblins no quintal",
+			"texto": "Três goblins mexem nos sacos de farinha. Um deles aponta para vocês e grita.",
+			"alerta": true
+		},
+		"moinho": {
+			"titulo": "Grakk",
+			"texto": "Um goblin grande, de capa feita de saco de farinha, levanta da mesa. \"Moinho é meu!\"",
+			"alerta": true
+		}
+	},
+	"areas": [
+		{
+			"id": "chegada_rio",
+			"nome": "Margem",
+			"tipo": "fala",
+			"celulas": [
+				"5,6",
+				"5,7",
+				"5,8",
+				"5,9"
+			],
+			"titulo": "O rio",
+			"texto": "A ponte velha range com o vento. Do outro lado, fumaça sai do moinho.",
+			"parar": true,
+			"procurar": false
+		},
+		{
+			"id": "armadilha_porta",
+			"nome": "Arame na porta",
+			"tipo": "armadilha",
+			"celulas": [
+				"13,6"
+			],
+			"texto": "Um arame esticado junto da porta, preso a um balde de pregos.",
+			"armadilha": {
+				"dano": 4,
+				"ficha": "",
+				"achar": "medio",
+				"evitar": "medio",
+				"desarmar": "facil",
+				"texto_disparo": "O balde vira e os pregos chovem em cima de você."
+			}
+		},
+		{
+			"id": "ponte_teste",
+			"nome": "Ponte podre",
+			"tipo": "teste",
+			"celulas": [
+				"9,8"
+			],
+			"titulo": "Tábua podre",
+			"texto": "Uma tábua cede sob o seu peso!",
+			"teste": {
+				"somar": [
+					"Acrobacia",
+					"destreza"
+				],
+				"nivel": "facil"
+			},
+			"resultados": {
+				"sucesso": {
+					"texto": "Você salta para a tábua seguinte a tempo.",
+					"efeitos": []
+				},
+				"falha": {
+					"texto": "O pé atravessa a tábua e a perna rala nas farpas.",
+					"efeitos": [
+						{
+							"tipo": "dano",
+							"valor": 3
+						}
+					]
+				}
+			}
+		}
+	],
+	"interacoes": [
+		{
+			"id": "poco",
+			"nome": "Poço do moinho",
+			"pos": "6,7",
+			"alcance": 1,
+			"texto": "Água limpa e uma sombra fresca. Um bom lugar para recuperar o fôlego.",
+			"opcoes": [
+				{
+					"id": "descansar",
+					"texto": "Descanso curto do grupo (o turno inteiro)",
+					"custo": "turno",
+					"sem_inimigos": true,
+					"uma_vez": true,
+					"resultados": {
+						"feito": {
+							"texto": "O grupo bebe, come e descansa um pouco.",
+							"efeitos": [
+								{
+									"tipo": "descanso_curto"
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "estante",
+			"nome": "Livro de contas",
+			"pos": "16,8",
+			"alcance": 1,
+			"texto": "O livro de contas do moleiro, molhado de cerveja goblin.",
+			"opcoes": [
+				{
+					"id": "ler",
+					"texto": "Ler com atenção",
+					"custo": "padrao",
+					"uma_vez": true,
+					"teste": {
+						"ativo": true,
+						"somar": [
+							"Investigação",
+							"raciocinio"
+						],
+						"nivel": "facil"
+					},
+					"resultados": {
+						"sucesso": {
+							"texto": "O moleiro devia dinheiro a alguém de Brejo Fundo. Na última página: \"Ela quer os ossos da capela.\"",
+							"efeitos": [
+								{
+									"tipo": "lore",
+									"texto": "O moleiro devia dinheiro a alguém de Brejo Fundo, que queria os ossos da capela."
+								},
+								{
+									"tipo": "ouro",
+									"valor": 10
+								}
+							]
+						},
+						"falha": {
+							"texto": "Só contas de farinha e manchas de cerveja.",
+							"efeitos": []
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "caixa",
+			"nome": "Caixa de mantimentos",
+			"pos": "20,4",
+			"alcance": 1,
+			"texto": "Uma caixa pregada com força.",
+			"opcoes": [
+				{
+					"id": "abrir",
+					"texto": "Arrombar (Atletismo + Força)",
+					"custo": "padrao",
+					"uma_vez": false,
+					"teste": {
+						"ativo": true,
+						"somar": [
+							"Atletismo",
+							"forca"
+						],
+						"nivel": "medio"
+					},
+					"resultados": {
+						"sucesso": {
+							"texto": "A tampa cede. Lá dentro: tochas e um kit médico.",
+							"efeitos": [
+								{
+									"tipo": "item",
+									"item": "tocha",
+									"qtd": 2
+								},
+								{
+									"tipo": "item",
+									"item": "kit_medico",
+									"qtd": 1
+								},
+								{
+									"tipo": "desativar"
+								}
+							]
+						},
+						"falha": {
+							"texto": "A caixa aguenta. Dá para tentar de novo.",
+							"efeitos": []
+						}
+					}
+				}
+			]
+		}
+	],
+	"objetivo": {
+		"tipo": "derrotar_alvos",
+		"texto": "Expulse Grakk, o goblin que tomou o moinho.",
+		"rodadas": 8,
+		"mensagem_vitoria": "Grakk cai, e os goblins que sobraram fogem pelo milharal. O moinho volta a girar."
+	},
+	"campanha": {
+		"no_mural": false,
+		"texto": "Goblins tomaram o moinho do rio. A guilda paga para expulsar o chefe deles.",
+		"recompensa": 120,
+		"requer": []
+	}
+}

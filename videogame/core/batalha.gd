@@ -30,10 +30,12 @@ const Extras := preload("res://core/cartas_extras.gd")
 const Personagem := preload("res://core/personagem.gd")
 const Areas := preload("res://core/areas.gd")
 const Devocoes := preload("res://core/devocoes.gd")
+const ItensB := preload("res://core/itens_batalha.gd")
+const Bruxo := preload("res://core/cartas_bruxo.gd")
 
 ## Ataque mágico: diferença + dano do foco + atributo de conjuração da classe
 ## (+ o dano extra da magia).
-const ATRIBUTO_MAGIA := {"Mago": "raciocinio", "Clérigo": "sabedoria"}
+const ATRIBUTO_MAGIA := {"Mago": "raciocinio", "Clérigo": "sabedoria", "Bruxo": "espirito"}
 
 enum Fase { HEROI_ESCOLHE, HEROI_ATACANDO, IA_DEFENDENDO, IA_TURNO, IA_ATACANDO, HEROI_DEFENDENDO, RESOLVIDO, VITORIA, DERROTA,
 	DISTRIBUINDO_DANO, INTERACAO_TESTE, INTERACAO_RESOLVIDA, SOMBRA_ESCOLHA, ACAO_LONGA, PERGUNTA }
@@ -69,6 +71,12 @@ var dano_pendente: Dictionary = {}    # {"id", "dano", "origem", "volta"}
 # Exploração: pontos de interação no mapa e testes de atributo.
 var interacoes: Array = []            # ver core/dados_exploracao.gd
 var decoracao: Dictionary = {}        # Vector2i -> tipo (chão especial, ex.: "ponte")
+var chao: Dictionary = {}             # 0.27: Vector2i -> tipo de chão da casa (fases do editor; o resto usa "piso")
+var terreno_dificil_fixo: Array = []  # 0.27: casas de terreno difícil desenhadas no editor
+var visao_bloqueia_fixa: Array = []   # 0.27: enfeites que o editor marcou como "bloqueia a visão"
+var saques: Dictionary = {}           # 0.27: id do inimigo -> efeitos que ele deixa ao cair
+var pistas: Dictionary = {}           # 0.28: pistas achadas na fase (nome -> texto); opções podem exigir N pistas
+var vitoria_na_rodada := 0            # 0.27: objetivo "sobreviver": vitória quando a rodada chega aqui
 var teste_pericia: Teste21
 var interacao_atual: Dictionary = {}  # {"id", "opcao", "dano", "vitoria"}
 var resultado_interacao: Dictionary = {}
@@ -119,6 +127,16 @@ func _init(cenario: Dictionary, semente_inicial: int) -> void:
 	recompensa = int(cenario.get("recompensa", 0))
 	for l in cenario.get("luzes", []):
 		luzes.append(l.duplicate())
+	# Fases do editor (0.27): chão por casa, terreno difícil, visão por objeto, saque e rodadas.
+	chao = cenario.get("chao", {}).duplicate()
+	terreno_dificil_fixo = cenario.get("terreno_dificil", []).duplicate()
+	visao_bloqueia_fixa = cenario.get("visao_bloqueia", []).duplicate()
+	for p in cenario.get("visao_livre", []):
+		grade.visao_livre[p] = true
+	saques = cenario.get("saques", {}).duplicate(true)
+	vitoria_na_rodada = int(cenario.get("vitoria_na_rodada", 0))
+	if not terreno_dificil_fixo.is_empty() or not visao_bloqueia_fixa.is_empty():
+		_atualizar_zonas_no_mapa()
 
 
 func iniciar() -> void:
@@ -152,6 +170,7 @@ func _iniciar_cena(u: Unidade) -> void:
 	if u.ativo("incansavel"):
 		u.carta_heroi().dar_ficha("Preparo")
 		_log("Incansável: %s ganha 1 ficha de Preparo." % u.nome)
+	Bruxo.inicio_da_cena(self, u)
 
 
 # --- Consultas --------------------------------------------------------------
@@ -202,6 +221,9 @@ func impedido(u: Unidade) -> bool:
 	for o in oponentes(u):
 		if Grade.adjacentes(o.pos, u.pos):
 			return true
+		# Cinto Estelar (0.25): o herói causa impedimento a até 2 quadrados.
+		if o.eh_heroi() and "cinto_estelar" in o.vestidos and Grade.distancia(o.pos, u.pos) <= 2:
+			return true
 	return false
 
 
@@ -224,7 +246,7 @@ func _perigos(u: Unidade) -> Dictionary:
 
 
 func pode_ganhar_deslocamento(u: Unidade) -> bool:
-	return (u.acoes_mov > 0 or u.acoes_padrao > 0) and not preso(u)
+	return (u.acoes_mov > 0 or u.acoes_padrao > 0) and not preso(u) and not u.efeitos.has("sem_mover")
 
 
 ## Quadrados que uma ação de movimento rende agora: a velocidade (1 se impedido
@@ -232,8 +254,8 @@ func pode_ganhar_deslocamento(u: Unidade) -> bool:
 func passos_por_acao(u: Unidade) -> int:
 	if agarrado(u):
 		return 0
-	var v := 1 if (impedido(u) or u.efeitos.has("caido")) else _velocidade(u)
-	if u.eh_heroi() and u.ativo("ignorar-a-dor"):
+	var v := 1 if (impedido(u) or u.efeitos.has("caido") or u.efeitos.has("geada")) else _velocidade(u)
+	if u.eh_heroi() and (u.ativo("ignorar-a-dor") or (u.ativo("palavra-de-aco") and u.efeitos.has("juramento"))):
 		return v
 	return maxi(v - u.fichas_total("Imobilizar"), 0)
 
@@ -271,6 +293,10 @@ func _velocidade(u: Unidade) -> int:
 		v += 1
 	if u.eh_heroi() and u.destreza >= 3:
 		v += 1
+	if u.eh_heroi() and ItensB.arma(u) == "lamina_do_vento":
+		v += 1
+	if u.eh_heroi() and ItensB.escudo(u) == "scutum_da_legiao" and aliados_adjacentes(u, u.pos) == 0:
+		return 1   # Scutum da Legião sozinho na formação: deslocamento 1
 	return maxi(v, 1)
 
 
@@ -291,6 +317,8 @@ func motivo_sem_ataque(u: Unidade, alvo: Unidade, exige_padrao := true) -> Strin
 		return "sem ação padrão"
 	if u.efeitos.has("descarregada"):
 		return "a besta precisa ser recarregada"
+	if u.efeitos.has("forma_de_vento"):
+		return "em forma de vento não dá para atacar"
 	return motivo_alcance(u, alvo, u.pos)
 
 
@@ -322,9 +350,30 @@ func heroi_mover(destino: Vector2i) -> bool:
 func heroi_atacar(alvo: Unidade) -> bool:
 	if not vez_do_heroi() or motivo_sem_ataque(ativa(), alvo) != "":
 		return false
+	if ativa().efeitos.has("ataque_gratis"):
+		ativa().efeitos.erase("ataque_gratis")
+		ativa().acoes_padrao += 1   # o Brado da Horda paga este ataque
 	ativa().acoes_padrao -= 1
 	_agiu(ativa())
 	_tut("atacou")
+	if ativa().efeitos.has("flecha_explosiva"):
+		# Flecha Explosiva (0.25): o ataque acerta a área 2×2 com o alvo que tiver mais inimigos.
+		ativa().efeitos.erase("flecha_explosiva")
+		var melhor: Array = [alvo]
+		for dx in [-1, 0]:
+			for dy in [-1, 0]:
+				var bloco := []
+				for o in unidades:
+					var d: Vector2i = o.pos - (alvo.pos + Vector2i(dx, dy))
+					if o.viva() and o != ativa() and d.x in [0, 1] and d.y in [0, 1]:
+						bloco.append(o)
+				if bloco.filter(func(o): return not o.eh_heroi()).size() > melhor.filter(func(o): return not o.eh_heroi()).size():
+					melhor = bloco
+		melhor.erase(alvo)
+		melhor.push_front(alvo)
+		_log("Flecha Explosiva: a explosão atinge %d alvo(s)." % melhor.size())
+		_ataque_em_area(ativa(), melhor, {"habilidade": "Flecha Explosiva", "tipo_dano": "Fogo"})
+		return true
 	_novo_ataque(ativa(), alvo, {})
 	return true
 
@@ -773,15 +822,24 @@ func heroi_orientar(alvo: Unidade) -> bool:
 	return true
 
 
-func heroi_usar_item(item: String) -> bool:
+## Usa um consumível do menu Itens (ação Padrão). "alvo_id": quem recebe, nos itens de
+## "você ou um aliado adjacente" (vazio = o próprio herói).
+func heroi_usar_item(item: String, alvo_id := "") -> bool:
 	var u := ativa()
 	if not vez_do_heroi() or u.acoes_padrao <= 0 or not item in u.consumiveis or u.efeitos.has("confuso"):
 		return false
+	if motivo_item(u, item) != "":
+		return false
+	var alvo: Unidade = u
+	if alvo_id != "":
+		alvo = unidade(alvo_id)
+		if alvo == null or not alvo in ItensB.alvos_do_item(self, u, item):
+			return false
 	match item:
 		"pocao_de_cura_pequena":
-			if u.baralho.descarte.is_empty():
+			if alvo.baralho.descarte.is_empty():
 				return false
-			_curar(u, 5, "bebe a Poção de Cura Pequena")
+			_curar(alvo, 5, "bebe a Poção de Cura Pequena" if alvo == u else "recebe a Poção de Cura Pequena de %s" % u.nome)
 		"frutas_silvestres":
 			_curar(u, 2, "come as frutas")
 			_tirar_fadiga(u, 1)
@@ -790,24 +848,18 @@ func heroi_usar_item(item: String) -> bool:
 			_log("%s bebe a Poção de Mana Pequena: −%d de fadiga." % [u.nome, tirada])
 		"veneno_acido":
 			u.efeitos["veneno_acido"] = {"ate": "proximo_ataque"}
-			_log("%s aplica Veneno Ácido na arma: o próximo ataque causa +2 que ignora resistência." % u.nome)
+			_log("%s aplica Veneno Ácido na arma: o próximo ataque causa +1 e ignora resistência." % u.nome)
 		"kit_medico":
-			var alvos := alvos_de_tratar(u)
-			var alvo: Unidade = u
-			if not alvos.is_empty() and not u in alvos:
-				alvo = alvos[0]
 			var n := alvo.tirar_fichas("Sangramento")
 			_log("%s usa o Kit Médico em %s: %d ficha(s) de Sangramento removida(s)." % [u.nome, alvo.nome, n])
 			_curar(alvo, 2, "é tratado com o Kit Médico")
 		"antidoto":
-			var tiradas := 0
-			for c in u.cartas:
-				while c.tirar_ficha("Veneno"):
-					tiradas += 1
-			var fad := _tirar_fadiga(u, 1)
-			_log("%s toma o Antídoto: %d ficha(s) de Veneno removida(s), −%d de fadiga." % [u.nome, tiradas, fad])
+			var tiradas := alvo.tirar_fichas("Veneno")
+			var fad := _tirar_fadiga(alvo, 1)
+			_log("%s toma o Antídoto: %d ficha(s) de Veneno removida(s), −%d de fadiga." % [alvo.nome, tiradas, fad])
 		_:
-			return false
+			if not ItensB.usar_consumivel(self, u, item, alvo):
+				return false
 	u.acoes_padrao -= 1
 	_agiu(u)
 	u.consumiveis.erase(item)
@@ -815,6 +867,16 @@ func heroi_usar_item(item: String) -> bool:
 	if u.ativo("mestre-das-cavernas"):
 		u.dar_ficha("Preparo")
 	return true
+
+
+## "" se o consumível pode ser usado agora pelo menu Itens; senão o motivo.
+func motivo_item(u: Unidade, item: String) -> String:
+	var d: Dictionary = Itens.CONSUMIVEIS.get(item, {})
+	if not d.get("acao", false) or d.has("area"):
+		return "não se usa assim"
+	if not d.get("programado", false):
+		return "ainda não programado"
+	return ItensB.motivo_consumivel(self, u, item)
 
 
 ## Fim do turno. "indice_fadiga": carta de onde sai 1 de fadiga (-1 = escolha automática).
@@ -842,6 +904,8 @@ func opcoes_fim_de_turno(u: Unidade) -> Dictionary:
 	var bp = u.carta_com("bencao-persistente")
 	if bp != null and bp.pode_pagar(1):
 		opcionais.append({"id": "bencao-persistente", "texto": "Bênção Persistente: põe 1 de fadiga nela; você e cada aliado a até 4 quadrados exilam 1 carta do descarte e curam 1."})
+	if Bruxo.pode_conservar(u):
+		opcionais.append({"id": "conservar-inverno", "texto": "Inverno Imóvel: não tirar a fadiga do fim do turno (ganha 1 Pacto; sem ter se movido, repara o pacto suspenso)."})
 	var dona = u.carta_com("respirar-fundo")
 	return {"pontos": pontos, "cartas": cartas_com_fadiga(u), "respirar": int(u.recuperar_fadiga_no_fim),
 		"cartas_respirar": cartas_com_fadiga(u).filter(func(i): return u.cartas[i] != dona), "opcionais": opcionais}
@@ -920,12 +984,26 @@ func _registro_do_lado(c) -> Dictionary:
 	if c.tipo == "arma":
 		return {"uso": "arma"}
 	var s: String = c.slug()
+	if c.tipo == "pacto":
+		return Bruxo.registro(c)
+	if c.tipo == "heroi" and Bruxo.ATIVADAS_HEROI.has(s):
+		return Bruxo.ATIVADAS_HEROI[s]
+	if c.tipo == "heroi" and Bruxo.NOTAS_HEROI.has(s):
+		return {"uso": "passiva"}
+	if Bruxo.LADOS.has(s) and c.tipo == "habilidade":
+		return Bruxo.LADOS[s]
 	if c.tipo == "heroi":
 		if not Efeitos.HEROIS.has(s):
 			return {"uso": "sem_programa"}
+		if Extras.ATIVADAS_HEROI.has(s):
+			return Extras.ATIVADAS_HEROI[s]
 		return Classes.ATIVADAS_DE_HEROI.get(s, Origens.ATIVADAS_DE_HEROI.get(s, {"uso": "passiva"}))
 	if Extras.LADOS.has(s):
 		return Extras.LADOS[s]
+	if c.tipo == "item":
+		var reg_item := ItensB.registro(s)
+		if not reg_item.is_empty():
+			return reg_item
 	return Efeitos.LADOS.get(s, {"uso": "sem_programa"})
 
 
@@ -961,10 +1039,12 @@ func _custo_fadiga(u: Unidade, c) -> int:
 	if u.ativo("foco-mortal") and c.tipo == "arma" and custo > 1:
 		custo -= 1
 	if info.get("magia", false):
+		# Conjuração Perfeita (revisão 27/10): uma vez por turno, a magia custa só 1 de fadiga.
 		if u.ativo("conjuracao-perfeita") and not u.efeitos.has("perfeita_usada"):
-			return 0
+			return mini(custo, 1)
 		if u.ativo("conjuracao-economica") and not u.efeitos.has("economica_usada"):
 			custo = maxi(custo - 1, 0)
+		custo = ItensB.custo_de_magia(self, u, custo)
 	return custo
 
 
@@ -999,8 +1079,16 @@ func _motivo_sem_usar(u: Unidade, c, info: Dictionary) -> String:
 	var tipo_alvo := str(info.get("alvo", ""))
 	if tipo_alvo != "nenhum" and tipo_alvo != "" and tipo_alvo != "area" and alvos_de_habilidade(u, c).is_empty():
 		return "nenhum inimigo ao alcance" if tipo_alvo.begins_with("inimigo") else "nenhum aliado ao alcance"
+	if c.tipo == "item" and u.arma_reserva.get("eh_foco", false) and str(c.id).contains(str(u.foco.get("id", "?")).replace("_", "-")):
+		return "o foco está guardado: troque de arma para pegá-lo"
 	var m_c := Classes.motivo_extra(self, u, c)
-	return m_c if m_c != "" else Extras.motivo(self, u, c)
+	if m_c == "":
+		m_c = Extras.motivo(self, u, c)
+	if m_c == "" and c.tipo == "item":
+		m_c = ItensB.motivo(self, u, c)
+	if m_c == "" and (c.tipo == "pacto" or Bruxo.eh_do_bruxo(c.slug())):
+		m_c = Bruxo.motivo(self, u, c)
+	return m_c
 
 
 ## Inimigos que a habilidade pode atingir (para destacar no mapa).
@@ -1038,6 +1126,19 @@ func alvos_de_habilidade(u: Unidade, c) -> Array:
 					lista.append(o)
 	if info.get("exige_marca", false):
 		lista = lista.filter(func(o): return o.fichas_total("Marcado") > 0)
+	if info.has("exige_efeito_alvo"):
+		lista = lista.filter(func(o): return o.efeitos.has(info["exige_efeito_alvo"]))
+	# Bruxo (0.25)
+	if info.get("exige_atormentado", false):
+		lista = lista.filter(func(o): return o.fichas_total("Atormentado") > 0)
+	if info.get("exige_atormentado_meu", false):
+		lista = lista.filter(func(o): return o.fichas_total("Atormentado") > 0 and o.efeitos.get("atormentado_de", {}).get("id", "") == u.id)
+	if info.get("exige_fadiga_alvo", false):
+		lista = lista.filter(func(o): return o.fichas_total("Fadiga") > 0)
+	if info.get("exige_grilhao", false):
+		lista = lista.filter(func(o): return o.fichas_total("Imobilizar") > 0 and o.efeitos.get("grilhao_de", {}).get("id", "") == u.id)
+	if info.get("exige_atacou_protegido", false):
+		lista = lista.filter(func(o): return u.protegido != "" and o.efeitos.has("atacou_" + u.protegido))
 	if info.get("exige_marca_ou_metade", false):
 		lista = lista.filter(func(o): return o.fichas_total("Marcado") > 0 or o.vida * 2 < o.vida_max)
 	var tipo: String = info.get("alvo", "nenhum")
@@ -1129,8 +1230,21 @@ func heroi_usar_carta(indice: int, alvo: Unidade = null, opcao := "", destino :=
 			u.efeitos["perfeita_usada"] = {"ate": "inicio_turno"}
 		elif u.ativo("conjuracao-economica"):
 			u.efeitos["economica_usada"] = {"ate": "inicio_turno"}
+	var fadiga_antes := Bruxo.antes_de_pagar(u)
 	pagar_fadiga(u, c, custo)
+	Bruxo.depois_de_pagar(self, u, c, fadiga_antes)
 	var acao = custo_do_lado(c).get("acao")
+	if c == Bruxo.carta_inicial(u) and acao == "padrao" and (u.efeitos.has("manifestacao") or u.efeitos.has("sem_acao_inicial")):
+		# Manifestação Dupla / Intercessão do Patrono: a magia da habilidade inicial não gasta ação.
+		acao = null
+		u.efeitos.erase("sem_acao_inicial")
+		if u.efeitos.has("manifestacao"):
+			var md: Dictionary = u.efeitos["manifestacao"]
+			md["usos"] = int(md["usos"]) - 1
+			if int(md["usos"]) <= 0:
+				u.efeitos.erase("manifestacao")
+			else:
+				u.efeitos["virar_inicial"] = {}
 	if acao == "padrao":
 		u.acoes_padrao -= 1
 	elif acao == "movimento":
@@ -1202,7 +1316,12 @@ func heroi_usar_carta(indice: int, alvo: Unidade = null, opcao := "", destino :=
 			tipo_da_magia_atual = _tipo_da_carta(c)
 			if info.get("magia", false):
 				u.efeitos.erase("tecer")
-			Classes.usar(self, u, c, alvo)
+			if c.tipo == "item" and not ItensB.registro(c.slug()).is_empty():
+				ItensB.usar(self, u, c, alvo)
+			elif c.tipo == "pacto" or Bruxo.eh_do_bruxo(c.slug()):
+				Bruxo.usar(self, u, c, alvo)
+			else:
+				Classes.usar(self, u, c, alvo)
 			tipo_da_magia_atual = ""
 			conjurando = null
 	return true
@@ -1347,6 +1466,15 @@ func cartas_durante_ataque() -> Array:
 	if c != null and not "flecha-pesada" in usadas and c.pode_pagar(_custo_fadiga(u, c)) and not ctx.get("magico", false) \
 			and (defensor.imobilizado() or defensor.fichas_total("Ferimento") > 0):
 		lista.append({"slug": "flecha-pesada", "opcao": "", "texto": "Flecha Pesada (%d fadiga): dano da arma ×3, ignora resistência" % _custo_fadiga(u, c)})
+	# Armas (0.25): Machado da Sepultura e Lança Espiral.
+	if ItensB.arma(u) == "machado_da_sepultura" and not "sepultura" in usadas and not ctx.get("magico", false):
+		var figuras := u.baralho.descarte.filter(func(x): return Carta.posto(x) >= 11).size()
+		if figuras > 0:
+			lista.append({"slug": "sepultura", "opcao": "", "texto": "Machado da Sepultura: exilar %d figura(s) do descarte (+%d de dano)" % [figuras, figuras]})
+	if ItensB.arma(u) == "lanca_espiral" and not "espiral" in usadas:
+		for ca in u.cartas:
+			if ca.tipo == "arma" and ca.fadiga > 0:
+				lista.append({"slug": "espiral", "opcao": "", "texto": "Lança Espiral: tirar %d de fadiga da arma (+%d de dano)" % [ca.fadiga, ca.fadiga]})
 	c = u.carta_com("quebrar-a-fenda")
 	if c != null and not "quebrar-a-fenda" in usadas and c.pode_pagar(_custo_fadiga(u, c)):
 		lista.append({"slug": "quebrar-a-fenda", "opcao": "Imobilizar", "texto": "Quebrar a Fenda (%d fadiga): 1 Imobilizar" % _custo_fadiga(u, c)})
@@ -1358,7 +1486,7 @@ func heroi_durante_ataque(slug: String, opcao := "") -> bool:
 	if not cartas_durante_ataque().any(func(o): return o["slug"] == slug and o["opcao"] == opcao):
 		return false
 	var u := atacante
-	var c = u.carta_com(slug)
+	var c = u.carta_com(slug) if not slug in ["sepultura", "espiral"] else null
 	if not ctx.has("cartas_usadas"):
 		ctx["cartas_usadas"] = []
 	if not ctx.has("bonus_extra"):
@@ -1385,6 +1513,19 @@ func heroi_durante_ataque(slug: String, opcao := "") -> bool:
 			c.pagar(_custo_fadiga(u, c))
 			defensor.dar_ficha(opcao)
 			_log("Quebrar a Fenda: %s recebe 1 %s." % [defensor.nome, opcao])
+		"sepultura":
+			var figuras := u.baralho.descarte.filter(func(x): return Carta.posto(x) >= 11)
+			for x in figuras:
+				u.baralho.descarte.erase(x)
+				u.baralho.exilio.append(x)
+			ctx["bonus_extra"].append(["Machado da Sepultura (%d figuras)" % figuras.size(), figuras.size()])
+			_log("Machado da Sepultura: %s exila %d figura(s) do descarte." % [u.nome, figuras.size()])
+		"espiral":
+			for ca in u.cartas:
+				if ca.tipo == "arma" and ca.fadiga > 0:
+					ctx["bonus_extra"].append(["Lança Espiral (%d de fadiga)" % ca.fadiga, ca.fadiga])
+					_log("Lança Espiral: %s tira %d de fadiga da arma." % [u.nome, ca.fadiga])
+					ca.fadiga = 0
 	ctx["cartas_usadas"].append(slug)
 	return true
 
@@ -1514,6 +1655,9 @@ func _reacao_do_inimigo(o: Unidade, atacante_h: Unidade) -> void:
 		else:
 			o.acoes_reacao -= 1
 		_efeito_reacao_monstro(o, r, atacante_h)
+		if atacante_h.eh_heroi() and atacante_h.ativo("seguidor-da-chama"):
+			atacante_h.acoes_reacao += 1
+			_log("Seguidor da Chama: %s ganha 1 Reação." % atacante_h.nome)
 		if not r.get("livre", false):
 			return
 
@@ -1753,11 +1897,31 @@ func texto_reacao() -> String:
 			return "Postura da Cascavel (1 fadiga, Reação): revidar %d de dano" % maxi(defensor.dano + defensor.atributo_dano - atacante.resistencia_total(), 0)
 		"castigo":
 			return "Castigo (1 fadiga, Reação de %s): atacar %s" % [unidade(resultado["reator"]).nome, atacante.nome]
+		"descarregar-a-tormenta":
+			return "Descarregar a Tormenta (1 fadiga, Reação): descarga de Raio em %s" % atacante.nome
+		"florete-de-duelista":
+			return "Florete de Duelista (1 fadiga, Reação): contra-atacar %s" % atacante.nome
 	return ""
 
 
 func heroi_reagir() -> bool:
 	var r := reacao_disponivel()
+	if r == "descarregar-a-tormenta":
+		resultado["reacao"] = ""
+		Bruxo.reagir_descarga(self, defensor, atacante)
+		return true
+	if r == "florete-de-duelista":
+		var hf := defensor
+		var alvo_f := atacante
+		resultado["reacao"] = ""
+		for x in hf.cartas:
+			if x.tipo == "arma":
+				x.pagar(1)
+				break
+		hf.acoes_reacao -= 1
+		_log("Florete de Duelista: %s revida contra %s." % [hf.nome, alvo_f.nome])
+		_novo_ataque(hf, alvo_f, {"habilidade": "Florete de Duelista"})
+		return true
 	if r == "castigo":
 		var h := unidade(resultado["reator"])
 		var alvo_c := atacante
@@ -1803,6 +1967,8 @@ func heroi_foco_no_teste() -> bool:
 		return false
 	var h := heroi_dono_do_teste()
 	h.tirar_fichas("Foco", 1)
+	if teste_do_heroi() == teste_ataque:
+		ctx["gastou_foco"] = true
 	_log("%s gasta 1 ficha de Foco antes da carta fechada: scry 1." % h.nome)
 	scry(h, 1)
 	return true
@@ -1836,6 +2002,60 @@ func heroi_dono_do_teste() -> Unidade:
 	if fase == Fase.HEROI_DEFENDENDO:
 		return defensor
 	return null
+
+
+## Jogo em rede (0.26): o herói cujo jogador decide o momento atual ("" = ninguém:
+## vez dos monstros, fim de jogo). A tela só deixa o dono desse herói clicar, e o
+## anfitrião só aceita comandos dele.
+func quem_decide() -> String:
+	var h: Unidade = null
+	match fase:
+		Fase.HEROI_ESCOLHE, Fase.INTERACAO_TESTE, Fase.INTERACAO_RESOLVIDA, Fase.ACAO_LONGA:
+			h = ativa()
+		Fase.HEROI_ATACANDO:
+			h = atacante
+		Fase.HEROI_DEFENDENDO:
+			h = defensor
+		Fase.DISTRIBUINDO_DANO:
+			h = unidade(str(dano_pendente.get("id", "")))
+		Fase.SOMBRA_ESCOLHA:
+			h = unidade(str(sombra_pendente.get("heroi", "")))
+		Fase.RESOLVIDO:
+			if resultado.has("reator") and reacao_disponivel() != "":
+				h = unidade(str(resultado["reator"]))
+			elif resultado.get("passo", "") != "" and defensor != null:
+				h = defensor
+			elif atacante != null and atacante.eh_heroi():
+				h = atacante
+			elif defensor != null and defensor.eh_heroi():
+				h = defensor
+			else:
+				h = ativa()
+		Fase.PERGUNTA:
+			var d: Dictionary = pergunta.get("dados", {})
+			for chave in ["guarda", "muralha", "reator", "quem"]:
+				if d.has(chave):
+					h = unidade(str(d[chave]))
+					break
+			if h == null:
+				match str(pergunta.get("id", "")):
+					"reacao":
+						h = unidade(str(resultado.get("reator", ""))) if resultado.has("reator") else defensor
+						if h != null and not h.eh_heroi():
+							h = atacante
+					"scry":
+						h = unidade(str(scry_pendente.get("quem", "")))
+					"sustentar":
+						for z in zonas:
+							if str(z.get("id", "")) == str(d.get("zona", "")):
+								h = unidade(str(z.get("dono", "")))
+					"anular":
+						h = unidade(str(magia_pendente.get("alvo", "")))
+			if h == null:
+				h = ativa()
+	if h == null or not h.eh_heroi():
+		return ""
+	return h.id
 
 
 func puxar() -> bool:
@@ -2016,6 +2236,7 @@ func _ia_sacudir_ficha(u: Unidade) -> bool:
 			u.acoes_padrao -= 1
 			u.tirar_fichas(f, 1)
 			_log("%s gasta uma ação para se livrar de 1 ficha de %s." % [u.nome, f])
+			Bruxo.inimigo_tirou_ficha(self, u, f)
 			if f == "Ferimento":
 				_dano_direto(u, 1, "Ferimento")
 			return true
@@ -2485,6 +2706,15 @@ func _mover(u: Unidade, destino: Vector2i) -> bool:
 		u.deslocamento = passos
 	mapa = grade.alcance(u.pos, u.deslocamento, _ocupadas(u), _perigos(u), modo_de_andar(u))
 	var caminho := Grade.caminho(mapa, destino)
+	if u.eh_heroi() and not caminho.is_empty():
+		# Escudo de Investida (0.25): conta os passos em linha reta antes do ataque.
+		var dir0: Vector2i = caminho[0] - u.pos
+		var reto := caminho.size()
+		for k in range(1, caminho.size()):
+			if caminho[k] - caminho[k - 1] != dir0:
+				reto = 0
+				break
+		u.efeitos["passos_retos"] = {"n": reto + (int(u.efeitos.get("passos_retos", {}).get("n", 0)) if reto > 0 and u.efeitos.get("passos_retos", {}).get("dir", Vector2i.ZERO) == dir0 else 0), "dir": dir0}
 	return _percorrer(u, caminho, true)
 
 
@@ -2661,6 +2891,8 @@ func _novo_ataque(atk: Unidade, dfs: Unidade, contexto: Dictionary) -> void:
 			atk.efeitos["atacados"] = {"ids": [], "ate": "inicio_turno"}
 		atk.efeitos["atacados"]["ids"].append(dfs.id)
 		atk.efeitos.erase("alvo_turno")
+	if not atk.eh_heroi() and dfs.eh_heroi():
+		atk.efeitos["atacou_" + dfs.id] = {"ate": "inicio_turno"}
 	if atk.efeitos.get("confuso", {}).get("alvo", "") == dfs.id:
 		atk.efeitos.erase("confuso")
 		atk.tirar_fichas("Confusão")
@@ -2677,6 +2909,8 @@ func _novo_ataque(atk: Unidade, dfs: Unidade, contexto: Dictionary) -> void:
 	var lim_dfs := _limite_defesa(dfs) - dfs.fichas_total("Penalidade") - int(ctx.get("limite_defensor", 0))
 	if ctx.get("magico", false) and atk.eh_heroi():
 		lim_atk += int(atk.foco.get("limite_magia", 0))
+	lim_atk += ItensB.limite_de_ataque(self, atk, dfs)
+	lim_dfs += ItensB.limite_de_defesa(self, dfs, atk)
 	if not atk.eh_heroi() and dfs.eh_heroi() and dfs.ativo("alvo-dificil") and not atk.a_distancia and Origens.maior(atk, dfs):
 		lim_atk -= 1
 	var vantagem_atk: bool = (atk.eh_heroi() and atk.ativo("matador-de-gigante") and Origens.maior(dfs, atk)) or vantagem_contra
@@ -2710,6 +2944,8 @@ func _novo_ataque(atk: Unidade, dfs: Unidade, contexto: Dictionary) -> void:
 		teste_ataque.parar()
 	if dfs.eh_heroi() and (dfs.ativo("postura-do-leao") or (dfs.arma.get("tamanho", "") == "pequeno" and dfs.atacou_nesta_rodada)):
 		teste_defesa.revelado = true
+	if dfs.efeitos.has("defende_revelado") or dfs.efeitos.has("reflexos_predatorios"):
+		teste_defesa.revelado = true
 	if dfs.luz == "tocha":
 		teste_defesa.revelado = true
 		_log("%s segura uma tocha acesa: defende com as cartas reveladas." % dfs.nome)
@@ -2717,6 +2953,7 @@ func _novo_ataque(atk: Unidade, dfs: Unidade, contexto: Dictionary) -> void:
 		teste_defesa.revelado = true
 	if atk.eh_heroi() and atk.percepcao >= 5 and not b_dfs.baralho.is_empty():
 		_log("Percepção 5: %s vê o topo do baralho do defensor: %s." % [atk.nome, Carta.nome(b_dfs.baralho[-1])])
+	Bruxo.inicio_do_ataque(self, atk, dfs)
 	var nome_hab: String = ctx.get("habilidade", "")
 	_log("%s ataca %s%s%s." % [atk.nome, dfs.nome, (" com " + nome_hab) if nome_hab != "" else "",
 		" (com inimigo ao lado: só as 2 cartas iniciais)" if desvantagem else ""])
@@ -2791,7 +3028,8 @@ func _limite_defesa(u: Unidade) -> int:
 		lim += 1
 	lim += int(u.foco.get("limite_defesa", 0))
 	for o in unidades:
-		if o != u and o.viva() and o.eh_heroi() == u.eh_heroi() and o.ativo("ombro-de-aco"):
+		# Revisão 27/10: só os aliados ADJACENTES ganham +1.
+		if o != u and o.viva() and o.eh_heroi() == u.eh_heroi() and o.ativo("ombro-de-aco") and Grade.adjacentes(o.pos, u.pos):
 			lim += 1
 	return lim
 
@@ -2862,9 +3100,14 @@ func _resolver() -> void:
 			dano += dano_foco
 			partes.append([u.foco.get("nome", "foco"), dano_foco])
 		var at_mag := atributo_de_magia(u)
+		var rotulo_at: String = NOMES_ATRIBUTO.get(ATRIBUTO_MAGIA.get(u.classe, "sabedoria"), "")
+		if ctx.has("atributo_magia"):
+			# Livros (0.25): Raciocínio nos grimórios, Espírito nos textos sagrados.
+			at_mag = int(ctx["atributo_magia"])
+			rotulo_at = str(ctx.get("rotulo_atributo", rotulo_at))
 		if at_mag != 0:
 			dano += at_mag
-			partes.append([NOMES_ATRIBUTO.get(ATRIBUTO_MAGIA.get(u.classe, "sabedoria"), ""), at_mag])
+			partes.append([rotulo_at, at_mag])
 		if u.efeitos.has("varinha_de_cristal"):
 			var vc := maxi(u.raciocinio, u.sabedoria)
 			dano += vc
@@ -2928,6 +3171,9 @@ func _resolver() -> void:
 		elif u.efeitos.has("ignora_reducao") or ctx.get("ignora_resistencia", false) or (u.eh_heroi() and u.arma.get("ignora_resistencia", false) and not magico):
 			partes.append(["resistência ignorada", 0])
 			res = 0
+		elif u.eh_heroi() and ItensB.ignora_resistencia(self, u, alvo) != "":
+			partes.append(["resistência ignorada (%s)" % ItensB.ignora_resistencia(self, u, alvo), 0])
+			res = 0
 		elif u.ativo("folha-de-carvalho") and alvo.imobilizado():
 			partes.append(["resistência ignorada (Folha de Carvalho)", 0])
 			res = 0
@@ -2935,9 +3181,9 @@ func _resolver() -> void:
 		if res > 0:
 			partes.append(["resistência", -res])
 		dano = maxi(dano - res, 0)
-		if u.efeitos.has("veneno_acido"):
-			dano += 2
-			partes.append(["Veneno Ácido", 2])
+		if u.efeitos.has("veneno_acido") and not magico:
+			dano += 1
+			partes.append(["Veneno Ácido", 1])
 		var ferimentos := 0 if (alvo.eh_heroi() and alvo.ativo("ignorar-a-dor")) else alvo.fichas_total("Ferimento")
 		if ferimentos > 0:
 			dano += ferimentos
@@ -2968,15 +3214,26 @@ func _resolver() -> void:
 		for ef in efs_inimigo:
 			if ef.has("max") and alvo.fichas_total(ef["ficha"]) >= int(ef["max"]):
 				continue
-			if alvo.efeitos.has("hino"):
+			if alvo.efeitos.has("hino") and ef["ficha"] in ["Medo", "Confusão"]:
 				_log("Hino de Coragem: %s não recebe %s." % [alvo.nome, ef["ficha"]])
 				continue
+			if _estrela_protege(alvo, ef["ficha"]):
+				continue
+			if alvo.eh_heroi() and alvo.ativo("o-inabalavel") and int(ef.get("qtd", 1)) > 1:
+				ef = ef.duplicate()
+				ef["qtd"] = 1
+				_log("O Inabalável: %s recebe só 1 ficha." % alvo.nome)
 			alvo.dar_ficha(ef["ficha"], int(ef.get("qtd", 1)))
 			_log("%s põe %d ficha(s) de %s em %s." % [u.nome, int(ef.get("qtd", 1)), ef["ficha"], alvo.nome])
 		if not efs_inimigo.is_empty():
 			fichas_de_inimigo(alvo, u)
 	if not u.eh_heroi() and alvo.eh_heroi():
 		_reacao_ao_atacar(u, alvo, acerto)
+		if dano > 0:
+			u.efeitos["feriu_heroi"] = {"ate": "inicio_turno"}
+		ItensB.defendeu(self, u, alvo, acerto, atk, dfs, dano)
+		Bruxo.heroi_atacado(self, u, alvo, dano)
+	Bruxo.resolvido(self, u, alvo, acerto)
 	var primeiro_da_area := int(ctx.get("area_n", 0)) == 0
 	if ctx.get("area", false) and dano > 0 and alvo.eh_heroi() and alvo.efeitos.has("metade_area"):
 		alvo.efeitos.erase("metade_area")
@@ -3032,6 +3289,12 @@ func _resolver() -> void:
 			_efeito_ao_errar(u)
 	if alvo.eh_heroi() and not acerto:
 		_defendeu_bem(alvo)
+	if alvo.eh_heroi() and not u.eh_heroi() and resultado.get("reacao", "") == "":
+		var r_b := Bruxo.reacao_disponivel(self, u, alvo)
+		if r_b == "" and acerto == false and ItensB.arma(alvo) == "florete_de_duelista" and alvo.acoes_reacao > 0 \
+				and motivo_alcance(alvo, u, alvo.pos) == "" and alvo.cartas.any(func(x): return x.tipo == "arma" and x.pode_pagar(1)):
+			r_b = "florete-de-duelista"
+		resultado["reacao"] = r_b
 	if alvo.eh_heroi() and not u.eh_heroi() and resultado.get("reacao", "") == "" and u.viva():
 		for h in herois_ativos():
 			var c = h.carta_com("castigo")
@@ -3102,8 +3365,13 @@ func atributo_de_magia(u: Unidade) -> int:
 
 ## Resistência com os bônus que dependem do campo (aliados, bênçãos).
 func _resistencia_de(u: Unidade) -> int:
-	var r := u.resistencia_total()
+	var r := u.resistencia_total() + ItensB.resistencia(self, u, atacante)
 	r += int(u.efeitos.get("resistencia_extra", {}).get("valor", 0))
+	if u.eh_heroi() and u.ativo("a-muralha"):
+		if u.armadura.get("classe", "nenhuma") != "nenhuma" and u.vida_armadura <= 0:
+			r += 1
+		if u.escudo.get("vida", 0) > 0 and u.vida_escudo <= 0:
+			r += 1
 	if u.eh_heroi():
 		r += int(u.foco.get("resistencia", 0))
 		if u.ativo("ombro-a-ombro") and aliados_adjacentes(u, u.pos) > 0:
@@ -3143,7 +3411,7 @@ func _bonus_de_dano(u: Unidade, alvo: Unidade, acerto: bool) -> Array:
 	var sombras := u.fichas_total("Sombra")
 	if u.ativo("lamina-na-manga") and sombras > 0 and not magico:
 		lista.append(["Lâmina na Manga", sombras])
-	if u.ativo("bote-fatal") and sombras > 0 and not magico and not u.a_distancia:
+	if u.ativo("bote-fatal") and sombras > 0 and not magico and not u.a_distancia and acerto:
 		alvo.dar_ficha("Ferimento", sombras)
 	if u.ativo("presa-ferida") and u.a_distancia and not magico:
 		var tipos := 0
@@ -3167,20 +3435,65 @@ func _bonus_de_dano(u: Unidade, alvo: Unidade, acerto: bool) -> Array:
 		lista.append(["Sede de Sangue", 2])
 	if u.ativo("o-oportunista") and ["Penalidade", "Confusão", "Cegueira", "Medo"].any(func(f): return alvo.fichas_total(f) > 0):
 		lista.append(["O Oportunista", 2])
+	lista.append_array(ItensB.bonus_de_dano(self, u, alvo, acerto))
+	lista.append_array(Bruxo.bonus_de_dano(self, u, alvo, acerto))
+	var bc_cat: Dictionary = ctx.get("bonus_extra_contra", {})
+	if acerto and not bc_cat.is_empty() and alvo.categoria in bc_cat.get("categorias", []):
+		lista.append([ctx.get("habilidade", "magia") + " (profano)", int(bc_cat["valor"])])
 	var horda := herois_ativos().any(func(h): return h.ativo("brado-da-horda") and Grade.distancia(h.pos, u.pos) <= 4)
 	if horda and herois_ativos().filter(func(h): return Grade.adjacentes(h.pos, alvo.pos)).size() >= 2:
 		lista.append(["Brado da Horda (cercado)", 1])
 	return lista
 
 
+## Predador Absoluto (revisão 27/10): com o lado revelado, escolhe um inimigo visível como
+## presa (o mais próximo); quando ele morre, escolhe outro.
+func _escolher_presa(u: Unidade) -> void:
+	if not u.ativo("predador-absoluto"):
+		return
+	var atual := unidade(u.efeitos.get("presa", {}).get("id", ""))
+	if atual != null and atual.viva():
+		return
+	var melhor: Unidade = null
+	for o in inimigos_vivos():
+		if unidade_visivel(o) and (melhor == null or Grade.distancia(o.pos, u.pos) < Grade.distancia(melhor.pos, u.pos)):
+			melhor = o
+	if melhor != null:
+		u.efeitos["presa"] = {"id": melhor.id}
+		_log("Predador Absoluto: %s escolhe %s como presa." % [u.nome, nome_visto(melhor)])
+
+
 ## Efeitos depois do ataque de um herói: fichas no alvo, Mira, empurrões...
 func _depois_do_ataque_do_heroi(u: Unidade, alvo: Unidade, acerto: bool, dano: int) -> void:
 	Extras.depois_do_ataque(self, u, alvo, acerto)
+	ItensB.depois_do_ataque(self, u, alvo, acerto, dano)
+	Bruxo.depois_do_ataque(self, u, alvo, acerto, dano)
+	if u.efeitos.has("virar_inicial") and Bruxo.carta_inicial(u) != null:
+		u.efeitos.erase("virar_inicial")
+		_virar(u, Bruxo.carta_inicial(u))
+		_log("Manifestação Dupla: a habilidade inicial vira; a outra face ainda sai sem ação.")
+	if ctx.has("francisca") and not u.efeitos.has("francisca"):
+		# Francisca: depois do arremesso o herói fica desarmado; ela volta no início do próximo turno.
+		u.efeitos["francisca"] = {"arma": ctx["francisca"]}
+		_equipar(u, DESARMADO)
+		_log("A Francisca voa: %s fica desarmado até o próximo turno." % u.nome)
+	if ctx.get("chama_negra", false) and acerto and alvo.viva():
+		if dano >= 4 and alvo.resistencia > 0:
+			alvo.resistencia = 0
+			_log("Chama Negra: a armadura de %s se desfaz em cinzas (resistência 0)." % alvo.nome)
+		elif alvo.resistencia <= 0:
+			alvo.dar_ficha("Fogo", 4)
+			_log("Chama Negra: %s, sem armadura, recebe 4 fichas de Fogo." % alvo.nome)
+	var presa: bool = u.ativo("predador-absoluto") and u.efeitos.get("presa", {}).get("id", "") == alvo.id
+	if presa and dano > 0:
+		u.efeitos["feriu_presa"] = {"ate": "inicio_turno"}
 	if acerto:
 		for ef in ctx.get("ao_acertar", []):
 			if ef.has("ficha") and alvo.viva():
-				alvo.dar_ficha(ef["ficha"], int(ef.get("qtd", 1)))
-				_log("%s recebe %d ficha(s) de %s." % [alvo.nome, int(ef.get("qtd", 1)), ef["ficha"]])
+				# Predador Absoluto (revisão 27/10): o dobro das fichas na presa.
+				var qtd_f := int(ef.get("qtd", 1)) * (2 if presa else 1)
+				alvo.dar_ficha(ef["ficha"], qtd_f)
+				_log("%s recebe %d ficha(s) de %s%s." % [alvo.nome, qtd_f, ef["ficha"], " (Predador Absoluto: dobro na presa)" if presa else ""])
 			if ef.has("empurrar") and alvo.viva():
 				_empurrar(alvo, u.pos, int(ef["empurrar"]))
 			if ef.get("derrubar", false) and alvo.viva():
@@ -3194,8 +3507,15 @@ func _depois_do_ataque_do_heroi(u: Unidade, alvo: Unidade, acerto: bool, dano: i
 		if not adi.is_empty() and dano > 0 and not alvo.eh_heroi() and alvo.viva():
 			if int(adi.get("dano", 0)) > 0:
 				_dano_direto(alvo, int(adi["dano"]), adi.get("rotulo", "efeito"))
+			for f_adi in adi.get("fichas", {}):
+				if alvo.viva():
+					alvo.dar_ficha(f_adi, int(adi["fichas"][f_adi]))
+					_log("%s: %s recebe %d %s." % [adi.get("rotulo", "efeito"), alvo.nome, int(adi["fichas"][f_adi]), f_adi])
 			if int(adi.get("empurrar", 0)) > 0 and alvo.viva():
-				_empurrar(alvo, u.pos, int(adi["empurrar"]))
+				var centro: Vector2i = area_atual.get("alvo", u.pos) if ctx.get("area", false) and not area_atual.is_empty() else u.pos
+				_empurrar(alvo, centro if centro != alvo.pos else u.pos, int(adi["empurrar"]), int(adi.get("dano_batida", -1)))
+			if adi.get("derrubar", false) and alvo.viva():
+				derrubar(alvo)
 		if u.a_distancia and not ctx.get("magico", false) and u.ativo("folha-de-carvalho"):
 			u.dar_ficha("Mira")
 			_log("Folha de Carvalho: %s ganha 1 ficha de Mira." % u.nome)
@@ -3249,6 +3569,10 @@ func _dano_de_impacto(u: Unidade, dano: int, fonte: String) -> void:
 ## Dano no baralho do herói. Diplomacia 5: com o baralho zerado, o dano no
 ## descarte exila só metade das cartas (arredondando para cima).
 func _dano_no_baralho(u: Unidade, pontos: int) -> void:
+	if "amuleto_de_kanil" in u.vestidos and not u.efeitos.has("kanil_usado") and pontos >= u.baralho.baralho.size() and u.baralho.baralho.size() > 1:
+		u.efeitos["kanil_usado"] = {}
+		pontos = u.baralho.baralho.size() - 1
+		_log("Amuleto de Kanil: %s fica com 1 carta no baralho." % u.nome)
 	if u.atributo("diplomacia") >= 5 and u.baralho.baralho.is_empty() and pontos > 1:
 		_log("Diplomacia 5: %s, inconsciente, exila só metade (%d → %d)." % [u.nome, pontos, pontos - int(pontos / 2)])
 		pontos -= int(pontos / 2)
@@ -3370,7 +3694,8 @@ func _critico(u: Unidade) -> void:
 					o.dar_ficha("Guarda")
 			_log("Ombro a Ombro: 1 ficha de Guarda para você e cada aliado adjacente.")
 		_:
-			Classes.critico(self, u, h.slug())
+			if not Bruxo.critico(self, u):
+				Classes.critico(self, u, h.slug())
 
 
 # --- Dano no herói: o jogador distribui -------------------------------------
@@ -3390,11 +3715,36 @@ func _larapio_disponivel(h: Unidade) -> bool:
 
 
 func _dano_no_heroi(u: Unidade, dano: int, origem: String, volta: Fase) -> void:
+	if origem == "ataque" and dano > 0:
+		var antes_r := dano
+		dano = Bruxo.reduzir_dano(self, u, dano)
+		if dano != antes_r and resultado.has("dano"):
+			resultado["dano"] = dano
+		# Ficha de Guarda (0.25, glossário: "sofra ataque no lugar de aliado"): um aliado ao lado com Guarda pode receber o golpe.
+		if perguntar_escolhas and dano > 0 and not resultado.get("guarda_perguntada", false):
+			for gh in herois_ativos():
+				if gh != u and Grade.adjacentes(gh.pos, u.pos) and gh.fichas_total("Guarda") > 0:
+					resultado["guarda_perguntada"] = true
+					perguntar("guarda", "%s vai sofrer %d de dano. %s gasta 1 ficha de Guarda para receber o golpe no lugar?" % [u.nome, dano, gh.nome],
+						[["sim", "Sim, %s recebe o golpe" % gh.nome], ["nao", "Não"]], {"quem": u.id, "guarda": gh.id, "dano": dano, "origem": origem, "volta": volta})
+					return
+	_dano_no_heroi_sem_guarda(u, dano, origem, volta)
+
+
+func _dano_no_heroi_sem_guarda(u: Unidade, dano: int, origem: String, volta: Fase) -> void:
 	if not larapio_pendente.is_empty() and larapio_pendente["id"] == u.id and origem == "ataque":
 		larapio_pendente = {}
 		perguntar("larapio", "Larápio: %s vai sofrer %d de dano deste ataque em área. Pagar 2 de fadiga para sofrer só metade (%d)?" % [u.nome, dano, dano - int(dano / 2)],
 			[["sim", "Sim, pagar 2 de fadiga"], ["nao", "Não"]], {"quem": u.id, "dano": dano, "origem": origem, "volta": volta})
 		return
+	# A Muralha (ativada, reação): outro herói recebe o dano no lugar do aliado.
+	if origem == "ataque" and perguntar_escolhas and dano > 0:
+		for m in herois_ativos():
+			var cm = m.carta_heroi()
+			if m != u and m.ativo("a-muralha") and cm != null and cm.pode_pagar(2) and m.acoes_reacao > 0:
+				perguntar("muralha", "A Muralha: %s vai sofrer %d de dano. %s paga 2 de fadiga e a Reação para receber o dano no lugar (na armadura e no escudo, sem resistência)?" % [u.nome, dano, m.nome],
+					[["sim", "Sim, %s recebe o golpe" % m.nome], ["nao", "Não"]], {"quem": u.id, "muralha": m.id, "dano": dano, "origem": origem, "volta": volta})
+				return
 	_dano_no_heroi_agora(u, dano, origem, volta)
 
 
@@ -3424,8 +3774,14 @@ func limites_distribuicao() -> Dictionary:
 	var d: int = dano_pendente["dano"]
 	# Cota de Malha (Lucas, 0.20): a armadura só recebe até a vida que tem; o efeito é só
 	# voltar para 1 na primeira vez que chega a 0.
-	var arm := mini(u.vida_armadura, d)
-	return {"escudo": mini(u.vida_escudo, d), "armadura": arm}
+	var arm := mini(u.vida_armadura + int(u.efeitos.get("vigor_lunar", {}).get("vida", 0)), d)
+	var esc := mini(u.vida_escudo, d)
+	var atk_d: Unidade = atacante if dano_pendente.get("origem", "") == "ataque" else null
+	if not ItensB.limite_no_escudo(self, u, atk_d):
+		esc = 0
+	if not ItensB.limite_na_armadura(self, u):
+		arm = 0
+	return {"escudo": esc, "armadura": arm}
 
 
 ## Sugestão (a ordem da 0.5): escudo, depois armadura, depois baralho.
@@ -3460,6 +3816,17 @@ func _aplicar_distribuicao(escudo: int, armadura: int) -> void:
 		u.vida_escudo -= escudo
 		if u.vida_escudo == 0:
 			_log("O escudo de %s quebrou." % u.nome)
+	if armadura > 0 and dano_pendente.get("origem", "") == "ataque":
+		ItensB.dano_na_armadura(self, u, atacante, armadura)
+	if armadura > 0 and u.efeitos.has("vigor_lunar"):
+		# Poção de Vigor Lunar: a carta recebe o dano antes da armadura.
+		var vl: Dictionary = u.efeitos["vigor_lunar"]
+		var no_vigor := mini(int(vl["vida"]), armadura)
+		vl["vida"] = int(vl["vida"]) - no_vigor
+		armadura -= no_vigor
+		_log("Vigor Lunar segura %d de dano (sobra %d)." % [no_vigor, int(vl["vida"])])
+		if int(vl["vida"]) <= 0:
+			u.efeitos.erase("vigor_lunar")
 	if armadura > 0:
 		if armadura >= u.vida_armadura and _cota_disponivel(u):
 			u.armadura_salvou_na_cena = true
@@ -3523,6 +3890,9 @@ func _furia(h: Unidade) -> void:
 
 ## Desencadeadas quando um inimigo cai.
 func _inimigo_caiu(o: Unidade) -> void:
+	Bruxo.inimigo_caiu(self, o)
+	_deixar_saque(o)
+	_sumir_invocacoes(o)
 	for h in herois_ativos():
 		if h.ativo("sede-de-sangue") and Grade.distancia(h.pos, o.pos) <= 4:
 			h.efeitos["sede_de_sangue"] = {"turnos": 2}
@@ -3540,6 +3910,9 @@ func _inimigo_caiu(o: Unidade) -> void:
 func _curar(u: Unidade, pontos: int, verbo: String) -> void:
 	if u.ativo("o-sobrevivente"):
 		pontos += 1
+	if u.eh_heroi() and ItensB.arma(u) == "machado_da_sepultura" and pontos > 0:
+		pontos = int(pontos / 2)
+		_log("Machado da Sepultura: a cura de %s cai pela metade." % u.nome)
 	if conjurando != null and conjurando.foco.get("id", "") == "calice_da_vida":
 		pontos += 1
 		_log("Cálice da Vida: a magia cura 1 a mais.")
@@ -3632,6 +4005,8 @@ func motivo_sem_opcao(u: Unidade, it: Dictionary, op: Dictionary) -> String:
 		return "só quem tem %s" % " ou ".join(PackedStringArray(op["requer_carta"].map(func(sl): return preload("res://core/catalogo.gd").habilidade_por_slug(sl))))
 	if op.has("requer_classe") and not u.classe in op["requer_classe"]:
 		return "só %s" % " ou ".join(PackedStringArray(op["requer_classe"]))
+	if int(op.get("requer_pistas", 0)) > pistas.size():
+		return "faltam pistas (vocês têm %d de %d)" % [pistas.size(), int(op["requer_pistas"])]
 	if op.has("requer_combates") and combates_vencidos() < int(op["requer_combates"]):
 		return "seguro só depois de vencer %d combates (vocês venceram %d)" % [int(op["requer_combates"]), combates_vencidos()]
 	var custo: Dictionary = op.get("custo", {})
@@ -3846,6 +4221,14 @@ func tem_vantagem_na_opcao(u: Unidade, op: Dictionary) -> String:
 	for slug in por_carta:
 		if u.ativo(slug) and _usa(t, por_carta[slug]):
 			return preload("res://core/catalogo.gd").habilidade_por_slug(slug)
+	if u.efeitos.has("mergulho") and _usa(t, ["Natação"]):
+		return "Poção de Mergulho"
+	if "manto_camuflado" in u.vestidos and _usa(t, ["Furtividade"]):
+		return "Manto Camuflado"
+	if ItensB.armadura(u) == "arnes_de_placas" and _usa(t, ["Intimidação"]):
+		return "Arnês de Placas"
+	if u.efeitos.has("veu_de_sombras") and _usa(t, ["Furtividade"]):
+		return "Véu de Sombras"
 	if u.ativo("olho-para-o-minerio") and "caverna" in tags and _usa(t, ["percepcao", "sabedoria"]):
 		return "Olho para o Minério"
 	if u.ativo("giria-dos-ladroes") and "criminosos" in tags:
@@ -3918,8 +4301,27 @@ func descricao_do_teste(u: Unidade, op: Dictionary) -> String:
 	if v != "":
 		partes.append("vantagem (%s)" % _nome_item(v))
 	if op.has("dificuldade"):
-		partes.append(("dificuldade %d (%s)" % [int(op["dificuldade"]), NOMES_NIVEL[op["nivel"]]]) if op.has("nivel") else "dificuldade %d" % int(op["dificuldade"]))
+		partes.append(nome_da_dificuldade(op))   # Lucas (0.24): sem o número
 	return " · ".join(partes)
+
+
+## "muito fácil" ... "muito difícil" (sem mostrar o número; 0.24).
+func nome_da_dificuldade(op: Dictionary) -> String:
+	if op.has("nivel"):
+		return NOMES_NIVEL[op["nivel"]]
+	if not op.has("dificuldade"):
+		return ""
+	var n := componentes_do_teste(op.get("teste", {})).size()
+	var base := int(op["dificuldade"]) - 3 * clampi(n, 0, 2)
+	if base <= 12:
+		return "muito fácil"
+	if base <= 14:
+		return "fácil"
+	if base <= 16:
+		return "médio"
+	if base <= 18:
+		return "difícil"
+	return "muito difícil"
 
 
 ## "Natação + Força": o que entra como modificador no teste.
@@ -3930,19 +4332,12 @@ func nome_do_modificador(op: Dictionary) -> String:
 	return " + ".join(nomes) if not nomes.is_empty() else "atributo"
 
 
-## Faixas legíveis: "2–8 afunda · 9–10 não sai do lugar · 11+ atravessa".
+## Faixas legíveis (0.24, sem números): "afunda · não sai do lugar · atravessa", do pior ao melhor.
 func descricao_das_faixas(op: Dictionary) -> String:
-	var faixas: Array = op.get("faixas", [])
 	var partes := PackedStringArray()
-	for i in faixas.size():
-		var de: int = maxi(int(faixas[i][0]), 2)
-		var rotulo: String = op["resultados"][faixas[i][1]].get("rotulo", faixas[i][1])
-		if i + 1 < faixas.size():
-			var ate: int = int(faixas[i + 1][0]) - 1
-			partes.append(("%d–%d %s" % [de, ate, rotulo]) if ate > de else ("%d %s" % [de, rotulo]))
-		else:
-			partes.append("%d+ %s" % [de, rotulo])
-	return " · ".join(partes)
+	for f in op.get("faixas", []):
+		partes.append(str(op["resultados"][f[1]].get("rotulo", f[1])))
+	return "do pior ao melhor: " + " · ".join(partes)
 
 
 ## A opção do teste em andamento (ou o teste de amortecer uma queda).
@@ -4192,6 +4587,8 @@ func _ajustes_no_estouro(t: Teste21) -> void:
 	var u := _dono_do_teste(t)
 	if u == null or not t.estourou or t.resultado_forcado >= 0:
 		return
+	if u.eh_heroi() and u.pacto != "" or (u.eh_heroi() and u.pacto_menor != ""):
+		Bruxo.no_estouro(self, u, t, t == teste_defesa)
 	if u.ativo("sorte-dos-pequenos") and not u.efeitos.has("sorte_usada"):
 		u.efeitos["sorte_usada"] = {}
 		t.resultado_forcado = 21
@@ -4351,8 +4748,16 @@ static func dano_de_queda(quadrados: int) -> int:
 	return 0 if quadrados <= 1 else 3 * (quadrados - 1)
 
 
+## Com as Botas de Lince, metade do dano de queda (0.25).
+func dano_de_queda_de(u: Unidade, quadrados: int) -> int:
+	var d := dano_de_queda(quadrados)
+	if u != null and "botas_de_lince" in u.vestidos:
+		d = int(ceil(d / 2.0))
+	return d
+
+
 func opcao_de_amortecer(quadrados: int) -> Dictionary:
-	var dano := dano_de_queda(quadrados)
+	var dano := dano_de_queda_de(ativa(), quadrados)
 	var metade := int(ceil(dano / 2.0))
 	return {"id": "amortecer", "texto": "Amortecer a queda",
 		"teste": {"atributo": "destreza", "pericia": "Acrobacia", "movimento": true},
@@ -4374,7 +4779,7 @@ func heroi_amortecer_queda(tentar: bool) -> bool:
 	interacao_atual.erase("queda")
 	var u := ativa()
 	if not tentar:
-		interacao_atual["dano"] = int(interacao_atual.get("dano", 0)) + dano_de_queda(n)
+		interacao_atual["dano"] = int(interacao_atual.get("dano", 0)) + dano_de_queda_de(u, n)
 		_log("%s cai %d quadrados sem tentar amortecer." % [u.nome, n])
 		_continuar_interacao()
 		return true
@@ -4382,7 +4787,7 @@ func heroi_amortecer_queda(tentar: bool) -> bool:
 	interacao_atual["op_teste"] = op
 	teste_pericia = Teste21.new(u.baralho, modificador_do_teste(u, op), limite_do_teste(u, op), false, false, 2, _adiar_fechada(u))
 	fase = Fase.INTERACAO_TESTE
-	_log("%s tenta amortecer a queda: %s, dificuldade %d." % [u.nome, descricao_do_teste(u, op), op["dificuldade"]])
+	_log("%s tenta amortecer a queda: %s." % [u.nome, descricao_do_teste(u, op)])
 	if not u.viva() or teste_pericia.encerrado:
 		if not u.viva():
 			teste_pericia.parar()
@@ -4474,12 +4879,16 @@ func _aplicar_efeito(u: Unidade, it: Dictionary, ef: Dictionary) -> String:
 			var n := int(ef["quadrados"])
 			if n <= 1:
 				return "Cai de 1 quadrado de altura: sem dano."
+			if "paraquedas_elfico" in u.vestidos and not u.efeitos.has("paraquedas_usado"):
+				u.efeitos["paraquedas_usado"] = {}
+				_log("O Paraquedas Élfico se abre: %s desce sem dano." % u.nome)
+				return "O Paraquedas Élfico se abre: sem dano (só volta a funcionar depois de um descanso curto)."
 			derrubar(u)
 			if n == 2:
-				interacao_atual["dano"] = int(interacao_atual.get("dano", 0)) + dano_de_queda(n)
-				return "Cai 2 quadrados: %d de dano (você escolhe como distribuir)." % dano_de_queda(n)
+				interacao_atual["dano"] = int(interacao_atual.get("dano", 0)) + dano_de_queda_de(u, n)
+				return "Cai 2 quadrados: %d de dano (você escolhe como distribuir)." % dano_de_queda_de(u, n)
 			interacao_atual["queda"] = n
-			return "Vai cair %d quadrados: %d de dano. Dá para tentar amortecer a queda com Acrobacia (dificuldade %d) e sofrer só a metade." % [n, dano_de_queda(n), 15 + n]
+			return "Vai cair %d quadrados: %d de dano. Dá para tentar amortecer a queda com Acrobacia e sofrer só a metade." % [n, dano_de_queda(n)]
 		"item":
 			for i in int(ef.get("qtd", 1)):
 				u.consumiveis.append(ef["item"])
@@ -4578,6 +4987,12 @@ func _aplicar_efeito(u: Unidade, it: Dictionary, ef: Dictionary) -> String:
 			return ""
 		"levantar_aliado":
 			return _efeito_levantar(unidade(interacao_atual.get("alvo", "")), int(ef.get("cura", 0)))
+		"pista":
+			var nome_p := str(ef.get("nome", "pista %d" % (pistas.size() + 1)))
+			if not pistas.has(nome_p):
+				pistas[nome_p] = str(ef.get("texto", ""))
+				_log("Pista anotada: %s (%d no total)." % [nome_p, pistas.size()])
+			return ""
 		"matar_unidade":
 			var mu := unidade(ef["id"])
 			if mu != null and mu.viva():
@@ -4603,9 +5018,14 @@ func _aplicar_efeito(u: Unidade, it: Dictionary, ef: Dictionary) -> String:
 			lore_achada.append(ef["texto"])
 			return ""
 		"ouro":
-			ouro_ganho += int(ef["valor"])
-			_log("O grupo encontra %d moedas de ouro." % int(ef["valor"]))
-			return "O grupo ganha %d de ouro." % int(ef["valor"])
+			# 0.25: "valor" está em PRATAS (escala antiga do ouro); o dinheiro é guardado em cobre.
+			ouro_ganho += int(ef["valor"]) * 10
+			if int(ef["valor"]) < 0:
+				# 0.28: valor negativo = o grupo paga (suborno, aposta perdida).
+				_log("O grupo paga %d moedas de prata." % -int(ef["valor"]))
+				return "O grupo paga %d pratas." % -int(ef["valor"])
+			_log("O grupo encontra %d moedas de prata." % int(ef["valor"]))
+			return "O grupo ganha %d pratas." % int(ef["valor"])
 	return ""
 
 
@@ -4622,8 +5042,20 @@ func _descanso_curto(u: Unidade) -> String:
 	if do_exilio > 0:
 		linhas.append("Espírito %d: %d carta(s) voltam do exílio para o descarte." % [u.espirito, do_exilio])
 	if "racao_de_viagem" in u.consumiveis:
+		# 0.25 (carta nova): a ração dá 1 carta a mais na mão da próxima cena. No jogo, o
+		# descanso curto abre a parte seguinte da missão: o herói compra 1 carta agora.
 		u.consumiveis.erase("racao_de_viagem")
-		linhas.append("Come a Ração de Viagem: −%d de fadiga." % _tirar_fadiga(u, 3))
+		u.gastos.append("racao_de_viagem")
+		var c_r := u.baralho.puxar_topo()
+		if c_r >= 0:
+			u.baralho.mao.append(c_r)
+		linhas.append("Come a Ração de Viagem: compra 1 carta para a mão.")
+	if "pedra_de_amolar" in u.consumiveis and u.arma.get("tipo_dano", "") in ["Corte", "Perfuração"] and not u.efeitos.has("pedra_de_amolar"):
+		u.consumiveis.erase("pedra_de_amolar")
+		u.gastos.append("pedra_de_amolar")
+		u.efeitos["pedra_de_amolar"] = {}
+		linhas.append("Pedra de Amolar: a arma causa +1 de dano até o fim da missão.")
+	u.efeitos.erase("paraquedas_usado")
 	if u.ativo("maos-de-forja"):
 		var arm := mini(u.sabedoria, int(u.armadura.get("vida", 0)) - u.vida_armadura)
 		u.vida_armadura += arm
@@ -4680,17 +5112,17 @@ func _casa_livre_perto(p: Vector2i) -> Vector2i:
 
 
 func _nome_item(id: String) -> String:
-	if Itens.CONSUMIVEIS.has(id):
-		return Itens.CONSUMIVEIS[id]["nome"]
-	if Itens.NAO_CONSUMIVEIS.has(id):
-		return Itens.NAO_CONSUMIVEIS[id]["nome"]
-	return id
+	return Itens.nome(id)
 
 
 # --- Turnos -----------------------------------------------------------------
 
 func _fim_de_turno_heroi(u: Unidade, esc: Dictionary) -> void:
 	var op := opcoes_fim_de_turno(u)
+	var conservou: bool = "conservar-inverno" in esc.get("opcionais", [])
+	if conservou:
+		op["pontos"] = 0
+		_log("Inverno Imóvel: %s conserva a fadiga." % u.nome)
 	# Fadiga: cada ponto sai da carta escolhida (Lucas: só 1 por carta, a não ser que haja mais pontos).
 	var pedidas: Array = esc.get("fadiga", [])
 	for k in int(op["pontos"]):
@@ -4727,6 +5159,11 @@ func _fim_de_turno_heroi(u: Unidade, esc: Dictionary) -> void:
 	if u.armadura.get("classe", "") in ["media", "pesada"] and u.vida_armadura > 0 and not u.baralho.descarte.is_empty():
 		u.baralho.exilio.append(u.baralho.descarte.pop_back())
 		_log("%s pesa: 1 carta do descarte vai para o exílio." % u.armadura["nome"])
+	ItensB.fim_do_turno(self, u)
+	Bruxo.fim_do_turno(self, u, conservou)
+	if u.ativo("predador-absoluto") and u.efeitos.has("feriu_presa"):
+		u.dar_ficha("Preparo")
+		_log("Predador Absoluto: %s feriu a presa e ganha 1 Preparo." % u.nome)
 	for nome_ef in u.efeitos.keys():
 		var ef: Dictionary = u.efeitos[nome_ef]
 		if ef.has("turnos"):
@@ -4809,6 +5246,8 @@ func _comecar_turno() -> void:
 	# Não somem sozinhas: Veneno sai com antídoto; Fogo ao virar a carta ou na água.
 	for ficha in ["Veneno", "Fogo"]:
 		var n := u.fichas_total(ficha)
+		if ficha == "Fogo" and n > 0:
+			n = Bruxo.dano_do_fogo(self, n)
 		if ficha == "Fogo" and u.ativo("constituicao-de-pedra"):
 			n = maxi(n - 2, 0)
 		if n > 0:
@@ -4824,6 +5263,10 @@ func _comecar_turno() -> void:
 	var ignora_dor: bool = u.eh_heroi() and u.ativo("ignorar-a-dor")
 	if u.fichas_total("Imobilizar") > 0 and not ignora_dor:
 		_log("%s está imobilizado: −%d de movimento a cada deslocamento." % [u.nome, u.fichas_total("Imobilizar")])
+	if not u.eh_heroi() and u.alerta:
+		Bruxo.inicio_turno_inimigo(self, u)
+	if u.eh_heroi():
+		u.efeitos["pos_inicio"] = {"pos": u.pos}
 	if u.fichas_total("Confusão") > 0:
 		var possiveis := unidades.filter(func(o): return o != u and o.viva())
 		if not possiveis.is_empty():
@@ -4849,6 +5292,8 @@ func _comecar_turno() -> void:
 		_atualizar_limites(u)
 		Classes.inicio_do_turno(self, u)
 		Origens.inicio_do_turno(self, u)
+		ItensB.inicio_do_turno(self, u)
+		_escolher_presa(u)
 		if _sustentar_zonas(u):
 			return
 		if u.efeitos.has("acao_longa") and fase == Fase.HEROI_ESCOLHE:
@@ -4858,6 +5303,15 @@ func _comecar_turno() -> void:
 				fase = Fase.ACAO_LONGA
 	elif u.alerta:
 		_atualizar_plano(u)
+		# Cântico da Ordem (0.25): quem começa o turno dentro só anda OU só ataca.
+		if zonas_em(u.pos).any(func(z): return z["tipo"] == "ordem"):
+			var alcancavel := herois_ativos().any(func(h): return motivo_alcance(u, h, u.pos) == "")
+			if alcancavel:
+				u.acoes_mov = 0
+				_log("Cântico da Ordem: %s só pode atacar neste turno." % u.nome)
+			else:
+				u.acoes_padrao = 0
+				_log("Cântico da Ordem: %s só pode andar neste turno." % u.nome)
 
 
 # --- Névoa de guerra (0.12) ---------------------------------------------------
@@ -5029,7 +5483,7 @@ func _proximo_alvo_da_area() -> bool:
 		var surpreso := not o.eh_heroi() and not o.alerta
 		if not o.eh_heroi():
 			_alertar_inimigos(o.grupo)
-		teste_defesa = Teste21.new(b_dfs, 0, _limite_defesa(o) - o.fichas_total("Penalidade"), false, surpreso, 2, _adiar_fechada(o, true))
+		teste_defesa = Teste21.new(b_dfs, 0, _limite_defesa(o) - o.fichas_total("Penalidade") + ItensB.limite_de_defesa(self, o, atacante), false, surpreso, 2, _adiar_fechada(o, true))
 		if surpreso:
 			teste_defesa.parar()
 		_log("O mesmo ataque (%d) atinge %s." % [teste_ataque.resultado(), o.nome])
@@ -5087,6 +5541,10 @@ func _atualizar_zonas_no_mapa() -> void:
 	grade.custo_extra.clear()
 	grade.visao_bloqueada.clear()
 	grade.bloqueio_extra.clear()
+	for c in terreno_dificil_fixo:
+		grade.custo_extra[c] = 1
+	for c in visao_bloqueia_fixa:
+		grade.visao_bloqueada[c] = true
 	for c in casas_de_armadilha():
 		grade.custo_extra[c] = 4   # o caminho automático evita armadilhas achadas
 	for z in zonas:
@@ -5121,12 +5579,26 @@ func _limpar_zonas_de_caidos() -> void:
 func _entrar_na_casa(u: Unidade, p: Vector2i) -> bool:
 	if u.eh_heroi() and _casa_do_heroi(u, p):
 		return true
+	# Inimigo no tronco sobre o rio (0.24): teste de Destreza (fácil); falhou, cai na água.
+	if not u.eh_heroi() and grade.obstaculos.get(p, "") == "tronco":
+		var v := valor_resistido(u, "destreza")
+		eventos.append({"tipo": "flutuar", "id": u.id, "texto": "equilíbrio %d" % v, "cor": "c9c4b8" if v >= 12 else "ff9d5c"})
+		if v < 12:
+			_log("%s escorrega do tronco e cai no rio (%d)!" % [nome_visto(u), v])
+			_dano_direto(u, 2, "Queda no rio")
+			u.deslocamento = 0
+			u.acoes_mov = 0
+			return true
+		_log("%s atravessa o tronco equilibrando-se (%d)." % [nome_visto(u), v])
 	var parou := false
 	for z in zonas_em(p):
 		match z["tipo"]:
 			"piche":
 				u.dar_ficha("Imobilizar")
 				_log("%s afunda no piche: +1 Imobilizar." % u.nome)
+			"pira":
+				if not _zona_aliada(z, u) and int(z.get("dano_entrar", 0)) > 0:
+					_dano_direto(u, int(z["dano_entrar"]), "Louvar da Pira")
 			"armadilha":
 				if not _zona_aliada(z, u):
 					_remover_zona(z, "disparou")
@@ -5260,6 +5732,26 @@ func heroi_responder(opcao: String) -> bool:
 			_lamina_das_sombras(unidade(p["dados"]["quem"]), unidade(p["dados"]["alvo"]), unidade(opcao))
 		"estrela_aliado":
 			_estrela_aliado(unidade(opcao))
+		"muralha":
+			var hm := unidade(p["dados"]["muralha"])
+			var quem_m := unidade(p["dados"]["quem"])
+			if opcao == "sim" and hm != null and hm.carta_heroi().pode_pagar(2):
+				pagar_fadiga(hm, hm.carta_heroi(), 2)
+				hm.acoes_reacao -= 1
+				_log("A Muralha: %s se põe na frente e recebe o golpe de %s." % [hm.nome, quem_m.nome])
+				_dano_no_heroi_agora(hm, int(p["dados"]["dano"]), p["dados"]["origem"], p["dados"]["volta"])
+			else:
+				_dano_no_heroi_agora(quem_m, int(p["dados"]["dano"]), p["dados"]["origem"], p["dados"]["volta"])
+		"guarda":
+			var hg := unidade(p["dados"]["guarda"])
+			var quem_g := unidade(p["dados"]["quem"])
+			if opcao == "sim" and hg != null and hg.tirar_fichas("Guarda", 1) > 0:
+				_log("Guarda: %s se põe na frente e recebe o golpe de %s." % [hg.nome, quem_g.nome])
+				if hg.pacto == "ultima-porta" and hg.protegido == quem_g.id and Bruxo.uma_vez(hg, "porta_cumprimento"):
+					Bruxo.ganhar(self, hg, 1, "Pacto da Última Porta (assumiu o golpe)", true)
+				_dano_no_heroi_agora(hg, int(p["dados"]["dano"]), p["dados"]["origem"], p["dados"]["volta"])
+			else:
+				_dano_no_heroi_sem_guarda(quem_g, int(p["dados"]["dano"]), p["dados"]["origem"], p["dados"]["volta"])
 		"larapio":
 			var hl := unidade(p["dados"]["quem"])
 			var dl := int(p["dados"]["dano"])
@@ -5467,6 +5959,11 @@ func _proximo_turno() -> void:
 		if indice_vez >= ordem.size():
 			indice_vez = 0
 			rodada += 1
+			if vitoria_na_rodada > 0 and rodada > vitoria_na_rodada and fase != Fase.DERROTA:
+				fase = Fase.VITORIA
+				mensagem_fim = mensagem_vitoria if mensagem_vitoria != "" else "O grupo resistiu."
+				_log("O grupo resistiu %d rodadas. Vitória!" % vitoria_na_rodada)
+				return
 		if indice_vez == 0:
 			_remontar_mortos()
 			_queimar_objetos()
@@ -5505,8 +6002,8 @@ func modo_de_andar(u: Unidade) -> Dictionary:
 		for h in herois():
 			if h != u and h.viva():
 				aliados[h.pos] = true
-	return {"nada": u.efeitos.has("nado") or u.flutua or u.tipo == "afogado", "sem_terreno": u.efeitos.has("passo_leve") or u.efeitos.has("saltando") or u.flutua, "aliados": aliados,
-		"escalar": u.efeitos.has("escalando") or u.flutua}
+	return {"nada": u.efeitos.has("nado") or u.flutua or u.tipo == "afogado", "sem_terreno": u.efeitos.has("passo_leve") or u.efeitos.has("saltando") or u.flutua or (u.eh_heroi() and u.ativo("o-feerico")), "aliados": aliados,
+		"escalar": u.efeitos.has("escalando") or u.flutua, "tronco": not u.eh_heroi()}
 
 
 ## Inimigos com arma natural (animais) não largam a arma.
@@ -5518,6 +6015,9 @@ func desarmar(o: Unidade) -> void:
 	if o.efeitos.has("sem_arma"):
 		return
 	if o.eh_heroi():
+		if "manopla_de_bronze" in o.vestidos:
+			_log("Manopla de Bronze: %s não larga a arma." % o.nome)
+			return
 		if not o.arma.is_empty() and o.arma.get("nome", "") != DESARMADO["nome"]:
 			_largar_arma(o, o.pos)
 		return
@@ -5548,7 +6048,7 @@ static func armas_petreas() -> Array:
 	var lista := []
 	for id in Itens.ARMAS:
 		var a: Dictionary = Itens.ARMAS[id]
-		if not a.get("distancia", false):
+		if not a.get("distancia", false) and a.get("raridade", "") == "COMUM" and id != "desarmado":
 			lista.append(id)
 	return lista
 
@@ -5588,6 +6088,8 @@ func _resiste(o: Unidade, atributo: String, dificuldade: int) -> bool:
 	var valor: int
 	if o.eh_heroi():
 		valor = _teste_automatico(o, int(o.get(atributo)) if atributo in o else 0)
+		if o.ativo("o-inabalavel"):
+			_curar(o, 1, "se firma (O Inabalável)")
 	else:
 		valor = valor_resistido(o, atributo)
 	# 0.23: o resultado aparece em cima de quem resistiu (efeitos em área ficavam invisíveis).
@@ -5888,6 +6390,9 @@ func espaco_de_fadiga(u: Unidade, c) -> int:
 
 
 func pode_pagar_fadiga(u: Unidade, c, custo: int) -> bool:
+	if u != null and "selo_de_sangue" in u.vestidos:
+		# Selo de Sangue (0.25): cartas do topo do baralho pagam a fadiga que não couber.
+		return custo <= maxi(espaco_de_fadiga(u, c), 0) + maxi(u.baralho.baralho.size() - 1, 0)
 	return custo <= espaco_de_fadiga(u, c)
 
 
@@ -5916,7 +6421,8 @@ var fadiga_escolhida := {}
 func pagar_fadiga(u: Unidade, c, custo: int) -> void:
 	var cheias := []
 	var resto := custo
-	var aqui := mini(resto, maxi(c.espaco(), 0)) if eh_conjuracao(c) else resto
+	var selo: bool = "selo_de_sangue" in u.vestidos
+	var aqui := mini(resto, maxi(c.espaco(), 0)) if (eh_conjuracao(c) or selo) else resto
 	c.pagar(aqui)
 	resto -= aqui
 	if c.limite() > 0 and c.fadiga >= c.limite():
@@ -5950,6 +6456,13 @@ func pagar_fadiga(u: Unidade, c, custo: int) -> void:
 		_log("Conjuração: %d de fadiga vai para %s." % [n, melhor.nome()])
 		if melhor.fadiga >= melhor.limite():
 			cheias.append(melhor)
+	if selo and resto > 0:
+		var exiladas := 0
+		while resto > 0 and u.baralho.baralho.size() > 1:
+			u.baralho.exilio.append(u.baralho.puxar_topo())
+			resto -= 1
+			exiladas += 1
+		_log("Selo de Sangue: %s exila %d carta(s) do topo para pagar a fadiga." % [u.nome, exiladas])
 	if u.ativo("controlador-do-arcano"):
 		for cheia in cheias:
 			u.carta_heroi().dar_ficha("Foco")
@@ -6022,6 +6535,8 @@ func _bonus_por_tipo(u: Unidade, alvo: Unidade, acerto: bool) -> Array:
 	var menor := 999
 	for t in tipos:
 		menor = mini(menor, int(alvo.resiste_tipo.get(t, 0)))
+	if alvo.eh_heroi() and alvo.ativo("trabalhador") and "Concussão" in tipos:
+		lista.append(["Trabalhador (resiste a Concussão)", -2])
 	if menor > 0 and menor < 999:
 		lista.append(["resiste a %s" % "/".join(tipos), -menor])
 		if u.eh_heroi() and u.ativo("olho-de-veterano") and not alvo.fraquezas.is_empty():
@@ -6052,12 +6567,12 @@ func _bonus_por_tipo(u: Unidade, alvo: Unidade, acerto: bool) -> Array:
 var escuro := false
 var luz_ambiente := 0      # noite de lua: 1 (tudo pelo menos penumbra)
 var piso := "grama"        # aparência do chão: "grama" ou "pedra"
-var recompensa := 0        # ouro pago pelo contrato, na vitória (vila)
-var ouro_ganho := 0        # ouro achado durante a missão
+var recompensa := 0        # contrato em pratas (do cenário; a campanha paga pelo quadro de missões)
+var ouro_ganho := 0        # dinheiro achado durante a missão, em COBRE (0.25)
 var missoes_desbloqueadas: Array = []   # efeito "desbloquear" (campanha)
 var lore_achada: Array = []             # efeito "lore"
 var luzes: Array = []   # luzes postas: {"pos", "claro", "penumbra", "nome", "segue": id, "ate_turno_de": id}
-const LUZES := {"tocha": [4, 8], "lanterna": [4, 4], "fogueira": [3, 6], "tocha_parede": [3, 6],
+const LUZES := {"tocha": [4, 8], "lanterna": [4, 4], "aura": [8, 8], "fogueira": [3, 6], "tocha_parede": [3, 6],
 	"chamas": [2, 4], "fogo": [1, 2], "lanterna_da_fe": [4, 4]}
 var _luz_cache := {}
 var _luz_chave := ""
@@ -6348,10 +6863,20 @@ func custo_troca(u: Unidade) -> int:
 	return 2 if grande else 1
 
 
+## Inventário por espaços (Lucas, 0.25): trocar armamento pequeno ou médio custa 1 Movimento;
+## com arma grande, continuam as 2 ações Padrão.
+func troca_com_movimento(u: Unidade) -> bool:
+	return not (u.arma.get("tamanho", "") == "grande" or u.arma_reserva.get("tamanho", "") == "grande")
+
+
 func motivo_troca(u: Unidade) -> String:
 	if u.arma_reserva.is_empty():
 		return "sem segunda arma"
 	var custo := custo_troca(u)
+	if custo > 0 and troca_com_movimento(u):
+		if u.acoes_mov <= 0 and u.acoes_padrao <= 0:
+			return "sem ação de movimento"
+		return ""
 	if u.acoes_padrao < custo:
 		return "precisa de %d ação(ões) Padrão" % custo
 	return ""
@@ -6366,7 +6891,16 @@ func heroi_trocar_arma() -> bool:
 		u.efeitos["devorador_troca"] = {"rodada": rodada}
 	elif custo == 0:
 		u.efeitos["bandoleira"] = {"usos": int(u.efeitos.get("bandoleira", {}).get("usos", 0)) + 1, "rodada": rodada}
-	u.acoes_padrao -= custo
+	if custo > 0 and troca_com_movimento(u):
+		if u.acoes_mov > 0:
+			u.acoes_mov -= 1
+		else:
+			u.acoes_padrao -= 1
+	else:
+		u.acoes_padrao -= custo
+	if "bainha_impetuosa" in u.vestidos:
+		u.efeitos["bainha"] = {}
+		_log("Bainha Impetuosa: o próximo ataque de %s causa +3." % u.nome)
 	u.efeitos.erase("troca_livre")
 	for ca in u.cartas:
 		if ca.tipo == "arma" and ca.lados.size() > 1:
@@ -6408,6 +6942,9 @@ func _ia_conjurar(u: Unidade, alvo: Unidade) -> bool:
 		return false
 	u.acoes_padrao -= 1
 	_log("%s conjura %s em %s!" % [u.nome, escolhida["nome"], alvo.nome])
+	if alvo.eh_heroi() and alvo.ativo("o-feerico"):
+		u.dar_ficha("Confusão")
+		_log("O Feérico: a magia contra %s deixa %s confuso." % [alvo.nome, u.nome])
 	magia_pendente = {"conjurador": u.id, "alvo": alvo.id, "magia": escolhida}
 	var ops := opcoes_de_anular(alvo, u)
 	if ops.size() > 1 and perguntar_escolhas:
@@ -6421,7 +6958,10 @@ func _ia_conjurar(u: Unidade, alvo: Unidade) -> bool:
 func opcoes_de_anular(alvo: Unidade, conjurador: Unidade) -> Array:
 	var ops := [["nao", "Deixar a magia acontecer"]]
 	if alvo.eh_heroi() and alvo.ativo("mana-densa") and not alvo.baralho.mao.is_empty():
-		ops.append(["mana:" + alvo.id, "Mana Densa (%s descarta 1 carta da mão e anula)" % alvo.nome])
+		ops.append(["mana:" + alvo.id, "Mana Densa (%s descarta 1 carta da mão: Raciocínio contra a Sabedoria de %s)" % [alvo.nome, conjurador.nome]])
+	for h2 in herois_ativos():
+		if h2.ativo("roubo-arcano") and h2.acoes_reacao > 0 and not h2.carta_com("roubo-arcano").tem_ficha("Atordoamento"):
+			ops.append(["roubo:" + h2.id, "Roubo Arcano de %s (Reação: Raciocínio contra Sabedoria; a magia vai para outro alvo)" % h2.nome])
 	for h in herois_ativos():
 		var c = h.carta_com("contramagia")
 		if c != null and pode_pagar_fadiga(h, c, 1) and h.acoes_reacao > 0 and Grade.distancia(h.pos, conjurador.pos) <= 12:
@@ -6437,9 +6977,34 @@ func _anular(opcao: String) -> void:
 		var carta := _menor_da_mao(h)
 		h.baralho.tirar_da_mao(carta)
 		h.baralho.descarte.append(carta)
-		_log("Mana Densa: %s descarta %s e anula %s." % [h.nome, Carta.nome(carta), m["magia"]["nome"]])
-		magia_pendente = {}
-		return
+		# Revisão 27/10: teste contestado de Raciocínio contra a Sabedoria do conjurador.
+		var meu_m := _teste_automatico(h, h.raciocinio)
+		var dele_m := valor_resistido(conj, "sabedoria")
+		if meu_m > dele_m:
+			_log("Mana Densa: %s descarta %s e anula %s (%d contra %d)." % [h.nome, Carta.nome(carta), m["magia"]["nome"], meu_m, dele_m])
+			magia_pendente = {}
+			return
+		_log("Mana Densa: %s descarta %s, mas não anula (%d contra %d)." % [h.nome, Carta.nome(carta), meu_m, dele_m])
+	if opcao.begins_with("roubo:"):
+		var hr := unidade(opcao.substr(6))
+		hr.acoes_reacao -= 1
+		var meu_r := _teste_automatico(hr, hr.raciocinio)
+		var dele_r := valor_resistido(conj, "sabedoria")
+		if meu_r >= dele_r:
+			# Revisão 27/10: escolha novos alvos válidos (o jogo escolhe outro inimigo ao alcance do conjurador).
+			var novo: Unidade = null
+			for o in inimigos_vivos():
+				if o != conj and Grade.distancia(o.pos, conj.pos) <= int(m["magia"].get("alcance", 8)) and (novo == null or Grade.distancia(o.pos, conj.pos) < Grade.distancia(novo.pos, conj.pos)):
+					novo = o
+			hr.carta_com("roubo-arcano").dar_ficha("Atordoamento")
+			if novo == null:
+				_log("Roubo Arcano de %s (%d contra %d): sem outro alvo válido, %s se perde." % [hr.nome, meu_r, dele_r, m["magia"]["nome"]])
+				magia_pendente = {}
+				return
+			_log("Roubo Arcano de %s (%d contra %d): %s vai para %s!" % [hr.nome, meu_r, dele_r, m["magia"]["nome"], novo.nome])
+			magia_pendente["alvo"] = novo.id
+		else:
+			_log("Roubo Arcano de %s (%d contra %d): falha." % [hr.nome, meu_r, dele_r])
 	if opcao.begins_with("contra:"):
 		var h := unidade(opcao.substr(7))
 		pagar_fadiga(h, h.carta_com("contramagia"), 1)
@@ -6527,6 +7092,19 @@ func combates_vencidos() -> int:
 	return n
 
 
+## Saque (0.27): o inimigo caído deixa, na casa dele, um ponto "Saque" com os efeitos
+## que o editor deu a ele (dinheiro, itens...). Pegar custa 1 Movimento.
+func _deixar_saque(o: Unidade) -> void:
+	var efs: Array = saques.get(o.id, [])
+	if efs.is_empty() or interacao("saque_" + o.id).size() > 0:
+		return
+	interacoes.append({"id": "saque_" + o.id, "nome": "Saque: %s" % o.nome, "pos": o.pos, "alcance": 1, "chao": true,
+		"texto": "O que %s carregava ficou no chão." % o.nome,
+		"opcoes": [{"id": "pegar", "texto": "Pegar o saque", "custo": {"movimento": 1}, "resultado": "pega",
+			"resultados": {"pega": {"texto": "Vocês recolhem o que %s deixou." % o.nome, "efeitos": efs + [{"tipo": "desativar"}]}}}]})
+	_log("%s deixou alguma coisa no chão." % o.nome)
+
+
 ## Herói entrou numa casa: armadilha e gatilho. Devolve true se o movimento para.
 func _casa_do_heroi(u: Unidade, p: Vector2i) -> bool:
 	for a in armadilhas:
@@ -6540,6 +7118,11 @@ func _casa_do_heroi(u: Unidade, p: Vector2i) -> bool:
 		_narrar(g.get("titulo", ""), g.get("texto", ""))
 		for ef in g.get("efeitos", []):
 			_aplicar_efeito(u, {"id": "", "nome": g.get("titulo", ""), "pos": p}, ef)
+		if g.has("acao"):
+			# Área do editor (0.27) que pede um teste ou faz acontecer efeitos: a mesma
+			# mesa de teste e o mesmo diálogo de resultado das armadilhas.
+			teste_de_acao(u, g["acao"].duplicate(true))
+			return true
 		if g.get("procurar", false) and perguntar_escolhas:
 			perguntar("procurar_sala", "Vocês podem examinar %s antes de seguir. Procurar armadilhas e coisas escondidas? (Percepção + Investigação; não gasta ação)" % g.get("titulo", "a sala").to_lower(),
 				[["sim", "Procurar com cuidado"], ["nao", "Seguir em frente"]], {"sala": g.get("sala", g["id"]), "quem": u.id})
@@ -6706,10 +7289,11 @@ func heroi_levantar_aliado(alvo: Unidade) -> bool:
 	if curas.is_empty() or not perguntar_escolhas:
 		_levantar_aliado(u, alvo, "")
 		return true
-	var ops := [["nada", "Só o teste (dificuldade %d)" % dif]]
+	var ops := [["nada", "Só o teste"]]
 	for c in curas:
 		ops.append([c[0], "Usar " + c[1]])
-	perguntar("levantar", "Levantar %s: Medicina + Sabedoria, dificuldade %d (%d cartas no descarte). Gastar uma cura ajuda?" % [alvo.nome, dif, alvo.baralho.descarte.size()],
+	var nd := nome_da_dificuldade({"dificuldade": dif, "teste": {"somar": ["Medicina", "sabedoria"]}})
+	perguntar("levantar", "Levantar %s: Medicina + Sabedoria, %s (%d cartas no descarte). Gastar uma cura ajuda?" % [alvo.nome, nd, alvo.baralho.descarte.size()],
 		ops, {"alvo": alvo.id})
 	return true
 
@@ -6812,6 +7396,20 @@ func _ia_habilidades(u: Unidade) -> bool:
 			"muralha":
 				if n % a_cada == 0:
 					_muralha(u, h)
+			"regenerar":
+				# 0.28 (troll): fecha as feridas no começo de cada turno, menos se estiver em chamas.
+				if u.fichas_total("Fogo") > 0 or u.efeitos.has("sem_regenerar"):
+					_log("%s não se regenera: %s." % [u.nome, "o fogo impede" if u.fichas_total("Fogo") > 0 else "o ácido impede"])
+				elif u.vida < u.vida_max:
+					var antes_r := u.vida
+					u.vida = mini(u.vida + int(h.get("valor", 5)), u.vida_max)
+					_log("%s se regenera (+%d)." % [u.nome, u.vida - antes_r])
+					eventos.append({"tipo": "cura", "id": u.id, "valor": u.vida - antes_r})
+			"invocar":
+				# 0.28 (mago da torre): chama uma criatura a cada "a_cada" turnos (até "max" vivas).
+				var vivas := unidades.filter(func(o): return o.viva() and o.efeitos.get("invocado_por", {}).get("id", "") == u.id).size()
+				if n % a_cada == 1 % a_cada and vivas < int(h.get("max", 2)):
+					_invocar(u, h)
 			"defensivo":
 				if n % 2 == 0:
 					u.efeitos["postura_defensiva"] = {"ate": "inicio_turno"}
@@ -6824,6 +7422,44 @@ func _ia_habilidades(u: Unidade) -> bool:
 				elif n > 1:
 					_log("%s sai da guarda e parte para cima!" % u.nome)
 	return acabou
+
+
+## Invocação (0.28): a criatura surge perto do invocador, já alerta, e age logo depois
+## dele. Se o invocador cair, as invocações somem.
+func _invocar(u: Unidade, h: Dictionary) -> void:
+	var lista: Array = h.get("criaturas", [h.get("cria", {})])
+	if lista.is_empty():
+		return
+	var n_inv := int(u.efeitos.get("invocacoes", {}).get("n", 0))
+	u.efeitos["invocacoes"] = {"n": n_inv + 1}
+	var cfg: Dictionary = lista[n_inv % lista.size()].duplicate(true)
+	var alvo := _escolher_alvo(u)
+	var casa := _casa_livre_a(u.pos, 1, 3, alvo.pos if alvo != null else u.pos)
+	if casa == Vector2i(-1, -1):
+		return
+	var id := "invocado_%d" % unidades.size()
+	var n_her := maxi(herois().size(), 1)
+	var vida := maxi(int(round(float(cfg.get("vida", 12)) * maxf(1.0 + 0.3 * (n_her - 4), 0.3))), 1)
+	cfg.merge({"id": id, "nome": "Invocação", "lado": "inimigo", "tipo": "elemental_fogo", "pos": casa, "dano": 5,
+		"atributo_dano": 0, "alerta": true, "grupo": u.grupo, "categoria": "construto", "velocidade": 3,
+		"parada_ataque": 16, "parada_defesa": 15, "risco": 0.35, "mov_por_turno": 1, "padrao_por_turno": 1}, false)
+	cfg["vida"] = vida
+	preload("res://core/reacoes_monstros.gd").aplicar(cfg)
+	var c: Unidade = Unidade.criar(cfg, rng)
+	c.efeitos["invocado_por"] = {"id": u.id}
+	unidades.append(c)
+	ordem.insert(indice_vez + 1, id)
+	eventos.append({"tipo": "surgir", "id": id})
+	_narrar(u.nome, h.get("texto", "%s traça um círculo no ar e chama: %s surge ao lado dele." % [u.nome, c.nome]))
+
+
+func _sumir_invocacoes(dono: Unidade) -> void:
+	for o in unidades:
+		if o.viva() and o.efeitos.get("invocado_por", {}).get("id", "") == dono.id:
+			o.vida = 0
+			o.alerta = false
+			eventos.append({"tipo": "sumir", "id": o.id})
+			_log("Sem %s, %s se desfaz no ar." % [dono.nome, o.nome])
 
 
 func _marcar_area(u: Unidade, h: Dictionary) -> void:
@@ -7024,3 +7660,35 @@ func _anunciar_intencao(o: Unidade) -> void:
 	o.intencao = texto
 	_log(texto)
 	eventos.append({"tipo": "intencao", "id": o.id, "texto": texto})
+
+
+# --- Cartas de herói completadas (0.24) ------------------------------------------
+
+## Estrela do Amanhecer (desencadeada): quando um aliado receberia Ferimento, Veneno ou
+## Fogo de um inimigo, o Clérigo paga 1 de fadiga e o aliado não recebe a ficha.
+func _estrela_protege(alvo: Unidade, ficha: String) -> bool:
+	if not alvo.eh_heroi() or not ficha in ["Ferimento", "Veneno", "Fogo"]:
+		return false
+	for h in herois_ativos():
+		var c = h.carta_heroi()
+		if h != alvo and h.ativo("estrela-do-amanhecer") and c != null and c.pode_pagar(1):
+			pagar_fadiga(h, c, 1)
+			_log("Estrela do Amanhecer: %s paga 1 de fadiga e %s não recebe %s." % [h.nome, alvo.nome, ficha])
+			return true
+	return false
+
+
+## Brado da Horda (ativada): aliados a até 4 casas avançam até 3 na direção do inimigo mais
+## perto; quem chegar ao lado dele faz o próximo ataque deste turno de graça (sem ação Padrão).
+func brado_da_horda(u: Unidade) -> void:
+	for h in herois_ativos():
+		if h == u or Grade.distancia(h.pos, u.pos) > 4:
+			continue
+		var inimigos := inimigos_vivos().filter(func(o): return unidade_visivel(o))
+		if inimigos.is_empty():
+			return
+		inimigos.sort_custom(func(a, b2): return Grade.distancia(a.pos, h.pos) < Grade.distancia(b2.pos, h.pos))
+		_andar_na_direcao(h, inimigos[0].pos, 3)
+		if Grade.adjacentes(h.pos, inimigos[0].pos):
+			h.efeitos["ataque_gratis"] = {"turnos": 2}
+			_log("Brado da Horda: %s chega ao lado de %s e tem um ataque de graça." % [h.nome, inimigos[0].nome])

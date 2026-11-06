@@ -1,0 +1,1022 @@
+{
+ "EQ-001": {
+  "nome": "Faca",
+  "ocupa": "1 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate."
+ },
+ "EQ-002": {
+  "nome": "Florete",
+  "ocupa": "1 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate."
+ },
+ "EQ-003": {
+  "nome": "Bastão",
+  "ocupa": "2 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate."
+ },
+ "EQ-004": {
+  "nome": "Espada Curta",
+  "ocupa": "1 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate."
+ },
+ "EQ-005": {
+  "nome": "Espada Longa",
+  "ocupa": "1 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate."
+ },
+ "EQ-006": {
+  "nome": "Lança",
+  "ocupa": "2 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate."
+ },
+ "EQ-007": {
+  "nome": "Maça",
+  "ocupa": "1 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate."
+ },
+ "EQ-008": {
+  "nome": "Machado de Guerra",
+  "ocupa": "1 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate."
+ },
+ "EQ-009": {
+  "nome": "Montante",
+  "ocupa": "2 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate."
+ },
+ "EQ-010": {
+  "nome": "Estilete",
+  "ocupa": "1 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate."
+ },
+ "EQ-011": {
+  "nome": "Florete de Duelista",
+  "ocupa": "1 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate."
+ },
+ "EQ-012": {
+  "nome": "Chicote",
+  "ocupa": "2 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate."
+ },
+ "EQ-013": {
+  "nome": "Francisca",
+  "ocupa": "1 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate."
+ },
+ "EQ-014": {
+  "nome": "Espada do Mestre-Ferreiro",
+  "ocupa": "1 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate."
+ },
+ "EQ-015": {
+  "nome": "Alabarda",
+  "ocupa": "2 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate."
+ },
+ "EQ-016": {
+  "nome": "Maça-Estrela",
+  "ocupa": "1 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate."
+ },
+ "EQ-017": {
+  "nome": "Machado Barbado",
+  "ocupa": "1 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate."
+ },
+ "EQ-018": {
+  "nome": "Montante de Batalha",
+  "ocupa": "2 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate."
+ },
+ "EQ-019": {
+  "nome": "Adaga da Mão Vazia",
+  "ocupa": "1 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate."
+ },
+ "EQ-020": {
+  "nome": "Florete do Contragolpe",
+  "ocupa": "1 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate."
+ },
+ "EQ-021": {
+  "nome": "Cajado do Condutor",
+  "ocupa": "2 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate."
+ },
+ "EQ-022": {
+  "nome": "Lâmina do Vento",
+  "ocupa": "1 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate."
+ },
+ "EQ-023": {
+  "nome": "Gládio Inquietante",
+  "ocupa": "1 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate."
+ },
+ "EQ-024": {
+  "nome": "Lança da Muralha",
+  "ocupa": "2 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate."
+ },
+ "EQ-025": {
+  "nome": "Quebra-Elmos",
+  "ocupa": "1 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate."
+ },
+ "EQ-026": {
+  "nome": "Machado da Sepultura",
+  "ocupa": "1 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate."
+ },
+ "EQ-027": {
+  "nome": "Montante do Frenesi",
+  "ocupa": "2 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate."
+ },
+ "EQ-028": {
+  "nome": "Shuriken",
+  "ocupa": "1 Armamentos e repertórios",
+  "reserva": "até 3 unidades iguais por pacote",
+  "obs": "Mantém seu limite próprio Até 3 exemplares iguais por estojo de 1 espaço de armamento. Rastrear cada peça arremessada."
+ },
+ "EQ-029": {
+  "nome": "Machado de Arremesso",
+  "ocupa": "1 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Custo de transporte. As regras de mãos, alcance e recarga continuam independentes."
+ },
+ "EQ-030": {
+  "nome": "Javelin",
+  "ocupa": "2 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Custo de transporte. As regras de mãos, alcance e recarga continuam independentes."
+ },
+ "EQ-031": {
+  "nome": "Arco Curto",
+  "ocupa": "2 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Custo de transporte. As regras de mãos, alcance e recarga continuam independentes."
+ },
+ "EQ-032": {
+  "nome": "Arco Longo",
+  "ocupa": "2 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Custo de transporte. As regras de mãos, alcance e recarga continuam independentes."
+ },
+ "EQ-033": {
+  "nome": "Besta Pesada",
+  "ocupa": "2 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Custo de transporte. As regras de mãos, alcance e recarga continuam independentes."
+ },
+ "EQ-034": {
+  "nome": "Adaga Balanceada",
+  "ocupa": "1 Armamentos e repertórios",
+  "reserva": "até 3 unidades iguais por pacote",
+  "obs": "Mantém seu limite próprio Até 3 exemplares iguais por estojo de 1 espaço de armamento. Rastrear cada peça arremessada."
+ },
+ "EQ-035": {
+  "nome": "Machete Farpado",
+  "ocupa": "1 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Custo de transporte. As regras de mãos, alcance e recarga continuam independentes."
+ },
+ "EQ-036": {
+  "nome": "Lança Espiral",
+  "ocupa": "2 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Custo de transporte. As regras de mãos, alcance e recarga continuam independentes."
+ },
+ "EQ-037": {
+  "nome": "Arco Recurvo",
+  "ocupa": "2 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Custo de transporte. As regras de mãos, alcance e recarga continuam independentes."
+ },
+ "EQ-038": {
+  "nome": "Arco de Teixo",
+  "ocupa": "2 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Custo de transporte. As regras de mãos, alcance e recarga continuam independentes."
+ },
+ "EQ-039": {
+  "nome": "Besta da Seta Dupla",
+  "ocupa": "2 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Custo de transporte. As regras de mãos, alcance e recarga continuam independentes."
+ },
+ "EQ-040": {
+  "nome": "Leque de Lâminas",
+  "ocupa": "1 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Custo de transporte. As regras de mãos, alcance e recarga continuam independentes."
+ },
+ "EQ-041": {
+  "nome": "Machado Sedento",
+  "ocupa": "1 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Custo de transporte. As regras de mãos, alcance e recarga continuam independentes."
+ },
+ "EQ-042": {
+  "nome": "Lança Trovejante",
+  "ocupa": "2 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Custo de transporte. As regras de mãos, alcance e recarga continuam independentes."
+ },
+ "EQ-043": {
+  "nome": "Arco das Sombras",
+  "ocupa": "2 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Custo de transporte. As regras de mãos, alcance e recarga continuam independentes."
+ },
+ "EQ-044": {
+  "nome": "Arco da Maré",
+  "ocupa": "2 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Custo de transporte. As regras de mãos, alcance e recarga continuam independentes."
+ },
+ "EQ-045": {
+  "nome": "Balestra de Cerco",
+  "ocupa": "2 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Custo de transporte. As regras de mãos, alcance e recarga continuam independentes."
+ },
+ "EQ-046": {
+  "nome": "Couro do Batedor",
+  "ocupa": "1 Armadura",
+  "reserva": "2 Mochila",
+  "obs": ""
+ },
+ "EQ-047": {
+  "nome": "Cota de Malha",
+  "ocupa": "1 Armadura",
+  "reserva": "4 Mochila",
+  "obs": ""
+ },
+ "EQ-048": {
+  "nome": "Arnês de Placas",
+  "ocupa": "1 Armadura",
+  "reserva": "4 Mochila",
+  "obs": ""
+ },
+ "EQ-049": {
+  "nome": "Couro Élfico",
+  "ocupa": "1 Armadura",
+  "reserva": "2 Mochila",
+  "obs": ""
+ },
+ "EQ-050": {
+  "nome": "Brunea de Escamas",
+  "ocupa": "1 Armadura",
+  "reserva": "4 Mochila",
+  "obs": ""
+ },
+ "EQ-051": {
+  "nome": "Armadura Samurai Temperada",
+  "ocupa": "1 Armadura",
+  "reserva": "4 Mochila",
+  "obs": ""
+ },
+ "EQ-052": {
+  "nome": "Manto do Vento",
+  "ocupa": "1 Armadura + 1 Costas",
+  "reserva": "2 Mochila",
+  "obs": "O Manto do Vento é ARMADURA no catálogo e também usa Costas. Não acumula outra armadura nem outra capa."
+ },
+ "EQ-053": {
+  "nome": "Couraça do Contra-Ataque",
+  "ocupa": "1 Armadura",
+  "reserva": "4 Mochila",
+  "obs": ""
+ },
+ "EQ-054": {
+  "nome": "Peitoral de Dalpnor",
+  "ocupa": "1 Armadura",
+  "reserva": "4 Mochila",
+  "obs": ""
+ },
+ "EQ-055": {
+  "nome": "Escudo Leve",
+  "ocupa": "1 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Ocupa uma mão quando empunhado. Guardado não dá proteção nem recebe Fadiga de Conjuração."
+ },
+ "EQ-056": {
+  "nome": "Escudo Pesado",
+  "ocupa": "2 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Ocupa uma mão quando empunhado. Guardado não dá proteção nem recebe Fadiga de Conjuração."
+ },
+ "EQ-057": {
+  "nome": "Broquel Ágil",
+  "ocupa": "1 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Ocupa uma mão quando empunhado. Guardado não dá proteção nem recebe Fadiga de Conjuração."
+ },
+ "EQ-058": {
+  "nome": "Escudo de Investida",
+  "ocupa": "2 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Ocupa uma mão quando empunhado. Guardado não dá proteção nem recebe Fadiga de Conjuração."
+ },
+ "EQ-059": {
+  "nome": "Placa de Luz",
+  "ocupa": "1 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Ocupa uma mão quando empunhado. Guardado não dá proteção nem recebe Fadiga de Conjuração."
+ },
+ "EQ-060": {
+  "nome": "Scutum da Legião",
+  "ocupa": "2 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Ocupa uma mão quando empunhado. Guardado não dá proteção nem recebe Fadiga de Conjuração."
+ },
+ "EQ-061": {
+  "nome": "Poção de Cura Pequena",
+  "ocupa": "1 Consumíveis especiais",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa."
+ },
+ "EQ-062": {
+  "nome": "Tocha",
+  "ocupa": "1 Mochila",
+  "reserva": "até 3 unidades iguais por pacote",
+  "obs": "Mantém seu limite próprio Até 3 unidades iguais por pacote. Tochas e rações não ocupam a bolsa de consumíveis especiais."
+ },
+ "EQ-063": {
+  "nome": "Antídoto",
+  "ocupa": "1 Consumíveis especiais",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa."
+ },
+ "EQ-064": {
+  "nome": "Ração de Viagem",
+  "ocupa": "1 Mochila",
+  "reserva": "até 3 unidades iguais por pacote",
+  "obs": "Mantém seu limite próprio Até 3 unidades iguais por pacote. Tochas e rações não ocupam a bolsa de consumíveis especiais."
+ },
+ "EQ-065": {
+  "nome": "Bomba de Fumaça",
+  "ocupa": "1 Consumíveis especiais",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa."
+ },
+ "EQ-066": {
+  "nome": "Pedra de Amolar",
+  "ocupa": "1 Consumíveis especiais",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa."
+ },
+ "EQ-067": {
+  "nome": "Veneno Ácido",
+  "ocupa": "1 Consumíveis especiais",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa."
+ },
+ "EQ-068": {
+  "nome": "Poção de Mana Pequena",
+  "ocupa": "1 Consumíveis especiais",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa."
+ },
+ "EQ-069": {
+  "nome": "Óleo Antiespectral",
+  "ocupa": "1 Consumíveis especiais",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa."
+ },
+ "EQ-070": {
+  "nome": "Gazua",
+  "ocupa": "1 Consumíveis especiais",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa."
+ },
+ "EQ-071": {
+  "nome": "Poção de Pele de Pedra",
+  "ocupa": "1 Consumíveis especiais",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa."
+ },
+ "EQ-072": {
+  "nome": "Poção Carmim",
+  "ocupa": "1 Consumíveis especiais",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa."
+ },
+ "EQ-073": {
+  "nome": "Incenso de Jasmim",
+  "ocupa": "1 Consumíveis especiais",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa."
+ },
+ "EQ-074": {
+  "nome": "Frasco de Piche",
+  "ocupa": "1 Consumíveis especiais",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa."
+ },
+ "EQ-075": {
+  "nome": "Poção Turquesa",
+  "ocupa": "1 Consumíveis especiais",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa."
+ },
+ "EQ-076": {
+  "nome": "Sangue de Batalha",
+  "ocupa": "1 Consumíveis especiais",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa."
+ },
+ "EQ-077": {
+  "nome": "Flocos de Sombras",
+  "ocupa": "1 Consumíveis especiais",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa."
+ },
+ "EQ-078": {
+  "nome": "Água Abençoada",
+  "ocupa": "1 Consumíveis especiais",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa."
+ },
+ "EQ-079": {
+  "nome": "Flecha Explosiva",
+  "ocupa": "1 Consumíveis especiais",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa."
+ },
+ "EQ-080": {
+  "nome": "Pergaminho do Desencantamento",
+  "ocupa": "1 Consumíveis especiais",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa."
+ },
+ "EQ-081": {
+  "nome": "Corda (15 m)",
+  "ocupa": "1 Mochila",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Retire para usar. Não concede bônus passivo de combate nem capacidade de Fadiga enquanto guardado."
+ },
+ "EQ-082": {
+  "nome": "Pé de Cabra",
+  "ocupa": "1 Mochila",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Retire para usar. Não concede bônus passivo de combate nem capacidade de Fadiga enquanto guardado."
+ },
+ "EQ-083": {
+  "nome": "Pederneira",
+  "ocupa": "1 Mochila",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Retire para usar. Não concede bônus passivo de combate nem capacidade de Fadiga enquanto guardado."
+ },
+ "EQ-084": {
+  "nome": "Kit de Reparos",
+  "ocupa": "2 Mochila",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Retire para usar. Não concede bônus passivo de combate nem capacidade de Fadiga enquanto guardado."
+ },
+ "EQ-085": {
+  "nome": "Kit de Acampamento",
+  "ocupa": "2 Mochila",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Retire para usar. Não concede bônus passivo de combate nem capacidade de Fadiga enquanto guardado."
+ },
+ "EQ-086": {
+  "nome": "Lanterna",
+  "ocupa": "1 Mochila",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Retire para usar. Não concede bônus passivo de combate nem capacidade de Fadiga enquanto guardado."
+ },
+ "EQ-087": {
+  "nome": "Vara de 3 Metros",
+  "ocupa": "2 Mochila",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Retire para usar. Não concede bônus passivo de combate nem capacidade de Fadiga enquanto guardado."
+ },
+ "EQ-088": {
+  "nome": "Espelho de Bolso",
+  "ocupa": "1 Mochila",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Retire para usar. Não concede bônus passivo de combate nem capacidade de Fadiga enquanto guardado."
+ },
+ "EQ-089": {
+  "nome": "Bandoleira de Armas",
+  "ocupa": "1 Acessórios",
+  "reserva": "1 Mochila",
+  "obs": "Mantém a habilidade de virar a arma. Não aumenta os quatro espaços de armamento."
+ },
+ "EQ-090": {
+  "nome": "Ferramentas de Ladrão",
+  "ocupa": "1 Mochila",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Retire para usar. Não concede bônus passivo de combate nem capacidade de Fadiga enquanto guardado."
+ },
+ "EQ-091": {
+  "nome": "Símbolo Sagrado",
+  "ocupa": "1 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Foco ocupa uma mão segundo as regras do projeto. Volume de 2 espaços não cria exigência de duas mãos."
+ },
+ "EQ-092": {
+  "nome": "Corda de Arco da Penumbra",
+  "ocupa": "1 Acessórios",
+  "reserva": "1 Mochila",
+  "obs": "É um acessório de arma: continua ocupando 1 dos dois acessórios quando instalada no arco."
+ },
+ "EQ-093": {
+  "nome": "Varinha Eletrizante",
+  "ocupa": "1 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Foco ocupa uma mão segundo as regras do projeto. Volume de 2 espaços não cria exigência de duas mãos."
+ },
+ "EQ-094": {
+  "nome": "Paraquedas Élfico",
+  "ocupa": "1 Costas",
+  "reserva": "2 Mochila",
+  "obs": "O Paraquedas Élfico compete por Costas com capas e mantos. Dobrado, pode ser reserva de 2 espaços na mochila."
+ },
+ "EQ-095": {
+  "nome": "Bússola do Rumo",
+  "ocupa": "1 Mochila",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Retire para usar. Não concede bônus passivo de combate nem capacidade de Fadiga enquanto guardado."
+ },
+ "EQ-096": {
+  "nome": "Equipamento de Pesca",
+  "ocupa": "2 Mochila",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Retire para usar. Não concede bônus passivo de combate nem capacidade de Fadiga enquanto guardado."
+ },
+ "EQ-097": {
+  "nome": "Gancho de Escalada",
+  "ocupa": "1 Mochila",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Retire para usar. Não concede bônus passivo de combate nem capacidade de Fadiga enquanto guardado."
+ },
+ "EQ-098": {
+  "nome": "Grilhão de Ferro",
+  "ocupa": "1 Mochila",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Retire para usar. Não concede bônus passivo de combate nem capacidade de Fadiga enquanto guardado."
+ },
+ "EQ-099": {
+  "nome": "Manopla de Bronze",
+  "ocupa": "1 Acessórios",
+  "reserva": "1 Mochila",
+  "obs": "Manopla usa acessório; não cria mão adicional nem altera a empunhadura das armas."
+ },
+ "EQ-100": {
+  "nome": "Botas de Lince",
+  "ocupa": "1 Pés",
+  "reserva": "2 Mochila",
+  "obs": ""
+ },
+ "EQ-101": {
+  "nome": "Pergaminho Ancestral",
+  "ocupa": "1 Acessórios",
+  "reserva": "1 Mochila",
+  "obs": "Apesar do nome Pergaminho, a carta é permanente: usa acessório, não consumível nem repertório."
+ },
+ "EQ-102": {
+  "nome": "Manto Camuflado",
+  "ocupa": "1 Costas",
+  "reserva": "1 Mochila",
+  "obs": ""
+ },
+ "EQ-103": {
+  "nome": "Anel do Iniciado",
+  "ocupa": "1 Acessórios",
+  "reserva": "1 Mochila",
+  "obs": "Acessório equipado; não fornece benefícios se estiver de reserva na mochila."
+ },
+ "EQ-104": {
+  "nome": "Elmo de Touro",
+  "ocupa": "1 Cabeça",
+  "reserva": "1 Mochila",
+  "obs": ""
+ },
+ "EQ-105": {
+  "nome": "Bainha Impetuosa",
+  "ocupa": "1 Acessórios",
+  "reserva": "1 Mochila",
+  "obs": "Acessório equipado; não fornece benefícios se estiver de reserva na mochila."
+ },
+ "EQ-106": {
+  "nome": "Cachecol da Parceria",
+  "ocupa": "1 Acessórios",
+  "reserva": "1 Mochila",
+  "obs": "Acessório equipado; não fornece benefícios se estiver de reserva na mochila."
+ },
+ "EQ-107": {
+  "nome": "Cinto Estelar",
+  "ocupa": "1 Acessórios",
+  "reserva": "1 Mochila",
+  "obs": "Acessório equipado; não fornece benefícios se estiver de reserva na mochila."
+ },
+ "EQ-108": {
+  "nome": "Botas Seccundas",
+  "ocupa": "1 Pés",
+  "reserva": "2 Mochila",
+  "obs": ""
+ },
+ "EQ-109": {
+  "nome": "Carta da Sorte",
+  "ocupa": "1 Acessórios",
+  "reserva": "1 Mochila",
+  "obs": "Acessório equipado; não fornece benefícios se estiver de reserva na mochila."
+ },
+ "EQ-110": {
+  "nome": "Ampulheta Trincada",
+  "ocupa": "1 Acessórios",
+  "reserva": "1 Mochila",
+  "obs": "Acessório equipado; não fornece benefícios se estiver de reserva na mochila."
+ },
+ "EQ-111": {
+  "nome": "Máscara do Impostor",
+  "ocupa": "1 Cabeça",
+  "reserva": "1 Mochila",
+  "obs": ""
+ },
+ "EQ-112": {
+  "nome": "Selo de Sangue",
+  "ocupa": "1 Acessórios",
+  "reserva": "1 Mochila",
+  "obs": "Acessório equipado; não fornece benefícios se estiver de reserva na mochila."
+ },
+ "EQ-113": {
+  "nome": "Colar Vinculador",
+  "ocupa": "1 Acessórios + 1 Amuletos ou colares entre os acessórios",
+  "reserva": "1 Mochila",
+  "obs": "O colar usa um dos dois acessórios e compete com amuletos pelo único lugar de pescoço."
+ },
+ "EQ-114": {
+  "nome": "Grevas do Vazio",
+  "ocupa": "1 Pés",
+  "reserva": "2 Mochila",
+  "obs": ""
+ },
+ "EQ-115": {
+  "nome": "Espelho Arcano",
+  "ocupa": "1 Acessórios",
+  "reserva": "1 Mochila",
+  "obs": "Acessório equipado; não fornece benefícios se estiver de reserva na mochila."
+ },
+ "EQ-116": {
+  "nome": "Varinha de Cristal",
+  "ocupa": "1 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Foco ocupa uma mão segundo as regras do projeto. Volume de 2 espaços não cria exigência de duas mãos."
+ },
+ "EQ-117": {
+  "nome": "Cajado do Aprendiz",
+  "ocupa": "2 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Foco ocupa uma mão segundo as regras do projeto. Volume de 2 espaços não cria exigência de duas mãos."
+ },
+ "EQ-118": {
+  "nome": "Cajado de Batalha",
+  "ocupa": "2 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Foco ocupa uma mão segundo as regras do projeto. Volume de 2 espaços não cria exigência de duas mãos."
+ },
+ "EQ-119": {
+  "nome": "Orbe de Concentração",
+  "ocupa": "1 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Foco ocupa uma mão segundo as regras do projeto. Volume de 2 espaços não cria exigência de duas mãos."
+ },
+ "EQ-120": {
+  "nome": "Orbe de Proteção",
+  "ocupa": "1 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Foco ocupa uma mão segundo as regras do projeto. Volume de 2 espaços não cria exigência de duas mãos."
+ },
+ "EQ-121": {
+  "nome": "Cálice da Vida",
+  "ocupa": "1 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Foco ocupa uma mão segundo as regras do projeto. Volume de 2 espaços não cria exigência de duas mãos."
+ },
+ "EQ-122": {
+  "nome": "Relicário do Guardião",
+  "ocupa": "1 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Foco ocupa uma mão segundo as regras do projeto. Volume de 2 espaços não cria exigência de duas mãos."
+ },
+ "EQ-123": {
+  "nome": "Marca da Punição",
+  "ocupa": "1 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Foco ocupa uma mão segundo as regras do projeto. Volume de 2 espaços não cria exigência de duas mãos."
+ },
+ "EQ-124": {
+  "nome": "Turíbulo das Bênçãos",
+  "ocupa": "1 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Foco ocupa uma mão segundo as regras do projeto. Volume de 2 espaços não cria exigência de duas mãos."
+ },
+ "EQ-125": {
+  "nome": "Escrituras de Maftoné",
+  "ocupa": "1 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Foco ocupa uma mão segundo as regras do projeto. Volume de 2 espaços não cria exigência de duas mãos."
+ },
+ "EQ-126": {
+  "nome": "Rosário da Devoção",
+  "ocupa": "1 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Foco ocupa uma mão segundo as regras do projeto. Volume de 2 espaços não cria exigência de duas mãos."
+ },
+ "EQ-127": {
+  "nome": "Runa de Fogo",
+  "ocupa": "1 Consumíveis especiais",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa."
+ },
+ "EQ-128": {
+  "nome": "Runa de Água",
+  "ocupa": "1 Consumíveis especiais",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa."
+ },
+ "EQ-129": {
+  "nome": "Runa de Terra",
+  "ocupa": "1 Consumíveis especiais",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa."
+ },
+ "EQ-130": {
+  "nome": "Runa de Ar",
+  "ocupa": "1 Consumíveis especiais",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa."
+ },
+ "EQ-131": {
+  "nome": "Runa de Luz",
+  "ocupa": "1 Consumíveis especiais",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa."
+ },
+ "EQ-132": {
+  "nome": "Runa de Sombra",
+  "ocupa": "1 Consumíveis especiais",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa."
+ },
+ "EQ-133": {
+  "nome": "Amuleto de Pacenas",
+  "ocupa": "1 Acessórios + 1 Amuletos ou colares entre os acessórios",
+  "reserva": "1 Mochila",
+  "obs": "Usa um dos dois acessórios. Máximo 1 amuleto, independentemente de qual divindade."
+ },
+ "EQ-134": {
+  "nome": "Amuleto de Grevha",
+  "ocupa": "1 Acessórios + 1 Amuletos ou colares entre os acessórios",
+  "reserva": "1 Mochila",
+  "obs": "Usa um dos dois acessórios. Máximo 1 amuleto, independentemente de qual divindade."
+ },
+ "EQ-135": {
+  "nome": "Amuleto de Nebtor",
+  "ocupa": "1 Acessórios + 1 Amuletos ou colares entre os acessórios",
+  "reserva": "1 Mochila",
+  "obs": "Usa um dos dois acessórios. Máximo 1 amuleto, independentemente de qual divindade."
+ },
+ "EQ-136": {
+  "nome": "Amuleto de Vael",
+  "ocupa": "1 Acessórios + 1 Amuletos ou colares entre os acessórios",
+  "reserva": "1 Mochila",
+  "obs": "Usa um dos dois acessórios. Máximo 1 amuleto, independentemente de qual divindade."
+ },
+ "EQ-137": {
+  "nome": "Amuleto de Kanil",
+  "ocupa": "1 Acessórios + 1 Amuletos ou colares entre os acessórios",
+  "reserva": "1 Mochila",
+  "obs": "Usa um dos dois acessórios. Máximo 1 amuleto, independentemente de qual divindade."
+ },
+ "EQ-138": {
+  "nome": "Amuleto de Kagen",
+  "ocupa": "1 Acessórios + 1 Amuletos ou colares entre os acessórios",
+  "reserva": "1 Mochila",
+  "obs": "Usa um dos dois acessórios. Máximo 1 amuleto, independentemente de qual divindade."
+ },
+ "EQ-139": {
+  "nome": "Grimório do Fogo",
+  "ocupa": "1 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Cada grimório ou texto sagrado usa 1 dos quatro espaços compartilhados com armas, escudos e focos, inclusive se for reserva. Só disponibiliza suas magias quando preparado."
+ },
+ "EQ-140": {
+  "nome": "Grimório da Água",
+  "ocupa": "1 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Cada grimório ou texto sagrado usa 1 dos quatro espaços compartilhados com armas, escudos e focos, inclusive se for reserva. Só disponibiliza suas magias quando preparado."
+ },
+ "EQ-141": {
+  "nome": "Grimório da Terra",
+  "ocupa": "1 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Cada grimório ou texto sagrado usa 1 dos quatro espaços compartilhados com armas, escudos e focos, inclusive se for reserva. Só disponibiliza suas magias quando preparado."
+ },
+ "EQ-142": {
+  "nome": "Grimório do Ar",
+  "ocupa": "1 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Cada grimório ou texto sagrado usa 1 dos quatro espaços compartilhados com armas, escudos e focos, inclusive se for reserva. Só disponibiliza suas magias quando preparado."
+ },
+ "EQ-143": {
+  "nome": "Grimório da Luz",
+  "ocupa": "1 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Cada grimório ou texto sagrado usa 1 dos quatro espaços compartilhados com armas, escudos e focos, inclusive se for reserva. Só disponibiliza suas magias quando preparado."
+ },
+ "EQ-144": {
+  "nome": "Grimório da Sombra",
+  "ocupa": "1 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Cada grimório ou texto sagrado usa 1 dos quatro espaços compartilhados com armas, escudos e focos, inclusive se for reserva. Só disponibiliza suas magias quando preparado."
+ },
+ "EQ-145": {
+  "nome": "Códice das Cinzas",
+  "ocupa": "1 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Cada grimório ou texto sagrado usa 1 dos quatro espaços compartilhados com armas, escudos e focos, inclusive se for reserva. Só disponibiliza suas magias quando preparado."
+ },
+ "EQ-146": {
+  "nome": "Sussurros do Breu",
+  "ocupa": "1 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Cada grimório ou texto sagrado usa 1 dos quatro espaços compartilhados com armas, escudos e focos, inclusive se for reserva. Só disponibiliza suas magias quando preparado."
+ },
+ "EQ-147": {
+  "nome": "Códice da Chama Negra",
+  "ocupa": "1 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Cada grimório ou texto sagrado usa 1 dos quatro espaços compartilhados com armas, escudos e focos, inclusive se for reserva. Só disponibiliza suas magias quando preparado."
+ },
+ "EQ-148": {
+  "nome": "Grimório do Lodo",
+  "ocupa": "1 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Cada grimório ou texto sagrado usa 1 dos quatro espaços compartilhados com armas, escudos e focos, inclusive se for reserva. Só disponibiliza suas magias quando preparado."
+ },
+ "EQ-149": {
+  "nome": "Estudo de Geofótons",
+  "ocupa": "1 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Cada grimório ou texto sagrado usa 1 dos quatro espaços compartilhados com armas, escudos e focos, inclusive se for reserva. Só disponibiliza suas magias quando preparado."
+ },
+ "EQ-150": {
+  "nome": "Portfólio do Luar Marinho",
+  "ocupa": "1 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Cada grimório ou texto sagrado usa 1 dos quatro espaços compartilhados com armas, escudos e focos, inclusive se for reserva. Só disponibiliza suas magias quando preparado."
+ },
+ "EQ-151": {
+  "nome": "A Batalha dos Anjos",
+  "ocupa": "1 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Cada grimório ou texto sagrado usa 1 dos quatro espaços compartilhados com armas, escudos e focos, inclusive se for reserva. Só disponibiliza suas magias quando preparado."
+ },
+ "EQ-152": {
+  "nome": "A Criação da Luz",
+  "ocupa": "1 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Cada grimório ou texto sagrado usa 1 dos quatro espaços compartilhados com armas, escudos e focos, inclusive se for reserva. Só disponibiliza suas magias quando preparado."
+ },
+ "EQ-153": {
+  "nome": "Os Ensinamentos Divinos",
+  "ocupa": "1 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Cada grimório ou texto sagrado usa 1 dos quatro espaços compartilhados com armas, escudos e focos, inclusive se for reserva. Só disponibiliza suas magias quando preparado."
+ },
+ "EQ-154": {
+  "nome": "As Leis Fundamentais",
+  "ocupa": "1 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Cada grimório ou texto sagrado usa 1 dos quatro espaços compartilhados com armas, escudos e focos, inclusive se for reserva. Só disponibiliza suas magias quando preparado."
+ },
+ "EQ-155": {
+  "nome": "O Fogo Purificador",
+  "ocupa": "1 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Cada grimório ou texto sagrado usa 1 dos quatro espaços compartilhados com armas, escudos e focos, inclusive se for reserva. Só disponibiliza suas magias quando preparado."
+ },
+ "EQ-156": {
+  "nome": "Corrente de Caça",
+  "ocupa": "2 Armamentos e repertórios",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Precisa estar empunhada para fornecer benefícios e capacidade de Fadiga em combate."
+ },
+ "EQ-157": {
+  "nome": "Poção de Regeneração",
+  "ocupa": "1 Consumíveis especiais",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa."
+ },
+ "EQ-158": {
+  "nome": "Poção de Fôlego Prolongado",
+  "ocupa": "1 Consumíveis especiais",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa."
+ },
+ "EQ-159": {
+  "nome": "Poção de Visão Noturna",
+  "ocupa": "1 Consumíveis especiais",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa."
+ },
+ "EQ-160": {
+  "nome": "Poção de Vigor Lunar",
+  "ocupa": "1 Consumíveis especiais",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa."
+ },
+ "EQ-161": {
+  "nome": "Poção de Sangue Cáustico",
+  "ocupa": "1 Consumíveis especiais",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa."
+ },
+ "EQ-162": {
+  "nome": "Poção de Reflexos Predatórios",
+  "ocupa": "1 Consumíveis especiais",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa."
+ },
+ "EQ-163": {
+  "nome": "Poção de Sangue Limpo",
+  "ocupa": "1 Consumíveis especiais",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa."
+ },
+ "EQ-164": {
+  "nome": "Poção de Mergulho",
+  "ocupa": "1 Consumíveis especiais",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa."
+ },
+ "EQ-165": {
+  "nome": "Poção de Foco Crescente",
+  "ocupa": "1 Consumíveis especiais",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa."
+ },
+ "EQ-166": {
+  "nome": "Poção de Amplificação",
+  "ocupa": "1 Consumíveis especiais",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa."
+ },
+ "EQ-167": {
+  "nome": "Poção de Purificação",
+  "ocupa": "1 Consumíveis especiais",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa."
+ },
+ "EQ-168": {
+  "nome": "Poção de Superação",
+  "ocupa": "1 Consumíveis especiais",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa."
+ },
+ "EQ-169": {
+  "nome": "Poção de Feromônios",
+  "ocupa": "1 Consumíveis especiais",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa."
+ },
+ "EQ-170": {
+  "nome": "Poção de Reaprendizado",
+  "ocupa": "1 Consumíveis especiais",
+  "reserva": "Mantém seu limite próprio",
+  "obs": "Cada dose, aplicação, bomba, runa, gazua ou uso da carta ocupa 1 carga. Limite 6 no total, inclusive se guardado em outra bolsa. Ficha simples de controle"
+ }
+}

@@ -37,6 +37,13 @@ const LADOS := {
 }
 
 
+## Ativadas de cartas de herói que faltavam (0.24).
+const ATIVADAS_HEROI := {
+	"brado-da-horda": {"uso": "ativada", "alvo": "nenhum"},
+	"predador-da-selva": {"uso": "ativada", "alvo": "nenhum"},
+}
+
+
 static func motivo(b, u, c) -> String:
 	match c.slug():
 		"adaga-fantasma":
@@ -62,6 +69,21 @@ static func motivo(b, u, c) -> String:
 static func usar(b, u, c, alvo) -> void:
 	var nome: String = c.nome()
 	match c.slug():
+		"brado-da-horda":
+			b._log("Brado da Horda: %s solta um brado de guerra!" % u.nome)
+			b.brado_da_horda(u)
+		"predador-da-selva":
+			var inimigos: Array = b.inimigos_vivos()
+			var melhor := Vector2i(-1, -1)
+			for d in Grade.DIRECOES:
+				var p: Vector2i = u.pos + d
+				if not b.grade.dentro(p) or b.grade.bloqueado(p) or b.na_posicao(p) != null:
+					continue
+				if melhor == Vector2i(-1, -1) or (not inimigos.is_empty() and Grade.distancia(p, inimigos[0].pos) < Grade.distancia(melhor, inimigos[0].pos)):
+					melhor = p
+			if melhor != Vector2i(-1, -1):
+				b.criar_zona("armadilha", "Armadilha de imobilização", [melhor], u, {"rodadas": -1, "vinculada": false})
+				b._log("Predador da Selva: %s arma uma armadilha ao lado." % u.nome)
 		"escudo-agil":
 			u.efeitos["escudo_agil"] = {"ate": "inicio_turno"}
 			b._log("%s: aliados ao lado de %s têm cobertura parcial até o próximo turno dele." % [nome, u.nome])

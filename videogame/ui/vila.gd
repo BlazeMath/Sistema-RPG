@@ -1,11 +1,12 @@
 ## Vila de Pedravelha (0.15): a guilda entre as missões.
-## Quadro de missões, mercado (consumíveis com ouro) e estalagem (descanso longo).
+## Quadro de missões, mercado e forja (moedas: cobre, prata e ouro) e estalagem (descanso longo).
 ## As regras moram em core/campanha.gd; esta tela só mostra e chama.
 extends Control
 
 const Sessao := preload("res://core/sessao.gd")
 const Campanha := preload("res://core/campanha.gd")
 const Itens := preload("res://core/itens.gd")
+const Personagem := preload("res://core/personagem.gd")
 
 const COR_FUNDO := Color("121116")
 const COR_PAINEL := Color("1c1b22")
@@ -16,12 +17,10 @@ const COR_OURO := Color("c9a45c")
 
 var _ouro: Label
 var _aviso: Label
-var _heroi: OptionButton
 var _mercado: VBoxContainer
 var _estalagem: VBoxContainer
 var _missoes: VBoxContainer
 var _ferreiro: VBoxContainer
-var _heroi_f: OptionButton
 ## 0.23: aberta por dentro da vila andável. "missoes", "mercado", "ferreiro" ou "estalagem":
 ## mostra só aquele lugar, com um botão de voltar para a rua.
 var aba := ""
@@ -36,6 +35,11 @@ func _ready() -> void:
 	_fonte_negrito = load("res://assets/fontes/DejaVuSans-Bold.ttf") if ResourceLoader.exists("res://assets/fontes/DejaVuSans-Bold.ttf") else _fonte
 	Sessao.solo = false
 	Campanha.carregar()
+	var rede = _rede()
+	if rede != null:
+		rede.campanha_mudou.connect(func():
+			if is_inside_tree():
+				_montar())
 	var fundo := ColorRect.new()
 	fundo.color = COR_FUNDO
 	fundo.set_anchors_preset(Control.PRESET_FULL_RECT)
@@ -53,7 +57,7 @@ func _ready() -> void:
 	topo.add_child(titulo)
 	_ouro = _label("", 20, COR_OURO, true)
 	topo.add_child(_ouro)
-	var sub := _label("A região sangra: fome, mortos que não descansam e goblins nas estradas. A guilda aceita contratos por ouro, e o ouro paga o que vocês precisam para voltar vivos.", 13, COR_SECUNDARIO)
+	var sub := _label("A região sangra: fome, mortos que não descansam e goblins nas estradas. A guilda paga os contratos em prata, e a prata paga o que vocês precisam para voltar vivos. (1 ouro = 100 pratas = 1.000 cobres.)", 13, COR_SECUNDARIO)
 	sub.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	raiz.add_child(sub)
 	var colunas := HBoxContainer.new()
@@ -86,7 +90,7 @@ func _ready() -> void:
 	baixo.add_child(_botao("Heróis e grupo", func(): get_tree().change_scene_to_file("res://ui/criacao.tscn")))
 	baixo.add_child(_botao("Recomeçar campanha", func():
 		Campanha.reiniciar()
-		_aviso.text = "Campanha recomeçada: %d de ouro, sem feridas." % Campanha.OURO_INICIAL
+		_aviso.text = "Campanha recomeçada: %s, sem feridas." % Campanha.moeda(Campanha.DINHEIRO_INICIAL)
 		_montar()))
 	baixo.add_child(_botao("Menu", func(): get_tree().change_scene_to_file("res://ui/main.tscn")))
 	_saves = load("res://ui/janela_saves.gd").new()
@@ -106,8 +110,41 @@ func _ready() -> void:
 		musica.tocar("menu")
 
 
+## Jogo em rede (0.26): Rede, se a partida é em rede.
+func _rede():
+	var r = get_node_or_null("/root/Rede")
+	return r if r != null and r.ativo and Sessao.online else null
+
+
+## Compras, vendas e estalagem: em rede viram pedidos ao anfitrião (a party mora lá).
+func _na_campanha(metodo: String, args: Array, depois: Callable) -> void:
+	var rede = _rede()
+	if rede == null:
+		depois.call(Campanha.executar(metodo, args))
+		_montar()
+		return
+	_aviso.text = "Falando com o anfitrião…"
+	rede.campanha(metodo, args, func(r):
+		if is_inside_tree():
+			depois.call(r)
+			_montar())
+
+
+## Em rede, cada jogador compra para os próprios heróis (a bolsa é do grupo).
+func _fichas_da_loja() -> Array:
+	var fichas := Sessao.fichas_do_grupo()
+	var rede = _rede()
+	if rede == null:
+		return fichas
+	var minhas := []
+	for i in fichas.size():
+		if rede.e_meu("heroi" if i == 0 else "heroi%d" % (i + 1)):
+			minhas.append(fichas[i])
+	return minhas
+
+
 func _montar() -> void:
-	_ouro.text = "Nível do grupo %d   ·   Ouro: %d" % [Campanha.nivel(), Campanha.ouro()]
+	_ouro.text = "Nível do grupo %d   ·   Bolsa: %s" % [Campanha.nivel(), Campanha.moeda(Campanha.dinheiro())]
 	_montar_missoes()
 	_montar_mercado()
 	_montar_ferreiro()
@@ -121,12 +158,16 @@ func _montar_missoes() -> void:
 	for c in Campanha.CICLOS:
 		var cab := _label("Ciclo %d · %s%s" % [int(c["numero"]), c["nome"], "  ✔" if Campanha.ciclo_completo(int(c["numero"])) else ""], 15, COR_OURO, true)
 		_missoes.add_child(cab)
-		if c["missoes"].is_empty():
+		# 0.27: fases do editor marcadas com este ciclo entram aqui (não contam para subir de nível).
+		var do_editor := Campanha.missoes().filter(func(m): return str(m["id"]).begins_with("fase:") and int(m.get("ciclo", 0)) == int(c["numero"]))
+		if c["missoes"].is_empty() and do_editor.is_empty():
 			_missoes.add_child(_label("Ainda não há missões neste ciclo.", 12, COR_SECUNDARIO))
 		for id in c["missoes"]:
 			_cartao_missao(Campanha.missao(id), feitas)
+		for m in do_editor:
+			_cartao_missao(m, feitas)
 	_missoes.add_child(_label("Outros contratos", 15, COR_OURO, true))
-	for m in Campanha.MISSOES:
+	for m in Campanha.missoes():
 		if not m.has("ciclo"):
 			_cartao_missao(m, feitas)
 
@@ -143,132 +184,207 @@ func _cartao_missao(m: Dictionary, feitas: Array) -> void:
 	t.custom_minimum_size = Vector2(380, 0)
 	v.add_child(t)
 	if trancada == "":
-		v.add_child(_label("Pagamento: %d de ouro" % int(m["recompensa"]) if int(m["recompensa"]) > 0 else "Sem pagamento", 12, COR_OURO))
+		v.add_child(_label("Pagamento: %d pratas para o grupo" % int(m["recompensa"]) if int(m["recompensa"]) > 0 else "Sem pagamento", 12, COR_OURO))
 		var id: String = m["id"]
-		v.add_child(_botao("Partir", func():
+		var rede = _rede()
+		var bp := _botao("Partir", func():
 			Sessao.vila_pos = Vector2i(-1, -1)
+			if rede != null:
+				rede.ir_para(id)
+				return
 			Sessao.campanha = true
 			Sessao.solo = false
 			Sessao.modo = id
-			get_tree().change_scene_to_file("res://ui/batalha.tscn")))
+			get_tree().change_scene_to_file("res://ui/batalha.tscn"))
+		if rede != null and not rede.anfitriao:
+			bp.disabled = true
+			bp.text = "Partir (só o anfitrião escolhe a missão)"
+		v.add_child(bp)
 	_missoes.add_child(p)
 
 
+## Lojas (0.25): preços em moedas (Campanha.moeda), espaço que o item ocupa e revenda.
+## Mercado da Doroteia: consumíveis, ferramentas, roupas, acessórios, focos e livros.
+## Forja do Bruno: armas, armaduras e escudos.
+const SECOES := {
+	"mercado": [["consumivel", "Consumíveis e runas"], ["mochila", "Ferramentas (mochila)"], ["vestir", "Capas, elmos, botas e acessórios"],
+		["foco", "Focos"], ["grimorio", "Grimórios e textos sagrados"]],
+	"ferreiro": [["arma", "Armas (vão para a segunda arma)"], ["armadura", "Armaduras (troca a atual)"], ["escudo", "Escudos (troca o atual)"]],
+}
+var _sel_heroi := {}
+var _sel_secao := {}
+
+
 func _montar_mercado() -> void:
-	_limpar(_mercado)
-	var fichas := Sessao.fichas_do_grupo()
-	var linha := HBoxContainer.new()
-	linha.add_child(_label("Comprar para: ", 13, COR_SECUNDARIO))
-	var antes := _heroi.get_item_text(_heroi.selected) if _heroi != null and _heroi.selected >= 0 else ""
-	_heroi = OptionButton.new()
-	for f in fichas:
-		_heroi.add_item(f["nome"])
-		if f["nome"] == antes:
-			_heroi.select(_heroi.item_count - 1)
-	_heroi.item_selected.connect(func(_i): _montar_mercado())
-	linha.add_child(_heroi)
-	_mercado.add_child(linha)
+	_montar_loja(_mercado, "mercado")
+
+
+func _montar_ferreiro() -> void:
+	_montar_loja(_ferreiro, "ferreiro")
+
+
+func _ids_da_secao(secao: String) -> Array:
+	match secao:
+		"consumivel":
+			return Itens.CONSUMIVEIS.keys()
+		"mochila":
+			return Itens.NAO_CONSUMIVEIS.keys().filter(func(i): return Itens.NAO_CONSUMIVEIS[i].get("espaco", "") == "mochila")
+		"vestir":
+			return Itens.NAO_CONSUMIVEIS.keys().filter(func(i): return Itens.NAO_CONSUMIVEIS[i].get("espaco", "") != "mochila")
+		"foco":
+			return Itens.FOCOS.keys().filter(func(i): return i != "nenhum")
+		"grimorio":
+			return Itens.GRIMORIOS.keys()
+		"arma":
+			return Itens.ARMAS.keys()
+		"armadura":
+			return Itens.ARMADURAS.keys().filter(func(i): return i != "nenhuma")
+		"escudo":
+			return Itens.ESCUDOS.keys().filter(func(i): return i != "nenhum")
+	return []
+
+
+func _montar_loja(corpo: VBoxContainer, tipo: String) -> void:
+	_limpar(corpo)
+	var fichas := _fichas_da_loja()
 	if fichas.is_empty():
+		corpo.add_child(_label("Monte o grupo em \"Heróis e grupo\".", 13, COR_SECUNDARIO))
 		return
-	var ficha: Dictionary = fichas[maxi(_heroi.selected, 0)]
+	var linha := HBoxContainer.new()
+	linha.add_child(_label("Para: ", 13, COR_SECUNDARIO))
+	var ob := OptionButton.new()
+	ob.focus_mode = Control.FOCUS_NONE
+	for f in fichas:
+		ob.add_item(f["nome"])
+	ob.select(clampi(int(_sel_heroi.get(tipo, 0)), 0, fichas.size() - 1))
+	ob.item_selected.connect(func(i): _sel_heroi[tipo] = i; _montar_loja(corpo, tipo))
+	linha.add_child(ob)
+	linha.add_child(_label("  Mostrar: ", 13, COR_SECUNDARIO))
+	var obs := OptionButton.new()
+	obs.focus_mode = Control.FOCUS_NONE
+	for sec in SECOES[tipo]:
+		obs.add_item(sec[1])
+	obs.add_item("Vender")
+	var n_sec: int = SECOES[tipo].size()
+	obs.select(clampi(int(_sel_secao.get(tipo, 0)), 0, n_sec))
+	obs.item_selected.connect(func(i): _sel_secao[tipo] = i; _montar_loja(corpo, tipo))
+	linha.add_child(obs)
+	corpo.add_child(linha)
+	var ficha: Dictionary = fichas[ob.selected]
+	var ocup := _label(Personagem.texto_ocupacao(ficha), 11, COR_SECUNDARIO)
+	ocup.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	ocup.custom_minimum_size = Vector2(360, 0)
+	corpo.add_child(ocup)
+	if tipo == "ferreiro":
+		corpo.add_child(_label("Na mão: %s · segunda: %s · %s · %s" % [Itens.nome(ficha["arma"]),
+			Itens.ARMAS.get(ficha.get("arma2", "nenhuma"), {}).get("nome", "nada"), Itens.nome(ficha["armadura"]),
+			Itens.nome(ficha["escudo"])], 12, COR_SECUNDARIO))
 	var lista := VBoxContainer.new()
-	lista.add_theme_constant_override("separation", 4)
+	lista.add_theme_constant_override("separation", 3)
+	lista.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	var rolagem := ScrollContainer.new()
-	rolagem.custom_minimum_size = Vector2(380, 470)
+	rolagem.custom_minimum_size = Vector2(380, 400)
+	rolagem.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	rolagem.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
 	rolagem.add_child(lista)
-	_mercado.add_child(rolagem)
-	for item in Itens.CONSUMIVEIS:
-		var it: Dictionary = Itens.CONSUMIVEIS[item]
+	corpo.add_child(rolagem)
+	var nome_h: String = ficha["nome"]
+	if obs.selected >= n_sec:
+		_lista_de_venda(lista, ficha)
+		return
+	var secao: String = SECOES[tipo][obs.selected][0]
+	var ids := _ids_da_secao(secao)
+	ids.sort_custom(func(x, y): return Campanha.preco(x) < Campanha.preco(y))
+	for id in ids:
+		var it: Dictionary = Itens.item(id)
 		if not it.get("loja", true):
 			continue
 		var h := HBoxContainer.new()
 		h.add_theme_constant_override("separation", 6)
-		var nome := _label("%s  (tem %d)" % [it["nome"], ficha["consumiveis"].count(item)], 13, COR_TEXTO)
+		var prog: bool = it.get("programado", true)
+		var tem := _quantos(ficha, id)
+		var nome := _label("%s%s%s" % [it["nome"], "" if prog else " *", ("  (tem %d)" % tem) if tem > 0 else ""], 13, COR_TEXTO)
 		nome.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-		nome.tooltip_text = it.get("texto", "")
+		nome.clip_text = true
+		nome.custom_minimum_size = Vector2(150, 0)
+		nome.tooltip_text = _dica_item(id, it)
 		nome.mouse_filter = Control.MOUSE_FILTER_STOP
 		h.add_child(nome)
-		var preco := Campanha.preco(item)
-		var nome_heroi: String = ficha["nome"]
-		var bt := _botao("%d ouro" % preco, func():
-			if Campanha.comprar(nome_heroi, item):
-				_aviso.text = "%s compra %s." % [nome_heroi, it["nome"]]
-			else:
-				_aviso.text = "Ouro insuficiente (ou herói não salvo)."
-			_montar())
-		bt.disabled = Campanha.ouro() < preco
-		h.add_child(bt)
-		lista.add_child(h)
-	# Vender (0.23): o que o herói carrega; achados valiosos (gemas, lascas) valem mais.
-	var vendaveis := {}
-	for item in ficha["consumiveis"]:
-		vendaveis[item] = true
-	if not vendaveis.is_empty():
-		lista.add_child(_label("Vender", 15, COR_OURO, true))
-	for item in vendaveis:
-		var it_v: Dictionary = Itens.CONSUMIVEIS.get(item, {"nome": item})
-		var hv := HBoxContainer.new()
-		var nv := _label("%s  (tem %d)" % [it_v.get("nome", item), ficha["consumiveis"].count(item)], 13, COR_TEXTO)
-		nv.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-		hv.add_child(nv)
-		var nome_h: String = ficha["nome"]
-		var it_id: String = item
-		hv.add_child(_botao("Vender: %d ouro" % Campanha.preco_venda(item), func():
-			if Campanha.vender(nome_h, it_id):
-				_aviso.text = "%s vende %s." % [nome_h, it_v.get("nome", it_id)]
-			_montar()))
-		lista.add_child(hv)
-
-
-## Forja (0.23): armas (vão para a mão reserva), armaduras e escudos.
-func _montar_ferreiro() -> void:
-	_limpar(_ferreiro)
-	var fichas := Sessao.fichas_do_grupo()
-	if fichas.is_empty():
-		return
-	var linha := HBoxContainer.new()
-	linha.add_child(_label("Comprar para: ", 13, COR_SECUNDARIO))
-	var antes := _heroi_f.get_item_text(_heroi_f.selected) if _heroi_f != null and _heroi_f.selected >= 0 else ""
-	_heroi_f = OptionButton.new()
-	for f in fichas:
-		_heroi_f.add_item(f["nome"])
-		if f["nome"] == antes:
-			_heroi_f.select(_heroi_f.item_count - 1)
-	_heroi_f.item_selected.connect(func(_i): _montar_ferreiro())
-	linha.add_child(_heroi_f)
-	_ferreiro.add_child(linha)
-	var ficha: Dictionary = fichas[maxi(_heroi_f.selected, 0)]
-	_ferreiro.add_child(_label("Na mão: %s · reserva: %s · %s · %s" % [Itens.ARMAS.get(ficha["arma"], {}).get("nome", "-"),
-		Itens.ARMAS.get(ficha.get("arma2", "nenhuma"), {}).get("nome", "nada"), Itens.ARMADURAS.get(ficha["armadura"], {}).get("nome", "-"),
-		Itens.ESCUDOS.get(ficha["escudo"], {}).get("nome", "-")], 12, COR_SECUNDARIO))
-	var lista := VBoxContainer.new()
-	var rolagem := ScrollContainer.new()
-	rolagem.custom_minimum_size = Vector2(380, 440)
-	rolagem.add_child(lista)
-	_ferreiro.add_child(rolagem)
-	for grupo in [["arma", Itens.ARMAS, "Armas (vão para a reserva)"], ["armadura", Itens.ARMADURAS, "Armaduras"], ["escudo", Itens.ESCUDOS, "Escudos"]]:
-		lista.add_child(_label(grupo[2], 15, COR_OURO, true))
-		for id in grupo[1]:
-			if id in ["nenhuma", "nenhum"]:
-				continue
-			var it: Dictionary = grupo[1][id]
-			var h := HBoxContainer.new()
-			var nome := _label(it["nome"], 13, COR_TEXTO)
-			nome.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-			nome.tooltip_text = it.get("texto", "dano %s, %s" % [str(it.get("dano", "")), str(it.get("tipo_dano", ""))])
-			nome.mouse_filter = Control.MOUSE_FILTER_STOP
-			h.add_child(nome)
-			var preco := Campanha.preco_equip(grupo[0], id)
-			var nome_h: String = ficha["nome"]
-			var campo: String = grupo[0]
-			var item_id: String = id
-			var bt := _botao("%d ouro" % preco, func():
-				var r := Campanha.comprar_equip(nome_h, campo, item_id)
-				_aviso.text = r if r != "" else "%s compra %s." % [nome_h, it["nome"]]
-				_montar())
-			bt.disabled = Campanha.ouro() < preco
+		var preco := Campanha.preco(id)
+		var motivo := Campanha.motivo_sem_venda(id)
+		var item_id: String = id
+		if motivo == "só por encomenda":
+			var be := _botao("Encomendar %s" % Campanha.moeda(preco), func():
+				_na_campanha("comprar_item", [nome_h, item_id, true], func(r):
+					_aviso.text = str(r) if str(r) != "" else "%s encomenda %s: chega depois da próxima missão vencida." % [nome_h, it["nome"]]))
+			be.disabled = Campanha.dinheiro() < preco
+			be.tooltip_text = "Encomenda: paga agora e recebe ao voltar da próxima missão vencida."
+			h.add_child(be)
+		elif motivo != "":
+			h.add_child(_label("relíquia", 12, COR_SECUNDARIO))
+		else:
+			var bt := _botao(Campanha.moeda(preco), func():
+				_na_campanha("comprar_item", [nome_h, item_id], func(r):
+					_aviso.text = str(r) if str(r) != "" else "%s compra %s." % [nome_h, it["nome"]]))
+			bt.disabled = Campanha.dinheiro() < preco
 			h.add_child(bt)
-			lista.add_child(h)
+		lista.add_child(h)
+	lista.add_child(_label("* efeito ainda não programado (vale com o mestre). Relíquias não se compram: só se acham.", 11, COR_SECUNDARIO))
+
+
+func _quantos(f: Dictionary, id: String) -> int:
+	var n: int = f.get("consumiveis", []).count(id) + f.get("mochila", []).count(id) + f.get("acessorios", []).count(id) + f.get("grimorios", []).count(id)
+	for chave in ["arma", "arma2", "armadura", "escudo", "foco", "costas", "cabeca", "pes"]:
+		if f.get(chave, "") == id:
+			n += 1
+	return n
+
+
+func _dica_item(id: String, it: Dictionary) -> String:
+	var linhas := PackedStringArray()
+	linhas.append("%s · %s" % [it.get("categoria", ""), it.get("raridade", "")])
+	if Itens.ARMAS.has(id):
+		linhas.append(Itens.descricao_arma(it))
+	else:
+		linhas.append(str(it.get("texto", "")))
+	if it.has("vida") and int(it.get("vida", 0)) > 0:
+		linhas.append("Vida %d · Resistência %d" % [int(it["vida"]), int(it.get("resistencia", 0))])
+	linhas.append("Ocupa: %d em %s%s" % [int(it.get("ocupa", 1)), Personagem.NOMES_ESPACOS.get(it.get("espaco", ""), ""),
+		(" (até %d por espaço)" % int(it["pacote"])) if int(it.get("pacote", 1)) > 1 else ""])
+	linhas.append("Loja: %s · revenda %s" % [Campanha.NOMES_MERCADO.get(it.get("mercado", "V"), ""), Campanha.moeda(Campanha.preco_venda(id))])
+	if str(it.get("nota", "")) != "":
+		linhas.append("No jogo: " + str(it["nota"]))
+	return "\n".join(linhas)
+
+
+## Vender: tudo o que o herói carrega fora das mãos (e a segunda arma).
+func _lista_de_venda(lista: VBoxContainer, ficha: Dictionary) -> void:
+	var vendaveis := []
+	for chave in ["consumiveis", "mochila", "acessorios", "grimorios"]:
+		for id in ficha.get(chave, []):
+			if not id in vendaveis:
+				vendaveis.append(id)
+	for chave in ["costas", "cabeca", "pes", "arma2"]:
+		var id2: String = str(ficha.get(chave, "nenhum"))
+		if not id2 in ["nenhum", "nenhuma"] and not id2 in vendaveis:
+			vendaveis.append(id2)
+	if vendaveis.is_empty():
+		lista.add_child(_label("Nada para vender (a arma na mão, a armadura, o escudo e o foco não se vendem aqui: troque-os comprando outro).", 12, COR_SECUNDARIO))
+	var nome_h: String = ficha["nome"]
+	for id in vendaveis:
+		var it: Dictionary = Itens.item(id)
+		var hv := HBoxContainer.new()
+		var nv := _label("%s  (tem %d)" % [it.get("nome", id), _quantos(ficha, id)], 13, COR_TEXTO)
+		nv.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+		nv.tooltip_text = _dica_item(id, it)
+		nv.mouse_filter = Control.MOUSE_FILTER_STOP
+		hv.add_child(nv)
+		var it_id: String = id
+		hv.add_child(_botao("Vender: %s" % Campanha.moeda(Campanha.preco_venda(id)), func():
+			_na_campanha("vender", [nome_h, it_id], func(r):
+				if r:
+					_aviso.text = "%s vende %s." % [nome_h, it.get("nome", it_id)])))
+		lista.add_child(hv)
 
 
 func _montar_estalagem() -> void:
@@ -288,15 +404,12 @@ func _montar_estalagem() -> void:
 		t.custom_minimum_size = Vector2(350, 0)
 		_estalagem.add_child(t)
 	var custo := Campanha.custo_descanso(nomes)
-	var bt := _botao("Descanso longo (%d ouro)" % custo, func():
-		if Campanha.descansar(nomes):
-			_aviso.text = "O grupo dorme na estalagem. Baralhos recompostos."
-		else:
-			_aviso.text = "Ouro insuficiente para a estalagem."
-		_montar())
-	bt.disabled = not algum or Campanha.ouro() < custo
+	var bt := _botao("Descanso atendido (%s)" % Campanha.moeda(custo), func():
+		_na_campanha("descansar", [nomes], func(r):
+			_aviso.text = "O grupo dorme na estalagem. Baralhos recompostos." if r else "Dinheiro insuficiente para a estalagem."))
+	bt.disabled = not algum or Campanha.dinheiro() < custo
 	_estalagem.add_child(bt)
-	var nota := _label("O descarte volta ao baralho entre as missões; o exílio, só com o descanso longo.", 12, COR_SECUNDARIO)
+	var nota := _label("O descarte volta ao baralho entre as missões; o exílio, só com o descanso longo. Descanso atendido: 5 pratas por herói (cama, comida e cuidados).", 12, COR_SECUNDARIO)
 	nota.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	nota.custom_minimum_size = Vector2(350, 0)
 	_estalagem.add_child(nota)
