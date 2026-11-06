@@ -28,6 +28,9 @@ const MODELOS := {
 	"Bruxo": {"nome": "Vesna (pronta)", "atributos": {"espirito": 3, "constituicao": 3, "destreza": 2, "sabedoria": 2, "percepcao": 1, "raciocinio": 1, "forca": 1, "mentira": 0, "diplomacia": 0},
 		"arma": "faca", "arma2": "nenhuma", "armadura": "couro_do_batedor", "escudo": "nenhum", "foco": "varinha_eletrizante",
 		"cartas": ["classe.bruxo.oferenda-selada", "classe.bruxo.concentrar-a-manifestacao"], "topo": ["Arcanismo", "Intimidação", "Intuição", "Religião"]},
+	"Investigador": {"nome": "Elisa (pronta)", "atributos": {"raciocinio": 3, "percepcao": 3, "destreza": 2, "constituicao": 2, "forca": 1, "sabedoria": 1, "diplomacia": 1, "espirito": 0, "mentira": 0},
+		"arma": "faca", "arma2": "nenhuma", "armadura": "couro_do_batedor", "escudo": "nenhum", "foco": "nenhum",
+		"cartas": ["classe.investigador.coleta-metodica", "classe.investigador.hipotese-de-trabalho"], "topo": ["Investigação", "Intuição", "História", "Negociação"]},
 }
 
 

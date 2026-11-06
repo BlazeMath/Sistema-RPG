@@ -19,6 +19,7 @@ const TIPOS := {
 		"cor": Color(1.0, 0.95, 0.8), "ataque": "1H_Melee_Attack_Slice_Diagonal", "magia": "Spellcast_Raise"},
 	"ladino": {"arq": "Rogue_Hooded", "manter": ["Knife", "Knife_Offhand"], "ataque": "Dualwield_Melee_Attack_Stab"},
 	"cacador": {"arq": "Rogue", "manter": ["2H_Crossbow", "Knife"], "ataque": "2H_Ranged_Shoot"},
+	"investigador": {"arq": "Rogue", "manter": ["Knife"], "ataque": "1H_Melee_Attack_Stab"},
 	"mago": {"arq": "Mage", "manter": ["2H_Staff"], "ataque": "Spellcast_Shoot"},
 	# Bruxo (0.25): o mago de capuz escuro, com varinha e livro.
 	"bruxo": {"arq": "Mage", "manter": ["1H_Wand", "Spellbook"], "cor": Color(0.62, 0.5, 0.58), "ataque": "Spellcast_Shoot"},

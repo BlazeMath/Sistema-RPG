@@ -1,0 +1,2 @@
+# Preserva os bytes da edição publicada para conferir seu SHA-256.
+investigador_catalogo_v02.json -text whitespace=cr-at-eol

@@ -21,7 +21,11 @@ def c(x, y):
 # --- efeitos ---------------------------------------------------------------------------
 def ouro(v): return {"tipo": "ouro", "valor": v}
 def item(i, q=1): return {"tipo": "item", "item": i, "qtd": q}
-def pista(n, t=""): return {"tipo": "pista", "nome": n, "texto": t}
+def pista(n, t="", categoria=None):
+    efeito = {"tipo": "pista", "nome": n, "texto": t}
+    if categoria:
+        efeito["categoria"] = categoria
+    return efeito
 def lore(t): return {"tipo": "lore", "texto": t}
 def narrar(ti, te): return {"tipo": "narrar", "titulo": ti, "texto": te}
 def alertar(g, t=""): return {"tipo": "alertar", "grupo": g, "texto": t}
@@ -38,7 +42,7 @@ def queda(q): return {"tipo": "queda", "quadrados": q}
 
 
 def opc(id, texto, custo="padrao", teste=None, nivel="medio", sucesso=None, falha=None, feito=None,
-        uma_vez=True, pistas=0, classes=None, item_req="", sem_inimigos=False):
+        uma_vez=True, pistas=0, classes=None, item_req="", sem_inimigos=False, investigador=None):
     """Opção de interação. teste = lista do que somar (perícia, atributo)."""
     o = {"id": id, "texto": texto, "custo": custo, "uma_vez": uma_vez, "sem_inimigos": sem_inimigos,
          "requer_item": item_req, "requer_classe": classes or [], "requer_pistas": pistas,
@@ -48,7 +52,14 @@ def opc(id, texto, custo="padrao", teste=None, nivel="medio", sucesso=None, falh
     for chave, val in (("sucesso", sucesso), ("falha", falha), ("feito", feito)):
         if val is not None:
             o["resultados"][chave] = {"texto": val[0], "efeitos": val[1] if len(val) > 1 else []}
+    if investigador:
+        o["investigador"] = investigador
     return o
+
+
+def variante_investigador(opcao, id, texto, carta):
+    """Troca a ação da interação sem mudar o teste nem suas consequências."""
+    return dict(opcao, id=id, texto=texto, custo="movimento", investigador={**opcao["investigador"], "carta": carta})
 
 
 class Fase:
@@ -202,39 +213,66 @@ def investigacao():
     f.area("chegada", "Entrada da cidade", "fala", [(1, 12), (2, 12), (3, 13), (3, 14)], titulo="Vau-Cinzento",
            texto="Janelas fechadas em pleno dia. Uma senhora tira o balde do poço, olha para a água e desiste. O cheiro do rio é forte, mas tem outra coisa: algo doce, de flor.")
     # --- pistas ---
+    beladona = pista("Beladona no poço", "O poço foi envenenado de propósito com beladona moída.", "mecanismo")
+    venda = pista("Venda ao capitão", "O boticário vendeu um saco de beladona ao capitão Orsk.", "intencao")
+    botas = pista("Botas de barro vermelho", "Um guarda com botas sujas do barro vermelho do cais esteve no poço à noite.", "cenario")
+    moedas = pista("Moedas novas", "O capitão Orsk anda gastando moedas novas de origem desconhecida.", "geral")
+    armazem = pista("Armazém do cais", "O capitão frequenta o armazém do cais à noite.", "cenario")
+    recibo = pista("Recibo do Círculo Rubro", "Alguém paga o capitão para esvaziar a cidade.", "intencao")
+    examinar = opc("examinar", "Examinar a corda e a água (Investigação + Raciocínio)", teste=["Investigação", "raciocinio"], nivel="facil",
+        sucesso=("Na corda há resto de pétalas moídas: beladona, e muita. Alguém jogou um saco inteiro aqui, de noite, puxando pela corda.", [beladona]),
+        falha=("Só uma mancha roxa. Pode ser qualquer coisa.",), uma_vez=False,
+        investigador={"dica_falha": "O boticário pode ajudar a reconhecer o resíduo da corda. Quem conhece Medicina também pode tentar pelo cheiro."})
     f.interacao("poco_praca", "Poço da praça", 14, 11, "A água parece limpa. Na corda do balde, uma mancha roxa seca.", [
-        opc("examinar", "Examinar a corda e a água (Investigação + Raciocínio)", teste=["Investigação", "raciocinio"], nivel="facil",
-            sucesso=("Na corda há resto de pétalas moídas: beladona, e muita. Alguém jogou um saco inteiro aqui, de noite, puxando pela corda.", [pista("Beladona no poço", "O poço foi envenenado de propósito com beladona moída.")]),
-            falha=("Só uma mancha roxa. Pode ser qualquer coisa.",), uma_vez=False),
+        examinar,
         opc("provar", "Reconhecer o veneno pelo cheiro (Medicina + Sabedoria)", teste=["Medicina", "sabedoria"],
-            sucesso=("Doce e amargo ao mesmo tempo: beladona. Não é febre do rio. Foi gente.", [pista("Beladona no poço", "O poço foi envenenado de propósito com beladona moída.")]),
-            falha=("O cheiro sobe à cabeça. Você se afasta tonto.", [ficha("Penalidade")]))])
+            sucesso=("Doce e amargo ao mesmo tempo: beladona. Não é febre do rio. Foi gente.", [beladona]),
+            falha=("O cheiro sobe à cabeça. Você se afasta tonto.", [ficha("Penalidade")]),
+            investigador={"dica_falha": "Deixe o balde em repouso e procure resíduo na corda. A mancha pode conservar um vestígio que a água já diluiu."}),
+        variante_investigador(examinar, "examinar_vestigios", "Examinar os Vestígios na corda e na água", "detetive-analitico"),
+        opc("hipotese_corda", "Hipótese de Trabalho sobre a mancha na corda", custo="movimento", uma_vez=False,
+            feito=("Se a mancha veio de algo jogado no poço, ainda deve haver resíduo na corda. Você decide procurar pelo material da mancha.",),
+            investigador={"carta": "hipotese-de-trabalho", "hipotese": {"interacao": "poco_praca", "opcao": "examinar"}})])
+    ler_faro = opc("ler", "Perceber o que ele esconde (Intuição + Percepção)", teste=["Intuição", "percepcao"],
+        sucesso=("Ele não é culpado: está com medo. \"Vendi beladona para o capitão da guarda, um saco inteiro. Disse que era para ratos. Se ele souber que eu falei...\"", [venda]),
+        falha=("Ele jura que não sabe de nada e pede que vocês saiam.",), uma_vez=False,
+        investigador={"dica_falha": "Se Faro não falar, pergunte na praça a quem costuma passar por lá. Marta está sentada perto do poço."})
     f.npc("boticario", "Boticário Faro", 8, 7, "Um senhor magro que não para de arrumar frascos. Ele sua frio quando vocês entram.", [
-        opc("ler", "Perceber o que ele esconde (Intuição + Percepção)", teste=["Intuição", "percepcao"],
-            sucesso=("Ele não é culpado: está com medo. \"Vendi beladona para o capitão da guarda, um saco inteiro. Disse que era para ratos. Se ele souber que eu falei...\"", [pista("Venda ao capitão", "O boticário vendeu um saco de beladona ao capitão Orsk.")]),
-            falha=("Ele jura que não sabe de nada e pede que vocês saiam.",), uma_vez=False),
+        ler_faro,
         opc("pressionar", "Pressionar com ameaças (Intimidação + Força)", teste=["Intimidação", "forca"], nivel="facil",
-            sucesso=("\"Foi o capitão! O capitão Orsk comprou a beladona!\" Ele chora. Lá fora, alguém viu a cena.", [pista("Venda ao capitão", "O boticário vendeu um saco de beladona ao capitão Orsk.")]),
-            falha=("Ele se tranca nos fundos. A notícia de que a guilda está ameaçando gente corre a praça.",))])
+            sucesso=("\"Foi o capitão! O capitão Orsk comprou a beladona!\" Ele chora. Lá fora, alguém viu a cena.", [venda]),
+            falha=("Ele se tranca nos fundos. A notícia de que a guilda está ameaçando gente corre a praça.",),
+            investigador={"dica_falha": "As ameaças fecharam essa conversa. Você ainda pode procurar testemunhas na praça ou na taverna."}),
+        variante_investigador(ler_faro, "entrevista_breve", "Entrevista Breve com Faro", "entrevista-breve"),
+        opc("hipotese_faro", "Hipótese de Trabalho sobre a hesitação de Faro", custo="movimento", uma_vez=False,
+            feito=("Faro arruma os mesmos frascos desde que vocês entraram. Você prepara perguntas para observar quando ele hesita.",),
+            investigador={"carta": "hipotese-de-trabalho", "hipotese": {"interacao": "boticario", "opcao": "ler"}})])
     f.npc("viuva", "Viúva Marta", 13, 13, "Ela perdeu o marido para o poço. Está sentada na borda da praça, sem chorar.", [
         opc("consolar", "Consolar e perguntar com calma (Acalmar + Diplomacia)", teste=["Acalmar", "diplomacia"], nivel="facil",
-            sucesso=("\"Na noite antes, eu vi um homem no poço. Capa da guarda, botas sujas de barro vermelho. Barro do cais, do lado dos armazéns.\"", [pista("Botas de barro vermelho", "Um guarda com botas sujas do barro vermelho do cais esteve no poço à noite.")]),
-            falha=("Ela olha através de vocês e não diz nada.",), uma_vez=False)])
+            sucesso=("\"Na noite antes, eu vi um homem no poço. Capa da guarda, botas sujas de barro vermelho. Barro do cais, do lado dos armazéns.\"", [botas]),
+            falha=("Ela olha através de vocês e não diz nada.",), uma_vez=False,
+            investigador={"dica_falha": "Dê tempo a Marta. Enquanto isso, pergunte na taverna quem circula pela cidade depois de escurecer."})])
     f.npc("taverneiro", "Taverneiro Bruno", 23, 10, "Um homem enorme que limpa o mesmo copo há uma hora.", [
         opc("jogar", "Apostar nos dados com ele (Jogatina + Raciocínio)", teste=["Jogatina", "raciocinio"],
-            sucesso=("Você ganha, e ele ri e fala: \"O capitão Orsk anda pagando rodada com moeda nova, do tipo que nem a prefeitura tem. Diz que é herança.\"", [pista("Moedas novas", "O capitão Orsk anda gastando moedas novas de origem desconhecida."), ouro(5)]),
-            falha=("Você perde 5 pratas e a paciência dele.", [ouro(-5)]), uma_vez=False),
+            sucesso=("Você ganha, e ele ri e fala: \"O capitão Orsk anda pagando rodada com moeda nova, do tipo que nem a prefeitura tem. Diz que é herança.\"", [moedas, ouro(5)]),
+            falha=("Você perde 5 pratas e a paciência dele.", [ouro(-5)]), uma_vez=False,
+            investigador={"dica_falha": "A mesa ao lado continua conversando sobre a noite. Talvez aceite conversar se vocês pagarem uma rodada."}),
         opc("comprar", "Pagar uma rodada para a mesa (Negociação + Diplomacia)", teste=["Negociação", "diplomacia"], nivel="facil",
-            sucesso=("Os bêbados falam: o capitão vive no armazém do cais, de noite. \"Coisa de contrabando\", dizem.", [pista("Armazém do cais", "O capitão frequenta o armazém do cais à noite.")]),
-            falha=("Ninguém fala nada útil, mas todos bebem.",))])
+            sucesso=("Os bêbados falam: o capitão vive no armazém do cais, de noite. \"Coisa de contrabando\", dizem.", [armazem]),
+            falha=("Ninguém fala nada útil, mas todos bebem.",),
+            investigador={"dica_falha": "Bruno escuta as mesas a noite inteira. Uma partida de dados pode dar espaço para falar a sós com ele."})])
     descanso_em(f, "lareira", "Lareira da taverna", 24, 11, "Um canto quente e quieto.")
+    abrir_bau = opc("abrir", "Abrir a fechadura (Ladinagem + Destreza)", teste=["Ladinagem", "destreza"],
+        sucesso=("Dentro: 30 pratas novas e um recibo dobrado com o selo de um círculo vermelho: \"Pelo vau, quando estiver vazio.\"", [recibo, ouro(30), desativar()]),
+        falha=("A gazua quebra dentro da fechadura com um estalo alto.", [alertar("guarda_posto", "Os guardas lá fora ouvem o barulho!")]), uma_vez=False,
+        investigador={"dica_falha": "A guarda ouviu o estalo. Se for arriscado insistir, a taverna é outra fonte sobre as rondas e os gastos recentes."})
     f.interacao("bau_guarda", "Baú do posto da guarda", 7, 16, "Um baú trancado embaixo da mesa do capitão. O posto está vazio: a guarda está no cais.", [
-        opc("abrir", "Abrir a fechadura (Ladinagem + Destreza)", teste=["Ladinagem", "destreza"],
-            sucesso=("Dentro: 30 pratas novas e um recibo dobrado com o selo de um círculo vermelho: \"Pelo vau, quando estiver vazio.\"", [pista("Recibo do Círculo Rubro", "Alguém paga o capitão para esvaziar a cidade."), ouro(30), desativar()]),
-            falha=("A gazua quebra dentro da fechadura com um estalo alto.", [alertar("guarda_posto", "Os guardas lá fora ouvem o barulho!")]), uma_vez=False),
+        abrir_bau,
         opc("forcar", "Arrombar com o pé de cabra (Atletismo + Força)", teste=["Atletismo", "forca"], item_req="pe_de_cabra",
-            sucesso=("A tampa salta. O recibo com o círculo vermelho está lá dentro, com as moedas.", [pista("Recibo do Círculo Rubro", "Alguém paga o capitão para esvaziar a cidade."), ouro(30), desativar()]),
-            falha=("O barulho chama os guardas!", [alertar("guarda_posto", "Os guardas lá fora ouvem o barulho!")]))])
+            sucesso=("A tampa salta. O recibo com o círculo vermelho está lá dentro, com as moedas.", [recibo, ouro(30), desativar()]),
+            falha=("O barulho chama os guardas!", [alertar("guarda_posto", "Os guardas lá fora ouvem o barulho!")]),
+            investigador={"dica_falha": "O pé de cabra não cedeu a tampa. A fechadura ainda pode ser aberta, se vocês conseguirem lidar com a guarda."}),
+        variante_investigador(abrir_bau, "maos_ao_caso", "Mãos ao Caso na fechadura do baú", "maos-ao-caso")])
     f.inimigo("guarda_posto1", "guarda_corrupto", 27, 4, grupo="guarda_posto", vigia=1, nome="Guarda de Orsk")
     f.inimigo("guarda_posto2", "guarda_corrupto", 27, 6, grupo="guarda_posto", vigia=1, nome="Guarda de Orsk")
     f.grupo("guarda_posto", "Guardas de Orsk", "\"Ei! Quem mexeu no posto do capitão?\"")
@@ -244,7 +282,23 @@ def investigacao():
             feito=("Com as provas, os guardas honestos derrubam a porta junto com vocês. O capitão Orsk e os cultistas do Círculo Rubro sacam as armas.", [abrir([(21, 18)]), alertar("armazem", "\"Matem todos! O culto paga em dobro!\"")])),
         opc("arrombar", "Arrombar sem provas (Atletismo + Força)", teste=["Atletismo", "forca"], nivel="dificil",
             sucesso=("A porta cede. Lá dentro, o capitão e os cultistas pegam as armas. Sem provas, vai ser na força.", [abrir([(21, 18)]), alertar("armazem")]),
-            falha=("A porta aguenta, e o ombro reclama.", [dano(2)]), uma_vez=False)])
+            falha=("A porta aguenta, e o ombro reclama.", [dano(2)]), uma_vez=False),
+        opc("ligar_poco_boticario", "Ligar os Pontos entre o poço e o boticário",
+            investigador={"carta": "ligar-os-pontos", "evidencias": [beladona["nome"], venda["nome"]],
+                "deducao": {"id": "vau_acesso_ao_veneno", "categoria": "intencao",
+                    "texto": "A compra descrita por Faro deu ao capitão acesso à mesma substância usada no poço. Falta ligar alguém que tinha acesso a ela à praça naquela noite."}}),
+        opc("ligar_praca_taverna", "Ligar os Pontos entre os relatos da praça e da taverna",
+            investigador={"carta": "ligar-os-pontos", "evidencias": [botas["nome"], armazem["nome"]],
+                "deducao": {"id": "vau_rota_do_cais", "categoria": "cenario",
+                    "texto": "O barro nas botas liga o homem visto no poço à área do cais. A taverna situa o capitão no armazém à noite. Vale verificar o armazém, mas as botas não identificam quem as calçava."}}),
+        opc("ligar_taverna_posto", "Ligar os Pontos entre a taverna e o posto da guarda",
+            investigador={"carta": "ligar-os-pontos", "evidencias": [moedas["nome"], recibo["nome"]],
+                "deducao": {"id": "vau_pagamento", "categoria": "intencao",
+                    "texto": "As moedas novas no baú são compatíveis com os gastos que Bruno descreveu. O recibo aponta um pagamento para esvaziar o vau. Os dois achados sustentam esse motivo, sem mostrar como o poço foi envenenado."}}),
+        opc("conclusao_fundamentada", "Conclusão Fundamentada sobre o que aconteceu na praça",
+            investigador={"carta": "conclusao-fundamentada", "evidencias": [beladona["nome"], venda["nome"], botas["nome"]], "preparo": True,
+                "deducao": {"id": "vau_meio_e_oportunidade", "categoria": "mecanismo",
+                    "texto": "A beladona confirma o envenenamento. A mancha na corda é um vestígio de como a substância pode ter chegado à água. Faro liga o capitão à compra, e Marta viu uma pessoa com capa da guarda no poço naquela noite. Falta identificar quem usava a capa."}})])
     f.inimigo("orsk", "guarda_corrupto", 25, 18, patamar="elite_escoltado", papel="neutro", nome="Capitão Orsk", grupo="armazem", alvo=True,
               saque=[ouro(40), item("pocao_de_cura_pequena")])
     f.inimigo("cultista1", "cultista", 24, 17, grupo="armazem", saque=[item("antidoto")])

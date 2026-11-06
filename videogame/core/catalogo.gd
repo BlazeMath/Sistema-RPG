@@ -23,6 +23,10 @@ static func _carregar() -> void:
 		_habilidades.append_array(bruxo.get("habilidades", []))
 		_herois.append_array(bruxo.get("herois", []))
 		_pactos = bruxo.get("pactos", {})
+	var investigador = JSON.parse_string(FileAccess.get_file_as_string("res://data/cartas/investigador.json"))
+	if investigador is Dictionary:
+		_habilidades.append_array(investigador.get("habilidades", []))
+		_herois.append_array(investigador.get("herois", []))
 	for c in _habilidades:
 		for l in c.get("lados", []):
 			if l != null and CORRECOES.has(l.get("nome", "")):

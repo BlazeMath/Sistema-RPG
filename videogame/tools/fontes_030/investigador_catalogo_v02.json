@@ -1,0 +1,739 @@
+{
+  "titulo": "Investigador — heróis e habilidades",
+  "versao": 2,
+  "data": "2026-10-30",
+  "estado": "revisao_aplicada_para_impressao_e_teste",
+  "herois": [
+    {
+      "id": "IV-H01",
+      "nome": "Detetive Analítico",
+      "classe": "Investigador",
+      "identidade": "Encontrar conexões e preparar as decisões do grupo.",
+      "origem": "Proposta anterior apreciada pelo autor; efeitos preservados.",
+      "limite_fadiga": 3,
+      "passiva": {
+        "texto": "Nada é por acaso: quando descobrir uma informação nova e relevante para o problema investigado, ganhe 1 Pista. Uma vez por rodada."
+      },
+      "ativada": {
+        "texto": "Examinar os vestígios — 1 Fadiga, Movimento: examine uma criatura, objeto ou local perceptível em alcance curto e faça um teste de Raciocínio + Investigação, contra a dificuldade apropriada. Se passar, descubra um detalhe relevante ou uma conexão entre as evidências acessíveis.",
+        "custo_fadiga": 1,
+        "acao": "Movimento"
+      },
+      "desencadeada": {
+        "texto": "Compartilhar a dedução: depois de resolver uma ação ou habilidade em que gastou Pistas, você ou um aliado em alcance curto pode fazer scry 1. Uma vez por rodada."
+      },
+      "critico": {
+        "texto": "Eureka!: ganhe 2 Pistas."
+      }
+    },
+    {
+      "id": "IV-H02",
+      "nome": "Investigador de Campo",
+      "classe": "Investigador",
+      "identidade": "Descobrir oportunidades e trabalhar com o cenário.",
+      "origem": "Proposta anterior apreciada pelo autor; efeitos preservados.",
+      "limite_fadiga": 4,
+      "passiva": {
+        "texto": "Ler o ambiente: quando sua investigação revelar uma passagem, ameaça ou recurso oculto relevante no cenário, ganhe 1 Pista. Uma vez por rodada."
+      },
+      "ativada": {
+        "texto": "Sequência calculada — 2 Fadigas, 1 Pista, Ação Padrão: realize duas interações diferentes com o cenário que normalmente exigiriam uma Padrão cada. Você pode Ajustar 1 entre elas. Cumpra os testes, alcances e demais condições de cada interação.",
+        "custo_fadiga": 2,
+        "acao": "Padrão"
+      },
+      "desencadeada": {
+        "texto": "Encontrar uma abertura: depois de passar em um teste de interação com o cenário, você pode Ajustar 1. Uma vez por rodada."
+      },
+      "critico": {
+        "texto": "Tudo se encaixa: ganhe 1 Pista e retire 1 Fadiga deste herói."
+      }
+    },
+    {
+      "id": "IV-H03",
+      "nome": "Perfilador",
+      "classe": "Investigador",
+      "identidade": "Investigar intenções e pressionar as decisões dos adversários.",
+      "origem": "Proposta anterior apreciada pelo autor; efeitos preservados.",
+      "limite_fadiga": 3,
+      "passiva": {
+        "texto": "Entrelinhas: quando descobrir uma contradição, interesse ou intenção oculta relevante de uma criatura, ganhe 1 Pista. Uma vez por rodada."
+      },
+      "ativada": {
+        "texto": "Expor o perfil - 1 Fadiga, 1 Pista, Movimento: escolha uma criatura em alcance curto com quem possa se comunicar. Faça um teste comum contestado de Raciocínio + Investigação contra Espírito. Se passar, coloque 1 Penalidade em uma carta dela, seguindo a escolha normal pelo alvo.",
+        "custo_fadiga": 1,
+        "acao": "Movimento"
+      },
+      "desencadeada": {
+        "texto": "A máscara cai: depois que um adversário com Penalidade colocada por você resolver um teste que estourou, ganhe 1 Pista. Uma vez por rodada."
+      },
+      "critico": {
+        "texto": "Previsível: ganhe 1 Pista e coloque 1 Marcação em um adversário perceptível em alcance curto, se houver."
+      }
+    },
+    {
+      "id": "IV-H04",
+      "nome": "Decifrador",
+      "classe": "Investigador",
+      "identidade": "Entender padrões, códigos e mecanismos e corrigir uma interpretação a tempo.",
+      "origem": "Quarta versão nova, proposta neste pedido.",
+      "limite_fadiga": 3,
+      "passiva": {
+        "texto": "Encontrar o padrão: quando sua investigação revelar uma informação nova e relevante sobre o funcionamento de um objeto ou mecanismo, ou sobre o significado de uma inscrição ou código, ganhe 1 Pista. Uma vez por rodada."
+      },
+      "ativada": {
+        "texto": "Corrigir a hipótese — 1 Fadiga, 1 Pista e Reação: quando você ou um aliado em alcance curto falhar, sem estourar, em um teste comum para investigar, interpretar um documento ou operar um mecanismo, antes das consequências da falha, o executor pode jogar 1 carta da própria mão e somá-la ao teste. Ela conta para o limite e pode causar estouro, resolvido normalmente. Reavalie o resultado desse mesmo teste. Não gera crítico por cartas adicionais e não serve para ataques ou defesas. Uma aplicação desta habilidade por teste.",
+        "custo_fadiga": 1,
+        "acao": "Reação"
+      },
+      "desencadeada": {
+        "texto": "Leitura confirmada: quando terminar com sucesso um teste seu ou de um aliado em que você gastou Pistas para alterar cartas, limite ou resultado, ou conceder uma tentativa extra, o executor ganha 1 Foco. Uma vez por rodada. Apenas observar cartas, obter indícios ou transferir Pistas não satisfaz este gatilho."
+      },
+      "critico": {
+        "texto": "Chave encontrada: ganhe 1 Pista e faça scry 3."
+      }
+    }
+  ],
+  "cartas": [
+    {
+      "id": "IV-G01",
+      "classe": "Investigador",
+      "xp": 1,
+      "grupo": "Dedução",
+      "nome": "Coleta Metódica / Ligar os Pontos",
+      "identidade": "Investir numa coleta real e transformar evidências em conexões.",
+      "lados": [
+        {
+          "nome": "Coleta Metódica",
+          "natureza": "Ativada",
+          "custo_fadiga": 1,
+          "limite_fadiga": 3,
+          "acao": "Junto ao teste",
+          "outros_custos": null,
+          "texto": "1 de Fadiga, junto a um teste seu de Investigação, antes das duas cartas iniciais: se passar e descobrir uma informação nova e relevante, ganhe 1 Pista. Uma ativação por rodada. A ação e os outros custos continuam normais; a Fadiga é paga mesmo se falhar. Esta fonte pode somar ao ganho de seu herói, se ambos os gatilhos forem satisfeitos.",
+          "lado": "A"
+        },
+        {
+          "nome": "Ligar os Pontos",
+          "natureza": "Ativada",
+          "custo_fadiga": 1,
+          "limite_fadiga": 3,
+          "acao": "Padrão",
+          "outros_custos": "1 Pista",
+          "texto": "1 de Fadiga, 1 Pista e Ação Padrão: apresente duas evidências que você já tenha examinado e formule uma pergunta concreta sobre sua relação. O mestre informa uma conexão que possa ser deduzida delas ou indica uma verificação pertinente para esclarecer o que ainda falta. A resposta se limita às evidências disponíveis; não cria fatos ocultos nem garante a solução inteira. Repetir a mesma conclusão não produz nova descoberta.",
+          "lado": "B"
+        }
+      ],
+      "pontos_de_teste": [
+        "Cada informação precisa ser nova e relevante. Ganhar uma ficha não provoca de novo a passiva de descoberta do herói.",
+        "Ligar os Pontos é uma dedução paga, sem teste adicional inventado. Uma conexão realmente nova pode satisfazer o herói, dentro do limite dele."
+      ]
+    },
+    {
+      "id": "IV-G02",
+      "classe": "Investigador",
+      "xp": 1,
+      "grupo": "Dedução",
+      "nome": "Hipótese de Trabalho / Contraprova",
+      "identidade": "Preparar a verificação e encontrar outro caminho depois de uma falha.",
+      "lados": [
+        {
+          "nome": "Hipótese de Trabalho",
+          "natureza": "Ativada",
+          "custo_fadiga": 1,
+          "limite_fadiga": 3,
+          "acao": "Movimento",
+          "outros_custos": null,
+          "texto": "1 de Fadiga, Ação de Movimento: indique uma evidência acessível e a verificação que pretende realizar sobre ela. Até o início de seu próximo turno, antes do próximo teste comum seu de Investigação, Intuição ou perícia Mental que faça essa verificação, você pode fazer scry 3. Uma hipótese por vez; outra substitui a anterior. O benefício termina após esse teste, qualquer que seja o resultado. Não muda custos ou dificuldades.",
+          "lado": "A"
+        },
+        {
+          "nome": "Contraprova",
+          "natureza": "Ativada",
+          "custo_fadiga": 0,
+          "limite_fadiga": 3,
+          "acao": "Reação",
+          "outros_custos": "1 Pista",
+          "texto": "1 Pista e Reação: depois de resolver definitivamente a falha de um teste comum de investigação ou interpretação de evidências seu ou de um aliado em alcance curto, peça ao mestre uma fonte, condição ou próxima verificação pertinente que ainda possa esclarecer a questão. Se não houver uma verificação viável com os dados atuais, saiba dessa limitação. A falha e suas consequências permanecem; isso não refaz o teste nem revela automaticamente a resposta. Uma utilização por teste.",
+          "lado": "B"
+        }
+      ],
+      "pontos_de_teste": [
+        "Scry 3 pode alterar quais cartas começam o teste; o teste posterior segue o core de crítico natural.",
+        "Contraprova agora custa somente Pista e Reação; mantém a falha e indica a limitação ou um próximo passo pertinente."
+      ]
+    },
+    {
+      "id": "IV-G03",
+      "classe": "Investigador",
+      "xp": 1,
+      "grupo": "Dedução",
+      "nome": "Compartilhar o Dossiê / Explorar a Descoberta",
+      "identidade": "Distribuir conhecimento e ajudar o grupo a arriscar um teste.",
+      "lados": [
+        {
+          "nome": "Compartilhar o Dossiê",
+          "natureza": "Ativada",
+          "custo_fadiga": 0,
+          "limite_fadiga": 2,
+          "acao": "Movimento",
+          "outros_custos": null,
+          "texto": "Ação de Movimento: transfira até 2 Pistas suas para cartas de um ou dois aliados em alcance curto que possam compreender sua explicação. Uma vez por turno. Retire as fichas de suas cartas antes de colocá-las nas cartas escolhidas por eles. A quantidade total não aumenta. Transferir não é gastar Pistas e não ativa gatilhos de gasto.",
+          "lado": "A"
+        },
+        {
+          "nome": "Explorar a Descoberta",
+          "natureza": "Ativada",
+          "custo_fadiga": 1,
+          "limite_fadiga": 3,
+          "acao": "Reação",
+          "outros_custos": "1 Pista",
+          "texto": "1 de Fadiga, 1 Pista e Reação: antes das duas cartas iniciais, você ou um aliado em alcance curto recebe +2 no limite de um teste comum de Investigação, Intuição ou interação não ofensiva com o cenário. Não soma ao resultado nem afeta ataques ou defesas. Uma aplicação desta habilidade por teste.",
+          "lado": "B"
+        }
+      ],
+      "pontos_de_teste": [
+        "Um aliado sem habilidades de Investigador ainda pode usar Pistas pelo uso básico de compra de cartas.",
+        "A transferência não ativa Compartilhar a Dedução. O gasto para modificar um teste pode ativar Leitura Confirmada do Decifrador se houver sucesso."
+      ]
+    },
+    {
+      "id": "IV-G04",
+      "classe": "Investigador",
+      "xp": 1,
+      "grupo": "Inquérito",
+      "nome": "Pergunta Precisa / Ler a Reação",
+      "identidade": "Obter indícios de um relato e observar uma reação adversária.",
+      "lados": [
+        {
+          "nome": "Pergunta Precisa",
+          "natureza": "Ativada",
+          "custo_fadiga": 1,
+          "limite_fadiga": 3,
+          "acao": "Padrão",
+          "outros_custos": null,
+          "texto": "1 de Fadiga, Ação Padrão: faça uma pergunta investigativa a uma criatura em alcance curto com quem possa se comunicar. Resolva um teste comum contestado de Raciocínio + Investigação contra Espírito. Se passar, obtenha um indício perceptível sobre sua intenção imediata ou um ponto de seu relato que mereça verificação, dentro do que possa ser observado. Se isso trouxer informação nova e relevante, ganhe 1 Pista, no máximo uma por rodada por esta habilidade. Não força confissão, cooperação ou acesso a pensamentos e memórias inacessíveis.",
+          "lado": "A"
+        },
+        {
+          "nome": "Ler a Reação",
+          "natureza": "Ativada",
+          "custo_fadiga": 0,
+          "limite_fadiga": 2,
+          "acao": "Reação",
+          "outros_custos": "1 Pista",
+          "texto": "1 Pista e Reação: quando uma criatura perceptível em alcance curto puxar as duas cartas iniciais de um teste contestado contra você ou um aliado, antes das compras adicionais, veja sua carta Fechada durante esse teste. Se o executor for um aliado que possa compreender sua orientação, ele também pode vê-la. Inclui ataque ou defesa quando forem testes contestados. Não altera cartas ou resultados. Se a carta já estiver revelada, não há informação adicional.",
+          "lado": "B"
+        }
+      ],
+      "pontos_de_teste": [
+        "Um indício de comportamento é uma evidência para verificar, não uma garantia de que toda declaração corresponde à verdade.",
+        "Ler a Reação pode revelar a carta ao executor aliado que compreenda a orientação; se já estiver aberta, não há benefício adicional."
+      ]
+    },
+    {
+      "id": "IV-G05",
+      "classe": "Investigador",
+      "xp": 1,
+      "grupo": "Inquérito",
+      "nome": "Pressão Calculada / Antecipar o Gesto",
+      "identidade": "Criar hesitação e consumir a pressão para proteger alguém.",
+      "lados": [
+        {
+          "nome": "Pressão Calculada",
+          "natureza": "Ativada",
+          "custo_fadiga": 1,
+          "limite_fadiga": 3,
+          "acao": "Movimento",
+          "outros_custos": "1 Pista",
+          "texto": "1 de Fadiga, 1 Pista, Ação de Movimento: escolha um adversário em alcance curto que perceba você e com quem possa se comunicar. Ele recebe 1 ficha de Medo em uma carta escolhida pelas regras normais. Uma vez por turno. A pressão não o obriga a responder perguntas ou seguir ordens.",
+          "lado": "A"
+        },
+        {
+          "nome": "Antecipar o Gesto",
+          "natureza": "Ativada",
+          "custo_fadiga": 0,
+          "limite_fadiga": 3,
+          "acao": "Reação",
+          "outros_custos": "1 Pista e remover 1 Medo ou Penalidade sua do atacante",
+          "texto": "1 Pista e Reação: depois que um adversário em alcance curto acertar um ataque e determinar seu dano, antes de aplicá-lo, retire dele 1 Medo ou 1 Penalidade colocada por você. Reduza à metade o dano desse ataque contra um único alvo em alcance curto. As reduções que já participaram do cálculo não são refeitas pela retirada da ficha. Não acumula com Bloqueio ou outra aplicação desta habilidade no mesmo ataque.",
+          "lado": "B"
+        }
+      ],
+      "pontos_de_teste": [
+        "Pressão usa uma ficha existente e uma comunicação possível; não acrescenta uma nova moeda ou controle mental.",
+        "Antecipar o Gesto exige gastar a pressão, além de Pista e Reação. O Perfilador pode usar Penalidade de seu herói para esse custo."
+      ]
+    },
+    {
+      "id": "IV-G06",
+      "classe": "Investigador",
+      "xp": 1,
+      "grupo": "Inquérito",
+      "nome": "Dar Contexto / Orientar a Verificação",
+      "identidade": "Usar contexto para recuperar clareza e apoiar uma interpretação.",
+      "lados": [
+        {
+          "nome": "Dar Contexto",
+          "natureza": "Ativada",
+          "custo_fadiga": 1,
+          "limite_fadiga": 3,
+          "acao": "Movimento",
+          "outros_custos": "1 Pista",
+          "texto": "1 de Fadiga, 1 Pista, Ação de Movimento: você ou um aliado em alcance curto que possa compreender sua explicação remove 1 ficha de Medo ou Confusão de uma carta sua. Isso não remove outras fichas, não cura o baralho e não encerra a fonte que poderá aplicar novas fichas depois.",
+          "lado": "A"
+        },
+        {
+          "nome": "Orientar a Verificação",
+          "natureza": "Ativada",
+          "custo_fadiga": 1,
+          "limite_fadiga": 3,
+          "acao": "Reação",
+          "outros_custos": "1 Pista",
+          "texto": "1 de Fadiga, 1 Pista e Reação: antes das duas cartas iniciais de um teste comum de Investigação, Intuição ou perícia Mental de um aliado em alcance curto que possa compreender sua orientação, some seu Raciocínio ao resultado final dele, além dos modificadores normais do executor. Esse valor não conta para estourar. Não serve para você, ataques ou defesas. Uma aplicação desta habilidade por teste.",
+          "lado": "B"
+        }
+      ],
+      "pontos_de_teste": [
+        "O apoio soma o Raciocínio do Investigador a um teste comum do aliado, sem modificar o limite nem testes de combate.",
+        "Dar Contexto pode remover só uma ficha: outras Imobilizar, Medo ou fontes ainda ativas seguem valendo normalmente."
+      ]
+    },
+    {
+      "id": "IV-G07",
+      "classe": "Investigador",
+      "xp": 1,
+      "grupo": "Exploração",
+      "nome": "Reconhecimento / Percurso Seguro",
+      "identidade": "Reconhecer uma área e converter informação em um percurso.",
+      "lados": [
+        {
+          "nome": "Reconhecimento",
+          "natureza": "Ativada",
+          "custo_fadiga": 1,
+          "limite_fadiga": 3,
+          "acao": "Movimento",
+          "outros_custos": null,
+          "texto": "1 de Fadiga, Ação de Movimento: desloque-se até 1 quadrado normalmente e examine um ponto perceptível em alcance curto, realizando nessa mesma ação uma verificação de Percepção que normalmente exigiria uma Padrão. Use dificuldade ou oposição normais e respeite visão, ocultação e riscos do trajeto. Esse deslocamento não é Ajustar e pode provocar oportunidade. Não é uma análise de Investigação nem revela causas automaticamente.",
+          "lado": "A"
+        },
+        {
+          "nome": "Percurso Seguro",
+          "natureza": "Ativada",
+          "custo_fadiga": 1,
+          "limite_fadiga": 3,
+          "acao": "Movimento",
+          "outros_custos": "1 Pista",
+          "texto": "1 de Fadiga, 1 Pista, Ação de Movimento: você ou um aliado em alcance curto que possa compreender sua orientação pode Ajustar 1 duas vezes, uma depois da outra. Uma vez por turno. Cada passo exige espaço e movimento válidos; não atravessa obstáculos nem permite sair de uma condição que impeça o movimento.",
+          "lado": "B"
+        }
+      ],
+      "pontos_de_teste": [
+        "Reconhecimento usa Percepção e deslocamento normal; Examinar os Vestígios do Detetive continua sendo a análise rápida de Investigação.",
+        "Percurso Seguro dá dois ajustes específicos, não uma ação de Movimento ou Padrão genérica."
+      ]
+    },
+    {
+      "id": "IV-G08",
+      "classe": "Investigador",
+      "xp": 1,
+      "grupo": "Exploração",
+      "nome": "Mãos ao Caso / Abrir Caminho",
+      "identidade": "Executar uma interação rápida e aproveitar a passagem aberta.",
+      "lados": [
+        {
+          "nome": "Mãos ao Caso",
+          "natureza": "Ativada",
+          "custo_fadiga": 1,
+          "limite_fadiga": 3,
+          "acao": "Movimento",
+          "outros_custos": "1 Pista",
+          "texto": "1 de Fadiga, 1 Pista, Ação de Movimento: realize uma interação não trivial com o cenário que normalmente exigiria uma Padrão. Cumpra testes, alcance físico e todos os outros recursos da interação. Uma vez por turno. Não concede ataque, manobra de luta, conjuração, fabricação ou ativação de outra habilidade sob o nome de interação.",
+          "lado": "A"
+        },
+        {
+          "nome": "Abrir Caminho",
+          "natureza": "Ativada",
+          "custo_fadiga": 1,
+          "limite_fadiga": 3,
+          "acao": "Reação",
+          "outros_custos": "1 Pista",
+          "texto": "1 de Fadiga, 1 Pista e Reação: depois que uma interação sua abrir uma passagem ou remover um obstáculo relevante, até dois aliados diferentes em alcance curto que possam perceber sua orientação podem Ajustar 1 cada. Uma utilização por interação concluída. Não move objetos, remove impedimentos de movimento ou altera retroativamente o resultado da interação.",
+          "lado": "B"
+        }
+      ],
+      "pontos_de_teste": [
+        "A ativada do Investigador de Campo continua permitindo duas interações diferentes e um Ajustar por uma Padrão.",
+        "Abrir de novo uma porta conhecida pode servir de passagem, mas não volta a ser uma descoberta nova para gerar Pistas."
+      ]
+    },
+    {
+      "id": "IV-G09",
+      "classe": "Investigador",
+      "xp": 1,
+      "grupo": "Exploração",
+      "nome": "Sair do Pior / Investigar sob Pressão",
+      "identidade": "Reagir ao perigo ou examinar a cena apesar de um ataque.",
+      "lados": [
+        {
+          "nome": "Sair do Pior",
+          "natureza": "Ativada",
+          "custo_fadiga": 1,
+          "limite_fadiga": 3,
+          "acao": "Reação",
+          "outros_custos": "1 Pista",
+          "texto": "1 de Fadiga, 1 Pista e Reação: quando uma armadilha ou perigo do cenário que você perceba for disparado contra você ou um aliado em alcance curto, antes do primeiro teste ou, se não houver teste, antes de aplicar o efeito, o alvo pode Ajustar 1. Ele só deixa de ser afetado se a mudança realmente o retirar da área ou de outra condição de alvo do perigo. Não evita automaticamente dano, não muda o perigo e não se aplica a um ataque comum de uma criatura.",
+          "lado": "A"
+        },
+        {
+          "nome": "Investigar sob Pressão",
+          "natureza": "Ativada",
+          "custo_fadiga": 1,
+          "limite_fadiga": 3,
+          "acao": "Reação",
+          "outros_custos": null,
+          "texto": "1 de Fadiga e Reação: depois de resolver um ataque de um inimigo que causou dano a você, realize uma interação investigativa com uma evidência, criatura ou ponto do cenário perceptível em alcance curto, que normalmente exigiria uma Padrão. Resolva o teste comum e os outros custos normais. Não cancela o dano já sofrido nem concede ataque ou outra habilidade. Só gera descobertas e Pistas quando os gatilhos reais forem satisfeitos.",
+          "lado": "B"
+        }
+      ],
+      "pontos_de_teste": [
+        "O Ajustar de Sair do Pior precisa realmente mudar a condição de alvo. Permanecer na área não anula o efeito.",
+        "Investigar sob Pressão usa uma Reação real depois de dano, não testes inventados de observação para obter recursos."
+      ]
+    },
+    {
+      "id": "IV-M01",
+      "classe": "Investigador",
+      "xp": 0.5,
+      "grupo": "Ferramentas básicas",
+      "nome": "Olhar Atento",
+      "identidade": "Transformar um achado visual em recurso inicial.",
+      "lados": [
+        {
+          "nome": "Olhar Atento",
+          "natureza": "Desencadeada",
+          "custo_fadiga": 0,
+          "limite_fadiga": 0,
+          "acao": null,
+          "outros_custos": null,
+          "texto": "Uma vez por cena, depois que um teste seu de Percepção revelar uma informação nova e relevante para a investigação, ganhe 1 Pista. Não basta ver novamente um elemento já conhecido.",
+          "lado": "único"
+        }
+      ],
+      "pontos_de_teste": [
+        "É uma fonte pequena para qualquer herói, especialmente quando sua especialidade ainda não apareceu na cena."
+      ]
+    },
+    {
+      "id": "IV-M02",
+      "classe": "Investigador",
+      "xp": 0.5,
+      "grupo": "Ferramentas básicas",
+      "nome": "Entrevista Breve",
+      "identidade": "Avaliar um interlocutor sem gastar a Padrão.",
+      "lados": [
+        {
+          "nome": "Entrevista Breve",
+          "natureza": "Ativada",
+          "custo_fadiga": 1,
+          "limite_fadiga": 2,
+          "acao": "Movimento",
+          "outros_custos": null,
+          "texto": "1 de Fadiga, Ação de Movimento: realize uma interação de Intuição com uma criatura em alcance curto com quem esteja conversando, que normalmente exigiria uma Padrão. Use o atributo, oposição e consequências normais do contexto. Uma vez por turno. Não obriga a pessoa a cooperar ou confessar.",
+          "lado": "único"
+        }
+      ],
+      "pontos_de_teste": [
+        "A redução de ação é o benefício. Pergunta Precisa pode dar uma Pista própria; esta meia carta não acrescenta essa recompensa."
+      ]
+    },
+    {
+      "id": "IV-M03",
+      "classe": "Investigador",
+      "xp": 0.5,
+      "grupo": "Ferramentas básicas",
+      "nome": "Conferir Anotações",
+      "identidade": "Gastar uma descoberta para planejar as próximas cartas.",
+      "lados": [
+        {
+          "nome": "Conferir Anotações",
+          "natureza": "Ativada",
+          "custo_fadiga": 0,
+          "limite_fadiga": 2,
+          "acao": "Movimento",
+          "outros_custos": "1 Pista",
+          "texto": "1 Pista, Ação de Movimento: faça scry 3 no seu baralho. Uma vez por turno. Não compra nem descarta as cartas observadas e não é um teste. Testes posteriores usam o core, inclusive para crítico natural.",
+          "lado": "único"
+        }
+      ],
+      "pontos_de_teste": [
+        "O jogador escolhe entre gastar Pista para comprar uma carta pelo uso básico ou para preparar o topo."
+      ]
+    },
+    {
+      "id": "IV-M04",
+      "classe": "Investigador",
+      "xp": 0.5,
+      "grupo": "Ferramentas básicas",
+      "nome": "Rever o Raciocínio",
+      "identidade": "Recuperar atenção depois de uma interpretação malsucedida.",
+      "lados": [
+        {
+          "nome": "Rever o Raciocínio",
+          "natureza": "Desencadeada",
+          "custo_fadiga": 0,
+          "limite_fadiga": 0,
+          "acao": null,
+          "outros_custos": null,
+          "texto": "Uma vez por rodada, depois de resolver definitivamente uma falha em um teste real seu de Investigação ou Intuição, ganhe 1 Foco em uma carta sua. Aguarde correções ou uma tentativa extra que substitua o resultado antes de verificar este gatilho. Não altera a falha nem sua consequência. Testes desnecessários ou encenados não satisfazem este gatilho.",
+          "lado": "único"
+        }
+      ],
+      "pontos_de_teste": [
+        "Aguarde a correção ou tentativa extra: uma falha substituída por sucesso não gera este Foco."
+      ]
+    },
+    {
+      "id": "IV-M05",
+      "classe": "Investigador",
+      "xp": 0.5,
+      "grupo": "Ferramentas básicas",
+      "nome": "Recolher Evidência",
+      "identidade": "Recuperar uma prova em uma posição perigosa.",
+      "lados": [
+        {
+          "nome": "Recolher Evidência",
+          "natureza": "Ativada",
+          "custo_fadiga": 1,
+          "limite_fadiga": 2,
+          "acao": "Movimento",
+          "outros_custos": null,
+          "texto": "1 de Fadiga, Ação de Movimento: Ajuste 1 antes ou depois de recolher uma evidência física que possa segurar com uma mão livre, ao alcance das mãos, e cuja coleta seja uma interação trivial. Uma vez por turno. Não arranca objetos vestidos, empunhados ou presos nem dispensa teste, desmontagem ou cuidado exigido para retirar uma prova.",
+          "lado": "único"
+        }
+      ],
+      "pontos_de_teste": [
+        "O benefício é ajustar sem oportunidade e manter a logística da prova; retirar uma peça de uma armadilha continua exigindo a interação apropriada."
+      ]
+    },
+    {
+      "id": "IV-M06",
+      "classe": "Investigador",
+      "xp": 0.5,
+      "grupo": "Ferramentas básicas",
+      "nome": "Identificar o Padrão",
+      "identidade": "Reconhecer uma repetição que realmente explique alguma coisa.",
+      "lados": [
+        {
+          "nome": "Identificar o Padrão",
+          "natureza": "Desencadeada",
+          "custo_fadiga": 0,
+          "limite_fadiga": 0,
+          "acao": null,
+          "outros_custos": null,
+          "texto": "Uma vez por cena, quando identificar um padrão novo e relevante para a investigação a partir de pelo menos duas ocorrências que observou, ganhe 1 Pista. É preciso reconhecer o padrão, não apenas repetir ações ou ataques. Encenações e a mesma conclusão repetida não geram Pistas.",
+          "lado": "único"
+        }
+      ],
+      "pontos_de_teste": [
+        "Pode somar a uma fonte do herói se a mesma descoberta cumprir ambos os gatilhos, respeitando seus limites."
+      ]
+    },
+    {
+      "id": "IV-X01",
+      "classe": "Investigador",
+      "xp": 2,
+      "grupo": "Maestrias",
+      "nome": "Reconstrução Completa / Conclusão Fundamentada",
+      "identidade": "Reconstruir vários elementos de uma cena e consolidar uma conclusão.",
+      "lados": [
+        {
+          "nome": "Reconstrução Completa",
+          "natureza": "Ativada",
+          "custo_fadiga": 2,
+          "limite_fadiga": 4,
+          "acao": "Padrão",
+          "outros_custos": "2 Pistas",
+          "texto": "2 de Fadiga, 2 Pistas e Ação Padrão: realize até três interações investigativas diferentes, com evidências, pessoas ou elementos do cenário acessíveis, que normalmente exigiriam uma Padrão cada. Pode Ajustar 1 entre a primeira e a segunda ou entre a segunda e a terceira. Resolva testes e outros recursos de cada interação na ordem e revalide as seguintes. Não concede ataques, conjuração, fabricação ou uso de outra habilidade como interação. A descoberta depende dos resultados; os custos desta habilidade não são devolvidos se uma etapa falhar.",
+          "lado": "A"
+        },
+        {
+          "nome": "Conclusão Fundamentada",
+          "natureza": "Ativada",
+          "custo_fadiga": 2,
+          "limite_fadiga": 4,
+          "acao": "Padrão",
+          "outros_custos": "2 Pistas",
+          "texto": "2 de Fadiga, 2 Pistas e Ação Padrão: apresente uma hipótese apoiada nas evidências já examinadas e faça até três perguntas relacionadas a ela. O mestre esclarece quais relações são sustentadas pelas evidências, qual conclusão é incompatível com elas ou que verificação pertinente falta. As respostas ficam limitadas ao que essas evidências permitem inferir; não criam fatos ocultos. Depois, você ou um aliado em alcance curto que compreenda a conclusão coloca 1 Preparo em uma carta sua. Isso não faz testes extras nem repete ganhos de uma conclusão já conhecida.",
+          "lado": "B"
+        }
+      ],
+      "pontos_de_teste": [
+        "Reconstrução pode poupar duas Padrão, mas cada teste consome cartas reais e as etapas podem falhar.",
+        "Conclusão oferece dedução e Preparo sem exigir que o jogador adivinhe a resposta que só o mestre conhece. Não equivale a visão do passado ou leitura mental."
+      ]
+    },
+    {
+      "id": "IV-X02",
+      "classe": "Investigador",
+      "xp": 2,
+      "grupo": "Maestrias",
+      "nome": "Desmontar a Versão / Antecipar o Plano",
+      "identidade": "Desmontar uma rotina adversária e antecipar uma ameaça coletiva.",
+      "lados": [
+        {
+          "nome": "Desmontar a Versão",
+          "natureza": "Ativada",
+          "custo_fadiga": 2,
+          "limite_fadiga": 4,
+          "acao": "Padrão",
+          "outros_custos": "2 Pistas",
+          "texto": "2 de Fadiga, 2 Pistas e Ação Padrão: escolha um adversário em alcance curto com quem possa se comunicar e faça um teste comum contestado de Raciocínio + Investigação contra Espírito. Se passar, ele escolhe uma carta própria com habilidade ativa que possa virar e a vira pelo core, removendo suas fichas e deixando apenas a passiva ativa. Se não tiver carta válida para isso, recebe 2 Penalidades, distribuídas por ele em suas cartas. Não força uma confissão, entrega de item ou obediência.",
+          "lado": "A"
+        },
+        {
+          "nome": "Antecipar o Plano",
+          "natureza": "Ativada",
+          "custo_fadiga": 2,
+          "limite_fadiga": 4,
+          "acao": "Reação",
+          "outros_custos": "2 Pistas",
+          "texto": "2 de Fadiga, 2 Pistas e Reação: quando um inimigo em alcance curto declarar um ataque à distância ou efeito de área que você perceba, antes do primeiro teste ou, se não houver teste, antes de aplicar o efeito, até três criaturas aliadas diferentes em alcance curto, incluindo você, que percebam sua orientação podem Ajustar 1 cada. Só deixa de ser alvo quem realmente sair da área, linha de visão ou alcance, quando a mudança invalidar o alvo pelas regras do efeito. A ação segue contra os alvos ainda válidos, sem trocar automaticamente os alvos declarados. Uma aplicação desta habilidade por ataque ou efeito.",
+          "lado": "B"
+        }
+      ],
+      "pontos_de_teste": [
+        "O adversário escolhe a carta que vira e também se beneficia da remoção de suas fichas; a pressão não apaga gratuitamente todas as melhores habilidades dele.",
+        "A reação vale antes de testes ou de um efeito sem teste; o Ajustar só salva quem efetivamente sair da condição de alvo."
+      ]
+    },
+    {
+      "id": "IV-X03",
+      "classe": "Investigador",
+      "xp": 2,
+      "grupo": "Maestrias",
+      "nome": "Plano de Extração / Segundo Caminho",
+      "identidade": "Coordenar a solução física e encontrar uma segunda abordagem na hora crítica.",
+      "lados": [
+        {
+          "nome": "Plano de Extração",
+          "natureza": "Ativada",
+          "custo_fadiga": 2,
+          "limite_fadiga": 4,
+          "acao": "Padrão",
+          "outros_custos": "2 Pistas",
+          "texto": "2 de Fadiga, 2 Pistas e Ação Padrão: escolha até três criaturas aliadas diferentes em alcance curto, incluindo você, que possam compreender o plano. Cada uma pode Ajustar 1 e realizar uma interação não ofensiva com um elemento diferente do cenário, normalmente de custo Padrão, sem gastar essa Padrão. Resolva uma pessoa por vez, com seu próprio baralho, testes, requisitos e demais custos. Não concede ação genérica, ataque, manobra, conjuração, fabricação ou uso de outra habilidade. Só pode interagir com o que estiver fisicamente ao alcance e válido após o Ajustar.",
+          "lado": "A"
+        },
+        {
+          "nome": "Segundo Caminho",
+          "natureza": "Ativada",
+          "custo_fadiga": 2,
+          "limite_fadiga": 4,
+          "acao": "Reação",
+          "outros_custos": "2 Pistas",
+          "texto": "2 de Fadiga, 2 Pistas e Reação: quando você ou um aliado em alcance curto falhar em um teste comum de Investigação, Intuição ou interação não ofensiva com o cenário, antes de aplicar as consequências da falha, o executor pode refazer o teste uma vez. Dispense a ação da tentativa extra, mas pague os outros custos exigidos pela ação novamente. As cartas da primeira tentativa seguem seu destino normal; não são devolvidas ao baralho. O segundo resultado substitui o primeiro mesmo se for pior e pode gerar crítico natural pelo core. Não serve para ataque ou defesa nem pode ser aplicado novamente à tentativa extra.",
+          "lado": "B"
+        }
+      ],
+      "pontos_de_teste": [
+        "Plano de Extração oferece até três interações específicas e movimento, não três ataques ou três Padrão genéricas.",
+        "Segundo Caminho consome cartas reais do baralho e recursos de uso. Não é repetição gratuita para acumular Pistas; a tentativa extra não aceita outra aplicação dele."
+      ]
+    }
+  ],
+  "regras_de_uso": [
+    {
+      "tema": "Estado e formato",
+      "texto": "Edição de teste após revisão aplicada a pedido do autor: quatro versões de herói, 9 cartas A/B de 1 XP, 6 meias de 1/2 XP e 3 cartas A/B de 2 XP. Heróis são opções separadas, não ganhos automáticos. Custos e potência das maestrias foram mantidos; não houve teste de mesa."
+    },
+    {
+      "tema": "Identidade",
+      "texto": "Interactor é a função principal; Suporte e Controle variam com o herói e as habilidades. Investigar revela evidências e relações. Furtividade, trapaça, combate direto, criação de itens e comandos genéricos continuam tendo seus papéis nas outras classes. Raciocínio é o atributo central sugerido; nenhum novo pré-requisito de atributo ou escola foi imposto."
+    },
+    {
+      "tema": "Pistas e evidências",
+      "texto": "Pistas são fichas em cartas, não os objetos ou fatos da ficção. Uma evidência descoberta continua conhecida depois de gastar ou perder fichas. A proposta usa suas Pistas como reserva pessoal distribuída pelas cartas normais, sem marcar cada ficha por caso ou suspeito. Um ganho sem carta indicada vai para uma carta sua escolhida pelas regras normais."
+    },
+    {
+      "tema": "Uso básico de Pistas",
+      "texto": "Nesta edição de teste, use uma Ação Padrão e gaste X Pistas suas para comprar X cartas do próprio baralho para a mão. Esta padronização explicita a ação de compra da regra de Pista. Não cura, não recupera descarte ou exílio e reduz o baralho disponível. Outras habilidades oferecem usos alternativos das mesmas fichas; não é preciso vinculá-las a um caso ou suspeito."
+    },
+    {
+      "tema": "Descoberta nova",
+      "texto": "Nova descoberta é informação ou conexão efetivamente nova e relevante ao problema. Repetir o mesmo teste, abrir novamente a mesma porta ou reapresentar a mesma conclusão não gera uma nova descoberta. Ganhar uma ficha não é, por si só, descobrir um fato e não causa outro gatilho de descoberta. Uma mesma descoberta pode satisfazer fontes diferentes, cada uma uma vez e dentro de seu limite."
+    },
+    {
+      "tema": "Limites",
+      "texto": "Limites por turno, rodada e cena são por personagem e fonte, não por alvo, ficha ou carta receptora. Cópias e viradas não reiniciam limites. Testes exigem risco ou oposição reais; encenações, novas perguntas sem informação nova e testes desnecessários não geram Pistas, Foco ou críticos para abastecer recursos."
+    },
+    {
+      "tema": "Custos e fichas",
+      "texto": "Fadiga é paga na carta da habilidade usada; limite é capacidade. Pistas e outros custos são pagos além da Fadiga e da ação. Transferir fichas conserva a quantidade, muda o portador e não é gastá-las. Pistas, Foco, Penalidade, Medo, Marcação e Preparo usam seus significados normais; preparar coloca uma ficha, sem virar imediatamente. Medo reduz dano e Penalidade reduz o limite, não o resultado."
+    },
+    {
+      "tema": "Virada",
+      "texto": "Virar remove todas as fichas daquela carta e deixa apenas a passiva ativa, como esclarecido pelo autor. Somente habilidades disponíveis podem ser usadas. Efeitos já resolvidos seguem a duração escrita, mas não preservam fichas removidas. Gastar Pistas antes da virada e receber novas fichas depois dela seguem os eventos normais; não há exceção de permanência."
+    },
+    {
+      "tema": "Testes e informação",
+      "texto": "Raciocínio e perícias entram depois da soma nos testes comuns; não contam para estourar. Ataques e defesas continuam usando somente cartas no teste. Scry olha e reorganiza, sem comprar ou descartar. Um crítico posterior usa suas duas cartas iniciais reais. Acrescentar uma carta a um teste em curso não transforma essa carta em uma inicial para gerar crítico."
+    },
+    {
+      "tema": "Quando uma falha foi resolvida",
+      "texto": "Corrigir a Hipótese e Segundo Caminho agem antes das consequências. Verifique gatilhos de falha final apenas após essas intervenções. Se o resultado for substituído por sucesso, Rever o Raciocínio e Contraprova não disparam por aquela falha provisória. Cada habilidade de correção se aplica uma vez ao mesmo teste; a tentativa extra de Segundo Caminho não aceita outro Segundo Caminho, mesmo de outro personagem. Seus custos e as cartas da primeira tentativa não são restituídos. Limites por rodada não reiniciam; benefícios opcionais de uma tentativa não migram automaticamente para outra."
+    },
+    {
+      "tema": "Interagir e mover",
+      "texto": "Interações não triviais com o cenário continuam exigindo acesso, ferramentas e testes pertinentes. Dar nome de interação a um ataque, conjuração ou habilidade não a torna elegível para as economias de ação deste catálogo. Ajustar 1 move um quadrado sem oportunidade, respeitando obstáculos e condições que impeçam movimento. Não cria passagem, apoio ou rota que não exista."
+    },
+    {
+      "tema": "Respostas do mestre",
+      "texto": "As perguntas pagas tratam de evidências e intenções perceptíveis. Não obrigam inventar uma pista onde não existe, ler pensamentos, criar fatos retroativos ou revelar qualquer segredo sem acesso. Quando não houver conclusão possível com os dados, a resposta pode indicar uma lacuna ou verificação pertinente. Custos e limites servem para apoiar a investigação do personagem; as conclusões reais da cena ainda importam. Declarar uma hipótese não a confirma. Perguntas e observações narrativas normais continuam possíveis sem usar uma habilidade; o gasto compra o efeito adicional escrito, não exclusividade sobre a investigação. Fora do combate, o mestre organiza o tempo das verificações; esperar ou repetir uma conclusão não produz novas descobertas."
+    }
+  ],
+  "estrutura": {
+    "herois": 4,
+    "cartas_AB_1xp": 9,
+    "meias_cartas_05xp": 6,
+    "cartas_AB_2xp": 3,
+    "opcoes_gerais": 18,
+    "faces_gerais": 30,
+    "efeitos_herois": 16
+  },
+  "estrategias_1xp": {
+    "Dedução": [
+      "IV-G01",
+      "IV-G02",
+      "IV-G03"
+    ],
+    "Inquérito": [
+      "IV-G04",
+      "IV-G05",
+      "IV-G06"
+    ],
+    "Exploração": [
+      "IV-G07",
+      "IV-G08",
+      "IV-G09"
+    ]
+  },
+  "fontes_preservadas": {
+    "classes/dados/investigador/catalogo_proposto_v01.json": "6c5a030df377cc8bb98b5ac891160980ca60d20c79c84371685ea1fb30d29079",
+    "classes/dados/artifice/habilidades_gerais_v02.json": "c3f2f9e181d38034cce960d751f13e2833ea4d792932f54c6bf2ddc146d77a07",
+    "classes/dados/artifice/herois_outros_oficios_v02.json": "d4c739e8f5fc230b1413efe1526f9a3dde3c99ff697444bc4d5fe6566554ed61",
+    "classes/dados/artifice/esculturas_desenvolvidas_v02.json": "12084907f43147f7ce99d9fdeb33eb2a9149dc08b732a765da875531a090fed4",
+    "classes/dados/capitao/catalogo_proposto_v03.json": "e2576bd03b777c7d7e66b6dd5b6452377f7dc52434914678b47ec3f42496dcc5",
+    "classes/dados/bruxo/habilidades_gerais_v03.json": "fa1e52639a985d316cf093b53a4dffd9474125df5c84812946b4995105bb298d",
+    "classes/dados/bruxo/contagem_habilidades_classes_v02.json": "e539745c9dca64ff4aa42607438d8487ccc267bc130bedb4aa85b9fc82fd5fa9",
+    "outputs/01a17d39-9806-7153-9510-d82d1e7aaeea/classes/Investigador_Herois_e_Habilidades_Proposta_v01.html": "4f41954e7cfed509f600270b3da98e83d6538b9ce0510dbe33d05bd53e3225dc"
+  },
+  "playtest_realizado": false,
+  "revisao": "classes/dados/investigador/revisao_aplicada_v02.json",
+  "revisao_resumo": {
+    "efeitos_revisados": 46,
+    "efeitos_ajustados": 10,
+    "efeitos_mantidos": 36,
+    "alteracao_numerica": "Contraprova: 1 para 0 Fadiga; Pista e Reação mantidas.",
+    "custos_2xp_preservados": true
+  }
+}

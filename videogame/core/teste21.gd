@@ -165,6 +165,21 @@ func jogar_da_mao(carta: int) -> bool:
 	return true
 
 
+## Corrigir a Hipótese acrescenta uma carta depois de fechar um teste comum.
+## As cartas anteriores já foram descartadas. Descarte só a nova e a do estouro.
+func acrescentar_apos_falha(carta: int) -> bool:
+	if not encerrado or not _finalizado or estourou or not baralho.tirar_da_mao(carta):
+		return false
+	cartas.append(carta)
+	da_mao.append(carta)
+	baralho.descartar([carta] as Array[int])
+	if soma_cartas() > limite:
+		_estourar()
+		if carta_do_estouro >= 0:
+			baralho.descartar([carta_do_estouro] as Array[int])
+	return true
+
+
 func parar() -> void:
 	receber_fechada()
 	if encerrado:

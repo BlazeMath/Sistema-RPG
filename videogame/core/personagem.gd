@@ -45,7 +45,7 @@ const ARQUIVO := "user://herois.json"
 static var arquivo := ARQUIVO
 static var memoria = null
 
-const CLASSES := ["Guerreiro", "Ladino", "Clérigo", "Caçador", "Mago", "Bruxo"]
+const CLASSES := ["Guerreiro", "Ladino", "Clérigo", "Caçador", "Mago", "Bruxo", "Investigador"]
 const RACAS := ["Humano", "Elfo", "Anão", "Halfling", "Orc"]
 const BACKGROUNDS := ["Soldado", "Bandido", "Escravo", "Explorador", "Fervoroso"]
 const DISPONIVEIS := CLASSES + RACAS + BACKGROUNDS   # versão 0.9: tudo liberado
@@ -75,7 +75,8 @@ const PERICIAS := {
 		"Jogatina", "Liderança", "Negociação", "Nobreza", "Política"],
 }
 const DISTRIBUICAO_PERICIAS := {3: 4, 2: 6, 1: 8}
-const TIPOS_CLASSE := {"Guerreiro": "guerreiro", "Ladino": "ladino", "Clérigo": "clerigo", "Caçador": "cacador", "Mago": "mago", "Bruxo": "bruxo"}
+const TIPOS_CLASSE := {"Guerreiro": "guerreiro", "Ladino": "ladino", "Clérigo": "clerigo", "Caçador": "cacador", "Mago": "mago",
+	"Bruxo": "bruxo", "Investigador": "investigador"}
 
 
 static func nova() -> Dictionary:

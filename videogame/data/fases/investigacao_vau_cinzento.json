@@ -1946,7 +1946,8 @@
 								{
 									"tipo": "pista",
 									"nome": "Beladona no poço",
-									"texto": "O poço foi envenenado de propósito com beladona moída."
+									"texto": "O poço foi envenenado de propósito com beladona moída.",
+									"categoria": "mecanismo"
 								}
 							]
 						},
@@ -1954,6 +1955,9 @@
 							"texto": "Só uma mancha roxa. Pode ser qualquer coisa.",
 							"efeitos": []
 						}
+					},
+					"investigador": {
+						"dica_falha": "O boticário pode ajudar a reconhecer o resíduo da corda. Quem conhece Medicina também pode tentar pelo cheiro."
 					}
 				},
 				{
@@ -1984,7 +1988,8 @@
 								{
 									"tipo": "pista",
 									"nome": "Beladona no poço",
-									"texto": "O poço foi envenenado de propósito com beladona moída."
+									"texto": "O poço foi envenenado de propósito com beladona moída.",
+									"categoria": "mecanismo"
 								}
 							]
 						},
@@ -1996,6 +2001,90 @@
 									"ficha": "Penalidade"
 								}
 							]
+						}
+					},
+					"investigador": {
+						"dica_falha": "Deixe o balde em repouso e procure resíduo na corda. A mancha pode conservar um vestígio que a água já diluiu."
+					}
+				},
+				{
+					"id": "examinar_vestigios",
+					"texto": "Examinar os Vestígios na corda e na água",
+					"custo": "movimento",
+					"uma_vez": false,
+					"sem_inimigos": false,
+					"requer_item": "",
+					"requer_classe": [],
+					"requer_pistas": 0,
+					"teste": {
+						"ativo": true,
+						"somar": [
+							"Investigação",
+							"raciocinio"
+						],
+						"nivel": "facil"
+					},
+					"resultados": {
+						"feito": {
+							"texto": "",
+							"efeitos": []
+						},
+						"sucesso": {
+							"texto": "Na corda há resto de pétalas moídas: beladona, e muita. Alguém jogou um saco inteiro aqui, de noite, puxando pela corda.",
+							"efeitos": [
+								{
+									"tipo": "pista",
+									"nome": "Beladona no poço",
+									"texto": "O poço foi envenenado de propósito com beladona moída.",
+									"categoria": "mecanismo"
+								}
+							]
+						},
+						"falha": {
+							"texto": "Só uma mancha roxa. Pode ser qualquer coisa.",
+							"efeitos": []
+						}
+					},
+					"investigador": {
+						"dica_falha": "O boticário pode ajudar a reconhecer o resíduo da corda. Quem conhece Medicina também pode tentar pelo cheiro.",
+						"carta": "detetive-analitico"
+					}
+				},
+				{
+					"id": "hipotese_corda",
+					"texto": "Hipótese de Trabalho sobre a mancha na corda",
+					"custo": "movimento",
+					"uma_vez": false,
+					"sem_inimigos": false,
+					"requer_item": "",
+					"requer_classe": [],
+					"requer_pistas": 0,
+					"teste": {
+						"ativo": false,
+						"somar": [
+							"percepcao"
+						],
+						"nivel": "medio"
+					},
+					"resultados": {
+						"feito": {
+							"texto": "Se a mancha veio de algo jogado no poço, ainda deve haver resíduo na corda. Você decide procurar pelo material da mancha.",
+							"efeitos": []
+						},
+						"sucesso": {
+							"texto": "",
+							"efeitos": []
+						},
+						"falha": {
+							"texto": "",
+							"efeitos": []
+						}
+					},
+					"investigador": {
+						"carta": "hipotese-de-trabalho",
+						"hipotese": {
+							"interacao": "poco_praca",
+							"opcao": "examinar"
 						}
 					}
 				}
@@ -2037,7 +2126,8 @@
 								{
 									"tipo": "pista",
 									"nome": "Venda ao capitão",
-									"texto": "O boticário vendeu um saco de beladona ao capitão Orsk."
+									"texto": "O boticário vendeu um saco de beladona ao capitão Orsk.",
+									"categoria": "intencao"
 								}
 							]
 						},
@@ -2045,6 +2135,9 @@
 							"texto": "Ele jura que não sabe de nada e pede que vocês saiam.",
 							"efeitos": []
 						}
+					},
+					"investigador": {
+						"dica_falha": "Se Faro não falar, pergunte na praça a quem costuma passar por lá. Marta está sentada perto do poço."
 					}
 				},
 				{
@@ -2075,13 +2168,98 @@
 								{
 									"tipo": "pista",
 									"nome": "Venda ao capitão",
-									"texto": "O boticário vendeu um saco de beladona ao capitão Orsk."
+									"texto": "O boticário vendeu um saco de beladona ao capitão Orsk.",
+									"categoria": "intencao"
 								}
 							]
 						},
 						"falha": {
 							"texto": "Ele se tranca nos fundos. A notícia de que a guilda está ameaçando gente corre a praça.",
 							"efeitos": []
+						}
+					},
+					"investigador": {
+						"dica_falha": "As ameaças fecharam essa conversa. Você ainda pode procurar testemunhas na praça ou na taverna."
+					}
+				},
+				{
+					"id": "entrevista_breve",
+					"texto": "Entrevista Breve com Faro",
+					"custo": "movimento",
+					"uma_vez": false,
+					"sem_inimigos": false,
+					"requer_item": "",
+					"requer_classe": [],
+					"requer_pistas": 0,
+					"teste": {
+						"ativo": true,
+						"somar": [
+							"Intuição",
+							"percepcao"
+						],
+						"nivel": "medio"
+					},
+					"resultados": {
+						"feito": {
+							"texto": "",
+							"efeitos": []
+						},
+						"sucesso": {
+							"texto": "Ele não é culpado: está com medo. \"Vendi beladona para o capitão da guarda, um saco inteiro. Disse que era para ratos. Se ele souber que eu falei...\"",
+							"efeitos": [
+								{
+									"tipo": "pista",
+									"nome": "Venda ao capitão",
+									"texto": "O boticário vendeu um saco de beladona ao capitão Orsk.",
+									"categoria": "intencao"
+								}
+							]
+						},
+						"falha": {
+							"texto": "Ele jura que não sabe de nada e pede que vocês saiam.",
+							"efeitos": []
+						}
+					},
+					"investigador": {
+						"dica_falha": "Se Faro não falar, pergunte na praça a quem costuma passar por lá. Marta está sentada perto do poço.",
+						"carta": "entrevista-breve"
+					}
+				},
+				{
+					"id": "hipotese_faro",
+					"texto": "Hipótese de Trabalho sobre a hesitação de Faro",
+					"custo": "movimento",
+					"uma_vez": false,
+					"sem_inimigos": false,
+					"requer_item": "",
+					"requer_classe": [],
+					"requer_pistas": 0,
+					"teste": {
+						"ativo": false,
+						"somar": [
+							"percepcao"
+						],
+						"nivel": "medio"
+					},
+					"resultados": {
+						"feito": {
+							"texto": "Faro arruma os mesmos frascos desde que vocês entraram. Você prepara perguntas para observar quando ele hesita.",
+							"efeitos": []
+						},
+						"sucesso": {
+							"texto": "",
+							"efeitos": []
+						},
+						"falha": {
+							"texto": "",
+							"efeitos": []
+						}
+					},
+					"investigador": {
+						"carta": "hipotese-de-trabalho",
+						"hipotese": {
+							"interacao": "boticario",
+							"opcao": "ler"
 						}
 					}
 				}
@@ -2123,7 +2301,8 @@
 								{
 									"tipo": "pista",
 									"nome": "Botas de barro vermelho",
-									"texto": "Um guarda com botas sujas do barro vermelho do cais esteve no poço à noite."
+									"texto": "Um guarda com botas sujas do barro vermelho do cais esteve no poço à noite.",
+									"categoria": "cenario"
 								}
 							]
 						},
@@ -2131,6 +2310,9 @@
 							"texto": "Ela olha através de vocês e não diz nada.",
 							"efeitos": []
 						}
+					},
+					"investigador": {
+						"dica_falha": "Dê tempo a Marta. Enquanto isso, pergunte na taverna quem circula pela cidade depois de escurecer."
 					}
 				}
 			]
@@ -2171,7 +2353,8 @@
 								{
 									"tipo": "pista",
 									"nome": "Moedas novas",
-									"texto": "O capitão Orsk anda gastando moedas novas de origem desconhecida."
+									"texto": "O capitão Orsk anda gastando moedas novas de origem desconhecida.",
+									"categoria": "geral"
 								},
 								{
 									"tipo": "ouro",
@@ -2188,6 +2371,9 @@
 								}
 							]
 						}
+					},
+					"investigador": {
+						"dica_falha": "A mesa ao lado continua conversando sobre a noite. Talvez aceite conversar se vocês pagarem uma rodada."
 					}
 				},
 				{
@@ -2218,7 +2404,8 @@
 								{
 									"tipo": "pista",
 									"nome": "Armazém do cais",
-									"texto": "O capitão frequenta o armazém do cais à noite."
+									"texto": "O capitão frequenta o armazém do cais à noite.",
+									"categoria": "cenario"
 								}
 							]
 						},
@@ -2226,6 +2413,9 @@
 							"texto": "Ninguém fala nada útil, mas todos bebem.",
 							"efeitos": []
 						}
+					},
+					"investigador": {
+						"dica_falha": "Bruno escuta as mesas a noite inteira. Uma partida de dados pode dar espaço para falar a sós com ele."
 					}
 				}
 			]
@@ -2311,7 +2501,8 @@
 								{
 									"tipo": "pista",
 									"nome": "Recibo do Círculo Rubro",
-									"texto": "Alguém paga o capitão para esvaziar a cidade."
+									"texto": "Alguém paga o capitão para esvaziar a cidade.",
+									"categoria": "intencao"
 								},
 								{
 									"tipo": "ouro",
@@ -2332,6 +2523,9 @@
 								}
 							]
 						}
+					},
+					"investigador": {
+						"dica_falha": "A guarda ouviu o estalo. Se for arriscado insistir, a taverna é outra fonte sobre as rondas e os gastos recentes."
 					}
 				},
 				{
@@ -2362,7 +2556,8 @@
 								{
 									"tipo": "pista",
 									"nome": "Recibo do Círculo Rubro",
-									"texto": "Alguém paga o capitão para esvaziar a cidade."
+									"texto": "Alguém paga o capitão para esvaziar a cidade.",
+									"categoria": "intencao"
 								},
 								{
 									"tipo": "ouro",
@@ -2383,6 +2578,65 @@
 								}
 							]
 						}
+					},
+					"investigador": {
+						"dica_falha": "O pé de cabra não cedeu a tampa. A fechadura ainda pode ser aberta, se vocês conseguirem lidar com a guarda."
+					}
+				},
+				{
+					"id": "maos_ao_caso",
+					"texto": "Mãos ao Caso na fechadura do baú",
+					"custo": "movimento",
+					"uma_vez": false,
+					"sem_inimigos": false,
+					"requer_item": "",
+					"requer_classe": [],
+					"requer_pistas": 0,
+					"teste": {
+						"ativo": true,
+						"somar": [
+							"Ladinagem",
+							"destreza"
+						],
+						"nivel": "medio"
+					},
+					"resultados": {
+						"feito": {
+							"texto": "",
+							"efeitos": []
+						},
+						"sucesso": {
+							"texto": "Dentro: 30 pratas novas e um recibo dobrado com o selo de um círculo vermelho: \"Pelo vau, quando estiver vazio.\"",
+							"efeitos": [
+								{
+									"tipo": "pista",
+									"nome": "Recibo do Círculo Rubro",
+									"texto": "Alguém paga o capitão para esvaziar a cidade.",
+									"categoria": "intencao"
+								},
+								{
+									"tipo": "ouro",
+									"valor": 30
+								},
+								{
+									"tipo": "desativar"
+								}
+							]
+						},
+						"falha": {
+							"texto": "A gazua quebra dentro da fechadura com um estalo alto.",
+							"efeitos": [
+								{
+									"tipo": "alertar",
+									"grupo": "guarda_posto",
+									"texto": "Os guardas lá fora ouvem o barulho!"
+								}
+							]
+						}
+					},
+					"investigador": {
+						"dica_falha": "A guarda ouviu o estalo. Se for arriscado insistir, a taverna é outra fonte sobre as rondas e os gastos recentes.",
+						"carta": "maos-ao-caso"
 					}
 				}
 			]
@@ -2486,6 +2740,180 @@
 									"valor": 2
 								}
 							]
+						}
+					}
+				},
+				{
+					"id": "ligar_poco_boticario",
+					"texto": "Ligar os Pontos entre o poço e o boticário",
+					"custo": "padrao",
+					"uma_vez": true,
+					"sem_inimigos": false,
+					"requer_item": "",
+					"requer_classe": [],
+					"requer_pistas": 0,
+					"teste": {
+						"ativo": false,
+						"somar": [
+							"percepcao"
+						],
+						"nivel": "medio"
+					},
+					"resultados": {
+						"feito": {
+							"texto": "",
+							"efeitos": []
+						},
+						"sucesso": {
+							"texto": "",
+							"efeitos": []
+						},
+						"falha": {
+							"texto": "",
+							"efeitos": []
+						}
+					},
+					"investigador": {
+						"carta": "ligar-os-pontos",
+						"evidencias": [
+							"Beladona no poço",
+							"Venda ao capitão"
+						],
+						"deducao": {
+							"id": "vau_acesso_ao_veneno",
+							"categoria": "intencao",
+							"texto": "A compra descrita por Faro deu ao capitão acesso à mesma substância usada no poço. Falta ligar alguém que tinha acesso a ela à praça naquela noite."
+						}
+					}
+				},
+				{
+					"id": "ligar_praca_taverna",
+					"texto": "Ligar os Pontos entre os relatos da praça e da taverna",
+					"custo": "padrao",
+					"uma_vez": true,
+					"sem_inimigos": false,
+					"requer_item": "",
+					"requer_classe": [],
+					"requer_pistas": 0,
+					"teste": {
+						"ativo": false,
+						"somar": [
+							"percepcao"
+						],
+						"nivel": "medio"
+					},
+					"resultados": {
+						"feito": {
+							"texto": "",
+							"efeitos": []
+						},
+						"sucesso": {
+							"texto": "",
+							"efeitos": []
+						},
+						"falha": {
+							"texto": "",
+							"efeitos": []
+						}
+					},
+					"investigador": {
+						"carta": "ligar-os-pontos",
+						"evidencias": [
+							"Botas de barro vermelho",
+							"Armazém do cais"
+						],
+						"deducao": {
+							"id": "vau_rota_do_cais",
+							"categoria": "cenario",
+							"texto": "O barro nas botas liga o homem visto no poço à área do cais. A taverna situa o capitão no armazém à noite. Vale verificar o armazém, mas as botas não identificam quem as calçava."
+						}
+					}
+				},
+				{
+					"id": "ligar_taverna_posto",
+					"texto": "Ligar os Pontos entre a taverna e o posto da guarda",
+					"custo": "padrao",
+					"uma_vez": true,
+					"sem_inimigos": false,
+					"requer_item": "",
+					"requer_classe": [],
+					"requer_pistas": 0,
+					"teste": {
+						"ativo": false,
+						"somar": [
+							"percepcao"
+						],
+						"nivel": "medio"
+					},
+					"resultados": {
+						"feito": {
+							"texto": "",
+							"efeitos": []
+						},
+						"sucesso": {
+							"texto": "",
+							"efeitos": []
+						},
+						"falha": {
+							"texto": "",
+							"efeitos": []
+						}
+					},
+					"investigador": {
+						"carta": "ligar-os-pontos",
+						"evidencias": [
+							"Moedas novas",
+							"Recibo do Círculo Rubro"
+						],
+						"deducao": {
+							"id": "vau_pagamento",
+							"categoria": "intencao",
+							"texto": "As moedas novas no baú são compatíveis com os gastos que Bruno descreveu. O recibo aponta um pagamento para esvaziar o vau. Os dois achados sustentam esse motivo, sem mostrar como o poço foi envenenado."
+						}
+					}
+				},
+				{
+					"id": "conclusao_fundamentada",
+					"texto": "Conclusão Fundamentada sobre o que aconteceu na praça",
+					"custo": "padrao",
+					"uma_vez": true,
+					"sem_inimigos": false,
+					"requer_item": "",
+					"requer_classe": [],
+					"requer_pistas": 0,
+					"teste": {
+						"ativo": false,
+						"somar": [
+							"percepcao"
+						],
+						"nivel": "medio"
+					},
+					"resultados": {
+						"feito": {
+							"texto": "",
+							"efeitos": []
+						},
+						"sucesso": {
+							"texto": "",
+							"efeitos": []
+						},
+						"falha": {
+							"texto": "",
+							"efeitos": []
+						}
+					},
+					"investigador": {
+						"carta": "conclusao-fundamentada",
+						"evidencias": [
+							"Beladona no poço",
+							"Venda ao capitão",
+							"Botas de barro vermelho"
+						],
+						"preparo": true,
+						"deducao": {
+							"id": "vau_meio_e_oportunidade",
+							"categoria": "mecanismo",
+							"texto": "A beladona confirma o envenenamento. A mancha na corda é um vestígio de como a substância pode ter chegado à água. Faro liga o capitão à compra, e Marta viu uma pessoa com capa da guarda no poço naquela noite. Falta identificar quem usava a capa."
 						}
 					}
 				}

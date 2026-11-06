@@ -76,6 +76,7 @@ var _her_zonas: Label
 var _acoes: Label
 var _mao: Control
 var _bt_concentrar: Button
+var _bt_pistas: Button
 var _bt_folego: Button
 var _bt_planejar: Button
 var _bt_encerrar: Button
@@ -774,6 +775,7 @@ func _acao(nome: String, carta: Variant = -1) -> void:
 				return
 			_c("encerrar_turno")
 		"concentrar": _c("heroi_concentrar")
+		"pistas": _c("heroi_usar_pistas")
 		"folego": _c("heroi_recuperar_folego")
 		"planejar": _c("heroi_planejar")
 		"procurar": _c("heroi_procurar")
@@ -1461,7 +1463,7 @@ func _atualizar() -> void:
 	if heroi.luz == "lanterna":
 		_her_maos.text += "   ·   Lanterna acesa (cinto)"
 	var fichas_h := PackedStringArray()
-	for f in ["Sombra", "Mira", "Foco", "Preparo", "Bloqueio", "Guarda"]:
+	for f in ["Sombra", "Mira", "Foco", "Preparo", "Bloqueio", "Guarda", "Pista"]:
 		if heroi.fichas_total(f) > 0:
 			fichas_h.append("%s %d" % [f, heroi.fichas_total(f)])
 	# Só o que muda a jogada agora; números de arma e atributos ficam na Ficha (C).
@@ -1492,6 +1494,10 @@ func _atualizar() -> void:
 		_acoes.text = "Aguarde a sua vez."
 	var livre := vez and not _ocupado
 	_bt_concentrar.disabled = not (livre and heroi.acoes_padrao > 0)
+	var pistas: int = heroi.fichas_total("Pista")
+	_bt_pistas.visible = vez and pistas > 0
+	_bt_pistas.disabled = not livre or heroi.acoes_padrao <= 0 or heroi.baralho.vazio() or heroi.efeitos.has("confuso")
+	_bt_pistas.text = "Usar Pistas (%d)" % pistas
 	_bt_folego.disabled = not (livre and heroi.acoes_padrao > 0 and not heroi.baralho.descarte.is_empty())
 	_bt_planejar.disabled = not (livre and heroi.acoes_padrao > 0)
 	_bt_tratar.visible = vez and not b.alvos_de_tratar(heroi).is_empty()
@@ -3473,6 +3479,8 @@ func _montar_hud() -> void:
 	_painel_acoes.add_child(grade)
 	_bt_concentrar = _botao("Concentrar", "concentrar")
 	_bt_concentrar.tooltip_text = "Ação padrão: compra 1 carta do baralho para a mão."
+	_bt_pistas = _botao("Usar Pistas", "pistas")
+	_bt_pistas.tooltip_text = "Ação Padrão: gaste Pistas para comprar uma carta por ficha do próprio baralho."
 	_bt_folego = _botao("Recuperar fôlego", "folego")
 	_bt_folego.tooltip_text = "Ação padrão: cura igual à Constituição. Exila 1 carta do descarte e devolve as outras ao fundo do baralho."
 	_bt_planejar = _botao("Planejar", "planejar")
@@ -3513,7 +3521,7 @@ func _montar_hud() -> void:
 		btm.tooltip_text = "Manobra (ação padrão, inimigo ao lado): Luta + Força contra a Força dele. Se vencer: %s.\nInimigo maior que você: −5 no limite por tamanho." % m["texto"]
 		_bts_manobra[tipo] = btm
 		extras.append(btm)
-	for bt in [_bt_concentrar, _bt_folego, _bt_planejar, _bt_tratar, _bt_levantar, _bt_comandar, _bt_orientar, _bt_mulligan, _bt_pegar_arma, _bt_recarregar, _bt_tocha, _bt_lanterna, _bt_trocar, _bt_foco] + extras:
+	for bt in [_bt_concentrar, _bt_pistas, _bt_folego, _bt_planejar, _bt_tratar, _bt_levantar, _bt_comandar, _bt_orientar, _bt_mulligan, _bt_pegar_arma, _bt_recarregar, _bt_tocha, _bt_lanterna, _bt_trocar, _bt_foco] + extras:
 		bt.custom_minimum_size = Vector2(130, 30)
 		bt.add_theme_font_size_override("font_size", 12)
 		bt.clip_text = true

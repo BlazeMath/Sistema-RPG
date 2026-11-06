@@ -345,6 +345,38 @@ func test_correcoes_de_limite(t) -> void:
 		t.ok(achou, nome + " existe")
 
 
+func test_catalogo_do_investigador_v02(t) -> void:
+	var cartas := Catalogo.habilidades_de("Investigador")
+	var herois := Catalogo.herois_de("Investigador")
+	t.igual(herois.size(), 4, "quatro opções de metade de herói")
+	t.igual(cartas.size(), 18, "dezoito opções gerais")
+	t.igual(cartas.filter(func(c): return c["xp"] == 1 and not c["meia_carta"]).size(), 9, "nove cartas de 1 XP")
+	t.igual(cartas.filter(func(c): return c["xp"] == 2 and not c["meia_carta"]).size(), 3, "três cartas de 2 XP")
+	t.igual(cartas.filter(func(c): return c["xp"] == 0.5 and c["meia_carta"] and c["lados"][1] == null).size(), 6, "seis meias cartas em pares")
+	var contraprova: Dictionary = Catalogo.habilidade("classe.investigador.hipotese-de-trabalho").get("lados", [{}, {}])[1]
+	t.igual(contraprova.get("nome"), "Contraprova", "lado B da Hipótese de Trabalho")
+	var custo: Dictionary = contraprova.get("custo", {})
+	t.igual(custo.get("fadiga"), 0, "a revisão retirou a Fadiga da Contraprova")
+	t.igual(custo.get("pistas"), 1, "Contraprova exige 1 Pista")
+	t.igual(custo.get("acao"), "reacao", "Contraprova custa Reação")
+
+
+func test_investigador_pronto_para_o_vau(t) -> void:
+	const Prontos := preload("res://core/herois_prontos.gd")
+	var ficha := Prontos.ficha("Investigador")
+	t.ok(Personagem.validar(ficha).is_empty(), "a ficha pronta é válida")
+	t.igual(ficha["pericias"]["Investigação"], 3, "o Investigador tem perícia alta")
+	t.igual(Personagem.custo_xp(ficha), 2, "as duas cartas de teste custam 2 XP")
+	t.igual(ficha["herois"][0], "classe.investigador.heroi.detetive-analitico", "Detetive Analítico")
+	var cartas := Personagem.cartas_em_jogo_cfg(ficha)
+	var slugs := []
+	for carta in cartas:
+		for lado in carta["lados"]:
+			slugs.append(lado["slug"])
+	for s in ["detetive-analitico", "coleta-metodica", "ligar-os-pontos", "hipotese-de-trabalho", "contraprova"]:
+		t.ok(s in slugs, "lado equipado: %s" % s)
+
+
 func test_escolhas_da_criacao(t) -> void:
 	var f := _ficha("Escravo", "Aprendiz", ["background.escravo.atento-aos-desejos"], ["classe.guerreiro.heroi.foco-mortal", "raca.humano.heroi.incansavel"])
 	t.ok(not Personagem.validar(f).is_empty(), "sem as escolhas a ficha não vale")

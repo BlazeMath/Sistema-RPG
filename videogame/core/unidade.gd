@@ -52,6 +52,7 @@ var parada_ataque := 17
 var parada_defesa := 17
 var risco := 0.35               # chance de estourar que a IA aceita
 var fichas := {}                # fichas de inimigos (a carta deles é a própria unidade)
+var fontes_de_fichas := {}      # nome da ficha -> autores das fichas que exigem atribuição
 var alerta := true              # desatento: só age depois de perceber um herói
 var vigia := 3                  # distância em que um inimigo desatento percebe heróis
 var ataque_oportunidade := false  # inimigo com a habilidade de atacar quem sai do seu alcance
@@ -212,9 +213,14 @@ func fichas_total(nome_ficha: String) -> int:
 var fichas_a_escolher: Array = []   # [{"ficha", "carta": índice}]
 
 
-func dar_ficha(nome_ficha: String, qtd := 1) -> void:
+func dar_ficha(nome_ficha: String, qtd := 1, autor := "") -> void:
 	if not eh_heroi():
 		fichas[nome_ficha] = int(fichas.get(nome_ficha, 0)) + qtd
+		if autor != "":
+			var fontes: Array = fontes_de_fichas.get(nome_ficha, [])
+			for i in qtd:
+				fontes.append(autor)
+			fontes_de_fichas[nome_ficha] = fontes
 		return
 	if IMUNIDADES.has(nome_ficha) and ativo(IMUNIDADES[nome_ficha]):
 		return
@@ -231,15 +237,30 @@ func dar_ficha(nome_ficha: String, qtd := 1) -> void:
 		if possiveis.is_empty():
 			return
 		cartas[possiveis[0]].dar_ficha(nome_ficha, 1)
-		if possiveis.size() > 1 and not nome_ficha in cartas[possiveis[0]].EMPILHAVEIS:
+		if possiveis.size() > 1 and (nome_ficha == "Pista" or not nome_ficha in cartas[possiveis[0]].EMPILHAVEIS):
 			fichas_a_escolher.append({"ficha": nome_ficha, "carta": possiveis[0]})
 
 
 ## Tira até "qtd" fichas de onde estiverem. Devolve quantas saíram.
-func tirar_fichas(nome_ficha: String, qtd := 999) -> int:
+func tirar_fichas(nome_ficha: String, qtd := 999, autor := "") -> int:
 	var tiradas := 0
 	if not eh_heroi():
-		tiradas = mini(int(fichas.get(nome_ficha, 0)), qtd)
+		var total := fichas_total(nome_ficha)
+		var fontes: Array = fontes_de_fichas.get(nome_ficha, [])
+		if autor == "":
+			tiradas = mini(total, qtd)
+			# Remove primeiro as fichas sem atribuição explícita.
+			for i in maxi(tiradas - (total - fontes.size()), 0):
+				fontes.pop_front()
+		else:
+			for i in qtd:
+				var indice := fontes.find(autor)
+				if indice < 0:
+					break
+				fontes.remove_at(indice)
+				tiradas += 1
+		if fontes.is_empty():
+			fontes_de_fichas.erase(nome_ficha)
 		if tiradas > 0:
 			fichas[nome_ficha] = int(fichas[nome_ficha]) - tiradas
 			if fichas[nome_ficha] <= 0:

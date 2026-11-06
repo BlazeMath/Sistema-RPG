@@ -60,7 +60,7 @@ func virar() -> void:
 
 ## Lucas (0.20): cada carta tem no máximo 1 ficha de cada tipo (fadiga não é ficha).
 ## Exceção: fichas que a própria carta manda acumular (Fúria Crescente: 5 ou mais).
-const EMPILHAVEIS := ["Fúria", "Pacto"]   # 0.25: fichas de Pacto do Bruxo (reserva)
+const EMPILHAVEIS := ["Fúria", "Pacto", "Pista"]
 
 
 func dar_ficha(nome_ficha: String, qtd := 1) -> void:

@@ -32,6 +32,7 @@ const Areas := preload("res://core/areas.gd")
 const Devocoes := preload("res://core/devocoes.gd")
 const ItensB := preload("res://core/itens_batalha.gd")
 const Bruxo := preload("res://core/cartas_bruxo.gd")
+const Investigador := preload("res://core/cartas_investigador.gd")
 
 ## Ataque mágico: diferença + dano do foco + atributo de conjuração da classe
 ## (+ o dano extra da magia).
@@ -75,7 +76,9 @@ var chao: Dictionary = {}             # 0.27: Vector2i -> tipo de chão da casa 
 var terreno_dificil_fixo: Array = []  # 0.27: casas de terreno difícil desenhadas no editor
 var visao_bloqueia_fixa: Array = []   # 0.27: enfeites que o editor marcou como "bloqueia a visão"
 var saques: Dictionary = {}           # 0.27: id do inimigo -> efeitos que ele deixa ao cair
-var pistas: Dictionary = {}           # 0.28: pistas achadas na fase (nome -> texto); opções podem exigir N pistas
+var pistas: Dictionary = {}           # evidências do grupo (nome -> texto); opções podem exigir N evidências
+var deducoes: Dictionary = {}         # relações e orientações de investigação, fora da contagem de evidências
+const Investigacao := preload("res://core/investigacao.gd")
 var vitoria_na_rodada := 0            # 0.27: objetivo "sobreviver": vitória quando a rodada chega aqui
 var teste_pericia: Teste21
 var interacao_atual: Dictionary = {}  # {"id", "opcao", "dano", "vitoria"}
@@ -390,6 +393,32 @@ func heroi_concentrar() -> bool:
 	_log("%s se concentra e compra %d carta(s)." % [u.nome, n_c])
 	_tut("acao")
 	_verificar_queda_heroi(u)
+	return true
+
+
+func heroi_usar_pistas(quantidade := 0) -> bool:
+	var u := ativa()
+	if not vez_do_heroi() or u.acoes_padrao <= 0 or u.efeitos.has("confuso"):
+		return false
+	var maximo := mini(Investigador.pistas(u), u.baralho.baralho.size())
+	if maximo <= 0 or quantidade < 0 or quantidade > maximo:
+		return false
+	if quantidade == 0 and maximo > 1 and perguntar_escolhas:
+		var opcoes := []
+		for n in range(1, maximo + 1):
+			opcoes.append([str(n), "Gastar %d Pista(s) e comprar %d" % [n, n]])
+		opcoes.append(["nao", "Cancelar"])
+		perguntar("investigador-comprar", "Quantas Pistas gastar? A compra usa uma Ação Padrão.", opcoes, {"quem": u.id})
+		return true
+	quantidade = maxi(1, quantidade)
+	if not Investigador.gastar(self, u, quantidade):
+		return false
+	u.acoes_padrao -= 1
+	_agiu(u)
+	var compradas := u.baralho.comprar_para_mao(quantidade)
+	_log("%s gasta %d Pista(s) e compra %d carta(s)." % [u.nome, quantidade, compradas])
+	_verificar_queda_heroi(u)
+	Investigador.apos_gasto(self, u)
 	return true
 
 
@@ -940,6 +969,8 @@ func opcoes_cartas(u: Unidade) -> Array:
 			motivo = {"passiva": "passiva", "reacao": "reação (o jogo oferece na hora)", "na_mesa": "usada durante um teste",
 				"fim_turno": "no fim do turno (ao passar)", "arma": "arma",
 				"ao_virar": "dispara ao virar", "sem_programa": "ainda não programada", "fora": "sem efeito na batalha"}.get(info["uso"], "")
+			if info["uso"] == "fora":
+				motivo = str(info.get("nota", motivo))
 		elif not info.has("opcoes"):
 			motivo = _motivo_sem_usar(u, c, info)
 		var pode_virar: bool = vez_do_heroi() and ativa() == u and c.lados.size() > 1 \
@@ -983,6 +1014,9 @@ func nota_da_carta(u: Unidade, c) -> String:
 func _registro_do_lado(c) -> Dictionary:
 	if c.tipo == "arma":
 		return {"uso": "arma"}
+	var reg_inv := Investigador.registro(c)
+	if not reg_inv.is_empty():
+		return reg_inv
 	var s: String = c.slug()
 	if c.tipo == "pacto":
 		return Bruxo.registro(c)
@@ -1062,8 +1096,15 @@ func _motivo_sem_usar(u: Unidade, c, info: Dictionary) -> String:
 	var acao = custo_do_lado(c).get("acao")
 	if acao == "padrao" and u.acoes_padrao <= 0:
 		return "sem ação padrão"
-	if acao == "movimento" and (preso(u) or (u.acoes_mov <= 0 and u.acoes_padrao <= 0)):
-		return "sem ação de movimento" if not preso(u) else "imobilizado"
+	if acao == "movimento":
+		if preso(u) and Investigador.registro(c).is_empty():
+			return "imobilizado"
+		if u.acoes_mov <= 0 and u.acoes_padrao <= 0:
+			return "sem ação de movimento"
+	if not Investigador.registro(c).is_empty():
+		var motivo_inv := Investigador.motivo(u, c, info)
+		if motivo_inv != "":
+			return motivo_inv
 	var s: String = c.slug()
 	if s == "foco-mortal" and not c.tem_ficha("Foco"):
 		return "sem ficha de Foco"
@@ -1094,6 +1135,9 @@ func _motivo_sem_usar(u: Unidade, c, info: Dictionary) -> String:
 ## Inimigos que a habilidade pode atingir (para destacar no mapa).
 func alvos_de_habilidade(u: Unidade, c) -> Array:
 	var info := _info_lado(c)
+	var tipo_investigador := str(info.get("alvo", ""))
+	if tipo_investigador in ["inimigo_inquerito", "aliado_contexto", "aliado_dossie", "aliado_percurso"]:
+		return Investigador.alvos(self, u, tipo_investigador)
 	var lista := []
 	for o in oponentes(u):
 		match info.get("alvo", "nenhum"):
@@ -1318,6 +1362,8 @@ func heroi_usar_carta(indice: int, alvo: Unidade = null, opcao := "", destino :=
 				u.efeitos.erase("tecer")
 			if c.tipo == "item" and not ItensB.registro(c.slug()).is_empty():
 				ItensB.usar(self, u, c, alvo)
+			elif not Investigador.registro(c).is_empty():
+				Investigador.usar(self, u, c, info, alvo)
 			elif c.tipo == "pacto" or Bruxo.eh_do_bruxo(c.slug()):
 				Bruxo.usar(self, u, c, alvo)
 			else:
@@ -2726,7 +2772,7 @@ func _mover(u: Unidade, destino: Vector2i) -> bool:
 ## Anda o caminho passo a passo. Antes de cada passo, confere se alguém faz um
 ## ataque de oportunidade; se fizer, o movimento para, o ataque acontece e o
 ## resto do caminho fica guardado (continua depois do ataque).
-func _percorrer(u: Unidade, caminho: Array, gasta_deslocamento: bool, correntes_oferecidas = []) -> bool:
+func _percorrer(u: Unidade, caminho: Array, gasta_deslocamento: bool, correntes_oferecidas = [], provoca_oportunidade := true) -> bool:
 	if not caminho.is_empty() and correntes_oferecidas != null:
 		for r in oponentes(u):
 			if r.id in correntes_oferecidas:
@@ -2751,7 +2797,7 @@ func _percorrer(u: Unidade, caminho: Array, gasta_deslocamento: bool, correntes_
 				_remover_zona(z, "%s se moveu" % u.nome)
 	for i in caminho.size():
 		var passo: Vector2i = caminho[i]
-		var reator := _reator_de_oportunidade(u, u.pos, passo)
+		var reator := _reator_de_oportunidade(u, u.pos, passo) if provoca_oportunidade else null
 		if reator != null:
 			if not feitos.is_empty():
 				eventos.append({"tipo": "mover", "id": u.id, "caminho": feitos})
@@ -2864,6 +2910,21 @@ func _andar_para(u: Unidade, destino: Vector2i) -> bool:
 	var antes := fase
 	_percorrer(u, caminho, false)
 	return fase != antes
+
+
+func casas_ajustar(u: Unidade) -> Array:
+	if not u.viva() or preso(u) or u.efeitos.has("sem_mover"):
+		return []
+	var mapa := _sem_passagem(grade.alcance(u.pos, 1, _ocupadas(u), _perigos(u), modo_de_andar(u)))
+	mapa.erase(u.pos)
+	return mapa.keys()
+
+
+func ajustar_uma_casa(u: Unidade, destino: Vector2i) -> bool:
+	if not destino in casas_ajustar(u):
+		return false
+	u.moveu_no_turno = true
+	return _percorrer(u, [destino], false, null, false)
 
 
 var ataque_pendente := {}   # ataque de uma habilidade que esperou um ataque de oportunidade
@@ -3004,6 +3065,11 @@ func _novo_ataque(atk: Unidade, dfs: Unidade, contexto: Dictionary) -> void:
 	elif frenesi or desvantagem or ctx.get("resultado_fixo", 0) > 0:
 		teste_ataque.parar()
 		_avancar_apos_teste(teste_ataque)
+	if not caiu:
+		if atk.eh_heroi():
+			Investigador.oferecer_leitura(self, dfs, atk, teste_defesa)
+		else:
+			Investigador.oferecer_leitura(self, atk, dfs, teste_ataque)
 
 
 ## Quantas faixas de distância o alvo está fora do alcance ideal da arma de tiro.
@@ -3121,6 +3187,9 @@ func _resolver() -> void:
 		acerto = Combate.acertou(atk, dfs)
 	var u := atacante
 	var alvo := defensor
+	if int(ctx.get("area_n", 0)) == 0:
+		Investigador.inimigo_estourou(self, u, teste_ataque)
+	Investigador.inimigo_estourou(self, alvo, teste_defesa)
 	var partes := []   # [rótulo, valor] para a tela explicar a conta
 	var dano := 0
 	var reducao := 0
@@ -3363,6 +3432,9 @@ func _resolver() -> void:
 		_dano_no_heroi(alvo, dano, "ataque", Fase.RESOLVIDO)
 	if not _verificar_fim():
 		_oferecer_reacao()
+		for heroi in [u, alvo]:
+			if heroi.eh_heroi():
+				Investigador.apos_resolucao(self, heroi)
 
 
 ## Reações dos heróis (Lucas, 0.19): quando uma pode ser usada, aparece a pergunta.
@@ -3745,7 +3817,7 @@ func _critico(u: Unidade) -> void:
 					o.dar_ficha("Guarda")
 			_log("Ombro a Ombro: 1 ficha de Guarda para você e cada aliado adjacente.")
 		_:
-			if not Bruxo.critico(self, u):
+			if not Investigador.critico(self, u) and not Bruxo.critico(self, u):
 				Classes.critico(self, u, h.slug())
 
 
@@ -3771,6 +3843,13 @@ func _dano_no_heroi(u: Unidade, dano: int, origem: String, volta: Fase) -> void:
 		dano = Bruxo.reduzir_dano(self, u, dano)
 		if dano != antes_r and resultado.has("dano"):
 			resultado["dano"] = dano
+		if Investigador.oferecer_gesto(self, atacante, u, dano, volta):
+			return
+	_dano_no_heroi_apos_gesto(u, dano, origem, volta)
+
+
+func _dano_no_heroi_apos_gesto(u: Unidade, dano: int, origem: String, volta: Fase) -> void:
+	if origem == "ataque" and dano > 0:
 		# Ficha de Guarda (0.25, glossário: "sofra ataque no lugar de aliado"): um aliado ao lado com Guarda pode receber o golpe.
 		if perguntar_escolhas and dano > 0 and not resultado.get("guarda_perguntada", false):
 			for gh in herois_ativos():
@@ -3802,7 +3881,7 @@ func _dano_no_heroi_sem_guarda(u: Unidade, dano: int, origem: String, volta: Fas
 func _dano_no_heroi_agora(u: Unidade, dano: int, origem: String, volta: Fase) -> void:
 	var resto := dano
 	for c in u.cartas:
-		if resto > 0 and c.tirar_ficha("Bloqueio"):
+		if resto > 0 and not (origem == "ataque" and resultado.get("inv_gesto", false)) and c.tirar_ficha("Bloqueio"):
 			resto = int(ceil(resto / 2.0))
 			_log("Ficha de Bloqueio: o dano cai pela metade (%d)." % resto)
 			break
@@ -4032,7 +4111,7 @@ func ao_alcance(u: Unidade, it: Dictionary) -> bool:
 
 
 func opcao_da_interacao(it: Dictionary, opcao_id: String) -> Dictionary:
-	for op in it["opcoes"]:
+	for op in it.get("opcoes", []):
 		if op["id"] == opcao_id:
 			return op
 	return {}
@@ -4089,7 +4168,7 @@ func motivo_sem_opcao(u: Unidade, it: Dictionary, op: Dictionary) -> String:
 		return "há inimigos por perto: limpe a área antes"
 	if op.has("sem_inimigos_perto") and heroi_em_combate() != "":
 		return heroi_em_combate()
-	return ""
+	return Investigacao.motivo(self, u, op)
 
 
 ## Lucas (0.20): um herói está em combate se é o alvo de algum inimigo no próximo turno
@@ -4433,6 +4512,7 @@ func heroi_interagir(id: String, opcao_id: String, abordagem := "") -> bool:
 	var op := opcao_com_abordagem(base, abordagem)
 	if op.is_empty() or motivo_sem_opcao(u, it, op) != "":
 		return false
+	var pistas_pagas := Investigacao.pagar_interacao(self, u, op)
 	var custo: Dictionary = op.get("custo", {})
 	_agiu(u)
 	if custo.get("turno", false):
@@ -4461,12 +4541,14 @@ func heroi_interagir(id: String, opcao_id: String, abordagem := "") -> bool:
 			"nome": op.get("texto", it["nome"])}
 		_log("%s começa: %s (mais %d turno(s))." % [u.nome, op.get("texto", it["nome"]), int(custo["turnos"]) - 1])
 		return true
-	_executar_interacao(u, it, base, op, id, opcao_id)
+	_executar_interacao(u, it, base, op, id, opcao_id, pistas_pagas)
 	return true
 
 
-func _executar_interacao(u: Unidade, it: Dictionary, base: Dictionary, op: Dictionary, id: String, opcao_id: String) -> void:
+func _executar_interacao(u: Unidade, it: Dictionary, base: Dictionary, op: Dictionary, id: String, opcao_id: String, pistas_pagas := 0) -> void:
 	interacao_atual = {"id": id, "opcao": opcao_id, "dano": 0, "vitoria": ""}
+	if pistas_pagas > 0:
+		interacao_atual["iv_pistas_pagas"] = pistas_pagas
 	if base.has("abordagens"):
 		interacao_atual["op_teste"] = op
 	_log("%s: %s." % [it["nome"], op.get("texto", "teste")])
@@ -4512,8 +4594,12 @@ func heroi_acao_longa(continuar_acao: bool) -> bool:
 
 
 func _comecar_teste_pericia(u: Unidade, op: Dictionary) -> void:
+	if Investigacao.antes_do_teste(self, u, op):
+		return
 	var vant := tem_vantagem_na_opcao(u, op)
-	teste_pericia = Teste21.new(u.baralho, modificador_do_teste(u, op), limite_do_teste(u, op), vant != "", false, 2, _adiar_fechada(u))
+	var mod := modificador_do_teste(u, op) + int(interacao_atual.get("iv_modificador", 0))
+	var lim := limite_do_teste(u, op) + int(interacao_atual.get("iv_limite", 0))
+	teste_pericia = Teste21.new(u.baralho, mod, lim, vant != "", false, 2, _adiar_fechada(u))
 	fase = Fase.INTERACAO_TESTE
 	_log("Teste: %s." % descricao_do_teste(u, op))
 	if not u.viva() or teste_pericia.encerrado:
@@ -4664,9 +4750,11 @@ func _resolver_interacao(valor: int) -> void:
 	var op := opcao_atual()
 	if it.is_empty():
 		it = {"id": "", "nome": op.get("titulo", "Teste"), "pos": u.pos, "opcoes": []}
-	interacao_atual.erase("op_teste")
 	var rid: String = _faixa(op, valor) if op.has("teste") else op.get("resultado", "")
 	var res: Dictionary = op["resultados"][rid]
+	if valor >= 0 and not resultado_e_sucesso(op, rid) and Investigacao.antes_da_falha(self, u, op, valor):
+		return
+	interacao_atual.erase("op_teste")
 	if valor >= 0:
 		_log("Resultado do teste: %d (%s)." % [valor, res.get("rotulo", rid)])
 	# Falhou e há carta que permite refazer: espera a escolha antes dos efeitos.
@@ -4737,6 +4825,7 @@ func heroi_refazer(slug: String) -> bool:
 	interacao_atual.erase("pendente")
 	interacao_atual["refeito"] = true
 	interacao_atual["op_teste"] = p["op"]
+	Investigacao.limpar_tentativa(self)
 	_comecar_teste_pericia(u, p["op"])
 	return true
 
@@ -4744,8 +4833,8 @@ func heroi_refazer(slug: String) -> bool:
 func _aplicar_resultado(u: Unidade, it: Dictionary, op: Dictionary, valor: int, rid: String) -> void:
 	var res: Dictionary = op["resultados"][rid]
 	var linhas := PackedStringArray()
+	var sucesso := valor < 0 or resultado_e_sucesso(op, rid)
 	if valor >= 0:
-		var sucesso := resultado_e_sucesso(op, rid)
 		var tst: Dictionary = op.get("teste", {})
 		var comps := componentes_do_teste(tst)
 		if sucesso and u.ativo("dedos-de-seda") and _usa(tst, ["Ladinagem"]):
@@ -4774,10 +4863,13 @@ func _aplicar_resultado(u: Unidade, it: Dictionary, op: Dictionary, valor: int, 
 		if teste_pericia != null and teste_pericia.critico():
 			_critico(u)
 	interacao_atual["valor_teste"] = valor
+	if not sucesso:
+		interacao_atual.erase("iv_coleta")
 	for ef in res.get("efeitos", []):
 		var linha := _aplicar_efeito(u, it, ef)
 		if linha != "":
 			linhas.append(linha)
+	linhas.append_array(Investigacao.efeitos_opcao(self, u, op, sucesso))
 	resultado_interacao = {"titulo": "%s · %s" % [it["nome"], op.get("texto", "teste")], "texto": res.get("texto", ""),
 		"atributo": nome_do_modificador(op),
 		"valor": valor, "rotulo": res.get("rotulo", ""), "efeitos": linhas,
@@ -4787,6 +4879,9 @@ func _aplicar_resultado(u: Unidade, it: Dictionary, op: Dictionary, valor: int, 
 	fase = Fase.INTERACAO_RESOLVIDA
 	if not u.viva():
 		_log("%s cai inconsciente." % u.nome)
+	else:
+		Investigador.apos_resolucao(self, u)
+		Investigacao.depois_da_interacao(self, u, op, valor, sucesso)
 
 
 ## Queda de mais de 2 quadrados: o herói pode testar Acrobacia para cortar o
@@ -5042,7 +5137,10 @@ func _aplicar_efeito(u: Unidade, it: Dictionary, ef: Dictionary) -> String:
 			var nome_p := str(ef.get("nome", "pista %d" % (pistas.size() + 1)))
 			if not pistas.has(nome_p):
 				pistas[nome_p] = str(ef.get("texto", ""))
-				_log("Pista anotada: %s (%d no total)." % [nome_p, pistas.size()])
+				var nota := "Evidência %d · %s. %s" % [pistas.size(), nome_p, pistas[nome_p]]
+				_log(nota)
+				Investigacao.descobrir(self, u, str(ef.get("categoria", "geral")), componentes_do_teste(opcao_atual().get("teste", {})))
+				return nota
 			return ""
 		"matar_unidade":
 			var mu := unidade(ef["id"])
@@ -5728,6 +5826,19 @@ func heroi_responder(opcao: String) -> bool:
 	pergunta = {}
 	fase = p["volta"]
 	match p["id"]:
+		"investigador-comprar":
+			if opcao.is_valid_int():
+				heroi_usar_pistas(int(opcao))
+		"investigador-deducao", "investigador-marcar", "investigador-contexto", "investigador-dossie", "investigador-leitura", "investigador-gesto", "investigador-percurso":
+			Investigador.responder(self, p["id"], opcao, p["dados"])
+		"iv_preparar_teste":
+			Investigacao.responder_preparo(self, opcao, p["dados"])
+		"iv_reagir_falha":
+			Investigacao.responder_falha(self, opcao, p["dados"])
+		"iv_corrigir_carta":
+			Investigacao.responder_carta(self, opcao, p["dados"])
+		"iv_contraprova":
+			Investigacao.responder_contraprova(self, opcao, p["dados"])
 		"procurar_sala":
 			if opcao == "sim":
 				var quem := unidade(p["dados"]["quem"])
@@ -6840,11 +6951,13 @@ func heroi_usar_foco() -> bool:
 	return true
 
 
-func scry(u: Unidade, n: int) -> void:
+func scry(u: Unidade, n: int, retomar_teste := false) -> void:
 	var cartas := []
 	for k in mini(n, u.baralho.baralho.size()):
 		cartas.append(u.baralho.baralho.pop_back())   # cartas[0] = a do topo
 	scry_pendente = {"quem": u.id, "cartas": cartas, "ficam": []}
+	if retomar_teste:
+		scry_pendente["retomar_teste"] = true
 	_scry_proxima()
 
 
@@ -6855,7 +6968,10 @@ func _scry_proxima() -> void:
 		var ficam: Array = scry_pendente["ficam"]
 		for k in range(ficam.size() - 1, -1, -1):
 			u.baralho.baralho.append(ficam[k])   # voltam ao topo na mesma ordem
+		var retomar := bool(scry_pendente.get("retomar_teste", false))
 		scry_pendente = {}
+		if retomar:
+			_comecar_teste_pericia(u, opcao_atual())
 		return
 	var c: int = cartas[0]
 	if not perguntar_escolhas:

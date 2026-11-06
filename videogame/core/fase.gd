@@ -362,6 +362,8 @@ static func _opcao(o: Dictionary) -> Dictionary:
 		op["sem_alerta"] = true
 	if int(o.get("requer_pistas", 0)) > 0:
 		op["requer_pistas"] = int(o["requer_pistas"])
+	if not o.get("investigador", {}).is_empty():
+		op["investigador"] = o["investigador"].duplicate(true)
 	var res: Dictionary = o.get("resultados", {})
 	var extra := []
 	if o.get("uma_vez", false):

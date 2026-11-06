@@ -25,7 +25,7 @@ const Campanha := preload("res://core/campanha.gd")
 const Party := preload("res://core/party.gd")
 const Fase := preload("res://core/fase.gd")
 
-const VERSAO := "0.29"
+const VERSAO := "0.30"
 const PORTA := 7021
 const MAXIMO_HEROIS := 4
 const MAXIMO_CONVIDADOS := 3
