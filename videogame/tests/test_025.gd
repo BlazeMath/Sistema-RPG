@@ -290,7 +290,7 @@ func test_revisao_preparar_o_tiro_trava_o_movimento(t) -> void:
 func test_bruxo_ficha(t) -> void:
 	t.igual(Catalogo.pactos().size(), 10, "10 pactos")
 	t.igual(Catalogo.herois_de("Bruxo").size(), 10, "10 patronos")
-	t.igual(Catalogo.habilidades_de("Bruxo").size(), 18, "18 cartas gerais")
+	t.igual(Catalogo.habilidades_de("Bruxo").size(), 19, "18 cartas gerais da v0.25 e Arma em Chamas")
 	var f := Prontos.ficha("Bruxo")
 	t.igual(Personagem.validar(f), [] as Array[String], "Vesna (Fênix) válida")
 	t.igual(Catalogo.pacto_da_ficha(f), "fenix", "pacto da Fênix")
@@ -437,6 +437,8 @@ func test_varredura_das_cartas_gerais_do_bruxo(t) -> void:
 			if reg.get("uso", "") != "ativada" or slug in ["intercessao-do-patrono"]:
 				continue
 			var f := _bruxo("caminhos-roubados" if slug == "pacto-menor" else "fenix", [carta["id"]] if not carta["meia_carta"] else [])
+			if carta["id"] == "classe.bruxo.arma-em-chamas":
+				f["comeca_com_foco"] = false
 			if carta["meia_carta"]:
 				f["meias"] = [carta["id"], "classe.bruxo.ouvir-o-chamado" if carta["id"] != "classe.bruxo.ouvir-o-chamado" else "classe.bruxo.favor-de-ultima-hora"]
 			f["escolhas"] = {"pacto-menor": ["caminhos-roubados" if slug == "pacto-menor" else "abismo"]}

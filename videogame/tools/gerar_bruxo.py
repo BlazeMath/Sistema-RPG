@@ -223,6 +223,12 @@ def main(saida):
         habilidades.append({'id': 'classe.bruxo.' + slug(an), 'fonte': 'classe', 'entidade': 'Bruxo', 'grupo': 'CARTAS DE 2 XP',
                             'xp': 2, 'meia_carta': False,
                             'lados': [lado(an, at, al, ['Pacto']), lado(bn, bt, bl, ['Pacto'])], 'impressao': 'bruxo-v02'})
+    habilidades.append({'id': 'classe.bruxo.arma-em-chamas', 'fonte': 'classe', 'entidade': 'Bruxo',
+                        'grupo': 'HABILIDADES ADICIONAIS', 'xp': 1, 'meia_carta': False, 'impressao': 'bruxo-v029',
+                        'lados': [
+                            lado('Arma em Chamas', '2 de Fadiga, Ação Padrão: até o fim da cena, o dano da sua arma passa a ser do tipo Fogo. Quando causar dano com ela, cause +2 de dano e coloque 1 ficha de Fogo no alvo.', 2, []),
+                            lado('Combustão em Cadeia', '2 de Fadiga, Ação Padrão: faça um ataque com sua arma. Depois de resolvê-lo, se o defensor tiver 3 ou mais fichas de Fogo, faça um segundo ataque contra ele com sua arma, se ainda puder atacá-lo.', 3, []),
+                        ]})
     json.dump({'fonte': 'Bruxo_Pactos_e_Habilidades_Proposta_v02 (27/10/2026)', 'herois': herois, 'habilidades': habilidades,
                'pactos': pactos}, open(saida, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     print(len(herois), 'heróis,', len(habilidades), 'cartas,', len(pactos), 'pactos ->', saida)

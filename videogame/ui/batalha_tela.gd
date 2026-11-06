@@ -31,6 +31,7 @@ const Combate := preload("res://core/combate.gd")
 const Reacoes := preload("res://core/reacoes_monstros.gd")
 const CartaVisual := preload("res://ui/carta_visual.gd")
 const MonteVisual := preload("res://ui/monte_visual.gd")
+const ArteItem := preload("res://ui/arte_item.gd")
 
 const COR_FUNDO := Color("121116")
 const COR_PAINEL := Color(0.11, 0.105, 0.135, 0.94)
@@ -4614,6 +4615,7 @@ func _montar_inventario() -> void:
 	topo_inv.add_child(v_maos)
 	v_maos.add_child(_label(u.nome, 15, COR_OURO, true))
 	var maos: Array = batalha.maos_de(u)
+	var arte_reserva: Dictionary = u.foco if u.arma_reserva.get("eh_foco", false) else u.arma_reserva
 	for par in [["Mão principal", maos[0]], ["Outra mão", maos[1]],
 			["Cinto", "lanterna acesa" if u.luz == "lanterna" else ("lanterna" if "lanterna" in u.equipamentos else "—")],
 			["Guardada", u.arma_reserva.get("nome", "—") if not u.arma_reserva.is_empty() else "—"]]:
@@ -4621,6 +4623,8 @@ func _montar_inventario() -> void:
 		var r := _label(par[0] + ":", 12, COR_SECUNDARIO)
 		r.custom_minimum_size = Vector2(110, 0)
 		linha.add_child(r)
+		if par[0] == "Guardada":
+			ArteItem.adicionar(linha, arte_reserva, Vector2(29, 38))
 		linha.add_child(_label(par[1] if par[1] != "" else "livre", 12, COR_TEXTO, true))
 		v_maos.add_child(linha)
 	if not u.arma_reserva.is_empty():
@@ -4634,12 +4638,21 @@ func _montar_inventario() -> void:
 			_montar_inventario())
 		v_maos.add_child(bt_t)
 	_inventario_lista.add_child(_label("Equipado", 14, COR_OURO, true))
-	_inventario_lista.add_child(_linha_inv("%s · dano %d + %s" % [u.arma["nome"], u.dano, "Destreza" if Itens.atributo_da_arma(u.arma) == "destreza" else "Força"], "Arma.", ""))
+	var arma_eh_foco: bool = u.arma.get("eh_foco", false)
+	var arte_arma: Dictionary = u.foco if arma_eh_foco else u.arma
+	_inventario_lista.add_child(_linha_inv("%s · dano %d + %s" % [u.arma["nome"], u.dano, "Destreza" if Itens.atributo_da_arma(u.arma) == "destreza" else "Força"], "Arma.", "", arte_arma))
 	if int(u.armadura.get("vida", 0)) > 0:
 		_inventario_lista.add_child(_linha_inv("%s · vida %d/%d · resistência %d" % [u.armadura["nome"], u.vida_armadura, int(u.armadura["vida"]), int(u.armadura["resistencia"])],
-			"Armadura %s. Em testes de movimento (nadar, escalar, saltar), limite %s." % [{"leve": "leve", "media": "média", "pesada": "pesada"}.get(u.armadura["classe"], ""), {"media": "19", "pesada": "17"}.get(u.armadura["classe"], "21")], ""))
+			"Armadura %s. Em testes de movimento (nadar, escalar, saltar), limite %s." % [{"leve": "leve", "media": "média", "pesada": "pesada"}.get(u.armadura["classe"], ""), {"media": "19", "pesada": "17"}.get(u.armadura["classe"], "21")], "", u.armadura))
 	if int(u.escudo.get("vida", 0)) > 0:
-		_inventario_lista.add_child(_linha_inv("%s · vida %d/%d · resistência %d" % [u.escudo["nome"], u.vida_escudo, int(u.escudo["vida"]), int(u.escudo["resistencia"])], "Escudo.", ""))
+		_inventario_lista.add_child(_linha_inv("%s · vida %d/%d · resistência %d" % [u.escudo["nome"], u.vida_escudo, int(u.escudo["vida"]), int(u.escudo["resistencia"])], "Escudo.", "", u.escudo))
+	if u.foco.get("id", "nenhum") != "nenhum" and not arma_eh_foco and not u.arma_reserva.get("eh_foco", false):
+		_inventario_lista.add_child(_linha_inv(str(u.foco.get("nome", "Foco")), str(u.foco.get("texto", "")), "", u.foco))
+	if not u.grimorios.is_empty():
+		_inventario_lista.add_child(_label("Grimórios e textos sagrados", 14, COR_OURO, true))
+		for id in u.grimorios:
+			var dados := Itens.item(id)
+			_inventario_lista.add_child(_linha_inv(str(dados.get("nome", id)), str(dados.get("texto", "")), "", dados))
 	_inventario_lista.add_child(_label("Consumíveis", 14, COR_OURO, true))
 	var vistos := []
 	for item in u.consumiveis:
@@ -4651,14 +4664,14 @@ func _montar_inventario() -> void:
 		if not dados.get("programado", false):
 			uso = "Ainda sem efeito no jogo."
 		_inventario_lista.add_child(_linha_inv("%s ×%d" % [dados.get("nome", item), u.quantidade(item)], dados.get("texto", "") + ("\n" + uso if uso != "" else ""),
-			item if dados.get("acao", false) else ""))
+			item if dados.get("acao", false) else "", dados))
 	if vistos.is_empty():
 		_inventario_lista.add_child(_label("(nenhum)", 12, COR_SECUNDARIO))
 	_inventario_lista.add_child(_label("Kit de aventura e itens permanentes", 14, COR_OURO, true))
 	for item in u.equipamentos:
 		var dados: Dictionary = Itens.NAO_CONSUMIVEIS.get(item, {})
 		var uso: String = dados.get("uso", "") if dados.get("programado", false) else "Ainda sem efeito no jogo."
-		_inventario_lista.add_child(_linha_inv(dados.get("nome", item), dados.get("texto", "") + "\n" + uso, ""))
+		_inventario_lista.add_child(_linha_inv(dados.get("nome", item), dados.get("texto", "") + "\n" + uso, "", dados))
 
 
 ## Retrato 3D do herói (modelo girando devagar) para o inventário (0.21).
@@ -4696,17 +4709,18 @@ func _retrato_3d(u) -> Control:
 	return caixa
 
 
-func _linha_inv(titulo: String, texto: String, item_usar: String) -> Control:
+func _linha_inv(titulo: String, texto: String, item_usar: String, dados: Dictionary) -> Control:
 	var p := _painel(Color("201f27"), COR_BORDA, 8)
 	var h := HBoxContainer.new()
 	h.add_theme_constant_override("separation", 10)
 	p.add_child(h)
+	ArteItem.adicionar(h, dados, Vector2(54, 68))
 	var v := VBoxContainer.new()
 	v.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	v.add_child(_label(titulo, 13, COR_TEXTO, true))
 	var l := _label(texto, 11, COR_SECUNDARIO)
 	l.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-	l.custom_minimum_size = Vector2(480, 0)
+	l.custom_minimum_size = Vector2(416, 0)
 	v.add_child(l)
 	h.add_child(v)
 	if item_usar != "":

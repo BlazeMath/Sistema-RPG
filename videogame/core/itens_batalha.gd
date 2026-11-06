@@ -12,12 +12,53 @@ extends RefCounted
 const Grade := preload("res://core/grade.gd")
 const Carta := preload("res://core/carta.gd")
 const Itens := preload("res://core/itens.gd")
+const Origens := preload("res://core/cartas_origens.gd")
 
 const PROFANOS := ["morto-vivo", "demonio"]
 
 
 static func arma(u) -> String:
 	return str(u.arma.get("id", ""))
+
+
+static func custo_fadiga_da_arma(u, custo: int) -> int:
+	return custo - 1 if custo > 1 and u.ativo("foco-mortal") else custo
+
+
+static func corrente_para_lacar(b, u, alvo) -> Dictionary:
+	if u == null or alvo == null or not u.eh_heroi() or not u.viva() or u.acoes_reacao <= 0 \
+			or arma(u) != "corrente_de_caca" or Origens.maior(alvo, u) or b.motivo_sem_ataque(u, alvo, false) != "":
+		return {}
+	var c = u.carta_com("arma")
+	var custo := custo_fadiga_da_arma(u, 2)
+	return {"carta": c, "custo": custo} if c != null and c.pode_pagar(custo) else {}
+
+
+static func fadiga_do_frenesi(b, u, excesso: int) -> void:
+	if excesso <= 0:
+		return
+	var c = u.carta_com("arma")
+	var na_arma := mini(excesso, maxi(c.espaco(), 0)) if c != null else 0
+	if na_arma > 0:
+		c.pagar(na_arma)
+	var exiladas := 0
+	var trituradas := 0
+	var estava_de_pe: bool = u.viva()
+	for i in excesso - na_arma:
+		if not u.baralho.descarte.is_empty():
+			u.baralho.exilio.append(u.baralho.descarte.pop_back())
+		else:
+			var carta: int = u.baralho.puxar_topo()
+			if carta < 0:
+				break
+			u.baralho.descarte.append(carta)
+			trituradas += 1
+			continue
+		exiladas += 1
+	b._log("Montante do Frenesi: %d de Fadiga, %d na arma, %d carta(s) exilada(s), %d triturada(s)." \
+		% [excesso, na_arma, exiladas, trituradas])
+	if estava_de_pe:
+		b._verificar_queda_heroi_sem_turno(u)
 
 
 static func veste(u, id: String) -> bool:

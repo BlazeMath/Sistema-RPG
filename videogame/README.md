@@ -2,11 +2,11 @@
 
 RPG tático de grupo, em turnos e visão isométrica, baseado no Sistema 21: o vinte-e-um substitui os dados e o baralho do personagem é a sua vida.
 
-**Estado atual: versão de teste 0.21 — interface nova: menus que abrem com o mouse, iniciativa em quadro, mão em leque, fichas do herói e do monstro, carta de arma, efeitos visuais e sons; antes: tela de fim de turno, uma ficha de cada tipo por carta (escolhida pelo jogador), Foco entre a carta aberta e a fechada, correções do playtest; antes: campanha em ciclos de 3 missões com níveis, pontos de descanso que salvam no meio da missão, névoa em degradê, luz dinâmica e cenário interativo; antes: personagens e cenários em 3D (modelos KayKit, CC0), menu de pausa no Esc e jogos salvos na vila; antes: o Pântano dos Afogados e inimigos que conjuram; antes: segunda arma e mãos, cartas desenhadas como cartas, heróis prontos e música; antes: escuro e luz, devoções, a cripta e a vila; antes: cartas combinadas no ataque e repertório; balanceamento com o dano 7; névoa de guerra; áreas e zonas, focos do PDF e inimigos por patamar; antes: grupo de até 4 heróis, todas as classes, raças e backgrounds, a missão da fazenda Vale Seco, fichas de Sangramento/Veneno/Fogo que não somem sozinhas, focos mágicos e ataques de oportunidade.** Valores provisórios. As decisões que o Claude tomou sozinho estão nos arquivos `DECISOES_0.x.md` (o mais novo é o `DECISOES_0.21.md`).
+**Versão de teste 0.29.** Inclui a carta Arma em Chamas / Combustão em Cadeia do Bruxo, ilustrações de itens na loja e no inventário, e os efeitos do Montante do Frenesi e da Corrente de Caça. Veja [as regras desta versão](DECISOES_0.29.md).
 
 ## Como jogar
 
-1. Extraia o `Sistema21_Windows_v0.21.zip` e abra o `Sistema21.exe`.
+1. Extraia o `Sistema21_Windows_v0.29.zip` e abra o `Sistema21.exe`.
 2. Na primeira vez, o Windows pode mostrar "O Windows protegeu o computador" (o jogo ainda não tem assinatura digital). Clique em **Mais informações → Executar assim mesmo**.
 3. No menu, abra **Criar e escolher heróis**: monte os heróis (as perícias ficam no botão **Escolher perícias**) e salve cada um. Marque até 4 na lista **Grupo**.
 4. Volte ao menu e escolha **Missão**, **Exploração**, **X1** ou **Arena**. Cada herói do grupo joga no seu turno.
@@ -30,15 +30,7 @@ RPG tático de grupo, em turnos e visão isométrica, baseado no Sistema 21: o v
 
 Os heróis criados ficam salvos no computador (pasta de dados do Godot, arquivo `herois.json`).
 
-## Como colocar no GitHub (sem terminal)
-
-1. Extraia o arquivo `.zip` numa pasta do seu computador.
-2. Abra o repositório no navegador: https://github.com/lucassebajos/Sistema-21
-3. Clique em **Add file → Upload files**.
-4. Abra a pasta extraída, selecione **todo o conteúdo dela** (todas as pastas e os arquivos soltos) e arraste para a página.
-5. Clique em **Commit changes**.
-
-Nas próximas entregas é igual: arraste o conteúdo novo por cima, e o GitHub substitui os arquivos que mudaram.
+O código do jogo fica na [pasta `videogame/` do repositório](https://github.com/BlazeMath/Sistema-RPG/tree/main/videogame). O repositório usa Git LFS para as artes e outros arquivos binários.
 
 ## Como abrir no Godot
 
@@ -51,7 +43,7 @@ Nas próximas entregas é igual: arraste o conteúdo novo por cima, e o GitHub s
 | --- | --- |
 | `core/` | Motor de regras: cartas, baralho e zonas, teste de 21, combate, iniciativa, grid, batalha, IA, duelo |
 | `ui/` | Telas: menu, criação de heróis, mapa em grid (exploração, X1 e arena), mesa de 21 pura |
-| `assets/` | Fontes (DejaVu, licença livre) |
+| `assets/` | Fontes, modelos, áudio e ilustrações de equipamento |
 | `data/cartas/` | Cartas exportadas da planilha oficial (JSON) e o relatório da exportação |
 | `tools/` | Exportador da planilha (`exportar_cartas.py`) |
 | `tests/` | Testes automáticos das regras |

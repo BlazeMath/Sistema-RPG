@@ -1413,6 +1413,43 @@
     }
    ],
    "impressao": "bruxo-v02"
+  },
+  {
+   "id": "classe.bruxo.arma-em-chamas",
+   "fonte": "classe",
+   "entidade": "Bruxo",
+   "grupo": "HABILIDADES ADICIONAIS",
+   "xp": 1,
+   "meia_carta": false,
+   "impressao": "bruxo-v029",
+   "lados": [
+    {
+     "nome": "Arma em Chamas",
+     "tags": [],
+     "texto": "2 de Fadiga, Ação Padrão: até o fim da cena, o dano da sua arma passa a ser do tipo Fogo. Quando causar dano com ela, cause +2 de dano e coloque 1 ficha de Fogo no alvo.",
+     "limite_fadiga": 2,
+     "custo": {
+      "fadiga": 2,
+      "acao": "padrao",
+      "outros": [],
+      "permanente": "",
+      "efeito": "até o fim da cena, o dano da sua arma passa a ser do tipo Fogo. Quando causar dano com ela, cause +2 de dano e coloque 1 ficha de Fogo no alvo."
+     }
+    },
+    {
+     "nome": "Combustão em Cadeia",
+     "tags": [],
+     "texto": "2 de Fadiga, Ação Padrão: faça um ataque com sua arma. Depois de resolvê-lo, se o defensor tiver 3 ou mais fichas de Fogo, faça um segundo ataque contra ele com sua arma, se ainda puder atacá-lo.",
+     "limite_fadiga": 3,
+     "custo": {
+      "fadiga": 2,
+      "acao": "padrao",
+      "outros": [],
+      "permanente": "",
+      "efeito": "faça um ataque com sua arma. Depois de resolvê-lo, se o defensor tiver 3 ou mais fichas de Fogo, faça um segundo ataque contra ele com sua arma, se ainda puder atacá-lo."
+     }
+    }
+   ]
   }
  ],
  "pactos": {

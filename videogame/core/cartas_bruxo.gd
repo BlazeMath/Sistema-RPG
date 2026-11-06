@@ -41,6 +41,8 @@ static var LADOS := _montar_lados()
 static func _montar_lados() -> Dictionary:
 	var magia_curta := {"alvo": "inimigo_magico", "alcance": 4, "ataque_magico": true, "magia": true, "custo": {"fadiga": 1, "acao": "padrao"}}
 	var r := {
+		"arma-em-chamas": {"uso": "ativada", "alvo": "nenhum"},
+		"combustao-em-cadeia": {"uso": "ativada", "alvo": "inimigo_arma"},
 		# Fênix
 		"ave-fenix": {"uso": "ativada", "magia": true, "pacto": "fenix",
 			"opcoes": _xs(magia_curta, "x", "Ave Fênix + %d Pacto(s)", 0, 3)},
@@ -262,6 +264,8 @@ static func uma_vez(u, chave: String, por := "rodada") -> bool:
 # --- Cena ---------------------------------------------------------------------------------
 
 static func inicio_da_cena(b, u) -> void:
+	u.arma.erase("arma_em_chamas")
+	u.arma_reserva.erase("arma_em_chamas")
 	if u.pacto == "":
 		return
 	var cp = carta_pacto(u)
@@ -300,6 +304,14 @@ static func inicio_da_cena(b, u) -> void:
 static func motivo(b, u, c) -> String:
 	var info: Dictionary = b._info_lado(c)
 	var s: String = c.slug()
+	if s in ["arma-em-chamas", "combustao-em-cadeia"]:
+		if not tem_arma(u):
+			return "precisa empunhar uma arma"
+		if s == "combustao-em-cadeia":
+			if u.efeitos.has("descarregada"):
+				return "a besta precisa ser recarregada"
+			if u.efeitos.has("forma_de_vento"):
+				return "em forma de vento não dá para atacar"
 	if c.tipo == "pacto":
 		match info.get("opcao", ""):
 			"reparar":
@@ -395,6 +407,10 @@ static func motivo(b, u, c) -> String:
 	return ""
 
 
+static func tem_arma(u) -> bool:
+	return u.arma.get("tamanho", "desarmado") != "desarmado" and not u.arma.get("eh_foco", false)
+
+
 static func motivo_reparar(b, u) -> String:
 	if not suspenso(u):
 		return "o pacto não está suspenso"
@@ -450,6 +466,11 @@ static func usar(b, u, c, alvo) -> void:
 		u.efeitos.erase("estender")
 		ctx_m["estender"] = true
 	match s:
+		"arma-em-chamas":
+			u.arma["arma_em_chamas"] = true
+			b._log("Arma em Chamas: %s incendeia %s até o fim da cena." % [u.nome, u.arma["nome"]])
+		"combustao-em-cadeia":
+			b._novo_ataque(u, alvo, {"habilidade": c.nome(), "combustao_em_cadeia": true})
 		"a-fenix":
 			b._curar(alvo, 3 * int(info["pactos"]), "é curado pelas chamas da Fênix")
 		"ave-fenix":
@@ -785,6 +806,9 @@ static func resolvido(b, atk, dfs, acerto: bool) -> void:
 ## Depois do ataque de um herói (Bruxo ou aliado).
 static func depois_do_ataque(b, u, alvo, acerto: bool, dano: int) -> void:
 	var ctx: Dictionary = b.ctx
+	if ctx.get("dano_arma_em_chamas", false) and alvo.viva():
+		alvo.dar_ficha("Fogo")
+		b._log("Arma em Chamas: %s recebe 1 ficha de Fogo." % alvo.nome)
 	if dano > 0 and not alvo.eh_heroi():
 		alvo.efeitos["ferido_por_" + u.id] = {}
 	# Grilhões (menor): aliado acerta inimigo ao lado do Bruxo -> Penalidade.

@@ -7,6 +7,7 @@ const Sessao := preload("res://core/sessao.gd")
 const Campanha := preload("res://core/campanha.gd")
 const Itens := preload("res://core/itens.gd")
 const Personagem := preload("res://core/personagem.gd")
+const ArteItem := preload("res://ui/arte_item.gd")
 
 const COR_FUNDO := Color("121116")
 const COR_PAINEL := Color("1c1b22")
@@ -301,6 +302,7 @@ func _montar_loja(corpo: VBoxContainer, tipo: String) -> void:
 			continue
 		var h := HBoxContainer.new()
 		h.add_theme_constant_override("separation", 6)
+		ArteItem.adicionar(h, it, Vector2(42, 54))
 		var prog: bool = it.get("programado", true)
 		var tem := _quantos(ficha, id)
 		var nome := _label("%s%s%s" % [it["nome"], "" if prog else " *", ("  (tem %d)" % tem) if tem > 0 else ""], 13, COR_TEXTO)
@@ -374,6 +376,8 @@ func _lista_de_venda(lista: VBoxContainer, ficha: Dictionary) -> void:
 	for id in vendaveis:
 		var it: Dictionary = Itens.item(id)
 		var hv := HBoxContainer.new()
+		hv.add_theme_constant_override("separation", 6)
+		ArteItem.adicionar(hv, it, Vector2(42, 54))
 		var nv := _label("%s  (tem %d)" % [it.get("nome", id), _quantos(ficha, id)], 13, COR_TEXTO)
 		nv.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 		nv.tooltip_text = _dica_item(id, it)

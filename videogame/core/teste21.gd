@@ -41,15 +41,24 @@ var ajustes_usados: Array[String] = []
 var revelado := false              # a carta fechada está à vista do oponente
 var sem_puxar := false             # fora da distância ideal ou com cobertura: não puxa do baralho, mas joga da mão
 var resultado_forcado := -1        # cartas que mudam o resultado (ex.: Sorte dos Pequenos: 21)
+var frenesi := false                # Montante do Frenesi: compra obrigatória, Ases altos e sem estouro
 ## Lucas (0.20): entre a 1ª carta (aberta) e a 2ª (fechada) o herói pode gastar uma
 ## ficha de Foco (scry 1). Com "adiar_fechada", a 2ª só chega com receber_fechada()
 ## (ou sozinha na primeira ação do teste).
 var fechada_pendente := false
 
 
-func _init(b: Baralho, mod: int = 0, lim: int = 21, com_vantagem := false, com_desvantagem := false, iniciais := 2, adiar_fechada := false) -> void:
+func _init(b: Baralho, mod: int = 0, lim: int = 21, com_vantagem := false, com_desvantagem := false,
+		iniciais := 2, adiar_fechada := false, com_frenesi := false) -> void:
 	baralho = b
 	modificador = mod
+	frenesi = com_frenesi
+	if frenesi:
+		limite = 21
+		while soma_cartas() < limite and not baralho.vazio():
+			cartas.append(baralho.puxar_topo())
+		parar()
+		return
 	limite = lim
 	vantagem = com_vantagem and not com_desvantagem
 	desvantagem = com_desvantagem and not com_vantagem
@@ -90,7 +99,11 @@ func soma_cartas() -> int:
 	var tem_as := false
 	for c in cartas:
 		soma += Carta.valor(c)
-		tem_as = tem_as or Carta.eh_as(c)
+		if Carta.eh_as(c):
+			if frenesi:
+				soma += 10
+			else:
+				tem_as = true
 	if tem_as and soma + 10 + ajuste <= limite:
 		soma += 10
 	return soma + ajuste
@@ -111,6 +124,8 @@ func aplicar_ajuste(nome: String, valor: int) -> bool:
 ## Muda o limite no meio do teste (ex.: Tiro Certeiro no defensor). Se as cartas já
 ## passarem do novo limite, estoura.
 func ajustar_limite(delta: int) -> void:
+	if frenesi:
+		return
 	limite += delta
 	if not estourou and soma_cartas() > limite:
 		_estourar()

@@ -1036,8 +1036,8 @@ func _custo_fadiga(u: Unidade, c) -> int:
 	var info := _info_lado(c)
 	# Foco Mortal (Lucas, 0.20): só as habilidades da própria ARMA (carta de arma) custam 1
 	# a menos, e nunca menos que 1. As armas comuns ainda não têm habilidades ativadas.
-	if u.ativo("foco-mortal") and c.tipo == "arma" and custo > 1:
-		custo -= 1
+	if c.tipo == "arma":
+		custo = ItensB.custo_fadiga_da_arma(u, custo)
 	if info.get("magia", false):
 		# Conjuração Perfeita (revisão 27/10): uma vez por turno, a magia custa só 1 de fadiga.
 		if u.ativo("conjuracao-perfeita") and not u.efeitos.has("perfeita_usada"):
@@ -2095,6 +2095,11 @@ func continuar() -> bool:
 	var u := ativa()
 	if not ctx.get("area_fila", []).is_empty() and _proximo_alvo_da_area():
 		return true
+	if ctx.get("combustao_em_cadeia", false) and atacante == u and u.viva() \
+			and defensor.fichas_total("Fogo") >= 3 and Bruxo.tem_arma(u) and motivo_sem_ataque(u, defensor, false) == "":
+		_log("Combustão em Cadeia: %s tem 3 ou mais fichas de Fogo. %s faz outro ataque." % [defensor.nome, u.nome])
+		_novo_ataque(u, defensor, {"habilidade": "Combustão em Cadeia"})
+		return true
 	if ctx.get("labareda", false):
 		ctx.erase("labareda")
 		var feridos: Array = ctx.get("danificados", [])
@@ -2721,7 +2726,23 @@ func _mover(u: Unidade, destino: Vector2i) -> bool:
 ## Anda o caminho passo a passo. Antes de cada passo, confere se alguém faz um
 ## ataque de oportunidade; se fizer, o movimento para, o ataque acontece e o
 ## resto do caminho fica guardado (continua depois do ataque).
-func _percorrer(u: Unidade, caminho: Array, gasta_deslocamento: bool) -> bool:
+func _percorrer(u: Unidade, caminho: Array, gasta_deslocamento: bool, correntes_oferecidas = []) -> bool:
+	if not caminho.is_empty() and correntes_oferecidas != null:
+		for r in oponentes(u):
+			if r.id in correntes_oferecidas:
+				continue
+			var laco := ItensB.corrente_para_lacar(self, r, u)
+			if laco.is_empty():
+				continue
+			movimento_pendente = {"id": u.id, "caminho": caminho, "gasta": gasta_deslocamento,
+				"correntes_oferecidas": correntes_oferecidas + [r.id]}
+			if perguntar_escolhas:
+				perguntar("lacar-presa", "%s começa a se mover. %s pode usar Laçar a Presa?" % [u.nome, r.nome],
+					[["sim", "Laçar a Presa (%d de Fadiga, Reação)" % laco["custo"]], ["nao", "Deixar passar"]],
+					{"reator": r.id, "alvo": u.id})
+			else:
+				_lacar_presa(r, u)
+			return true
 	var perigos := _perigos(u)
 	var feitos := []
 	if not caminho.is_empty():
@@ -2775,8 +2796,18 @@ func _percorrer(u: Unidade, caminho: Array, gasta_deslocamento: bool) -> bool:
 	return true
 
 
-var movimento_pendente: Dictionary = {}   # caminho interrompido por um ataque de oportunidade
+var movimento_pendente: Dictionary = {}   # caminho interrompido por uma reação
 var oportunidade_recusada: Dictionary = {}   # id de quem anda -> [heróis que deixaram passar neste passo]
+
+
+func _lacar_presa(u: Unidade, alvo: Unidade) -> bool:
+	var laco := ItensB.corrente_para_lacar(self, u, alvo)
+	if laco.is_empty():
+		return false
+	pagar_fadiga(u, laco["carta"], laco["custo"])
+	u.acoes_reacao -= 1
+	_novo_ataque(u, alvo, {"habilidade": "Laçar a Presa", "lacar_presa": true})
+	return true
 
 
 ## Quem faz um ataque de oportunidade se "u" sair de "de" para "para" (ou null).
@@ -2819,7 +2850,7 @@ func _continuar_movimento() -> void:
 		if na_posicao(p) != null and na_posicao(p) != u:
 			break
 		livre.append(p)
-	_percorrer(u, livre, m["gasta"])
+	_percorrer(u, livre, m["gasta"], m.get("correntes_oferecidas"))
 
 
 ## Movimento dado por habilidade (não gasta ação nem deslocamento). Provoca ataque
@@ -2854,6 +2885,9 @@ func _novo_ataque(atk: Unidade, dfs: Unidade, contexto: Dictionary) -> void:
 	ctx = contexto
 	if ctx.get("magico", false) and not ctx.has("tipo_dano") and tipo_da_magia_atual != "":
 		ctx["tipo_dano"] = tipo_da_magia_atual
+	if not ctx.get("magico", false) and atk.arma.get("arma_em_chamas", false):
+		ctx["tipo_dano"] = "Fogo"
+		ctx["arma_em_chamas"] = true
 	resultado = {}
 	atk.atacou_nesta_rodada = true
 	atk.efeitos.erase("oculto")
@@ -2928,7 +2962,8 @@ func _novo_ataque(atk: Unidade, dfs: Unidade, contexto: Dictionary) -> void:
 	if dfs.efeitos.has("olha_la") and vantagem_atk:
 		vantagem_atk = false
 		_log("Olha Lá!: %s não tem vantagem contra %s." % [atk.nome, dfs.nome])
-	teste_ataque = Teste21.new(b_atk, 0, lim_atk, vantagem_atk, desvantagem, 2 if niveis <= 1 else 1, _adiar_fechada(atk))
+	var frenesi: bool = atk.eh_heroi() and not ctx.get("magico", false) and ItensB.arma(atk) == "montante_do_frenesi"
+	teste_ataque = Teste21.new(b_atk, 0, lim_atk, vantagem_atk, desvantagem, 2 if niveis <= 1 else 1, _adiar_fechada(atk), frenesi)
 	if niveis >= 1:
 		teste_ataque.sem_puxar = true
 	var por_baixo: bool = atk.efeitos.has("ponto_de_vantagem") and (atk.a_distancia or Grade.distancia(atk.pos, dfs.pos) > 1) \
@@ -2966,7 +3001,7 @@ func _novo_ataque(atk: Unidade, dfs: Unidade, contexto: Dictionary) -> void:
 			teste_ataque.parar()
 			teste_defesa.parar()
 			_resolver()
-	elif desvantagem or ctx.get("resultado_fixo", 0) > 0:
+	elif frenesi or desvantagem or ctx.get("resultado_fixo", 0) > 0:
 		teste_ataque.parar()
 		_avancar_apos_teste(teste_ataque)
 
@@ -3090,7 +3125,16 @@ func _resolver() -> void:
 	var dano := 0
 	var reducao := 0
 	var magico: bool = ctx.get("magico", false)
-	if acerto and magico:
+	if ctx.get("lacar_presa", false):
+		if acerto:
+			alvo.dar_ficha("Imobilizar")
+			if movimento_pendente.get("gasta", false):
+				alvo.deslocamento = 0
+				alvo.ignora_impedimento = false
+				_fim_da_corrida(alvo)
+			movimento_pendente = {}
+			_log("Laçar a Presa: %s para e recebe 1 Imobilizar." % alvo.nome)
+	elif acerto and magico:
 		# Ataque mágico: como um ataque normal (diferença + atributo de conjuração),
 		# com o dano do foco no lugar da arma, mais o dano extra da magia.
 		dano = atk - dfs
@@ -3192,6 +3236,11 @@ func _resolver() -> void:
 		if medo > 0:
 			partes.append(["Medo", -mini(medo, dano)])
 			dano = maxi(dano - medo, 0)
+	if ctx.get("arma_em_chamas", false):
+		ctx["dano_arma_em_chamas"] = dano > 0 and (acerto or u.forca >= 5)
+		if ctx["dano_arma_em_chamas"]:
+			dano += 2
+			partes.append(["Arma em Chamas", 2])
 	if u.efeitos.has("ignora_reducao") or u.efeitos.has("veneno_acido"):
 		u.efeitos.erase("ignora_reducao")
 		u.efeitos.erase("veneno_acido")
@@ -3307,6 +3356,8 @@ func _resolver() -> void:
 			var t := teste_ataque if heroi == u else teste_defesa
 			if t.critico():
 				_critico(heroi)
+	if teste_ataque.frenesi and primeiro_da_area:
+		ItensB.fadiga_do_frenesi(self, u, atk - 21)
 	fase = Fase.RESOLVIDO
 	if dano > 0 and alvo.eh_heroi():
 		_dano_no_heroi(alvo, dano, "ataque", Fase.RESOLVIDO)
@@ -5700,6 +5751,12 @@ func heroi_responder(opcao: String) -> bool:
 			_mente_belica(unidade(p["dados"]["quem"]), int(opcao))
 		"anular":
 			_anular(opcao)
+		"lacar-presa":
+			if not movimento_pendente.is_empty():
+				var r := unidade(p["dados"]["reator"])
+				var alvo_laco := unidade(p["dados"]["alvo"])
+				if opcao != "sim" or not _lacar_presa(r, alvo_laco):
+					_continuar_movimento()
 		"oportunidade":
 			var r := unidade(p["dados"]["reator"])
 			var alvo_o := unidade(p["dados"]["alvo"])
